@@ -6,7 +6,7 @@ Summary:	K Desktop Environment - international support
 Summary(pl):	KDE - wsparcie dla wielu jêzyków
 Name:		kde-i18n
 Version:	3.2.3
-Release:	1
+Release:	2
 License:	GPL
 Group:		X11/Applications
 Source0:	ftp://ftp.kde.org/pub/kde/stable/%{version}/src/%{name}-%{version}.tar.bz2
@@ -325,6 +325,7 @@ Obsoletes:	quanta-i18n
 Obsoletes:	kdepim-kmail-libs-i18n
 Obsoletes:	kdeutils-kmilo-i18n
 Obsoletes:	kde-i18n-kdelibs
+Obsoletes:	kde-kgreet-classic-i18n
 
 %description base
 Empty metapackage to handle obsoletes for individual i18n subpackages.
