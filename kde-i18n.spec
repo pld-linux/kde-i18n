@@ -26,7 +26,7 @@ Patch0:		%{name}-es.patch
 Obsoletes:	kde-i18n-Affrikaans
 Obsoletes:	kde-i18n-Afrikaans
 Obsoletes:	kde-i18n-Arabic
-# Obsoletes:	kde-i18n-Azerbaijani
+Obsoletes:	kde-i18n-Azerbaijani
 Obsoletes:	kde-i18n-Bulgarian
 Obsoletes:	kde-i18n-Bosnian
 Obsoletes:	kde-i18n-Catalan
@@ -42,16 +42,19 @@ Obsoletes:	kde-i18n-Estonian
 Obsoletes:	kde-i18n-Finnish
 Obsoletes:	kde-i18n-French
 Obsoletes:	kde-i18n-Hebrew
+Obsoletes:      kde-i18n-Hindi
 Obsoletes:	kde-i18n-Croatian
 Obsoletes:	kde-i18n-Hungarian
-# Obsoletes:	kde-i18n-Indonesian
+Obsoletes:	kde-i18n-Indonesian
 Obsoletes:	kde-i18n-Icelandic
 Obsoletes:	kde-i18n-Italian
 Obsoletes:	kde-i18n-Japanese
-# Obsoletes:	kde-i18n-Korean
+Obsoletes:	kde-i18n-Korean
 Obsoletes:	kde-i18n-Lithuanian
-# Obsoletes:	kde-i18n-Latvian
+Obsoletes:	kde-i18n-Latvian
 Obsoletes:	kde-i18n-Maltese
+Obsoletes:      kde-i18n-Malay
+Obsoletes:      kde-i18n-Mongolian
 Obsoletes:	kde-i18n-Dutch
 Obsoletes:	kde-i18n-Norwegian
 Obsoletes:	kde-i18n-Norwegian_Bokmaal
@@ -73,6 +76,7 @@ Obsoletes:	kde-i18n-Tamil
 Obsoletes:	kde-i18n-Thai
 Obsoletes:	kde-i18n-Turkish
 Obsoletes:	kde-i18n-Ukrainian
+Obsoletes:      kde-i18n-Uzbek
 Obsoletes:	kde-i18n-Venda
 Obsoletes:	kde-i18n-Vietnamese
 Obsoletes:	kde-i18n-Xhosa
