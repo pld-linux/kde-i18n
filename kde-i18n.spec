@@ -510,7 +510,7 @@ K Desktop Environment - Polish language support.
 %description Polish -l pl
 KDE - wsparcie dla jêzyka polskiego.
 
-%package Portugnuese
+%package Portuguese
 Summary:	K Desktop Environment - Portuguese language support
 Summary(pl):	KDE - wsparcie dla jêzyka portugalskiego
 Group:		X11/Applications
@@ -528,10 +528,10 @@ Summary(pl):	KDE - wsparcie dla jêzyka portugalskiego (odmiany brazylijskiej)
 Group:		X11/Applications
 Obsoletes:	%{name}-Brazil_Protugnese
 
-%description Brazil_Portugnese
+%description Brazil_Portuguese
 K Desktop Environment - Portuguese (Brazil) language support.
 
-%description Brazil_Portugnese -l pl
+%description Brazil_Portuguese -l pl
 KDE - wsparcie dla jêzyka portugalskiego (odmiany brazylijskiej).
 
 %package Romanian
