@@ -2,24 +2,16 @@
 # Conditional build:
 %bcond_with	alltogether		# build single package containing support
 					# for all languages
-%bcond_with	tarball_creation	# create tarballs with resources for specific
-					# packages; don't create any RPMs
-%bcond_with	kdelibs			# create single small package containing
-					# essential files only
-#
 Summary:	K Desktop Environment - international support
 Summary(pl):	KDE - wsparcie dla wielu jêzyków
 Name:		kde-i18n
 Version:	3.2.3
-Release:	0.1
+Release:	0.2
 License:	GPL
 Group:		X11/Applications
 Source0:	ftp://ftp.kde.org/pub/kde/stable/%{version}/src/%{name}-%{version}.tar.bz2
 # Source0-md5:	7a2ff8e848b6347e41e450f5aaaf75a3
 #Source0:	http://ep09.pld-linux.org/~djurban/kde/%{name}-%{version}.tar.bz2
-Source1:	%{name}-splitmo
-Source2:	%{name}-splitdoc
-Source3:	%{name}-splitdoc-shared
 Patch0:		%{name}-fixes.patch
 %if %{with alltogether}
 # NOTE: "Affrikaans", "Norwegian_Bookmal" and "Portugnese" are here
@@ -88,6 +80,7 @@ Obsoletes:	kde-i18n-Simplified_Chinese
 Obsoletes:	kde-i18n-Chinese
 Obsoletes:	kde-i18n-Chinese-Big5
 Obsoletes:	kde-i18n-Zulu
+Requires:	kde-i18n-base
 %endif
 BuildRequires:	gettext-devel
 # It creates symlinks to some not-translated files.
@@ -104,19 +97,6 @@ K Desktop Environment - international support.
 
 %description -l pl
 KDE - wsparcie dla wielu jêzyków.
-
-%package kdelibs
-Summary:	K Desktop Environment - International Support
-Summary(pl):	KDE - wsparcie dla wielu jêzyków
-Group:		X11/Applications
-
-%description kdelibs
-K Desktop Environment - international support. This package contains
-essential files only.
-
-%description kdelibs -l pl
-KDE - wsparcie dla wielu jêzyków. Pakiet zawiera tylko pliki
-podstawowe.
 
 %package base
 Summary:	Empty metapackage to handle obsoletes
@@ -251,7 +231,6 @@ Obsoletes:	kdegraphics-kfile-i18n
 Obsoletes:	kdegraphics-kmrml-i18n
 Obsoletes:	kdegraphics-ksvg-i18n
 Obsoletes:	kdegraphics-kfax-i18n
-Obsoletes:	kdelibs-i18n
 Obsoletes:	kdemultimedia-i18n
 Obsoletes:	kdemultimedia-artsbuilder-i18n
 Obsoletes:	kdemultimedia-artscontrol-i18n
@@ -343,6 +322,8 @@ Obsoletes:	kdeutils-kdessh-i18n
 Obsoletes:	kdeutils-kdepasswd-i18n
 Obsoletes:	kdevelop-i18n
 Obsoletes:	quanta-i18n
+Obsoletes:	kdepim-kmail-libs-i18n
+Obsoletes:	kdeutils-kmilo-i18n
 
 %description base
 Empty metapackage to handle obsoletes for individual i18n subpackages.
@@ -677,10 +658,10 @@ K Desktop Environment - Croatian language support.
 KDE - wsparcie dla jêzyka chorwackiego.
 
 %package Upper_Sorbian
-Summary:        K Desktop Environment - Upper Sorbian language support
-Summary(pl):    KDE - wsparcie dla jêzyka górno³u¿yckiego
-Group:          X11/Applications
-Requires:       %{name}-base = %{version}-%{release}
+Summary:	K Desktop Environment - Upper Sorbian language support
+Summary(pl):	KDE - wsparcie dla jêzyka górno³u¿yckiego
+Group:		X11/Applications
+Requires:	%{name}-base = %{version}-%{release}
 
 %description Upper_Sorbian
 K Desktop Environment - Upper Sorbian language support.
@@ -1248,12 +1229,7 @@ done
 %install
 rm -rf $RPM_BUILD_ROOT
 
-%if %{with kdelibs}
-FindLang() {
-	echo "%defattr(644,root,root,755)" > "$2.lang"
-	cat allname.lang |grep -vE 'tmp|kdelibs\.mo|katepart\.mo' |grep "%lang($1)" >> "$2.lang"
-}
-%else
+
 FindLang() {
 #    $1 - short language name
 #    $2 - long language name
@@ -1281,96 +1257,12 @@ FindLang() {
 	echo "%lang($1) %{_datadir}/apps/ktuberling/sounds/$1" >> "$2.lang"
     fi
 }
-%endif
 
 %{__make} install \
 	DESTDIR=$RPM_BUILD_ROOT \
 	kde_htmldir="%{_kdedocdir}" \
 	kde_libs_htmldir="%{_kdedocdir}"
 
-%if %{with tarball_creation}
-package_list=`awk '!/^#/ { print $1 } ' %{SOURCE1} %{SOURCE2} | sort | uniq`
-for i in $package_list ; do
-	install -d $RPM_BUILD_ROOT/tmp/$i
-done
-
-grep -v '^#' < %{SOURCE1} | \
-while read package file ; do
-if [ "$package" != "" -a "$file" != "" ] ; then
-    if [ -d $RPM_BUILD_ROOT/tmp/$package ] ; then
-	for f in $RPM_BUILD_ROOT%{_datadir}/locale/*/LC_MESSAGES/$file ; do
-	    DIR=`echo $f | sed -e s,%{_datadir}/locale/,/tmp/$package%{_datadir}/locale/, -e s,/$file'$',,`
-	    if [ ! -d $DIR ] ; then
-		install -d $DIR
-	    fi
-	    mv $f $DIR
-	done
-    fi
-fi
-done
-
-grep -v '^#' < %{SOURCE2} | \
-while read package directory ; do
-if [ "$package" != "" -a "$directory" != "" ] ; then
-    if [ -d $RPM_BUILD_ROOT/tmp/$package ] ; then
-	for f in $RPM_BUILD_ROOT%{_kdedocdir}/*/$directory ; do
-	    DIR=`echo $f | sed -e s,%{_kdedocdir}/,/tmp/$package%{_kdedocdir}/, -e s,/$directory'$',,`
-	    echo $DIR
-# This moves the dir from the htmldir/lang/app to /tmp/package/htmldir/lang
-	    if [ ! -d $DIR ] ; then
-		install -d $DIR
-	    fi
-	    mv $f $DIR
-	done
-    fi
-fi
-done
-
-grep -v '^#' < %{SOURCE3} | \
-while read package directory file; do
-if [ "$package" != "" -a "$directory" != "" -a "$file" != "" ] ; then
-    if [ -d $RPM_BUILD_ROOT/tmp/$package ] ; then
-	for f in $RPM_BUILD_ROOT%{_kdedocdir}/*/$directory/$file ; do
-	    DIR=`echo $f | sed -e s,%{_kdedocdir}/,/tmp/$package%{_kdedocdir}/, -e s,/$file'$',,`
-# This moves the docs from the htmldir/lang/app to /tmp/package/htmldir/lang
-	    if [ ! -d $DIR ] ; then
-		install -d $DIR
-	    fi
-	    mv $f $DIR
-	done
-    fi
-fi
-done
-
-
-mv $RPM_BUILD_ROOT%{_datadir}/apps/ktuberling $RPM_BUILD_ROOT/tmp/kdegames%{_datadir}/apps
-
-cd $RPM_BUILD_ROOT%{_datadir}/locale
-for l in * ; do
-	mv $l/[!L]* $RPM_BUILD_ROOT/tmp/kdebase%{_datadir}/locale/$l
-done
-cd -
-
-ISDIR="`pwd`"
-for i in $package_list ; do
-	( cd $RPM_BUILD_ROOT/tmp/$i ; tar cjf %{_sourcedir}/$i-i18n-%{version}.tar.bz2 . )
-	echo "Wrote %{name}-$i-%{version}.tar.bz2"
-done
-cd "$ISDIR"
-exit 0
-%endif
-
-%if %{with kdelibs}
-%find_lang tmp.allname --with-kde --all-name
-cat tmp.allname.lang |grep en_GB |sed 's/(en)/(en_GB)/' > allname.lang
-cat tmp.allname.lang |grep pt_BR |sed 's/(pt)/(pt_BR)/' >> allname.lang
-cat tmp.allname.lang |grep zh_CN |sed 's/(zh)/(zh_CN)/' >> allname.lang
-cat tmp.allname.lang |grep zh_TW |sed 's/(zh)/(zh_TW)/' >> allname.lang
-cat tmp.allname.lang |grep -vE en_GB\|pt_BR\|zh_CN\|zh_TW >> allname.lang
-%find_lang kdelibs
-%find_lang katepart
-cat katepart.lang >> kdelibs.lang
-%endif
 
 ##FindLang af Afrikaans
 FindLang ar Arabic
@@ -1453,17 +1345,13 @@ cat [A-Z]*.lang >all.lang
 %clean
 rm -rf $RPM_BUILD_ROOT
 
-%if %{with kdelibs} && %{without tarball_creation}
-%files kdelibs -f kdelibs.lang
-%defattr(644,root,root,755)
-%endif
 
-%if %{without alltogether} && %{without tarball_creation}
 %files base
 %defattr(644,root,root,755)
 
+%if %{without alltogether}
 #%%files -f Afrikaans.lang Afrikaans
-%%files -f Arabic.lang Arabic
+%files -f Arabic.lang Arabic
 %defattr(644,root,root,755)
 
 %files -f Azerbaijani.lang Azerbaijani
@@ -1639,7 +1527,7 @@ rm -rf $RPM_BUILD_ROOT
 #%%files -f Zulu.lang Zulu
 %endif
 
-%if %{with alltogether} && %{without tarball_creation}
+%if %{with alltogether}
 %files -f all.lang
 %defattr(644,root,root,755)
 %endif
