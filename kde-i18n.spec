@@ -54,6 +54,7 @@ Obsoletes:	kde-i18n-Norwegian
 Obsoletes:	kde-i18n-Norwegian_Bokmaal
 Obsoletes:	kde-i18n-Norwegian_Bookmal
 Obsoletes:	kde-i18n-Norwegian_Nynorsk
+Obsoletes:	kde-i18n-Punjabi
 Obsoletes:	kde-i18n-Polish
 Obsoletes:	kde-i18n-Portugnese
 Obsoletes:	kde-i18n-Portuguese
@@ -917,7 +918,7 @@ KDE - wsparcie dla jêzyka oksytañskiego (dialektu gaskoñskiego).
 
 %package Punjabi
 Summary:	K Desktop Environment - Punjabi language support
-Summary(pl):	KDE - wsparcie dla jêzyka punjabi
+Summary(pl):	KDE - wsparcie dla jêzyka pend¿abskiego
 Group:		X11/Applications
 Requires:	%{name}-base = %{version}-%{release}
 
@@ -925,7 +926,7 @@ Requires:	%{name}-base = %{version}-%{release}
 K Desktop Environment - Punjabi language support.
 
 %description Punjabi -l pl
-KDE - wsparcie dla jêzyka punjabi.
+KDE - wsparcie dla jêzyka pend¿abskiego.
 
 %package Polish
 Summary:	K Desktop Environment - Polish language support
