@@ -14,8 +14,9 @@ Version:	3.2.0
 Release:	1
 License:	GPL/LGPL
 Group:		X11/Applications
-Source0:	ftp://ftp.kde.org/pub/kde/stable/%{version}/src/%{name}-%{version}.tar.bz2
-# Source0-md5:	fe6fe3d722a12760522b688b749beca6
+#Source0:	ftp://ftp.kde.org/pub/kde/stable/%{version}/src/%{name}-%{version}.tar.bz2
+Source0:        http://ep09.pld-linux.org/~djurban/kde/%{name}-%{version}.tar.bz2
+# Source0-md5:	13299c38d4acb77ae4edf759b327c1ab	
 Source1:	%{name}-splitmo
 Source2:	%{name}-splitdoc
 Source3:        %{name}-splitdoc-shared
