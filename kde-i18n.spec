@@ -1,8 +1,8 @@
 Summary:	K Desktop Environment - International Support
 Summary(pl):	KDE - Wsparcie dla t³umaczeñ miêdzynarodowych
 Name:		kde-i18n
-Version:	2.2.1
-Release:	2
+Version:	2.2.2
+Release:	1
 License:	GPL/LGPL
 Group:		X11/Applications
 Group(de):	X11/Applikationen
@@ -13,10 +13,10 @@ Group(pt):	X11/Aplicações
 Source0:	ftp://ftp.kde.org/pub/kde/stable/%{version}/src/%{name}-%{version}.tar.bz2
 # this is workaround - I don't know Chinese :)
 Source1:	ppdtranslations.gmo
-Patch0:		%{name}-pl.patch
-Patch1:		%{name}-ugly.patch
+Patch0:		%{name}-ugly.patch
 BuildRequires:	libxml2 >= 2.4.2
 BuildRequires:	kdelibs-devel
+BuildRequires:	libxml2-devel
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %define		_prefix		/usr/X11R6
@@ -37,6 +37,18 @@ Group(pt_BR):	X11/Aplicações
 Group(pt):	X11/Aplicações
 
 %description Affrikaans
+K Desktop Environment - International Support.
+
+%package Azerbaijani
+Summary:	K Desktop Environment - International Support
+Group:		X11/Applications
+Group(de):	X11/Applikationen
+Group(es):	X11/Aplicaciones
+Group(pl):	X11/Aplikacje
+Group(pt_BR):	X11/Aplicações
+Group(pt):	X11/Aplicações
+
+%description Azerbaijani
 K Desktop Environment - International Support.
 
 %package Bulgarian
@@ -351,6 +363,30 @@ Group(pt):	X11/Aplicações
 %description Lithuanian
 K Desktop Environment - International Support.
 
+%package Latvian
+Summary:	K Desktop Environment - International Support
+Group:		X11/Applications
+Group(de):	X11/Applikationen
+Group(es):	X11/Aplicaciones
+Group(pl):	X11/Aplikacje
+Group(pt_BR):	X11/Aplicações
+Group(pt):	X11/Aplicações
+
+%description Latvian
+K Desktop Environment - International Support.
+
+%package Maltese
+Summary:	K Desktop Environment - International Support
+Group:		X11/Applications
+Group(de):	X11/Applikationen
+Group(es):	X11/Aplicaciones
+Group(pl):	X11/Aplikacje
+Group(pt_BR):	X11/Aplicações
+Group(pt):	X11/Aplicações
+
+%description Maltese
+K Desktop Environment - International Support.
+
 %package Maori
 Summary:	K Desktop Environment - International Support
 Group:		X11/Applications
@@ -591,6 +627,18 @@ Group(pt):	X11/Aplicações
 %description Walloon
 K Desktop Environment - International Support.
 
+%package Xhosa
+Summary:	K Desktop Environment - International Support
+Group:		X11/Applications
+Group(de):	X11/Applikationen
+Group(es):	X11/Aplicaciones
+Group(pl):	X11/Aplikacje
+Group(pt_BR):	X11/Aplicações
+Group(pt):	X11/Aplicações
+
+%description Xhosa
+K Desktop Environment - International Support.
+
 %package Simplified_Chinese
 Summary:	K Desktop Environment - International Support
 Group:		X11/Applications
@@ -618,11 +666,10 @@ K Desktop Environment - International Support.
 %prep
 %setup -q
 %patch0 -p1
-%patch1 -p1
 
 %build
 %define         _sharedir       %{_datadir}
-%define         _htmldir        %{_sharedir}/doc/kde/HTML
+%define         _htmldir        /usr/share/doc/kde/HTML
 
 kde_htmldir="%{_htmldir}"; export kde_htmldir
 
@@ -643,8 +690,8 @@ FindLang() {
     echo "%defattr(644,root,root,755)" > "$2.lang"
 
 # share/doc/kde/HTML/(%%lang)
-    if [ -d "$RPM_BUILD_ROOT/%{_datadir}/doc/kde/HTML/$1" ]; then
-	echo "%lang($1) %{_datadir}/doc/kde/HTML/$1" >> "$2.lang"
+    if [ -d "$RPM_BUILD_ROOT/%{_htmldir}/$1" ]; then
+	echo "%lang($1) %{_htmldir}/$1" >> "$2.lang"
     fi
 
 # share/locale/(%%lang)
@@ -667,6 +714,7 @@ rm -rf $RPM_BUILD_ROOT
 %{__make} DESTDIR=$RPM_BUILD_ROOT install
 
 FindLang af Affrikaans
+FindLang az Azerbaijani
 FindLang bg Bulgarian
 FindLang br Breton
 FindLang ca Catalan
@@ -693,8 +741,10 @@ FindLang it Italian
 FindLang ja Japanese
 FindLang ko Korean
 FindLang lt Lithuanian
+FindLang lv Latvian
 FindLang mi Maori
 FindLang mk Macedonian
+FindLang mt Maltese
 FindLang nl Dutch
 FindLang no Norwegian_Bokmaal
 # wrong: should be "nn" or "nn_NO" - not "no_NY"
@@ -713,6 +763,7 @@ FindLang ta Tamil
 FindLang th Thai
 FindLang tr Turkish
 FindLang uk Ukrainian
+FindLang xh Xhosa
 FindLang wa Walloon
 FindLang zh_CN.GB2312 Simplified_Chinese
 FindLang zh_TW.Big5 Chinese
@@ -721,6 +772,7 @@ FindLang zh_TW.Big5 Chinese
 rm -rf $RPM_BUILD_ROOT
 
 %files -f Affrikaans.lang Affrikaans
+%files -f Azerbaijani.lang Azerbaijani
 %files -f Bulgarian.lang Bulgarian
 %files -f Breton.lang Breton
 %files -f Catalan.lang Catalan
@@ -747,6 +799,8 @@ rm -rf $RPM_BUILD_ROOT
 %files -f Japanese.lang Japanese
 %files -f Korean.lang Korean
 %files -f Lithuanian.lang Lithuanian
+%files -f Latvian.lang Latvian
+%files -f Maltese.lang Maltese
 %files -f Maori.lang Maori
 %files -f Macedonian.lang Macedonian
 %files -f Dutch.lang Dutch
@@ -767,5 +821,6 @@ rm -rf $RPM_BUILD_ROOT
 %files -f Turkish.lang Turkish
 %files -f Ukrainian.lang Ukrainian
 %files -f Walloon.lang Walloon
+%files -f Xhosa.lang Xhosa
 %files -f Simplified_Chinese.lang Simplified_Chinese
 %files -f Chinese.lang Chinese
