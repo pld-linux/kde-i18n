@@ -793,6 +793,9 @@ if [ "$package" != "" -a "$directory" != "" ] ; then
 fi
 done
 
+mv $RPM_BUILD_ROOT%{_datadir}/apps/ktuberling $RPM_BUILD_ROOT/tmp/kdegames%{_datadir}/apps
+mv $RPM_BUILD_ROOT%{_datadir}/apps/amor $RPM_BUILD_ROOT/tmp/kdetoys%{_datadir}/apps
+
 %if %{?_with_tarball_creation:1}%{!?_tarball_creation:0}
 ISDIR="`pwd`"
 for i in $package_list ; do
