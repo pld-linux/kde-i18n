@@ -10,6 +10,11 @@
 # --with	kdelibs			Create single small package containing
 #					essential files only
 #
+
+# There is no need to strip/remove rpath in anything... speedup building:
+%define		no_install_post_strip	1
+%define		no_install_post_chrpath	1
+
 Summary:	K Desktop Environment - international support
 Summary(pl):	KDE - wsparcie dla wielu jêzyków
 Name:		kde-i18n
