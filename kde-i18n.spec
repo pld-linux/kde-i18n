@@ -164,6 +164,7 @@ Obsoletes:	kdebase-kjobviewer-i18n
 Obsoletes:	kdebase-kpersonalizer-i18n
 Obsoletes:	kdebase-ksystraycmd-i18n
 Obsoletes:	kdebase-libkonq-i18n
+Obsoletes:	konqueror-libs-i18n
 Obsoletes:	kdebase-mailnews-i18n
 Obsoletes:	kdeedu-i18n
 Obsoletes:	kdeedu-flashkard-i18n
