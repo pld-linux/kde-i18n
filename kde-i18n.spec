@@ -1071,7 +1071,10 @@ rm -rf $RPM_BUILD_ROOT
 %files -f Norwegian_Nynorsk.lang Norwegian_Nynorsk
 %files -f Northern_Sotho.lang Northern_Sotho
 # %files -f Gascon_occitan.lang Gascon_occitan
+
 %files -f Polish.lang Polish
+%{_datadir}/services/searchproviders/*.desktop
+
 %files -f Portuguese.lang Portuguese
 %files -f Brazil_Portuguese.lang Brazil_Portuguese
 %files -f Romanian.lang Romanian
