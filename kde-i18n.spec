@@ -547,7 +547,7 @@ Group:		X11/Applications
 K Desktop Environment - Mongolian language support.
 
 %description Mongolian -l pl
-KDE - wsparcie dla jêzyka maltañskiego.
+KDE - wsparcie dla jêzyka mongolskiego.
 
 %package Dutch
 Summary:	K Desktop Environment - Dutch language support
