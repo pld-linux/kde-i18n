@@ -10,12 +10,12 @@
 Summary:	K Desktop Environment - international support
 Summary(pl):	KDE - wsparcie dla wielu jêzyków
 Name:		kde-i18n
-Version:	3.1.3
+Version:	3.1.4
 Release:	1
 License:	GPL/LGPL
 Group:		X11/Applications
 Source0:	ftp://ftp.kde.org/pub/kde/stable/%{version}/src/%{name}-%{version}.tar.bz2
-# Source0-md5:	dd7fcd22d3b90cdb024623e627ab87b6
+# Source0-md5:	fe6fe3d722a12760522b688b749beca6
 Source1:	%{name}-splitmo
 Source2:	%{name}-splitdoc
 %if 0%{?_with_alltogether:1}
@@ -86,6 +86,8 @@ BuildRequires:	kdelibs-devel
 BuildRequires:	libxml2-progs >= 2.4.2
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
+
+%define		_prefix		/usr/X11R6
 
 %description
 K Desktop Environment - international support.
