@@ -778,10 +778,8 @@ kde_htmldir="%{_htmldir}"; export kde_htmldir
 LDFLAGS="%{rpmldflags}"
 
 for plik in `find ./ -name \*.desktop` ; do
-#        if [ -d $plik ]; then
 	echo $plik
 	sed -i -e "s/\[nb\]/\[no\]/g" $plik
-#	fi 
 done
 
 # Not necessary for now
@@ -793,21 +791,17 @@ done
 # done
 		
 for plik in `find ./nb -name Makefile.am` ; do
-#        if [ -d $plik ]; then
 	echo $plik
 	sed -i -e "s/nb/no/g" $plik
-#	fi
 done
 
 for plik in `find ./nb -name configure.in.in` ; do
-#	if [ -d $plik ]; then
 	echo $plik
 	sed -i -e "s/nb/no/g" $plik
-#        fi
 done
 
-sed -ie "s/nb/no/g" ./subdirs
-sed -ie "s/nb/no/g" ./teamnames
+sed -i e "s/nb/no/g" ./subdirs
+sed -i e "s/nb/no/g" ./teamnames
 mv -f nb no
 %{__make} -f admin/Makefile.common cvs
 
