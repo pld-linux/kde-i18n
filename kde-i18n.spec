@@ -1,14 +1,43 @@
+# Conditional build:
+# --with	alltogether		Build single package containing
+#					support for all languages
+#
+# --with	tarball_creation	Create tarballs with resources for
+#					specific packages
+
 Summary:	K Desktop Environment - International Support
 Summary(pl):	KDE - Wsparcie dla t³umaczeñ miêdzynarodowych
 Name:		kde-i18n
 Version:	3.0.1
-Release:	1
+Release:	1.1
 License:	GPL/LGPL
 Group:		X11/Applications
 Source0:	ftp://ftp.kde.org/pub/kde/stable/3.0/src/%{name}-%{version}.tar.bz2
+Source1:	%{name}-splitmo
+Source2:	%{name}-splitdoc
 Patch0:		%{name}-nodoc.patch
-Patch1:		%{name}-pl_lang_names.patch
+Patch1:		%{name}-3.0.1-pl_lang_names.patch
 Patch2:		%{name}-nb_to_no.patch
+Patch3:		%{name}-3.0.1-core.patch
+%if %{?_with_alltogether:1}%{!?_with_alltogether:0}
+Obsoletes:	kde-i18n-Affrikaans kde-i18n-Arabic kde-i18n-Azerbaijani
+Obsoletes:	kde-i18n-Bulgarian kde-i18n-Bosnian kde-i18n-Catalan
+Obsoletes:	kde-i18n-Czech kde-i18n-Danish kde-i18n-German kde-i18n-Greek 
+Obsoletes:	kde-i18n-English_UK kde-i18n-Esperanto kde-i18n-Spanish 
+Obsoletes:	kde-i18n-Estonian kde-i18n-Finnish kde-i18n-French
+Obsoletes:	kde-i18n-Hebrew kde-i18n-Croatian kde-i18n-Hungarian 
+Obsoletes:	kde-i18n-Indonesian kde-i18n-Icelandic kde-i18n-Italian 
+Obsoletes:	kde-i18n-Japanese kde-i18n-Korean kde-i18n-Lithuanian 
+Obsoletes:	kde-i18n-Latvian kde-i18n-Maltese kde-i18n-Dutch 
+Obsoletes:	kde-i18n-Norwegian kde-i18n-Norwegian_Bokmaal
+Obsoletes:	kde-i18n-Norwegian_Nynorsk kde-i18n-Polish kde-i18n-Portugnese 
+Obsoletes:	kde-i18n-Brazil_Portugnese kde-i18n-Romanian kde-i18n-Russian 
+Obsoletes:	kde-i18n-Slovak kde-i18n-Slovenian kde-i18n-Serbian 
+Obsoletes:	kde-i18n-Swedish kde-i18n-Tamil kde-i18n-Thai kde-i18n-Turkish 
+Obsoletes:	kde-i18n-Ukrainian kde-i18n-Venda kde-i18n-Vietnamese 
+Obsoletes:	kde-i18n-Xhosa kde-i18n-Simplified_Chinese kde-i18n-Chinese 
+Obsoletes:	kde-i18n-Zulu
+%endif
 BuildRequires:	libxml2 >= 2.4.2
 # It creates symlinks to some not-translated files.
 BuildRequires:	kdelibs = %{version}
@@ -26,6 +55,7 @@ K Desktop Environment - International Support.
 %description -l pl
 KDE - Wsparcie dla t³umaczeñ miêdzynarodowych.
 
+%if %{?_with_alltogether:0}%{!?_with_alltogether:1}
 %package Affrikaans
 Summary:	K Desktop Environment - International Support
 Group:		X11/Applications
@@ -422,16 +452,14 @@ K Desktop Environment - International Support.
 KDE - Wsparcie dla t³umaczeñ miêdzynarodowych.
 
 
-#%package Norwegian_Bokmaal
 %package Norwegian
 Summary:	K Desktop Environment - International Support
 Group:		X11/Applications
+Obsoletes:	kde-i18n-Norwegian_Bokmaal
 
-#%description Norwegian_Bokmaal
 %description Norwegian
 K Desktop Environment - International Support.
 
-#%description Norwegian_Bokmaal -l pl
 %description Norwegian -l pl
 KDE - Wsparcie dla t³umaczeñ miêdzynarodowych.
 
@@ -676,6 +704,7 @@ K Desktop Environment - International Support.
 
 %description Zulu -l pl
 KDE - Wsparcie dla t³umaczeñ miêdzynarodowych.
+%endif
 
 %prep
 %setup -q
@@ -683,6 +712,7 @@ KDE - Wsparcie dla t³umaczeñ miêdzynarodowych.
 %patch1 -p1
 rm -rf no; mv nb no
 %patch2 -p1
+%patch3 -p1
 
 %build
 %define         _sharedir       %{_datadir}
@@ -726,8 +756,50 @@ FindLang() {
     fi
 }
 
-rm -rf $RPM_BUILD_ROOT
 %{__make} DESTDIR=$RPM_BUILD_ROOT install
+
+package_list=`( grep -v '^#' < %{SOURCE1}; grep -v '^#' < %{SOURCE2} ) | cut -f 1 | sort | uniq`
+for i in $package_list ; do
+	install -d $RPM_BUILD_ROOT/tmp/$i
+done
+
+grep -v '^#' < %{SOURCE1} | \
+while read package file ; do
+if [ "$package" != "" -a "$directory"!= "" ] ; then
+    if [ -d $RPM_BUILD_ROOT/tmp/$package ] ; then 
+	for f in $RPM_BUILD_ROOT%{_datadir}/locale/*/LC_MESSAGES/$file ; do
+	    DIR=`echo $f | sed -e s,%{_datadir}/locale/,/tmp/$package%{_datadir}/locale/, -e s,/$file'$',,`
+	    if [ ! -d $DIR ] ; then
+		install -d $DIR
+	    fi
+	    mv $f $DIR
+	done
+    fi
+fi
+done
+
+grep -v '^#' < %{SOURCE2} | \
+while read package directory ; do
+if [ "$package" != "" -a "$directory"!= "" ] ; then
+    if [ -d $RPM_BUILD_ROOT/tmp/$package ] ; then 
+	for f in $RPM_BUILD_ROOT%{_htmldir}/*/$directory ; do
+	    DIR=`echo $f | sed -e s,%{_htmldir}/,/tmp/$package%{_htmldir}/, -e s,/$directory'$',,`
+	    if [ ! -d $DIR ] ; then
+		install -d $DIR
+	    fi
+	    mv $f $DIR
+	done
+    fi
+fi
+done
+
+%if %{?_with_tarball_creation:1}%{!?_tarball_creation:0}
+ISDIR="`pwd`"
+for i in $package_list ; do
+	( cd $RPM_BUILD_ROOT/tmp/$i ; tar cjf %{_sourcedir}/%{name}-$i-%{version}.tar.bz2 . )
+done
+cd "$ISDIR"
+%endif
 
 FindLang af Affrikaans
 FindLang ar Arabic
@@ -764,8 +836,6 @@ FindLang lv Latvian
 # FindLang mi Maori
 # FindLang mk Macedonian
 FindLang mt Maltese
-# This is bogus
-# FindLang nb Norwegian_Bokmaal
 FindLang nl Dutch
 FindLang nn Norwegian_Nynorsk
 FindLang no Norwegian
@@ -791,9 +861,14 @@ FindLang zh_CN Simplified_Chinese
 FindLang zh_TW Chinese
 FindLang zu Zulu
 
-%clean
-rm -rf $RPM_BUILD_ROOT
+%if %{?_with_alltogether:1}%{!?_with_alltogether:0}
+cat [A-Z]*.lang >all.lang
+%endif
 
+%clean
+#rm -rf $RPM_BUILD_ROOT
+
+%if %{?_with_alltogether:0}%{!?_with_alltogether:1}
 %files -f Affrikaans.lang Affrikaans
 %files -f Arabic.lang Arabic
 %files -f Azerbaijani.lang Azerbaijani
@@ -853,3 +928,8 @@ rm -rf $RPM_BUILD_ROOT
 %files -f Simplified_Chinese.lang Simplified_Chinese
 %files -f Chinese.lang Chinese
 %files -f Zulu.lang Zulu
+%endif
+
+%if %{?_with_alltogether:1}%{!?_with_alltogether:0}
+%files -f all.lang
+%endif
