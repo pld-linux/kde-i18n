@@ -1,3 +1,4 @@
+#
 # Conditional build:
 # --with	alltogether		Build single package containing
 #					support for all languages
@@ -7,7 +8,7 @@
 #
 # --with	kdelibs			Create single small package containing
 #					essential files only
-
+#
 Summary:	K Desktop Environment - international support
 Summary(pl):	KDE - wsparcie dla wielu jêzyków
 Name:		kde-i18n
@@ -158,13 +159,14 @@ KDE - wsparcie dla jêzyka czeskiego.
 
 #%package Cymraeg
 #Summary:	K Desktop Environment - Cymraeg language support
+#Summary(pl):	KDE - wsparcie dla jêzyka walijskiego
 #Group:		X11/Applications
 #
 #%description Cymraeg
 #K Desktop Environment - Cymraeg language support.
 #
 #%description Cymraeg -l pl
-#KDE - Wsparcie dla t³umaczeñ miêdzynarodowych.
+#KDE - wsparcie dla jêzyka walijskiego.
 
 %package Danish
 Summary:	K Desktop Environment - Danish language support
@@ -256,14 +258,14 @@ KDE - wsparcie dla jêzyka estoñskiego.
 
 #%package Basque
 #Summary:	K Desktop Environment - Basque language support
+#Summary(pl):	KDE - wsparcie dla jêzyka baskijskiego
 #Group:		X11/Applications
 #
 #%description Basque
 #K Desktop Environment - Basque language support.
 #
 #%description Basque -l pl
-#KDE - Wsparcie dla t³umaczeñ miêdzynarodowych.
-
+#KDE - wsparcie dla jêzyka baskijskiego.
 
 %package Finnish
 Summary:	K Desktop Environment - Finnish language support
@@ -300,13 +302,14 @@ KDE - wsparcie dla jêzyka francuskiego.
 
 #%package Galician
 #Summary:	K Desktop Environment - Galician language support
+#Summary(pl):	KDE - wsparcie dla jêzyka szkockiego gaelickiego
 #Group:		X11/Applications
 #
 #%description Galician
 #K Desktop Environment - Galician language support.
 #
 #%description Galician -l pl
-#KDE - Wsparcie dla t³umaczeñ miêdzynarodowych.
+#KDE - wsparcie dla jêzyka szkockiego gaelickiego.
 
 %package Hebrew
 Summary:	K Desktop Environment - Hebrew language support
@@ -420,13 +423,14 @@ KDE - wsparcie dla jêzyka ³otewskiego.
 
 #%package Maori
 #Summary:	K Desktop Environment - Maori language support
+#Summary(pl):	KDE - wsparcie dla jêzyka maoryjskiego
 #Group:		X11/Applications
 #
 #%description Maori
 #K Desktop Environment - Maori language support.
 #
 #%description Maori -l pl
-#KDE - Wsparcie dla t³umaczeñ miêdzynarodowych.
+#KDE - wsparcie dla jêzyka maoryjskiego.
 
 #%package Macedonian
 #Summary:	K Desktop Environment - Macedonian language support
@@ -475,24 +479,25 @@ KDE - wsparcie dla jêzyka norweskiego.
 
 %package Norwegian_Nynorsk
 Summary:	K Desktop Environment - Norwegian (Nynorsk) language support
-Summary(pl):	KDE - wsparcie dla jêzyka norweskiego (odmiany nunorsk)
+Summary(pl):	KDE - wsparcie dla jêzyka norweskiego (odmiany nynorsk)
 Group:		X11/Applications
 
 %description Norwegian_Nynorsk
 K Desktop Environment - Norwegian (Nynorsk) language support.
 
 %description Norwegian_Nynorsk -l pl
-KDE - wsparcie dla jêzyka norweskiego (odmiany nunorsk).
+KDE - wsparcie dla jêzyka norweskiego (odmiany nynorsk).
 
 #%package Gascon_occitan
-#Summary:	K Desktop Environment - International Support
+#Summary:	K Desktop Environment - Occitan (Gascon) language support
+#Summary(pl):	KDE - wsparcie dla jêzyka oksytañskiego (dialektu gaskoñskiego)
 #Group:		X11/Applications
 #
 #%description Gascon_occitan
-#K Desktop Environment - International Support.
+#K Desktop Environment - Occitan (Gascon) language support.
 #
 #%description Gascon_occitan -l pl
-#KDE - Wsparcie dla t³umaczeñ miêdzynarodowych.
+#KDE - wsparcie dla jêzyka oksytañskiego (dialektu gaskoñskiego).
 
 %package Polish
 Summary:	K Desktop Environment - Polish language support
@@ -674,14 +679,14 @@ KDE - wsparcie dla jêzyka wietnamskiego.
 
 %package Xhosa
 Summary:	K Desktop Environment - Xhosa language support
-Summary(pl):	KDE - wsparcie dla jêzyka xhosa
+Summary(pl):	KDE - wsparcie dla jêzyka khosa
 Group:		X11/Applications
 
 %description Xhosa
 K Desktop Environment - Xhosa language support.
 
 %description Xhosa -l pl
-KDE - wsparcie dla jêzyka xhosa.
+KDE - wsparcie dla jêzyka khosa.
 
 %package Simplified_Chinese
 Summary:	K Desktop Environment - simplified Chinese language support
@@ -751,22 +756,22 @@ FindLang() {
     echo "%defattr(644,root,root,755)" > "$2.lang"
 
 # share/doc/kde/HTML/(%%lang)
-    if [ -d "$RPM_BUILD_ROOT/%{_htmldir}/$1" ]; then
+    if [ -d "$RPM_BUILD_ROOT%{_htmldir}/$1" ]; then
 	echo "%lang($1) %{_htmldir}/$1" >> "$2.lang"
     fi
 
 # share/locale/(%%lang)
-    if [ -d "$RPM_BUILD_ROOT/%{_datadir}/locale/$1" ]; then
+    if [ -d "$RPM_BUILD_ROOT%{_datadir}/locale/$1" ]; then
 	echo "%lang($1) %{_datadir}/locale/$1" >> "$2.lang"
     fi
 
 # share/apps/amor/tips-(%%lang)
-    if [ -f "$RPM_BUILD_ROOT/%{_datadir}/apps/amor/tips-$1" ]; then
+    if [ -f "$RPM_BUILD_ROOT%{_datadir}/apps/amor/tips-$1" ]; then
 	echo "%lang($1) %{_datadir}/apps/amor/tips-$1" >> "$2.lang"
     fi
 
 # share/apps/ktuberling/sounds/(%%lang)
-    if [ -d "$RPM_BUILD_ROOT/%{_datadir}/apps/ktuberling/sounds/$1" ]; then
+    if [ -d "$RPM_BUILD_ROOT%{_datadir}/apps/ktuberling/sounds/$1" ]; then
 	echo "%lang($1) %{_datadir}/apps/ktuberling/sounds/$1" >> "$2.lang"
     fi
 }
