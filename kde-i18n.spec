@@ -509,6 +509,7 @@ KDE - wsparcie dla jêzyka maltañskiego.
 %package Dutch
 Summary:	K Desktop Environment - Dutch language support
 Summary(pl):	KDE - wsparcie dla jêzyka holenderskiego
+Group:		X11/Applications
 
 %description Dutch
 K Desktop Environment - Dutch language support.
@@ -518,15 +519,16 @@ KDE - wsparcie dla jêzyka holenderskiego.
 
 
 %package Norwegian
-Summary:	K Desktop Environment - International Support
+Summary:	K Desktop Environment - Norwegian language support
+Summary(pl):	KDE - wsparcie dla jêzyka norweskiego
 Group:		X11/Applications
 Obsoletes:	kde-i18n-Norwegian_Bokmaal
 
 %description Norwegian
-K Desktop Environment - International Support.
+K Desktop Environment - Norwegian language support.
 
 %description Norwegian -l pl
-KDE - Wsparcie dla t³umaczeñ miêdzynarodowych.
+KDE - wsparcie dla jêzyka norweskiego.
 
 
 %package Norwegian_Bokmaal
