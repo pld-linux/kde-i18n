@@ -1353,10 +1353,11 @@ cd -
 
 ISDIR="`pwd`"
 for i in $package_list ; do
-	( cd $RPM_BUILD_ROOT/tmp/$i ; tar cjf %{_sourcedir}/%{name}-$i-%{version}.tar.bz2 . )
+	( cd $RPM_BUILD_ROOT/tmp/$i ; tar cjf %{_sourcedir}/$i-i18n-%{version}.tar.bz2 . )
 	echo "Wrote %{name}-$i-%{version}.tar.bz2"
 done
 cd "$ISDIR"
+exit 0
 %endif
 
 %if %{with kdelibs}
