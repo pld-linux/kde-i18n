@@ -1,0 +1,2033 @@
+diff -uNr kde-i18n-3.0.orig/Makefile.in kde-i18n-3.0/Makefile.in
+--- kde-i18n-3.0.orig/Makefile.in	Tue Mar 26 02:53:04 2002
++++ kde-i18n-3.0/Makefile.in	Thu May 23 11:07:40 2002
+@@ -407,7 +407,7 @@
+ 
+ #>- DISTFILES = $(DIST_COMMON) $(DIST_SOURCES) $(TEXINFOS) $(EXTRA_DIST)
+ #>+ 4
+-KDE_DIST=kde-i18n-lt.tar.bz2 kde-i18n-ja.tar.bz2 kde-i18n-it.tar.bz2 kde-i18n-da.tar.bz2 kde-i18n-ru.tar.bz2 kde-i18n-hr.tar.bz2 check_po_files check_charsets kde-i18n-nl.tar.bz2 check_makefiles kde-i18n-ro.tar.bz2 kde-i18n-he.tar.bz2 kde-i18n-es.tar.bz2 kde-i18n-el.tar.bz2 msgsplit.pl kde-i18n-lv.tar.bz2 kde-i18n-bs.tar.bz2 createdesktop findfiles kde-i18n-et.tar.bz2 kde-i18n-en_GB.tar.bz2 kde-i18n-ca.tar.bz2 check_duplicates check_gui_texts kde-i18n-nn.tar.bz2 kde-i18n-pl.tar.bz2 kde-i18n-ar.tar.bz2 kde-i18n-hu.tar.bz2 kde-i18n-fi.tar.bz2 check_consistency apply.cc update_xml subdirs kde-i18n-bg.tar.bz2 commentmerge kde-i18n-az.tar.bz2 kde-i18n-pt.tar.bz2 kde-i18n-ko.tar.bz2 kde-i18n-de.tar.bz2 kde-i18n-mt.tar.bz2 kde-i18n-eo.tar.bz2 highscore kde-i18n-pt_BR.tar.bz2 kde-i18n-nb.tar.bz2 kde-i18n-id.tar.bz2 kde-i18n-fr.tar.bz2 highscore.html kde-i18n-af.tar.bz2 Makefile.cvs kde-i18n-is.tar.bz2 teamnames kde-i18n-cs.tar.bz2 
++KDE_DIST=kde-i18n-lt.tar.bz2 kde-i18n-ja.tar.bz2 kde-i18n-it.tar.bz2 kde-i18n-da.tar.bz2 kde-i18n-ru.tar.bz2 kde-i18n-hr.tar.bz2 check_po_files check_charsets kde-i18n-nl.tar.bz2 check_makefiles kde-i18n-ro.tar.bz2 kde-i18n-he.tar.bz2 kde-i18n-es.tar.bz2 kde-i18n-el.tar.bz2 msgsplit.pl kde-i18n-lv.tar.bz2 kde-i18n-bs.tar.bz2 createdesktop findfiles kde-i18n-et.tar.bz2 kde-i18n-en_GB.tar.bz2 kde-i18n-ca.tar.bz2 check_duplicates check_gui_texts kde-i18n-nn.tar.bz2 kde-i18n-pl.tar.bz2 kde-i18n-ar.tar.bz2 kde-i18n-hu.tar.bz2 kde-i18n-fi.tar.bz2 check_consistency apply.cc update_xml subdirs kde-i18n-bg.tar.bz2 commentmerge kde-i18n-az.tar.bz2 kde-i18n-pt.tar.bz2 kde-i18n-ko.tar.bz2 kde-i18n-de.tar.bz2 kde-i18n-mt.tar.bz2 kde-i18n-eo.tar.bz2 highscore kde-i18n-pt_BR.tar.bz2 kde-i18n-no.tar.bz2 kde-i18n-id.tar.bz2 kde-i18n-fr.tar.bz2 highscore.html kde-i18n-af.tar.bz2 Makefile.cvs kde-i18n-is.tar.bz2 teamnames kde-i18n-cs.tar.bz2 
+ 
+ DISTFILES= $(DIST_COMMON) $(DIST_SOURCES) $(TEXINFOS) $(EXTRA_DIST) $(KDE_DIST)
+ 
+diff -uNr kde-i18n-3.0.orig/af/messages/entry.desktop kde-i18n-3.0/af/messages/entry.desktop
+--- kde-i18n-3.0.orig/af/messages/entry.desktop	Wed May 22 22:14:41 2002
++++ kde-i18n-3.0/af/messages/entry.desktop	Thu May 23 11:07:40 2002
+@@ -18,7 +18,7 @@
+ Name[lv]=Āfrikāņu
+ Name[mi]=Reo Äwherika Tatimana
+ Name[mk]=Африкански
+-Name[nb]=Afrikansk
++Name[no]=Afrikansk
+ Name[pl]=afrykanerski
+ Name[pt_BR]=Africânes
+ Name[ro]=Africană
+diff -uNr kde-i18n-3.0.orig/ar/messages/entry.desktop kde-i18n-3.0/ar/messages/entry.desktop
+--- kde-i18n-3.0.orig/ar/messages/entry.desktop	Wed May 22 22:06:12 2002
++++ kde-i18n-3.0/ar/messages/entry.desktop	Thu May 23 11:07:40 2002
+@@ -32,9 +32,9 @@
+ Name[mi]=Reo Arapia
+ Name[mk]=Арапски
+ Name[mt]=Għarbi
+-Name[nb]=Arabisk
+ Name[nl]=Arabisch
+ Name[nn]=Arabisk
++Name[no]=Arabisk
+ Name[oc]=Arab
+ Name[pl]=arabski
+ Name[pt]=Arábico
+diff -uNr kde-i18n-3.0.orig/az/messages/entry.desktop kde-i18n-3.0/az/messages/entry.desktop
+--- kde-i18n-3.0.orig/az/messages/entry.desktop	Wed May 22 22:14:13 2002
++++ kde-i18n-3.0/az/messages/entry.desktop	Thu May 23 11:07:40 2002
+@@ -23,9 +23,9 @@
+ Name[lt]=Azerbaidžaniečių
+ Name[lv]=Azerbaidžāņu
+ Name[mt]=Ażerbajġani
+-Name[nb]=Aserbadjansk
+ Name[nl]=Azerbeidjaans
+ Name[nn]=Aserbajdsjansk
++Name[no]=Aserbadjansk
+ Name[pl]=azerski
+ Name[pt]=Azerbaijanês
+ Name[pt_BR]=Azerbaijão
+diff -uNr kde-i18n-3.0.orig/bg/messages/entry.desktop kde-i18n-3.0/bg/messages/entry.desktop
+--- kde-i18n-3.0.orig/bg/messages/entry.desktop	Wed May 22 22:06:04 2002
++++ kde-i18n-3.0/bg/messages/entry.desktop	Thu May 23 11:07:40 2002
+@@ -32,9 +32,9 @@
+ Name[mi]=Reo Purukeria
+ Name[mk]=Бугарски
+ Name[mt]=Bulgaru
+-Name[nb]=Bulgarsk
+ Name[nl]=Bulgaars
+ Name[nn]=Bulgarsk
++Name[no]=Bulgarsk
+ Name[oc]=Bulgar
+ Name[pl]=bułgarski
+ Name[pt]=Búlgaro
+diff -uNr kde-i18n-3.0.orig/bs/messages/entry.desktop kde-i18n-3.0/bs/messages/entry.desktop
+--- kde-i18n-3.0.orig/bs/messages/entry.desktop	Wed May 22 22:13:59 2002
++++ kde-i18n-3.0/bs/messages/entry.desktop	Thu May 23 11:07:40 2002
+@@ -25,9 +25,9 @@
+ Name[lt]=Bosnių
+ Name[lv]=Bosniešu
+ Name[mt]=Bożniaku
+-Name[nb]=Bosninsk
+ Name[nl]=Bosnisch
+ Name[nn]=Bosnisk
++Name[no]=Bosninsk
+ Name[pl]=bośniacki
+ Name[pt]=Bósnio
+ Name[pt_BR]=Bósnio
+diff -uNr kde-i18n-3.0.orig/ca/messages/entry.desktop kde-i18n-3.0/ca/messages/entry.desktop
+--- kde-i18n-3.0.orig/ca/messages/entry.desktop	Wed May 22 22:05:54 2002
++++ kde-i18n-3.0/ca/messages/entry.desktop	Thu May 23 11:07:40 2002
+@@ -31,9 +31,9 @@
+ Name[mi]=Reo Peina Raki Räwhiti
+ Name[mk]=Каталански
+ Name[mt]=Katalan
+-Name[nb]=Katalan
+ Name[nl]=Catalaans
+ Name[nn]=Katalansk
++Name[no]=Katalan
+ Name[pl]=kataloński
+ Name[pt]=Catalão
+ Name[pt_BR]=Catalão
+diff -uNr kde-i18n-3.0.orig/cs/messages/entry.desktop kde-i18n-3.0/cs/messages/entry.desktop
+--- kde-i18n-3.0.orig/cs/messages/entry.desktop	Wed May 22 22:13:52 2002
++++ kde-i18n-3.0/cs/messages/entry.desktop	Thu May 23 11:07:40 2002
+@@ -32,9 +32,9 @@
+ Name[lv]=Čehu
+ Name[mk]=Чешки
+ Name[mt]=Kżekk
+-Name[nb]=Tjekkisk
+ Name[nl]=Tsjechisch
+ Name[nn]=Tsjekkisk
++Name[no]=Tjekkisk
+ Name[oc]=Chec
+ Name[pl]=czeski
+ Name[pt]=Checo
+diff -uNr kde-i18n-3.0.orig/da/messages/entry.desktop kde-i18n-3.0/da/messages/entry.desktop
+--- kde-i18n-3.0.orig/da/messages/entry.desktop	Wed May 22 22:05:46 2002
++++ kde-i18n-3.0/da/messages/entry.desktop	Thu May 23 11:07:40 2002
+@@ -33,9 +33,9 @@
+ Name[mi]=Reo Tenemaka
+ Name[mk]=Дански
+ Name[mt]=Daniż
+-Name[nb]=Dansk
+ Name[nl]=Deens
+ Name[nn]=Dansk
++Name[no]=Dansk
+ Name[oc]=Danès
+ Name[pl]=duński
+ Name[pt]=Dinamarquês
+diff -uNr kde-i18n-3.0.orig/de/messages/entry.desktop kde-i18n-3.0/de/messages/entry.desktop
+--- kde-i18n-3.0.orig/de/messages/entry.desktop	Wed May 22 22:13:46 2002
++++ kde-i18n-3.0/de/messages/entry.desktop	Thu May 23 11:07:40 2002
+@@ -33,9 +33,9 @@
+ Name[mi]=Reo Tiamana
+ Name[mk]=Германски
+ Name[mt]=Ġermaniż
+-Name[nb]=Tysk
+ Name[nl]=Duits
+ Name[nn]=Tysk
++Name[no]=Tysk
+ Name[oc]=Alemani
+ Name[pl]=niemiecki
+ Name[pt]=Alemão
+diff -uNr kde-i18n-3.0.orig/el/messages/entry.desktop kde-i18n-3.0/el/messages/entry.desktop
+--- kde-i18n-3.0.orig/el/messages/entry.desktop	Wed May 22 22:05:32 2002
++++ kde-i18n-3.0/el/messages/entry.desktop	Thu May 23 11:07:40 2002
+@@ -33,9 +33,9 @@
+ Name[mi]=Reo Kariki
+ Name[mk]=Грчки
+ Name[mt]=Grieg
+-Name[nb]=Gresk
+ Name[nl]=Grieks
+ Name[nn]=Gresk
++Name[no]=Gresk
+ Name[oc]=Grec
+ Name[pl]=grecki
+ Name[pt]=Grego
+diff -uNr kde-i18n-3.0.orig/en_GB/messages/entry.desktop kde-i18n-3.0/en_GB/messages/entry.desktop
+--- kde-i18n-3.0.orig/en_GB/messages/entry.desktop	Wed May 22 22:13:39 2002
++++ kde-i18n-3.0/en_GB/messages/entry.desktop	Thu May 23 11:07:40 2002
+@@ -25,9 +25,9 @@
+ Name[lt]=Anglų (UK)
+ Name[lv]=Angļu (AK)
+ Name[mt]=Ingliż (UK)
+-Name[nb]=Engelsk (UK)
+ Name[nl]=Engels (UK)
+ Name[nn]=Engelsk (Storbritannia)
++Name[no]=Engelsk (UK)
+ Name[pl]=angielski (brytyjski)
+ Name[pt]=Inglês (Reino Unido)
+ Name[pt_BR]=Inglês da Inglaterra
+diff -uNr kde-i18n-3.0.orig/es/messages/entry.desktop kde-i18n-3.0/es/messages/entry.desktop
+--- kde-i18n-3.0.orig/es/messages/entry.desktop	Wed May 22 22:13:17 2002
++++ kde-i18n-3.0/es/messages/entry.desktop	Thu May 23 11:07:40 2002
+@@ -33,9 +33,9 @@
+ Name[mi]=Reo Peina
+ Name[mk]=Шпански
+ Name[mt]=Spanjol
+-Name[nb]=Spansk
+ Name[nl]=Spaans
+ Name[nn]=Spansk
++Name[no]=Spansk
+ Name[oc]=Espanhòl
+ Name[pl]=hiszpański
+ Name[pt]=Espanhol
+diff -uNr kde-i18n-3.0.orig/et/messages/entry.desktop kde-i18n-3.0/et/messages/entry.desktop
+--- kde-i18n-3.0.orig/et/messages/entry.desktop	Wed May 22 22:20:04 2002
++++ kde-i18n-3.0/et/messages/entry.desktop	Thu May 23 11:07:40 2002
+@@ -33,9 +33,9 @@
+ Name[mi]=Reo Etonia
+ Name[mk]=Естонски
+ Name[mt]=Estonjan
+-Name[nb]=Estonsk
+ Name[nl]=Ests
+ Name[nn]=Estisk
++Name[no]=Estonsk
+ Name[pl]=estoński
+ Name[pt]=Estónio
+ Name[pt_BR]=Estoniano
+diff -uNr kde-i18n-3.0.orig/fi/messages/entry.desktop kde-i18n-3.0/fi/messages/entry.desktop
+--- kde-i18n-3.0.orig/fi/messages/entry.desktop	Wed May 22 22:13:11 2002
++++ kde-i18n-3.0/fi/messages/entry.desktop	Thu May 23 11:07:40 2002
+@@ -33,9 +33,9 @@
+ Name[mi]=Reo Whinarana
+ Name[mk]=Фински
+ Name[mt]=Finlandiż
+-Name[nb]=Finsk
+ Name[nl]=Fins
+ Name[nn]=Finsk
++Name[no]=Finsk
+ Name[oc]=Finlandès
+ Name[pl]=fiński
+ Name[pt]=Finlandês
+diff -uNr kde-i18n-3.0.orig/fr/messages/entry.desktop kde-i18n-3.0/fr/messages/entry.desktop
+--- kde-i18n-3.0.orig/fr/messages/entry.desktop	Wed May 22 22:19:58 2002
++++ kde-i18n-3.0/fr/messages/entry.desktop	Thu May 23 11:07:40 2002
+@@ -32,9 +32,9 @@
+ Name[mi]=Reo Parani
+ Name[mk]=Француски
+ Name[mt]=Franċiż
+-Name[nb]=Fransk
+ Name[nl]=Frans
+ Name[nn]=Fransk
++Name[no]=Fransk
+ Name[oc]=Franchimand
+ Name[pl]=francuski
+ Name[pt]=Francês
+diff -uNr kde-i18n-3.0.orig/he/messages/entry.desktop kde-i18n-3.0/he/messages/entry.desktop
+--- kde-i18n-3.0.orig/he/messages/entry.desktop	Wed May 22 22:13:04 2002
++++ kde-i18n-3.0/he/messages/entry.desktop	Thu May 23 11:07:40 2002
+@@ -33,9 +33,9 @@
+ Name[mi]=Reo Hürai
+ Name[mk]=Еврејски
+ Name[mt]=Lhudi
+-Name[nb]=Hebraisk
+ Name[nl]=Hebreeuws
+ Name[nn]=Hebraisk
++Name[no]=Hebraisk
+ Name[oc]=Hebreu
+ Name[pl]=hebrajski
+ Name[pt]=Hebreu
+diff -uNr kde-i18n-3.0.orig/highscore kde-i18n-3.0/highscore
+--- kde-i18n-3.0.orig/highscore	Thu Mar 21 13:09:26 2002
++++ kde-i18n-3.0/highscore	Thu May 23 11:07:40 2002
+@@ -12702,7 +12702,7 @@
+    kdelibs:  7 untranslated
+    ppdtranslations:  9 untranslated
+    pixie:  4 untranslated
+-nb:
++no:
+    babelfish: 16 fuzzy 
+ translated:
+    translated: translated fuzzy translated untranslated
+@@ -12714,7 +12714,7 @@
+    fuzzy: fuzzy fuzzy fuzzy untranslated
+ translation:
+    :  
+-nb:
++no:
+    dirfilterplugin: 2 fuzzy 2 untranslated
+    imgalleryplugin: 4 fuzzy 4 untranslated
+    kateinsertcommand: 5 fuzzy 
+@@ -12735,7 +12735,7 @@
+    untranslated: untranslated fuzzy untranslated untranslated
+ message:
+    message: message fuzzy message untranslated
+-nb:
++no:
+    ktimemon: 24 fuzzy 
+    uachangerplugin:  3 untranslated
+ translated:
+@@ -12748,7 +12748,7 @@
+    untranslated: untranslated fuzzy untranslated untranslated
+ message:
+    message: message fuzzy message untranslated
+-nb:
++no:
+    validatorsplugin: 3 fuzzy 4 untranslated
+    webarchiver: 9 fuzzy 
+ translated:
+@@ -12761,7 +12761,7 @@
+    fuzzy: fuzzy fuzzy fuzzy untranslated
+ translation:
+    :  
+-nb:
++no:
+    kcmlilo: 6 fuzzy 
+    kcmlinuz: 3 fuzzy 
+    kcron: 2 fuzzy 
+@@ -12781,7 +12781,7 @@
+    fuzzy: fuzzy fuzzy fuzzy untranslated
+ translation:
+    :  
+-nb:
++no:
+    clockapplet: 86 fuzzy 
+ translated:
+    translated: translated fuzzy translated untranslated
+@@ -12799,7 +12799,7 @@
+    untranslated: untranslated fuzzy untranslated untranslated
+ messages:
+    :  
+-nb:
++no:
+    drkonqi: 3 fuzzy 30 untranslated
+ translated:
+    translated: translated fuzzy translated untranslated
+@@ -12817,7 +12817,7 @@
+    untranslated: untranslated fuzzy untranslated untranslated
+ message:
+    message: message fuzzy message untranslated
+-nb:
++no:
+    filetypes: 4 fuzzy 
+    htmlsearch: 10 fuzzy 
+ translated:
+@@ -12830,7 +12830,7 @@
+    fuzzy: fuzzy fuzzy fuzzy untranslated
+ translation:
+    :  
+-nb:
++no:
+    kaddressbook: 15 fuzzy 14 untranslated
+    kappfinder:  4 untranslated
+    kasbarextension:  43 untranslated
+@@ -12844,7 +12844,7 @@
+    untranslated: untranslated fuzzy untranslated untranslated
+ message:
+    message: message fuzzy message untranslated
+-nb:
++no:
+    kate: 37 fuzzy 36 untranslated
+    kcmarts: 2 fuzzy 6 untranslated
+    kcmaudiocd: 88 fuzzy 
+@@ -12864,7 +12864,7 @@
+    untranslated: untranslated fuzzy untranslated untranslated
+ messages:
+    :  
+-nb:
++no:
+    kcmbackground: 5 fuzzy 
+    kcmbell:  7 untranslated
+    kcmcolors: 5 fuzzy 43 untranslated
+@@ -12884,7 +12884,7 @@
+    untranslated: untranslated fuzzy untranslated untranslated
+ message:
+    message: message fuzzy message untranslated
+-nb:
++no:
+    kcmcrypto: 20 fuzzy 12 untranslated
+    kcmcss: 2 fuzzy 
+    kcmemail: 4 fuzzy 7 untranslated
+@@ -12905,7 +12905,7 @@
+    untranslated: untranslated fuzzy untranslated untranslated
+ message:
+    message: message fuzzy message untranslated
+-nb:
++no:
+    kcmhtmlsearch: 27 fuzzy 
+ translated:
+    translated: translated fuzzy translated untranslated
+@@ -12917,7 +12917,7 @@
+    fuzzy: fuzzy fuzzy fuzzy untranslated
+ translation:
+    :  
+-nb:
++no:
+    kcmicons: 34 fuzzy 
+ translated:
+    translated: translated fuzzy translated untranslated
+@@ -12929,7 +12929,7 @@
+    fuzzy: fuzzy fuzzy fuzzy untranslated
+ translation:
+    :  
+-nb:
++no:
+    kcminfo: 189 fuzzy 
+ translated:
+    translated: translated fuzzy translated untranslated
+@@ -12947,7 +12947,7 @@
+    untranslated: untranslated fuzzy untranslated untranslated
+ messages:
+    :  
+-nb:
++no:
+    kcminput: 14 fuzzy 
+    kcmioslaveinfo:  1 untranslated
+ translated:
+@@ -12960,7 +12960,7 @@
+    untranslated: untranslated fuzzy untranslated untranslated
+ message:
+    message: message fuzzy message untranslated
+-nb:
++no:
+    kcmkclock: 23 fuzzy 
+ translated:
+    translated: translated fuzzy translated untranslated
+@@ -12978,7 +12978,7 @@
+    untranslated: untranslated fuzzy untranslated untranslated
+ messages:
+    :  
+-nb:
++no:
+    kcmkeys: 25 fuzzy 21 untranslated
+    kcmkicker: 25 fuzzy 17 untranslated
+    kcmkio: 57 fuzzy 69 untranslated
+@@ -13002,7 +13002,7 @@
+    untranslated: untranslated fuzzy untranslated untranslated
+ message:
+    message: message fuzzy message untranslated
+-nb:
++no:
+    kcmkwindecoration: 3 fuzzy 3 untranslated
+    kcmkwm: 16 fuzzy 14 untranslated
+    kcmlayout: 23 fuzzy 72 untranslated
+@@ -13024,7 +13024,7 @@
+    untranslated: untranslated fuzzy untranslated untranslated
+ messages:
+    :  
+-nb:
++no:
+    kcmsamba: 54 fuzzy 
+ translated:
+    translated: translated fuzzy translated untranslated
+@@ -13036,7 +13036,7 @@
+    fuzzy: fuzzy fuzzy fuzzy untranslated
+ translation:
+    :  
+-nb:
++no:
+    kcmsmserver: 3 fuzzy 7 untranslated
+    kcmsocks: 4 fuzzy 5 untranslated
+    kcmspellchecking: 1 fuzzy 
+@@ -13050,7 +13050,7 @@
+    fuzzy: fuzzy fuzzy fuzzy untranslated
+ translation:
+    :  
+-nb:
++no:
+    kcmstyle: 13 fuzzy 52 untranslated
+    kcmtaskbar: 2 fuzzy 16 untranslated
+    kcmthemes: 3 fuzzy 5 untranslated
+@@ -13075,7 +13075,7 @@
+    untranslated: untranslated fuzzy untranslated untranslated
+ message:
+    message: message fuzzy message untranslated
+-nb:
++no:
+    kdesktop: 19 fuzzy 5 untranslated
+    kdesu: 2 fuzzy 27 untranslated
+ translated:
+@@ -13094,7 +13094,7 @@
+    untranslated: untranslated fuzzy untranslated untranslated
+ message:
+    message: message fuzzy message untranslated
+-nb:
++no:
+    kdmconfig: 13 fuzzy 14 untranslated
+    kdmgreet: 5 fuzzy 5 untranslated
+    kfind: 6 fuzzy 5 untranslated
+@@ -13119,7 +13119,7 @@
+    untranslated: untranslated fuzzy untranslated untranslated
+ messages:
+    :  
+-nb:
++no:
+    kio_pop3: 3 fuzzy 3 untranslated
+    kio_smb:  1 untranslated
+ translated:
+@@ -13132,7 +13132,7 @@
+    untranslated: untranslated fuzzy untranslated untranslated
+ message:
+    message: message fuzzy message untranslated
+-nb:
++no:
+    kjobviewer:  2 untranslated
+    klegacyimport: 3 fuzzy 16 untranslated
+ translated:
+@@ -13151,7 +13151,7 @@
+    untranslated: untranslated fuzzy untranslated untranslated
+ message:
+    message: message fuzzy message untranslated
+-nb:
++no:
+    klipper: 8 fuzzy 4 untranslated
+    klock: 2 fuzzy 6 untranslated
+    kmenuedit:  6 untranslated
+@@ -13171,7 +13171,7 @@
+    untranslated: untranslated fuzzy untranslated untranslated
+ message:
+    message: message fuzzy message untranslated
+-nb:
++no:
+    krunapplet: 2 fuzzy 
+    ksmserver:  10 untranslated
+    kstart: 17 fuzzy 
+@@ -13185,7 +13185,7 @@
+    fuzzy: fuzzy fuzzy fuzzy untranslated
+ translation:
+    :  
+-nb:
++no:
+    ksysguard: 26 fuzzy 12 untranslated
+    ktip: 23 fuzzy 17 untranslated
+    kwin: 10 fuzzy 79 untranslated
+@@ -13205,7 +13205,7 @@
+    untranslated: untranslated fuzzy untranslated untranslated
+ message:
+    message: message fuzzy message untranslated
+-nb:
++no:
+    kwin_modernsys_config: 3 fuzzy 4 untranslated
+    kxkb: 9 fuzzy 18 untranslated
+    libkonq: 6 fuzzy 5 untranslated
+@@ -13229,7 +13229,7 @@
+    untranslated: untranslated fuzzy untranslated untranslated
+ messages:
+    :  
+-nb:
++no:
+    kasteroids: 27 fuzzy 
+ translated:
+    translated: translated fuzzy translated untranslated
+@@ -13241,7 +13241,7 @@
+    fuzzy: fuzzy fuzzy fuzzy untranslated
+ translation:
+    :  
+-nb:
++no:
+    katomic: 3 fuzzy 3 untranslated
+    kbackgammon: 23 fuzzy 22 untranslated
+    kbattleship: 4 fuzzy 
+@@ -13268,7 +13268,7 @@
+    untranslated: untranslated fuzzy untranslated untranslated
+ message:
+    message: message fuzzy message untranslated
+-nb:
++no:
+    kpoker: 2 fuzzy 65 untranslated
+ translated:
+    translated: translated fuzzy translated untranslated
+@@ -13286,7 +13286,7 @@
+    untranslated: untranslated fuzzy untranslated untranslated
+ message:
+    message: message fuzzy message untranslated
+-nb:
++no:
+    kreversi: 17 fuzzy 
+    ksame: 3 fuzzy 
+    kshisen: 5 fuzzy 
+@@ -13304,7 +13304,7 @@
+    fuzzy: fuzzy fuzzy fuzzy untranslated
+ translation:
+    :  
+-nb:
++no:
+    ktron: 3 fuzzy 
+    ktuberling: 7 fuzzy 12 untranslated
+    kwin4: 21 fuzzy 14 untranslated
+@@ -13331,7 +13331,7 @@
+    untranslated: untranslated fuzzy untranslated untranslated
+ message:
+    message: message fuzzy message untranslated
+-nb:
++no:
+    kuickshow: 8 fuzzy 25 untranslated
+    kview: 5 fuzzy 2 untranslated
+    kviewshell: 9 fuzzy 5 untranslated
+@@ -13369,7 +13369,7 @@
+    untranslated: untranslated fuzzy untranslated untranslated
+ message:
+    message: message fuzzy message untranslated
+-nb:
++no:
+    artsbuilder: 15 fuzzy 9 untranslated
+    artscontrol:  5 untranslated
+    kaboodle: 4 fuzzy 18 untranslated
+@@ -13389,7 +13389,7 @@
+    untranslated: untranslated fuzzy untranslated untranslated
+ message:
+    message: message fuzzy message untranslated
+-nb:
++no:
+    kcmkmix: 2 fuzzy 
+    kmid: 7 fuzzy 
+    kmidi: 19 fuzzy 7 untranslated
+@@ -13410,7 +13410,7 @@
+    untranslated: untranslated fuzzy untranslated untranslated
+ message:
+    message: message fuzzy message untranslated
+-nb:
++no:
+    koncd: 153 fuzzy 146 untranslated
+    kscd: 19 fuzzy 35 untranslated
+    noatun: 25 fuzzy 65 untranslated
+@@ -13429,7 +13429,7 @@
+    untranslated: untranslated fuzzy untranslated untranslated
+ message:
+    message: message fuzzy message untranslated
+-nb:
++no:
+    kit: 6 fuzzy 
+    kmail: 339 fuzzy 131 untranslated
+    kmailcvt: 7 fuzzy 
+@@ -13468,7 +13468,7 @@
+    untranslated: untranslated fuzzy untranslated untranslated
+ message:
+    message: message fuzzy message untranslated
+-nb:
++no:
+    kppp: 40 fuzzy 3 untranslated
+    kppplogview: 5 fuzzy 3 untranslated
+    ksirc: 53 fuzzy 71 untranslated
+@@ -13494,7 +13494,7 @@
+    fuzzy: fuzzy fuzzy fuzzy untranslated
+ translation:
+    :  
+-nb:
++no:
+    kfinger: 59 fuzzy 
+ translated:
+    translated: translated fuzzy translated untranslated
+@@ -13512,7 +13512,7 @@
+    untranslated: untranslated fuzzy untranslated untranslated
+ messages:
+    :  
+-nb:
++no:
+    kgnuplot:  7 untranslated
+    kicq: 3 fuzzy 
+    kikbd: 25 fuzzy 
+@@ -13526,7 +13526,7 @@
+    fuzzy: fuzzy fuzzy fuzzy untranslated
+ translation:
+    :  
+-nb:
++no:
+    kim: 15 fuzzy 
+ translated:
+    translated: translated fuzzy translated untranslated
+@@ -13544,7 +13544,7 @@
+    untranslated: untranslated fuzzy untranslated untranslated
+ messages:
+    :  
+-nb:
++no:
+    kmake:  41 untranslated
+    kmms: 5 fuzzy 
+ translated:
+@@ -13557,7 +13557,7 @@
+    fuzzy: fuzzy fuzzy fuzzy untranslated
+ translation:
+    :  
+-nb:
++no:
+    kmonop:  41 untranslated
+    knetmgr:  31 untranslated
+    knu: 3 fuzzy 
+@@ -13583,7 +13583,7 @@
+    fuzzy: fuzzy fuzzy fuzzy untranslated
+ translation:
+    :  
+-nb:
++no:
+    pws: 41 fuzzy 
+ translated:
+    translated: translated fuzzy translated untranslated
+@@ -13595,7 +13595,7 @@
+    fuzzy: fuzzy fuzzy fuzzy untranslated
+ translation:
+    :  
+-nb:
++no:
+    kandy: 83 fuzzy 
+ translated:
+    translated: translated fuzzy translated untranslated
+@@ -13607,7 +13607,7 @@
+    fuzzy: fuzzy fuzzy fuzzy untranslated
+ translation:
+    :  
+-nb:
++no:
+    knotes: 8 fuzzy 16 untranslated
+    korganizer: 70 fuzzy 32 untranslated
+    kpilot: 137 fuzzy 138 untranslated
+@@ -13628,7 +13628,7 @@
+    fuzzy: fuzzy fuzzy fuzzy untranslated
+ translation:
+    :  
+-nb:
++no:
+    kteatime: 17 fuzzy 
+ translated:
+    translated: translated fuzzy translated untranslated
+@@ -13640,7 +13640,7 @@
+    fuzzy: fuzzy fuzzy fuzzy untranslated
+ translation:
+    :  
+-nb:
++no:
+    kworldclock: 7 fuzzy 
+    ark: 13 fuzzy 2 untranslated
+    kab: 42 fuzzy 6 untranslated
+@@ -13677,7 +13677,7 @@
+    untranslated: untranslated fuzzy untranslated untranslated
+ message:
+    message: message fuzzy message untranslated
+-nb:
++no:
+    kcharselect: 6 fuzzy 2 untranslated
+    kcmlaptop: 21 fuzzy 9 untranslated
+    kdepasswd: 14 fuzzy 
+@@ -13691,7 +13691,7 @@
+    fuzzy: fuzzy fuzzy fuzzy untranslated
+ translation:
+    :  
+-nb:
++no:
+    kdf: 7 fuzzy 
+    kedit: 5 fuzzy 2 untranslated
+    kfloppy: 7 fuzzy 9 untranslated
+@@ -13712,7 +13712,7 @@
+    untranslated: untranslated fuzzy untranslated untranslated
+ message:
+    message: message fuzzy message untranslated
+-nb:
++no:
+    kjots: 10 fuzzy 2 untranslated
+    klaptopdaemon: 2 fuzzy 5 untranslated
+    klpq: 2 fuzzy 
+@@ -13736,7 +13736,7 @@
+    untranslated: untranslated fuzzy untranslated untranslated
+ message:
+    message: message fuzzy message untranslated
+-nb:
++no:
+    kivio: 6 fuzzy 
+    koffice: 105 fuzzy 184 untranslated
+    kontour: 26 fuzzy 23 untranslated
+@@ -13751,7 +13751,7 @@
+    untranslated: untranslated fuzzy untranslated untranslated
+ message:
+    message: message fuzzy message untranslated
+-nb:
++no:
+    kpresenter: 105 fuzzy 83 untranslated
+    krita: 7 fuzzy 4 untranslated
+    kspread: 133 fuzzy 79 untranslated
+@@ -13767,7 +13767,7 @@
+    fuzzy: fuzzy fuzzy fuzzy untranslated
+ translation:
+    :  
+-nb:
++no:
+    cupsdconf: 71 fuzzy 47 untranslated
+    desktop: 680 fuzzy 52 untranslated
+    katepart: 83 fuzzy 88 untranslated
+diff -uNr kde-i18n-3.0.orig/highscore.html kde-i18n-3.0/highscore.html
+--- kde-i18n-3.0.orig/highscore.html	Thu Mar 21 13:09:29 2002
++++ kde-i18n-3.0/highscore.html	Thu May 23 11:07:40 2002
+@@ -23239,7 +23239,7 @@
+ <table cellpadding=3 border=0><tr><th align="left" colspan="3"> others</th></tr>
+ <tr><td>pixie</td><td></td><td>4 untranslated</td></tr>
+ </table>
+-<H2><A name="nb"></A>nb</H2>
++<H2><A name="no"></A>no</H2>
+ <table cellpadding=3 border=0><tr><th align="left" colspan="3"> kdeaddons</th></tr>
+ <tr><td>babelfish</td><td>16 fuzzy</td><td></td></tr>
+ </table>
+@@ -23262,7 +23262,7 @@
+ <H2><A name="translation"></A>translation</H2>
+ <tr><td></td><td></td><td></td></tr>
+ </table>
+-<H2><A name="nb"></A>nb</H2>
++<H2><A name="no"></A>no</H2>
+ <table cellpadding=3 border=0><tr><th align="left" colspan="3"> kdeaddons</th></tr>
+ <tr><td>dirfilterplugin</td><td>2 fuzzy</td><td>2 untranslated</td></tr>
+ <tr><td>imgalleryplugin</td><td>4 fuzzy</td><td>4 untranslated</td></tr>
+@@ -23301,7 +23301,7 @@
+ <table cellpadding=3 border=0><tr><th align="left" colspan="3"> message</th></tr>
+ <tr><td>message</td><td>message fuzzy</td><td>message untranslated</td></tr>
+ </table>
+-<H2><A name="nb"></A>nb</H2>
++<H2><A name="no"></A>no</H2>
+ <table cellpadding=3 border=0><tr><th align="left" colspan="3"> kdeaddons</th></tr>
+ <tr><td>ktimemon</td><td>24 fuzzy</td><td></td></tr>
+ <tr><td>uachangerplugin</td><td></td><td>3 untranslated</td></tr>
+@@ -23326,7 +23326,7 @@
+ <table cellpadding=3 border=0><tr><th align="left" colspan="3"> message</th></tr>
+ <tr><td>message</td><td>message fuzzy</td><td>message untranslated</td></tr>
+ </table>
+-<H2><A name="nb"></A>nb</H2>
++<H2><A name="no"></A>no</H2>
+ <table cellpadding=3 border=0><tr><th align="left" colspan="3"> kdeaddons</th></tr>
+ <tr><td>validatorsplugin</td><td>3 fuzzy</td><td>4 untranslated</td></tr>
+ <tr><td>webarchiver</td><td>9 fuzzy</td><td></td></tr>
+@@ -23350,7 +23350,7 @@
+ <H2><A name="translation"></A>translation</H2>
+ <tr><td></td><td></td><td></td></tr>
+ </table>
+-<H2><A name="nb"></A>nb</H2>
++<H2><A name="no"></A>no</H2>
+ <table cellpadding=3 border=0><tr><th align="left" colspan="3"> kdeadmin</th></tr>
+ <tr><td>kcmlilo</td><td>6 fuzzy</td><td></td></tr>
+ <tr><td>kcmlinuz</td><td>3 fuzzy</td><td></td></tr>
+@@ -23381,7 +23381,7 @@
+ <H2><A name="translation"></A>translation</H2>
+ <tr><td></td><td></td><td></td></tr>
+ </table>
+-<H2><A name="nb"></A>nb</H2>
++<H2><A name="no"></A>no</H2>
+ <table cellpadding=3 border=0><tr><th align="left" colspan="3"> kdebase</th></tr>
+ <tr><td>clockapplet</td><td>86 fuzzy</td><td></td></tr>
+ </table>
+@@ -23417,7 +23417,7 @@
+ <table cellpadding=3 border=0><tr><th align="left" colspan="3"> 6</th></tr>
+ <tr><td></td><td></td><td></td></tr>
+ </table>
+-<H2><A name="nb"></A>nb</H2>
++<H2><A name="no"></A>no</H2>
+ <table cellpadding=3 border=0><tr><th align="left" colspan="3"> kdebase</th></tr>
+ <tr><td>drkonqi</td><td>3 fuzzy</td><td>30 untranslated</td></tr>
+ </table>
+@@ -23453,7 +23453,7 @@
+ <table cellpadding=3 border=0><tr><th align="left" colspan="3"> message</th></tr>
+ <tr><td>message</td><td>message fuzzy</td><td>message untranslated</td></tr>
+ </table>
+-<H2><A name="nb"></A>nb</H2>
++<H2><A name="no"></A>no</H2>
+ <table cellpadding=3 border=0><tr><th align="left" colspan="3"> kdebase</th></tr>
+ <tr><td>filetypes</td><td>4 fuzzy</td><td></td></tr>
+ <tr><td>htmlsearch</td><td>10 fuzzy</td><td></td></tr>
+@@ -23477,7 +23477,7 @@
+ <H2><A name="translation"></A>translation</H2>
+ <tr><td></td><td></td><td></td></tr>
+ </table>
+-<H2><A name="nb"></A>nb</H2>
++<H2><A name="no"></A>no</H2>
+ <table cellpadding=3 border=0><tr><th align="left" colspan="3"> kdebase</th></tr>
+ <tr><td>kaddressbook</td><td>15 fuzzy</td><td>14 untranslated</td></tr>
+ <tr><td>kappfinder</td><td></td><td>4 untranslated</td></tr>
+@@ -23503,7 +23503,7 @@
+ <table cellpadding=3 border=0><tr><th align="left" colspan="3"> message</th></tr>
+ <tr><td>message</td><td>message fuzzy</td><td>message untranslated</td></tr>
+ </table>
+-<H2><A name="nb"></A>nb</H2>
++<H2><A name="no"></A>no</H2>
+ <table cellpadding=3 border=0><tr><th align="left" colspan="3"> kdebase</th></tr>
+ <tr><td>kate</td><td>37 fuzzy</td><td>36 untranslated</td></tr>
+ <tr><td>kcmarts</td><td>2 fuzzy</td><td>6 untranslated</td></tr>
+@@ -23541,7 +23541,7 @@
+ <table cellpadding=3 border=0><tr><th align="left" colspan="3"> 12</th></tr>
+ <tr><td></td><td></td><td></td></tr>
+ </table>
+-<H2><A name="nb"></A>nb</H2>
++<H2><A name="no"></A>no</H2>
+ <table cellpadding=3 border=0><tr><th align="left" colspan="3"> kdebase</th></tr>
+ <tr><td>kcmbackground</td><td>5 fuzzy</td><td></td></tr>
+ <tr><td>kcmbell</td><td></td><td>7 untranslated</td></tr>
+@@ -23579,7 +23579,7 @@
+ <table cellpadding=3 border=0><tr><th align="left" colspan="3"> message</th></tr>
+ <tr><td>message</td><td>message fuzzy</td><td>message untranslated</td></tr>
+ </table>
+-<H2><A name="nb"></A>nb</H2>
++<H2><A name="no"></A>no</H2>
+ <table cellpadding=3 border=0><tr><th align="left" colspan="3"> kdebase</th></tr>
+ <tr><td>kcmcrypto</td><td>20 fuzzy</td><td>12 untranslated</td></tr>
+ <tr><td>kcmcss</td><td>2 fuzzy</td><td></td></tr>
+@@ -23618,7 +23618,7 @@
+ <table cellpadding=3 border=0><tr><th align="left" colspan="3"> message</th></tr>
+ <tr><td>message</td><td>message fuzzy</td><td>message untranslated</td></tr>
+ </table>
+-<H2><A name="nb"></A>nb</H2>
++<H2><A name="no"></A>no</H2>
+ <table cellpadding=3 border=0><tr><th align="left" colspan="3"> kdebase</th></tr>
+ <tr><td>kcmhtmlsearch</td><td>27 fuzzy</td><td></td></tr>
+ </table>
+@@ -23641,7 +23641,7 @@
+ <H2><A name="translation"></A>translation</H2>
+ <tr><td></td><td></td><td></td></tr>
+ </table>
+-<H2><A name="nb"></A>nb</H2>
++<H2><A name="no"></A>no</H2>
+ <table cellpadding=3 border=0><tr><th align="left" colspan="3"> kdebase</th></tr>
+ <tr><td>kcmicons</td><td>34 fuzzy</td><td></td></tr>
+ </table>
+@@ -23664,7 +23664,7 @@
+ <H2><A name="translation"></A>translation</H2>
+ <tr><td></td><td></td><td></td></tr>
+ </table>
+-<H2><A name="nb"></A>nb</H2>
++<H2><A name="no"></A>no</H2>
+ <table cellpadding=3 border=0><tr><th align="left" colspan="3"> kdebase</th></tr>
+ <tr><td>kcminfo</td><td>189 fuzzy</td><td></td></tr>
+ </table>
+@@ -23700,7 +23700,7 @@
+ <table cellpadding=3 border=0><tr><th align="left" colspan="3"> 7</th></tr>
+ <tr><td></td><td></td><td></td></tr>
+ </table>
+-<H2><A name="nb"></A>nb</H2>
++<H2><A name="no"></A>no</H2>
+ <table cellpadding=3 border=0><tr><th align="left" colspan="3"> kdebase</th></tr>
+ <tr><td>kcminput</td><td>14 fuzzy</td><td></td></tr>
+ <tr><td>kcmioslaveinfo</td><td></td><td>1 untranslated</td></tr>
+@@ -23725,7 +23725,7 @@
+ <table cellpadding=3 border=0><tr><th align="left" colspan="3"> message</th></tr>
+ <tr><td>message</td><td>message fuzzy</td><td>message untranslated</td></tr>
+ </table>
+-<H2><A name="nb"></A>nb</H2>
++<H2><A name="no"></A>no</H2>
+ <table cellpadding=3 border=0><tr><th align="left" colspan="3"> kdebase</th></tr>
+ <tr><td>kcmkclock</td><td>23 fuzzy</td><td></td></tr>
+ </table>
+@@ -23761,7 +23761,7 @@
+ <table cellpadding=3 border=0><tr><th align="left" colspan="3"> 7</th></tr>
+ <tr><td></td><td></td><td></td></tr>
+ </table>
+-<H2><A name="nb"></A>nb</H2>
++<H2><A name="no"></A>no</H2>
+ <table cellpadding=3 border=0><tr><th align="left" colspan="3"> kdebase</th></tr>
+ <tr><td>kcmkeys</td><td>25 fuzzy</td><td>21 untranslated</td></tr>
+ <tr><td>kcmkicker</td><td>25 fuzzy</td><td>17 untranslated</td></tr>
+@@ -23803,7 +23803,7 @@
+ <table cellpadding=3 border=0><tr><th align="left" colspan="3"> message</th></tr>
+ <tr><td>message</td><td>message fuzzy</td><td>message untranslated</td></tr>
+ </table>
+-<H2><A name="nb"></A>nb</H2>
++<H2><A name="no"></A>no</H2>
+ <table cellpadding=3 border=0><tr><th align="left" colspan="3"> kdebase</th></tr>
+ <tr><td>kcmkwindecoration</td><td>3 fuzzy</td><td>3 untranslated</td></tr>
+ <tr><td>kcmkwm</td><td>16 fuzzy</td><td>14 untranslated</td></tr>
+@@ -23843,7 +23843,7 @@
+ <table cellpadding=3 border=0><tr><th align="left" colspan="3"> 2</th></tr>
+ <tr><td></td><td></td><td></td></tr>
+ </table>
+-<H2><A name="nb"></A>nb</H2>
++<H2><A name="no"></A>no</H2>
+ <table cellpadding=3 border=0><tr><th align="left" colspan="3"> kdebase</th></tr>
+ <tr><td>kcmsamba</td><td>54 fuzzy</td><td></td></tr>
+ </table>
+@@ -23866,7 +23866,7 @@
+ <H2><A name="translation"></A>translation</H2>
+ <tr><td></td><td></td><td></td></tr>
+ </table>
+-<H2><A name="nb"></A>nb</H2>
++<H2><A name="no"></A>no</H2>
+ <table cellpadding=3 border=0><tr><th align="left" colspan="3"> kdebase</th></tr>
+ <tr><td>kcmsmserver</td><td>3 fuzzy</td><td>7 untranslated</td></tr>
+ <tr><td>kcmsocks</td><td>4 fuzzy</td><td>5 untranslated</td></tr>
+@@ -23891,7 +23891,7 @@
+ <H2><A name="translation"></A>translation</H2>
+ <tr><td></td><td></td><td></td></tr>
+ </table>
+-<H2><A name="nb"></A>nb</H2>
++<H2><A name="no"></A>no</H2>
+ <table cellpadding=3 border=0><tr><th align="left" colspan="3"> kdebase</th></tr>
+ <tr><td>kcmstyle</td><td>13 fuzzy</td><td>52 untranslated</td></tr>
+ <tr><td>kcmtaskbar</td><td>2 fuzzy</td><td>16 untranslated</td></tr>
+@@ -23934,7 +23934,7 @@
+ <table cellpadding=3 border=0><tr><th align="left" colspan="3"> message</th></tr>
+ <tr><td>message</td><td>message fuzzy</td><td>message untranslated</td></tr>
+ </table>
+-<H2><A name="nb"></A>nb</H2>
++<H2><A name="no"></A>no</H2>
+ <table cellpadding=3 border=0><tr><th align="left" colspan="3"> kdebase</th></tr>
+ <tr><td>kdesktop</td><td>19 fuzzy</td><td>5 untranslated</td></tr>
+ <tr><td>kdesu</td><td>2 fuzzy</td><td>27 untranslated</td></tr>
+@@ -23971,7 +23971,7 @@
+ <table cellpadding=3 border=0><tr><th align="left" colspan="3"> message</th></tr>
+ <tr><td>message</td><td>message fuzzy</td><td>message untranslated</td></tr>
+ </table>
+-<H2><A name="nb"></A>nb</H2>
++<H2><A name="no"></A>no</H2>
+ <table cellpadding=3 border=0><tr><th align="left" colspan="3"> kdebase</th></tr>
+ <tr><td>kdmconfig</td><td>13 fuzzy</td><td>14 untranslated</td></tr>
+ <tr><td>kdmgreet</td><td>5 fuzzy</td><td>5 untranslated</td></tr>
+@@ -24014,7 +24014,7 @@
+ <table cellpadding=3 border=0><tr><th align="left" colspan="3"> 11</th></tr>
+ <tr><td></td><td></td><td></td></tr>
+ </table>
+-<H2><A name="nb"></A>nb</H2>
++<H2><A name="no"></A>no</H2>
+ <table cellpadding=3 border=0><tr><th align="left" colspan="3"> kdebase</th></tr>
+ <tr><td>kio_pop3</td><td>3 fuzzy</td><td>3 untranslated</td></tr>
+ <tr><td>kio_smb</td><td></td><td>1 untranslated</td></tr>
+@@ -24039,7 +24039,7 @@
+ <table cellpadding=3 border=0><tr><th align="left" colspan="3"> message</th></tr>
+ <tr><td>message</td><td>message fuzzy</td><td>message untranslated</td></tr>
+ </table>
+-<H2><A name="nb"></A>nb</H2>
++<H2><A name="no"></A>no</H2>
+ <table cellpadding=3 border=0><tr><th align="left" colspan="3"> kdebase</th></tr>
+ <tr><td>kjobviewer</td><td></td><td>2 untranslated</td></tr>
+ <tr><td>klegacyimport</td><td>3 fuzzy</td><td>16 untranslated</td></tr>
+@@ -24076,7 +24076,7 @@
+ <table cellpadding=3 border=0><tr><th align="left" colspan="3"> message</th></tr>
+ <tr><td>message</td><td>message fuzzy</td><td>message untranslated</td></tr>
+ </table>
+-<H2><A name="nb"></A>nb</H2>
++<H2><A name="no"></A>no</H2>
+ <table cellpadding=3 border=0><tr><th align="left" colspan="3"> kdebase</th></tr>
+ <tr><td>klipper</td><td>8 fuzzy</td><td>4 untranslated</td></tr>
+ <tr><td>klock</td><td>2 fuzzy</td><td>6 untranslated</td></tr>
+@@ -24108,7 +24108,7 @@
+ <table cellpadding=3 border=0><tr><th align="left" colspan="3"> message</th></tr>
+ <tr><td>message</td><td>message fuzzy</td><td>message untranslated</td></tr>
+ </table>
+-<H2><A name="nb"></A>nb</H2>
++<H2><A name="no"></A>no</H2>
+ <table cellpadding=3 border=0><tr><th align="left" colspan="3"> kdebase</th></tr>
+ <tr><td>krunapplet</td><td>2 fuzzy</td><td></td></tr>
+ <tr><td>ksmserver</td><td></td><td>10 untranslated</td></tr>
+@@ -24133,7 +24133,7 @@
+ <H2><A name="translation"></A>translation</H2>
+ <tr><td></td><td></td><td></td></tr>
+ </table>
+-<H2><A name="nb"></A>nb</H2>
++<H2><A name="no"></A>no</H2>
+ <table cellpadding=3 border=0><tr><th align="left" colspan="3"> kdebase</th></tr>
+ <tr><td>ksysguard</td><td>26 fuzzy</td><td>12 untranslated</td></tr>
+ <tr><td>ktip</td><td>23 fuzzy</td><td>17 untranslated</td></tr>
+@@ -24171,7 +24171,7 @@
+ <table cellpadding=3 border=0><tr><th align="left" colspan="3"> message</th></tr>
+ <tr><td>message</td><td>message fuzzy</td><td>message untranslated</td></tr>
+ </table>
+-<H2><A name="nb"></A>nb</H2>
++<H2><A name="no"></A>no</H2>
+ <table cellpadding=3 border=0><tr><th align="left" colspan="3"> kdebase</th></tr>
+ <tr><td>kwin_modernsys_config</td><td>3 fuzzy</td><td>4 untranslated</td></tr>
+ <tr><td>kxkb</td><td>9 fuzzy</td><td>18 untranslated</td></tr>
+@@ -24215,7 +24215,7 @@
+ <table cellpadding=3 border=0><tr><th align="left" colspan="3"> 76</th></tr>
+ <tr><td></td><td></td><td></td></tr>
+ </table>
+-<H2><A name="nb"></A>nb</H2>
++<H2><A name="no"></A>no</H2>
+ <table cellpadding=3 border=0><tr><th align="left" colspan="3"> kdegames</th></tr>
+ <tr><td>kasteroids</td><td>27 fuzzy</td><td></td></tr>
+ </table>
+@@ -24238,7 +24238,7 @@
+ <H2><A name="translation"></A>translation</H2>
+ <tr><td></td><td></td><td></td></tr>
+ </table>
+-<H2><A name="nb"></A>nb</H2>
++<H2><A name="no"></A>no</H2>
+ <table cellpadding=3 border=0><tr><th align="left" colspan="3"> kdegames</th></tr>
+ <tr><td>katomic</td><td>3 fuzzy</td><td>3 untranslated</td></tr>
+ <tr><td>kbackgammon</td><td>23 fuzzy</td><td>22 untranslated</td></tr>
+@@ -24283,7 +24283,7 @@
+ <table cellpadding=3 border=0><tr><th align="left" colspan="3"> message</th></tr>
+ <tr><td>message</td><td>message fuzzy</td><td>message untranslated</td></tr>
+ </table>
+-<H2><A name="nb"></A>nb</H2>
++<H2><A name="no"></A>no</H2>
+ <table cellpadding=3 border=0><tr><th align="left" colspan="3"> kdegames</th></tr>
+ <tr><td>kpoker</td><td>2 fuzzy</td><td>65 untranslated</td></tr>
+ </table>
+@@ -24319,7 +24319,7 @@
+ <table cellpadding=3 border=0><tr><th align="left" colspan="3"> message</th></tr>
+ <tr><td>message</td><td>message fuzzy</td><td>message untranslated</td></tr>
+ </table>
+-<H2><A name="nb"></A>nb</H2>
++<H2><A name="no"></A>no</H2>
+ <table cellpadding=3 border=0><tr><th align="left" colspan="3"> kdegames</th></tr>
+ <tr><td>kreversi</td><td>17 fuzzy</td><td></td></tr>
+ <tr><td>ksame</td><td>3 fuzzy</td><td></td></tr>
+@@ -24348,7 +24348,7 @@
+ <H2><A name="translation"></A>translation</H2>
+ <tr><td></td><td></td><td></td></tr>
+ </table>
+-<H2><A name="nb"></A>nb</H2>
++<H2><A name="no"></A>no</H2>
+ <table cellpadding=3 border=0><tr><th align="left" colspan="3"> kdegames</th></tr>
+ <tr><td>ktron</td><td>3 fuzzy</td><td></td></tr>
+ <tr><td>ktuberling</td><td>7 fuzzy</td><td>12 untranslated</td></tr>
+@@ -24389,7 +24389,7 @@
+ <table cellpadding=3 border=0><tr><th align="left" colspan="3"> message</th></tr>
+ <tr><td>message</td><td>message fuzzy</td><td>message untranslated</td></tr>
+ </table>
+-<H2><A name="nb"></A>nb</H2>
++<H2><A name="no"></A>no</H2>
+ <table cellpadding=3 border=0><tr><th align="left" colspan="3"> kdegraphics</th></tr>
+ <tr><td>kuickshow</td><td>8 fuzzy</td><td>25 untranslated</td></tr>
+ <tr><td>kview</td><td>5 fuzzy</td><td>2 untranslated</td></tr>
+@@ -24463,7 +24463,7 @@
+ <table cellpadding=3 border=0><tr><th align="left" colspan="3"> message</th></tr>
+ <tr><td>message</td><td>message fuzzy</td><td>message untranslated</td></tr>
+ </table>
+-<H2><A name="nb"></A>nb</H2>
++<H2><A name="no"></A>no</H2>
+ <table cellpadding=3 border=0><tr><th align="left" colspan="3"> kdemultimedia</th></tr>
+ <tr><td>artsbuilder</td><td>15 fuzzy</td><td>9 untranslated</td></tr>
+ <tr><td>artscontrol</td><td></td><td>5 untranslated</td></tr>
+@@ -24501,7 +24501,7 @@
+ <table cellpadding=3 border=0><tr><th align="left" colspan="3"> message</th></tr>
+ <tr><td>message</td><td>message fuzzy</td><td>message untranslated</td></tr>
+ </table>
+-<H2><A name="nb"></A>nb</H2>
++<H2><A name="no"></A>no</H2>
+ <table cellpadding=3 border=0><tr><th align="left" colspan="3"> kdemultimedia</th></tr>
+ <tr><td>kcmkmix</td><td>2 fuzzy</td><td></td></tr>
+ <tr><td>kmid</td><td>7 fuzzy</td><td></td></tr>
+@@ -24540,7 +24540,7 @@
+ <table cellpadding=3 border=0><tr><th align="left" colspan="3"> message</th></tr>
+ <tr><td>message</td><td>message fuzzy</td><td>message untranslated</td></tr>
+ </table>
+-<H2><A name="nb"></A>nb</H2>
++<H2><A name="no"></A>no</H2>
+ <table cellpadding=3 border=0><tr><th align="left" colspan="3"> kdemultimedia</th></tr>
+ <tr><td>koncd</td><td>153 fuzzy</td><td>146 untranslated</td></tr>
+ <tr><td>kscd</td><td>19 fuzzy</td><td>35 untranslated</td></tr>
+@@ -24573,7 +24573,7 @@
+ <table cellpadding=3 border=0><tr><th align="left" colspan="3"> message</th></tr>
+ <tr><td>message</td><td>message fuzzy</td><td>message untranslated</td></tr>
+ </table>
+-<H2><A name="nb"></A>nb</H2>
++<H2><A name="no"></A>no</H2>
+ <table cellpadding=3 border=0><tr><th align="left" colspan="3"> kdenetwork</th></tr>
+ <tr><td>kit</td><td>6 fuzzy</td><td></td></tr>
+ <tr><td>kmail</td><td>339 fuzzy</td><td>131 untranslated</td></tr>
+@@ -24646,7 +24646,7 @@
+ <table cellpadding=3 border=0><tr><th align="left" colspan="3"> message</th></tr>
+ <tr><td>message</td><td>message fuzzy</td><td>message untranslated</td></tr>
+ </table>
+-<H2><A name="nb"></A>nb</H2>
++<H2><A name="no"></A>no</H2>
+ <table cellpadding=3 border=0><tr><th align="left" colspan="3"> kdenetwork</th></tr>
+ <tr><td>kppp</td><td>40 fuzzy</td><td>3 untranslated</td></tr>
+ <tr><td>kppplogview</td><td>5 fuzzy</td><td>3 untranslated</td></tr>
+@@ -24685,7 +24685,7 @@
+ <H2><A name="translation"></A>translation</H2>
+ <tr><td></td><td></td><td></td></tr>
+ </table>
+-<H2><A name="nb"></A>nb</H2>
++<H2><A name="no"></A>no</H2>
+ <table cellpadding=3 border=0><tr><th align="left" colspan="3"> kdenonbeta</th></tr>
+ <tr><td>kfinger</td><td>59 fuzzy</td><td></td></tr>
+ </table>
+@@ -24721,7 +24721,7 @@
+ <table cellpadding=3 border=0><tr><th align="left" colspan="3"> 5</th></tr>
+ <tr><td></td><td></td><td></td></tr>
+ </table>
+-<H2><A name="nb"></A>nb</H2>
++<H2><A name="no"></A>no</H2>
+ <table cellpadding=3 border=0><tr><th align="left" colspan="3"> kdenonbeta</th></tr>
+ <tr><td>kgnuplot</td><td></td><td>7 untranslated</td></tr>
+ <tr><td>kicq</td><td>3 fuzzy</td><td></td></tr>
+@@ -24746,7 +24746,7 @@
+ <H2><A name="translation"></A>translation</H2>
+ <tr><td></td><td></td><td></td></tr>
+ </table>
+-<H2><A name="nb"></A>nb</H2>
++<H2><A name="no"></A>no</H2>
+ <table cellpadding=3 border=0><tr><th align="left" colspan="3"> kdenonbeta</th></tr>
+ <tr><td>kim</td><td>15 fuzzy</td><td></td></tr>
+ </table>
+@@ -24782,7 +24782,7 @@
+ <table cellpadding=3 border=0><tr><th align="left" colspan="3"> 92</th></tr>
+ <tr><td></td><td></td><td></td></tr>
+ </table>
+-<H2><A name="nb"></A>nb</H2>
++<H2><A name="no"></A>no</H2>
+ <table cellpadding=3 border=0><tr><th align="left" colspan="3"> kdenonbeta</th></tr>
+ <tr><td>kmake</td><td></td><td>41 untranslated</td></tr>
+ <tr><td>kmms</td><td>5 fuzzy</td><td></td></tr>
+@@ -24806,7 +24806,7 @@
+ <H2><A name="translation"></A>translation</H2>
+ <tr><td></td><td></td><td></td></tr>
+ </table>
+-<H2><A name="nb"></A>nb</H2>
++<H2><A name="no"></A>no</H2>
+ <table cellpadding=3 border=0><tr><th align="left" colspan="3"> kdenonbeta</th></tr>
+ <tr><td>kmonop</td><td></td><td>41 untranslated</td></tr>
+ <tr><td>knetmgr</td><td></td><td>31 untranslated</td></tr>
+@@ -24843,7 +24843,7 @@
+ <H2><A name="translation"></A>translation</H2>
+ <tr><td></td><td></td><td></td></tr>
+ </table>
+-<H2><A name="nb"></A>nb</H2>
++<H2><A name="no"></A>no</H2>
+ <table cellpadding=3 border=0><tr><th align="left" colspan="3"> kdenonbeta</th></tr>
+ <tr><td>pws</td><td>41 fuzzy</td><td></td></tr>
+ </table>
+@@ -24866,7 +24866,7 @@
+ <H2><A name="translation"></A>translation</H2>
+ <tr><td></td><td></td><td></td></tr>
+ </table>
+-<H2><A name="nb"></A>nb</H2>
++<H2><A name="no"></A>no</H2>
+ <table cellpadding=3 border=0><tr><th align="left" colspan="3"> kdepim</th></tr>
+ <tr><td>kandy</td><td>83 fuzzy</td><td></td></tr>
+ </table>
+@@ -24889,7 +24889,7 @@
+ <H2><A name="translation"></A>translation</H2>
+ <tr><td></td><td></td><td></td></tr>
+ </table>
+-<H2><A name="nb"></A>nb</H2>
++<H2><A name="no"></A>no</H2>
+ <table cellpadding=3 border=0><tr><th align="left" colspan="3"> kdepim</th></tr>
+ <tr><td>knotes</td><td>8 fuzzy</td><td>16 untranslated</td></tr>
+ <tr><td>korganizer</td><td>70 fuzzy</td><td>32 untranslated</td></tr>
+@@ -24925,7 +24925,7 @@
+ <H2><A name="translation"></A>translation</H2>
+ <tr><td></td><td></td><td></td></tr>
+ </table>
+-<H2><A name="nb"></A>nb</H2>
++<H2><A name="no"></A>no</H2>
+ <table cellpadding=3 border=0><tr><th align="left" colspan="3"> kdetoys</th></tr>
+ <tr><td>kteatime</td><td>17 fuzzy</td><td></td></tr>
+ </table>
+@@ -24948,7 +24948,7 @@
+ <H2><A name="translation"></A>translation</H2>
+ <tr><td></td><td></td><td></td></tr>
+ </table>
+-<H2><A name="nb"></A>nb</H2>
++<H2><A name="no"></A>no</H2>
+ <table cellpadding=3 border=0><tr><th align="left" colspan="3"> kdetoys</th></tr>
+ <tr><td>kworldclock</td><td>7 fuzzy</td><td></td></tr>
+ </table>
+@@ -25021,7 +25021,7 @@
+ <table cellpadding=3 border=0><tr><th align="left" colspan="3"> message</th></tr>
+ <tr><td>message</td><td>message fuzzy</td><td>message untranslated</td></tr>
+ </table>
+-<H2><A name="nb"></A>nb</H2>
++<H2><A name="no"></A>no</H2>
+ <table cellpadding=3 border=0><tr><th align="left" colspan="3"> kdeutils</th></tr>
+ <tr><td>kcharselect</td><td>6 fuzzy</td><td>2 untranslated</td></tr>
+ <tr><td>kcmlaptop</td><td>21 fuzzy</td><td>9 untranslated</td></tr>
+@@ -25046,7 +25046,7 @@
+ <H2><A name="translation"></A>translation</H2>
+ <tr><td></td><td></td><td></td></tr>
+ </table>
+-<H2><A name="nb"></A>nb</H2>
++<H2><A name="no"></A>no</H2>
+ <table cellpadding=3 border=0><tr><th align="left" colspan="3"> kdeutils</th></tr>
+ <tr><td>kdf</td><td>7 fuzzy</td><td></td></tr>
+ <tr><td>kedit</td><td>5 fuzzy</td><td>2 untranslated</td></tr>
+@@ -25085,7 +25085,7 @@
+ <table cellpadding=3 border=0><tr><th align="left" colspan="3"> message</th></tr>
+ <tr><td>message</td><td>message fuzzy</td><td>message untranslated</td></tr>
+ </table>
+-<H2><A name="nb"></A>nb</H2>
++<H2><A name="no"></A>no</H2>
+ <table cellpadding=3 border=0><tr><th align="left" colspan="3"> kdeutils</th></tr>
+ <tr><td>kjots</td><td>10 fuzzy</td><td>2 untranslated</td></tr>
+ <tr><td>klaptopdaemon</td><td>2 fuzzy</td><td>5 untranslated</td></tr>
+@@ -25129,7 +25129,7 @@
+ <table cellpadding=3 border=0><tr><th align="left" colspan="3"> message</th></tr>
+ <tr><td>message</td><td>message fuzzy</td><td>message untranslated</td></tr>
+ </table>
+-<H2><A name="nb"></A>nb</H2>
++<H2><A name="no"></A>no</H2>
+ <table cellpadding=3 border=0><tr><th align="left" colspan="3"> koffice</th></tr>
+ <tr><td>kivio</td><td>6 fuzzy</td><td></td></tr>
+ <tr><td>koffice</td><td>105 fuzzy</td><td>184 untranslated</td></tr>
+@@ -25156,7 +25156,7 @@
+ <table cellpadding=3 border=0><tr><th align="left" colspan="3"> message</th></tr>
+ <tr><td>message</td><td>message fuzzy</td><td>message untranslated</td></tr>
+ </table>
+-<H2><A name="nb"></A>nb</H2>
++<H2><A name="no"></A>no</H2>
+ <table cellpadding=3 border=0><tr><th align="left" colspan="3"> koffice</th></tr>
+ <tr><td>kpresenter</td><td>105 fuzzy</td><td>83 untranslated</td></tr>
+ <tr><td>krita</td><td>7 fuzzy</td><td>4 untranslated</td></tr>
+@@ -25183,7 +25183,7 @@
+ <H2><A name="translation"></A>translation</H2>
+ <tr><td></td><td></td><td></td></tr>
+ </table>
+-<H2><A name="nb"></A>nb</H2>
++<H2><A name="no"></A>no</H2>
+ <table cellpadding=3 border=0><tr><th align="left" colspan="3"> nb/messages/cupsdconf.po</th></tr>
+ <tr><td>cupsdconf</td><td>71 fuzzy</td><td>47 untranslated</td></tr>
+ </table>
+diff -uNr kde-i18n-3.0.orig/hr/messages/entry.desktop kde-i18n-3.0/hr/messages/entry.desktop
+--- kde-i18n-3.0.orig/hr/messages/entry.desktop	Wed May 22 22:19:42 2002
++++ kde-i18n-3.0/hr/messages/entry.desktop	Thu May 23 11:07:40 2002
+@@ -33,9 +33,9 @@
+ Name[mi]=Reo Koroätia
+ Name[mk]=Хрватски
+ Name[mt]=Kroat
+-Name[nb]=Kroatsisk
+ Name[nl]=Kroatisch
+ Name[nn]=Kroatisk
++Name[no]=Kroatsisk
+ Name[oc]=Cròatian
+ Name[pl]=chorwacki
+ Name[pt]=Croata
+diff -uNr kde-i18n-3.0.orig/hu/messages/entry.desktop kde-i18n-3.0/hu/messages/entry.desktop
+--- kde-i18n-3.0.orig/hu/messages/entry.desktop	Wed May 22 22:12:58 2002
++++ kde-i18n-3.0/hu/messages/entry.desktop	Thu May 23 11:07:40 2002
+@@ -33,9 +33,9 @@
+ Name[mi]=Reo Hanekari
+ Name[mk]=Унгарски
+ Name[mt]=Ungeriż
+-Name[nb]=Ungarsk
+ Name[nl]=Hongaars
+ Name[nn]=Ungarsk
++Name[no]=Ungarsk
+ Name[oc]=Hongarian
+ Name[pl]=węgierski
+ Name[pt]=Húngaro
+diff -uNr kde-i18n-3.0.orig/is/messages/entry.desktop kde-i18n-3.0/is/messages/entry.desktop
+--- kde-i18n-3.0.orig/is/messages/entry.desktop	Wed May 22 22:12:50 2002
++++ kde-i18n-3.0/is/messages/entry.desktop	Thu May 23 11:07:40 2002
+@@ -33,9 +33,9 @@
+ Name[mi]=Reo Tiorangi
+ Name[mk]=Исландски
+ Name[mt]=Islandiż
+-Name[nb]=Islandsk
+ Name[nl]=IJslands
+ Name[nn]=Islandsk
++Name[no]=Islandsk
+ Name[oc]=Islandès
+ Name[pl]=islandzki
+ Name[pt]=Islandês
+diff -uNr kde-i18n-3.0.orig/it/messages/entry.desktop kde-i18n-3.0/it/messages/entry.desktop
+--- kde-i18n-3.0.orig/it/messages/entry.desktop	Wed May 22 22:17:22 2002
++++ kde-i18n-3.0/it/messages/entry.desktop	Thu May 23 11:07:40 2002
+@@ -33,9 +33,9 @@
+ Name[mi]=Reo Itari
+ Name[mk]=Италијански
+ Name[mt]=Taljan
+-Name[nb]=Italiensk
+ Name[nl]=Italiaans
+ Name[nn]=Italiensk
++Name[no]=Italiensk
+ Name[pl]=włoski
+ Name[pt]=Italiano
+ Name[pt_BR]=Italiano
+diff -uNr kde-i18n-3.0.orig/ja/messages/entry.desktop kde-i18n-3.0/ja/messages/entry.desktop
+--- kde-i18n-3.0.orig/ja/messages/entry.desktop	Wed May 22 22:12:43 2002
++++ kde-i18n-3.0/ja/messages/entry.desktop	Thu May 23 11:07:40 2002
+@@ -33,9 +33,9 @@
+ Name[mi]=Reo Hapana
+ Name[mk]=Јапонски
+ Name[mt]=Ġappuniż
+-Name[nb]=Japansk
+ Name[nl]=Japans
+ Name[nn]=Japansk
++Name[no]=Japansk
+ Name[oc]=Japònès
+ Name[pl]=japoński
+ Name[pt]=Japonês
+diff -uNr kde-i18n-3.0.orig/ko/messages/entry.desktop kde-i18n-3.0/ko/messages/entry.desktop
+--- kde-i18n-3.0.orig/ko/messages/entry.desktop	Wed May 22 22:17:12 2002
++++ kde-i18n-3.0/ko/messages/entry.desktop	Thu May 23 11:07:40 2002
+@@ -31,9 +31,9 @@
+ Name[lt]=Korėjiečių
+ Name[lv]=Korejiešu
+ Name[mk]=Корејски
+-Name[nb]=Koreansk
+ Name[nl]=Koreaans
+ Name[nn]=Koreansk
++Name[no]=Koreansk
+ Name[oc]=Còrean
+ Name[pl]=koreański
+ Name[pt]=Coreano
+diff -uNr kde-i18n-3.0.orig/lt/messages/entry.desktop kde-i18n-3.0/lt/messages/entry.desktop
+--- kde-i18n-3.0.orig/lt/messages/entry.desktop	Wed May 22 22:12:37 2002
++++ kde-i18n-3.0/lt/messages/entry.desktop	Thu May 23 11:07:40 2002
+@@ -31,9 +31,9 @@
+ Name[lv]=Lietuviešu
+ Name[mk]=Литвански
+ Name[mt]=Litwanjan
+-Name[nb]=Lituaisk
+ Name[nl]=Litouws
+ Name[nn]=Litauisk
++Name[no]=Lituaisk
+ Name[oc]=Litua
+ Name[pl]=litewski
+ Name[pt]=Lituano
+diff -uNr kde-i18n-3.0.orig/lv/messages/entry.desktop kde-i18n-3.0/lv/messages/entry.desktop
+--- kde-i18n-3.0.orig/lv/messages/entry.desktop	Wed May 22 22:17:29 2002
++++ kde-i18n-3.0/lv/messages/entry.desktop	Thu May 23 11:07:40 2002
+@@ -25,9 +25,9 @@
+ Name[lt]=Latvių
+ Name[lv]=Latviešu
+ Name[mt]=Latvjan
+-Name[nb]=Latvisk
+ Name[nl]=Lets
+ Name[nn]=Latvisk
++Name[no]=Latvisk
+ Name[pl]=łotewski
+ Name[pt]=Letónio
+ Name[pt_BR]=Latvia
+diff -uNr kde-i18n-3.0.orig/mt/messages/entry.desktop kde-i18n-3.0/mt/messages/entry.desktop
+--- kde-i18n-3.0.orig/mt/messages/entry.desktop	Wed May 22 22:12:29 2002
++++ kde-i18n-3.0/mt/messages/entry.desktop	Thu May 23 11:07:40 2002
+@@ -24,9 +24,9 @@
+ Name[lt]=Maltiečių
+ Name[lv]=Maltiešu
+ Name[mt]=Malti
+-Name[nb]=Maltisk
+ Name[nl]=Maltees
+ Name[nn]=Maltesisk
++Name[no]=Maltisk
+ Name[pl]=maltański
+ Name[pt]=Maltês
+ Name[pt_BR]=Maltês
+diff -uNr kde-i18n-3.0.orig/nl/messages/entry.desktop kde-i18n-3.0/nl/messages/entry.desktop
+--- kde-i18n-3.0.orig/nl/messages/entry.desktop	Wed May 22 22:12:22 2002
++++ kde-i18n-3.0/nl/messages/entry.desktop	Thu May 23 11:07:42 2002
+@@ -33,9 +33,9 @@
+ Name[mi]=Reo Tenemaka
+ Name[mk]=Холандски
+ Name[mt]=Olandiż
+-Name[nb]=Nederlandsk
+ Name[nl]=Nederlands
+ Name[nn]=Nederlandsk
++Name[no]=Nederlandsk
+ Name[oc]=Olandès
+ Name[pl]=holenderski
+ Name[pt]=Holandês
+diff -uNr kde-i18n-3.0.orig/nn/messages/entry.desktop kde-i18n-3.0/nn/messages/entry.desktop
+--- kde-i18n-3.0.orig/nn/messages/entry.desktop	Wed May 22 22:16:36 2002
++++ kde-i18n-3.0/nn/messages/entry.desktop	Thu May 23 11:07:42 2002
+@@ -31,9 +31,9 @@
+ Name[mi]=Reo Nöwei (Nynorsk)
+ Name[mk]=Норвешки (Nynorsk)
+ Name[mt]=Norveġiż (Nynorsk)
+-Name[nb]=Norsk (nynorsk)
+ Name[nl]=Noors (Nynorsk)
+ Name[nn]=Norsk (nynorsk)
++Name[no]=Norsk (nynorsk)
+ Name[oc]=Nòrvegian (Nynorsk)
+ Name[pl]=norweski (Nynorsk)
+ Name[pt]=Norueguês (Nynorsk)
+diff -uNr kde-i18n-3.0.orig/no/Makefile.am kde-i18n-3.0/no/Makefile.am
+--- kde-i18n-3.0.orig/no/Makefile.am	Tue Mar 26 02:57:12 2002
++++ kde-i18n-3.0/no/Makefile.am	Thu May 23 11:07:42 2002
+@@ -3,7 +3,7 @@
+ AUTOMAKE_OPTIONS = foreign
+ EXTRA_DIST = configure.in.in
+ $(srcdir)/configure.in.in: $(srcdir)/../Makefile.am
+-	cd $(srcdir) && make -f ../Makefile.am langsubdir SUBDIRLANG=nb
++	cd $(srcdir) && make -f ../Makefile.am langsubdir SUBDIRLANG=no
+ $(srcdir)/configure.in: $(srcdir)/configure.in.in
+ 	cd $(srcdir) && make -f ../admin/Makefile.common configure.in
+ $(srcdir)/acinclude.m4: $(srcdir)/../acinclude.m4
+diff -uNr kde-i18n-3.0.orig/no/Makefile.in kde-i18n-3.0/no/Makefile.in
+--- kde-i18n-3.0.orig/no/Makefile.in	Tue Mar 26 02:57:16 2002
++++ kde-i18n-3.0/no/Makefile.in	Thu May 23 11:07:42 2002
+@@ -580,7 +580,7 @@
+ 	uninstall-info-recursive uninstall-recursive
+ 
+ $(srcdir)/configure.in.in: $(srcdir)/../Makefile.am
+-	cd $(srcdir) && make -f ../Makefile.am langsubdir SUBDIRLANG=nb
++	cd $(srcdir) && make -f ../Makefile.am langsubdir SUBDIRLANG=no
+ $(srcdir)/configure.in: $(srcdir)/configure.in.in
+ 	cd $(srcdir) && make -f ../admin/Makefile.common configure.in
+ $(srcdir)/acinclude.m4: $(srcdir)/../acinclude.m4
+diff -uNr kde-i18n-3.0.orig/no/configure kde-i18n-3.0/no/configure
+--- kde-i18n-3.0.orig/no/configure	Tue Mar 26 02:57:16 2002
++++ kde-i18n-3.0/no/configure	Thu May 23 11:07:42 2002
+@@ -1224,7 +1224,7 @@
+ fi
+ 
+ # Define the identity of the package.
+-PACKAGE=kde-i18n-nb
++PACKAGE=kde-i18n-no
+ VERSION=0.1
+ 
+ cat >>confdefs.h <<_ACEOF
+diff -uNr kde-i18n-3.0.orig/no/configure.in kde-i18n-3.0/no/configure.in
+--- kde-i18n-3.0.orig/no/configure.in	Tue Mar 26 02:57:12 2002
++++ kde-i18n-3.0/no/configure.in	Thu May 23 11:07:42 2002
+@@ -1,6 +1,6 @@
+ AC_INIT(messages/kdelibs.po)
+ AC_CONFIG_AUX_DIR(../admin)
+-AM_INIT_AUTOMAKE(kde-i18n-nb, 0.1)
++AM_INIT_AUTOMAKE(kde-i18n-no, 0.1)
+ AM_CONFIG_HEADER(config.h)
+ AC_SUBST(AUTODIRS)
+ AM_KDE_WITH_NLS
+diff -uNr kde-i18n-3.0.orig/no/configure.in.in kde-i18n-3.0/no/configure.in.in
+--- kde-i18n-3.0.orig/no/configure.in.in	Tue Mar 26 02:57:12 2002
++++ kde-i18n-3.0/no/configure.in.in	Thu May 23 11:07:42 2002
+@@ -1,6 +1,6 @@
+ AC_INIT(messages/kdelibs.po)
+ AC_CONFIG_AUX_DIR(../admin)
+-AM_INIT_AUTOMAKE(kde-i18n-nb, 0.1)
++AM_INIT_AUTOMAKE(kde-i18n-no, 0.1)
+ AM_CONFIG_HEADER(config.h)
+ AC_SUBST(AUTODIRS)
+ AM_KDE_WITH_NLS
+diff -uNr kde-i18n-3.0.orig/no/messages/Makefile.am kde-i18n-3.0/no/messages/Makefile.am
+--- kde-i18n-3.0.orig/no/messages/Makefile.am	Fri Dec  7 16:50:37 2001
++++ kde-i18n-3.0/no/messages/Makefile.am	Mon Jan 14 22:04:24 2002
+@@ -1,4 +1,4 @@
+-KDE_LANG = nb
++KDE_LANG = no
+ SUBDIRS = $(AUTODIRS)
+ 
+ POFILES = AUTO
+diff -uNr kde-i18n-3.0.orig/no/messages/Makefile.in kde-i18n-3.0/no/messages/Makefile.in
+--- kde-i18n-3.0.orig/no/messages/Makefile.in	Tue Mar 26 02:57:16 2002
++++ kde-i18n-3.0/no/messages/Makefile.in	Thu May 23 11:07:42 2002
+@@ -226,7 +226,7 @@
+ x_includes = @x_includes@
+ x_libraries = @x_libraries@
+ 
+-KDE_LANG = nb
++KDE_LANG = no
+ #>- SUBDIRS = $(AUTODIRS)
+ #>+ 2
+ SUBDIRS =. kdeaddons kdeadmin kdebase kdeedu kdegames kdegraphics kdemultimedia kdenetwork kdenonbeta kdepim kdesdk kdetoys kdeutils
+diff -uNr kde-i18n-3.0.orig/no/messages/desktop.po kde-i18n-3.0/no/messages/desktop.po
+--- kde-i18n-3.0.orig/no/messages/desktop.po	Thu Mar 21 17:03:18 2002
++++ kde-i18n-3.0/no/messages/desktop.po	Thu May 23 11:07:43 2002
+@@ -156,10 +156,6 @@
+ msgid "Name=Maltese"
+ msgstr "Name=Maltisk"
+ 
+-#: kde-i18n/nb/messages/entry.desktop:1
+-msgid "Name=Norwegian (Bokmaal)"
+-msgstr "Name=Norsk (bokmål)"
+-
+ #: kde-i18n/nl/messages/entry.desktop:1
+ msgid "Name=Dutch"
+ msgstr "Name=Nederlandsk"
+@@ -168,6 +164,10 @@
+ msgid "Name=Norwegian (Nynorsk)"
+ msgstr "Name=Norsk (nynorsk)"
+ 
++#: kde-i18n/no/messages/entry.desktop:1
++msgid "Name=Norwegian (Bokmaal)"
++msgstr "Name=Norsk (bokmål)"
++
+ #: kde-i18n/oc/messages/entry.desktop:1
+ msgid "Name=Occitan"
+ msgstr "Name=Occitan"
+diff -uNr kde-i18n-3.0.orig/no/messages/kdeaddons/Makefile.am kde-i18n-3.0/no/messages/kdeaddons/Makefile.am
+--- kde-i18n-3.0.orig/no/messages/kdeaddons/Makefile.am	Fri Dec  7 16:50:57 2001
++++ kde-i18n-3.0/no/messages/kdeaddons/Makefile.am	Thu May 23 11:07:43 2002
+@@ -1,4 +1,4 @@
+-KDE_LANG = nb
++KDE_LANG = no
+ SUBDIRS = $(AUTODIRS)
+ 
+ POFILES = AUTO
+diff -uNr kde-i18n-3.0.orig/no/messages/kdeaddons/Makefile.in kde-i18n-3.0/no/messages/kdeaddons/Makefile.in
+--- kde-i18n-3.0.orig/no/messages/kdeaddons/Makefile.in	Tue Mar 26 02:57:16 2002
++++ kde-i18n-3.0/no/messages/kdeaddons/Makefile.in	Thu May 23 11:07:43 2002
+@@ -226,7 +226,7 @@
+ x_includes = @x_includes@
+ x_libraries = @x_libraries@
+ 
+-KDE_LANG = nb
++KDE_LANG = no
+ #>- SUBDIRS = $(AUTODIRS)
+ #>+ 2
+ SUBDIRS =.
+diff -uNr kde-i18n-3.0.orig/no/messages/kdeadmin/Makefile.am kde-i18n-3.0/no/messages/kdeadmin/Makefile.am
+--- kde-i18n-3.0.orig/no/messages/kdeadmin/Makefile.am	Fri Dec  7 16:51:18 2001
++++ kde-i18n-3.0/no/messages/kdeadmin/Makefile.am	Mon Jan 14 22:04:48 2002
+@@ -1,4 +1,4 @@
+-KDE_LANG = nb
++KDE_LANG = no
+ SUBDIRS = $(AUTODIRS)
+ 
+ POFILES = AUTO
+diff -uNr kde-i18n-3.0.orig/no/messages/kdeadmin/Makefile.in kde-i18n-3.0/no/messages/kdeadmin/Makefile.in
+--- kde-i18n-3.0.orig/no/messages/kdeadmin/Makefile.in	Tue Mar 26 02:57:16 2002
++++ kde-i18n-3.0/no/messages/kdeadmin/Makefile.in	Thu May 23 11:07:43 2002
+@@ -226,7 +226,7 @@
+ x_includes = @x_includes@
+ x_libraries = @x_libraries@
+ 
+-KDE_LANG = nb
++KDE_LANG = no
+ #>- SUBDIRS = $(AUTODIRS)
+ #>+ 2
+ SUBDIRS =.
+diff -uNr kde-i18n-3.0.orig/no/messages/kdebase/Makefile.am kde-i18n-3.0/no/messages/kdebase/Makefile.am
+--- kde-i18n-3.0.orig/no/messages/kdebase/Makefile.am	Fri Dec  7 16:51:38 2001
++++ kde-i18n-3.0/no/messages/kdebase/Makefile.am	Thu May 23 11:07:43 2002
+@@ -1,4 +1,4 @@
+-KDE_LANG = nb
++KDE_LANG = no
+ SUBDIRS = $(AUTODIRS)
+ 
+ POFILES = AUTO
+diff -uNr kde-i18n-3.0.orig/no/messages/kdebase/Makefile.in kde-i18n-3.0/no/messages/kdebase/Makefile.in
+--- kde-i18n-3.0.orig/no/messages/kdebase/Makefile.in	Tue Mar 26 02:57:16 2002
++++ kde-i18n-3.0/no/messages/kdebase/Makefile.in	Thu May 23 11:07:43 2002
+@@ -226,7 +226,7 @@
+ x_includes = @x_includes@
+ x_libraries = @x_libraries@
+ 
+-KDE_LANG = nb
++KDE_LANG = no
+ #>- SUBDIRS = $(AUTODIRS)
+ #>+ 2
+ SUBDIRS =.
+diff -uNr kde-i18n-3.0.orig/no/messages/kdeedu/Makefile.am kde-i18n-3.0/no/messages/kdeedu/Makefile.am
+--- kde-i18n-3.0.orig/no/messages/kdeedu/Makefile.am	Fri Dec  7 16:52:00 2001
++++ kde-i18n-3.0/no/messages/kdeedu/Makefile.am	Thu May 23 11:07:43 2002
+@@ -1,4 +1,4 @@
+-KDE_LANG = nb
++KDE_LANG = no
+ SUBDIRS = $(AUTODIRS)
+ 
+ POFILES = AUTO
+diff -uNr kde-i18n-3.0.orig/no/messages/kdeedu/Makefile.in kde-i18n-3.0/no/messages/kdeedu/Makefile.in
+--- kde-i18n-3.0.orig/no/messages/kdeedu/Makefile.in	Tue Mar 26 02:57:16 2002
++++ kde-i18n-3.0/no/messages/kdeedu/Makefile.in	Thu May 23 11:07:43 2002
+@@ -226,7 +226,7 @@
+ x_includes = @x_includes@
+ x_libraries = @x_libraries@
+ 
+-KDE_LANG = nb
++KDE_LANG = no
+ #>- SUBDIRS = $(AUTODIRS)
+ #>+ 2
+ SUBDIRS =.
+diff -uNr kde-i18n-3.0.orig/no/messages/kdegames/Makefile.am kde-i18n-3.0/no/messages/kdegames/Makefile.am
+--- kde-i18n-3.0.orig/no/messages/kdegames/Makefile.am	Fri Dec  7 16:52:20 2001
++++ kde-i18n-3.0/no/messages/kdegames/Makefile.am	Thu May 23 11:07:43 2002
+@@ -1,4 +1,4 @@
+-KDE_LANG = nb
++KDE_LANG = no
+ SUBDIRS = $(AUTODIRS)
+ 
+ POFILES = AUTO
+diff -uNr kde-i18n-3.0.orig/no/messages/kdegames/Makefile.in kde-i18n-3.0/no/messages/kdegames/Makefile.in
+--- kde-i18n-3.0.orig/no/messages/kdegames/Makefile.in	Tue Mar 26 02:57:16 2002
++++ kde-i18n-3.0/no/messages/kdegames/Makefile.in	Thu May 23 11:07:43 2002
+@@ -226,7 +226,7 @@
+ x_includes = @x_includes@
+ x_libraries = @x_libraries@
+ 
+-KDE_LANG = nb
++KDE_LANG = no
+ #>- SUBDIRS = $(AUTODIRS)
+ #>+ 2
+ SUBDIRS =.
+diff -uNr kde-i18n-3.0.orig/no/messages/kdegraphics/Makefile.am kde-i18n-3.0/no/messages/kdegraphics/Makefile.am
+--- kde-i18n-3.0.orig/no/messages/kdegraphics/Makefile.am	Fri Dec  7 16:52:41 2001
++++ kde-i18n-3.0/no/messages/kdegraphics/Makefile.am	Mon Jan 14 22:05:15 2002
+@@ -1,4 +1,4 @@
+-KDE_LANG = nb
++KDE_LANG = no
+ SUBDIRS = $(AUTODIRS)
+ 
+ POFILES = AUTO
+diff -uNr kde-i18n-3.0.orig/no/messages/kdegraphics/Makefile.in kde-i18n-3.0/no/messages/kdegraphics/Makefile.in
+--- kde-i18n-3.0.orig/no/messages/kdegraphics/Makefile.in	Tue Mar 26 02:57:16 2002
++++ kde-i18n-3.0/no/messages/kdegraphics/Makefile.in	Thu May 23 11:07:43 2002
+@@ -226,7 +226,7 @@
+ x_includes = @x_includes@
+ x_libraries = @x_libraries@
+ 
+-KDE_LANG = nb
++KDE_LANG = no
+ #>- SUBDIRS = $(AUTODIRS)
+ #>+ 2
+ SUBDIRS =.
+diff -uNr kde-i18n-3.0.orig/no/messages/kdemultimedia/Makefile.am kde-i18n-3.0/no/messages/kdemultimedia/Makefile.am
+--- kde-i18n-3.0.orig/no/messages/kdemultimedia/Makefile.am	Fri Dec  7 16:53:10 2001
++++ kde-i18n-3.0/no/messages/kdemultimedia/Makefile.am	Thu May 23 11:07:43 2002
+@@ -1,4 +1,4 @@
+-KDE_LANG = nb
++KDE_LANG = no
+ SUBDIRS = $(AUTODIRS)
+ 
+ POFILES = AUTO
+diff -uNr kde-i18n-3.0.orig/no/messages/kdemultimedia/Makefile.in kde-i18n-3.0/no/messages/kdemultimedia/Makefile.in
+--- kde-i18n-3.0.orig/no/messages/kdemultimedia/Makefile.in	Tue Mar 26 02:57:16 2002
++++ kde-i18n-3.0/no/messages/kdemultimedia/Makefile.in	Thu May 23 11:07:43 2002
+@@ -226,7 +226,7 @@
+ x_includes = @x_includes@
+ x_libraries = @x_libraries@
+ 
+-KDE_LANG = nb
++KDE_LANG = no
+ #>- SUBDIRS = $(AUTODIRS)
+ #>+ 2
+ SUBDIRS =.
+diff -uNr kde-i18n-3.0.orig/no/messages/kdenetwork/Makefile.am kde-i18n-3.0/no/messages/kdenetwork/Makefile.am
+--- kde-i18n-3.0.orig/no/messages/kdenetwork/Makefile.am	Fri Dec  7 16:53:32 2001
++++ kde-i18n-3.0/no/messages/kdenetwork/Makefile.am	Mon Jan 14 22:05:45 2002
+@@ -1,4 +1,4 @@
+-KDE_LANG = nb
++KDE_LANG = no
+ SUBDIRS = $(AUTODIRS)
+ 
+ POFILES = AUTO
+diff -uNr kde-i18n-3.0.orig/no/messages/kdenetwork/Makefile.in kde-i18n-3.0/no/messages/kdenetwork/Makefile.in
+--- kde-i18n-3.0.orig/no/messages/kdenetwork/Makefile.in	Tue Mar 26 02:57:16 2002
++++ kde-i18n-3.0/no/messages/kdenetwork/Makefile.in	Thu May 23 11:07:43 2002
+@@ -226,7 +226,7 @@
+ x_includes = @x_includes@
+ x_libraries = @x_libraries@
+ 
+-KDE_LANG = nb
++KDE_LANG = no
+ #>- SUBDIRS = $(AUTODIRS)
+ #>+ 2
+ SUBDIRS =.
+diff -uNr kde-i18n-3.0.orig/no/messages/kdenonbeta/Makefile.am kde-i18n-3.0/no/messages/kdenonbeta/Makefile.am
+--- kde-i18n-3.0.orig/no/messages/kdenonbeta/Makefile.am	Fri Dec  7 16:53:55 2001
++++ kde-i18n-3.0/no/messages/kdenonbeta/Makefile.am	Mon Jan 14 22:06:08 2002
+@@ -1,4 +1,4 @@
+-KDE_LANG = nb
++KDE_LANG = no
+ SUBDIRS = $(AUTODIRS)
+ 
+ POFILES = AUTO
+diff -uNr kde-i18n-3.0.orig/no/messages/kdenonbeta/Makefile.in kde-i18n-3.0/no/messages/kdenonbeta/Makefile.in
+--- kde-i18n-3.0.orig/no/messages/kdenonbeta/Makefile.in	Tue Mar 26 02:57:16 2002
++++ kde-i18n-3.0/no/messages/kdenonbeta/Makefile.in	Thu May 23 11:07:43 2002
+@@ -226,7 +226,7 @@
+ x_includes = @x_includes@
+ x_libraries = @x_libraries@
+ 
+-KDE_LANG = nb
++KDE_LANG = no
+ #>- SUBDIRS = $(AUTODIRS)
+ #>+ 2
+ SUBDIRS =.
+diff -uNr kde-i18n-3.0.orig/no/messages/kdepim/Makefile.am kde-i18n-3.0/no/messages/kdepim/Makefile.am
+--- kde-i18n-3.0.orig/no/messages/kdepim/Makefile.am	Fri Dec  7 16:54:22 2001
++++ kde-i18n-3.0/no/messages/kdepim/Makefile.am	Thu May 23 11:07:43 2002
+@@ -1,4 +1,4 @@
+-KDE_LANG = nb
++KDE_LANG = no
+ SUBDIRS = $(AUTODIRS)
+ 
+ POFILES = AUTO
+diff -uNr kde-i18n-3.0.orig/no/messages/kdepim/Makefile.in kde-i18n-3.0/no/messages/kdepim/Makefile.in
+--- kde-i18n-3.0.orig/no/messages/kdepim/Makefile.in	Tue Mar 26 02:57:16 2002
++++ kde-i18n-3.0/no/messages/kdepim/Makefile.in	Thu May 23 11:07:43 2002
+@@ -226,7 +226,7 @@
+ x_includes = @x_includes@
+ x_libraries = @x_libraries@
+ 
+-KDE_LANG = nb
++KDE_LANG = no
+ #>- SUBDIRS = $(AUTODIRS)
+ #>+ 2
+ SUBDIRS =.
+diff -uNr kde-i18n-3.0.orig/no/messages/kdesdk/Makefile.am kde-i18n-3.0/no/messages/kdesdk/Makefile.am
+--- kde-i18n-3.0.orig/no/messages/kdesdk/Makefile.am	Fri Dec  7 16:54:56 2001
++++ kde-i18n-3.0/no/messages/kdesdk/Makefile.am	Mon Jan 14 22:06:42 2002
+@@ -1,4 +1,4 @@
+-KDE_LANG = nb
++KDE_LANG = no
+ SUBDIRS = $(AUTODIRS)
+ 
+ POFILES = AUTO
+diff -uNr kde-i18n-3.0.orig/no/messages/kdesdk/Makefile.in kde-i18n-3.0/no/messages/kdesdk/Makefile.in
+--- kde-i18n-3.0.orig/no/messages/kdesdk/Makefile.in	Tue Mar 26 02:57:16 2002
++++ kde-i18n-3.0/no/messages/kdesdk/Makefile.in	Thu May 23 11:07:43 2002
+@@ -226,7 +226,7 @@
+ x_includes = @x_includes@
+ x_libraries = @x_libraries@
+ 
+-KDE_LANG = nb
++KDE_LANG = no
+ #>- SUBDIRS = $(AUTODIRS)
+ #>+ 2
+ SUBDIRS =.
+diff -uNr kde-i18n-3.0.orig/no/messages/kdetoys/Makefile.am kde-i18n-3.0/no/messages/kdetoys/Makefile.am
+--- kde-i18n-3.0.orig/no/messages/kdetoys/Makefile.am	Fri Dec  7 16:55:40 2001
++++ kde-i18n-3.0/no/messages/kdetoys/Makefile.am	Mon Jan 14 22:06:43 2002
+@@ -1,4 +1,4 @@
+-KDE_LANG = nb
++KDE_LANG = no
+ SUBDIRS = $(AUTODIRS)
+ 
+ POFILES = AUTO
+diff -uNr kde-i18n-3.0.orig/no/messages/kdetoys/Makefile.in kde-i18n-3.0/no/messages/kdetoys/Makefile.in
+--- kde-i18n-3.0.orig/no/messages/kdetoys/Makefile.in	Tue Mar 26 02:57:16 2002
++++ kde-i18n-3.0/no/messages/kdetoys/Makefile.in	Thu May 23 11:07:43 2002
+@@ -226,7 +226,7 @@
+ x_includes = @x_includes@
+ x_libraries = @x_libraries@
+ 
+-KDE_LANG = nb
++KDE_LANG = no
+ #>- SUBDIRS = $(AUTODIRS)
+ #>+ 2
+ SUBDIRS =.
+diff -uNr kde-i18n-3.0.orig/no/messages/kdeutils/Makefile.am kde-i18n-3.0/no/messages/kdeutils/Makefile.am
+--- kde-i18n-3.0.orig/no/messages/kdeutils/Makefile.am	Fri Dec  7 16:56:03 2001
++++ kde-i18n-3.0/no/messages/kdeutils/Makefile.am	Thu May 23 11:07:43 2002
+@@ -1,4 +1,4 @@
+-KDE_LANG = nb
++KDE_LANG = no
+ SUBDIRS = $(AUTODIRS)
+ 
+ POFILES = AUTO
+diff -uNr kde-i18n-3.0.orig/no/messages/kdeutils/Makefile.in kde-i18n-3.0/no/messages/kdeutils/Makefile.in
+--- kde-i18n-3.0.orig/no/messages/kdeutils/Makefile.in	Tue Mar 26 02:57:16 2002
++++ kde-i18n-3.0/no/messages/kdeutils/Makefile.in	Thu May 23 11:07:43 2002
+@@ -226,7 +226,7 @@
+ x_includes = @x_includes@
+ x_libraries = @x_libraries@
+ 
+-KDE_LANG = nb
++KDE_LANG = no
+ #>- SUBDIRS = $(AUTODIRS)
+ #>+ 2
+ SUBDIRS =.
+diff -uNr kde-i18n-3.0.orig/pl/messages/entry.desktop kde-i18n-3.0/pl/messages/entry.desktop
+--- kde-i18n-3.0.orig/pl/messages/entry.desktop	Wed May 22 22:12:15 2002
++++ kde-i18n-3.0/pl/messages/entry.desktop	Thu May 23 11:07:43 2002
+@@ -33,9 +33,9 @@
+ Name[mi]=Reo Pörana
+ Name[mk]=Полски
+ Name[mt]=Pollakk
+-Name[nb]=Polsk
+ Name[nl]=Pools
+ Name[nn]=Polsk
++Name[no]=Polsk
+ Name[oc]=Pòlònès
+ Name[pl]=polski
+ Name[pt]=Polaco
+diff -uNr kde-i18n-3.0.orig/pt/messages/entry.desktop kde-i18n-3.0/pt/messages/entry.desktop
+--- kde-i18n-3.0.orig/pt/messages/entry.desktop	Wed May 22 22:16:22 2002
++++ kde-i18n-3.0/pt/messages/entry.desktop	Thu May 23 11:07:44 2002
+@@ -33,9 +33,9 @@
+ Name[mi]=Reo Pötikï
+ Name[mk]=Португалски
+ Name[mt]=Portugiż
+-Name[nb]=Portugisisk
+ Name[nl]=Portugees
+ Name[nn]=Portugisisk
++Name[no]=Portugisisk
+ Name[oc]=Pòrtuguès
+ Name[pl]=portugalski
+ Name[pt]=Português
+diff -uNr kde-i18n-3.0.orig/pt_BR/messages/entry.desktop kde-i18n-3.0/pt_BR/messages/entry.desktop
+--- kde-i18n-3.0.orig/pt_BR/messages/entry.desktop	Wed May 22 22:12:06 2002
++++ kde-i18n-3.0/pt_BR/messages/entry.desktop	Thu May 23 11:07:44 2002
+@@ -33,9 +33,9 @@
+ Name[mi]=Reo Pötiki Parïhi
+ Name[mk]=Бразилски португалски
+ Name[mt]=Portugiż Brażiljan
+-Name[nb]=Brasiliansk portugisisk
+ Name[nl]=Braziliaans Portugees
+ Name[nn]=Portugisisk (Brasil)
++Name[no]=Brasiliansk portugisisk
+ Name[oc]=Pòrtuguès deu Brasil
+ Name[pl]=portugalski (odmiana brazylijska)
+ Name[pt]=Português do Brasil
+diff -uNr kde-i18n-3.0.orig/ro/messages/entry.desktop kde-i18n-3.0/ro/messages/entry.desktop
+--- kde-i18n-3.0.orig/ro/messages/entry.desktop	Wed May 22 22:16:16 2002
++++ kde-i18n-3.0/ro/messages/entry.desktop	Thu May 23 11:07:44 2002
+@@ -33,9 +33,9 @@
+ Name[mi]=Reo Romeinia
+ Name[mk]=Романски
+ Name[mt]=Rumen
+-Name[nb]=Rumensk
+ Name[nl]=Roemeens
+ Name[nn]=Rumensk
++Name[no]=Rumensk
+ Name[pl]=rumuński
+ Name[pt]=Romeno
+ Name[pt_BR]=Romeno
+diff -uNr kde-i18n-3.0.orig/ru/messages/entry.desktop kde-i18n-3.0/ru/messages/entry.desktop
+--- kde-i18n-3.0.orig/ru/messages/entry.desktop	Wed May 22 22:11:27 2002
++++ kde-i18n-3.0/ru/messages/entry.desktop	Thu May 23 11:07:44 2002
+@@ -33,9 +33,9 @@
+ Name[mi]=Reo Ruhia
+ Name[mk]=Руски
+ Name[mt]=Russu
+-Name[nb]=Russisk
+ Name[nl]=Russisch
+ Name[nn]=Russisk
++Name[no]=Russisk
+ Name[oc]=Rus
+ Name[pl]=rosyjski
+ Name[pt]=Russo
+diff -uNr kde-i18n-3.0.orig/sk/messages/entry.desktop kde-i18n-3.0/sk/messages/entry.desktop
+--- kde-i18n-3.0.orig/sk/messages/entry.desktop	Wed May 22 22:16:09 2002
++++ kde-i18n-3.0/sk/messages/entry.desktop	Thu May 23 11:07:44 2002
+@@ -32,9 +32,9 @@
+ Name[lv]=Slovāku
+ Name[mk]=Словачки
+ Name[mt]=Slovakk
+-Name[nb]=Slovakisk
+ Name[nl]=Slovaaks
+ Name[nn]=Slovakisk
++Name[no]=Slovakisk
+ Name[oc]=Eslòvac
+ Name[pl]=słowacki
+ Name[pt]=Eslovaco
+diff -uNr kde-i18n-3.0.orig/sl/messages/entry.desktop kde-i18n-3.0/sl/messages/entry.desktop
+--- kde-i18n-3.0.orig/sl/messages/entry.desktop	Wed May 22 22:11:18 2002
++++ kde-i18n-3.0/sl/messages/entry.desktop	Thu May 23 11:07:44 2002
+@@ -31,9 +31,9 @@
+ Name[lv]=Slovēņu
+ Name[mk]=Словенечки
+ Name[mt]=Sloven
+-Name[nb]=Slovensk
+ Name[nl]=Sloveens
+ Name[nn]=Slovensk
++Name[no]=Slovensk
+ Name[oc]=Eslòvian
+ Name[pl]=słoweński
+ Name[pt]=Esloveno
+diff -uNr kde-i18n-3.0.orig/sr/messages/entry.desktop kde-i18n-3.0/sr/messages/entry.desktop
+--- kde-i18n-3.0.orig/sr/messages/entry.desktop	Wed May 22 22:15:57 2002
++++ kde-i18n-3.0/sr/messages/entry.desktop	Thu May 23 11:07:44 2002
+@@ -32,9 +32,9 @@
+ Name[lv]=Serbu
+ Name[mk]=Српски
+ Name[mt]=Serb
+-Name[nb]=Serbisk
+ Name[nl]=Servisch
+ Name[nn]=Serbisk
++Name[no]=Serbisk
+ Name[pl]=serbski
+ Name[pt]=Sérvio
+ Name[pt_BR]=Sérvio
+diff -uNr kde-i18n-3.0.orig/subdirs kde-i18n-3.0/subdirs
+--- kde-i18n-3.0.orig/subdirs	Tue Mar 26 01:31:24 2002
++++ kde-i18n-3.0/subdirs	Thu May 23 11:07:44 2002
+@@ -25,9 +25,9 @@
+ lt
+ lv
+ mt
+-nb
+ nl
+ nn
++no
+ pl
+ pt
+ pt_BR
+diff -uNr kde-i18n-3.0.orig/sv/messages/entry.desktop kde-i18n-3.0/sv/messages/entry.desktop
+--- kde-i18n-3.0.orig/sv/messages/entry.desktop	Wed May 22 22:11:11 2002
++++ kde-i18n-3.0/sv/messages/entry.desktop	Thu May 23 11:07:44 2002
+@@ -33,9 +33,9 @@
+ Name[mi]=Reo Wïtana
+ Name[mk]=Шведски
+ Name[mt]=Svediż
+-Name[nb]=Svensk
+ Name[nl]=Zweeds
+ Name[nn]=Svensk
++Name[no]=Svensk
+ Name[oc]=Suedès
+ Name[pl]=szwedzki
+ Name[pt]=Sueco
+diff -uNr kde-i18n-3.0.orig/ta/messages/entry.desktop kde-i18n-3.0/ta/messages/entry.desktop
+--- kde-i18n-3.0.orig/ta/messages/entry.desktop	Wed May 22 22:15:50 2002
++++ kde-i18n-3.0/ta/messages/entry.desktop	Thu May 23 11:07:44 2002
+@@ -22,8 +22,8 @@
+ Name[lv]=Tamilu
+ Name[mi]=Reo Ïnia tonga
+ Name[mk]=Тамилски
+-Name[nb]=Tamilsk
+ Name[nn]=Tamilsk
++Name[no]=Tamilsk
+ Name[pl]=tamilski
+ Name[ro]=Tamilă
+ Name[ru]=Тамильский
+diff -uNr kde-i18n-3.0.orig/teamnames kde-i18n-3.0/teamnames
+--- kde-i18n-3.0.orig/teamnames	Mon Mar  4 12:16:48 2002
++++ kde-i18n-3.0/teamnames	Thu May 23 11:07:44 2002
+@@ -54,8 +54,8 @@
+ mr=Marathi
+ mt=Maltese
+ nl=Dutch
+-nb=Norwegian Bookmal
+ nn=Norwegian Nynorsk
++no=Norwegian Bookmal
+ oc=Occitan
+ pl=Polish
+ pt=Portuguese
+diff -uNr kde-i18n-3.0.orig/tr/messages/entry.desktop kde-i18n-3.0/tr/messages/entry.desktop
+--- kde-i18n-3.0.orig/tr/messages/entry.desktop	Wed May 22 22:15:37 2002
++++ kde-i18n-3.0/tr/messages/entry.desktop	Thu May 23 11:07:44 2002
+@@ -32,9 +32,9 @@
+ Name[lv]=Turku
+ Name[mk]=Турски
+ Name[mt]=Tork
+-Name[nb]=Tyrkisk
+ Name[nl]=Turks
+ Name[nn]=Tyrkisk
++Name[no]=Tyrkisk
+ Name[oc]=Turc
+ Name[pl]=turecki
+ Name[pt]=Turco
+diff -uNr kde-i18n-3.0.orig/uk/messages/entry.desktop kde-i18n-3.0/uk/messages/entry.desktop
+--- kde-i18n-3.0.orig/uk/messages/entry.desktop	Wed May 22 22:20:53 2002
++++ kde-i18n-3.0/uk/messages/entry.desktop	Thu May 23 11:07:44 2002
+@@ -31,9 +31,9 @@
+ Name[lv]=Ukraiņu
+ Name[mk]=Украински
+ Name[mt]=Ukranjan
+-Name[nb]=Ukrainsk
+ Name[nl]=Oekraïns
+ Name[nn]=Ukrainsk
++Name[no]=Ukrainsk
+ Name[oc]=Ucranian
+ Name[pl]=ukraiński
+ Name[pt]=Ucraniano
+diff -uNr kde-i18n-3.0.orig/vi/messages/entry.desktop kde-i18n-3.0/vi/messages/entry.desktop
+--- kde-i18n-3.0.orig/vi/messages/entry.desktop	Wed May 22 22:10:50 2002
++++ kde-i18n-3.0/vi/messages/entry.desktop	Thu May 23 11:07:44 2002
+@@ -25,9 +25,9 @@
+ Name[lt]=Vietnamiečių
+ Name[lv]=Vjetnamiešu
+ Name[mt]=Vjetnamiż
+-Name[nb]=Vietnamesisk
+ Name[nl]=Vietnamees
+ Name[nn]=Vietnamesisk
++Name[no]=Vietnamesisk
+ Name[pl]=wietnamski
+ Name[pt]=Vietnamita
+ Name[pt_BR]=Vietnamita
+diff -uNr kde-i18n-3.0.orig/zh_CN/messages/entry.desktop kde-i18n-3.0/zh_CN/messages/entry.desktop
+--- kde-i18n-3.0.orig/zh_CN/messages/entry.desktop	Wed May 22 22:10:25 2002
++++ kde-i18n-3.0/zh_CN/messages/entry.desktop	Thu May 23 11:07:44 2002
+@@ -33,9 +33,9 @@
+ Name[mi]=Reo Hainamana Ngäwari
+ Name[mk]=поедноставен Кинески
+ Name[mt]=Ċiniż Simplifikat
+-Name[nb]=Forenklet kinesisk
+ Name[nl]=Vereenvoudigd Chinees
+ Name[nn]=Forenkla kinesisk
++Name[no]=Forenklet kinesisk
+ Name[oc]=Chinès simplificat
+ Name[pl]=uproszczony chiński
+ Name[pt]=Chinês Simplificado
+diff -uNr kde-i18n-3.0.orig/zh_TW/messages/entry.desktop kde-i18n-3.0/zh_TW/messages/entry.desktop
+--- kde-i18n-3.0.orig/zh_TW/messages/entry.desktop	Wed May 22 22:14:48 2002
++++ kde-i18n-3.0/zh_TW/messages/entry.desktop	Thu May 23 11:07:44 2002
+@@ -33,9 +33,9 @@
+ Name[mi]=Reo Häina
+ Name[mk]=Кинески
+ Name[mt]=Ċiniż
+-Name[nb]=Kinesisk
+ Name[nl]=Chinees
+ Name[nn]=Kinesisk
++Name[no]=Kinesisk
+ Name[oc]=Chinès
+ Name[pl]=chiński
+ Name[pt]=Chinês
