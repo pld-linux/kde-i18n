@@ -153,6 +153,7 @@ Obsoletes:	kde-decoration-b2-i18n
 Obsoletes:	kde-decoration-modernsys-i18n
 Obsoletes:	kde-decoration-quartz-i18n
 Obsoletes:	common-filemanagement-i18n
+Obsoletes:	kdebase-common-filemanagement-i18n
 Obsoletes:	kdebase-desktop-libs-i18n
 Obsoletes:	kdebase-kappfinder-i18n
 Obsoletes:	kdebase-kdcop-i18n
@@ -212,6 +213,7 @@ Obsoletes:	kdegames-ktron-i18n
 Obsoletes:	kdegames-ktuberling-i18n
 Obsoletes:	kdegames-kwin4-i18n
 Obsoletes:	kdegames-lskat-i18n
+Obsoletes:	kdegames-megami-i18n
 Obsoletes:	kdegraphics-i18n
 Obsoletes:	kdegraphics-kamera-i18n
 Obsoletes:	kdegraphics-kcoloredit-i18n
@@ -1219,6 +1221,32 @@ for i in `find ./ro/docs/ -name Makefile.am`;
 do
 	echo -e 'KDE_LANG = ro\nSUBDIRS = $(AUTODIRS)\nKDE_DOCS = AUTO' > $i
 done
+
+if test -d "./ro/docs/kdebase/kcontrol" ; then
+
+for i in `find ./ro/docs/kdebase/kcontrol -type d -maxdepth 1 -depth|grep -v CVS`;
+do
+if [ `echo $i|sed -e "s,\./ro/docs/kdebase/,,g"|grep -s  kcontrol/` ] ; then
+z=`echo $i|sed -e "s,\./ro/docs/kdebase/,,g"|grep -s  kcontrol/`
+echo -e "KDE_LANG=ro\nKDE_DOCS=$z" > ./ro/docs/kdebase/${z}/Makefile.am
+fi
+done
+
+
+fi
+
+if test -d "./ro/docs/kdebase/kinfocenter" ; then
+
+for i in `find ./ro/docs/kdebase/kinfocenter -type d -maxdepth 1 -depth|grep -v CVS`;
+do
+
+if [ `echo $i|sed -e "s,\./ro/docs/kdebase/,,g"|grep -s kinfocenter/` ] ; then
+z=`echo $i|sed -e "s,\./ro/docs/kdebase/,,g"|grep -s kinfocenter/`
+echo -e "KDE_LANG=ro\nKDE_DOCS=$z"  > ./ro/docs/kdebase/${z}/Makefile.am
+fi
+done
+
+fi
 
 %{__make} -f admin/Makefile.common cvs
 
