@@ -40,3 +40,23 @@
  ><userinput>
  xcirkel=sin(t)
  </userinput
+--- kde-i18n-3.2.2/nl/docs/kdeedu/kig/index.docbook.org	2004-04-20 14:11:13.000000000 +0000
++++ kde-i18n-3.2.2/nl/docs/kdeedu/kig/index.docbook	2004-04-20 14:11:44.000000000 +0000
+@@ -202,7 +202,7 @@
+ >linker</mousebutton
+ > muisknop. </para>
+ 	<para
+->U kunt de constructie van een nieuw object altijd annuleren door op de &Esc;-knop te drukken of door te klikken op de <guiicon
++>U kunt de constructie van een nieuw object altijd annuleren door op de -knop te drukken of door te klikken op de <guiicon
+ >Stop</guiicon
+ >-knop te klikken (rode achthoek met een <quote
+ >X</quote
+@@ -347,7 +347,7 @@
+       <para
+ >Als u volledig scherm weer wilt verlaten, klikt u met de &RMB; op het scherm op een plaats waar geen object is en selecteert u <guimenuitem
+ >Volledig scherm verlaten</guimenuitem
+->, of drukt u op de &Esc;-toets. </para>
++>, of drukt u op de -toets. </para>
+     </section>
+   </chapter>
+ 
