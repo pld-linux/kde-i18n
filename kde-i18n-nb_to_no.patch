@@ -1,18 +1,6 @@
-diff -uNr kde-i18n-3.0.orig/Makefile.in kde-i18n-3.0/Makefile.in
---- kde-i18n-3.0.orig/Makefile.in	Tue Mar 26 02:53:04 2002
-+++ kde-i18n-3.0/Makefile.in	Thu May 23 11:07:40 2002
-@@ -407,7 +407,7 @@
- 
- #>- DISTFILES = $(DIST_COMMON) $(DIST_SOURCES) $(TEXINFOS) $(EXTRA_DIST)
- #>+ 4
--KDE_DIST=kde-i18n-lt.tar.bz2 kde-i18n-ja.tar.bz2 kde-i18n-it.tar.bz2 kde-i18n-da.tar.bz2 kde-i18n-ru.tar.bz2 kde-i18n-hr.tar.bz2 check_po_files check_charsets kde-i18n-nl.tar.bz2 check_makefiles kde-i18n-ro.tar.bz2 kde-i18n-he.tar.bz2 kde-i18n-es.tar.bz2 kde-i18n-el.tar.bz2 msgsplit.pl kde-i18n-lv.tar.bz2 kde-i18n-bs.tar.bz2 createdesktop findfiles kde-i18n-et.tar.bz2 kde-i18n-en_GB.tar.bz2 kde-i18n-ca.tar.bz2 check_duplicates check_gui_texts kde-i18n-nn.tar.bz2 kde-i18n-pl.tar.bz2 kde-i18n-ar.tar.bz2 kde-i18n-hu.tar.bz2 kde-i18n-fi.tar.bz2 check_consistency apply.cc update_xml subdirs kde-i18n-bg.tar.bz2 commentmerge kde-i18n-az.tar.bz2 kde-i18n-pt.tar.bz2 kde-i18n-ko.tar.bz2 kde-i18n-de.tar.bz2 kde-i18n-mt.tar.bz2 kde-i18n-eo.tar.bz2 highscore kde-i18n-pt_BR.tar.bz2 kde-i18n-nb.tar.bz2 kde-i18n-id.tar.bz2 kde-i18n-fr.tar.bz2 highscore.html kde-i18n-af.tar.bz2 Makefile.cvs kde-i18n-is.tar.bz2 teamnames kde-i18n-cs.tar.bz2 
-+KDE_DIST=kde-i18n-lt.tar.bz2 kde-i18n-ja.tar.bz2 kde-i18n-it.tar.bz2 kde-i18n-da.tar.bz2 kde-i18n-ru.tar.bz2 kde-i18n-hr.tar.bz2 check_po_files check_charsets kde-i18n-nl.tar.bz2 check_makefiles kde-i18n-ro.tar.bz2 kde-i18n-he.tar.bz2 kde-i18n-es.tar.bz2 kde-i18n-el.tar.bz2 msgsplit.pl kde-i18n-lv.tar.bz2 kde-i18n-bs.tar.bz2 createdesktop findfiles kde-i18n-et.tar.bz2 kde-i18n-en_GB.tar.bz2 kde-i18n-ca.tar.bz2 check_duplicates check_gui_texts kde-i18n-nn.tar.bz2 kde-i18n-pl.tar.bz2 kde-i18n-ar.tar.bz2 kde-i18n-hu.tar.bz2 kde-i18n-fi.tar.bz2 check_consistency apply.cc update_xml subdirs kde-i18n-bg.tar.bz2 commentmerge kde-i18n-az.tar.bz2 kde-i18n-pt.tar.bz2 kde-i18n-ko.tar.bz2 kde-i18n-de.tar.bz2 kde-i18n-mt.tar.bz2 kde-i18n-eo.tar.bz2 highscore kde-i18n-pt_BR.tar.bz2 kde-i18n-no.tar.bz2 kde-i18n-id.tar.bz2 kde-i18n-fr.tar.bz2 highscore.html kde-i18n-af.tar.bz2 Makefile.cvs kde-i18n-is.tar.bz2 teamnames kde-i18n-cs.tar.bz2 
- 
- DISTFILES= $(DIST_COMMON) $(DIST_SOURCES) $(TEXINFOS) $(EXTRA_DIST) $(KDE_DIST)
- 
-diff -uNr kde-i18n-3.0.orig/af/messages/entry.desktop kde-i18n-3.0/af/messages/entry.desktop
---- kde-i18n-3.0.orig/af/messages/entry.desktop	Wed May 22 22:14:41 2002
-+++ kde-i18n-3.0/af/messages/entry.desktop	Thu May 23 11:07:40 2002
+diff -urN kde-i18n-3.0.1.pl/af/messages/entry.desktop kde-i18n-3.0.1/af/messages/entry.desktop
+--- kde-i18n-3.0.1.pl/af/messages/entry.desktop	Fri May 24 23:14:49 2002
++++ kde-i18n-3.0.1/af/messages/entry.desktop	Sun May 26 00:41:19 2002
 @@ -18,7 +18,7 @@
  Name[lv]=Āfrikāņu
  Name[mi]=Reo Äwherika Tatimana
@@ -22,9 +10,9 @@ diff -uNr kde-i18n-3.0.orig/af/messages/entry.desktop kde-i18n-3.0/af/messages/e
  Name[pl]=afrykanerski
  Name[pt_BR]=Africânes
  Name[ro]=Africană
-diff -uNr kde-i18n-3.0.orig/ar/messages/entry.desktop kde-i18n-3.0/ar/messages/entry.desktop
---- kde-i18n-3.0.orig/ar/messages/entry.desktop	Wed May 22 22:06:12 2002
-+++ kde-i18n-3.0/ar/messages/entry.desktop	Thu May 23 11:07:40 2002
+diff -urN kde-i18n-3.0.1.pl/ar/messages/entry.desktop kde-i18n-3.0.1/ar/messages/entry.desktop
+--- kde-i18n-3.0.1.pl/ar/messages/entry.desktop	Fri May 24 23:14:49 2002
++++ kde-i18n-3.0.1/ar/messages/entry.desktop	Sun May 26 00:41:19 2002
 @@ -32,9 +32,9 @@
  Name[mi]=Reo Arapia
  Name[mk]=Арапски
@@ -36,10 +24,10 @@ diff -uNr kde-i18n-3.0.orig/ar/messages/entry.desktop kde-i18n-3.0/ar/messages/e
  Name[oc]=Arab
  Name[pl]=arabski
  Name[pt]=Arábico
-diff -uNr kde-i18n-3.0.orig/az/messages/entry.desktop kde-i18n-3.0/az/messages/entry.desktop
---- kde-i18n-3.0.orig/az/messages/entry.desktop	Wed May 22 22:14:13 2002
-+++ kde-i18n-3.0/az/messages/entry.desktop	Thu May 23 11:07:40 2002
-@@ -23,9 +23,9 @@
+diff -urN kde-i18n-3.0.1.pl/az/messages/entry.desktop kde-i18n-3.0.1/az/messages/entry.desktop
+--- kde-i18n-3.0.1.pl/az/messages/entry.desktop	Fri May 24 23:14:49 2002
++++ kde-i18n-3.0.1/az/messages/entry.desktop	Sun May 26 00:41:19 2002
+@@ -24,9 +24,9 @@
  Name[lt]=Azerbaidžaniečių
  Name[lv]=Azerbaidžāņu
  Name[mt]=Ażerbajġani
@@ -50,9 +38,9 @@ diff -uNr kde-i18n-3.0.orig/az/messages/entry.desktop kde-i18n-3.0/az/messages/e
  Name[pl]=azerski
  Name[pt]=Azerbaijanês
  Name[pt_BR]=Azerbaijão
-diff -uNr kde-i18n-3.0.orig/bg/messages/entry.desktop kde-i18n-3.0/bg/messages/entry.desktop
---- kde-i18n-3.0.orig/bg/messages/entry.desktop	Wed May 22 22:06:04 2002
-+++ kde-i18n-3.0/bg/messages/entry.desktop	Thu May 23 11:07:40 2002
+diff -urN kde-i18n-3.0.1.pl/bg/messages/entry.desktop kde-i18n-3.0.1/bg/messages/entry.desktop
+--- kde-i18n-3.0.1.pl/bg/messages/entry.desktop	Fri May 24 23:14:49 2002
++++ kde-i18n-3.0.1/bg/messages/entry.desktop	Sun May 26 00:41:19 2002
 @@ -32,9 +32,9 @@
  Name[mi]=Reo Purukeria
  Name[mk]=Бугарски
@@ -64,9 +52,9 @@ diff -uNr kde-i18n-3.0.orig/bg/messages/entry.desktop kde-i18n-3.0/bg/messages/e
  Name[oc]=Bulgar
  Name[pl]=bułgarski
  Name[pt]=Búlgaro
-diff -uNr kde-i18n-3.0.orig/bs/messages/entry.desktop kde-i18n-3.0/bs/messages/entry.desktop
---- kde-i18n-3.0.orig/bs/messages/entry.desktop	Wed May 22 22:13:59 2002
-+++ kde-i18n-3.0/bs/messages/entry.desktop	Thu May 23 11:07:40 2002
+diff -urN kde-i18n-3.0.1.pl/bs/messages/entry.desktop kde-i18n-3.0.1/bs/messages/entry.desktop
+--- kde-i18n-3.0.1.pl/bs/messages/entry.desktop	Fri May 24 23:14:49 2002
++++ kde-i18n-3.0.1/bs/messages/entry.desktop	Sun May 26 00:41:19 2002
 @@ -25,9 +25,9 @@
  Name[lt]=Bosnių
  Name[lv]=Bosniešu
@@ -78,9 +66,9 @@ diff -uNr kde-i18n-3.0.orig/bs/messages/entry.desktop kde-i18n-3.0/bs/messages/e
  Name[pl]=bośniacki
  Name[pt]=Bósnio
  Name[pt_BR]=Bósnio
-diff -uNr kde-i18n-3.0.orig/ca/messages/entry.desktop kde-i18n-3.0/ca/messages/entry.desktop
---- kde-i18n-3.0.orig/ca/messages/entry.desktop	Wed May 22 22:05:54 2002
-+++ kde-i18n-3.0/ca/messages/entry.desktop	Thu May 23 11:07:40 2002
+diff -urN kde-i18n-3.0.1.pl/ca/messages/entry.desktop kde-i18n-3.0.1/ca/messages/entry.desktop
+--- kde-i18n-3.0.1.pl/ca/messages/entry.desktop	Fri May 24 23:14:49 2002
++++ kde-i18n-3.0.1/ca/messages/entry.desktop	Sun May 26 00:41:19 2002
 @@ -31,9 +31,9 @@
  Name[mi]=Reo Peina Raki Räwhiti
  Name[mk]=Каталански
@@ -92,9 +80,9 @@ diff -uNr kde-i18n-3.0.orig/ca/messages/entry.desktop kde-i18n-3.0/ca/messages/e
  Name[pl]=kataloński
  Name[pt]=Catalão
  Name[pt_BR]=Catalão
-diff -uNr kde-i18n-3.0.orig/cs/messages/entry.desktop kde-i18n-3.0/cs/messages/entry.desktop
---- kde-i18n-3.0.orig/cs/messages/entry.desktop	Wed May 22 22:13:52 2002
-+++ kde-i18n-3.0/cs/messages/entry.desktop	Thu May 23 11:07:40 2002
+diff -urN kde-i18n-3.0.1.pl/cs/messages/entry.desktop kde-i18n-3.0.1/cs/messages/entry.desktop
+--- kde-i18n-3.0.1.pl/cs/messages/entry.desktop	Fri May 24 23:14:49 2002
++++ kde-i18n-3.0.1/cs/messages/entry.desktop	Sun May 26 00:41:19 2002
 @@ -32,9 +32,9 @@
  Name[lv]=Čehu
  Name[mk]=Чешки
@@ -106,9 +94,9 @@ diff -uNr kde-i18n-3.0.orig/cs/messages/entry.desktop kde-i18n-3.0/cs/messages/e
  Name[oc]=Chec
  Name[pl]=czeski
  Name[pt]=Checo
-diff -uNr kde-i18n-3.0.orig/da/messages/entry.desktop kde-i18n-3.0/da/messages/entry.desktop
---- kde-i18n-3.0.orig/da/messages/entry.desktop	Wed May 22 22:05:46 2002
-+++ kde-i18n-3.0/da/messages/entry.desktop	Thu May 23 11:07:40 2002
+diff -urN kde-i18n-3.0.1.pl/da/messages/entry.desktop kde-i18n-3.0.1/da/messages/entry.desktop
+--- kde-i18n-3.0.1.pl/da/messages/entry.desktop	Fri May 24 23:14:49 2002
++++ kde-i18n-3.0.1/da/messages/entry.desktop	Sun May 26 00:41:19 2002
 @@ -33,9 +33,9 @@
  Name[mi]=Reo Tenemaka
  Name[mk]=Дански
@@ -120,9 +108,9 @@ diff -uNr kde-i18n-3.0.orig/da/messages/entry.desktop kde-i18n-3.0/da/messages/e
  Name[oc]=Danès
  Name[pl]=duński
  Name[pt]=Dinamarquês
-diff -uNr kde-i18n-3.0.orig/de/messages/entry.desktop kde-i18n-3.0/de/messages/entry.desktop
---- kde-i18n-3.0.orig/de/messages/entry.desktop	Wed May 22 22:13:46 2002
-+++ kde-i18n-3.0/de/messages/entry.desktop	Thu May 23 11:07:40 2002
+diff -urN kde-i18n-3.0.1.pl/de/messages/entry.desktop kde-i18n-3.0.1/de/messages/entry.desktop
+--- kde-i18n-3.0.1.pl/de/messages/entry.desktop	Fri May 24 23:14:49 2002
++++ kde-i18n-3.0.1/de/messages/entry.desktop	Sun May 26 00:41:19 2002
 @@ -33,9 +33,9 @@
  Name[mi]=Reo Tiamana
  Name[mk]=Германски
@@ -134,9 +122,9 @@ diff -uNr kde-i18n-3.0.orig/de/messages/entry.desktop kde-i18n-3.0/de/messages/e
  Name[oc]=Alemani
  Name[pl]=niemiecki
  Name[pt]=Alemão
-diff -uNr kde-i18n-3.0.orig/el/messages/entry.desktop kde-i18n-3.0/el/messages/entry.desktop
---- kde-i18n-3.0.orig/el/messages/entry.desktop	Wed May 22 22:05:32 2002
-+++ kde-i18n-3.0/el/messages/entry.desktop	Thu May 23 11:07:40 2002
+diff -urN kde-i18n-3.0.1.pl/el/messages/entry.desktop kde-i18n-3.0.1/el/messages/entry.desktop
+--- kde-i18n-3.0.1.pl/el/messages/entry.desktop	Fri May 24 23:14:49 2002
++++ kde-i18n-3.0.1/el/messages/entry.desktop	Sun May 26 00:41:19 2002
 @@ -33,9 +33,9 @@
  Name[mi]=Reo Kariki
  Name[mk]=Грчки
@@ -148,9 +136,9 @@ diff -uNr kde-i18n-3.0.orig/el/messages/entry.desktop kde-i18n-3.0/el/messages/e
  Name[oc]=Grec
  Name[pl]=grecki
  Name[pt]=Grego
-diff -uNr kde-i18n-3.0.orig/en_GB/messages/entry.desktop kde-i18n-3.0/en_GB/messages/entry.desktop
---- kde-i18n-3.0.orig/en_GB/messages/entry.desktop	Wed May 22 22:13:39 2002
-+++ kde-i18n-3.0/en_GB/messages/entry.desktop	Thu May 23 11:07:40 2002
+diff -urN kde-i18n-3.0.1.pl/en_GB/messages/entry.desktop kde-i18n-3.0.1/en_GB/messages/entry.desktop
+--- kde-i18n-3.0.1.pl/en_GB/messages/entry.desktop	Fri May 24 23:14:49 2002
++++ kde-i18n-3.0.1/en_GB/messages/entry.desktop	Sun May 26 00:41:19 2002
 @@ -25,9 +25,9 @@
  Name[lt]=Anglų (UK)
  Name[lv]=Angļu (AK)
@@ -162,9 +150,9 @@ diff -uNr kde-i18n-3.0.orig/en_GB/messages/entry.desktop kde-i18n-3.0/en_GB/mess
  Name[pl]=angielski (brytyjski)
  Name[pt]=Inglês (Reino Unido)
  Name[pt_BR]=Inglês da Inglaterra
-diff -uNr kde-i18n-3.0.orig/es/messages/entry.desktop kde-i18n-3.0/es/messages/entry.desktop
---- kde-i18n-3.0.orig/es/messages/entry.desktop	Wed May 22 22:13:17 2002
-+++ kde-i18n-3.0/es/messages/entry.desktop	Thu May 23 11:07:40 2002
+diff -urN kde-i18n-3.0.1.pl/es/messages/entry.desktop kde-i18n-3.0.1/es/messages/entry.desktop
+--- kde-i18n-3.0.1.pl/es/messages/entry.desktop	Fri May 24 23:14:49 2002
++++ kde-i18n-3.0.1/es/messages/entry.desktop	Sun May 26 00:41:19 2002
 @@ -33,9 +33,9 @@
  Name[mi]=Reo Peina
  Name[mk]=Шпански
@@ -176,9 +164,9 @@ diff -uNr kde-i18n-3.0.orig/es/messages/entry.desktop kde-i18n-3.0/es/messages/e
  Name[oc]=Espanhòl
  Name[pl]=hiszpański
  Name[pt]=Espanhol
-diff -uNr kde-i18n-3.0.orig/et/messages/entry.desktop kde-i18n-3.0/et/messages/entry.desktop
---- kde-i18n-3.0.orig/et/messages/entry.desktop	Wed May 22 22:20:04 2002
-+++ kde-i18n-3.0/et/messages/entry.desktop	Thu May 23 11:07:40 2002
+diff -urN kde-i18n-3.0.1.pl/et/messages/entry.desktop kde-i18n-3.0.1/et/messages/entry.desktop
+--- kde-i18n-3.0.1.pl/et/messages/entry.desktop	Fri May 24 23:14:49 2002
++++ kde-i18n-3.0.1/et/messages/entry.desktop	Sun May 26 00:41:19 2002
 @@ -33,9 +33,9 @@
  Name[mi]=Reo Etonia
  Name[mk]=Естонски
@@ -190,9 +178,9 @@ diff -uNr kde-i18n-3.0.orig/et/messages/entry.desktop kde-i18n-3.0/et/messages/e
  Name[pl]=estoński
  Name[pt]=Estónio
  Name[pt_BR]=Estoniano
-diff -uNr kde-i18n-3.0.orig/fi/messages/entry.desktop kde-i18n-3.0/fi/messages/entry.desktop
---- kde-i18n-3.0.orig/fi/messages/entry.desktop	Wed May 22 22:13:11 2002
-+++ kde-i18n-3.0/fi/messages/entry.desktop	Thu May 23 11:07:40 2002
+diff -urN kde-i18n-3.0.1.pl/fi/messages/entry.desktop kde-i18n-3.0.1/fi/messages/entry.desktop
+--- kde-i18n-3.0.1.pl/fi/messages/entry.desktop	Fri May 24 23:14:49 2002
++++ kde-i18n-3.0.1/fi/messages/entry.desktop	Sun May 26 00:41:19 2002
 @@ -33,9 +33,9 @@
  Name[mi]=Reo Whinarana
  Name[mk]=Фински
@@ -204,9 +192,9 @@ diff -uNr kde-i18n-3.0.orig/fi/messages/entry.desktop kde-i18n-3.0/fi/messages/e
  Name[oc]=Finlandès
  Name[pl]=fiński
  Name[pt]=Finlandês
-diff -uNr kde-i18n-3.0.orig/fr/messages/entry.desktop kde-i18n-3.0/fr/messages/entry.desktop
---- kde-i18n-3.0.orig/fr/messages/entry.desktop	Wed May 22 22:19:58 2002
-+++ kde-i18n-3.0/fr/messages/entry.desktop	Thu May 23 11:07:40 2002
+diff -urN kde-i18n-3.0.1.pl/fr/messages/entry.desktop kde-i18n-3.0.1/fr/messages/entry.desktop
+--- kde-i18n-3.0.1.pl/fr/messages/entry.desktop	Fri May 24 23:14:49 2002
++++ kde-i18n-3.0.1/fr/messages/entry.desktop	Sun May 26 00:41:19 2002
 @@ -32,9 +32,9 @@
  Name[mi]=Reo Parani
  Name[mk]=Француски
@@ -218,9 +206,9 @@ diff -uNr kde-i18n-3.0.orig/fr/messages/entry.desktop kde-i18n-3.0/fr/messages/e
  Name[oc]=Franchimand
  Name[pl]=francuski
  Name[pt]=Francês
-diff -uNr kde-i18n-3.0.orig/he/messages/entry.desktop kde-i18n-3.0/he/messages/entry.desktop
---- kde-i18n-3.0.orig/he/messages/entry.desktop	Wed May 22 22:13:04 2002
-+++ kde-i18n-3.0/he/messages/entry.desktop	Thu May 23 11:07:40 2002
+diff -urN kde-i18n-3.0.1.pl/he/messages/entry.desktop kde-i18n-3.0.1/he/messages/entry.desktop
+--- kde-i18n-3.0.1.pl/he/messages/entry.desktop	Fri May 24 23:14:49 2002
++++ kde-i18n-3.0.1/he/messages/entry.desktop	Sun May 26 00:41:19 2002
 @@ -33,9 +33,9 @@
  Name[mi]=Reo Hürai
  Name[mk]=Еврејски
@@ -232,9 +220,9 @@ diff -uNr kde-i18n-3.0.orig/he/messages/entry.desktop kde-i18n-3.0/he/messages/e
  Name[oc]=Hebreu
  Name[pl]=hebrajski
  Name[pt]=Hebreu
-diff -uNr kde-i18n-3.0.orig/highscore kde-i18n-3.0/highscore
---- kde-i18n-3.0.orig/highscore	Thu Mar 21 13:09:26 2002
-+++ kde-i18n-3.0/highscore	Thu May 23 11:07:40 2002
+diff -urN kde-i18n-3.0.1.pl/highscore kde-i18n-3.0.1/highscore
+--- kde-i18n-3.0.1.pl/highscore	Fri Mar 22 00:52:36 2002
++++ kde-i18n-3.0.1/highscore	Sun May 26 00:41:19 2002
 @@ -12702,7 +12702,7 @@
     kdelibs:  7 untranslated
     ppdtranslations:  9 untranslated
@@ -748,9 +736,9 @@ diff -uNr kde-i18n-3.0.orig/highscore kde-i18n-3.0/highscore
     cupsdconf: 71 fuzzy 47 untranslated
     desktop: 680 fuzzy 52 untranslated
     katepart: 83 fuzzy 88 untranslated
-diff -uNr kde-i18n-3.0.orig/highscore.html kde-i18n-3.0/highscore.html
---- kde-i18n-3.0.orig/highscore.html	Thu Mar 21 13:09:29 2002
-+++ kde-i18n-3.0/highscore.html	Thu May 23 11:07:40 2002
+diff -urN kde-i18n-3.0.1.pl/highscore.html kde-i18n-3.0.1/highscore.html
+--- kde-i18n-3.0.1.pl/highscore.html	Fri Mar 22 00:52:37 2002
++++ kde-i18n-3.0.1/highscore.html	Sun May 26 00:41:19 2002
 @@ -23239,7 +23239,7 @@
  <table cellpadding=3 border=0><tr><th align="left" colspan="3"> others</th></tr>
  <tr><td>pixie</td><td></td><td>4 untranslated</td></tr>
@@ -1264,9 +1252,9 @@ diff -uNr kde-i18n-3.0.orig/highscore.html kde-i18n-3.0/highscore.html
  <table cellpadding=3 border=0><tr><th align="left" colspan="3"> nb/messages/cupsdconf.po</th></tr>
  <tr><td>cupsdconf</td><td>71 fuzzy</td><td>47 untranslated</td></tr>
  </table>
-diff -uNr kde-i18n-3.0.orig/hr/messages/entry.desktop kde-i18n-3.0/hr/messages/entry.desktop
---- kde-i18n-3.0.orig/hr/messages/entry.desktop	Wed May 22 22:19:42 2002
-+++ kde-i18n-3.0/hr/messages/entry.desktop	Thu May 23 11:07:40 2002
+diff -urN kde-i18n-3.0.1.pl/hr/messages/entry.desktop kde-i18n-3.0.1/hr/messages/entry.desktop
+--- kde-i18n-3.0.1.pl/hr/messages/entry.desktop	Fri May 24 23:14:49 2002
++++ kde-i18n-3.0.1/hr/messages/entry.desktop	Sun May 26 00:41:19 2002
 @@ -33,9 +33,9 @@
  Name[mi]=Reo Koroätia
  Name[mk]=Хрватски
@@ -1278,9 +1266,9 @@ diff -uNr kde-i18n-3.0.orig/hr/messages/entry.desktop kde-i18n-3.0/hr/messages/e
  Name[oc]=Cròatian
  Name[pl]=chorwacki
  Name[pt]=Croata
-diff -uNr kde-i18n-3.0.orig/hu/messages/entry.desktop kde-i18n-3.0/hu/messages/entry.desktop
---- kde-i18n-3.0.orig/hu/messages/entry.desktop	Wed May 22 22:12:58 2002
-+++ kde-i18n-3.0/hu/messages/entry.desktop	Thu May 23 11:07:40 2002
+diff -urN kde-i18n-3.0.1.pl/hu/messages/entry.desktop kde-i18n-3.0.1/hu/messages/entry.desktop
+--- kde-i18n-3.0.1.pl/hu/messages/entry.desktop	Fri May 24 23:14:49 2002
++++ kde-i18n-3.0.1/hu/messages/entry.desktop	Sun May 26 00:41:19 2002
 @@ -33,9 +33,9 @@
  Name[mi]=Reo Hanekari
  Name[mk]=Унгарски
@@ -1292,9 +1280,9 @@ diff -uNr kde-i18n-3.0.orig/hu/messages/entry.desktop kde-i18n-3.0/hu/messages/e
  Name[oc]=Hongarian
  Name[pl]=węgierski
  Name[pt]=Húngaro
-diff -uNr kde-i18n-3.0.orig/is/messages/entry.desktop kde-i18n-3.0/is/messages/entry.desktop
---- kde-i18n-3.0.orig/is/messages/entry.desktop	Wed May 22 22:12:50 2002
-+++ kde-i18n-3.0/is/messages/entry.desktop	Thu May 23 11:07:40 2002
+diff -urN kde-i18n-3.0.1.pl/is/messages/entry.desktop kde-i18n-3.0.1/is/messages/entry.desktop
+--- kde-i18n-3.0.1.pl/is/messages/entry.desktop	Fri May 24 23:14:49 2002
++++ kde-i18n-3.0.1/is/messages/entry.desktop	Sun May 26 00:41:19 2002
 @@ -33,9 +33,9 @@
  Name[mi]=Reo Tiorangi
  Name[mk]=Исландски
@@ -1306,9 +1294,9 @@ diff -uNr kde-i18n-3.0.orig/is/messages/entry.desktop kde-i18n-3.0/is/messages/e
  Name[oc]=Islandès
  Name[pl]=islandzki
  Name[pt]=Islandês
-diff -uNr kde-i18n-3.0.orig/it/messages/entry.desktop kde-i18n-3.0/it/messages/entry.desktop
---- kde-i18n-3.0.orig/it/messages/entry.desktop	Wed May 22 22:17:22 2002
-+++ kde-i18n-3.0/it/messages/entry.desktop	Thu May 23 11:07:40 2002
+diff -urN kde-i18n-3.0.1.pl/it/messages/entry.desktop kde-i18n-3.0.1/it/messages/entry.desktop
+--- kde-i18n-3.0.1.pl/it/messages/entry.desktop	Fri May 24 23:14:49 2002
++++ kde-i18n-3.0.1/it/messages/entry.desktop	Sun May 26 00:41:19 2002
 @@ -33,9 +33,9 @@
  Name[mi]=Reo Itari
  Name[mk]=Италијански
@@ -1320,9 +1308,9 @@ diff -uNr kde-i18n-3.0.orig/it/messages/entry.desktop kde-i18n-3.0/it/messages/e
  Name[pl]=włoski
  Name[pt]=Italiano
  Name[pt_BR]=Italiano
-diff -uNr kde-i18n-3.0.orig/ja/messages/entry.desktop kde-i18n-3.0/ja/messages/entry.desktop
---- kde-i18n-3.0.orig/ja/messages/entry.desktop	Wed May 22 22:12:43 2002
-+++ kde-i18n-3.0/ja/messages/entry.desktop	Thu May 23 11:07:40 2002
+diff -urN kde-i18n-3.0.1.pl/ja/messages/entry.desktop kde-i18n-3.0.1/ja/messages/entry.desktop
+--- kde-i18n-3.0.1.pl/ja/messages/entry.desktop	Fri May 24 23:14:49 2002
++++ kde-i18n-3.0.1/ja/messages/entry.desktop	Sun May 26 00:41:19 2002
 @@ -33,9 +33,9 @@
  Name[mi]=Reo Hapana
  Name[mk]=Јапонски
@@ -1334,9 +1322,9 @@ diff -uNr kde-i18n-3.0.orig/ja/messages/entry.desktop kde-i18n-3.0/ja/messages/e
  Name[oc]=Japònès
  Name[pl]=japoński
  Name[pt]=Japonês
-diff -uNr kde-i18n-3.0.orig/ko/messages/entry.desktop kde-i18n-3.0/ko/messages/entry.desktop
---- kde-i18n-3.0.orig/ko/messages/entry.desktop	Wed May 22 22:17:12 2002
-+++ kde-i18n-3.0/ko/messages/entry.desktop	Thu May 23 11:07:40 2002
+diff -urN kde-i18n-3.0.1.pl/ko/messages/entry.desktop kde-i18n-3.0.1/ko/messages/entry.desktop
+--- kde-i18n-3.0.1.pl/ko/messages/entry.desktop	Fri May 24 23:14:49 2002
++++ kde-i18n-3.0.1/ko/messages/entry.desktop	Sun May 26 00:41:19 2002
 @@ -31,9 +31,9 @@
  Name[lt]=Korėjiečių
  Name[lv]=Korejiešu
@@ -1348,9 +1336,9 @@ diff -uNr kde-i18n-3.0.orig/ko/messages/entry.desktop kde-i18n-3.0/ko/messages/e
  Name[oc]=Còrean
  Name[pl]=koreański
  Name[pt]=Coreano
-diff -uNr kde-i18n-3.0.orig/lt/messages/entry.desktop kde-i18n-3.0/lt/messages/entry.desktop
---- kde-i18n-3.0.orig/lt/messages/entry.desktop	Wed May 22 22:12:37 2002
-+++ kde-i18n-3.0/lt/messages/entry.desktop	Thu May 23 11:07:40 2002
+diff -urN kde-i18n-3.0.1.pl/lt/messages/entry.desktop kde-i18n-3.0.1/lt/messages/entry.desktop
+--- kde-i18n-3.0.1.pl/lt/messages/entry.desktop	Fri May 24 23:14:49 2002
++++ kde-i18n-3.0.1/lt/messages/entry.desktop	Sun May 26 00:41:19 2002
 @@ -31,9 +31,9 @@
  Name[lv]=Lietuviešu
  Name[mk]=Литвански
@@ -1362,9 +1350,9 @@ diff -uNr kde-i18n-3.0.orig/lt/messages/entry.desktop kde-i18n-3.0/lt/messages/e
  Name[oc]=Litua
  Name[pl]=litewski
  Name[pt]=Lituano
-diff -uNr kde-i18n-3.0.orig/lv/messages/entry.desktop kde-i18n-3.0/lv/messages/entry.desktop
---- kde-i18n-3.0.orig/lv/messages/entry.desktop	Wed May 22 22:17:29 2002
-+++ kde-i18n-3.0/lv/messages/entry.desktop	Thu May 23 11:07:40 2002
+diff -urN kde-i18n-3.0.1.pl/lv/messages/entry.desktop kde-i18n-3.0.1/lv/messages/entry.desktop
+--- kde-i18n-3.0.1.pl/lv/messages/entry.desktop	Fri May 24 23:14:49 2002
++++ kde-i18n-3.0.1/lv/messages/entry.desktop	Sun May 26 00:41:19 2002
 @@ -25,9 +25,9 @@
  Name[lt]=Latvių
  Name[lv]=Latviešu
@@ -1376,9 +1364,9 @@ diff -uNr kde-i18n-3.0.orig/lv/messages/entry.desktop kde-i18n-3.0/lv/messages/e
  Name[pl]=łotewski
  Name[pt]=Letónio
  Name[pt_BR]=Latvia
-diff -uNr kde-i18n-3.0.orig/mt/messages/entry.desktop kde-i18n-3.0/mt/messages/entry.desktop
---- kde-i18n-3.0.orig/mt/messages/entry.desktop	Wed May 22 22:12:29 2002
-+++ kde-i18n-3.0/mt/messages/entry.desktop	Thu May 23 11:07:40 2002
+diff -urN kde-i18n-3.0.1.pl/mt/messages/entry.desktop kde-i18n-3.0.1/mt/messages/entry.desktop
+--- kde-i18n-3.0.1.pl/mt/messages/entry.desktop	Fri May 24 23:14:49 2002
++++ kde-i18n-3.0.1/mt/messages/entry.desktop	Sun May 26 00:41:19 2002
 @@ -24,9 +24,9 @@
  Name[lt]=Maltiečių
  Name[lv]=Maltiešu
@@ -1390,9 +1378,9 @@ diff -uNr kde-i18n-3.0.orig/mt/messages/entry.desktop kde-i18n-3.0/mt/messages/e
  Name[pl]=maltański
  Name[pt]=Maltês
  Name[pt_BR]=Maltês
-diff -uNr kde-i18n-3.0.orig/nl/messages/entry.desktop kde-i18n-3.0/nl/messages/entry.desktop
---- kde-i18n-3.0.orig/nl/messages/entry.desktop	Wed May 22 22:12:22 2002
-+++ kde-i18n-3.0/nl/messages/entry.desktop	Thu May 23 11:07:42 2002
+diff -urN kde-i18n-3.0.1.pl/nl/messages/entry.desktop kde-i18n-3.0.1/nl/messages/entry.desktop
+--- kde-i18n-3.0.1.pl/nl/messages/entry.desktop	Fri May 24 23:14:49 2002
++++ kde-i18n-3.0.1/nl/messages/entry.desktop	Sun May 26 00:41:19 2002
 @@ -33,9 +33,9 @@
  Name[mi]=Reo Tenemaka
  Name[mk]=Холандски
@@ -1404,9 +1392,9 @@ diff -uNr kde-i18n-3.0.orig/nl/messages/entry.desktop kde-i18n-3.0/nl/messages/e
  Name[oc]=Olandès
  Name[pl]=holenderski
  Name[pt]=Holandês
-diff -uNr kde-i18n-3.0.orig/nn/messages/entry.desktop kde-i18n-3.0/nn/messages/entry.desktop
---- kde-i18n-3.0.orig/nn/messages/entry.desktop	Wed May 22 22:16:36 2002
-+++ kde-i18n-3.0/nn/messages/entry.desktop	Thu May 23 11:07:42 2002
+diff -urN kde-i18n-3.0.1.pl/nn/messages/entry.desktop kde-i18n-3.0.1/nn/messages/entry.desktop
+--- kde-i18n-3.0.1.pl/nn/messages/entry.desktop	Fri May 24 23:24:46 2002
++++ kde-i18n-3.0.1/nn/messages/entry.desktop	Sun May 26 00:41:19 2002
 @@ -31,9 +31,9 @@
  Name[mi]=Reo Nöwei (Nynorsk)
  Name[mk]=Норвешки (Nynorsk)
@@ -1416,11 +1404,11 @@ diff -uNr kde-i18n-3.0.orig/nn/messages/entry.desktop kde-i18n-3.0/nn/messages/e
  Name[nn]=Norsk (nynorsk)
 +Name[no]=Norsk (nynorsk)
  Name[oc]=Nòrvegian (Nynorsk)
- Name[pl]=norweski (Nynorsk)
+ Name[pl]=norweski (nynorsk)
  Name[pt]=Norueguês (Nynorsk)
-diff -uNr kde-i18n-3.0.orig/no/Makefile.am kde-i18n-3.0/no/Makefile.am
---- kde-i18n-3.0.orig/no/Makefile.am	Tue Mar 26 02:57:12 2002
-+++ kde-i18n-3.0/no/Makefile.am	Thu May 23 11:07:42 2002
+diff -urN kde-i18n-3.0.1.pl/no/Makefile.am kde-i18n-3.0.1/no/Makefile.am
+--- kde-i18n-3.0.1.pl/no/Makefile.am	Wed May  8 14:01:41 2002
++++ kde-i18n-3.0.1/no/Makefile.am	Sun May 26 00:41:19 2002
 @@ -3,7 +3,7 @@
  AUTOMAKE_OPTIONS = foreign
  EXTRA_DIST = configure.in.in
@@ -1430,9 +1418,9 @@ diff -uNr kde-i18n-3.0.orig/no/Makefile.am kde-i18n-3.0/no/Makefile.am
  $(srcdir)/configure.in: $(srcdir)/configure.in.in
  	cd $(srcdir) && make -f ../admin/Makefile.common configure.in
  $(srcdir)/acinclude.m4: $(srcdir)/../acinclude.m4
-diff -uNr kde-i18n-3.0.orig/no/Makefile.in kde-i18n-3.0/no/Makefile.in
---- kde-i18n-3.0.orig/no/Makefile.in	Tue Mar 26 02:57:16 2002
-+++ kde-i18n-3.0/no/Makefile.in	Thu May 23 11:07:42 2002
+diff -urN kde-i18n-3.0.1.pl/no/Makefile.in kde-i18n-3.0.1/no/Makefile.in
+--- kde-i18n-3.0.1.pl/no/Makefile.in	Wed May  8 14:01:50 2002
++++ kde-i18n-3.0.1/no/Makefile.in	Sun May 26 00:41:19 2002
 @@ -580,7 +580,7 @@
  	uninstall-info-recursive uninstall-recursive
  
@@ -1442,10 +1430,10 @@ diff -uNr kde-i18n-3.0.orig/no/Makefile.in kde-i18n-3.0/no/Makefile.in
  $(srcdir)/configure.in: $(srcdir)/configure.in.in
  	cd $(srcdir) && make -f ../admin/Makefile.common configure.in
  $(srcdir)/acinclude.m4: $(srcdir)/../acinclude.m4
-diff -uNr kde-i18n-3.0.orig/no/configure kde-i18n-3.0/no/configure
---- kde-i18n-3.0.orig/no/configure	Tue Mar 26 02:57:16 2002
-+++ kde-i18n-3.0/no/configure	Thu May 23 11:07:42 2002
-@@ -1224,7 +1224,7 @@
+diff -urN kde-i18n-3.0.1.pl/no/configure kde-i18n-3.0.1/no/configure
+--- kde-i18n-3.0.1.pl/no/configure	Wed May  8 14:01:51 2002
++++ kde-i18n-3.0.1/no/configure	Sun May 26 00:41:19 2002
+@@ -1202,7 +1202,7 @@
  fi
  
  # Define the identity of the package.
@@ -1453,10 +1441,10 @@ diff -uNr kde-i18n-3.0.orig/no/configure kde-i18n-3.0/no/configure
 +PACKAGE=kde-i18n-no
  VERSION=0.1
  
- cat >>confdefs.h <<_ACEOF
-diff -uNr kde-i18n-3.0.orig/no/configure.in kde-i18n-3.0/no/configure.in
---- kde-i18n-3.0.orig/no/configure.in	Tue Mar 26 02:57:12 2002
-+++ kde-i18n-3.0/no/configure.in	Thu May 23 11:07:42 2002
+ cat >>confdefs.h <<EOF
+diff -urN kde-i18n-3.0.1.pl/no/configure.in kde-i18n-3.0.1/no/configure.in
+--- kde-i18n-3.0.1.pl/no/configure.in	Wed May  8 14:01:42 2002
++++ kde-i18n-3.0.1/no/configure.in	Sun May 26 00:41:19 2002
 @@ -1,6 +1,6 @@
  AC_INIT(messages/kdelibs.po)
  AC_CONFIG_AUX_DIR(../admin)
@@ -1465,9 +1453,9 @@ diff -uNr kde-i18n-3.0.orig/no/configure.in kde-i18n-3.0/no/configure.in
  AM_CONFIG_HEADER(config.h)
  AC_SUBST(AUTODIRS)
  AM_KDE_WITH_NLS
-diff -uNr kde-i18n-3.0.orig/no/configure.in.in kde-i18n-3.0/no/configure.in.in
---- kde-i18n-3.0.orig/no/configure.in.in	Tue Mar 26 02:57:12 2002
-+++ kde-i18n-3.0/no/configure.in.in	Thu May 23 11:07:42 2002
+diff -urN kde-i18n-3.0.1.pl/no/configure.in.in kde-i18n-3.0.1/no/configure.in.in
+--- kde-i18n-3.0.1.pl/no/configure.in.in	Wed May  8 14:01:41 2002
++++ kde-i18n-3.0.1/no/configure.in.in	Sun May 26 00:41:19 2002
 @@ -1,6 +1,6 @@
  AC_INIT(messages/kdelibs.po)
  AC_CONFIG_AUX_DIR(../admin)
@@ -1476,18 +1464,18 @@ diff -uNr kde-i18n-3.0.orig/no/configure.in.in kde-i18n-3.0/no/configure.in.in
  AM_CONFIG_HEADER(config.h)
  AC_SUBST(AUTODIRS)
  AM_KDE_WITH_NLS
-diff -uNr kde-i18n-3.0.orig/no/messages/Makefile.am kde-i18n-3.0/no/messages/Makefile.am
---- kde-i18n-3.0.orig/no/messages/Makefile.am	Fri Dec  7 16:50:37 2001
-+++ kde-i18n-3.0/no/messages/Makefile.am	Mon Jan 14 22:04:24 2002
+diff -urN kde-i18n-3.0.1.pl/no/messages/Makefile.am kde-i18n-3.0.1/no/messages/Makefile.am
+--- kde-i18n-3.0.1.pl/no/messages/Makefile.am	Fri Dec  7 19:16:19 2001
++++ kde-i18n-3.0.1/no/messages/Makefile.am	Sun May 26 00:41:19 2002
 @@ -1,4 +1,4 @@
 -KDE_LANG = nb
 +KDE_LANG = no
  SUBDIRS = $(AUTODIRS)
  
  POFILES = AUTO
-diff -uNr kde-i18n-3.0.orig/no/messages/Makefile.in kde-i18n-3.0/no/messages/Makefile.in
---- kde-i18n-3.0.orig/no/messages/Makefile.in	Tue Mar 26 02:57:16 2002
-+++ kde-i18n-3.0/no/messages/Makefile.in	Thu May 23 11:07:42 2002
+diff -urN kde-i18n-3.0.1.pl/no/messages/Makefile.in kde-i18n-3.0.1/no/messages/Makefile.in
+--- kde-i18n-3.0.1.pl/no/messages/Makefile.in	Wed May  8 14:01:50 2002
++++ kde-i18n-3.0.1/no/messages/Makefile.in	Sun May 26 00:41:19 2002
 @@ -226,7 +226,7 @@
  x_includes = @x_includes@
  x_libraries = @x_libraries@
@@ -1496,13 +1484,13 @@ diff -uNr kde-i18n-3.0.orig/no/messages/Makefile.in kde-i18n-3.0/no/messages/Mak
 +KDE_LANG = no
  #>- SUBDIRS = $(AUTODIRS)
  #>+ 2
- SUBDIRS =. kdeaddons kdeadmin kdebase kdeedu kdegames kdegraphics kdemultimedia kdenetwork kdenonbeta kdepim kdesdk kdetoys kdeutils
-diff -uNr kde-i18n-3.0.orig/no/messages/desktop.po kde-i18n-3.0/no/messages/desktop.po
---- kde-i18n-3.0.orig/no/messages/desktop.po	Thu Mar 21 17:03:18 2002
-+++ kde-i18n-3.0/no/messages/desktop.po	Thu May 23 11:07:43 2002
-@@ -156,10 +156,6 @@
+ SUBDIRS =. kdenonbeta kdebase kdetoys kdeadmin kdegames kdegraphics kdeedu kdepim kdesdk kdeutils kdeaddons kdenetwork kdemultimedia
+diff -urN kde-i18n-3.0.1.pl/no/messages/desktop.po kde-i18n-3.0.1/no/messages/desktop.po
+--- kde-i18n-3.0.1.pl/no/messages/desktop.po	Mon May  6 12:17:45 2002
++++ kde-i18n-3.0.1/no/messages/desktop.po	Sun May 26 00:41:19 2002
+@@ -153,10 +153,6 @@
  msgid "Name=Maltese"
- msgstr "Name=Maltisk"
+ msgstr "Name=Maltesisk"
  
 -#: kde-i18n/nb/messages/entry.desktop:1
 -msgid "Name=Norwegian (Bokmaal)"
@@ -1511,7 +1499,7 @@ diff -uNr kde-i18n-3.0.orig/no/messages/desktop.po kde-i18n-3.0/no/messages/desk
  #: kde-i18n/nl/messages/entry.desktop:1
  msgid "Name=Dutch"
  msgstr "Name=Nederlandsk"
-@@ -168,6 +164,10 @@
+@@ -165,6 +161,10 @@
  msgid "Name=Norwegian (Nynorsk)"
  msgstr "Name=Norsk (nynorsk)"
  
@@ -1521,19 +1509,33 @@ diff -uNr kde-i18n-3.0.orig/no/messages/desktop.po kde-i18n-3.0/no/messages/desk
 +
  #: kde-i18n/oc/messages/entry.desktop:1
  msgid "Name=Occitan"
- msgstr "Name=Occitan"
-diff -uNr kde-i18n-3.0.orig/no/messages/kdeaddons/Makefile.am kde-i18n-3.0/no/messages/kdeaddons/Makefile.am
---- kde-i18n-3.0.orig/no/messages/kdeaddons/Makefile.am	Fri Dec  7 16:50:57 2001
-+++ kde-i18n-3.0/no/messages/kdeaddons/Makefile.am	Thu May 23 11:07:43 2002
+ msgstr "Name=Oksitansk"
+diff -urN kde-i18n-3.0.1.pl/no/messages/entry.desktop kde-i18n-3.0.1/no/messages/entry.desktop
+--- kde-i18n-3.0.1.pl/no/messages/entry.desktop	Fri May 24 23:25:25 2002
++++ kde-i18n-3.0.1/no/messages/entry.desktop	Sun May 26 01:32:54 2002
+@@ -30,9 +30,9 @@
+ Name[lv]=Norvēģu (Bokmālas)
+ Name[mk]=Норвешки (Bokmaal)
+ Name[mt]=Norveġiż (Bokmaal)
+-Name[nb]=Norsk (bokmål)
+ Name[nl]=Noors (Bokmaal)
+ Name[nn]=Norsk (bokmål)
++Name[no]=Norsk (bokmål)
+ Name[oc]=Nòrvegian (Bokmaal)
+ Name[pl]=norweski (bokmaal)
+ Name[pt]=Norueguês (Bokmaal)
+diff -urN kde-i18n-3.0.1.pl/no/messages/kdeaddons/Makefile.am kde-i18n-3.0.1/no/messages/kdeaddons/Makefile.am
+--- kde-i18n-3.0.1.pl/no/messages/kdeaddons/Makefile.am	Fri Dec  7 19:16:20 2001
++++ kde-i18n-3.0.1/no/messages/kdeaddons/Makefile.am	Sun May 26 00:41:19 2002
 @@ -1,4 +1,4 @@
 -KDE_LANG = nb
 +KDE_LANG = no
  SUBDIRS = $(AUTODIRS)
  
  POFILES = AUTO
-diff -uNr kde-i18n-3.0.orig/no/messages/kdeaddons/Makefile.in kde-i18n-3.0/no/messages/kdeaddons/Makefile.in
---- kde-i18n-3.0.orig/no/messages/kdeaddons/Makefile.in	Tue Mar 26 02:57:16 2002
-+++ kde-i18n-3.0/no/messages/kdeaddons/Makefile.in	Thu May 23 11:07:43 2002
+diff -urN kde-i18n-3.0.1.pl/no/messages/kdeaddons/Makefile.in kde-i18n-3.0.1/no/messages/kdeaddons/Makefile.in
+--- kde-i18n-3.0.1.pl/no/messages/kdeaddons/Makefile.in	Wed May  8 14:01:50 2002
++++ kde-i18n-3.0.1/no/messages/kdeaddons/Makefile.in	Sun May 26 00:41:19 2002
 @@ -226,7 +226,7 @@
  x_includes = @x_includes@
  x_libraries = @x_libraries@
@@ -1543,18 +1545,18 @@ diff -uNr kde-i18n-3.0.orig/no/messages/kdeaddons/Makefile.in kde-i18n-3.0/no/me
  #>- SUBDIRS = $(AUTODIRS)
  #>+ 2
  SUBDIRS =.
-diff -uNr kde-i18n-3.0.orig/no/messages/kdeadmin/Makefile.am kde-i18n-3.0/no/messages/kdeadmin/Makefile.am
---- kde-i18n-3.0.orig/no/messages/kdeadmin/Makefile.am	Fri Dec  7 16:51:18 2001
-+++ kde-i18n-3.0/no/messages/kdeadmin/Makefile.am	Mon Jan 14 22:04:48 2002
+diff -urN kde-i18n-3.0.1.pl/no/messages/kdeadmin/Makefile.am kde-i18n-3.0.1/no/messages/kdeadmin/Makefile.am
+--- kde-i18n-3.0.1.pl/no/messages/kdeadmin/Makefile.am	Fri Dec  7 19:16:20 2001
++++ kde-i18n-3.0.1/no/messages/kdeadmin/Makefile.am	Sun May 26 00:41:19 2002
 @@ -1,4 +1,4 @@
 -KDE_LANG = nb
 +KDE_LANG = no
  SUBDIRS = $(AUTODIRS)
  
  POFILES = AUTO
-diff -uNr kde-i18n-3.0.orig/no/messages/kdeadmin/Makefile.in kde-i18n-3.0/no/messages/kdeadmin/Makefile.in
---- kde-i18n-3.0.orig/no/messages/kdeadmin/Makefile.in	Tue Mar 26 02:57:16 2002
-+++ kde-i18n-3.0/no/messages/kdeadmin/Makefile.in	Thu May 23 11:07:43 2002
+diff -urN kde-i18n-3.0.1.pl/no/messages/kdeadmin/Makefile.in kde-i18n-3.0.1/no/messages/kdeadmin/Makefile.in
+--- kde-i18n-3.0.1.pl/no/messages/kdeadmin/Makefile.in	Wed May  8 14:01:50 2002
++++ kde-i18n-3.0.1/no/messages/kdeadmin/Makefile.in	Sun May 26 00:41:19 2002
 @@ -226,7 +226,7 @@
  x_includes = @x_includes@
  x_libraries = @x_libraries@
@@ -1564,18 +1566,18 @@ diff -uNr kde-i18n-3.0.orig/no/messages/kdeadmin/Makefile.in kde-i18n-3.0/no/mes
  #>- SUBDIRS = $(AUTODIRS)
  #>+ 2
  SUBDIRS =.
-diff -uNr kde-i18n-3.0.orig/no/messages/kdebase/Makefile.am kde-i18n-3.0/no/messages/kdebase/Makefile.am
---- kde-i18n-3.0.orig/no/messages/kdebase/Makefile.am	Fri Dec  7 16:51:38 2001
-+++ kde-i18n-3.0/no/messages/kdebase/Makefile.am	Thu May 23 11:07:43 2002
+diff -urN kde-i18n-3.0.1.pl/no/messages/kdebase/Makefile.am kde-i18n-3.0.1/no/messages/kdebase/Makefile.am
+--- kde-i18n-3.0.1.pl/no/messages/kdebase/Makefile.am	Fri Dec  7 19:16:20 2001
++++ kde-i18n-3.0.1/no/messages/kdebase/Makefile.am	Sun May 26 00:41:19 2002
 @@ -1,4 +1,4 @@
 -KDE_LANG = nb
 +KDE_LANG = no
  SUBDIRS = $(AUTODIRS)
  
  POFILES = AUTO
-diff -uNr kde-i18n-3.0.orig/no/messages/kdebase/Makefile.in kde-i18n-3.0/no/messages/kdebase/Makefile.in
---- kde-i18n-3.0.orig/no/messages/kdebase/Makefile.in	Tue Mar 26 02:57:16 2002
-+++ kde-i18n-3.0/no/messages/kdebase/Makefile.in	Thu May 23 11:07:43 2002
+diff -urN kde-i18n-3.0.1.pl/no/messages/kdebase/Makefile.in kde-i18n-3.0.1/no/messages/kdebase/Makefile.in
+--- kde-i18n-3.0.1.pl/no/messages/kdebase/Makefile.in	Wed May  8 14:01:50 2002
++++ kde-i18n-3.0.1/no/messages/kdebase/Makefile.in	Sun May 26 00:41:19 2002
 @@ -226,7 +226,7 @@
  x_includes = @x_includes@
  x_libraries = @x_libraries@
@@ -1585,18 +1587,18 @@ diff -uNr kde-i18n-3.0.orig/no/messages/kdebase/Makefile.in kde-i18n-3.0/no/mess
  #>- SUBDIRS = $(AUTODIRS)
  #>+ 2
  SUBDIRS =.
-diff -uNr kde-i18n-3.0.orig/no/messages/kdeedu/Makefile.am kde-i18n-3.0/no/messages/kdeedu/Makefile.am
---- kde-i18n-3.0.orig/no/messages/kdeedu/Makefile.am	Fri Dec  7 16:52:00 2001
-+++ kde-i18n-3.0/no/messages/kdeedu/Makefile.am	Thu May 23 11:07:43 2002
+diff -urN kde-i18n-3.0.1.pl/no/messages/kdeedu/Makefile.am kde-i18n-3.0.1/no/messages/kdeedu/Makefile.am
+--- kde-i18n-3.0.1.pl/no/messages/kdeedu/Makefile.am	Fri Dec  7 19:16:20 2001
++++ kde-i18n-3.0.1/no/messages/kdeedu/Makefile.am	Sun May 26 00:41:19 2002
 @@ -1,4 +1,4 @@
 -KDE_LANG = nb
 +KDE_LANG = no
  SUBDIRS = $(AUTODIRS)
  
  POFILES = AUTO
-diff -uNr kde-i18n-3.0.orig/no/messages/kdeedu/Makefile.in kde-i18n-3.0/no/messages/kdeedu/Makefile.in
---- kde-i18n-3.0.orig/no/messages/kdeedu/Makefile.in	Tue Mar 26 02:57:16 2002
-+++ kde-i18n-3.0/no/messages/kdeedu/Makefile.in	Thu May 23 11:07:43 2002
+diff -urN kde-i18n-3.0.1.pl/no/messages/kdeedu/Makefile.in kde-i18n-3.0.1/no/messages/kdeedu/Makefile.in
+--- kde-i18n-3.0.1.pl/no/messages/kdeedu/Makefile.in	Wed May  8 14:01:50 2002
++++ kde-i18n-3.0.1/no/messages/kdeedu/Makefile.in	Sun May 26 00:41:19 2002
 @@ -226,7 +226,7 @@
  x_includes = @x_includes@
  x_libraries = @x_libraries@
@@ -1606,18 +1608,18 @@ diff -uNr kde-i18n-3.0.orig/no/messages/kdeedu/Makefile.in kde-i18n-3.0/no/messa
  #>- SUBDIRS = $(AUTODIRS)
  #>+ 2
  SUBDIRS =.
-diff -uNr kde-i18n-3.0.orig/no/messages/kdegames/Makefile.am kde-i18n-3.0/no/messages/kdegames/Makefile.am
---- kde-i18n-3.0.orig/no/messages/kdegames/Makefile.am	Fri Dec  7 16:52:20 2001
-+++ kde-i18n-3.0/no/messages/kdegames/Makefile.am	Thu May 23 11:07:43 2002
+diff -urN kde-i18n-3.0.1.pl/no/messages/kdegames/Makefile.am kde-i18n-3.0.1/no/messages/kdegames/Makefile.am
+--- kde-i18n-3.0.1.pl/no/messages/kdegames/Makefile.am	Fri Dec  7 19:16:20 2001
++++ kde-i18n-3.0.1/no/messages/kdegames/Makefile.am	Sun May 26 00:41:19 2002
 @@ -1,4 +1,4 @@
 -KDE_LANG = nb
 +KDE_LANG = no
  SUBDIRS = $(AUTODIRS)
  
  POFILES = AUTO
-diff -uNr kde-i18n-3.0.orig/no/messages/kdegames/Makefile.in kde-i18n-3.0/no/messages/kdegames/Makefile.in
---- kde-i18n-3.0.orig/no/messages/kdegames/Makefile.in	Tue Mar 26 02:57:16 2002
-+++ kde-i18n-3.0/no/messages/kdegames/Makefile.in	Thu May 23 11:07:43 2002
+diff -urN kde-i18n-3.0.1.pl/no/messages/kdegames/Makefile.in kde-i18n-3.0.1/no/messages/kdegames/Makefile.in
+--- kde-i18n-3.0.1.pl/no/messages/kdegames/Makefile.in	Wed May  8 14:01:50 2002
++++ kde-i18n-3.0.1/no/messages/kdegames/Makefile.in	Sun May 26 00:41:19 2002
 @@ -226,7 +226,7 @@
  x_includes = @x_includes@
  x_libraries = @x_libraries@
@@ -1627,18 +1629,18 @@ diff -uNr kde-i18n-3.0.orig/no/messages/kdegames/Makefile.in kde-i18n-3.0/no/mes
  #>- SUBDIRS = $(AUTODIRS)
  #>+ 2
  SUBDIRS =.
-diff -uNr kde-i18n-3.0.orig/no/messages/kdegraphics/Makefile.am kde-i18n-3.0/no/messages/kdegraphics/Makefile.am
---- kde-i18n-3.0.orig/no/messages/kdegraphics/Makefile.am	Fri Dec  7 16:52:41 2001
-+++ kde-i18n-3.0/no/messages/kdegraphics/Makefile.am	Mon Jan 14 22:05:15 2002
+diff -urN kde-i18n-3.0.1.pl/no/messages/kdegraphics/Makefile.am kde-i18n-3.0.1/no/messages/kdegraphics/Makefile.am
+--- kde-i18n-3.0.1.pl/no/messages/kdegraphics/Makefile.am	Fri Dec  7 19:16:20 2001
++++ kde-i18n-3.0.1/no/messages/kdegraphics/Makefile.am	Sun May 26 00:41:19 2002
 @@ -1,4 +1,4 @@
 -KDE_LANG = nb
 +KDE_LANG = no
  SUBDIRS = $(AUTODIRS)
  
  POFILES = AUTO
-diff -uNr kde-i18n-3.0.orig/no/messages/kdegraphics/Makefile.in kde-i18n-3.0/no/messages/kdegraphics/Makefile.in
---- kde-i18n-3.0.orig/no/messages/kdegraphics/Makefile.in	Tue Mar 26 02:57:16 2002
-+++ kde-i18n-3.0/no/messages/kdegraphics/Makefile.in	Thu May 23 11:07:43 2002
+diff -urN kde-i18n-3.0.1.pl/no/messages/kdegraphics/Makefile.in kde-i18n-3.0.1/no/messages/kdegraphics/Makefile.in
+--- kde-i18n-3.0.1.pl/no/messages/kdegraphics/Makefile.in	Wed May  8 14:01:50 2002
++++ kde-i18n-3.0.1/no/messages/kdegraphics/Makefile.in	Sun May 26 00:41:19 2002
 @@ -226,7 +226,7 @@
  x_includes = @x_includes@
  x_libraries = @x_libraries@
@@ -1648,18 +1650,18 @@ diff -uNr kde-i18n-3.0.orig/no/messages/kdegraphics/Makefile.in kde-i18n-3.0/no/
  #>- SUBDIRS = $(AUTODIRS)
  #>+ 2
  SUBDIRS =.
-diff -uNr kde-i18n-3.0.orig/no/messages/kdemultimedia/Makefile.am kde-i18n-3.0/no/messages/kdemultimedia/Makefile.am
---- kde-i18n-3.0.orig/no/messages/kdemultimedia/Makefile.am	Fri Dec  7 16:53:10 2001
-+++ kde-i18n-3.0/no/messages/kdemultimedia/Makefile.am	Thu May 23 11:07:43 2002
+diff -urN kde-i18n-3.0.1.pl/no/messages/kdemultimedia/Makefile.am kde-i18n-3.0.1/no/messages/kdemultimedia/Makefile.am
+--- kde-i18n-3.0.1.pl/no/messages/kdemultimedia/Makefile.am	Fri Dec  7 19:16:20 2001
++++ kde-i18n-3.0.1/no/messages/kdemultimedia/Makefile.am	Sun May 26 00:41:19 2002
 @@ -1,4 +1,4 @@
 -KDE_LANG = nb
 +KDE_LANG = no
  SUBDIRS = $(AUTODIRS)
  
  POFILES = AUTO
-diff -uNr kde-i18n-3.0.orig/no/messages/kdemultimedia/Makefile.in kde-i18n-3.0/no/messages/kdemultimedia/Makefile.in
---- kde-i18n-3.0.orig/no/messages/kdemultimedia/Makefile.in	Tue Mar 26 02:57:16 2002
-+++ kde-i18n-3.0/no/messages/kdemultimedia/Makefile.in	Thu May 23 11:07:43 2002
+diff -urN kde-i18n-3.0.1.pl/no/messages/kdemultimedia/Makefile.in kde-i18n-3.0.1/no/messages/kdemultimedia/Makefile.in
+--- kde-i18n-3.0.1.pl/no/messages/kdemultimedia/Makefile.in	Wed May  8 14:01:50 2002
++++ kde-i18n-3.0.1/no/messages/kdemultimedia/Makefile.in	Sun May 26 00:41:19 2002
 @@ -226,7 +226,7 @@
  x_includes = @x_includes@
  x_libraries = @x_libraries@
@@ -1669,18 +1671,18 @@ diff -uNr kde-i18n-3.0.orig/no/messages/kdemultimedia/Makefile.in kde-i18n-3.0/n
  #>- SUBDIRS = $(AUTODIRS)
  #>+ 2
  SUBDIRS =.
-diff -uNr kde-i18n-3.0.orig/no/messages/kdenetwork/Makefile.am kde-i18n-3.0/no/messages/kdenetwork/Makefile.am
---- kde-i18n-3.0.orig/no/messages/kdenetwork/Makefile.am	Fri Dec  7 16:53:32 2001
-+++ kde-i18n-3.0/no/messages/kdenetwork/Makefile.am	Mon Jan 14 22:05:45 2002
+diff -urN kde-i18n-3.0.1.pl/no/messages/kdenetwork/Makefile.am kde-i18n-3.0.1/no/messages/kdenetwork/Makefile.am
+--- kde-i18n-3.0.1.pl/no/messages/kdenetwork/Makefile.am	Fri Dec  7 19:16:20 2001
++++ kde-i18n-3.0.1/no/messages/kdenetwork/Makefile.am	Sun May 26 00:41:19 2002
 @@ -1,4 +1,4 @@
 -KDE_LANG = nb
 +KDE_LANG = no
  SUBDIRS = $(AUTODIRS)
  
  POFILES = AUTO
-diff -uNr kde-i18n-3.0.orig/no/messages/kdenetwork/Makefile.in kde-i18n-3.0/no/messages/kdenetwork/Makefile.in
---- kde-i18n-3.0.orig/no/messages/kdenetwork/Makefile.in	Tue Mar 26 02:57:16 2002
-+++ kde-i18n-3.0/no/messages/kdenetwork/Makefile.in	Thu May 23 11:07:43 2002
+diff -urN kde-i18n-3.0.1.pl/no/messages/kdenetwork/Makefile.in kde-i18n-3.0.1/no/messages/kdenetwork/Makefile.in
+--- kde-i18n-3.0.1.pl/no/messages/kdenetwork/Makefile.in	Wed May  8 14:01:50 2002
++++ kde-i18n-3.0.1/no/messages/kdenetwork/Makefile.in	Sun May 26 00:41:19 2002
 @@ -226,7 +226,7 @@
  x_includes = @x_includes@
  x_libraries = @x_libraries@
@@ -1690,18 +1692,18 @@ diff -uNr kde-i18n-3.0.orig/no/messages/kdenetwork/Makefile.in kde-i18n-3.0/no/m
  #>- SUBDIRS = $(AUTODIRS)
  #>+ 2
  SUBDIRS =.
-diff -uNr kde-i18n-3.0.orig/no/messages/kdenonbeta/Makefile.am kde-i18n-3.0/no/messages/kdenonbeta/Makefile.am
---- kde-i18n-3.0.orig/no/messages/kdenonbeta/Makefile.am	Fri Dec  7 16:53:55 2001
-+++ kde-i18n-3.0/no/messages/kdenonbeta/Makefile.am	Mon Jan 14 22:06:08 2002
+diff -urN kde-i18n-3.0.1.pl/no/messages/kdenonbeta/Makefile.am kde-i18n-3.0.1/no/messages/kdenonbeta/Makefile.am
+--- kde-i18n-3.0.1.pl/no/messages/kdenonbeta/Makefile.am	Fri Dec  7 19:16:20 2001
++++ kde-i18n-3.0.1/no/messages/kdenonbeta/Makefile.am	Sun May 26 00:41:19 2002
 @@ -1,4 +1,4 @@
 -KDE_LANG = nb
 +KDE_LANG = no
  SUBDIRS = $(AUTODIRS)
  
  POFILES = AUTO
-diff -uNr kde-i18n-3.0.orig/no/messages/kdenonbeta/Makefile.in kde-i18n-3.0/no/messages/kdenonbeta/Makefile.in
---- kde-i18n-3.0.orig/no/messages/kdenonbeta/Makefile.in	Tue Mar 26 02:57:16 2002
-+++ kde-i18n-3.0/no/messages/kdenonbeta/Makefile.in	Thu May 23 11:07:43 2002
+diff -urN kde-i18n-3.0.1.pl/no/messages/kdenonbeta/Makefile.in kde-i18n-3.0.1/no/messages/kdenonbeta/Makefile.in
+--- kde-i18n-3.0.1.pl/no/messages/kdenonbeta/Makefile.in	Wed May  8 14:01:50 2002
++++ kde-i18n-3.0.1/no/messages/kdenonbeta/Makefile.in	Sun May 26 00:41:19 2002
 @@ -226,7 +226,7 @@
  x_includes = @x_includes@
  x_libraries = @x_libraries@
@@ -1711,18 +1713,18 @@ diff -uNr kde-i18n-3.0.orig/no/messages/kdenonbeta/Makefile.in kde-i18n-3.0/no/m
  #>- SUBDIRS = $(AUTODIRS)
  #>+ 2
  SUBDIRS =.
-diff -uNr kde-i18n-3.0.orig/no/messages/kdepim/Makefile.am kde-i18n-3.0/no/messages/kdepim/Makefile.am
---- kde-i18n-3.0.orig/no/messages/kdepim/Makefile.am	Fri Dec  7 16:54:22 2001
-+++ kde-i18n-3.0/no/messages/kdepim/Makefile.am	Thu May 23 11:07:43 2002
+diff -urN kde-i18n-3.0.1.pl/no/messages/kdepim/Makefile.am kde-i18n-3.0.1/no/messages/kdepim/Makefile.am
+--- kde-i18n-3.0.1.pl/no/messages/kdepim/Makefile.am	Fri Dec  7 19:16:20 2001
++++ kde-i18n-3.0.1/no/messages/kdepim/Makefile.am	Sun May 26 00:41:19 2002
 @@ -1,4 +1,4 @@
 -KDE_LANG = nb
 +KDE_LANG = no
  SUBDIRS = $(AUTODIRS)
  
  POFILES = AUTO
-diff -uNr kde-i18n-3.0.orig/no/messages/kdepim/Makefile.in kde-i18n-3.0/no/messages/kdepim/Makefile.in
---- kde-i18n-3.0.orig/no/messages/kdepim/Makefile.in	Tue Mar 26 02:57:16 2002
-+++ kde-i18n-3.0/no/messages/kdepim/Makefile.in	Thu May 23 11:07:43 2002
+diff -urN kde-i18n-3.0.1.pl/no/messages/kdepim/Makefile.in kde-i18n-3.0.1/no/messages/kdepim/Makefile.in
+--- kde-i18n-3.0.1.pl/no/messages/kdepim/Makefile.in	Wed May  8 14:01:50 2002
++++ kde-i18n-3.0.1/no/messages/kdepim/Makefile.in	Sun May 26 00:41:19 2002
 @@ -226,7 +226,7 @@
  x_includes = @x_includes@
  x_libraries = @x_libraries@
@@ -1732,18 +1734,18 @@ diff -uNr kde-i18n-3.0.orig/no/messages/kdepim/Makefile.in kde-i18n-3.0/no/messa
  #>- SUBDIRS = $(AUTODIRS)
  #>+ 2
  SUBDIRS =.
-diff -uNr kde-i18n-3.0.orig/no/messages/kdesdk/Makefile.am kde-i18n-3.0/no/messages/kdesdk/Makefile.am
---- kde-i18n-3.0.orig/no/messages/kdesdk/Makefile.am	Fri Dec  7 16:54:56 2001
-+++ kde-i18n-3.0/no/messages/kdesdk/Makefile.am	Mon Jan 14 22:06:42 2002
+diff -urN kde-i18n-3.0.1.pl/no/messages/kdesdk/Makefile.am kde-i18n-3.0.1/no/messages/kdesdk/Makefile.am
+--- kde-i18n-3.0.1.pl/no/messages/kdesdk/Makefile.am	Fri Dec  7 19:16:20 2001
++++ kde-i18n-3.0.1/no/messages/kdesdk/Makefile.am	Sun May 26 00:41:19 2002
 @@ -1,4 +1,4 @@
 -KDE_LANG = nb
 +KDE_LANG = no
  SUBDIRS = $(AUTODIRS)
  
  POFILES = AUTO
-diff -uNr kde-i18n-3.0.orig/no/messages/kdesdk/Makefile.in kde-i18n-3.0/no/messages/kdesdk/Makefile.in
---- kde-i18n-3.0.orig/no/messages/kdesdk/Makefile.in	Tue Mar 26 02:57:16 2002
-+++ kde-i18n-3.0/no/messages/kdesdk/Makefile.in	Thu May 23 11:07:43 2002
+diff -urN kde-i18n-3.0.1.pl/no/messages/kdesdk/Makefile.in kde-i18n-3.0.1/no/messages/kdesdk/Makefile.in
+--- kde-i18n-3.0.1.pl/no/messages/kdesdk/Makefile.in	Wed May  8 14:01:50 2002
++++ kde-i18n-3.0.1/no/messages/kdesdk/Makefile.in	Sun May 26 00:41:19 2002
 @@ -226,7 +226,7 @@
  x_includes = @x_includes@
  x_libraries = @x_libraries@
@@ -1753,18 +1755,18 @@ diff -uNr kde-i18n-3.0.orig/no/messages/kdesdk/Makefile.in kde-i18n-3.0/no/messa
  #>- SUBDIRS = $(AUTODIRS)
  #>+ 2
  SUBDIRS =.
-diff -uNr kde-i18n-3.0.orig/no/messages/kdetoys/Makefile.am kde-i18n-3.0/no/messages/kdetoys/Makefile.am
---- kde-i18n-3.0.orig/no/messages/kdetoys/Makefile.am	Fri Dec  7 16:55:40 2001
-+++ kde-i18n-3.0/no/messages/kdetoys/Makefile.am	Mon Jan 14 22:06:43 2002
+diff -urN kde-i18n-3.0.1.pl/no/messages/kdetoys/Makefile.am kde-i18n-3.0.1/no/messages/kdetoys/Makefile.am
+--- kde-i18n-3.0.1.pl/no/messages/kdetoys/Makefile.am	Fri Dec  7 19:16:20 2001
++++ kde-i18n-3.0.1/no/messages/kdetoys/Makefile.am	Sun May 26 00:41:19 2002
 @@ -1,4 +1,4 @@
 -KDE_LANG = nb
 +KDE_LANG = no
  SUBDIRS = $(AUTODIRS)
  
  POFILES = AUTO
-diff -uNr kde-i18n-3.0.orig/no/messages/kdetoys/Makefile.in kde-i18n-3.0/no/messages/kdetoys/Makefile.in
---- kde-i18n-3.0.orig/no/messages/kdetoys/Makefile.in	Tue Mar 26 02:57:16 2002
-+++ kde-i18n-3.0/no/messages/kdetoys/Makefile.in	Thu May 23 11:07:43 2002
+diff -urN kde-i18n-3.0.1.pl/no/messages/kdetoys/Makefile.in kde-i18n-3.0.1/no/messages/kdetoys/Makefile.in
+--- kde-i18n-3.0.1.pl/no/messages/kdetoys/Makefile.in	Wed May  8 14:01:50 2002
++++ kde-i18n-3.0.1/no/messages/kdetoys/Makefile.in	Sun May 26 00:41:19 2002
 @@ -226,7 +226,7 @@
  x_includes = @x_includes@
  x_libraries = @x_libraries@
@@ -1774,18 +1776,18 @@ diff -uNr kde-i18n-3.0.orig/no/messages/kdetoys/Makefile.in kde-i18n-3.0/no/mess
  #>- SUBDIRS = $(AUTODIRS)
  #>+ 2
  SUBDIRS =.
-diff -uNr kde-i18n-3.0.orig/no/messages/kdeutils/Makefile.am kde-i18n-3.0/no/messages/kdeutils/Makefile.am
---- kde-i18n-3.0.orig/no/messages/kdeutils/Makefile.am	Fri Dec  7 16:56:03 2001
-+++ kde-i18n-3.0/no/messages/kdeutils/Makefile.am	Thu May 23 11:07:43 2002
+diff -urN kde-i18n-3.0.1.pl/no/messages/kdeutils/Makefile.am kde-i18n-3.0.1/no/messages/kdeutils/Makefile.am
+--- kde-i18n-3.0.1.pl/no/messages/kdeutils/Makefile.am	Fri Dec  7 19:16:20 2001
++++ kde-i18n-3.0.1/no/messages/kdeutils/Makefile.am	Sun May 26 00:41:19 2002
 @@ -1,4 +1,4 @@
 -KDE_LANG = nb
 +KDE_LANG = no
  SUBDIRS = $(AUTODIRS)
  
  POFILES = AUTO
-diff -uNr kde-i18n-3.0.orig/no/messages/kdeutils/Makefile.in kde-i18n-3.0/no/messages/kdeutils/Makefile.in
---- kde-i18n-3.0.orig/no/messages/kdeutils/Makefile.in	Tue Mar 26 02:57:16 2002
-+++ kde-i18n-3.0/no/messages/kdeutils/Makefile.in	Thu May 23 11:07:43 2002
+diff -urN kde-i18n-3.0.1.pl/no/messages/kdeutils/Makefile.in kde-i18n-3.0.1/no/messages/kdeutils/Makefile.in
+--- kde-i18n-3.0.1.pl/no/messages/kdeutils/Makefile.in	Wed May  8 14:01:50 2002
++++ kde-i18n-3.0.1/no/messages/kdeutils/Makefile.in	Sun May 26 00:41:19 2002
 @@ -226,7 +226,7 @@
  x_includes = @x_includes@
  x_libraries = @x_libraries@
@@ -1795,9 +1797,9 @@ diff -uNr kde-i18n-3.0.orig/no/messages/kdeutils/Makefile.in kde-i18n-3.0/no/mes
  #>- SUBDIRS = $(AUTODIRS)
  #>+ 2
  SUBDIRS =.
-diff -uNr kde-i18n-3.0.orig/pl/messages/entry.desktop kde-i18n-3.0/pl/messages/entry.desktop
---- kde-i18n-3.0.orig/pl/messages/entry.desktop	Wed May 22 22:12:15 2002
-+++ kde-i18n-3.0/pl/messages/entry.desktop	Thu May 23 11:07:43 2002
+diff -urN kde-i18n-3.0.1.pl/pl/messages/entry.desktop kde-i18n-3.0.1/pl/messages/entry.desktop
+--- kde-i18n-3.0.1.pl/pl/messages/entry.desktop	Fri May 24 23:14:49 2002
++++ kde-i18n-3.0.1/pl/messages/entry.desktop	Sun May 26 00:41:19 2002
 @@ -33,9 +33,9 @@
  Name[mi]=Reo Pörana
  Name[mk]=Полски
@@ -1809,9 +1811,9 @@ diff -uNr kde-i18n-3.0.orig/pl/messages/entry.desktop kde-i18n-3.0/pl/messages/e
  Name[oc]=Pòlònès
  Name[pl]=polski
  Name[pt]=Polaco
-diff -uNr kde-i18n-3.0.orig/pt/messages/entry.desktop kde-i18n-3.0/pt/messages/entry.desktop
---- kde-i18n-3.0.orig/pt/messages/entry.desktop	Wed May 22 22:16:22 2002
-+++ kde-i18n-3.0/pt/messages/entry.desktop	Thu May 23 11:07:44 2002
+diff -urN kde-i18n-3.0.1.pl/pt/messages/entry.desktop kde-i18n-3.0.1/pt/messages/entry.desktop
+--- kde-i18n-3.0.1.pl/pt/messages/entry.desktop	Fri May 24 23:14:49 2002
++++ kde-i18n-3.0.1/pt/messages/entry.desktop	Sun May 26 00:41:19 2002
 @@ -33,9 +33,9 @@
  Name[mi]=Reo Pötikï
  Name[mk]=Португалски
@@ -1823,9 +1825,9 @@ diff -uNr kde-i18n-3.0.orig/pt/messages/entry.desktop kde-i18n-3.0/pt/messages/e
  Name[oc]=Pòrtuguès
  Name[pl]=portugalski
  Name[pt]=Português
-diff -uNr kde-i18n-3.0.orig/pt_BR/messages/entry.desktop kde-i18n-3.0/pt_BR/messages/entry.desktop
---- kde-i18n-3.0.orig/pt_BR/messages/entry.desktop	Wed May 22 22:12:06 2002
-+++ kde-i18n-3.0/pt_BR/messages/entry.desktop	Thu May 23 11:07:44 2002
+diff -urN kde-i18n-3.0.1.pl/pt_BR/messages/entry.desktop kde-i18n-3.0.1/pt_BR/messages/entry.desktop
+--- kde-i18n-3.0.1.pl/pt_BR/messages/entry.desktop	Fri May 24 23:24:38 2002
++++ kde-i18n-3.0.1/pt_BR/messages/entry.desktop	Sun May 26 00:41:19 2002
 @@ -33,9 +33,9 @@
  Name[mi]=Reo Pötiki Parïhi
  Name[mk]=Бразилски португалски
@@ -1835,11 +1837,11 @@ diff -uNr kde-i18n-3.0.orig/pt_BR/messages/entry.desktop kde-i18n-3.0/pt_BR/mess
  Name[nn]=Portugisisk (Brasil)
 +Name[no]=Brasiliansk portugisisk
  Name[oc]=Pòrtuguès deu Brasil
- Name[pl]=portugalski (odmiana brazylijska)
+ Name[pl]=portugalski (brazylijski)
  Name[pt]=Português do Brasil
-diff -uNr kde-i18n-3.0.orig/ro/messages/entry.desktop kde-i18n-3.0/ro/messages/entry.desktop
---- kde-i18n-3.0.orig/ro/messages/entry.desktop	Wed May 22 22:16:16 2002
-+++ kde-i18n-3.0/ro/messages/entry.desktop	Thu May 23 11:07:44 2002
+diff -urN kde-i18n-3.0.1.pl/ro/messages/entry.desktop kde-i18n-3.0.1/ro/messages/entry.desktop
+--- kde-i18n-3.0.1.pl/ro/messages/entry.desktop	Fri May 24 23:14:49 2002
++++ kde-i18n-3.0.1/ro/messages/entry.desktop	Sun May 26 00:41:19 2002
 @@ -33,9 +33,9 @@
  Name[mi]=Reo Romeinia
  Name[mk]=Романски
@@ -1851,9 +1853,9 @@ diff -uNr kde-i18n-3.0.orig/ro/messages/entry.desktop kde-i18n-3.0/ro/messages/e
  Name[pl]=rumuński
  Name[pt]=Romeno
  Name[pt_BR]=Romeno
-diff -uNr kde-i18n-3.0.orig/ru/messages/entry.desktop kde-i18n-3.0/ru/messages/entry.desktop
---- kde-i18n-3.0.orig/ru/messages/entry.desktop	Wed May 22 22:11:27 2002
-+++ kde-i18n-3.0/ru/messages/entry.desktop	Thu May 23 11:07:44 2002
+diff -urN kde-i18n-3.0.1.pl/ru/messages/entry.desktop kde-i18n-3.0.1/ru/messages/entry.desktop
+--- kde-i18n-3.0.1.pl/ru/messages/entry.desktop	Fri May 24 23:14:49 2002
++++ kde-i18n-3.0.1/ru/messages/entry.desktop	Sun May 26 00:41:19 2002
 @@ -33,9 +33,9 @@
  Name[mi]=Reo Ruhia
  Name[mk]=Руски
@@ -1865,9 +1867,9 @@ diff -uNr kde-i18n-3.0.orig/ru/messages/entry.desktop kde-i18n-3.0/ru/messages/e
  Name[oc]=Rus
  Name[pl]=rosyjski
  Name[pt]=Russo
-diff -uNr kde-i18n-3.0.orig/sk/messages/entry.desktop kde-i18n-3.0/sk/messages/entry.desktop
---- kde-i18n-3.0.orig/sk/messages/entry.desktop	Wed May 22 22:16:09 2002
-+++ kde-i18n-3.0/sk/messages/entry.desktop	Thu May 23 11:07:44 2002
+diff -urN kde-i18n-3.0.1.pl/sk/messages/entry.desktop kde-i18n-3.0.1/sk/messages/entry.desktop
+--- kde-i18n-3.0.1.pl/sk/messages/entry.desktop	Fri May 24 23:14:49 2002
++++ kde-i18n-3.0.1/sk/messages/entry.desktop	Sun May 26 00:41:19 2002
 @@ -32,9 +32,9 @@
  Name[lv]=Slovāku
  Name[mk]=Словачки
@@ -1879,9 +1881,9 @@ diff -uNr kde-i18n-3.0.orig/sk/messages/entry.desktop kde-i18n-3.0/sk/messages/e
  Name[oc]=Eslòvac
  Name[pl]=słowacki
  Name[pt]=Eslovaco
-diff -uNr kde-i18n-3.0.orig/sl/messages/entry.desktop kde-i18n-3.0/sl/messages/entry.desktop
---- kde-i18n-3.0.orig/sl/messages/entry.desktop	Wed May 22 22:11:18 2002
-+++ kde-i18n-3.0/sl/messages/entry.desktop	Thu May 23 11:07:44 2002
+diff -urN kde-i18n-3.0.1.pl/sl/messages/entry.desktop kde-i18n-3.0.1/sl/messages/entry.desktop
+--- kde-i18n-3.0.1.pl/sl/messages/entry.desktop	Fri May 24 23:14:49 2002
++++ kde-i18n-3.0.1/sl/messages/entry.desktop	Sun May 26 00:41:19 2002
 @@ -31,9 +31,9 @@
  Name[lv]=Slovēņu
  Name[mk]=Словенечки
@@ -1893,9 +1895,9 @@ diff -uNr kde-i18n-3.0.orig/sl/messages/entry.desktop kde-i18n-3.0/sl/messages/e
  Name[oc]=Eslòvian
  Name[pl]=słoweński
  Name[pt]=Esloveno
-diff -uNr kde-i18n-3.0.orig/sr/messages/entry.desktop kde-i18n-3.0/sr/messages/entry.desktop
---- kde-i18n-3.0.orig/sr/messages/entry.desktop	Wed May 22 22:15:57 2002
-+++ kde-i18n-3.0/sr/messages/entry.desktop	Thu May 23 11:07:44 2002
+diff -urN kde-i18n-3.0.1.pl/sr/messages/entry.desktop kde-i18n-3.0.1/sr/messages/entry.desktop
+--- kde-i18n-3.0.1.pl/sr/messages/entry.desktop	Fri May 24 23:14:49 2002
++++ kde-i18n-3.0.1/sr/messages/entry.desktop	Sun May 26 00:41:19 2002
 @@ -32,9 +32,9 @@
  Name[lv]=Serbu
  Name[mk]=Српски
@@ -1907,9 +1909,9 @@ diff -uNr kde-i18n-3.0.orig/sr/messages/entry.desktop kde-i18n-3.0/sr/messages/e
  Name[pl]=serbski
  Name[pt]=Sérvio
  Name[pt_BR]=Sérvio
-diff -uNr kde-i18n-3.0.orig/subdirs kde-i18n-3.0/subdirs
---- kde-i18n-3.0.orig/subdirs	Tue Mar 26 01:31:24 2002
-+++ kde-i18n-3.0/subdirs	Thu May 23 11:07:44 2002
+diff -urN kde-i18n-3.0.1.pl/subdirs kde-i18n-3.0.1/subdirs
+--- kde-i18n-3.0.1.pl/subdirs	Tue Mar 26 00:03:17 2002
++++ kde-i18n-3.0.1/subdirs	Sun May 26 00:41:19 2002
 @@ -25,9 +25,9 @@
  lt
  lv
@@ -1921,9 +1923,9 @@ diff -uNr kde-i18n-3.0.orig/subdirs kde-i18n-3.0/subdirs
  pl
  pt
  pt_BR
-diff -uNr kde-i18n-3.0.orig/sv/messages/entry.desktop kde-i18n-3.0/sv/messages/entry.desktop
---- kde-i18n-3.0.orig/sv/messages/entry.desktop	Wed May 22 22:11:11 2002
-+++ kde-i18n-3.0/sv/messages/entry.desktop	Thu May 23 11:07:44 2002
+diff -urN kde-i18n-3.0.1.pl/sv/messages/entry.desktop kde-i18n-3.0.1/sv/messages/entry.desktop
+--- kde-i18n-3.0.1.pl/sv/messages/entry.desktop	Fri May 24 23:14:49 2002
++++ kde-i18n-3.0.1/sv/messages/entry.desktop	Sun May 26 00:41:19 2002
 @@ -33,9 +33,9 @@
  Name[mi]=Reo Wïtana
  Name[mk]=Шведски
@@ -1935,9 +1937,9 @@ diff -uNr kde-i18n-3.0.orig/sv/messages/entry.desktop kde-i18n-3.0/sv/messages/e
  Name[oc]=Suedès
  Name[pl]=szwedzki
  Name[pt]=Sueco
-diff -uNr kde-i18n-3.0.orig/ta/messages/entry.desktop kde-i18n-3.0/ta/messages/entry.desktop
---- kde-i18n-3.0.orig/ta/messages/entry.desktop	Wed May 22 22:15:50 2002
-+++ kde-i18n-3.0/ta/messages/entry.desktop	Thu May 23 11:07:44 2002
+diff -urN kde-i18n-3.0.1.pl/ta/messages/entry.desktop kde-i18n-3.0.1/ta/messages/entry.desktop
+--- kde-i18n-3.0.1.pl/ta/messages/entry.desktop	Fri May 24 23:14:49 2002
++++ kde-i18n-3.0.1/ta/messages/entry.desktop	Sun May 26 00:41:19 2002
 @@ -22,8 +22,8 @@
  Name[lv]=Tamilu
  Name[mi]=Reo Ïnia tonga
@@ -1948,9 +1950,9 @@ diff -uNr kde-i18n-3.0.orig/ta/messages/entry.desktop kde-i18n-3.0/ta/messages/e
  Name[pl]=tamilski
  Name[ro]=Tamilă
  Name[ru]=Тамильский
-diff -uNr kde-i18n-3.0.orig/teamnames kde-i18n-3.0/teamnames
---- kde-i18n-3.0.orig/teamnames	Mon Mar  4 12:16:48 2002
-+++ kde-i18n-3.0/teamnames	Thu May 23 11:07:44 2002
+diff -urN kde-i18n-3.0.1.pl/teamnames kde-i18n-3.0.1/teamnames
+--- kde-i18n-3.0.1.pl/teamnames	Mon Mar  4 12:16:48 2002
++++ kde-i18n-3.0.1/teamnames	Sun May 26 00:41:19 2002
 @@ -54,8 +54,8 @@
  mr=Marathi
  mt=Maltese
@@ -1961,9 +1963,9 @@ diff -uNr kde-i18n-3.0.orig/teamnames kde-i18n-3.0/teamnames
  oc=Occitan
  pl=Polish
  pt=Portuguese
-diff -uNr kde-i18n-3.0.orig/tr/messages/entry.desktop kde-i18n-3.0/tr/messages/entry.desktop
---- kde-i18n-3.0.orig/tr/messages/entry.desktop	Wed May 22 22:15:37 2002
-+++ kde-i18n-3.0/tr/messages/entry.desktop	Thu May 23 11:07:44 2002
+diff -urN kde-i18n-3.0.1.pl/tr/messages/entry.desktop kde-i18n-3.0.1/tr/messages/entry.desktop
+--- kde-i18n-3.0.1.pl/tr/messages/entry.desktop	Fri May 24 23:14:49 2002
++++ kde-i18n-3.0.1/tr/messages/entry.desktop	Sun May 26 00:41:19 2002
 @@ -32,9 +32,9 @@
  Name[lv]=Turku
  Name[mk]=Турски
@@ -1975,9 +1977,9 @@ diff -uNr kde-i18n-3.0.orig/tr/messages/entry.desktop kde-i18n-3.0/tr/messages/e
  Name[oc]=Turc
  Name[pl]=turecki
  Name[pt]=Turco
-diff -uNr kde-i18n-3.0.orig/uk/messages/entry.desktop kde-i18n-3.0/uk/messages/entry.desktop
---- kde-i18n-3.0.orig/uk/messages/entry.desktop	Wed May 22 22:20:53 2002
-+++ kde-i18n-3.0/uk/messages/entry.desktop	Thu May 23 11:07:44 2002
+diff -urN kde-i18n-3.0.1.pl/uk/messages/entry.desktop kde-i18n-3.0.1/uk/messages/entry.desktop
+--- kde-i18n-3.0.1.pl/uk/messages/entry.desktop	Fri May 24 23:14:49 2002
++++ kde-i18n-3.0.1/uk/messages/entry.desktop	Sun May 26 00:41:19 2002
 @@ -31,9 +31,9 @@
  Name[lv]=Ukraiņu
  Name[mk]=Украински
@@ -1989,9 +1991,9 @@ diff -uNr kde-i18n-3.0.orig/uk/messages/entry.desktop kde-i18n-3.0/uk/messages/e
  Name[oc]=Ucranian
  Name[pl]=ukraiński
  Name[pt]=Ucraniano
-diff -uNr kde-i18n-3.0.orig/vi/messages/entry.desktop kde-i18n-3.0/vi/messages/entry.desktop
---- kde-i18n-3.0.orig/vi/messages/entry.desktop	Wed May 22 22:10:50 2002
-+++ kde-i18n-3.0/vi/messages/entry.desktop	Thu May 23 11:07:44 2002
+diff -urN kde-i18n-3.0.1.pl/vi/messages/entry.desktop kde-i18n-3.0.1/vi/messages/entry.desktop
+--- kde-i18n-3.0.1.pl/vi/messages/entry.desktop	Fri May 24 23:14:49 2002
++++ kde-i18n-3.0.1/vi/messages/entry.desktop	Sun May 26 00:41:19 2002
 @@ -25,9 +25,9 @@
  Name[lt]=Vietnamiečių
  Name[lv]=Vjetnamiešu
@@ -2003,9 +2005,9 @@ diff -uNr kde-i18n-3.0.orig/vi/messages/entry.desktop kde-i18n-3.0/vi/messages/e
  Name[pl]=wietnamski
  Name[pt]=Vietnamita
  Name[pt_BR]=Vietnamita
-diff -uNr kde-i18n-3.0.orig/zh_CN/messages/entry.desktop kde-i18n-3.0/zh_CN/messages/entry.desktop
---- kde-i18n-3.0.orig/zh_CN/messages/entry.desktop	Wed May 22 22:10:25 2002
-+++ kde-i18n-3.0/zh_CN/messages/entry.desktop	Thu May 23 11:07:44 2002
+diff -urN kde-i18n-3.0.1.pl/zh_CN/messages/entry.desktop kde-i18n-3.0.1/zh_CN/messages/entry.desktop
+--- kde-i18n-3.0.1.pl/zh_CN/messages/entry.desktop	Fri May 24 23:14:49 2002
++++ kde-i18n-3.0.1/zh_CN/messages/entry.desktop	Sun May 26 00:41:19 2002
 @@ -33,9 +33,9 @@
  Name[mi]=Reo Hainamana Ngäwari
  Name[mk]=поедноставен Кинески
@@ -2017,9 +2019,9 @@ diff -uNr kde-i18n-3.0.orig/zh_CN/messages/entry.desktop kde-i18n-3.0/zh_CN/mess
  Name[oc]=Chinès simplificat
  Name[pl]=uproszczony chiński
  Name[pt]=Chinês Simplificado
-diff -uNr kde-i18n-3.0.orig/zh_TW/messages/entry.desktop kde-i18n-3.0/zh_TW/messages/entry.desktop
---- kde-i18n-3.0.orig/zh_TW/messages/entry.desktop	Wed May 22 22:14:48 2002
-+++ kde-i18n-3.0/zh_TW/messages/entry.desktop	Thu May 23 11:07:44 2002
+diff -urN kde-i18n-3.0.1.pl/zh_TW/messages/entry.desktop kde-i18n-3.0.1/zh_TW/messages/entry.desktop
+--- kde-i18n-3.0.1.pl/zh_TW/messages/entry.desktop	Fri May 24 23:14:49 2002
++++ kde-i18n-3.0.1/zh_TW/messages/entry.desktop	Sun May 26 00:41:19 2002
 @@ -33,9 +33,9 @@
  Name[mi]=Reo Häina
  Name[mk]=Кинески
