@@ -11,7 +11,7 @@ Summary:	K Desktop Environment - international support
 Summary(pl):	KDE - wsparcie dla wielu jêzyków
 Name:		kde-i18n
 Version:	3.2.0
-Release:	2
+Release:	3
 License:	GPL
 Group:		X11/Applications
 Source0:	ftp://ftp.kde.org/pub/kde/stable/3.2/src/%{name}-%{version}.tar.bz2
@@ -307,6 +307,7 @@ Obsoletes:	kdesdk-kfilereplace-i18n
 Obsoletes:	kdesdk-kstartperf-i18n
 Obsoletes:	kdesdk-kuiviewer-i18n
 Obsoletes:	kdesdk-spy-i18n
+Obsoletes:      kdesdk-kspy-i18n
 Obsoletes:	kdesdk-umbrello-i18n
 Obsoletes:	kdetoys-i18n
 Obsoletes:	kdetoys-amor-i18n
