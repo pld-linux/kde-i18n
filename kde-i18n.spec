@@ -12,17 +12,10 @@ Summary:	K Desktop Environment - international support
 Summary(pl):	KDE - Wsparcie dla t³umaczeñ miêdzynarodowych
 Name:		kde-i18n
 Version:	3.0.3
-Release:	0.1
+Release:	1
 License:	GPL/LGPL
 Group:		X11/Applications
 Source0:	ftp://ftp.kde.org/pub/kde/stable/%{version}/src/%{name}-%{version}.tar.bz2
-# this is workaround - I don't know Chinese :)
-Source1:	ppdtranslations.gmo
-Patch0:		%{name}-ugly.patch
-Patch1:		%{name}-nodoc.patch
-Patch2:		%{name}-pl_lang_names.patch
-Patch3:		%{name}-nn.patch
-Patch4:		%{name}-zh.patch
 Source1:	%{name}-splitmo
 Source2:	%{name}-splitdoc
 Patch0:		%{name}-nodoc.patch
@@ -145,12 +138,36 @@ K Desktop Environment - International Support.
 %description Bosnian -l pl
 KDE - Wsparcie dla t³umaczeñ miêdzynarodowych.
 
+#%package Breton
+#Summary:	K Desktop Environment - International Support
+#Group:		X11/Applications
+
+#%description Breton
+#K Desktop Environment - International Support.
+#
+#%description Breton -l pl
+#KDE - Wsparcie dla t³umaczeñ miêdzynarodowych.
+
 
 %package Catalan
 Summary:	K Desktop Environment - International Support
 Group:		X11/Applications
 
+%description Catalan
+K Desktop Environment - International Support.
+
 %description Catalan -l pl
+KDE - Wsparcie dla t³umaczeñ miêdzynarodowych.
+
+
+%package Croatian
+Summary:	K Desktop Environment - International Support
+Group:		X11/Applications
+
+%description Croatian
+K Desktop Environment - International Support.
+
+%description Croatian -l pl
 KDE - Wsparcie dla t³umaczeñ miêdzynarodowych.
 
 
@@ -187,10 +204,6 @@ K Desktop Environment - Danish language support.
 
 %description Danish -l pl
 KDE - wsparcie dla jêzyka duñskiego.
-
-
-%description Danish -l pl
-KDE - Wsparcie dla t³umaczeñ miêdzynarodowych.
 
 
 %package German
@@ -256,10 +269,6 @@ K Desktop Environment - Esperanto language support.
 KDE - wsparcie dla jêzyka esperanto.
 
 
-%description Esperanto -l pl
-KDE - Wsparcie dla t³umaczeñ miêdzynarodowych.
-
-
 %package Spanish
 Summary:	K Desktop Environment - Spanish language support
 Summary(pl):	KDE - wsparcie dla jêzyka hiszpañskiego
@@ -270,10 +279,6 @@ K Desktop Environment - Spanish language support.
 
 %description Spanish -l pl
 KDE - wsparcie dla jêzyka hiszpañskiego.
-
-
-%description Spanish -l pl
-KDE - Wsparcie dla t³umaczeñ miêdzynarodowych.
 
 
 %package Estonian
@@ -309,10 +314,6 @@ K Desktop Environment - Finnish language support.
 
 %description Finnish -l pl
 KDE - wsparcie dla jêzyka fiñskiego.
-
-
-%description Finnish -l pl
-KDE - Wsparcie dla t³umaczeñ miêdzynarodowych.
 
 
 %package French
@@ -361,17 +362,6 @@ K Desktop Environment - Hebrew language support.
 KDE - wsparcie dla jêzyka hebrajskiego.
 
 
-%package Croatian
-Summary:	K Desktop Environment - International Support
-Group:		X11/Applications
-
-%description Croatian
-K Desktop Environment - International Support.
-
-%description Croatian -l pl
-KDE - Wsparcie dla t³umaczeñ miêdzynarodowych.
-
-
 %package Hungarian
 Summary:	K Desktop Environment - Hungarian language support
 Summary(pl):	KDE - wsparcie dla jêzyka wêgierskiego
@@ -382,10 +372,6 @@ K Desktop Environment - Hungarian language support.
 
 %description Hungarian -l pl
 KDE - wsparcie dla jêzyka wêgierskiego.
-
-
-%description Hungarian -l pl
-KDE - Wsparcie dla t³umaczeñ miêdzynarodowych.
 
 
 %package Indonesian
@@ -411,10 +397,6 @@ K Desktop Environment - Icelandic language support.
 KDE - wsparcie dla jêzyka islandzkiego.
 
 
-%description Icelandic -l pl
-KDE - Wsparcie dla t³umaczeñ miêdzynarodowych.
-
-
 %package Italian
 Summary:	K Desktop Environment - Italian language support
 Summary(pl):	KDE - wsparcie dla jêzyka w³oskiego
@@ -425,10 +407,6 @@ K Desktop Environment - Italian language support.
 
 %description Italian -l pl
 KDE - wsparcie dla jêzyka w³oskiego.
-
-
-%description Italian -l pl
-KDE - Wsparcie dla t³umaczeñ miêdzynarodowych.
 
 
 %package Japanese
@@ -443,10 +421,6 @@ K Desktop Environment - Japanese language support.
 KDE - wsparcie dla jêzyka japoñskiego.
 
 
-%description Japanese -l pl
-KDE - Wsparcie dla t³umaczeñ miêdzynarodowych.
-
-
 %package Korean
 Summary:	K Desktop Environment - Korean language support
 Summary(pl):    KDE - wsparcie dla jêzyka koreañskiego
@@ -457,10 +431,6 @@ K Desktop Environment - Korean language support.
 
 %description Korean -l pl
 KDE - wsparcie dla jêzyka koreañskiego.
-
-
-%description Korean -l pl
-KDE - Wsparcie dla t³umaczeñ miêdzynarodowych.
 
 
 %package Lithuanian
@@ -475,10 +445,6 @@ K Desktop Environment - Lithuanian language support.
 KDE - Wsparcie dla jêzyka litewskiego.
 
 
-%description Lithuanian -l pl
-KDE - Wsparcie dla t³umaczeñ miêdzynarodowych.
-
-
 %package Latvian
 Summary:	K Desktop Environment - Latvian language support
 Summary(pl):	KDE - wsparcie dla jêzyka ³otewskiego
@@ -489,10 +455,6 @@ K Desktop Environment - Latvian language support.
 
 %description Latvian -l pl
 KDE - wsparcie dla jêzyka ³otewskiego.
-
-
-%description Latvian -l pl
-KDE - Wsparcie dla t³umaczeñ miêdzynarodowych.
 
 
 #%package Maori
@@ -613,9 +575,6 @@ K Desktop Environment - Polish language support.
 
 %description Polish -l pl
 KDE - wsparcie dla jêzyka polskiego.
-
-%description Polish -l pl
-KDE - Wsparcie dla t³umaczeñ miêdzynarodowych.
 
 
 %package Portuguese
@@ -888,10 +847,7 @@ FindLang() {
 
 # share/locale/(%%lang)
     if [ -d "$RPM_BUILD_ROOT/%{_datadir}/locale/$1" ]; then
-	echo "%lang($1) %{_datadir}/locale/$1/[^L]*" >> "$2.lang"
-    fi
-    if [ -d "$RPM_BUILD_ROOT/%{_datadir}/locale/$1/LC_MESSAGES" ]; then
-	echo "%lang($1) %{_datadir}/locale/$1/LC_MESSAGES/*" >> "$2.lang"
+    	echo "%lang($1) %{_datadir}/locale/$1" >> "$2.lang"
     fi
 
 # share/apps/amor/tips-(%%lang)
@@ -992,7 +948,7 @@ FindLang fr French
 # FindLang ga Irish
 # FindLang gl Galician
 FindLang he Hebrew
-# FindLang hr Croatian
+FindLang hr Croatian
 FindLang hu Hungarian
 FindLang id Indonesian
 FindLang is Icelandic
@@ -1067,7 +1023,7 @@ rm -rf $RPM_BUILD_ROOT
 # %files -f Irish.lang Irish
 # %files -f Galician.lang Galician
 %files -f Hebrew.lang Hebrew
-# %files -f Croatian.lang Croatian
+%files -f Croatian.lang Croatian
 %files -f Hungarian.lang Hungarian
 %files -f Indonesian.lang Indonesian
 %files -f Icelandic.lang Icelandic
