@@ -12,6 +12,7 @@ Source0:	ftp://ftp.kde.org/pub/kde/stable/%{version}/src/%{name}-%{version}.tar.
 Source1:	ppdtranslations.gmo
 Patch0:		kde-i18n-pl.patch
 BuildRequires:	libxml2 >= 2.4.2
+BuildRequires:	kdelibs-devel
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %define		_prefix		/usr/X11R6
