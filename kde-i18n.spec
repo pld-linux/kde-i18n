@@ -8,8 +8,6 @@
 # --with	kdelibs_only		Create single small package containing
 #					essential files only
 
-
-
 Summary:	K Desktop Environment - International Support
 Summary(pl):	KDE - Wsparcie dla t³umaczeñ miêdzynarodowych
 Name:		kde-i18n
@@ -918,15 +916,8 @@ rm -rf $RPM_BUILD_ROOT
 %if %{?_with_kdelibs_only:1}%{!?_with_kdelibs_only:0}
 %files kdelibs
 %defattr(644,root,root,755)
-#%{_datadir}/locale/*/[!L]*
 %{_datadir}/locale/*/LC_MESSAGES/kdelibs.mo
 %{_datadir}/locale/*/LC_MESSAGES/katepart.mo
-#%{_datadir}/locale/*/LC_MESSAGES/cupsdconf.mo
-#%{_datadir}/locale/*/LC_MESSAGES/desktop.mo
-#%{_datadir}/locale/*/LC_MESSAGES/kmcop.mo
-#%{_datadir}/locale/*/LC_MESSAGES/knotify.mo
-#%{_datadir}/locale/*/LC_MESSAGES/libkscreensaver.mo
-#%{_datadir}/locale/*/LC_MESSAGES/ppdtranslations.mo
 %endif
 
 %if %{?_with_alltogether:0}%{!?_with_alltogether:1} && %{?_with_kdelibs_only:0}%{!?_with_kdelibs_only:1}
