@@ -7,7 +7,7 @@ License:	GPL/LGPL
 Group:		X11/KDE
 Group(de):	X11/KDE
 Group(pl):	X11/KDE
-Source0:	ftp://ftp.kde.org/pub/kde/stable/%{version}/distribution/tar/generic/src/%{name}-%{version}.tar.bz2
+Source0:	ftp://ftp.kde.org/pub/kde/stable/%{version}/src/%{name}-%{version}.tar.bz2
 # this is workaround - I don't know Chinese :)
 Source1:	ppdtranslations.gmo
 Patch0:		kde-i18n-pl.patch
