@@ -11,14 +11,14 @@
 Summary:	K Desktop Environment - international support
 Summary(pl):	KDE - Wsparcie dla t³umaczeñ miêdzynarodowych
 Name:		kde-i18n
-Version:	3.0.3
+Version:	3.1
 Release:	0.1
 License:	GPL/LGPL
 Group:		X11/Applications
 Source0:	ftp://ftp.kde.org/pub/kde/stable/%{version}/src/%{name}-%{version}.tar.bz2
 Source1:	%{name}-splitmo
 Source2:	%{name}-splitdoc
-Patch0:		%{name}-nodoc.patch
+#Patch0:		%{name}-nodoc.patch
 %if %{?_with_alltogether:1}%{!?_with_alltogether:0}
 Obsoletes:	kde-i18n-Affrikaans kde-i18n-Arabic kde-i18n-Azerbaijani
 Obsoletes:	kde-i18n-Bulgarian kde-i18n-Bosnian kde-i18n-Catalan
