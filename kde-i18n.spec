@@ -24,7 +24,7 @@ Source2:	%{name}-splitdoc
 Obsoletes:	kde-i18n-Affrikaans
 Obsoletes:	kde-i18n-Afrikaans
 Obsoletes:	kde-i18n-Arabic
-Obsoletes:	kde-i18n-Azerbaijani
+# Obsoletes:	kde-i18n-Azerbaijani
 Obsoletes:	kde-i18n-Bulgarian
 Obsoletes:	kde-i18n-Bosnian
 Obsoletes:	kde-i18n-Catalan
@@ -42,13 +42,13 @@ Obsoletes:	kde-i18n-French
 Obsoletes:	kde-i18n-Hebrew
 Obsoletes:	kde-i18n-Croatian
 Obsoletes:	kde-i18n-Hungarian
-Obsoletes:	kde-i18n-Indonesian
+# Obsoletes:	kde-i18n-Indonesian
 Obsoletes:	kde-i18n-Icelandic
 Obsoletes:	kde-i18n-Italian
 Obsoletes:	kde-i18n-Japanese
-Obsoletes:	kde-i18n-Korean
+# Obsoletes:	kde-i18n-Korean
 Obsoletes:	kde-i18n-Lithuanian
-Obsoletes:	kde-i18n-Latvian
+# Obsoletes:	kde-i18n-Latvian
 Obsoletes:	kde-i18n-Maltese
 Obsoletes:	kde-i18n-Dutch
 Obsoletes:	kde-i18n-Norwegian
@@ -958,7 +958,7 @@ cat katepart.lang >> kdelibs.lang
 
 FindLang af Afrikaans
 FindLang ar Arabic
-#FindLang az Azerbaijani
+# FindLang az Azerbaijani
 FindLang bg Bulgarian
 # FindLang br Breton
 FindLang bs Bosnian
@@ -982,13 +982,13 @@ FindLang fr French
 FindLang he Hebrew
 FindLang hr Croatian
 FindLang hu Hungarian
-#FindLang id Indonesian
+# FindLang id Indonesian
 FindLang is Icelandic
 FindLang it Italian
 FindLang ja Japanese
-#FindLang ko Korean
+# FindLang ko Korean
 FindLang lt Lithuanian
-#FindLang lv Latvian
+# FindLang lv Latvian
 # FindLang mi Maori
 FindLang mk Macedonian
 FindLang mt Maltese
