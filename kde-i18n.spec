@@ -30,8 +30,9 @@ Obsoletes:	kde-i18n-Hungarian kde-i18n-Indonesian kde-i18n-Icelandic
 Obsoletes:	kde-i18n-Italian kde-i18n-Japanese kde-i18n-Korean
 Obsoletes:	kde-i18n-Lithuanian kde-i18n-Latvian kde-i18n-Maltese
 Obsoletes:	kde-i18n-Dutch kde-i18n-Norwegian kde-i18n-Norwegian_Bokmaal
-Obsoletes:	kde-i18n-Norwegian_Nynorsk kde-i18n-Polish kde-i18n-Portuguese
-Obsoletes:	kde-i18n-Portuguese kde-i18n-Brazil kde-i18n-Brazil_Portuguese
+# "Portugnese" is here intentionally, to allow upgrade from misspelled packages
+Obsoletes:	kde-i18n-Norwegian_Nynorsk kde-i18n-Polish kde-i18n-Portugnese
+Obsoletes:	kde-i18n-Portuguese kde-i18n-Brazil kde-i18n-Brazil_Portugnese
 Obsoletes:	kde-i18n-Brazil_Portuguese kde-i18n-Romanian kde-i18n-Russian
 Obsoletes:	kde-i18n-Slovak kde-i18n-Slovenian kde-i18n-Serbian
 Obsoletes:	kde-i18n-Swedish kde-i18n-Tamil kde-i18n-Thai kde-i18n-Turkish
@@ -46,7 +47,6 @@ BuildRequires:	kdelibs-devel
 BuildRequires:	libxml2-progs >= 2.4.2
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
-
 
 %description
 K Desktop Environment - international support.
@@ -63,7 +63,7 @@ Group:		X11/Applications
 K Desktop Environment - international support. This package contains
 essential files only.
 
-%description -l pl kdelibs
+%description kdelibs -l pl
 KDE - wsparcie dla wielu jêzyków. Pakiet zawiera tylko pliki
 podstawowe.
 
@@ -79,7 +79,7 @@ K Desktop Environment - Affrikaans language support.
 KDE - wsparcie dla jêzyka afrykanerskiego.
 
 %package Arabic
-Summary:	K Desktop Environment - International Support
+Summary:	K Desktop Environment - Arabic language support
 Summary(pl):	KDE - wsparcie dla jêzyka arabskiego
 Group:		X11/Applications
 
@@ -267,14 +267,14 @@ KDE - wsparcie dla jêzyka baskijskiego.
 
 %package Farsi
 Summary:        K Desktop Environment - Farsi language support
-Summary(pl):    KDE - wsparcie dla jêzyka farsi
+Summary(pl):    KDE - wsparcie dla jêzyka perskiego (farsi)
 Group:          X11/Applications
 
 %description Farsi
 K Desktop Environment - Farsi language support.
 
 %description Farsi -l pl
-KDE - wsparcie dla jêzyka farsi.
+KDE - wsparcie dla jêzyka perskiego (farsi).
 
 
 %package Finnish
@@ -500,14 +500,14 @@ KDE - wsparcie dla jêzyka norweskiego (odmiany nynorsk).
 
 %package Northern_Sotho
 Summary:        K Desktop Environment - Northern Sotho language support
-Summary(pl):    KDE - wsparcie dla jêzyka pólnocnego Sotho
+Summary(pl):    KDE - wsparcie dla pó³nocnej odmiany jêzyka ludu Soto
 Group:          X11/Applications
 
 %description Northern_Sotho
 K Desktop Environment - Northern Sotho language support.
 
 %description Northern_Sotho -l pl
-KDE - wsparcie dla jêzyka pólnocnego Sotho.
+KDE - wsparcie dla pó³nocnej odmiany jêzyka ludu Soto.
 
 #%package Gascon_occitan
 #Summary:	K Desktop Environment - Occitan (Gascon) language support
@@ -535,7 +535,8 @@ KDE - wsparcie dla jêzyka polskiego.
 Summary:	K Desktop Environment - Portuguese language support
 Summary(pl):	KDE - wsparcie dla jêzyka portugalskiego
 Group:		X11/Applications
-Obsoletes:	%{name}-Portuguese
+# "Portugnese" is here intentionally, to allow upgrade from misspelled packages
+Obsoletes:	%{name}-Portugnese
 
 %description Portuguese
 K Desktop Environment - Portuguese language support.
@@ -590,14 +591,14 @@ KDE - wsparcie dla jêzyka swati.
 
 %package Northern_Sami
 Summary:        K Desktop Environment - Northern Sami language support
-Summary(pl):    KDE - wsparcie dla jêzyka pó³nocnego Sami
+Summary(pl):    KDE - wsparcie dla pó³nocnego jêzyka saami (lapoñskiego)
 Group:          X11/Applications
 
 %description Northern_Sami
 K Desktop Environment - Northern Sami language support.
 
 %description Northern_Sami -l pl
-KDE - wsparcie dla jêzyka pó³nocnego Sami.
+KDE - wsparcie dla pó³nocnego jêzyka saami (lapoñskiego).
 
 %package Slovak
 Summary:	K Desktop Environment - Slovak language support
