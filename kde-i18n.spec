@@ -1,13 +1,11 @@
 #
 # Conditional build:
-# --with	alltogether		Build single package containing
-#					support for all languages
-#
-# --with	tarball_creation	Create tarballs with resources for
-#					specific packages
-#
-# --with	kdelibs			Create single small package containing
-#					essential files only
+# _with_alltogether		- build single package containing support
+#				  for all languages
+# _with_tarball_creation	- create tarballs with resources for specific
+#				  packages; don't create any RPMs
+# _with_kdelibs			- create single small package containing
+#				  essential files only
 #
 Summary:	K Desktop Environment - international support
 Summary(pl):	KDE - wsparcie dla wielu jêzyków
@@ -19,30 +17,70 @@ Group:		X11/Applications
 Source0:	ftp://ftp.kde.org/pub/kde/stable/%{version}/src/%{name}-%{version}.tar.bz2
 Source1:	%{name}-splitmo
 Source2:	%{name}-splitdoc
-%if %{?_with_alltogether:1}%{!?_with_alltogether:0}
-Obsoletes:	kde-i18n-Affrikaans kde-i18n-Arabic kde-i18n-Azerbaijani
-Obsoletes:	kde-i18n-Bulgarian kde-i18n-Bosnian kde-i18n-Catalan
-Obsoletes:	kde-i18n-Czech kde-i18n-Danish kde-i18n-German kde-i18n-Greek
-Obsoletes:	kde-i18n-English_UK kde-i18n-British kde-i18n-Esperanto
-Obsoletes:	kde-i18n-Spanish kde-i18n-Estonian kde-i18n-Finnish
-Obsoletes:	kde-i18n-French kde-i18n-Hebrew kde-i18n-Croatian
-Obsoletes:	kde-i18n-Hungarian kde-i18n-Indonesian kde-i18n-Icelandic
-Obsoletes:	kde-i18n-Italian kde-i18n-Japanese kde-i18n-Korean
-Obsoletes:	kde-i18n-Lithuanian kde-i18n-Latvian kde-i18n-Maltese
-Obsoletes:	kde-i18n-Dutch kde-i18n-Norwegian kde-i18n-Norwegian_Bokmaal
-# "Portugnese" is here intentionally, to allow upgrade from misspelled packages
-Obsoletes:	kde-i18n-Norwegian_Nynorsk kde-i18n-Polish kde-i18n-Portugnese
-Obsoletes:	kde-i18n-Portuguese kde-i18n-Brazil kde-i18n-Brazil_Portugnese
-Obsoletes:	kde-i18n-Brazil_Portuguese kde-i18n-Romanian kde-i18n-Russian
-Obsoletes:	kde-i18n-Slovak kde-i18n-Slovenian kde-i18n-Serbian
-Obsoletes:	kde-i18n-Swedish kde-i18n-Tamil kde-i18n-Thai kde-i18n-Turkish
-Obsoletes:	kde-i18n-Ukrainian kde-i18n-Venda kde-i18n-Vietnamese
-Obsoletes:	kde-i18n-Xhosa kde-i18n-Simplified_Chinese kde-i18n-Chinese
-Obsoletes:	kde-i18n-Chinese-Big5 kde-i18n-Zulu
+%if 0%{?_with_alltogether:1}
+# NOTE: "Affrikaans", "Norwegian_Bookmal" and "Portugnese" are here
+# intentionally, to allow upgrade from packages with misspelled names
+Obsoletes:	kde-i18n-Affrikaans
+Obsoletes:	kde-i18n-Afrikaans
+Obsoletes:	kde-i18n-Arabic
+Obsoletes:	kde-i18n-Azerbaijani
+Obsoletes:	kde-i18n-Bulgarian
+Obsoletes:	kde-i18n-Bosnian
+Obsoletes:	kde-i18n-Catalan
+Obsoletes:	kde-i18n-Czech
+Obsoletes:	kde-i18n-Danish
+Obsoletes:	kde-i18n-German
+Obsoletes:	kde-i18n-Greek
+Obsoletes:	kde-i18n-English_UK
+Obsoletes:	kde-i18n-British
+Obsoletes:	kde-i18n-Esperanto
+Obsoletes:	kde-i18n-Spanish
+Obsoletes:	kde-i18n-Estonian
+Obsoletes:	kde-i18n-Finnish
+Obsoletes:	kde-i18n-French
+Obsoletes:	kde-i18n-Hebrew
+Obsoletes:	kde-i18n-Croatian
+Obsoletes:	kde-i18n-Hungarian
+Obsoletes:	kde-i18n-Indonesian
+Obsoletes:	kde-i18n-Icelandic
+Obsoletes:	kde-i18n-Italian
+Obsoletes:	kde-i18n-Japanese
+Obsoletes:	kde-i18n-Korean
+Obsoletes:	kde-i18n-Lithuanian
+Obsoletes:	kde-i18n-Latvian
+Obsoletes:	kde-i18n-Maltese
+Obsoletes:	kde-i18n-Dutch
+Obsoletes:	kde-i18n-Norwegian
+Obsoletes:	kde-i18n-Norwegian_Bokmaal
+Obsoletes:	kde-i18n-Norwegian_Bookmal
+Obsoletes:	kde-i18n-Norwegian_Nynorsk
+Obsoletes:	kde-i18n-Polish
+Obsoletes:	kde-i18n-Portugnese
+Obsoletes:	kde-i18n-Portuguese
+Obsoletes:	kde-i18n-Brazil
+Obsoletes:	kde-i18n-Brazil_Portugnese
+Obsoletes:	kde-i18n-Brazil_Portuguese
+Obsoletes:	kde-i18n-Romanian
+Obsoletes:	kde-i18n-Russian
+Obsoletes:	kde-i18n-Slovak
+Obsoletes:	kde-i18n-Slovenian
+Obsoletes:	kde-i18n-Serbian
+Obsoletes:	kde-i18n-Swedish
+Obsoletes:	kde-i18n-Tamil
+Obsoletes:	kde-i18n-Thai
+Obsoletes:	kde-i18n-Turkish
+Obsoletes:	kde-i18n-Ukrainian
+Obsoletes:	kde-i18n-Venda
+Obsoletes:	kde-i18n-Vietnamese
+Obsoletes:	kde-i18n-Xhosa
+Obsoletes:	kde-i18n-Simplified_Chinese
+Obsoletes:	kde-i18n-Chinese
+Obsoletes:	kde-i18n-Chinese-Big5
+Obsoletes:	kde-i18n-Zulu
 %endif
 BuildRequires:	gettext-devel
 # It creates symlinks to some not-translated files.
-BuildRequires:	kdelibs = %{version}
+BuildRequires:	kdelibs >= %{version}
 BuildRequires:	kdelibs-devel
 BuildRequires:	libxml2-progs >= 2.4.2
 BuildArch:	noarch
@@ -67,15 +105,17 @@ essential files only.
 KDE - wsparcie dla wielu jêzyków. Pakiet zawiera tylko pliki
 podstawowe.
 
-%package Affrikaans
-Summary:	K Desktop Environment - Affrikaans language support
+%package Afrikaans
+Summary:	K Desktop Environment - Afrikaans language support
 Summary(pl):	KDE - wsparcie dla jêzyka afrykanerskiego
 Group:		X11/Applications
+# "Affrikaans" is here intentionally, to allow upgrade from misspelled packages
+Obsoletes:	kde-i18n-Affrikaans
 
-%description Affrikaans
-K Desktop Environment - Affrikaans language support.
+%description Afrikaans
+K Desktop Environment - Afrikaans language support.
 
-%description Affrikaans -l pl
+%description Afrikaans -l pl
 KDE - wsparcie dla jêzyka afrykanerskiego.
 
 %package Arabic
@@ -475,17 +515,18 @@ K Desktop Environment - Dutch language support.
 %description Dutch -l pl
 KDE - wsparcie dla jêzyka holenderskiego.
 
-%package Norwegian_Bookmal
-Summary:	K Desktop Environment - Norwegian (Bookmal) language support
-Summary(pl):	KDE - wsparcie dla jêzyka norweskiego (odmiany bookmal)
+%package Norwegian_Bokmaal
+Summary:	K Desktop Environment - Norwegian (Bokmaal) language support
+Summary(pl):	KDE - wsparcie dla jêzyka norweskiego (odmiany bokmaal)
 Group:		X11/Applications
-Obsoletes:	kde-i18n-Norwegian_Bokmaal
+# "Bookmal" is here intentionally, to allow upgrade from misspelled packages
+Obsoletes:	kde-i18n-Norwegian_Bookmal
 
-%description Norwegian_Bookmal
-K Desktop Environment - Norwegian (Bookmal) language support.
+%description Norwegian_Bokmaal
+K Desktop Environment - Norwegian (Bokmaal) language support.
 
-%description Norwegian_Bookmal -l pl
-KDE - wsparcie dla jêzyka norweskiego (odmiany bookmal).
+%description Norwegian_Bokmaal -l pl
+KDE - wsparcie dla jêzyka norweskiego (odmiany bokmaal).
 
 %package Norwegian_Nynorsk
 Summary:	K Desktop Environment - Norwegian (Nynorsk) language support
@@ -811,19 +852,15 @@ mv -f nb no
 %install
 rm -rf $RPM_BUILD_ROOT
 
-%if %{?_with_kdelibs:1}%{!?_with_kdelibs:0}
+%if 0%{?_with_kdelibs:1}
 FindLang() {
 	echo "%defattr(644,root,root,755)" > "$2.lang"
-	cat allname.lang |grep -vE tmp\|kdelibs.mo\|katepart.mo |grep "%lang($1)" >> "$2.lang"
+	cat allname.lang |grep -vE 'tmp|kdelibs\.mo|katepart\.mo' |grep "%lang($1)" >> "$2.lang"
 }
-%endif
-
-%if %{?_with_kdelibs:0}%{!?_with_kdelibs:1}
+%else
 FindLang() {
 #    $1 - short language name
 #    $2 - long language name
-
-    BUILDDIR=%(pwd)
 
     echo "%defattr(644,root,root,755)" > "$2.lang"
 
@@ -834,7 +871,8 @@ FindLang() {
 
 # share/locale/(%%lang)
     if [ -d "$RPM_BUILD_ROOT%{_datadir}/locale/$1" ]; then
-	echo "%lang($1) %{_datadir}/locale/$1" >> "$2.lang"
+	echo "%lang($1) %{_datadir}/locale/$1/[cef]*" >> "$2.lang"
+	echo "%lang($1) %{_datadir}/locale/$1/LC_MESSAGES/*.mo" >> "$2.lang"
     fi
 
 # share/apps/amor/tips-(%%lang)
@@ -850,7 +888,7 @@ FindLang() {
 %endif
 
 %{__make} DESTDIR=$RPM_BUILD_ROOT install
-%if %{?_with_tarball_creation:1}%{!?_tarball_creation:0}
+%if 0%{?_with_tarball_creation:1}
 package_list=`awk '!/^#/ { print $1 } ' %{SOURCE1} %{SOURCE2} | sort | uniq`
 for i in $package_list ; do
 	install -d $RPM_BUILD_ROOT/tmp/$i
@@ -903,16 +941,19 @@ done
 cd "$ISDIR"
 %endif
 
-%if %{?_with_kdelibs:1}%{!?_with_kdelibs:0}
+%if 0%{?_with_kdelibs:1}
 %find_lang tmp.allname --with-kde --all-name
 cat tmp.allname.lang |grep en_GB |sed 's/(en)/(en_GB)/' > allname.lang
 cat tmp.allname.lang |grep pt_BR |sed 's/(pt)/(pt_BR)/' >> allname.lang
 cat tmp.allname.lang |grep zh_CN |sed 's/(zh)/(zh_CN)/' >> allname.lang
 cat tmp.allname.lang |grep zh_TW |sed 's/(zh)/(zh_TW)/' >> allname.lang
 cat tmp.allname.lang |grep -vE en_GB\|pt_BR\|zh_CN\|zh_TW >> allname.lang
+%find_lang kdelibs
+%find_lang katepart
+cat katepart.lang >> kdelibs.lang
 %endif
 
-FindLang af Affrikaans
+FindLang af Afrikaans
 FindLang ar Arabic
 #FindLang az Azerbaijani
 FindLang bg Bulgarian
@@ -950,7 +991,7 @@ FindLang lt Lithuanian
 FindLang mt Maltese
 FindLang nl Dutch
 FindLang nn Norwegian_Nynorsk
-FindLang no Norwegian_Bookmal
+FindLang no Norwegian_Bokmaal
 FindLang nso Northern_Sotho
 # FindLang oc Gascon_occitan
 FindLang pl Polish
@@ -976,22 +1017,19 @@ FindLang zh_CN Simplified_Chinese
 FindLang zh_TW Chinese
 FindLang zu Zulu
 
-%if %{?_with_alltogether:1}%{!?_with_alltogether:0}
+%if 0%{?_with_alltogether:1}
 cat [A-Z]*.lang >all.lang
 %endif
 
 %clean
 rm -rf $RPM_BUILD_ROOT
 
-%if %{?_with_kdelibs:1}%{!?_with_kdelibs:0}
-%files kdelibs
-%defattr(644,root,root,755)
-%{_datadir}/locale/*/LC_MESSAGES/kdelibs.mo
-%{_datadir}/locale/*/LC_MESSAGES/katepart.mo
+%if 0%{?_with_kdelibs:%{!?_with_tarball_creation:1}}
+%files kdelibs -f kdelibs.lang
 %endif
 
-%if %{?_with_alltogether:0}%{!?_with_alltogether:1}
-%files -f Affrikaans.lang Affrikaans
+%if 0%{!?_with_alltogether:%{!?_with_tarball_creation:1}}
+%files -f Afrikaans.lang Afrikaans
 %files -f Arabic.lang Arabic
 ##%files -f Azerbaijani.lang Azerbaijani
 %files -f Bulgarian.lang Bulgarian
@@ -1028,7 +1066,7 @@ rm -rf $RPM_BUILD_ROOT
 # %files -f Maori.lang Maori
 # %files -f Macedonian.lang Macedonian
 %files -f Dutch.lang Dutch
-%files -f Norwegian_Bookmal.lang Norwegian_Bookmal
+%files -f Norwegian_Bokmaal.lang Norwegian_Bokmaal
 %files -f Norwegian_Nynorsk.lang Norwegian_Nynorsk
 %files -f Northern_Sotho.lang Northern_Sotho
 # %files -f Gascon_occitan.lang Gascon_occitan
@@ -1056,6 +1094,6 @@ rm -rf $RPM_BUILD_ROOT
 %files -f Zulu.lang Zulu
 %endif
 
-%if %{?_with_alltogether:1}%{!?_with_alltogether:0}
+%if 0%{?_with_alltogether:%{!?_with_tarball_creation:1}}
 %files -f all.lang
 %endif
