@@ -329,6 +329,34 @@ Obsoletes:	kdepim-kmail-libs-i18n
 Obsoletes:	kdeutils-kmilo-i18n
 Obsoletes:	kde-i18n-kdelibs
 Obsoletes:	kde-kgreet-classic-i18n
+Obsoletes:	kde-kio-smtp-i18n
+Obsoletes:	kde-kio-nntp-i18n
+Obsoletes:	kde-kio-imap4-i18n
+Obsoletes:	kde-kio-pop3-i18n
+Obsoletes:	kdeaddons-ark-i18n
+Obsoletes:	kdeaddons-lnkforward-i18n
+Obsoletes:	kdebase-useraccount-i18n
+Obsoletes:	kde-decoration-kde1-i18n
+Obsoletes:	kde-decoration-kstep-i18n
+Obsoletes:	kde-decoration-openlook-i18n
+Obsoletes:	kde-decoration-riscos-i18n
+Obsoletes:	kde-decoration-system-i18n
+Obsoletes:	kdeedu-klatin-i18n
+Obsoletes:	kdeedu-kturtle-i18n
+Obsoletes:	kdeedu-kwordquiz-i18n
+Obsoletes:	kdegraphics-kolourpaint-i18n
+Obsoletes:	kde-kio-ldap-i18n
+Obsoletes:	kde-kio-newimap4-i18n
+Obsoletes:	kdenetwork-filesharing-i18n
+Obsoletes:	kdepim-i18n
+Obsoletes:	kdepim-libs-i18n
+Obsoletes:	kdesdk-libcvsservice-i18n
+Obsoletes:	kdewebdev-kfilereplace-i18n
+Obsoletes:	kdewebdev-kimagemapeditor-i18n
+Obsoletes:	kdewebdev-klinkstatus-i18n
+Obsoletes:	kdewebdev-kommander-i18n
+Obsoletes:	kdewebdev-kxsldbg-i18n
+Obsoletes:	kdewebdev-quanta-i18n
 
 %description base
 Empty metapackage to handle obsoletes for individual i18n subpackages.
