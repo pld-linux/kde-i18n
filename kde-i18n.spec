@@ -11,7 +11,7 @@ Summary:	K Desktop Environment - international support
 Summary(pl):	KDE - wsparcie dla wielu jêzyków
 Name:		kde-i18n
 Version:	3.2.1
-Release:	3
+Release:	0.1
 License:	GPL
 Group:		X11/Applications
 Source0:	ftp://ftp.kde.org/pub/kde/stable/%{version}/src/%{name}-%{version}.tar.bz2
@@ -21,6 +21,7 @@ Source1:	%{name}-splitmo
 Source2:	%{name}-splitdoc
 Source3:	%{name}-splitdoc-shared
 Patch0:		%{name}-es.patch
+Patch1:		%{name}-pl.patch
 %if %{with alltogether}
 # NOTE: "Affrikaans", "Norwegian_Bookmal" and "Portugnese" are here
 # intentionally, to allow upgrade from packages with misspelled names
@@ -28,6 +29,7 @@ Obsoletes:	kde-i18n-Affrikaans
 Obsoletes:	kde-i18n-Afrikaans
 Obsoletes:	kde-i18n-Arabic
 Obsoletes:	kde-i18n-Azerbaijani
+Obsoletes:	kde-i18n-Bengali
 Obsoletes:	kde-i18n-Bulgarian
 Obsoletes:	kde-i18n-Bosnian
 Obsoletes:	kde-i18n-Catalan
@@ -56,6 +58,7 @@ Obsoletes:	kde-i18n-Latvian
 Obsoletes:	kde-i18n-Maltese
 Obsoletes:	kde-i18n-Malay
 Obsoletes:	kde-i18n-Mongolian
+Obsoletes:	kde-i18n-Low_Saxon
 Obsoletes:	kde-i18n-Dutch
 Obsoletes:	kde-i18n-Norwegian
 Obsoletes:	kde-i18n-Norwegian_Bokmaal
@@ -73,6 +76,7 @@ Obsoletes:	kde-i18n-Slovak
 Obsoletes:	kde-i18n-Slovenian
 Obsoletes:	kde-i18n-Serbian
 Obsoletes:	kde-i18n-Swedish
+Obsoletes:	kde-i18n-Tajik
 Obsoletes:	kde-i18n-Tamil
 Obsoletes:	kde-i18n-Thai
 Obsoletes:	kde-i18n-Turkish
@@ -395,6 +399,18 @@ K Desktop Environment - Bulgarian language support.
 
 %description Bulgarian -l pl
 KDE - wsparcie dla jêzyka bu³garskiego.
+
+%package Bengali
+Summary:	K Desktop Environment - Bengali language support
+Summary(pl):	KDE - wsparcie dla jêzyka bengalskiego
+Group:		X11/Applications
+Requires:	%{name}-base = %{version}-%{release}
+
+%description Bengali
+K Desktop Environment - Bengali language support.
+
+%description Bengali -l pl
+KDE - wsparcie dla jêzyka bengalskiego.
 
 %package Breton
 Summary:	K Desktop Environment - Breton language support
@@ -828,6 +844,18 @@ K Desktop Environment - Mongolian language support.
 %description Mongolian -l pl
 KDE - wsparcie dla jêzyka mongolskiego.
 
+%package Low_Saxon
+Summary:	K Desktop Environment - Low_Saxon language support
+Summary(pl):	KDE - wsparcie dla jêzyka dolnosaksoñskiego
+Group:		X11/Applications
+Requires:	%{name}-base = %{version}-%{release}
+
+%description Low_Saxon
+K Desktop Environment - Low_Saxon language support.
+
+%description Low_Saxon -l pl
+KDE - wsparcie dla jêzyka dolnosaksoñskiego.
+
 %package Dutch
 Summary:	K Desktop Environment - Dutch language support
 Summary(pl):	KDE - wsparcie dla jêzyka holenderskiego
@@ -1024,6 +1052,18 @@ K Desktop Environment - Swedish language support.
 
 %description Swedish -l pl
 KDE - wsparcie dla jêzyka szwedzkiego.
+
+%package Tajik
+Summary:	K Desktop Environment - Tajik language support
+Summary(pl):	KDE - wsparcie dla jêzyka tad¿yckiego
+Group:		X11/Applications
+Requires:	%{name}-base = %{version}-%{release}
+
+%description Tajik
+K Desktop Environment - Tajik language support.
+
+%description Tajik -l pl
+KDE - wsparcie dla jêzyka tad¿yckiego.
 
 %package Tamil
 Summary:	K Desktop Environment - Tamil language support
@@ -1310,9 +1350,10 @@ cat katepart.lang >> kdelibs.lang
 %endif
 
 ##FindLang af Afrikaans
-##FindLang ar Arabic
+FindLang ar Arabic
 FindLang az Azerbaijani
 FindLang bg Bulgarian
+FindLang bn Bengali
 # FindLang br Breton
 FindLang bs Bosnian
 FindLang ca Catalan
@@ -1337,11 +1378,11 @@ FindLang hi Hindi
 ##FindLang hr Croatian
 FindLang hu Hungarian
 # FindLang id Indonesian
-##FindLang is Icelandic
+FindLang is Icelandic
 FindLang it Italian
-##FindLang ja Japanese
+FindLang ja Japanese
 ## FindLang ko Korean
-##FindLang lt Lithuanian
+FindLang lt Lithuanian
 ## FindLang lv Latvian
 # FindLang mi Maori
 ##FindLang mk Macedonian
@@ -1349,6 +1390,7 @@ FindLang mn Mongolian
 FindLang ms Malay
 ##FindLang mt Maltese
 FindLang nb Norwegian_Bokmaal
+FindLang nds Low_Saxon
 FindLang nl Dutch
 FindLang nn Norwegian_Nynorsk
 #indLang nso Northern_Sotho
@@ -1363,8 +1405,11 @@ FindLang se Northern_Sami
 FindLang sk Slovak
 FindLang sl Slovenian
 FindLang sr Serbian
+FindLang sr@Latn Serbian_Latin
+cat Serbian_Latin.lang >>Serbian.lang
 FindLang sv Swedish
 FindLang ta Tamil
+FindLang tg Tajik
 ##FindLang th Thai
 FindLang tr Turkish
 FindLang uk Ukrainian
@@ -1397,111 +1442,165 @@ rm -rf $RPM_BUILD_ROOT
 #%%files -f Arabic.lang Arabic
 %files -f Azerbaijani.lang Azerbaijani
 %defattr(644,root,root,755)
+
 %files -f Bulgarian.lang Bulgarian
 %defattr(644,root,root,755)
+
+%files -f Bengali.lang Bengali
+%defattr(644,root,root,755)
+
 # %files -f Breton.lang Breton
 %files -f Bosnian.lang Bosnian
 %defattr(644,root,root,755)
+
 %files -f Catalan.lang Catalan
 %defattr(644,root,root,755)
+
 %files -f Czech.lang Czech
 %defattr(644,root,root,755)
+
 %files -f Cymraeg.lang Cymraeg
 %defattr(644,root,root,755)
+
 %files -f Danish.lang Danish
 %defattr(644,root,root,755)
+
 %files -f German.lang German
 %defattr(644,root,root,755)
+
 %files -f Greek.lang Greek
 %defattr(644,root,root,755)
+
 # %files -f English.lang English
 %files -f English_UK.lang English_UK
 %defattr(644,root,root,755)
+
 #%%files -f Esperanto.lang Esperanto
 %files -f Spanish.lang Spanish
 %defattr(644,root,root,755)
+
 %files -f Estonian.lang Estonian
 %defattr(644,root,root,755)
+
 %files -f Basque.lang Basque
 %defattr(644,root,root,755)
+
 %files -f Farsi.lang Farsi
 %defattr(644,root,root,755)
+
 %files -f Finnish.lang Finnish
 %defattr(644,root,root,755)
+
 %files -f French.lang French
 %defattr(644,root,root,755)
+
 # %files -f Irish.lang Irish
 %files -f Galician.lang Galician
 %defattr(644,root,root,755)
+
 %files -f Hindi.lang Hindi
 %defattr(644,root,root,755)
+
 %files -f Hebrew.lang Hebrew
 %defattr(644,root,root,755)
+
 #%%files -f Croatian.lang Croatian
 %files -f Hungarian.lang Hungarian
 %defattr(644,root,root,755)
+
 ##%files -f Indonesian.lang Indonesian
-#%%files -f Icelandic.lang Icelandic
+%files -f Icelandic.lang Icelandic
+%defattr(644,root,root,755)
+
 %files -f Italian.lang Italian
 %defattr(644,root,root,755)
-#%%files -f Japanese.lang Japanese
+
+%%files -f Japanese.lang Japanese
+%defattr(644,root,root,755)
+
 ##%files -f Korean.lang Korean
-#%%files -f Lithuanian.lang Lithuanian
+%%files -f Lithuanian.lang Lithuanian
+%defattr(644,root,root,755)
+
 ##%files -f Latvian.lang Latvian
 #%%files -f Maltese.lang Maltese
 %files -f Malay.lang Malay
 %defattr(644,root,root,755)
+
 %files -f Mongolian.lang Mongolian
 %defattr(644,root,root,755)
+
 # %files -f Maori.lang Maori
 #%%files -f Macedonian.lang Macedonian
+%files -f Low_Saxon.lang Low_Saxon
+%defattr(644,root,root,755)
+
 %files -f Dutch.lang Dutch
 %defattr(644,root,root,755)
+
 %files -f Norwegian_Bokmaal.lang Norwegian_Bokmaal
 %defattr(644,root,root,755)
+
 %files -f Norwegian_Nynorsk.lang Norwegian_Nynorsk
 %defattr(644,root,root,755)
+
 #%%files -f Northern_Sotho.lang Northern_Sotho
 # %files -f Gascon_occitan.lang Gascon_occitan
 %files -f Polish.lang Polish
 %defattr(644,root,root,755)
+
 #%%{_datadir}/services/searchproviders/*.desktop
 %files -f Portuguese.lang Portuguese
 %defattr(644,root,root,755)
+
 %files -f Brazil_Portuguese.lang Brazil_Portuguese
 %defattr(644,root,root,755)
+
 %files -f Romanian.lang Romanian
 %defattr(644,root,root,755)
+
 %files -f Russian.lang Russian
 %defattr(644,root,root,755)
+
 %files -f Northern_Sami.lang Northern_Sami
 %defattr(644,root,root,755)
+
 #%%files -f Swati.lang Swati
 %files -f Slovak.lang Slovak
 %defattr(644,root,root,755)
+
 %files -f Slovenian.lang Slovenian
 %defattr(644,root,root,755)
+
 %files -f Serbian.lang Serbian
 %defattr(644,root,root,755)
+
 %files -f Swedish.lang Swedish
 %defattr(644,root,root,755)
+
 %files -f Tamil.lang Tamil
 %defattr(644,root,root,755)
+
 #%%files -f Thai.lang Thai
 %files -f Turkish.lang Turkish
 %defattr(644,root,root,755)
+
 %files -f Ukrainian.lang Ukrainian
 %defattr(644,root,root,755)
+
 %files -f Uzbek.lang Uzbek
 %defattr(644,root,root,755)
+
 #%%files -f Venda.lang Venda
 #%%files -f Vietnamese.lang Vietnamese
 # %files -f Walloon.lang Walloon
 #%%files -f Xhosa.lang Xhosa
 %files -f Simplified_Chinese.lang Simplified_Chinese
 %defattr(644,root,root,755)
+
 %files -f Chinese.lang Chinese
 %defattr(644,root,root,755)
+
 #%%files -f Zulu.lang Zulu
 %endif
 
