@@ -1,13 +1,17 @@
 Summary:	K Desktop Environment - International Support
 Summary(pl):	KDE - Wsparcie dla t³umaczeñ miêdzynarodowych
 Name:		kde-i18n
-Version:	2.1.1
+Version:	2.2
 Release:	1
 License:	GPL/LGPL
 Group:		X11/KDE
 Group(de):	X11/KDE
 Group(pl):	X11/KDE
 Source0:	ftp://ftp.kde.org/pub/kde/stable/%{version}/distribution/tar/generic/src/%{name}-%{version}.tar.bz2
+# this is workaround - I don't know Chinese :)
+Source1:	ppdtranslations.gmo
+Patch0:		kde-i18n-pl.patch
+BuildRequires:	libxml2 >= 2.4.2
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %define		_prefix		/usr/X11R6
@@ -461,6 +465,7 @@ K Desktop Environment - International Support
 
 %prep
 %setup -q
+%patch0 -p1
 
 %build
 %define         _sharedir       %{_prefix}/share
@@ -469,8 +474,9 @@ K Desktop Environment - International Support
 kde_htmldir="%{_htmldir}"; export kde_htmldir
 
 LDFLAGS="%{rpmldflags}"
-%{__make} -f Makefile.cvs
-%configure
+#$%{__make} -f Makefile.cvs
+cp %{SOURCE1} zh_CN.GB2312/messages
+%configure2_13
 %{__make} RPM_OPT_FLAGS="%{rpmcflags}"
 
 %install
