@@ -1350,7 +1350,7 @@ cat katepart.lang >> kdelibs.lang
 %endif
 
 ##FindLang af Afrikaans
-FindLang ar Arabic
+##FindLang ar Arabic
 FindLang az Azerbaijani
 FindLang bg Bulgarian
 FindLang bn Bengali
