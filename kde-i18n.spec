@@ -265,6 +265,18 @@ K Desktop Environment - Basque language support.
 %description Basque -l pl
 KDE - wsparcie dla jêzyka baskijskiego.
 
+%package Farsi
+Summary:        K Desktop Environment - Farsi language support
+Summary(pl):    KDE - wsparcie dla jêzyka farsi
+Group:          X11/Applications
+
+%description Farsi
+K Desktop Environment - Farsi language support.
+
+%description Farsi -l pl
+KDE - wsparcie dla jêzyka farsi.
+
+
 %package Finnish
 Summary:	K Desktop Environment - Finnish language support
 Summary(pl):	KDE - wsparcie dla jêzyka fiñskiego
@@ -342,16 +354,16 @@ K Desktop Environment - Hungarian language support.
 %description Hungarian -l pl
 KDE - wsparcie dla jêzyka wêgierskiego.
 
-%package Indonesian
-Summary:	K Desktop Environment - Indonesian language support
-Summary(pl):	KDE - wsparcie dla jêzyka indonezyjskiego
-Group:		X11/Applications
+##%package Indonesian
+#Summary:	K Desktop Environment - Indonesian language support
+#Summary(pl):	KDE - wsparcie dla jêzyka indonezyjskiego
+#Group:		X11/Applications
 
-%description Indonesian
-K Desktop Environment - Indonesian language support.
+##%description Indonesian
+#K Desktop Environment - Indonesian language support.
 
-%description Indonesian -l pl
-KDE - wsparcie dla jêzyka indonezyjskiego.
+##%description Indonesian -l pl
+#KDE - wsparcie dla jêzyka indonezyjskiego.
 
 %package Icelandic
 Summary:	K Desktop Environment - Icelandic language support
@@ -809,7 +821,7 @@ FindLang() {
 %endif
 
 %{__make} DESTDIR=$RPM_BUILD_ROOT install
-
+%if %{?_with_tarball_creation:1}%{!?_tarball_creation:0}
 package_list=`( grep -v '^#' < %{SOURCE1}; grep -v '^#' < %{SOURCE2} ) | cut -f 1 | sort | uniq`
 for i in $package_list ; do
 	install -d $RPM_BUILD_ROOT/tmp/$i
@@ -854,7 +866,6 @@ for l in * ; do
 done
 cd -
 
-%if %{?_with_tarball_creation:1}%{!?_tarball_creation:0}
 ISDIR="`pwd`"
 for i in $package_list ; do
 	( cd $RPM_BUILD_ROOT/tmp/$i ; tar cjf %{_sourcedir}/%{name}-$i-%{version}.tar.bz2 . )
@@ -890,6 +901,7 @@ FindLang eo Esperanto
 FindLang es Spanish
 FindLang et Estonian
 FindLang eu Basque
+FindLang fa Farsi
 FindLang fi Finnish
 FindLang fr French
 # FindLang ga Irish
@@ -897,7 +909,7 @@ FindLang fr French
 FindLang he Hebrew
 FindLang hr Croatian
 FindLang hu Hungarian
-FindLang id Indonesian
+#FindLang id Indonesian
 FindLang is Icelandic
 FindLang it Italian
 FindLang ja Japanese
@@ -968,6 +980,7 @@ rm -rf $RPM_BUILD_ROOT
 %files -f Spanish.lang Spanish
 %files -f Estonian.lang Estonian
 %files -f Basque.lang Basque
+%files -f Farsi.lang Farsi
 %files -f Finnish.lang Finnish
 %files -f French.lang French
 # %files -f Irish.lang Irish
@@ -975,7 +988,7 @@ rm -rf $RPM_BUILD_ROOT
 %files -f Hebrew.lang Hebrew
 %files -f Croatian.lang Croatian
 %files -f Hungarian.lang Hungarian
-%files -f Indonesian.lang Indonesian
+##%files -f Indonesian.lang Indonesian
 %files -f Icelandic.lang Icelandic
 %files -f Italian.lang Italian
 %files -f Japanese.lang Japanese
