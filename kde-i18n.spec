@@ -15,11 +15,11 @@ Release:	1
 License:	GPL/LGPL
 Group:		X11/Applications
 #Source0:	ftp://ftp.kde.org/pub/kde/stable/%{version}/src/%{name}-%{version}.tar.bz2
-Source0:        http://ep09.pld-linux.org/~djurban/kde/%{name}-%{version}.tar.bz2
+Source0:	http://ep09.pld-linux.org/~djurban/kde/%{name}-%{version}.tar.bz2
 # Source0-md5:	13299c38d4acb77ae4edf759b327c1ab	
 Source1:	%{name}-splitmo
 Source2:	%{name}-splitdoc
-Source3:        %{name}-splitdoc-shared
+Source3:	%{name}-splitdoc-shared
 Patch0:		%{name}-es.patch
 %if %{with alltogether}
 # NOTE: "Affrikaans", "Norwegian_Bookmal" and "Portugnese" are here
@@ -43,7 +43,7 @@ Obsoletes:	kde-i18n-Estonian
 Obsoletes:	kde-i18n-Finnish
 Obsoletes:	kde-i18n-French
 Obsoletes:	kde-i18n-Hebrew
-Obsoletes:      kde-i18n-Hindi
+Obsoletes:	kde-i18n-Hindi
 Obsoletes:	kde-i18n-Croatian
 Obsoletes:	kde-i18n-Hungarian
 Obsoletes:	kde-i18n-Indonesian
@@ -54,8 +54,8 @@ Obsoletes:	kde-i18n-Korean
 Obsoletes:	kde-i18n-Lithuanian
 Obsoletes:	kde-i18n-Latvian
 Obsoletes:	kde-i18n-Maltese
-Obsoletes:      kde-i18n-Malay
-Obsoletes:      kde-i18n-Mongolian
+Obsoletes:	kde-i18n-Malay
+Obsoletes:	kde-i18n-Mongolian
 Obsoletes:	kde-i18n-Dutch
 Obsoletes:	kde-i18n-Norwegian
 Obsoletes:	kde-i18n-Norwegian_Bokmaal
@@ -77,7 +77,7 @@ Obsoletes:	kde-i18n-Tamil
 Obsoletes:	kde-i18n-Thai
 Obsoletes:	kde-i18n-Turkish
 Obsoletes:	kde-i18n-Ukrainian
-Obsoletes:      kde-i18n-Uzbek
+Obsoletes:	kde-i18n-Uzbek
 Obsoletes:	kde-i18n-Venda
 Obsoletes:	kde-i18n-Vietnamese
 Obsoletes:	kde-i18n-Xhosa
@@ -95,6 +95,8 @@ BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %define		_prefix		/usr
+%define		_sharedir	%{_datadir}
+%define		_htmldir	/usr/share/doc/kde/HTML
 
 %description
 K Desktop Environment - international support.
@@ -372,9 +374,9 @@ K Desktop Environment - Galician language support.
 KDE - wsparcie dla jêzyka galijskiego.
 
 %package Hindi
-Summary:        K Desktop Environment - Hindi language support
-Summary(pl):    KDE - wsparcie dla jêzyka hindi
-Group:          X11/Applications
+Summary:	K Desktop Environment - Hindi language support
+Summary(pl):	KDE - wsparcie dla jêzyka hindi
+Group:		X11/Applications
 
 %description Hindi
 K Desktop Environment - Hindi language support.
@@ -515,9 +517,9 @@ K Desktop Environment - Macedonian language support.
 KDE - wsparcie dla jêzyka macedoñskiego.
 
 %package Malay
-Summary:        K Desktop Environment - Malay language support
-Summary(pl):    KDE - wsparcie dla jêzyka malajskiego
-Group:          X11/Applications
+Summary:	K Desktop Environment - Malay language support
+Summary(pl):	KDE - wsparcie dla jêzyka malajskiego
+Group:		X11/Applications
 
 %description Malay
 K Desktop Environment - Malay language support.
@@ -537,9 +539,9 @@ K Desktop Environment - Maltese language support.
 KDE - wsparcie dla jêzyka maltañskiego.
 
 %package Mongolian
-Summary:        K Desktop Environment - Mongolian language support
-Summary(pl):    KDE - wsparcie dla jêzyka mongolskiego
-Group:          X11/Applications
+Summary:	K Desktop Environment - Mongolian language support
+Summary(pl):	KDE - wsparcie dla jêzyka mongolskiego
+Group:		X11/Applications
 
 %description Mongolian
 K Desktop Environment - Mongolian language support.
@@ -773,9 +775,9 @@ K Desktop Environment - Ukrainian language support.
 KDE - wsparcie dla jêzyka ukraiñskiego.
 
 %package Uzbek
-Summary:        K Desktop Environment - Uzbek language support
-Summary(pl):    KDE - wsparcie dla jêzyka uzbeckiego
-Group:          X11/Applications
+Summary:	K Desktop Environment - Uzbek language support
+Summary(pl):	KDE - wsparcie dla jêzyka uzbeckiego
+Group:		X11/Applications
 
 %description Uzbek
 K Desktop Environment - Uzbek language support.
@@ -866,9 +868,6 @@ KDE - wsparcie dla jêzyka zuluskiego.
 %patch0 -p1
 
 %build
-%define         _sharedir       %{_datadir}
-%define         _htmldir        /usr/share/doc/kde/HTML
-
 kde_htmldir="%{_htmldir}"; export kde_htmldir
 
 LDFLAGS="%{rpmldflags}"
