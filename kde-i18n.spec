@@ -725,7 +725,7 @@ KDE - Wsparcie dla t³umaczeñ miêdzynarodowych.
 
 %prep
 %setup -q
-%patch0 -p1
+#%patch0 -p1
 
 %build
 %define         _sharedir       %{_datadir}
@@ -829,6 +829,7 @@ cd -
 ISDIR="`pwd`"
 for i in $package_list ; do
 	( cd $RPM_BUILD_ROOT/tmp/$i ; tar cjf %{_sourcedir}/%{name}-$i-%{version}.tar.bz2 . )
+	echo "Wrote %{name}-$i-%{version}.tar.bz2"
 done
 cd "$ISDIR"
 %endif
