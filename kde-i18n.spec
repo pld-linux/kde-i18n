@@ -342,6 +342,7 @@ Obsoletes:	kde-decoration-kstep-i18n
 Obsoletes:	kde-decoration-openlook-i18n
 Obsoletes:	kde-decoration-riscos-i18n
 Obsoletes:	kde-decoration-system-i18n
+Obsoletes:	kde-decoration-common-i18n
 Obsoletes:	kdeedu-klatin-i18n
 Obsoletes:	kdeedu-kturtle-i18n
 Obsoletes:	kdeedu-kwordquiz-i18n
