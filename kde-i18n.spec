@@ -23,21 +23,20 @@ Patch0:		%{name}-nodoc.patch
 Obsoletes:	kde-i18n-Affrikaans kde-i18n-Arabic kde-i18n-Azerbaijani
 Obsoletes:	kde-i18n-Bulgarian kde-i18n-Bosnian kde-i18n-Catalan
 Obsoletes:	kde-i18n-Czech kde-i18n-Danish kde-i18n-German kde-i18n-Greek
-Obsoletes:	kde-i18n-English_UK kde-i18n-Esperanto kde-i18n-Spanish
-Obsoletes:	kde-i18n-Estonian kde-i18n-Finnish kde-i18n-French
-Obsoletes:	kde-i18n-Hebrew kde-i18n-Croatian kde-i18n-Hungarian
-Obsoletes:	kde-i18n-Indonesian kde-i18n-Icelandic kde-i18n-Italian
-Obsoletes:	kde-i18n-Japanese kde-i18n-Korean kde-i18n-Lithuanian
-Obsoletes:	kde-i18n-Latvian kde-i18n-Maltese kde-i18n-Dutch
-Obsoletes:	kde-i18n-Norwegian kde-i18n-Norwegian_Bokmaal
+Obsoletes:	kde-i18n-English_UK kde-i18n-British kde-i18n-Esperanto
+Obsoletes:	kde-i18n-Spanish kde-i18n-Estonian kde-i18n-Finnish
+Obsoletes:	kde-i18n-French kde-i18n-Hebrew kde-i18n-Croatian
+Obsoletes:	kde-i18n-Hungarian kde-i18n-Indonesian kde-i18n-Icelandic
+Obsoletes:	kde-i18n-Italian kde-i18n-Japanese kde-i18n-Korean
+Obsoletes:	kde-i18n-Lithuanian kde-i18n-Latvian kde-i18n-Maltese
+Obsoletes:	kde-i18n-Dutch kde-i18n-Norwegian kde-i18n-Norwegian_Bokmaal
 Obsoletes:	kde-i18n-Norwegian_Nynorsk kde-i18n-Polish kde-i18n-Portugnese
-Obsoletes:	kde-i18n-Portuguese kde-i18n-Brazil_Portugnese
-Obsoletes:	kde-i18n-Brazil-Portuguese kde-i18n-Romanian kde-i18n-Russian
-Obsoletes:	kde-i18n-Slovak kde-i18n-Slovenian kde-i18n-Serbian
-Obsoletes:	kde-i18n-Swedish kde-i18n-Tamil kde-i18n-Thai kde-i18n-Turkish
-Obsoletes:	kde-i18n-Ukrainian kde-i18n-Venda kde-i18n-Vietnamese
-Obsoletes:	kde-i18n-Xhosa kde-i18n-Simplified_Chinese kde-i18n-Chinese
-Obsoletes:	kde-i18n-Zulu
+Obsoletes:	kde-i18n-Brazil kde-i18n-Brazil-Portuguese kde-i18n-Romanian
+Obsoletes:	kde-i18n-Russian kde-i18n-Slovak kde-i18n-Slovenian
+Obsoletes:	kde-i18n-Serbian kde-i18n-Swedish kde-i18n-Tamil kde-i18n-Thai
+Obsoletes:	kde-i18n-Turkish kde-i18n-Ukrainian kde-i18n-Venda
+Obsoletes:	kde-i18n-Vietnamese kde-i18n-Xhosa kde-i18n-Simplified_Chinese
+Obsoletes:	kde-i18n-Chinese kde-i18n-Chinese-Big5 kde-i18n-Zulu
 %endif
 # It creates symlinks to some not-translated files.
 BuildRequires:	kdelibs = %{version}
