@@ -362,7 +362,7 @@ KDE - wsparcie dla jêzyka irlandzkiego.
 
 %package Galician
 Summary:	K Desktop Environment - Galician language support
-Summary(pl):	KDE - wsparcie dla jêzyka galijskiego
+Summary(pl):	KDE - wsparcie dla jêzyka galicyjskiego
 Group:		X11/Applications
 
 %description Galician
@@ -538,7 +538,7 @@ KDE - wsparcie dla jêzyka maltañskiego.
 
 %package Mongolian
 Summary:        K Desktop Environment - Mongolian language support
-Summary(pl):    KDE - wsparcie dla jêzyka maltañskiego
+Summary(pl):    KDE - wsparcie dla jêzyka mongolskiego
 Group:          X11/Applications
 
 %description Mongolian
