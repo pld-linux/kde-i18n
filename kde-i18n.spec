@@ -87,8 +87,7 @@ Requires:	kde-i18n-base
 BuildRequires:	gettext-devel
 # It creates symlinks to some not-translated files.
 ###BuildRequires:	unsermake >= 040511
-BuildRequires:	kdelibs >= %{version}
-BuildRequires:	kdelibs-devel
+BuildRequires:	kdelibs-devel >= 9:%{version}
 BuildRequires:	libxml2-progs >= 2.4.2
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
