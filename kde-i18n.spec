@@ -312,14 +312,14 @@ KDE - wsparcie dla jêzyka francuskiego.
 
 #%package Galician
 #Summary:	K Desktop Environment - Galician language support
-#Summary(pl):	KDE - wsparcie dla jêzyka szkockiego gaelickiego
+#Summary(pl):	KDE - wsparcie dla jêzyka galijskiego
 #Group:		X11/Applications
 #
 #%description Galician
 #K Desktop Environment - Galician language support.
 #
 #%description Galician -l pl
-#KDE - wsparcie dla jêzyka szkockiego gaelickiego.
+#KDE - wsparcie dla jêzyka galijskiego.
 
 %package Hebrew
 Summary:	K Desktop Environment - Hebrew language support
