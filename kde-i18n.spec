@@ -10,19 +10,17 @@
 Summary:	K Desktop Environment - international support
 Summary(pl):	KDE - wsparcie dla wielu jêzyków
 Name:		kde-i18n
-Version:	3.2.2
+Version:	3.2.3
 Release:	0.1
 License:	GPL
 Group:		X11/Applications
 Source0:	ftp://ftp.kde.org/pub/kde/stable/%{version}/src/%{name}-%{version}.tar.bz2
-# Source0-md5:	3de328fcce5fb1f90b9489e4f36fa33d
+# Source0-md5:	7a2ff8e848b6347e41e450f5aaaf75a3
 #Source0:	http://ep09.pld-linux.org/~djurban/kde/%{name}-%{version}.tar.bz2
 Source1:	%{name}-splitmo
 Source2:	%{name}-splitdoc
 Source3:	%{name}-splitdoc-shared
-Patch0:		%{name}-nl.patch
-Patch1:		%{name}-fr.patch
-Patch2:		%{name}-ta.patch
+Patch0:		%{name}-fixes.patch
 %if %{with alltogether}
 # NOTE: "Affrikaans", "Norwegian_Bookmal" and "Portugnese" are here
 # intentionally, to allow upgrade from packages with misspelled names
@@ -93,6 +91,7 @@ Obsoletes:	kde-i18n-Zulu
 %endif
 BuildRequires:	gettext-devel
 # It creates symlinks to some not-translated files.
+###BuildRequires:	unsermake >= 040511
 BuildRequires:	kdelibs >= %{version}
 BuildRequires:	kdelibs-devel
 BuildRequires:	libxml2-progs >= 2.4.2
@@ -677,6 +676,18 @@ K Desktop Environment - Croatian language support.
 %description Croatian -l pl
 KDE - wsparcie dla jêzyka chorwackiego.
 
+%package Upper_Sorbian
+Summary:        K Desktop Environment - Upper Sorbian language support
+Summary(pl):    KDE - wsparcie dla jêzyka górno³u¿yckiego.
+Group:          X11/Applications
+Requires:       %{name}-base = %{version}-%{release}
+
+%description Upper_Sorbian
+K Desktop Environment - Upper Sorbian language support.
+
+%description Upper_Sorbian  -l pl
+KDE - wsparcie dla jêzyka górno³u¿yckiego.
+
 %package Hungarian
 Summary:	K Desktop Environment - Hungarian language support
 Summary(pl):	KDE - wsparcie dla jêzyka wêgierskiego
@@ -1214,19 +1225,25 @@ KDE - wsparcie dla jêzyka zuluskiego.
 %prep
 %setup -q
 %patch0 -p1
-%patch1 -p1
-%patch2 -p1
-
 %build
 kde_htmldir="%{_kdedocdir}"; export kde_htmldir
+kde_libs_htmldir="%{_kdedocdir}"; export kde_libs_htmldir
 
 LDFLAGS="%{rpmldflags}"
+#export UNSERMAKE=%{_datadir}/unsermake/unsermake
+
+for i in `find ./ro/docs/ -name Makefile.am`;
+do
+	echo -e 'KDE_LANG = ro\nSUBDIRS = $(AUTODIRS)\nKDE_DOCS = AUTO' > $i
+done
 
 %{__make} -f admin/Makefile.common cvs
 
 %configure
 %{__make} \
-	RPM_OPT_FLAGS="%{rpmcflags}"
+	RPM_OPT_FLAGS="%{rpmcflags}" \
+	kde_htmldir="%{_kdedocdir}" \
+	kde_libs_htmldir="%{_kdedocdir}"
 
 %install
 rm -rf $RPM_BUILD_ROOT
@@ -1267,7 +1284,9 @@ FindLang() {
 %endif
 
 %{__make} install \
-	DESTDIR=$RPM_BUILD_ROOT
+	DESTDIR=$RPM_BUILD_ROOT \
+	kde_htmldir="%{_kdedocdir}" \
+	kde_libs_htmldir="%{_kdedocdir}"
 
 %if %{with tarball_creation}
 package_list=`awk '!/^#/ { print $1 } ' %{SOURCE1} %{SOURCE2} | sort | uniq`
@@ -1353,7 +1372,7 @@ cat katepart.lang >> kdelibs.lang
 %endif
 
 ##FindLang af Afrikaans
-##FindLang ar Arabic
+FindLang ar Arabic
 FindLang az Azerbaijani
 FindLang bg Bulgarian
 FindLang bn Bengali
@@ -1378,7 +1397,8 @@ FindLang fr French
 FindLang gl Galician
 FindLang he Hebrew
 FindLang hi Hindi
-##FindLang hr Croatian
+FindLang hr Croatian
+FindLang hsb Upper_Sorbian
 FindLang hu Hungarian
 # FindLang id Indonesian
 FindLang is Icelandic
@@ -1404,7 +1424,7 @@ FindLang pt_BR Brazil_Portuguese
 FindLang ro Romanian
 FindLang ru Russian
 ##FindLang ss Swati
-FindLang se Northern_Sami
+##FindLang se Northern_Sami
 FindLang sk Slovak
 FindLang sl Slovenian
 FindLang sr Serbian
@@ -1442,7 +1462,9 @@ rm -rf $RPM_BUILD_ROOT
 %defattr(644,root,root,755)
 
 #%%files -f Afrikaans.lang Afrikaans
-#%%files -f Arabic.lang Arabic
+%%files -f Arabic.lang Arabic
+%defattr(644,root,root,755)
+
 %files -f Azerbaijani.lang Azerbaijani
 %defattr(644,root,root,755)
 
@@ -1507,7 +1529,12 @@ rm -rf $RPM_BUILD_ROOT
 %files -f Hebrew.lang Hebrew
 %defattr(644,root,root,755)
 
-#%%files -f Croatian.lang Croatian
+%files -f Croatian.lang Croatian
+%defattr(644,root,root,755)
+
+%files -f Upper_Sorbian.lang Upper_Sorbian
+%defattr(644,root,root,755)
+
 %files -f Hungarian.lang Hungarian
 %defattr(644,root,root,755)
 
@@ -1518,11 +1545,11 @@ rm -rf $RPM_BUILD_ROOT
 %files -f Italian.lang Italian
 %defattr(644,root,root,755)
 
-%%files -f Japanese.lang Japanese
+%files -f Japanese.lang Japanese
 %defattr(644,root,root,755)
 
 ##%files -f Korean.lang Korean
-%%files -f Lithuanian.lang Lithuanian
+%files -f Lithuanian.lang Lithuanian
 %defattr(644,root,root,755)
 
 ##%files -f Latvian.lang Latvian
@@ -1532,6 +1559,7 @@ rm -rf $RPM_BUILD_ROOT
 
 %files -f Mongolian.lang Mongolian
 %defattr(644,root,root,755)
+%{_datadir}/locale/mn/*.png
 
 # %files -f Maori.lang Maori
 #%%files -f Macedonian.lang Macedonian
@@ -1565,8 +1593,8 @@ rm -rf $RPM_BUILD_ROOT
 %files -f Russian.lang Russian
 %defattr(644,root,root,755)
 
-%files -f Northern_Sami.lang Northern_Sami
-%defattr(644,root,root,755)
+#%%files -f Northern_Sami.lang Northern_Sami
+#%%defattr(644,root,root,755)
 
 #%%files -f Swati.lang Swati
 %files -f Slovak.lang Slovak
@@ -1586,6 +1614,9 @@ rm -rf $RPM_BUILD_ROOT
 
 #%%files -f Thai.lang Thai
 %files -f Turkish.lang Turkish
+%defattr(644,root,root,755)
+
+%files -f Tajik.lang Tajik
 %defattr(644,root,root,755)
 
 %files -f Ukrainian.lang Ukrainian
