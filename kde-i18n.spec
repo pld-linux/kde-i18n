@@ -39,12 +39,14 @@ Obsoletes:	kde-i18n-Ukrainian kde-i18n-Venda kde-i18n-Vietnamese
 Obsoletes:	kde-i18n-Xhosa kde-i18n-Simplified_Chinese kde-i18n-Chinese
 Obsoletes:	kde-i18n-Chinese-Big5 kde-i18n-Zulu
 %endif
+BuildRequires:	awk
 BuildRequires:	gettext-devel
 # It creates symlinks to some not-translated files.
 BuildRequires:	kdelibs >= %{version}
 BuildRequires:	kdelibs-devel
 BuildRequires:	libxml2-progs >= 2.4.2
 BuildRequires:	perl
+BuildRequires:	sed
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
@@ -852,8 +854,9 @@ FindLang() {
 %endif
 
 %{__make} DESTDIR=$RPM_BUILD_ROOT install
+
 %if %{?_with_tarball_creation:1}%{!?_tarball_creation:0}
-package_list=`( grep -v '^#' < %{SOURCE1}; grep -v '^#' < %{SOURCE2} ) | cut -f 1 | sort | uniq`
+package_list=`awk '!/^#/ { print $1 } ' %{SOURCE1} %{SOURCE2} | sort | uniq`
 for i in $package_list ; do
 	install -d $RPM_BUILD_ROOT/tmp/$i
 done
