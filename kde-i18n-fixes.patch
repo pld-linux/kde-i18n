@@ -460,3 +460,1593 @@
 +
 +</sect1>
  </chapter>
+--- kde-i18n/it/docs/kdepim/kmail/getting-started.docbook	4 Oct 2004 20:51:54 -0000	1.2.2.2
++++ kde-i18n/it/docs/kdepim/kmail/getting-started.docbook	1 Oct 2004 18:26:09 -0000	1.2.2.1
+@@ -43,23 +43,23 @@
+ > 
+ </authorgroup>
+ <date
+->2002-10-03</date
++>2004-07-13</date
+ > <releaseinfo
+->1.5</releaseinfo
++>1.7</releaseinfo
+ > </chapterinfo>
+ 
+ <title
+ >Primi passi</title>
+ 
+ <para
+->Questa breve introduzione a &kmail; ed al suo uso permette di cominciare ad utilizzarlo da subito. Per informazioni più approfondite fai riferimento alla sezione <link linkend="using-kmail"
++>Questa è una breve introduzione a &kmail; che ti permetterà di cominciare ad usare il programma immediatamente. Per informazioni più approfondite fai riferimento alla sezione <link linkend="using-kmail"
+ >Usare &kmail;</link
+ >. L'installazione di &kmail; è descritta nell'<link linkend="installation"
+ >appendice</link
+ >.</para>
+ 
+ <para
+->Al primo utilizzo di &kmail; viene creata una cartella chiamata <filename class="directory"
++>Al primo avvio di &kmail; viene creata una cartella chiamata <filename class="directory"
+ >Mail</filename
+ > nella tua cartella home, contenente le cartelle iniziali (<filename
+ >inbox</filename
+@@ -88,10 +88,10 @@
+ >Aspetto</guilabel
+ >, <guilabel
+ >Compositore</guilabel
+->,  <guilabel
++>, <guilabel
+ >Sicurezza</guilabel
+ > e <guilabel
+->Cartelle</guilabel
++>Varie</guilabel
+ >.</para>
+ 
+ <para
+@@ -101,38 +101,46 @@
+ >Rete</guilabel
+ >.</para>
+ 
+-<sect1 id="setting-your-identity">
+-<title
+->Cambiare identità</title>
++  <sect1 id="setting-your-identity">
++    <title
++>Cambiare identità </title>
+ 
+-<para
+->La configurazione della pagina <guilabel
++    <para
++>Le impostazioni della pagina <guilabel
+ >Identità</guilabel
+-> è piuttosto semplice. Seleziona la tua identità predefinita e premi <guibutton
++> sono piuttosto semplici. Seleziona la tua identità predefinita e premi il pulsante <guibutton
+ >Modifica</guibutton
+->. Riempi il campo <guilabel
+->Tuo nome</guilabel
+-> col tuo nome completo (&eg; <userinput
+->Luca Rossi</userinput
+->) ed il campo <guilabel
++>. Inserisci il tuo nome completo nel campo <guilabel
++>Il tuo nome</guilabel
++> (&eg; <userinput
++>Mario Rossi</userinput
++>) e, se lo desideri, il campo <guilabel
+ >Organizzazione</guilabel
+-> (opzionale) con le informazioni appropriate. Infine compila il campo <guilabel
++> con l'informazione appropriata. </para>
++    <para
++>Poi, inserisci il tuo indirizzo email nel campo <guilabel
+ >Indirizzo di posta elettronica</guilabel
+-> con  il tuo indirizzo di posta elettronica (&eg; <userinput
+->luca@rossi.net</userinput
+->). Se usi <application
++> (&eg; <userinput
++>mario@rossi.net</userinput
++>). </para>
++    <para
++>Se usi <application
+ >PGP</application
+ > o <application
+ >GnuPG</application
+->  devi anche impostare la chiave nel campo <guilabel
+->Chiave OpenPGP</guilabel
+-> della linguetta <guilabel
+->Avanzate</guilabel
+->. Volendo, puoi anche inserire la firma dalla linguetta <guilabel
++> puoi impostare le chiavi &openpgp; e/o i certificati &smime; nella scheda <link linkend="configure-identity-cryptography"
++><guilabel
++>Crittografia</guilabel
++></link
++>. </para>
++    <para
++>Se lo desideri, puoi anche selezionare la scheda <guilabel
+ >Firma</guilabel
+->. Questa è un breve testo che viene automaticamente posto in calce ad ogni messaggio inviato.</para>
++> ed inserire una firma, cioè un breve testo che verrà posto in calce a tutti i messaggi che spedirai. Non ha nessuna relazione con la <emphasis
++>firma digitale</emphasis
++>. </para>
+ 
+-</sect1>
++  </sect1>
+ 
+ <sect1 id="setting-up-your-account">
+ <title
+@@ -150,22 +158,22 @@
+ >Spedire i messaggi</title>
+ 
+ <para
+->La linguetta <guilabel
+->Spedizione posta</guilabel
+-> fornisce una lista di opzioni per inviare messaggi. La prima voce è il metodo predefinito di spedire i messaggi. Usando il pulsante <guibutton
++>La scheda <guilabel
++>Spedizione</guilabel
++> fornisce una lista di metodi per inviare messaggi. La prima voce della lista è il metodo predefinito di spedire i messaggi. Usando il pulsante <guibutton
+ >Aggiungi...</guibutton
+ > puoi scegliere tra due modi di invio dei messaggi:<guilabel
+ >SMTP</guilabel
+ > e <guilabel
+ >sendmail</guilabel
+->. &Sendmail; qui significa un'installazione locale del software - che ha fama di essere difficile da configurare, per cui, se non hai già una configurazione di &Sendmail; funzionante, scegli<guilabel
++>. &Sendmail; qui significa un'installazione locale del software - che ha fama di essere difficile da configurare, per cui, se non hai già una configurazione di &Sendmail; funzionante, scegli <guilabel
+ >SMTP</guilabel
+ > e riempi il campo <guilabel
+ >Nome</guilabel
+ > con un nome descrittivo (&eg; <userinput
+ >Il mio account</userinput
+ >) e <guilabel
+->Server</guilabel
++>Host</guilabel
+ > con il nome e dominio del mail server (&eg; <userinput
+ >smtp.provider.com</userinput
+ >). Molto probabilmente non sarà necessario cambiare la configurazione della <guilabel
+@@ -181,10 +189,10 @@
+ >.</para>
+ 
+ <para
+->Il metodo di spedizione dei messaggi configurato qui sarà usato per la tua identità predefinita e per tutte le altre identità che non hanno configurazione specifica per l'invio dei messaggi. Si può usare un metodo diverso di invio dei messaggi per ogni identità aggiungendolo con il pulsante <guilabel
++>Il metodo di spedizione dei messaggi configurato da qui sarà usato per la tua identità predefinita e per tutte le altre identità che non hanno configurazione specifica per l'invio dei messaggi. Si può usare un metodo diverso di invio dei messaggi per ogni identità, aggiungendolo con il pulsante <guilabel
+ >Trasporto speciale</guilabel
+-> presente nella linguetta <guilabel
+->Impostazioni avanzate</guilabel
++> presente nella scheda<guilabel
++>Avanzate</guilabel
+ > della sezione <guilabel
+ >Identità</guilabel
+ >.</para>
+@@ -251,7 +259,7 @@
+ >/Mail/</filename
+ >. Inserisci questo valore nel campo <guilabel
+ >Prefisso alle cartelle</guilabel
+-> in modo che &kmail; non mescoli le caselle postali con altri file. Tieni presente che anche con una barra come primo carattere il path è interpretato relativamente alla directory home. Se non ti interessa questa caratteristica, lascia semplicemente il campo vuoto.</para>
++> in modo che &kmail; non mescoli le caselle postali con altri file. Tieni presente che anche con una barra come primo carattere il percorso è interpretato relativamente alla directory home. Se non ti interessa questa caratteristica, lascia semplicemente il campo vuoto.</para>
+ 
+ <para
+ >Marcando <guilabel
+@@ -277,8 +285,8 @@
+ 
+ <para
+ >Seleziona <guilabel
+->Elimina il messaggio dal server dopo averlo scaricato</guilabel
+-> se non vuoi lasciare la posta sul server dopo averla scaricata.</para>
++>Mantieni sul server i messaggi scaricati</guilabel
++> se vuoi lasciare la posta sul server anche dopo averla scaricata.</para>
+ 
+ <para
+ >Seleziona <guilabel
+@@ -301,7 +309,7 @@
+ >Seleziona <guilabel
+ >Abilita controllo periodico della posta</guilabel
+ > se vuoi che &kmail; controlli automaticamente se sono arrivati messaggi nuovi. L'intervallo fra i controlli può essere specificato sotto <guilabel
+->Ogni quanti minuti controllare</guilabel
++>Intervallo fra i controlli</guilabel
+ >.</para>
+ 
+ <para
+@@ -309,7 +317,7 @@
+ >posta in arrivo</guilabel
+ > è la cartella predefinita per la posta in arrivo. Se vuoi cambiarla per qualche ragione, puoi farlo con <guilabel
+ >Cartella di destinazione</guilabel
+->, ma probabilmente quello che hai in mente di fare è di utilizzare un <link linkend="filters"
++>, ma è probabile che in realtà per quello che vuoi fare sia più adatto l'uso di un <link linkend="filters"
+ >filtro</link
+ >, che non ha nulla a che vedere con questa opzione.</para>
+ 
+@@ -321,7 +329,7 @@
+ >), e tieni presente che &kmail; resterà bloccato finché il programma non termina.</para>
+ 
+ <para
+->Dalla linguetta <guilabel
++>Dalla scheda <guilabel
+ >Extra</guilabel
+ > puoi selezionare <guilabel
+ >Usa il pipelining per lo scaricamento veloce della posta</guilabel
+@@ -338,14 +346,14 @@
+ <!-- TODO: move all this, this isn't important for beginners?! -->
+ <para
+ >Selezionando <guilabel
+->Conserva la password POP nel file di configurazione</guilabel
++>Memorizza la password POP nel file di configurazione</guilabel
+ > oppure <guilabel
+->Conserva la password IMAP nel file di configurazione</guilabel
+-> &kmail; ricorderà la password in modo che tu non debba inserirla ogni volta che attiverai &kmail; per scaricare la posta nuova.</para>
++>Memorizza la password IMAP nel file di configurazione</guilabel
++> &kmail; ricorderà la password in modo che tu non debba inserirla ogni volta che attiverai &kmail; per scaricare la nuova posta.</para>
+ 
+ <warning
+ ><para
+->Tieni presente che non è possibile cifrare la password. Quindi, se selezioni questa opzione, chi ha accesso al tuo file di configurazione(&eg; l'amministratore del sistema) può facilmente ottenere la password.</para
++>Tieni presente che non è possibile cifrare la password. Quindi, se selezioni questa opzione, chi ha accesso al tuo file di configurazione (&eg; l'amministratore del sistema) può facilmente ottenere la password.</para
+ ></warning>
+ 
+ <para
+@@ -383,7 +391,7 @@
+ ><para
+ ><guilabel
+ >CRAM-MD5</guilabel
+-> (raccomandato se<guilabel
++> (raccomandato se <guilabel
+ >DIGEST-MD5</guilabel
+ > non è disponibile),</para
+ ></listitem>
+@@ -404,15 +412,15 @@
+ <para
+ ><guilabel
+ >DIGEST-MD5</guilabel
+->,<guilabel
++>, <guilabel
+ >CRAM-MD5</guilabel
+ > e <guilabel
+ >APOP</guilabel
+-> sono intrinsecamente sicure, le altre opzioni sono sicure solo quando utilizzate assieme a <guilabel
++> sono intrinsecamente sicure, le altre opzioni sono sicure solo quando usate assieme a <guilabel
+ >SSL</guilabel
+ > o <guilabel
+ >TLS</guilabel
+->. Non è consigliabile usare <guilabel
++>. Non è consigliabile l'uso <guilabel
+ >Testo in chiaro</guilabel
+ > a meno che il server non supporti alcun altro metodo di autenticazione. In più, per <acronym
+ >IMAP</acronym
+@@ -422,9 +430,9 @@
+ >APOP</guilabel
+ >. Usa il pulsante <guibutton
+ >Verifica le caratteristiche supportate dal server</guibutton
+-> della linguetta <guilabel
++> della scheda <guilabel
+ >Extra</guilabel
+-> oppure  <guilabel
++> oppure <guilabel
+ >Sicurezza</guilabel
+ > per selezionare automaticamente le impostazioni più sicure disponibili dal server.</para>
+ 
+@@ -493,22 +501,4 @@
+ 
+ </sect1>
+ 
+-<sect1 id="getting-started-authors">
+-<title
+->Autori della sezione</title>
+-
+-<para
+->Questa sezione è stata scritta da Daniel Naber <email
+->daniel.naber@t-online.de</email
+-> e David Rugge <email
+->davidrugge@mediaone.net</email
+->.</para>
+-
+-<para
+->Luciano Montanaro <email
+->mikelima@cirulla.net</email
+-> (Traduzione del documento)</para
+-> 
+-
+-</sect1>
+ </chapter>
+--- kde-i18n/it/docs/kdepim/kmail/menus.docbook	4 Oct 2004 20:50:39 -0000	1.3.2.2
++++ kde-i18n/it/docs/kdepim/kmail/menus.docbook	1 Oct 2004 18:26:09 -0000	1.3.2.1
+@@ -10,7 +10,7 @@
+ > <affiliation
+ ><address
+ > <email
+->daniel.naber@t-online.de</email>
++>/daniel.naber@t-online.de</email>
+ </address
+ ></affiliation>
+ </author>
+@@ -43,9 +43,9 @@
+ > 
+ </authorgroup>
+ <date
+->2002-10-03</date
++>2004-07-11</date
+ > <releaseinfo
+->1.5</releaseinfo
++>1.7</releaseinfo
+ > </chapterinfo>
+ 
+ <title
+@@ -84,6 +84,27 @@
+ <term>
+ <menuchoice
+ ><shortcut
++><keycombo action="simul"
++>&Ctrl;<keycap
++>O</keycap
++></keycombo
++> </shortcut
++> <guimenu
++>File</guimenu
++> <guimenuitem
++>Apri...</guimenuitem
++> </menuchoice>
++</term>
++<listitem>
++<para
++>Permette di aprire file contenenti messaggi di posta elettronica.</para>
++</listitem>
++</varlistentry>
++
++<varlistentry>
++<term>
++<menuchoice
++><shortcut
+ > <keycombo action="simul"
+ >&Ctrl;<keycap
+ >S</keycap
+@@ -157,6 +178,36 @@
+ <varlistentry>
+ <term>
+ <menuchoice
++><guimenu
++>Cartella</guimenu
++> <guimenuitem
++>Aggiorna cache &imap; locale</guimenuitem
++> </menuchoice
++></term>
++<listitem>
++<para
++>Questo eliminerà tutte le modifiche fatte localmente alle cartelle IMAP e scaricherà nuovamente tutto dal server. Usa questa operazione se la cache locale è danneggiata.</para>
++</listitem>
++</varlistentry>
++
++<varlistentry>
++<term>
++<menuchoice
++><guimenu
++>File</guimenu
++> <guimenuitem
++>Svuota tutti i cestini</guimenuitem
++> </menuchoice
++></term>
++<listitem>
++<para
++>Usa questa operazione per vuotare tutte le cartelle cestino, &ie; la cartella cestino locale e tutte le cartelle cestino che puoi avere sui server &imap;.</para>
++</listitem>
++</varlistentry>
++
++<varlistentry>
++<term>
++<menuchoice
+ ><shortcut
+ ><keycombo action="simul"
+ >&Ctrl;<keycap
+@@ -260,7 +311,7 @@
+ </term>
+ <listitem>
+ <para
+->Revoca l'ultimo spostamento o cancellazione. Ricordati che si può annullare una cancellazione dal cestino.</para>
++>Revoca l'ultimo spostamento o cancellazione. Ricordati che non è possibile annullare una cancellazione eseguita nel cestino.</para>
+ </listitem>
+ </varlistentry>
+ 
+@@ -395,7 +446,7 @@
+ <menuchoice
+ ><shortcut
+ ><keycombo action="simul"
+->&Ctrl;<keycap
++>&Ctrl;&Shift;<keycap
+ >A</keycap
+ ></keycombo
+ ></shortcut
+@@ -435,7 +486,7 @@
+ </term>
+ <listitem>
+ <para
+->Cambia il numero ed il formato degli header visualizzati nel <guilabel
++>Cambia il formato delle intestazioni visualizzate nel <guilabel
+ >Pannello messaggio</guilabel
+ >.</para>
+ </listitem>
+@@ -458,15 +509,17 @@
+ >Come icone</guimenuitem
+ > tutti gli allegati appaiono come icone in fondo al messaggio. Con <guilabel
+ >Intelligenti</guilabel
+-> gli allegati verranno mostrati come icone, a meno che la disposizione del contenuto suggerita non sia <quote
+->inline</quote
+->. Puoi attivare la disposizione <quote
+->inline</quote
+-> per i messaggi inviati da te selezionando <guilabel
++> gli allegati verranno mostrati come icone, a meno che il messaggio non suggerisca la disposizione <quote
++>in linea</quote
++>. Puoi suggerire la disposizione <quote
++>in linea</quote
++> di certi allegati dei messaggi inviati da te selezionando <guilabel
+ >Suggerisci la visualizzazione automatica</guilabel
+ > dalla finestra delle proprietà dell'allegato. Con <guimenuitem
+ >In linea</guimenuitem
+-> gli allegati vengono mostrati in fondo al messaggio. Gli allegati non visualizzabili, &eg; i file compressi, verranno mostrati come icone. </para>
++> gli allegati vengono mostrati in fondo al messaggio. Gli allegati non visualizzabili, &eg; i file compressi, verranno comunque mostrati come icone. Con <guilabel
++>Nascondi</guilabel
++> gli allegati non verranno mostrati. </para>
+ </listitem>
+ </varlistentry>
+ 
+@@ -476,12 +529,16 @@
+ ><guimenu
+ >Visualizza</guimenu
+ > <guimenuitem
+->Unread Count</guimenuitem
++>Conteggio "non letti"</guimenuitem
+ > </menuchoice>
+ </term>
+ <listitem>
+ <para
+->Mostra una colonna nella lista delle cartelle con il numero di messaggi non ancora letti nella cartella.</para>
++>Permette di specificare se il numero di messaggi non letti debba essere mostrato tra parentesi di fianco al nome della cartella (<guilabel
++>Visualizza dopo il nome della cartella</guilabel
++>) o in una colonna separata (<guilabel
++>Visualizza in una colonna separata</guilabel
++>)</para>
+ </listitem>
+ </varlistentry>
+ 
+@@ -677,7 +734,7 @@
+ </term>
+ <listitem>
+ <para
+->Seleziona il prossimo messaggio dal pannello degli header. Anche la scorciatoia da tastiera <keycap
++>Seleziona il prossimo messaggio dalla lista dei messaggi. Anche la scorciatoia da tastiera <keycap
+ >Freccia a destra</keycap
+ > esegue questa azione.</para>
+ </listitem>
+@@ -698,7 +755,7 @@
+ </term>
+ <listitem>
+ <para
+->Seleziona il prossimo messaggio non ancora letto dal pannello degli header.</para>
++>Seleziona il prossimo messaggio non letto dalla lista dei messaggi. Se non ci sono messaggi non letti sotto il messaggio attualmente selezionato, il comportamento dipende dal valore dell'opzione <xref linkend="configure-misc-folders-go-unread"/>.</para>
+ </listitem>
+ </varlistentry>
+ 
+@@ -717,7 +774,7 @@
+ </term>
+ <listitem>
+ <para
+->Seleziona il messaggio precedente dal pannello degli header.</para>
++>Seleziona il messaggio precedente dalla lista dei messaggi.</para>
+ </listitem>
+ </varlistentry>
+ 
+@@ -736,7 +793,7 @@
+ </term>
+ <listitem>
+ <para
+->Seleziona il messaggio precedente non ancora letto dal pannello degli header.</para>
++>Seleziona il messaggio non letto che precede il corrente dalla lista dei messaggi. Se non ci sono messaggi non letti prima del messaggio attualmente selezionato, il comportamento dipende dal valore dell'opzione <xref linkend="configure-misc-folders-go-unread"/>. </para>
+ </listitem>
+ </varlistentry>
+ 
+@@ -797,7 +854,7 @@
+ </term>
+ <listitem>
+ <para
+->Fa scorrere il testo del messaggio, se raggiunge il fondo salta al prossimo messaggio non ancora letto.</para>
++>Se non sei arrivato al fondo del messaggio fa scorrere il testo verso l'alto, altrimenti salta al prossimo messaggio non ancora letto.</para>
+ </listitem>
+ </varlistentry>
+ 
+@@ -860,7 +917,7 @@
+ </term>
+ <listitem>
+ <para
+->Compatta il file della cartella per ridurre lo spazio-disco occupato. Usa questo comando se le caselle postali sembrano molto più grandi di quello che dovrebbero essere. </para>
++>Compatta il file della cartella per ridurre lo spazio occupato sul disco. Normalmente &kmail; compatta le cartelle automaticamente, ma a volte capita di dover compattare le cartelle manualmente.</para>
+ </listitem>
+ </varlistentry>
+ 
+@@ -875,9 +932,49 @@
+ </term>
+ <listitem>
+ <para
+->Cancella i messaggi vecchi dalla cartella corrente, secondo le regole della finestra <guilabel
++>Cancella i messaggi vecchi dalla cartella corrente o li sposta in un'altra cartella, secondo le regole della finestra <guilabel
+ >Proprietà</guilabel
+-> (l'impostazione predefinita è di non cancellare per niente i messaggi vecchi).</para>
++> (l'impostazione predefinita è di non cancellare o spostare i messaggi vecchi). Di solito &kmail; esegue automaticamente questa operazione, ma in certe circostanze può essere utile far scadere a mano una certa cartella.</para>
++</listitem>
++</varlistentry>
++
++<varlistentry>
++<term>
++<menuchoice
++><shortcut
++><keycombo action="simul"
++>&Ctrl;<keycap
++>*</keycap
++></keycombo
++></shortcut
++> <guimenu
++>Cartella</guimenu
++> <guimenuitem
++>Rimuovi messaggi duplicati</guimenuitem
++> </menuchoice>
++</term>
++<listitem>
++<para
++>Cerca i messaggi duplicati nella cartella e li elimina.</para>
++</listitem>
++</varlistentry>
++
++<varlistentry>
++<term>
++<menuchoice
++><shortcut
++><keycap
++>F5</keycap
++></shortcut
++> <guimenu
++>Cartella</guimenu
++> <guimenuitem
++>Controlla la posta in questa cartella</guimenuitem
++> </menuchoice>
++</term>
++<listitem>
++<para
++>Controlla se è arrivata nuova posta nella cartella attualmente selezionata. Questa voce è disponibile solo per le cartelle &imap;.</para>
+ </listitem>
+ </varlistentry>
+ 
+@@ -892,7 +989,22 @@
+ </term>
+ <listitem>
+ <para
+->Sposta tutti i messaggi della cartella selezionata nella cartella cestino. Se la cartella selezionata è il cestino, i messaggi sono cancellati permanentemente.</para>
++>Sposta tutti i messaggi della cartella selezionata nella cartella cestino. Questa voce è disponibile solo se la cartella selezionata non è una cartella cestino.</para>
++</listitem>
++</varlistentry>
++
++<varlistentry>
++<term>
++<menuchoice
++><guimenu
++>Cartella</guimenu
++> <guimenuitem
++>Svuota il cestino</guimenuitem
++> </menuchoice>
++</term>
++<listitem>
++<para
++>Elimina permanentemente tutti i messaggi. Questa voce è disponibile solo se la cartella corrente è una cartella cestino.</para>
+ </listitem>
+ </varlistentry>
+ 
+@@ -926,11 +1038,7 @@
+ </term>
+ <listitem>
+ <para
+->Questo visualizzerà i messaggi <acronym
+->HTML</acronym
+-> usando la resa <acronym
+->HTML</acronym
+->. Per motivi di sicurezza, raccomandiamo di usarlo solo per i messaggi di cui ti fidi.</para
++>Questa voce visualizzerà i messaggi &html; usando la modalità di visualizzazione &html;. Per motivi di sicurezza, ti raccomandiamo di usarla solo per le cartelle che contengono solo messaggi di cui conosci la provenienza.</para
+ > 
+ </listitem>
+ </varlistentry>
+@@ -946,9 +1054,7 @@
+ </term>
+ <listitem>
+ <para
+->Mostra i messaggi nel <guilabel
+->Pannello header</guilabel
+-> in una lista ad albero, con le risposte disposte sotto il messaggio a cui si riferiscono.</para>
++>Se si marca questa voce, i messaggi vengono catalogati in una lista gerarchica, nella quale le risposte vengono mostrate al di sotto del messaggio a cui si riferiscono.</para>
+ </listitem>
+ </varlistentry>
+ 
+@@ -958,7 +1064,22 @@
+ ><guimenu
+ >Cartella</guimenu
+ > <guimenuitem
+->Proprietà...</guimenuitem
++>Raggruppa i messaggi per thread e per soggetto</guimenuitem
++> </menuchoice>
++</term>
++<listitem>
++<para
++>Se si abilita questa opzione, i messaggi non sono raggruppati solo in base ad informazioni speciali incluse nel messaggio, ma anche in base al loro oggetto, &ie; i messaggi con lo stesso oggetto sono considerati correlati. Se molti messaggi vengono inseriti in thread a cui non sono collegati, potresti voler disabilitare questa opzione. </para>
++</listitem>
++</varlistentry>
++
++<varlistentry>
++<term>
++<menuchoice
++><guimenu
++>Cartella</guimenu
++> <guimenuitem
++>Proprietà</guimenuitem
+ > </menuchoice>
+ </term>
+ <listitem>
+@@ -976,7 +1097,7 @@
+ 
+ <sect2 id="reader-message-menu">
+ <title
+->Menu <guimenu
++>Il menu <guimenu
+ >Messaggio</guimenu
+ ></title>
+ 
+@@ -1016,7 +1137,7 @@
+ </term>
+ <listitem>
+ <para
+->Apre la finestra di composizione per scrivere un nuovo messaggio. Se la cartella corrente contiene una mailing list ed ha un indirizzo definito, questo indirizzo sarà preimpostato nel campo <guilabel
++>Apre la finestra di composizione per scrivere un nuovo messaggio. Se la cartella corrente contiene una mailing list ed ha un indirizzo di inoltro definito, questo indirizzo sarà usato per il campo <guilabel
+ >A:</guilabel
+ >.</para>
+ </listitem>
+@@ -1037,11 +1158,23 @@
+ </term>
+ <listitem>
+ <para
+->Apre la finestra di composizione con il contenuto del campo del messaggio <guilabel
+->Reply-To</guilabel
+-> preimpostato nel campo <guilabel
++>Apre la finestra di composizione, inserisce il testo citato del messaggio attualmente selezionato e preimposta il campo <guilabel
++>A:</guilabel
++> del messaggio o con l'indirizzo della mailing list (se stai rispondendo al messaggio di una mailing list) o con l'indirizzo a cui rispondere preferito dall'utente. Per specificare quale indirizzo deve essere preimpostato nel campo <guilabel
+ >A:</guilabel
+->. A meno di altre impostazioni, questo imposterà l'identità a quella a cui il messaggio è stato inviato.</para>
++> puoi usare <menuchoice
++><guimenu
++>Messaggio</guimenu
++><guimenuitem
++>Rispondi all'autore...</guimenuitem
++></menuchoice
++> oppure <menuchoice
++><guimenu
++>Messaggio</guimenu
++><guimenuitem
++>Rispondi a mailing list...</guimenuitem
++></menuchoice
++>. L'identità sarà automaticamente impostata a quella a cui il messaggio era destinato.</para>
+ </listitem>
+ </varlistentry>
+ 
+@@ -1060,18 +1193,34 @@
+ </term>
+ <listitem>
+ <para
+->Apre la finestra di composizione e copia il contenuto del campo <guilabel
+->Risposte a:</guilabel
+-> e del campo <guilabel
++>Apre la finestra di composizione, inserisce il testo citato del messaggio attualmente selezionato e preimposta il campo <guilabel
+ >A:</guilabel
+-> del messaggio selezionato nel campo <guilabel
++> del messaggio o con l'indirizzo della mailing list (se stai rispondendo al messaggio di una mailing list) o con l'indirizzo a cui rispondere preferito dall'utente. Il campo <guilabel
++>Copia a (CC):</guilabel
++> è preimpostato con gli indirizzi di tutti i destinatari del messaggio attualmente selezionato tranne il tuo. L'identità sarà automaticamente impostata a quella a cui il messaggio era destinato.</para>
++</listitem>
++</varlistentry>
++
++<varlistentry>
++<term>
++<menuchoice
++><shortcut
++><keycombo action="simul"
++>&Shift;<keycap
++>A</keycap
++></keycombo
++></shortcut
++> <guimenu
++>Messaggio</guimenu
++> <guimenuitem
++>Rispondi all'autore...</guimenuitem
++> </menuchoice>
++</term>
++<listitem>
++<para
++>Apre la finestra di composizione, inserisce il testo citato del messaggio attualmente selezionato e preimposta il campo <guilabel
+ >A:</guilabel
+-> della finestra di composizione, ed il campo <guilabel
+->CC:</guilabel
+-> del messaggio selezionato nel campo <guilabel
+->CC:</guilabel
+-> della finestra di composizione.</para
+-> 
++> del messaggio con l'indirizzo preferito dal mittente per le risposte. La tua identità verrà automaticamente impostata a quella a cui questo messaggio era indirizzato.</para>
+ </listitem>
+ </varlistentry>
+ 
+@@ -1085,16 +1234,16 @@
+ > <guimenu
+ >Messaggio</guimenu
+ > <guimenuitem
+->Rispondi Mailing-List...</guimenuitem
++>Rispondi alla Mailing-List...</guimenuitem
+ > </menuchoice>
+ </term>
+ <listitem>
+ <para
+->Apre la finestra di composizione con il campo <guilabel
++>Apre la finestra di composizione, inserisce il testo citato del messaggio attualmente selezionato e preimposta il campo <guilabel
+ >A:</guilabel
+-> impostato all'indirizzo della mailing list. Naturalmente questo funziona solo se hai configurato l'associazione fra la cartella corrente ed una mailing list. Altrimenti, il campo <guilabel
++> del messaggio o con l'indirizzo della mailing list. Se non hai specificato l'indirizzo di una mailing list per la cartella attualmente selezionata e &kmail; non riesce a determinare l'indirizzo da cui è stato spedito il messaggio attuale, il campo <guilabel
+ >A:</guilabel
+->sarà lasciato vuoto.</para>
++> sarà vuoto. L'identità sarà automaticamente impostata a quella a cui il messaggio era destinato.</para>
+ </listitem>
+ </varlistentry>
+ 
+@@ -1108,14 +1257,16 @@
+ ></keycombo
+ ></shortcut
+ > <guimenu
+->Message</guimenu
++>Messaggio</guimenu
+ > <guimenuitem
+ >Rispondi senza citare...</guimenuitem
+ > </menuchoice>
+ </term>
+ <listitem>
+ <para
+->Apre una finestra di composizione, ma senza citare il testo del messaggio originale.</para>
++>Funziona quasi come <guimenuitem
++>Rispondi...</guimenuitem
++> con la differenza che non viene citato il testo del messaggio selezionato.</para>
+ </listitem>
+ </varlistentry>
+ 
+@@ -1160,9 +1311,11 @@
+ </term>
+ <listitem>
+ <para
+->Rispedisce il messaggio al mittente notificando che il messaggio non può essere consegnato. Questo è quasi esattamente il messaggio che si ottiene dalla rete se l'utente non esiste. Alcuni usano questa opzione per <quote
+->rispondere</quote
+-> allo spam.</para
++>Rispedisce il messaggio al mittente con un avviso di mancata consegna. Questo è quasi lo stesso messaggio che si ottiene da un server di posta se l'utente non esiste. Questa opzione è stata aggiunta inizialmente per rispondere ai messaggi di spam, ma dal momento che ormai lo spam utilizza quasi sempre indirizzi falsificati, non dovrebbe essere usata con lo spam. La stessa cosa è vera per i messaggi contenenti virus: alcuni <acronym
++>ISP</acronym
++> controllano se un messaggio in uscita contiene un virus. Far rimbalzare un messaggio contenente un virus è una pessima idea, potresti essere disconnesso dal tuo <acronym
++>ISP</acronym
++>.</para
+ > 
+ </listitem>
+ </varlistentry>
+@@ -1178,7 +1331,9 @@
+ </term>
+ <listitem>
+ <para
+->Apre una finestra di composizione con questo messaggio in modo che possa essere spedito di nuovo.</para>
++>Apre una finestra di composizione con il messaggio attualmente selezionato in modo che possa essere inviato nuovamente. Questa operazione è disponibile solo per i messaggi che hai inviato, o, più precisamente, per i messaggi che sono nello stato <guilabel
++>inviato</guilabel
++>.</para>
+ </listitem>
+ </varlistentry>
+ 
+@@ -1223,9 +1378,7 @@
+ </term>
+ <listitem>
+ <para
+->Permette di cambiare lo stato del messaggio selezionato ad uno di quelli seguenti (attualmente non si può assegnare più di uno stato per messaggio):</para>
+-<!-- TODO: more than one somewhen supported? -->
+-
++>Permette di cambiare lo stato del messaggio selezionato ad uno di quelli seguenti:</para>
+ <!-- TODO: I think it is worth adding inline images here, at some point. LW. -->
+ <informaltable>
+ <tgroup cols="2">
+@@ -1243,12 +1396,22 @@
+ <row>
+ <entry
+ ><guimenuitem
++>Letto</guimenuitem
++></entry>
++<entry
++>Foglio davanti ad una busta</entry>
++<entry
++>Il messaggio è stato letto.</entry>
++</row>
++<row>
++<entry
++><guimenuitem
+ >Nuovo</guimenuitem
+ ></entry>
+ <entry
+->Pallino rosso</entry>
++>Busta chiusa con una stella</entry>
+ <entry
+->Il messaggio è stato ricevuto per la prima volta, e non è stato ancora letto.</entry>
++>Il messaggio è nuovo per &kmail; e per te.</entry>
+ </row>
+ <row>
+ <entry
+@@ -1256,19 +1419,19 @@
+ >Non letto</guimenuitem
+ ></entry>
+ <entry
+->Pallino verde</entry>
++>Busta chiusa</entry>
+ <entry
+->Il messaggio è stato scaricato dal server almeno una volta, ma non è stato ancora letto.</entry>
++>Il messaggio non è nuovo per &kmail;, ma non è ancora stato letto.</entry>
+ </row>
+ <row>
+ <entry
+ ><guimenuitem
+->Letto</guimenuitem
++>Importante</guimenuitem
+ ></entry>
+ <entry
+->Trattino</entry>
++>Bandierina</entry>
+ <entry
+->Il messaggio è stato letto.</entry>
++>Questo stato non può essere automaticamente impostato da &kmail;. Si può usare liberamente per marcare i messaggi che sono in qualche modo importanti.</entry>
+ </row>
+ <row>
+ <entry
+@@ -1313,12 +1476,22 @@
+ <row>
+ <entry
+ ><guimenuitem
+->Importante</guimenuitem
++>Spam</guimenuitem
+ ></entry>
+ <entry
+->Bandierina</entry>
++>Simbolo tondo di riciclo</entry>
+ <entry
+->Questo stato non può essere automaticamente impostato da &kmail;. Si può usare liberamente per marcare i messaggi che sono in qualche modo importanti.</entry>
++>Questo stato non può essere automaticamente impostato da &kmail;. Si può usare per marcare i messaggi di spam.</entry>
++</row>
++<row>
++<entry
++><guimenuitem
++>Ham</guimenuitem
++></entry>
++<entry
++>Simbolo 'visto' verde</entry>
++<entry
++>Questo stato non può essere automaticamente impostato da &kmail;. Si può usare per marcare i messaggi che non sono spam.</entry>
+ </row>
+ </tbody>
+ </tgroup>
+@@ -1351,6 +1524,36 @@
+ <varlistentry>
+ <term>
+ <menuchoice
++><guimenu
++>Messaggio</guimenu
++> <guisubmenu
++>Guarda thread</guisubmenu
++> </menuchoice>
++</term>
++<listitem>
++<para
++>Usa questa voce per marcare i thread che vuoi sorvegliare per contribuire ulteriormente alla discussione.</para>
++</listitem>
++</varlistentry>
++
++<varlistentry>
++<term>
++<menuchoice
++><guimenu
++>Messaggio</guimenu
++> <guisubmenu
++>Ignora thread</guisubmenu
++> </menuchoice>
++</term>
++<listitem>
++<para
++>Usa questa voce per marcare i thread in cui non sei interessato. I messaggi nuovi di questo thread saranno automaticamente considerati già letti.</para>
++</listitem>
++</varlistentry>
++
++<varlistentry>
++<term>
++<menuchoice
+ ><shortcut
+ ><keycombo action="simul"
+ >&Ctrl;<keycap
+@@ -1369,6 +1572,23 @@
+ </listitem>
+ </varlistentry>
+ 
++<varlistentry>
++<term>
++<menuchoice
++><guimenu
++>Messaggio</guimenu
++> <guimenuitem
++>Applica filtro</guimenuitem
++> </menuchoice>
++</term>
++<listitem>
++<para
++>Permette di applicare un filtro specifico al messaggio selezionato. Saranno disponibili solamente i filtri per i quali hai abilitato l'opzione <guilabel
++>Aggiungi questo filtro nel menu "Applica filtri"</guilabel
++></para>
++</listitem>
++</varlistentry>
++
+ </variablelist>
+ 
+ </sect2>
+@@ -1405,7 +1625,6 @@
+ </listitem>
+ </varlistentry>
+ 
+-<!-- fixme in kmail: address book vs addressbook -->
+ <varlistentry>
+ <term>
+ <menuchoice
+@@ -1419,24 +1638,83 @@
+ <para
+ >Avvia <ulink url="/kaddressbook/"
+ >&kaddressbook;</ulink
+->.</para>
++>, la rubrica degli indirizzi di &kde;.</para>
+ </listitem>
+ </varlistentry>
+ 
++	<varlistentry id="reader-tools-certificate-manager">
++	  <term>
++	    <menuchoice
++><guimenu
++>Strumenti</guimenu
++> <guimenuitem
++>Gestione certificati...</guimenuitem
++> </menuchoice>
++	  </term>
++	  <listitem>
++	    <para
++>Avvia <ulink url="/kleopatra"
++><application
++>Kleopatra</application
++></ulink
++>, il programma di gestione dei certificati di &kde;. </para>
++	  </listitem>
++	</varlistentry>
++
++	<varlistentry id="reader-tools-gnupg-log-viewer">
++	  <term>
++	    <menuchoice
++><guimenu
++>Strumenti</guimenu
++> <guimenuitem
++>Visualizzatore dei log di GnuPG</guimenuitem
++> </menuchoice>
++	  </term>
++	  <listitem>
++	    <para
++>Avvia <ulink url="/kwatchgnupg"
++><application
++>KWatchGnuPG</application
++></ulink
++>, uno strumento che mostra l'output di debug dell'applicazione <application
++>GnuPG</application
++>. Se la firma digitale, la cifratura o la verifica dei messaggi misteriosamente smette di funzionare, potresti riuscire a scoprire il perché esaminando il log. </para>
++	  </listitem>
++	</varlistentry>
++
++	<varlistentry id="reader-tools-import-messages">
++	  <term>
++	    <menuchoice
++><guimenu
++>Strumenti</guimenu
++> <guimenuitem
++>Importa messaggi...</guimenuitem
++> </menuchoice>
++	  </term>
++	  <listitem>
++	    <para
++>Avvia il programma <application
++>kmailcvt</application
++> (che fa parte del pacchetto kdepim). Questa applicazione permette di importare messaggi da molti programmi di posta elettronica in &kmail;. </para>
++	  </listitem>
++	</varlistentry>
++
++<!-- FIXME: Add Tools/Edit "Out of Office" Replies -->
++
+ <varlistentry>
+ <term>
+ <menuchoice
+ ><guimenu
+ >Strumenti</guimenu
+-> <guimenuitem
+->Importa...</guimenuitem
++> <guisubmenu
++>Crea filtro</guisubmenu
+ > </menuchoice>
+ </term>
+ <listitem>
+ <para
+->Avvia il programma <application
+->kmailcvt</application
+-> (che fa parte del pacchetto kdenetwork). Questa applicazione permette di importare messaggi da molti client mail proprietari in &kmail;.</para>
++>Apre la <link linkend="filter-dialog-id"
++>finestra di dialogo dei filtri</link
++> ed aggiunge un nuovo filtro. Il nuovo filtro è basato sui campi presenti nel messaggio correntemente selezionato, a seconda della voce del sottomenu che hai scelto.</para>
+ </listitem>
+ </varlistentry>
+ 
+@@ -1446,16 +1724,51 @@
+ ><guimenu
+ >Strumenti</guimenu
+ > <guisubmenu
+->Crea filtro</guisubmenu
++>Visualizzatore dei log di filtro...</guisubmenu
+ > </menuchoice>
+ </term>
+ <listitem>
+ <para
+->Apre la <link linkend="filter-dialog-id"
+->finestra di dialogo dei filtri</link
+-> con un nuovo filtro. Il nuovo filtro è basato sui campi presenti nel messaggio correntemente selezionato.</para>
++>Apre la finestra di visualizzazione dei log dei filtri; in questa, puoi trovare alcune opzioni per controllare i log del processo di filtraggio. Nel log si possono trovare informazioni utili su quali regole di filtraggio sono state usate, quale è stato il risultato della valutazione di tali regole, e quali azioni di filtraggio sono state applicate ad un certo messaggio.</para>
++</listitem>
++</varlistentry>
++
++<varlistentry>
++<term>
++<menuchoice
++><guimenu
++>Strumenti</guimenu
++> <guimenuitem
++>Procedura guidata anti-spam...</guimenuitem
++> </menuchoice>
++</term>
++<listitem>
++<para
++>Avvia una <link linkend="the-anti-spam-wizard"
++>procedura guidata</link
++> che aiuta nella configurazione del filtraggio dello spam.</para>
++</listitem>
++</varlistentry>
++
++<!--
++<varlistentry>
++<term>
++<menuchoice>
++<guimenu
++>Tools</guimenu>
++<guimenuitem
++>Anti-Virus Wizard...</guimenuitem>
++</menuchoice>
++</term>
++<listitem>
++<para
++>It starts a <link linkend="the-anti-virus-wizard"
++>wizard</link
++> which can help 
++you to set up scanning messages for virusses.</para>
+ </listitem>
+ </varlistentry>
++-->
+ 
+ </variablelist>
+ 
+@@ -1491,12 +1804,12 @@
+ ><guimenu
+ >Impostazioni</guimenu
+ > <guimenuitem
+->Mostra la barra di stato</guimenuitem
++>Mostra ricerca veloce</guimenuitem
+ > </menuchoice>
+ </term>
+ <listitem>
+ <para
+->Se abilitata, la barra di stato è visibile (la barra di stato è quella piccola sul fondo che mostra brevi messaggi utili e le destinazioni dei link).</para>
++>Se abilitata, la barra di ricerca veloce, che permette di trovare velocemente i messaggi che contengono una certa sequenza di caratteri, viene resa visibile.</para>
+ </listitem>
+ </varlistentry>
+ 
+@@ -1506,12 +1819,14 @@
+ ><guimenu
+ >Impostazioni</guimenu
+ > <guimenuitem
+->Configura le scorciatoie...</guimenuitem
++>Configura filtri...</guimenuitem
+ > </menuchoice>
+ </term>
+ <listitem>
+ <para
+->Apre una finestra che permette di configurare le scorciatoie da tastiera per molte voci di menu.</para>
++>Apre la finestra <link linkend="filters"
++>Filtri messaggi</link
++>.</para>
+ </listitem>
+ </varlistentry>
+ 
+@@ -1521,12 +1836,14 @@
+ ><guimenu
+ >Impostazioni</guimenu
+ > <guimenuitem
+->Configura le barre degli strumenti...</guimenuitem
++>Configura filtri POP...</guimenuitem
+ > </menuchoice>
+ </term>
+ <listitem>
+ <para
+->Apre una finestra che permette di scegliere quali icone sono visibili nella barra degli strumenti.</para>
++>Apre la finestra <link linkend="popfilters"
++>Regole di Filtro POP</link
++>.</para>
+ </listitem>
+ </varlistentry>
+ 
+@@ -1536,12 +1853,12 @@
+ ><guimenu
+ >Impostazioni</guimenu
+ > <guimenuitem
+->Configura le notifiche...</guimenuitem
++>Configura le scorciatoie...</guimenuitem
+ > </menuchoice>
+ </term>
+ <listitem>
+ <para
+->Apre una finestra che permette di configurare che cosa succede quando arriva nuova posta, come ad esempio riprodurre un suono, ecc.</para>
++>Apre una finestra che permette di configurare le scorciatoie da tastiera per molte voci di menu.</para>
+ </listitem>
+ </varlistentry>
+ 
+@@ -1551,14 +1868,12 @@
+ ><guimenu
+ >Impostazioni</guimenu
+ > <guimenuitem
+->Configura &kmail;...</guimenuitem
++>Configura le notifiche...</guimenuitem
+ > </menuchoice>
+ </term>
+ <listitem>
+ <para
+->Apre la finestra <link linkend="configure"
+->Configura</link
+->.</para>
++>Apre una finestra che permette di configurare che cosa succede quando arriva nuova posta, come ad esempio riprodurre un suono, ecc.</para>
+ </listitem>
+ </varlistentry>
+ 
+@@ -1568,14 +1883,12 @@
+ ><guimenu
+ >Impostazioni</guimenu
+ > <guimenuitem
+->Configura filtri...</guimenuitem
++>Configura le barre degli strumenti...</guimenuitem
+ > </menuchoice>
+ </term>
+ <listitem>
+ <para
+->Apre la finestra <link linkend="filters"
+->Filtri messaggi</link
+->.</para>
++>Apre una finestra che permette di scegliere quali icone sono visibili nella barra degli strumenti.</para>
+ </listitem>
+ </varlistentry>
+ 
+@@ -1585,13 +1898,13 @@
+ ><guimenu
+ >Impostazioni</guimenu
+ > <guimenuitem
+->Configura filtri POP...</guimenuitem
++>Configura &kmail;...</guimenuitem
+ > </menuchoice>
+ </term>
+ <listitem>
+ <para
+->Apre la finestra <link linkend="popfilters"
+->Regole di Filtro POP</link
++>Apre la finestra <link linkend="configure"
++>Configura</link
+ >.</para>
+ </listitem>
+ </varlistentry>
+@@ -1656,7 +1969,7 @@
+ 
+ <sect2 id="composer-file-menu">
+ <title
+->Menu <guimenu
++>Il menu <guimenu
+ >Messaggio</guimenu
+ ></title>
+ 
+@@ -1986,6 +2299,27 @@
+ ><shortcut
+ ><keycombo action="simul"
+ >&Ctrl;<keycap
++>F</keycap
++></keycombo
++></shortcut
++> <guimenu
++>Modifica</guimenu
++> <guimenuitem
++>Trova successivo</guimenuitem
++> </menuchoice>
++</term>
++<listitem>
++<para
++>Va alla seguente ricorrenza di una sequenza di caratteri ricercata in precedenza.</para>
++</listitem>
++</varlistentry>
++
++<varlistentry>
++<term>
++<menuchoice
++><shortcut
++><keycombo action="simul"
++>&Ctrl;<keycap
+ >R</keycap
+ ></keycombo
+ ></shortcut
+@@ -2012,7 +2346,52 @@
+ </term>
+ <listitem>
+ <para
+->Questa operazione sostituisce sequenze di spazi o fine linea con uno spazio singolo o un unico fine linea. Se il messaggio ha del testo selezionato, l'operazione è limitata alla selezione, altrimenti viene effettuata sul messaggio intero.</para>
++>Questa operazione sostituisce sequenze di spazi o fine linea con uno spazio singolo o un unico fine linea. Se è stata fatta una selezione di testo,l'operazione è limitata ad essa; altrimenti viene applicata all'intero testo del messaggio.</para>
++</listitem>
++</varlistentry>
++
++<varlistentry>
++<term>
++<menuchoice
++><guimenu
++>Modifica</guimenu
++> <guimenuitem
++>Incolla come citazione</guimenuitem
++> </menuchoice>
++</term>
++<listitem>
++<para
++>Incolla il testo presente negli appunti di sistema, evidenziandolo come citazione.</para>
++</listitem>
++</varlistentry>
++
++<varlistentry>
++<term>
++<menuchoice
++><guimenu
++>Modifica</guimenu
++> <guimenuitem
++>Aggiungi caratteri di citazione</guimenuitem
++> </menuchoice>
++</term>
++<listitem>
++<para
++>Aggiunge all'inizio di tutte le righe del testo selezionato la sequenza che identifica il testo citato. Se nessuna riga è selezionata, evidenzia come citazione la riga corrente.</para>
++</listitem>
++</varlistentry>
++
++<varlistentry>
++<term>
++<menuchoice
++><guimenu
++>Modifica</guimenu
++> <guimenuitem
++>Rimuovi caratteri di citazione</guimenuitem
++> </menuchoice>
++</term>
++<listitem>
++<para
++>Rimuove i caratteri usati per evidenziare una citazione dal testo selezionato.</para>
+ </listitem>
+ </varlistentry>
+ 
+@@ -2048,6 +2427,12 @@
+ <listitem>
+ <para
+ ><guimenuitem
++>Dizionario</guimenuitem
++></para>
++</listitem>
++<listitem>
++<para
++><guimenuitem
+ >Cartella Posta inviata</guimenuitem
+ ></para>
+ </listitem>
+@@ -2123,7 +2508,7 @@
+ 
+ <sect2 id="composer-options-menu">
+ <title
+->Menu <guimenu
++>Il menu <guimenu
+ >Opzioni</guimenu
+ ></title>
+ 
+@@ -2148,37 +2533,24 @@
+ </listitem>
+ </varlistentry>
+ 
+-<varlistentry>
+-<term>
+-<menuchoice
++	<varlistentry id="composer-options-request-mdn">
++	  <term>
++	    <menuchoice
+ ><guimenu
+ >Opzioni</guimenu
+ > <guimenuitem
+->Conferma la consegna</guimenuitem
++>Richiedi la notifica delle disposizioni</guimenuitem
+ > </menuchoice>
+-</term>
+-<listitem>
+-<para
+->Selezionando questa opzione, richiedi la conferma della consegna della lettera al mail server del destinatario. Perché questo funzioni, deve essere supportato anche dal mail server destinatario.</para>
+-</listitem>
+-</varlistentry>
+-
+-<varlistentry>
+-<term>
+-<menuchoice
+-><guimenu
+->Opzioni</guimenu
+-> <guimenuitem
+->Conferma la lettura</guimenuitem
+-> </menuchoice>
+-</term>
+-<listitem>
+-<para
++	  </term>
++	  <listitem>
++	    <para
+ >Selezionando questa opzione, richiedi un messaggio di conferma quando il messaggio è scaricato e letto dal destinatario. Per funzionare, questa funzione deve essere gestita ed abilitata nel mail-client del destinatario. </para>
+-</listitem>
+-</varlistentry>
++	    <para
++>Vedi <xref linkend="configure-security-reading-mdns"/> per informazioni introduttive e per personalizzare le ricevute di lettura che &kmail; può inviare. </para>
++	  </listitem>
++	</varlistentry>
+ 
+-<varlistentry>
++<varlistentry id="composer-options-sign-message">
+ <term>
+ <menuchoice
+ ><guimenu
+@@ -2197,7 +2569,7 @@
+ </listitem>
+ </varlistentry>
+ 
+-<varlistentry>
++<varlistentry id="composer-options-encrypt-message">
+ <term>
+ <menuchoice
+ ><guimenu
+@@ -2216,20 +2588,35 @@
+ </listitem>
+ </varlistentry>
+ 
++	<varlistentry id="composer-options-select-crypto-message-format">
++	  <term>
++	    <menuchoice
++><guimenu
++>Opzioni</guimenu
++> <guisubmenu
++>Formato crittografico del messaggio</guisubmenu
++> </menuchoice>
++	  </term>
++	  <listitem>
++	    <para
++>Scegli il formato di messaggio crittografico da usare per firmare e o cifrare il messaggio. Vedi <link linkend="cryptographic-message-formats"
++>le descrizioni di ciascuna opzione</link
++> per maggiori informazioni. </para>
++	  </listitem>
++	</varlistentry>
++
+ <varlistentry>
+ <term>
+ <menuchoice
+ ><guimenu
+ >Opzioni</guimenu
+ > <guisubmenu
+->Seleziona modulo di cifratura</guisubmenu
++>Formattazione (HTML)</guisubmenu
+ > </menuchoice>
+ </term>
+ <listitem>
+ <para
+->Questa voce sarà visibile solo se hai almeno un <link linkend="configure-security-plugins"
+->plugin di cifratura</link
+->. Permette di scegliere quale plugin usare per la cifratura e la firma oppure se usare la cifratura o la firma digitale fornita dal componente integrato OpenPGP.</para>
++>Permette la composizione di messaggi &html;.</para>
+ </listitem>
+ </varlistentry>
+ 
+@@ -2261,7 +2648,22 @@
+ </term>
+ <listitem>
+ <para
+->Imposta l'a capo automatico. Può essere utile spegnerlo volendo incollare linee lunghe che non devono essere spezzate.</para>
++>Imposta l'a capo automatico. Può essere utile disattivare questa opzione quando si devono incollare linee lunghe che non devono essere spezzate.</para>
++</listitem>
++</varlistentry>
++
++<varlistentry>
++<term>
++<menuchoice
++><guimenu
++>Opzioni</guimenu
++> <guimenuitem
++>Controllo ortografico automatico</guimenuitem
++> </menuchoice>
++</term>
++<listitem>
++<para
++>Abilita o disabilita il controllo ortografico automatico. Il controllo ortografico automatico non è disponibile nella modalità di composizione &html;.</para>
+ </listitem>
+ </varlistentry>
+ 
+@@ -2272,7 +2674,7 @@
+ 
+ <sect2 id="composer-attach-menu">
+ <title
+->Menu <guimenu
++>Il menu <guimenu
+ >Allega</guimenu
+ ></title>
+ 
+@@ -2317,7 +2719,7 @@
+ </listitem>
+ </varlistentry>
+ 
+-<varlistentry>
++<varlistentry id="composer-attach-attach-my-public-key">
+ <term>
+ <menuchoice
+ ><guimenu
+@@ -2388,13 +2790,13 @@
+ ><guimenu
+ >Allega</guimenu
+ > <guimenuitem
+->Proprietà allegato...</guimenuitem
++>Proprietà allegato</guimenuitem
+ > </menuchoice>
+ </term>
+ <listitem>
+ <para
+ >Visualizza le <link linkend="attachments"
+->proprietà dell allegato</link
++>proprietà dell'allegato</link
+ > selezionato nella finestra degli allegati.</para>
+ </listitem>
+ </varlistentry>
+@@ -2469,12 +2871,12 @@
+ ><guimenu
+ >Impostazioni</guimenu
+ > <guimenuitem
+->Mostra la barra degli strumenti</guimenuitem
++>Mostra la barra degli strumenti principale</guimenuitem
+ > </menuchoice>
+ </term>
+ <listitem>
+ <para
+->Se abilitata, la barra degli strumenti è visibile (la barra degli strumenti è quella con l'icona per spedire messaggi &etc;).</para>
++>Se abilitata, la barra degli strumenti principale (quella con l'icona per spedire messaggi &etc;) è visibile.</para>
+ </listitem>
+ </varlistentry>
+ 
+@@ -2484,12 +2886,12 @@
+ ><guimenu
+ >Impostazioni</guimenu
+ > <guimenuitem
+->Mostra la barra di stato</guimenuitem
++>Mostra la barra degli strumenti HTML</guimenuitem
+ > </menuchoice>
+ </term>
+ <listitem>
+ <para
+->Se abilitata, la barra di stato è visibile (la barra di stato è quella piccola sul fondo che mostra brevi messaggi utili e le destinazioni dei link).</para>
++>Se abilitata, la barra degli strumenti &html; (quella con gli strumenti per cambiare le proprietà del testo) è visibile.</para>
+ </listitem>
+ </varlistentry>
+ 
+@@ -2499,12 +2901,14 @@
+ ><guimenu
+ >Impostazioni</guimenu
+ > <guimenuitem
+->Configura le scorciatoie...</guimenuitem
++>Controllo ortografico...</guimenuitem
+ > </menuchoice>
+ </term>
+ <listitem>
+ <para
+->Apre una finestra che permette di configurare le scorciatoie da tastiera per molte voci di menu.</para>
++>Permette di configurare <ulink url="/kspell/"
++>&kspell;</ulink
++>, il correttore ortografico di &kde;.</para>
+ </listitem>
+ </varlistentry>
+ 
+@@ -2514,12 +2918,12 @@
+ ><guimenu
+ >Impostazioni</guimenu
+ > <guimenuitem
+->Configura le barre degli strumenti...</guimenuitem
++>Configura le scorciatoie...</guimenuitem
+ > </menuchoice>
+ </term>
+ <listitem>
+ <para
+->Apre una finestra che permette di scegliere quali icone sono visibili nella barra degli strumenti.</para>
++>Apre una finestra che permette di configurare le scorciatoie da tastiera per molte voci di menu.</para>
+ </listitem>
+ </varlistentry>
+ 
+@@ -2529,14 +2933,12 @@
+ ><guimenu
+ >Impostazioni</guimenu
+ > <guimenuitem
+->Configura &kmail;...</guimenuitem
++>Configura le barre degli strumenti...</guimenuitem
+ > </menuchoice>
+ </term>
+ <listitem>
+ <para
+->Apre la <link linkend="configure"
+->finestra di configurazione</link
+-> di &kmail;.</para>
++>Apre una finestra che permette di scegliere quali icone sono visibili nella barra degli strumenti.</para>
+ </listitem>
+ </varlistentry>
+ 
+@@ -2546,14 +2948,14 @@
+ ><guimenu
+ >Impostazioni</guimenu
+ > <guimenuitem
+->Controllo ortografico...</guimenuitem
++>Configura &kmail;...</guimenuitem
+ > </menuchoice>
+ </term>
+ <listitem>
+ <para
+->Permette di configurare <ulink url="/kspell/"
+->&kspell;</ulink
+->, il correttore ortografico di &kde;.</para>
++>Apre la <link linkend="configure"
++>finestra di configurazione</link
++> di &kmail;.</para>
+ </listitem>
+ </varlistentry>
+ 
+@@ -2569,27 +2971,10 @@
+ 
+ <para
+ >Le voci di questo menu hanno lo stesso significato di quelle del <link linkend="reader-help-menu"
+->menu della finestra principale</link
++>menu di aiuto della finestra principale</link
+ >.</para>
+ 
+ </sect2>
+ </sect1>
+-<sect1 id="menus-authors">
+-<title
+->Autori della sezione</title>
+ 
+-<para
+->Questa sezione è stata scritta da Daniel Naber <email
+->daniel.naber@t-online.de</email
+-> e David Rugge <email
+->davidrugge@mediaone.net</email
+->.</para>
+-
+-<para
+->Luciano Montanaro <email
+->mikelima@cirulla.net</email
+-> (Traduzione del documento)</para
+-> 
+-
+-</sect1>
+ </chapter>
