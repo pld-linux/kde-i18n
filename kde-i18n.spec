@@ -1,4 +1,4 @@
-%define		REV	20000330
+%define		REV	20000418
 Summary:	K Desktop Environment - International Support
 Summary(pl):	KDE - Wsparcie dla t³umaczeñ miêdzynarodowych.
 Name:		kde-i18n
