@@ -45,7 +45,6 @@ BuildRequires:	gettext-devel
 BuildRequires:	kdelibs = %{version}
 BuildRequires:	kdelibs-devel
 BuildRequires:	libxml2-progs >= 2.4.2
-BuildRequires:	awk
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
