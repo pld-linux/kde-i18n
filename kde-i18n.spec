@@ -1084,7 +1084,7 @@ rm -rf $RPM_BUILD_ROOT
 #%%files -f Afrikaans.lang Afrikaans
 #%%files -f Arabic.lang Arabic
 %files -f Azerbaijani.lang Azerbaijani
-#%%files -f Bulgarian.lang Bulgarian
+%files -f Bulgarian.lang Bulgarian
 # %files -f Breton.lang Breton
 %files -f Bosnian.lang Bosnian
 %files -f Catalan.lang Catalan
