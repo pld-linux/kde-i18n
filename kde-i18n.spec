@@ -779,8 +779,7 @@ LDFLAGS="%{rpmldflags}"
 for plik in `find ./ -name \*.desktop` ; do
 #        if [ -d $plik ]; then
 	echo $plik
-	sed -e "s/\[nb\]/\[no\]/g" > $plik.1
-	mv -f $plik.1 $plik
+	sed -i -e "s/\[nb\]/\[no\]/g" $plik
 #	fi 
 done
 
@@ -795,14 +794,14 @@ done
 for plik in `find ./nb -name Makefile.am` ; do
 #        if [ -d $plik ]; then
 	echo $plik
-	sed -ie "s/nb/no/g" $plik
+	sed -i -e "s/nb/no/g" $plik
 #	fi
 done
 
 for plik in `find ./nb -name configure.in.in` ; do
 #	if [ -d $plik ]; then
 	echo $plik
-	sed -ie "s/nb/no/g" $plik
+	sed -i -e "s/nb/no/g" $plik
 #        fi
 done
 
