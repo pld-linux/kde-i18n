@@ -1230,39 +1230,6 @@ kde_libs_htmldir="%{_kdedocdir}"; export kde_libs_htmldir
 LDFLAGS="%{rpmldflags}"
 #export UNSERMAKE=%{_datadir}/unsermake/unsermake
 
-%if %{with alltogether}
-for i in `find ./ro/docs/ -name Makefile.am`;
-do
-	echo -e 'KDE_LANG = ro\nSUBDIRS = $(AUTODIRS)\nKDE_DOCS = AUTO' > $i
-done
-
-if test -d "./ro/docs/kdebase/kcontrol" ; then
-
-for i in `find ./ro/docs/kdebase/kcontrol -type d -maxdepth 1 -depth|grep -v CVS`;
-do
-if [ `echo $i|sed -e "s,\./ro/docs/kdebase/,,g"|grep -s  kcontrol/` ] ; then
-z=`echo $i|sed -e "s,\./ro/docs/kdebase/,,g"|grep -s  kcontrol/`
-echo -e "KDE_LANG=ro\nKDE_DOCS=$z" > ./ro/docs/kdebase/${z}/Makefile.am
-fi
-done
-
-
-fi
-
-if test -d "./ro/docs/kdebase/kinfocenter" ; then
-
-for i in `find ./ro/docs/kdebase/kinfocenter -type d -maxdepth 1 -depth|grep -v CVS`;
-do
-
-if [ `echo $i|sed -e "s,\./ro/docs/kdebase/,,g"|grep -s kinfocenter/` ] ; then
-z=`echo $i|sed -e "s,\./ro/docs/kdebase/,,g"|grep -s kinfocenter/`
-echo -e "KDE_LANG=ro\nKDE_DOCS=$z"  > ./ro/docs/kdebase/${z}/Makefile.am
-fi
-done
-
-fi
-%endif
-
 %{__make} -f admin/Makefile.common cvs
 
 %configure
