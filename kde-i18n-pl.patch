@@ -1,0 +1,436 @@
+diff -Nur kde-i18n-2.2.orig/pl/messages/kdebase/kcmsamba.po kde-i18n-2.2/pl/messages/kdebase/kcmsamba.po
+--- kde-i18n-2.2.orig/pl/messages/kdebase/kcmsamba.po	Thu Aug  2 22:18:56 2001
++++ kde-i18n-2.2/pl/messages/kdebase/kcmsamba.po	Mon Aug 27 12:29:50 2001
+@@ -12,7 +12,7 @@
+ 
+ #: main.cpp:62
+ msgid "&Exports"
+-msgstr "&UdostÄpnione"
++msgstr "&UdostÄ™pnione"
+ 
+ #: main.cpp:63
+ msgid "&Imports"
+@@ -40,16 +40,16 @@
+ "<em>showmount -a localhost</em> is parsed. On some systems showmount is in "
+ "/usr/sbin, check if you have showmount in your PATH."
+ msgstr ""
+-"Monitor stanu Samby i NFS jest nakÅadkÄ na programy <em>smbstatus</em> oraz "
+-"<em>showmount</em>. Smbstatus zwraca bieÅ¼Äce poÅÄczenia i jest czÄÅciÄ "
+-"pakietu Samba, w ktÃ³rym zaimplementowano protokÃ³Å SMB(Session Message "
+-"Block), nazywany rÃ³wnieÅ¼ NetBIOS lub LanManager.ProtokÃ³Å ten umoÅ¼liwia "
+-"wspÃ³Ådzielenie drukarek oraz dyskÃ³w wÅÄczajÄc komputery pracujÄce w "
+-"systemach Microsoft Windows.<p>Showmount jest czÄÅciÄ pakietu NFS. NFS jest "
+-"tradycyjnym sposobem dla wspÃ³Ådzielenia katalogÃ³w w systemach UNIX. W tym "
+-"przypadku wyjÅcie <em>showmount -localhost</em> jest parsowane. W "
+-"niektÃ³rych systemach showmount znajduje siÄ w katalogu /usr/bin, sprawdÅº "
+-"czy ten katalog znajduje siÄ w zmiennej PATH."
++"Monitor stanu Samby i NFS jest nakÅ‚adkÄ… na programy <em>smbstatus</em> oraz "
++"<em>showmount</em>. Smbstatus zwraca bieÅ¼Ä…ce poÅ‚Ä…czenia i jest czÄ™Å›ciÄ… "
++"pakietu Samba, w ktÃ³rym zaimplementowano protokÃ³Å‚ SMB(Session Message "
++"Block), nazywany rÃ³wnieÅ¼ NetBIOS lub LanManager.ProtokÃ³Å‚ ten umoÅ¼liwia "
++"wspÃ³Å‚dzielenie drukarek oraz dyskÃ³w wÅ‚Ä…czajÄ…c komputery pracujÄ…ce w "
++"systemach Microsoft Windows.<p>Showmount jest czÄ™Å›ciÄ… pakietu NFS. NFS jest "
++"tradycyjnym sposobem dla wspÃ³Å‚dzielenia katalogÃ³w w systemach UNIX. W tym "
++"przypadku wyjÅ›cie <em>showmount -localhost</em> jest parsowane. W "
++"niektÃ³rych systemach showmount znajduje siÄ™ w katalogu /usr/bin, sprawdÅº "
++"czy ten katalog znajduje siÄ™ w zmiennej PATH."
+ 
+ #: kcmsambaimports.cpp:50 ksmbstatus.cpp:74
+ msgid "Type"
+@@ -61,7 +61,7 @@
+ 
+ #: ksmbstatus.cpp:76
+ msgid "Accessed from"
+-msgstr "PodÅÄczone z"
++msgstr "PodÅ‚Ä…czone z"
+ 
+ #: ksmbstatus.cpp:77
+ msgid "UID"
+@@ -81,15 +81,15 @@
+ 
+ #: ksmbstatus.cpp:191
+ msgid "Error: Unable to run smbstatus"
+-msgstr "BÅÄd Nie moÅ¼na uruchomiÄ smbstatus"
++msgstr "BÅ‚Ä…d Nie moÅ¼na uruchomiÄ‡ smbstatus"
+ 
+ #: ksmbstatus.cpp:193
+ msgid "Error: Unable to open configuration file \"smb.conf\""
+-msgstr "BÅÄd: Nie moÅ¼na otworzyÄ pliku konfiguracyjnego \"smb.conf\""
++msgstr "BÅ‚Ä…d: Nie moÅ¼na otworzyÄ‡ pliku konfiguracyjnego \"smb.conf\""
+ 
+ #: ksmbstatus.cpp:220
+ msgid " Error: Unable to run showmount"
+-msgstr " BÅÄd Nie moÅ¼na uruchomiÄ showmount"
++msgstr " BÅ‚Ä…d Nie moÅ¼na uruchomiÄ‡ showmount"
+ 
+ #: kcmsambaimports.cpp:51
+ msgid "Resource"
+@@ -110,9 +110,9 @@
+ msgstr ""
+ "To jest lista zasobÃ³w Samba oraz NFS zamontowanych w Twoim systemie z "
+ "innych komputerÃ³w. Kolumna \"Typ\" pokazuje czy zamontowany zasÃ³b jest "
+-"typu Samba czy NFS. W kolumnie \"ZasÃ³b\" widaÄ nazwy zamontowanych "
+-"zasobÃ³w. W koÅcu trzecia kolumna o nazwie \"Zamontowany pod\" wskazuje na "
+-"lokalizacjÄ zasobu na Twoim komputerze."
++"typu Samba czy NFS. W kolumnie \"ZasÃ³b\" widaÄ‡ nazwy zamontowanych "
++"zasobÃ³w. W koÅ„cu trzecia kolumna o nazwie \"Zamontowany pod\" wskazuje na "
++"lokalizacjÄ™ zasobu na Twoim komputerze."
+ 
+ #: kcmsambalog.cpp:47
+ msgid "Samba log file: "
+@@ -120,11 +120,11 @@
+ 
+ #: kcmsambalog.cpp:49
+ msgid "Show opened connections"
+-msgstr "PokaÅ¼ otwarte poÅÄczenia"
++msgstr "PokaÅ¼ otwarte poÅ‚Ä…czenia"
+ 
+ #: kcmsambalog.cpp:50
+ msgid "Show closed connections"
+-msgstr "PokaÅ¼ zamkniÄte poÅÄczenia"
++msgstr "PokaÅ¼ zamkniÄ™te poÅ‚Ä…czenia"
+ 
+ #: kcmsambalog.cpp:51
+ msgid "Show opened files"
+@@ -132,7 +132,7 @@
+ 
+ #: kcmsambalog.cpp:52
+ msgid "Show closed files"
+-msgstr "PokaÅ¼ zamkniÄte pliki"
++msgstr "PokaÅ¼ zamkniÄ™te pliki"
+ 
+ #: kcmsambalog.cpp:67
+ msgid ""
+@@ -141,25 +141,25 @@
+ "need to, correct the name or location of the log file, and then click the "
+ "\"Update\" button."
+ msgstr ""
+-"Ta strona prezentuje zawartoÅÄ pliku samba.log w sposÃ³b przyjazny "
+-"uÅ¼ytkownikowi. SprawdÅº czy nazwa logpliku jest wpisana poprawnie. JeÅli "
+-"konieczne bÄdzie poprawienie nazwy pliku naciÅnij przycisk \"Uaktualnij\""
++"Ta strona prezentuje zawartoÅ›Ä‡ pliku samba.log w sposÃ³b przyjazny "
++"uÅ¼ytkownikowi. SprawdÅº czy nazwa logpliku jest wpisana poprawnie. JeÅ›li "
++"konieczne bÄ™dzie poprawienie nazwy pliku naciÅ›nij przycisk \"Uaktualnij\""
+ 
+ #: kcmsambalog.cpp:72
+ msgid ""
+ "Check this option if you want to view the details for connections opened to "
+ "your computer."
+ msgstr ""
+-"Zaznacz tÄ opcjÄ jeÅli chcesz obejrzeÄ szczegÃ³Åy zwiÄzane z otwartymi "
+-"poÅÄczeniami na Twoim komputerze."
++"Zaznacz tÄ™ opcjÄ™ jeÅ›li chcesz obejrzeÄ‡ szczegÃ³Å‚y zwiÄ…zane z otwartymi "
++"poÅ‚Ä…czeniami na Twoim komputerze."
+ 
+ #: kcmsambalog.cpp:75
+ msgid ""
+ "Check this option if you want to view the events when connections to your "
+ "computer were closed."
+ msgstr ""
+-"Zaznacz tÄ opcjÄ jeÅli chcesz obejrzeÄ zdarzenia kiedy poÅÄczenia z Twoim "
+-"komputerem zostaÅy zamkniÄte"
++"Zaznacz tÄ™ opcjÄ™ jeÅ›li chcesz obejrzeÄ‡ zdarzenia kiedy poÅ‚Ä…czenia z Twoim "
++"komputerem zostaÅ‚y zamkniÄ™te"
+ 
+ #: kcmsambalog.cpp:78
+ msgid ""
+@@ -168,10 +168,10 @@
+ "unless the samba log level is set to at least 2 (sorry, you cannot set the "
+ "log level using this module)."
+ msgstr ""
+-"Zaznacz tÄ opcjÄ jeÅli chcesz obejrzeÄ pliki ktÃ³re zostaÅy otwarte na Twoim "
+-"komputerze przez zewnÄtrznych uÅ¼ytkownikÃ³w. Uwaga!! Zdarzenia wygenerowane "
+-"przez otwieranie/zamykanie plikÃ³w nie sÄ pamiÄtane dopÃ³ki poziom log nie "
+-"jest rÃ³wny przynajmniej 2 (przepraszam, nie moÅ¼na zmieniÄ poziomu log w "
++"Zaznacz tÄ™ opcjÄ™ jeÅ›li chcesz obejrzeÄ‡ pliki ktÃ³re zostaÅ‚y otwarte na Twoim "
++"komputerze przez zewnÄ™trznych uÅ¼ytkownikÃ³w. Uwaga!! Zdarzenia wygenerowane "
++"przez otwieranie/zamykanie plikÃ³w nie sÄ… pamiÄ™tane dopÃ³ki poziom log nie "
++"jest rÃ³wny przynajmniej 2 (przepraszam, nie moÅ¼na zmieniÄ‡ poziomu log w "
+ "tym module)"
+ 
+ #: kcmsambalog.cpp:84
+@@ -181,10 +181,10 @@
+ "the samba log level is set to at least 2 (sorry, you cannot set the log "
+ "level using this module."
+ msgstr ""
+-"Zaznacz tÄ opcjÄ jeÅli chcesz obejrzeÄ zdarzenia wygenerowane przy zamykaniu "
+-"otwartych plikÃ³w przez zewnÄtrznych uÅ¼ytkownikÃ³w. Uwaga!! Zdarzenia "
+-"wygenerowane przez otwieranie/zamykanie plikÃ³w nie sÄ pamiÄtane dopÃ³ki "
+-"poziom log nie jest rÃ³wny przynajmniej 2 (przepraszam, nie moÅ¼na zmieniÄ "
++"Zaznacz tÄ™ opcjÄ™ jeÅ›li chcesz obejrzeÄ‡ zdarzenia wygenerowane przy zamykaniu "
++"otwartych plikÃ³w przez zewnÄ™trznych uÅ¼ytkownikÃ³w. Uwaga!! Zdarzenia "
++"wygenerowane przez otwieranie/zamykanie plikÃ³w nie sÄ… pamiÄ™tane dopÃ³ki "
++"poziom log nie jest rÃ³wny przynajmniej 2 (przepraszam, nie moÅ¼na zmieniÄ‡ "
+ "poziomu log w tym module)"
+ 
+ #: kcmsambalog.cpp:90
+@@ -192,8 +192,8 @@
+ "Click here to refresh the information on this page. The log file (shown "
+ "above) will be read to obtain the events logged by samba."
+ msgstr ""
+-"NaciÅnij aby odÅwieÅ¼yÄ informacje na tej stronie. Logplik (pokazany "
+-"powyÅ¼ej) bÄdzie czytany celem uzyskania zdarzeÅ zapisanych przez sambÄ."
++"NaciÅ›nij aby odÅ›wieÅ¼yÄ‡ informacje na tej stronie. Logplik (pokazany "
++"powyÅ¼ej) bÄ™dzie czytany celem uzyskania zdarzeÅ„ zapisanych przez sambÄ™."
+ 
+ #: kcmsambalog.cpp:107
+ msgid "Date & Time"
+@@ -221,22 +221,22 @@
+ "empty, try clicking the \"Update\" button. The samba log file will be read "
+ "and the list refreshed."
+ msgstr ""
+-"Ta lista pokazuje szczegÃ³Åowe informacje o zdarzeniach zapisanych przez "
+-"sambÄ. Uwaga!! Zdarzenia na poziomie pliku nie sÄ pamiÄtane dopÃ³ki nie "
+-"zmienisz wartoÅci poziomu log dla samby na 2 lub wiÄcej.<p>Tak jak w innych "
+-"listach Årodowiska KDE klikniecie na nazwÄ odpowiedniej kolumny powoduje "
+-"sortowanie zdarzeÅ. Ponowne klikniÄcie na tej samej nazwie kolumny powoduje "
+-"sortowanie w odwrotnym porzÄdku.<p>JeÅli lista jest pusta sprÃ³buj nacisnÄÄ "
+-"przycisk \"Uaktualnij\". Logplik samby bÄdzie odczytany, a lista "
++"Ta lista pokazuje szczegÃ³Å‚owe informacje o zdarzeniach zapisanych przez "
++"sambÄ™. Uwaga!! Zdarzenia na poziomie pliku nie sÄ… pamiÄ™tane dopÃ³ki nie "
++"zmienisz wartoÅ›ci poziomu log dla samby na 2 lub wiÄ™cej.<p>Tak jak w innych "
++"listach Å›rodowiska KDE klikniecie na nazwÄ™ odpowiedniej kolumny powoduje "
++"sortowanie zdarzeÅ„. Ponowne klikniÄ™cie na tej samej nazwie kolumny powoduje "
++"sortowanie w odwrotnym porzÄ…dku.<p>JeÅ›li lista jest pusta sprÃ³buj nacisnÄ…Ä‡ "
++"przycisk \"Uaktualnij\". Logplik samby bÄ™dzie odczytany, a lista "
+ "uaktualniona."
+ 
+ #: kcmsambalog.cpp:229 kcmsambastatistics.cpp:157 kcmsambastatistics.cpp:208
+ msgid "CONNECTION OPENED"
+-msgstr "OTWARTE POÅÄCZENIA"
++msgstr "OTWARTE POÅACZENIA"
+ 
+ #: kcmsambalog.cpp:235
+ msgid "CONNECTION CLOSED"
+-msgstr "ZAMKNIÄTE POÅÄCZENIA"
++msgstr "ZAMKNIETE POÅACZENIA"
+ 
+ #: kcmsambalog.cpp:242
+ msgid "            FILE OPENED"
+@@ -244,20 +244,20 @@
+ 
+ #: kcmsambalog.cpp:250
+ msgid "            FILE CLOSED"
+-msgstr "             PLIK ZAMKNIÄTY"
++msgstr "             PLIK ZAMKNIETY"
+ 
+ #: kcmsambalog.cpp:259
+ #, c-format
+ msgid "Could not open file %1"
+-msgstr "Nie moÅ¼na otworzyÄ pliku %1"
++msgstr "Nie moÅ¼na otworzyÄ‡ pliku %1"
+ 
+ #: kcmsambastatistics.cpp:52
+ msgid "Connections: 0"
+-msgstr "PoÅÄczenia: 0"
++msgstr "PoÅ‚Ä…czenia: 0"
+ 
+ #: kcmsambastatistics.cpp:53
+ msgid "File accesses: 0"
+-msgstr "Plik doÅÄczeÅ: 0"
++msgstr "Plik dostÄ™pÃ³w:  0"
+ 
+ #: kcmsambastatistics.cpp:55
+ msgid "Event: "
+@@ -277,7 +277,7 @@
+ 
+ #: kcmsambastatistics.cpp:61
+ msgid "Clear results"
+-msgstr "WyczyÅÄ rezultaty"
++msgstr "WyczyÅ›Ä‡ rezultaty"
+ 
+ #: kcmsambastatistics.cpp:62
+ msgid "Show expanded service info"
+@@ -293,25 +293,25 @@
+ 
+ #: kcmsambastatistics.cpp:73
+ msgid "Hits"
+-msgstr "TrafieÅ"
++msgstr "TrafieÅ„"
+ 
+ #: kcmsambastatistics.cpp:76 kcmsambastatistics.cpp:143
+ msgid "Connection"
+-msgstr "PoÅÄczenie"
++msgstr "PoÅ‚Ä…czenie"
+ 
+ #: kcmsambastatistics.cpp:77
+ msgid "File Access"
+-msgstr "Plik dostÄpu"
++msgstr "Plik dostÄ™pu"
+ 
+ #: kcmsambastatistics.cpp:133
+ #, c-format
+ msgid "Connections: %1"
+-msgstr "PoÅÄczenia: %1"
++msgstr "PoÅ‚Ä…czenia: %1"
+ 
+ #: kcmsambastatistics.cpp:134
+ #, c-format
+ msgid "File accesses: %1"
+-msgstr "Plik dostÄpÃ³w: %1"
++msgstr "Plik dostÄ™pÃ³w: %1"
+ 
+ #: kcmsambastatistics.cpp:170 kcmsambastatistics.cpp:214
+ msgid "FILE OPENED"
+diff -Nur kde-i18n-2.2.orig/pl/messages/kdebase/kfindpart.po kde-i18n-2.2/pl/messages/kdebase/kfindpart.po
+--- kde-i18n-2.2.orig/pl/messages/kdebase/kfindpart.po	Thu Jun 28 21:47:53 2001
++++ kde-i18n-2.2/pl/messages/kdebase/kfindpart.po	Mon Aug 27 12:38:28 2001
+@@ -32,19 +32,19 @@
+ 
+ #: kftabdlg.cpp:65
+ msgid "Include &subdirectories"
+-msgstr "DoÅÄcz &podkatalogi"
++msgstr "DoÅ‚Ä…cz &podkatalogi"
+ 
+ #: kftabdlg.cpp:66
+ msgid "&Case sensitive search"
+-msgstr "S&zukaj z uwzglÄdniem wielkoÅci znakÃ³w"
++msgstr "S&zukaj z uwzglÄ™dniem wielkoÅ›ci znakÃ³w"
+ 
+ #: kftabdlg.cpp:67
+ msgid "&Browse..."
+-msgstr "P&rzeglÄdaj..."
++msgstr "P&rzeglÄ…daj..."
+ 
+ #: kftabdlg.cpp:101
+ msgid " Name/Location "
+-msgstr " Nazwa/PoÅoÅ¼enie "
++msgstr " Nazwa/PoÅ‚oÅ¼enie "
+ 
+ #: kftabdlg.cpp:107
+ msgid "&All files"
+@@ -56,7 +56,7 @@
+ 
+ #: kftabdlg.cpp:111
+ msgid "&between"
+-msgstr "p&omiÄdzy"
++msgstr "p&omiÄ™dzy"
+ 
+ #: kftabdlg.cpp:112
+ msgid "during the previou&s"
+@@ -72,7 +72,7 @@
+ 
+ #: kftabdlg.cpp:115
+ msgid "month(s)"
+-msgstr "miesiÄca(miesiÄcy)"
++msgstr "miesiÄ…ca(miesiÄ™cy)"
+ 
+ #: kftabdlg.cpp:116
+ msgid "day(s)"
+@@ -88,7 +88,7 @@
+ 
+ #: kftabdlg.cpp:191
+ msgid "&Containing Text:"
+-msgstr "&ZawierajÄce tekst:"
++msgstr "&ZawierajÄ…ce tekst:"
+ 
+ #: kftabdlg.cpp:193
+ msgid "&Size is:"
+@@ -100,7 +100,7 @@
+ 
+ #: kftabdlg.cpp:196
+ msgid "Case S&ensitive (content)"
+-msgstr "&UwzglÄdniaj wielkoÅÄ znakÃ³w (zawartoÅÄ)"
++msgstr "&UwzglÄ™dniaj wielkoÅ›Ä‡ znakÃ³w (zawartoÅ›Ä‡)"
+ 
+ #: kftabdlg.cpp:200
+ msgid "All Files and Directories"
+@@ -116,7 +116,7 @@
+ 
+ #: kftabdlg.cpp:204
+ msgid "Special files (sockets, device files...)"
+-msgstr "Pliki specjalne (gniazda, urzÄdzenia...)"
++msgstr "Pliki specjalne (gniazda, urzÄ…dzenia...)"
+ 
+ #: kftabdlg.cpp:205
+ msgid "Executable files"
+@@ -144,7 +144,7 @@
+ 
+ #: kftabdlg.cpp:360
+ msgid "Can't search in a period which doesn't last a single day."
+-msgstr "Nie moÅ¼na prowadziÄ poszukiwania w okresie, ktÃ³ry nie trwa dobÄ"
++msgstr "Nie moÅ¼na prowadziÄ‡ poszukiwania w okresie, ktÃ³ry nie trwa dobÄ™"
+ 
+ #: kftabdlg.cpp:371
+ msgid "The date is not valid!"
+@@ -156,4 +156,4 @@
+ 
+ #: kftabdlg.cpp:375
+ msgid "Can't search dates in the future!"
+-msgstr "Nie moÅ¼na szukaÄ dat w przyszÅoÅci!"
++msgstr "Nie moÅ¼na szukaÄ‡ dat w przyszÅ‚oÅ›ci!"
+diff -Nur kde-i18n-2.2.orig/pl/messages/kdebase/kio_smbro.po kde-i18n-2.2/pl/messages/kdebase/kio_smbro.po
+--- kde-i18n-2.2.orig/pl/messages/kdebase/kio_smbro.po	Thu Jun 28 21:47:53 2001
++++ kde-i18n-2.2/pl/messages/kdebase/kio_smbro.po	Mon Aug 27 12:48:10 2001
+@@ -21,7 +21,7 @@
+ "Make sure that the samba package is installed properly on your system."
+ msgstr ""
+ "\n"
+-"Upewnij siÄ, Å¼e pakiet samby jest zainstalowany prawidÅowo w Twoim systemie."
++"Upewnij siÄ™, Å¼e pakiet samby jest zainstalowany prawidÅ‚owo w Twoim systemie."
+ 
+ #: kio_smb.cpp:210
+ msgid ""
+@@ -29,7 +29,7 @@
+ "There is probably no SMB service running on this host."
+ msgstr ""
+ "\n"
+-"WyglÄda na to, Å¼e na tym komputerze nie jest uruchomiony serwis SMB."
++"WyglÄ…da na to, Å¼e na tym komputerze nie jest uruchomiony serwis SMB."
+ 
+ #: kio_smb.cpp:229 kio_smb.cpp:234
+ msgid ""
+@@ -37,7 +37,7 @@
+ "Invalid user/password combination."
+ msgstr ""
+ "\n"
+-"ZÅa kombinacja hasÅo/uÅ¼ytkownik"
++"ZÅ‚a kombinacja hasÅ‚o/uÅ¼ytkownik"
+ 
+ #: kio_smb.cpp:253
+ msgid "Hmm..."
+@@ -45,7 +45,7 @@
+ 
+ #: kio_smb.cpp:420 kio_smb.cpp:1198
+ msgid "Username and password required:"
+-msgstr "Wymagane uÅ¼ytkownik i hasÅo:"
++msgstr "Wymagane uÅ¼ytkownik i hasÅ‚o:"
+ 
+ #: kio_smb.cpp:557 kio_smb.cpp:1058
+ msgid ""
+@@ -53,10 +53,10 @@
+ "To get a list of all hosts use lan:/ or rlan:/ .\n"
+ "See the KDE Control Center under Network, LANBrowsing for more information."
+ msgstr ""
+-"Aby podÅÄczyÄ siÄ do zasobu komputera, uÅ¼yj smb://nazwakomputera\n"
+-"Aby uzyskaÄ peÅnÄ listÄ komputerÃ³w, uÅ¼yj lan:/ lub rlan:/ .\n"
+-"Patrz KDE Centrum Sterowania w sekcji SieÄ, PrzeglÄdanie sieci lokalnej aby "
+-"uzyskaÄ wiÄcej informacji."
++"Aby podÅ‚Ä…czyÄ‡ siÄ™ do zasobu komputera, uÅ¼yj smb://nazwakomputera\n"
++"Aby uzyskaÄ‡ peÅ‚nÄ… listÄ™ komputerÃ³w, uÅ¼yj lan:/ lub rlan:/ .\n"
++"Patrz KDE Centrum Sterowania w sekcji SieÄ‡, PrzeglÄ…danie sieci lokalnej aby "
++"uzyskaÄ‡ wiÄ™cej informacji."
+ 
+ #: kio_smb.cpp:891
+ msgid ""
+@@ -66,10 +66,10 @@
+ "See the KDE Control Center under Network, LANBrowsing for more information."
+ msgstr ""
+ "\n"
+-"Aby podÅÄczyÄ siÄ do zasobu komputera, uÅ¼yj smb://nazwakomputera\n"
+-"Aby uzyskaÄ peÅnÄ listÄ komputerÃ³w, uÅ¼yj lan:/ lub rlan:/ .\n"
+-"Patrz KDE Centrum Sterowania w sekcji SieÄ, PrzeglÄdanie sieci lokalnej aby "
+-"uzyskaÄ wiÄcej informacji."
++"Aby podÅ‚Ä…czyÄ‡ siÄ™ do zasobu komputera, uÅ¼yj smb://nazwakomputera\n"
++"Aby uzyskaÄ‡ peÅ‚nÄ… listÄ™ komputerÃ³w, uÅ¼yj lan:/ lub rlan:/ .\n"
++"Patrz KDE Centrum Sterowania w sekcji SieÄ‡, PrzeglÄ…danie sieci lokalnej aby "
++"uzyskaÄ‡ wiÄ™cej informacji."
+ 
+ #: kio_smb.cpp:935 kio_smb.cpp:970
+ msgid ""
+@@ -77,4 +77,4 @@
+ "Could not create required pipe %1 ."
+ msgstr ""
+ "\n"
+-"Nie moÅ¼na utworzyÄ wymaganego potoku %1."
++"Nie moÅ¼na utworzyÄ‡ wymaganego potoku %1."
