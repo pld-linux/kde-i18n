@@ -9,208 +9,201 @@
 #					essential files only
 
 Summary:	K Desktop Environment - international support
-Summary(pl):	KDE - wsparcie dla wielu jêzyków
+Summary(pl):	KDE - Wsparcie dla t³umaczeñ miêdzynarodowych
 Name:		kde-i18n
-%define		_version	3.0.5
-Version:	%{_version}a
+Version:	3.1
 Release:	0.1
 License:	GPL/LGPL
 Group:		X11/Applications
-# Only this version is avaible:
-Source0:	ftp://ftp.kde.org/pub/kde/stable/%{version}/src/%{name}-%{_version}.tar.bz2
+Source0:	ftp://ftp.kde.org/pub/kde/stable/%{version}/src/%{name}-%{version}.tar.bz2
 Source1:	%{name}-splitmo
 Source2:	%{name}-splitdoc
-Patch0:		%{name}-nodoc.patch
+#Patch0:		%{name}-nodoc.patch
 %if %{?_with_alltogether:1}%{!?_with_alltogether:0}
 Obsoletes:	kde-i18n-Affrikaans kde-i18n-Arabic kde-i18n-Azerbaijani
 Obsoletes:	kde-i18n-Bulgarian kde-i18n-Bosnian kde-i18n-Catalan
 Obsoletes:	kde-i18n-Czech kde-i18n-Danish kde-i18n-German kde-i18n-Greek
-Obsoletes:	kde-i18n-English_UK kde-i18n-British kde-i18n-Esperanto
-Obsoletes:	kde-i18n-Spanish kde-i18n-Estonian kde-i18n-Finnish
-Obsoletes:	kde-i18n-French kde-i18n-Hebrew kde-i18n-Croatian
-Obsoletes:	kde-i18n-Hungarian kde-i18n-Indonesian kde-i18n-Icelandic
-Obsoletes:	kde-i18n-Italian kde-i18n-Japanese kde-i18n-Korean
-Obsoletes:	kde-i18n-Lithuanian kde-i18n-Latvian kde-i18n-Maltese
-Obsoletes:	kde-i18n-Dutch kde-i18n-Norwegian kde-i18n-Norwegian_Bokmaal
+Obsoletes:	kde-i18n-English_UK kde-i18n-Esperanto kde-i18n-Spanish
+Obsoletes:	kde-i18n-Estonian kde-i18n-Finnish kde-i18n-French
+Obsoletes:	kde-i18n-Hebrew kde-i18n-Croatian kde-i18n-Hungarian
+Obsoletes:	kde-i18n-Indonesian kde-i18n-Icelandic kde-i18n-Italian
+Obsoletes:	kde-i18n-Japanese kde-i18n-Korean kde-i18n-Lithuanian
+Obsoletes:	kde-i18n-Latvian kde-i18n-Maltese kde-i18n-Dutch
+Obsoletes:	kde-i18n-Norwegian kde-i18n-Norwegian_Bokmaal
 Obsoletes:	kde-i18n-Norwegian_Nynorsk kde-i18n-Polish kde-i18n-Portugnese
-Obsoletes:	kde-i18n-Brazil kde-i18n-Brazil-Portuguese kde-i18n-Romanian
-Obsoletes:	kde-i18n-Russian kde-i18n-Slovak kde-i18n-Slovenian
-Obsoletes:	kde-i18n-Serbian kde-i18n-Swedish kde-i18n-Tamil kde-i18n-Thai
-Obsoletes:	kde-i18n-Turkish kde-i18n-Ukrainian kde-i18n-Venda
-Obsoletes:	kde-i18n-Vietnamese kde-i18n-Xhosa kde-i18n-Simplified_Chinese
-Obsoletes:	kde-i18n-Chinese kde-i18n-Chinese-Big5 kde-i18n-Zulu
+Obsoletes:	kde-i18n-Brazil_Portugnese kde-i18n-Romanian kde-i18n-Russian
+Obsoletes:	kde-i18n-Slovak kde-i18n-Slovenian kde-i18n-Serbian
+Obsoletes:	kde-i18n-Swedish kde-i18n-Tamil kde-i18n-Thai kde-i18n-Turkish
+Obsoletes:	kde-i18n-Ukrainian kde-i18n-Venda kde-i18n-Vietnamese
+Obsoletes:	kde-i18n-Xhosa kde-i18n-Simplified_Chinese kde-i18n-Chinese
+Obsoletes:	kde-i18n-Zulu
 %endif
+BuildRequires:	libxml2 >= 2.4.2
 # It creates symlinks to some not-translated files.
 BuildRequires:	kdelibs = %{version}
 BuildRequires:	kdelibs-devel
-BuildRequires:	libxml2-progs >= 2.4.2
+BuildRequires:	libxml2-progs
 BuildRequires:	gettext-devel
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
+%define		_prefix		/usr/X11R6
 
 %description
 K Desktop Environment - international support.
 
 %description -l pl
-KDE - wsparcie dla wielu jêzyków.
+KDE - Wsparcie dla t³umaczeñ miêdzynarodowych.
 
 
+%if %{?_with_kdelibs:1}%{!?_with_kdelibs:0}
 %package kdelibs
 Summary:	K Desktop Environment - International Support
-Summary(pl):	KDE - wsparcie dla wielu jêzyków
+Summary(pl):	KDE - Wsparcie dla t³umaczeñ miêdzynarodowych
 Group:		X11/Applications
 
 %description kdelibs
-K Desktop Environment - international support. This package contains
-essential files only.
+K Desktop Environment - international support. This package
+contains essential files only.
 
 %description -l pl kdelibs
-KDE - wsparcie dla wielu jêzyków. Pakiet zawiera tylko pliki
-podstawowe.
+KDE - Wsparcie dla t³umaczeñ miêdzynarodowych. Pakiet
+zawiera tylko pliki podstawowe.
+%endif
 
 
+%if %{?_with_alltogether:0}%{!?_with_alltogether:1}
 %package Affrikaans
-Summary:	K Desktop Environment - Affrikaans language support
-Summary(pl):	KDE - wsparcie dla jêzyka afrykanerskiego
+Summary:	K Desktop Environment - International Support
 Group:		X11/Applications
 
 %description Affrikaans
-K Desktop Environment - Affrikaans language support.
+K Desktop Environment - International Support.
 
 %description Affrikaans -l pl
-KDE - wsparcie dla jêzyka afrykanerskiego.
+KDE - Wsparcie dla t³umaczeñ miêdzynarodowych.
+
 
 %package Arabic
 Summary:	K Desktop Environment - International Support
-Summary(pl):	KDE - wsparcie dla jêzyka arabskiego
 Group:		X11/Applications
 
 %description Arabic
-K Desktop Environment - Arabic language support.
+K Desktop Environment - International Support.
 
 %description Arabic -l pl
-KDE - wsparcie dla jêzyka arabskiego.
+KDE - Wsparcie dla t³umaczeñ miêdzynarodowych.
+
 
 %package Azerbaijani
-Summary:	K Desktop Environment - Azerbaijani language support
-Summary(pl):	KDE - wsparcie dla jêzyka azerskiego
+Summary:	K Desktop Environment - International Support
 Group:		X11/Applications
 
 %description Azerbaijani
-K Desktop Environment - Azerbaijani language support.
+K Desktop Environment - International Support.
 
 %description Azerbaijani -l pl
-KDE - wsparcie dla jêzyka azerskiego.
+KDE - Wsparcie dla t³umaczeñ miêdzynarodowych.
+
 
 %package Bulgarian
-Summary:	K Desktop Environment - Bulgarian language support
-Summary(pl):	KDE - wsparcie dla jêzyka bu³garskiego
+Summary:	K Desktop Environment - International Support
 Group:		X11/Applications
 
 %description Bulgarian
-K Desktop Environment - Bulgarian language support.
+K Desktop Environment - International Support.
 
 %description Bulgarian -l pl
-KDE - wsparcie dla jêzyka bu³garskiego.
+KDE - Wsparcie dla t³umaczeñ miêdzynarodowych.
+
+
+#%package Breton
+#Summary:	K Desktop Environment - International Support
+#Group:		X11/Applications
+#
+#%description Breton
+#K Desktop Environment - International Support.
+#
+#%description Breton -l pl
+#KDE - Wsparcie dla t³umaczeñ miêdzynarodowych.
+
 
 %package Bosnian
-Summary:	K Desktop Environment - Bosnian language support
-Summary(pl):	KDE - wsparcie dla jêzyka bo¶niañskiego
+Summary:	K Desktop Environment - International Support
 Group:		X11/Applications
 
 %description Bosnian
-K Desktop Environment - Bosnian language support.
+K Desktop Environment - International Support.
 
 %description Bosnian -l pl
-KDE - wsparcie dla jêzyka bo¶niañskiego.
+KDE - Wsparcie dla t³umaczeñ miêdzynarodowych.
 
-#%package Breton
-#Summary:	K Desktop Environment - Breton language support
-#Summary(pl):	KDE - wsparcie dla jêzyka bretoñskiego
-#Group:		X11/Applications
-
-#%description Breton
-#K Desktop Environment - Breton language support.
-#
-#%description Breton -l pl
-#KDE - wsparcie dla jêzyka bretoñskiego.
 
 %package Catalan
-Summary:	K Desktop Environment - Catalan language support
-Summary(pl):	KDE - wsparcie dla jêzyka kataloñskiego
+Summary:	K Desktop Environment - International Support
 Group:		X11/Applications
 
 %description Catalan
-K Desktop Environment - Catalan language support.
+K Desktop Environment - International Support.
 
 %description Catalan -l pl
-KDE - wsparcie dla jêzyka kataloñskiego.
+KDE - Wsparcie dla t³umaczeñ miêdzynarodowych.
 
-%package Croatian
-Summary:	K Desktop Environment - Croatian language support
-Summary(pl):	KDE - wsparcie dla jêzyka chorwackiego
-Group:		X11/Applications
-
-%description Croatian
-K Desktop Environment - Croatian language support.
-
-%description Croatian -l pl
-KDE - wsparcie dla jêzyka chorwackiego.
 
 %package Czech
-Summary:	K Desktop Environment - Czech language support
-Summary(pl):	KDE - wsparcie dla jêzyka czeskiego
+Summary:	K Desktop Environment - International Support
 Group:		X11/Applications
 
 %description Czech
-K Desktop Environment - Czech language support.
+K Desktop Environment - International Support.
 
 %description Czech -l pl
-KDE - wsparcie dla jêzyka czeskiego.
+KDE - Wsparcie dla t³umaczeñ miêdzynarodowych.
+
 
 #%package Cymraeg
-#Summary:	K Desktop Environment - Cymraeg language support
+#Summary:	K Desktop Environment - International Support
 #Group:		X11/Applications
 #
 #%description Cymraeg
-#K Desktop Environment - Cymraeg language support.
+#K Desktop Environment - International Support.
 #
 #%description Cymraeg -l pl
 #KDE - Wsparcie dla t³umaczeñ miêdzynarodowych.
 
+
 %package Danish
-Summary:	K Desktop Environment - Danish language support
-Summary(pl):	KDE - wsparcie dla jêzyka duñskiego
+Summary:	K Desktop Environment - International Support
 Group:		X11/Applications
 
 %description Danish
-K Desktop Environment - Danish language support.
+K Desktop Environment - International Support.
 
 %description Danish -l pl
-KDE - wsparcie dla jêzyka duñskiego.
+KDE - Wsparcie dla t³umaczeñ miêdzynarodowych.
+
 
 %package German
-Summary:	K Desktop Environment - German language support
-Summary(pl):	KDE - wsparcie dla jêzyka niemieckiego
+Summary:	K Desktop Environment - International Support
 Group:		X11/Applications
 
 %description German
-K Desktop Environment - German language support.
+K Desktop Environment - International Support.
 
 %description German -l pl
-KDE - wsparcie dla jêzyka niemieckiego.
+KDE - Wsparcie dla t³umaczeñ miêdzynarodowych.
+
 
 %package Greek
-Summary:	K Desktop Environment - Greek language support
-Summary(pl):	KDE - wsparcie dla jêzyka greckiego
+Summary:	K Desktop Environment - International Support
 Group:		X11/Applications
 
 %description Greek
-K Desktop Environment - Greek language support.
+K Desktop Environment - International Support.
 
 %description Greek -l pl
-KDE - wsparcie dla jêzyka greckiego.
+KDE - Wsparcie dla t³umaczeñ miêdzynarodowych.
+
 
 #%package English
 #Summary:	K Desktop Environment - International Support
@@ -222,278 +215,282 @@ KDE - wsparcie dla jêzyka greckiego.
 #%description English -l pl
 #KDE - Wsparcie dla t³umaczeñ miêdzynarodowych.
 
+
 %package English_UK
-Summary:	K Desktop Environment - English (UK) language support
-Summary(pl):	KDE - wsparcie dla jêzyka angielskiego (odmiany brytyjskiej)
+Summary:	K Desktop Environment - International Support
 Group:		X11/Applications
 
 %description English_UK
-K Desktop Environment - English (UK) language support.
+K Desktop Environment - International Support.
 
 %description English_UK -l pl
-KDE - wsparcie dla jêzyka angielskiego (odmiany brytyjskiej).
+KDE - Wsparcie dla t³umaczeñ miêdzynarodowych.
+
 
 %package Esperanto
-Summary:	K Desktop Environment - Esperanto language support
-Summary(pl):	KDE - wsparcie dla jêzyka esperanto
+Summary:	K Desktop Environment - International Support
 Group:		X11/Applications
 
 %description Esperanto
-K Desktop Environment - Esperanto language support.
+K Desktop Environment - International Support.
 
 %description Esperanto -l pl
-KDE - wsparcie dla jêzyka esperanto.
+KDE - Wsparcie dla t³umaczeñ miêdzynarodowych.
+
 
 %package Spanish
-Summary:	K Desktop Environment - Spanish language support
-Summary(pl):	KDE - wsparcie dla jêzyka hiszpañskiego
+Summary:	K Desktop Environment - International Support
 Group:		X11/Applications
 
 %description Spanish
-K Desktop Environment - Spanish language support.
+K Desktop Environment - International Support.
 
 %description Spanish -l pl
-KDE - wsparcie dla jêzyka hiszpañskiego.
+KDE - Wsparcie dla t³umaczeñ miêdzynarodowych.
+
 
 %package Estonian
-Summary:	K Desktop Environment - Estonian language support
-Summary(pl):	KDE - wsparcie dla jêzyka estoñskiego
+Summary:	K Desktop Environment - International Support
 Group:		X11/Applications
 
 %description Estonian
-K Desktop Environment - Estonian language support.
+K Desktop Environment - International Support.
 
 %description Estonian -l pl
-KDE - wsparcie dla jêzyka estoñskiego.
+KDE - Wsparcie dla t³umaczeñ miêdzynarodowych.
+
 
 #%package Basque
-#Summary:	K Desktop Environment - Basque language support
+#Summary:	K Desktop Environment - International Support
 #Group:		X11/Applications
 #
 #%description Basque
-#K Desktop Environment - Basque language support.
+#K Desktop Environment - International Support.
 #
 #%description Basque -l pl
 #KDE - Wsparcie dla t³umaczeñ miêdzynarodowych.
 
+
 %package Finnish
-Summary:	K Desktop Environment - Finnish language support
-Summary(pl):	KDE - wsparcie dla jêzyka fiñskiego
+Summary:	K Desktop Environment - International Support
 Group:		X11/Applications
 
 %description Finnish
-K Desktop Environment - Finnish language support.
+K Desktop Environment - International Support.
 
 %description Finnish -l pl
-KDE - wsparcie dla jêzyka fiñskiego.
+KDE - Wsparcie dla t³umaczeñ miêdzynarodowych.
+
 
 %package French
-Summary:	K Desktop Environment - French language support
-Summary(pl):	KDE - wsparcie dla jêzyka francuskiego
+Summary:	K Desktop Environment - International Support
 Group:		X11/Applications
 
 %description French
-K Desktop Environment - French language support.
+K Desktop Environment - International Support.
 
 %description French -l pl
-KDE - wsparcie dla jêzyka francuskiego.
+KDE - Wsparcie dla t³umaczeñ miêdzynarodowych.
+
 
 #%package Irish
-#Summary:	K Desktop Environment - Irish language support
+#Summary:	K Desktop Environment - International Support
 #Group:		X11/Applications
 #
 #%description Irish
-#K Desktop Environment - Irish language support.
+#K Desktop Environment - International Support.
 #
 #%description Irish -l pl
 #KDE - Wsparcie dla t³umaczeñ miêdzynarodowych.
 
+
 #%package Galician
-#Summary:	K Desktop Environment - Galician language support
+#Summary:	K Desktop Environment - International Support
 #Group:		X11/Applications
 #
 #%description Galician
-#K Desktop Environment - Galician language support.
+#K Desktop Environment - International Support.
 #
 #%description Galician -l pl
 #KDE - Wsparcie dla t³umaczeñ miêdzynarodowych.
 
+
 %package Hebrew
-Summary:	K Desktop Environment - Hebrew language support
-Summary(pl):	KDE - wsparcie dla jêzyka hebrajskiego
+Summary:	K Desktop Environment - International Support
 Group:		X11/Applications
 
 %description Hebrew
-K Desktop Environment - Hebrew language support.
+K Desktop Environment - International Support.
 
 %description Hebrew -l pl
-KDE - wsparcie dla jêzyka hebrajskiego.
+KDE - Wsparcie dla t³umaczeñ miêdzynarodowych.
+
+
+%package Croatian
+Summary:	K Desktop Environment - International Support
+Group:		X11/Applications
+
+%description Croatian
+K Desktop Environment - International Support.
+
+%description Croatian -l pl
+KDE - Wsparcie dla t³umaczeñ miêdzynarodowych.
+
 
 %package Hungarian
-Summary:	K Desktop Environment - Hungarian language support
-Summary(pl):	KDE - wsparcie dla jêzyka wêgierskiego
+Summary:	K Desktop Environment - International Support
 Group:		X11/Applications
 
 %description Hungarian
-K Desktop Environment - Hungarian language support.
+K Desktop Environment - International Support.
 
 %description Hungarian -l pl
-KDE - wsparcie dla jêzyka wêgierskiego.
+KDE - Wsparcie dla t³umaczeñ miêdzynarodowych.
+
 
 %package Indonesian
-Summary:	K Desktop Environment - Indonesian language support
-Summary(pl):	KDE - wsparcie dla jêzyka indonezyjskiego
+Summary:	K Desktop Environment - International Support
 Group:		X11/Applications
 
 %description Indonesian
-K Desktop Environment - Indonesian language support.
+K Desktop Environment - International Support.
 
 %description Indonesian -l pl
-KDE - wsparcie dla jêzyka indonezyjskiego.
+KDE - Wsparcie dla t³umaczeñ miêdzynarodowych.
+
 
 %package Icelandic
-Summary:	K Desktop Environment - Icelandic language support
-Summary(pl):	KDE - wsparcie dla jêzyka islandzkiego
+Summary:	K Desktop Environment - International Support
 Group:		X11/Applications
 
 %description Icelandic
-K Desktop Environment - Icelandic language support.
+K Desktop Environment - International Support.
 
 %description Icelandic -l pl
-KDE - wsparcie dla jêzyka islandzkiego.
+KDE - Wsparcie dla t³umaczeñ miêdzynarodowych.
+
 
 %package Italian
-Summary:	K Desktop Environment - Italian language support
-Summary(pl):	KDE - wsparcie dla jêzyka w³oskiego
+Summary:	K Desktop Environment - International Support
 Group:		X11/Applications
 
 %description Italian
-K Desktop Environment - Italian language support.
+K Desktop Environment - International Support.
 
 %description Italian -l pl
-KDE - wsparcie dla jêzyka w³oskiego.
+KDE - Wsparcie dla t³umaczeñ miêdzynarodowych.
+
 
 %package Japanese
-Summary:	K Desktop Environment - Japanese language support
-Summary(pl):	KDE - wsparcie dla jêzyka japoñskiego
+Summary:	K Desktop Environment - International Support
 Group:		X11/Applications
 
 %description Japanese
-K Desktop Environment - Japanese language support.
+K Desktop Environment - International Support.
 
 %description Japanese -l pl
-KDE - wsparcie dla jêzyka japoñskiego.
+KDE - Wsparcie dla t³umaczeñ miêdzynarodowych.
+
 
 %package Korean
-Summary:	K Desktop Environment - Korean language support
-Summary(pl):    KDE - wsparcie dla jêzyka koreañskiego
+Summary:	K Desktop Environment - International Support
 Group:		X11/Applications
 
 %description Korean
-K Desktop Environment - Korean language support.
+K Desktop Environment - International Support.
 
 %description Korean -l pl
-KDE - wsparcie dla jêzyka koreañskiego.
+KDE - Wsparcie dla t³umaczeñ miêdzynarodowych.
+
 
 %package Lithuanian
-Summary:	K Desktop Environment - Lithuanian language support
-Summary(pl):	KDE - wsparcie dla jêzyka litewskiego
+Summary:	K Desktop Environment - International Support
 Group:		X11/Applications
 
 %description Lithuanian
-K Desktop Environment - Lithuanian language support.
+K Desktop Environment - International Support.
 
 %description Lithuanian -l pl
-KDE - Wsparcie dla jêzyka litewskiego.
+KDE - Wsparcie dla t³umaczeñ miêdzynarodowych.
+
 
 %package Latvian
-Summary:	K Desktop Environment - Latvian language support
-Summary(pl):	KDE - wsparcie dla jêzyka ³otewskiego
+Summary:	K Desktop Environment - International Support
 Group:		X11/Applications
 
 %description Latvian
-K Desktop Environment - Latvian language support.
+K Desktop Environment - International Support.
 
 %description Latvian -l pl
-KDE - wsparcie dla jêzyka ³otewskiego.
+KDE - Wsparcie dla t³umaczeñ miêdzynarodowych.
 
-#%package Macedonian
-#Summary:	K Desktop Environment - Macedonian language support
-#Summary(pl):	KDE - wsparcie dla jêzyka macedoñskiego
-#Group:		X11/Applications
-#
-#%description Macedonian
-#K Desktop Environment - Macedonian language support.
-#
-#%description Macedonian -l pl
-#KDE - wsparcie dla jêzyka macedoñskiego.
-
-%package Maltese
-Summary:	K Desktop Environment - Maltese language support
-Summary(pl):	KDE - wsparcie dla jêzyka maltañskiego
-Group:		X11/Applications
-
-%description Maltese
-K Desktop Environment - Maltese language support.
-
-%description Maltese -l pl
-KDE - wsparcie dla jêzyka maltañskiego.
 
 #%package Maori
-#Summary:	K Desktop Environment - Maori language support
+#Summary:	K Desktop Environment - International Support
 #Group:		X11/Applications
 #
 #%description Maori
-#K Desktop Environment - Maori language support.
+#K Desktop Environment - International Support.
 #
 #%description Maori -l pl
 #KDE - Wsparcie dla t³umaczeñ miêdzynarodowych.
 
+
+#%package Macedonian
+#Summary:	K Desktop Environment - International Support
+#Group:		X11/Applications
+#
+#%description Macedonian
+#K Desktop Environment - International Support.
+#
+#%description Macedonian -l pl
+#KDE - Wsparcie dla t³umaczeñ miêdzynarodowych.
+
+
+%package Maltese
+Summary:	K Desktop Environment - International Support
+Group:		X11/Applications
+
+%description Maltese
+K Desktop Environment - International Support.
+
+%description Maltese -l pl
+KDE - Wsparcie dla t³umaczeñ miêdzynarodowych.
+
+
 %package Dutch
-Summary:	K Desktop Environment - Dutch language support
-Summary(pl):	KDE - wsparcie dla jêzyka holenderskiego
+Summary:	K Desktop Environment - International Support
 Group:		X11/Applications
 
 %description Dutch
-K Desktop Environment - Dutch language support.
+K Desktop Environment - International Support.
 
 %description Dutch -l pl
-KDE - wsparcie dla jêzyka holenderskiego.
+KDE - Wsparcie dla t³umaczeñ miêdzynarodowych.
+
 
 %package Norwegian
-Summary:	K Desktop Environment - Norwegian language support
-Summary(pl):	KDE - wsparcie dla jêzyka norweskiego
+Summary:	K Desktop Environment - International Support
 Group:		X11/Applications
 Obsoletes:	kde-i18n-Norwegian_Bokmaal
 
 %description Norwegian
-K Desktop Environment - Norwegian language support.
+K Desktop Environment - International Support.
 
 %description Norwegian -l pl
-KDE - wsparcie dla jêzyka norweskiego.
+KDE - Wsparcie dla t³umaczeñ miêdzynarodowych.
 
-%package Norwegian_Bokmaal
-Summary:	K Desktop Environment - Norwegian (Bokmaal) language support
-Summary(pl):	KDE - wsparcie dla jêzyka norweskiego (odmiany bokmaal)
-Provides:	%{name}-Norwegian
-Group:		X11/Applications
-
-%description Norwegian_Bokmaal
-K Desktop Environment - Norwegian (Bokmaal) language support.
-
-%description Norwegian_Bokmaal -l pl
-KDE - wsparcie dla jêzyka norweskiego (odmiany bokmaal).
 
 %package Norwegian_Nynorsk
-Summary:	K Desktop Environment - Norwegian (Nynorsk) language support
-Summary(pl):    KDE - wsparcie dla jêzyka norweskiego (odmiany nunorsk)
+Summary:	K Desktop Environment - International Support
 Group:		X11/Applications
 
 %description Norwegian_Nynorsk
-K Desktop Environment - Norwegian (Nynorsk) language support.
+K Desktop Environment - International Support.
 
 %description Norwegian_Nynorsk -l pl
-KDE - wsparcie dla jêzyka norweskiego (odmiany nunorsk).
+KDE - Wsparcie dla t³umaczeñ miêdzynarodowych.
+
 
 #%package Gascon_occitan
 #Summary:	K Desktop Environment - International Support
@@ -505,232 +502,230 @@ KDE - wsparcie dla jêzyka norweskiego (odmiany nunorsk).
 #%description Gascon_occitan -l pl
 #KDE - Wsparcie dla t³umaczeñ miêdzynarodowych.
 
+
 %package Polish
-Summary:	K Desktop Environment - Polish language support
-Summary(pl):	KDE - wsparcie dla jêzyka polskiego
+Summary:	K Desktop Environment - International Support
 Group:		X11/Applications
 
 %description Polish
-K Desktop Environment - Polish language support.
+K Desktop Environment - International Support.
 
 %description Polish -l pl
-KDE - wsparcie dla jêzyka polskiego.
+KDE - Wsparcie dla t³umaczeñ miêdzynarodowych.
 
-%package Portuguese
-Summary:	K Desktop Environment - Portuguese language support
-Summary(pl):	KDE - wsparcie dla jêzyka portugalskiego
+
+%package Portugnese
+Summary:	K Desktop Environment - International Support
 Group:		X11/Applications
-Obsoletes:	%{name}-Portugnese
 
-%description Portuguese
-K Desktop Environment - Portuguese language support.
+%description Portugnese
+K Desktop Environment - International Support.
 
-%description Portuguese -l pl
-KDE - wsparcie dla jêzyka portugalskiego.
+%description Portugnese -l pl
+KDE - Wsparcie dla t³umaczeñ miêdzynarodowych.
 
-%package Brazil_Portuguese
-Summary:	K Desktop Environment - Portuguese (Brazil) language support
-Summary(pl):	KDE - wsparcie dla jêzyka portugalskiego (odmiany brazylijskiej)
+
+%package Brazil_Portugnese
+Summary:	K Desktop Environment - International Support
 Group:		X11/Applications
-Obsoletes:	%{name}-Brazil_Protugnese
 
-%description Brazil_Portuguese
-K Desktop Environment - Portuguese (Brazil) language support.
+%description Brazil_Portugnese
+K Desktop Environment - International Support.
 
-%description Brazil_Portuguese -l pl
-KDE - wsparcie dla jêzyka portugalskiego (odmiany brazylijskiej).
+%description Brazil_Portugnese -l pl
+KDE - Wsparcie dla t³umaczeñ miêdzynarodowych.
+
 
 %package Romanian
-Summary:	K Desktop Environment - Romanian language support
-Summary(pl):	KDE - wsparcie dla jêzyka rumuñskiego
+Summary:	K Desktop Environment - International Support
 Group:		X11/Applications
 
 %description Romanian
-K Desktop Environment - Romanian language support.
+K Desktop Environment - International Support.
 
 %description Romanian -l pl
-KDE - wsparcie dla jêzyka rumuñskiego.
+KDE - Wsparcie dla t³umaczeñ miêdzynarodowych.
+
 
 %package Russian
-Summary:	K Desktop Environment - Russian language support
-Summary(pl):	KDE - wsparcie dla jêzyka rosyjskiego
+Summary:	K Desktop Environment - International Support
 Group:		X11/Applications
 
 %description Russian
-K Desktop Environment - Russian language support.
+K Desktop Environment - International Support.
 
 %description Russian -l pl
-KDE - wsparcie dla jêzyka rosyjskiego.
+KDE - Wsparcie dla t³umaczeñ miêdzynarodowych.
+
 
 %package Slovak
-Summary:	K Desktop Environment - Slovak language support
-Summary(pl):	KDE - wsparcie dla jêzyka s³owackiego
+Summary:	K Desktop Environment - International Support
 Group:		X11/Applications
 
 %description Slovak
-K Desktop Environment - Slovak language support.
+K Desktop Environment - International Support.
 
 %description Slovak -l pl
-KDE - wsparcie dla jêzyka s³owackiego.
+KDE - Wsparcie dla t³umaczeñ miêdzynarodowych.
+
 
 %package Slovenian
-Summary:	K Desktop Environment - Slovenian language support
-Summary(pl):	KDE - wsparcie dla jêzyka s³oweñskiego
+Summary:	K Desktop Environment - International Support
 Group:		X11/Applications
 
 %description Slovenian
-K Desktop Environment - Slovenian language support.
+K Desktop Environment - International Support.
 
 %description Slovenian -l pl
-KDE - wsparcie dla jêzyka s³oweñskiego.
+KDE - Wsparcie dla t³umaczeñ miêdzynarodowych.
+
 
 %package Serbian
-Summary:	K Desktop Environment - Serbian language support
-Summary(pl):	KDE - wsparcie dla jêzyka serbskiego
+Summary:	K Desktop Environment - International Support
 Group:		X11/Applications
 
 %description Serbian
-K Desktop Environment - Serbian language support.
+K Desktop Environment - International Support.
 
 %description Serbian -l pl
-KDE - wsparcie dla jêzyka serbskiego.
+KDE - Wsparcie dla t³umaczeñ miêdzynarodowych.
+
 
 %package Swedish
-Summary:	K Desktop Environment - Swedish language support
-Summary(pl):	KDE - wsparcie dla jêzyka szwedzkiego
+Summary:	K Desktop Environment - International Support
 Group:		X11/Applications
 
 %description Swedish
-K Desktop Environment - Swedish language support.
+K Desktop Environment - International Support.
 
 %description Swedish -l pl
-KDE - wsparcie dla jêzyka szwedzkiego.
+KDE - Wsparcie dla t³umaczeñ miêdzynarodowych.
+
 
 %package Tamil
-Summary:	K Desktop Environment - Tamil language support
-Summary(pl):	KDE - wsparcie dla jêzyka tamilskiego
+Summary:	K Desktop Environment - International Support
 Group:		X11/Applications
 
 %description Tamil
-K Desktop Environment - Tamil language support.
+K Desktop Environment - International Support.
 
 %description Tamil -l pl
-KDE - wsparcie dla jêzyka tamilskiego.
+KDE - Wsparcie dla t³umaczeñ miêdzynarodowych.
+
 
 %package Thai
-Summary:	K Desktop Environment - Thai language support
-Summary(pl):	KDE - wsparcie dla jêzyka tajnandzkiego
+Summary:	K Desktop Environment - International Support
 Group:		X11/Applications
 
 %description Thai
-K Desktop Environment - Thai language support.
+K Desktop Environment - International Support.
 
 %description Thai -l pl
-KDE - wsparcie dla jêzyka tajnandzkiego.
+KDE - Wsparcie dla t³umaczeñ miêdzynarodowych.
+
 
 %package Turkish
-Summary:	K Desktop Environment - Turkish language support
-Summary(pl):	KDE - wsparcie dla jêzyka tureckiego
+Summary:	K Desktop Environment - International Support
 Group:		X11/Applications
 
 %description Turkish
-K Desktop Environment - Turkish language support.
+K Desktop Environment - International Support.
 
 %description Turkish -l pl
-KDE - wsparcie dla jêzyka tureckiego.
+KDE - Wsparcie dla t³umaczeñ miêdzynarodowych.
+
 
 %package Ukrainian
-Summary:	K Desktop Environment - Ukrainian language support
-Summary(pl):	KDE - wsparcie dla jêzyka ukraiñskiego
+Summary:	K Desktop Environment - International Support
 Group:		X11/Applications
 
 %description Ukrainian
-K Desktop Environment - Ukrainian language support.
+K Desktop Environment - International Support.
 
 %description Ukrainian -l pl
-KDE - wsparcie dla jêzyka ukraiñskiego.
+KDE - Wsparcie dla t³umaczeñ miêdzynarodowych.
+
 
 %package Venda
-Summary:	K Desktop Environment - Venda language support
-Summary(pl):	KDE - wsparcie dla jêzyka venda
+Summary:	K Desktop Environment - International Support
 Group:		X11/Applications
 
 %description Venda
-K Desktop Environment - Venda language support.
+K Desktop Environment - International Support.
 
 %description Venda -l pl
-KDE - wsparcie dla jêzyka venda.
+KDE - Wsparcie dla t³umaczeñ miêdzynarodowych.
+
 
 %package Vietnamese
-Summary:	K Desktop Environment - Vietnamese language support
-Summary(pl):	KDE - wsparcie dla jêzyka wietnamskiego
+Summary:	K Desktop Environment - International Support
 Group:		X11/Applications
 
-
 %description Vietnamese
-K Desktop Environment - Vietnamese language support.
+K Desktop Environment - International Support.
 
 %description Vietnamese -l pl
-KDE - wsparcie dla jêzyka wietnamskiego.
+KDE - Wsparcie dla t³umaczeñ miêdzynarodowych.
+
 
 #%package Walloon
-#Summary:	K Desktop Environment - Walloon language support
-#Summary(pl):	KDE - wsparcie dla jêzyka waloñskiego
+#Summary:	K Desktop Environment - International Support
 #Group:		X11/Applications
 #
 #%description Walloon
-#K Desktop Environment - Walloon language support.
+#K Desktop Environment - International Support.
 #
 #%description Walloon -l pl
-#KDE - wsparcie dla jêzyka waloñskiego.
+#KDE - Wsparcie dla t³umaczeñ miêdzynarodowych.
+
 
 %package Xhosa
-Summary:	K Desktop Environment - Xhosa language support
-Summary(pl):	KDE - wsparcie dla jêzyka xhosa
+Summary:	K Desktop Environment - International Support
 Group:		X11/Applications
 
 %description Xhosa
-K Desktop Environment - Xhosa language support.
+K Desktop Environment - International Support.
 
 %description Xhosa -l pl
-KDE - wsparcie dla jêzyka xhosa.
+KDE - Wsparcie dla t³umaczeñ miêdzynarodowych.
+
 
 %package Simplified_Chinese
-Summary:	K Desktop Environment - simplified Chinese language support
-Summary(pl):	KDE - wsparcie dla uproszczonego jêzyka chiñskiego
+Summary:	K Desktop Environment - International Support
 Group:		X11/Applications
 
 %description Simplified_Chinese
-K Desktop Environment - simplified Chinese language support.
+K Desktop Environment - International Support.
 
 %description Simplified_Chinese -l pl
-KDE - wsparcie dla uproszczonego jêzyka chiñskiego.
+KDE - Wsparcie dla t³umaczeñ miêdzynarodowych.
+
 
 %package Chinese
-Summary:	K Desktop Environment - X language support
-Summary(pl):	KDE - wsparcie dla jêzyka chiñskiego
+Summary:	K Desktop Environment - International Support
 Group:		X11/Applications
 
 %description Chinese
-K Desktop Environment - Chinese language support.
+K Desktop Environment - International Support.
 
 %description Chinese -l pl
-KDE - wsparcie dla jêzyka chiñskiego.
+KDE - Wsparcie dla t³umaczeñ miêdzynarodowych.
+
 
 %package Zulu
-Summary:	K Desktop Environment - Zulu language support
-Summary(pl):	KDE - wsparcie dla jêzyka zuluskiego
+Summary:	K Desktop Environment - International Support
 Group:		X11/Applications
 
 %description Zulu
-K Desktop Environment - Zulu language support.
+K Desktop Environment - International Support.
 
 %description Zulu -l pl
-KDE - wsparcie dla jêzyka zuluskiego.
+KDE - Wsparcie dla t³umaczeñ miêdzynarodowych.
+%endif
 
 %prep
-%setup -q -n %{name}-%{_version}
-%patch0 -p1
+%setup -q
+#%patch0 -p1
 
 %build
 %define         _sharedir       %{_datadir}
@@ -739,6 +734,7 @@ KDE - wsparcie dla jêzyka zuluskiego.
 kde_htmldir="%{_htmldir}"; export kde_htmldir
 
 LDFLAGS="%{rpmldflags}"
+#$%{__make} -f Makefile.cvs
 %configure
 %{__make} RPM_OPT_FLAGS="%{rpmcflags}"
 
@@ -768,7 +764,7 @@ FindLang() {
 
 # share/locale/(%%lang)
     if [ -d "$RPM_BUILD_ROOT/%{_datadir}/locale/$1" ]; then
-    	echo "%lang($1) %{_datadir}/locale/$1" >> "$2.lang"
+	echo "%lang($1) %{_datadir}/locale/$1" >> "$2.lang"
     fi
 
 # share/apps/amor/tips-(%%lang)
@@ -833,6 +829,7 @@ cd -
 ISDIR="`pwd`"
 for i in $package_list ; do
 	( cd $RPM_BUILD_ROOT/tmp/$i ; tar cjf %{_sourcedir}/%{name}-$i-%{version}.tar.bz2 . )
+	echo "Wrote %{name}-$i-%{version}.tar.bz2"
 done
 cd "$ISDIR"
 %endif
@@ -886,8 +883,8 @@ FindLang nn Norwegian_Nynorsk
 #FindLang no Norwegian
 # FindLang oc Gascon_occitan
 FindLang pl Polish
-FindLang pt Portuguese
-FindLang pt_BR Brazil_Portuguese
+FindLang pt Portugnese
+FindLang pt_BR Brazil_Portugnese
 FindLang ro Romanian
 FindLang ru Russian
 FindLang sk Slovak
@@ -961,8 +958,8 @@ rm -rf $RPM_BUILD_ROOT
 #%files -f Norwegian_Nynorsk.lang Norwegian_Nynorsk
 # %files -f Gascon_occitan.lang Gascon_occitan
 %files -f Polish.lang Polish
-%files -f Portuguese.lang Portuguese
-%files -f Brazil_Portuguese.lang Brazil_Portuguese
+%files -f Portugnese.lang Portugnese
+%files -f Brazil_Portugnese.lang Brazil_Portugnese
 %files -f Romanian.lang Romanian
 %files -f Russian.lang Russian
 %files -f Slovak.lang Slovak
