@@ -8,7 +8,7 @@
 # --with	kdelibs			Create single small package containing
 #					essential files only
 
-Summary:	K Desktop Environment - International Support
+Summary:	K Desktop Environment - international support
 Summary(pl):	KDE - Wsparcie dla t³umaczeñ miêdzynarodowych
 Name:		kde-i18n
 Version:	3.0.1
@@ -52,7 +52,7 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 %define		_prefix		/usr/X11R6
 
 %description
-K Desktop Environment - International Support.
+K Desktop Environment - international support.
 
 %description -l pl
 KDE - Wsparcie dla t³umaczeñ miêdzynarodowych.
@@ -65,8 +65,8 @@ Summary(pl):	KDE - Wsparcie dla t³umaczeñ miêdzynarodowych
 Group:		X11/Applications
 
 %description kdelibs
-K Desktop Environment - International Support. Package
-contains essential files only
+K Desktop Environment - international support. This package
+contains essential files only.
 
 %description -l pl kdelibs
 KDE - Wsparcie dla t³umaczeñ miêdzynarodowych. Pakiet
