@@ -953,8 +953,8 @@ rm -rf $RPM_BUILD_ROOT
 # %files -f Maori.lang Maori
 # %files -f Macedonian.lang Macedonian
 %files -f Dutch.lang Dutch
-%files -f Norwegian.lang Norwegian
-%files -f Norwegian_Nynorsk.lang Norwegian_Nynorsk
+#%files -f Norwegian.lang Norwegian
+#%files -f Norwegian_Nynorsk.lang Norwegian_Nynorsk
 # %files -f Gascon_occitan.lang Gascon_occitan
 %files -f Polish.lang Polish
 %files -f Portugnese.lang Portugnese
