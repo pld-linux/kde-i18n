@@ -1,31 +1,462 @@
-Index: kgpg.po
-===================================================================
-RCS file: /home/kde/kde-i18n/ta/messages/kdeutils/kgpg.po,v
-retrieving revision 1.3.2.15
-diff -u -r1.3.2.15 kgpg.po
---- kde-i18n-3.2.3/ta/messages/kdeutils/kgpg.po	30 May 2004 13:27:46 -0000	1.3.2.15
-+++ kde-i18n-3.2.3/ta/messages/kdeutils/kgpg.po	3 Jun 2004 10:39:52 -0000
-@@ -3189,6 +3189,7 @@
- "பொது விசையை பதவியிறக்கு. "
- "முடிவில், மறைவிடக்க "
- "செய்தியை அனுப்பு, Kgpg  "
-+"\n"
+--- kde-i18n/it/docs/kdepim/kmail/faq.docbook	2004/10/01 18:26:09	1.2.2.1 KDE_3_3_1_RELEASE
++++ kde-i18n/it/docs/kdepim/kmail/faq.docbook	2004/10/04 20:51:54	1.2.2.2 KDE_3_3_BRANCH
+@@ -43,9 +43,9 @@
+ > 
+ </authorgroup>
+ <date
+->2004-07-14</date
++>2002-10-03</date
+ > <releaseinfo
+->1.7</releaseinfo
++>1.5</releaseinfo
+ > </chapterinfo>
  
- #: tips.cpp:24
- msgid ""
-Index: kde-i18n-3.2.3/ta/messages/kdebase/ktip.po
-===================================================================
-RCS file: /home/kde/kde-i18n/ta/messages/kdebase/ktip.po,v
-retrieving revision 1.106.2.6
-retrieving revision 1.106.2.7
-diff -u -r1.106.2.6 -r1.106.2.7
---- kde-i18n-3.2.3/ta/messages/kdebase/ktip.po	30 May 2004 13:29:07 -0000	1.106.2.6
-+++ kde-i18n-3.2.3/ta/messages/kdebase/ktip.po	3 Jun 2004 07:12:41 -0000	1.106.2.7
-@@ -354,7 +354,6 @@
- "<li>print through external program (generic).</li>\n"
- "</ul>\n"
- "<p align=\"right\"><strong>-->&nbsp;</strong></p>\n"
--" "
+ <title
+@@ -65,9 +65,9 @@
+ ></question>
+ <answer>
+ <para
+->La normale modalità IMAP non gestisce i filtri, ma la nuova modalità di account IMAP senza connessione lo fa. Puoi provare ad usare filtri sul server (chiedi all'amministratore del server di posta come installare filtri sul server ed in quale formato), dal momento che IMAP è fatto per la gestione della posta <emphasis
++>Perché &kmail; attualmente non gestisce questa funzione. Devi usare filtri lato server (chiedi all'amministratore del server di posta come installare filtri sul server ed in quale formato), dal momento che IMAP è fatto per la gestione della posta <emphasis
+ >sul server</emphasis
+->. Sfortunatamente, sebbene esista un linguaggio di filtraggio della posta (Sieve, definito nell' RFC3028), non c'è un protocollo di accesso standardizzato per inviare o modificare script Sieve sul server. Nel caso che tale protocollo venga reso disponibile in futuro, &kmail; lo includerà quasi sicuramente.</para>
++>. Sfortunatamente, sebbene esista un linguaggio di filtraggio della posta (Sieve, definito nell' RFC3028), non c'è un protocollo di accesso standardizzato per inviare o modificare script Sieve lato server. Nel caso che tale protocollo venga reso disponibile in futuro, &kmail; lo includerà quasi sicuramente.</para>
+ </answer>
+ </qandaentry>
  
- #: tips.cpp:172
- msgid ""
+@@ -118,7 +118,7 @@
+ 
+ <answer
+ ><para
+->&kmail; fornisce un modo semplice e comodo per usare le funzioni principali di questi programmi. Tuttavia, è necessario comprendere bene come funzionano questi programmi e che cosa potrebbe rendere il loro uso insicuro. Alcune considerazioni importanti:</para>
++>&kmail; fornisce un modo semplice e comodo per usare le funzioni principali di questi programmi. Tuttavia, dovresti comprendere bene come questi programmi funzionano e che cosa potrebbe rendere il loro uso insicuro. Alcune considerazioni importanti:</para>
+ 
+ <itemizedlist>
+ <listitem>
+@@ -133,7 +133,7 @@
+ </listitem>
+ <listitem>
+ <para
+->&kmail; non cifra i messaggi con una chiave pubblica inaffidabile (cioè che non sia stata controfirmata). Se vuoi cifrare con una chiave del genere, devi controllare l'identità del padrone della chiave, e, solo a questo punto, controfirmare la chiave con la tua chiave segreta. Se non vuoi o non puoi controllare l'identità del padrone della chiave, ma vuoi comunque cifrare il messaggio, controfirma la chiave localmente con <userinput
++>&kmail; non cifra i messaggi con una chiave pubblica che non sia sicura (cioè che non sia stata controfirmata). Se vuoi cifrare con una chiave del genere, devi controllare l'identità del padrone della chiave, e, solo a questo punto, controfirmare la chiave con la tua chiave segreta. Se non vuoi o non puoi controllare l'identità del padrone della chiave, ma vuoi comunque cifrare il messaggio, controfirma la chiave localmente con <userinput
+ ><command
+ >gpg</command
+ > <option
+@@ -149,9 +149,9 @@
+ </listitem>
+ <listitem>
+ <para
+->&kmail; non è in grado di cifrare e firmare digitalmente gli allegati quando viene usata la gestione integrata di OpenPGP. Per avere gli allegati cifrati e firmati digitalmente,è necessario installare e configureare i <link linkend="configure-security-plugins"
++>&kmail; non è in grado di cifrare e firmare digitalmente gli allegati se usi la gestione integrata di OpenPGP. Per gli allegati cifrati e firmati digitalmente, devi avere i <link linkend="configure-security-plugins"
+ >plugin di cifratura</link
+->.</para>
++> installati e configurati.</para>
+ </listitem>
+ <listitem>
+ <para
+@@ -163,27 +163,6 @@
+ </answer>
+ </qandaentry>
+ 
+-<qandaentry>
+-<question
+-><para
+->Dove vengono messe le impostazioni ed i messaggi da &kmail;?</para
+-></question>
+-<answer>
+-<para
+->Quasi tutte le impostazioni di &kmail; sono conservate in <filename
+->$<envar
+->KDEHOME</envar
+->/share/config/kmailrc</filename
+->, dove <envar
+->$KDEHOME</envar
+-> è solitamente <filename class="directory"
+->~/.kde</filename
+->; la posta viene conservata in <filename class="directory"
+->~/Mail</filename
+->. Tieni presente che alcuni file sono nascosti, quindi ricorda di copiare anche quelli, se vuoi fare una copia di sicurezza o archiviare i messaggi ricevuti.</para>
+-</answer>
+-</qandaentry>
+-
+ <qandaentry id="faq-index-regeneration">
+ <question
+ ><para
+@@ -191,12 +170,12 @@
+ ></question>
+ <answer>
+ <para
+->&kmail; rigenera l'indice di una cartella quando ritiene che non sia aggiornato, ad esempio quando il contenuto della cartella è più recente dell'indice. &kmail; in questo caso rigenera l'indice per prevenire la perdita o la corruzione dei messaggi. Sfortunatamente i messaggi attualmente eliminati potrebbero ricomparire, e gli indicatori dei messaggi (come importante, ecc.) potrebbero venire persi dopo la rigenerazione dell'indice.</para>
++>&kmail; rigenera l'indice di una cartella quando ritiene che non sia aggiornato, ad esempio quando il contenuto della cartella è più recente dell'indice. &kmail; in questo caso rigenera l'indice per prevenire la perdita o la corruzione dei messaggi. Sfortunatamente i messaggi attualmente eliminati potrebbero ricomparire dopo la rigenerazione dell'indice.</para>
+ <para
+->Un indice non aggiornato può avere molte cause. Le due più importanti sono: <itemizedlist>
++>Un indice obsoleto può avere molte cause. Le più importanti sono: <itemizedlist>
+ <listitem
+ ><para
+->Qualche altro programma ha modificato il contenuto della cartella: se vuoi usare &kmail; assieme a procmail, leggi <link linkend="faq-procmail"
++>Qualche altro programma ha modificato il contenuto della cartella. Se vuoi usare &kmail; assieme a procmail, leggi <link linkend="faq-procmail"
+ >questa &FAQ;</link
+ >. Se vuoi usare &kmail; assieme ad un altro programma di posta, leggi <link linkend="faq-other-muas"
+ >questa &FAQ;</link
+@@ -222,13 +201,13 @@
+ <para
+ >Probabilmente hai copiato a mano il vecchio file <filename
+ >kmailrc</filename
+->. Questo non è necessario, uno script che si occupa di queste cose viene eseguito la prima volta che esegui KDE 3.x. Per risolvere il problema, elimina tutto il gruppo <quote
++>. Questo non è necessario, c'è uno script che si occupa di queste cose che viene eseguito la prima volta che esegui KDE 3.x per la prima volta. Per risolvere il problema, elimina tutto il gruppo <quote
+ >[AddressBook]</quote
+ > e le opzioni relative alla rubrica del gruppo <quote
+ >[General]</quote
+ > dal file <filename
+ >kmailrc</filename
+->. Comunque, probabilmente resteranno altri problemi che lo script di aggiornamento della configurazione avrebbe risolto.</para>
++>. Comunque, probabilmente ci saranno altri problemi che lo script di aggiornamento della configurazione avrebbe dovuto risolvere.</para>
+ </answer>
+ </qandaentry>
+ 
+@@ -261,7 +240,7 @@
+ <qandaentry>
+ <question
+ ><para
+->Come faccio ad usare un browser diverso da &konqueror; per aprire i link presenti nei messaggi?</para
++>Come faccio ad usare un broweser diverso da &konqueror; per aprire i link presenti nei messaggi?</para
+ ></question>
+ <answer>
+ <para
+@@ -285,15 +264,11 @@
+ <qandaentry>
+ <question
+ ><para
+->Come posso fare perché &kmail; controlli se sono arrivati messaggi nuovi all'avvio?</para
++>Come posso fare perché &kmail; controlli se sono arrivati messaggi nuovi appena parte?</para
+ ></question>
+ <answer>
+ <para
+->Se vuoi che &kmail; controlli sempre se sono arrivati messaggi nuovi all'avvio, abilita <guilabel
+->Controlla la posta all'avvio</guilabel
+-> dalla <link linkend="configure-network-receiving"
+->pagina di configurazione della rete</link
+->. Altrimenti, avvia &kmail; con <command
++>Fai partire &kmail; con <command
+ >kmail <option
+ >--check</option
+ ></command
+@@ -316,7 +291,24 @@
+ <qandaentry>
+ <question
+ ><para
+->Dove posso trovare la lista dei cambiamenti nelle versioni di &kmail;?</para
++>&kmail;, dove mette le mie impostazioni?</para
++></question>
++<answer>
++<para
++>Tutte le impostazioni di &kmail; sono conservate in <filename
++>$KDEHOME/share/config/kmailrc</filename
++>, dove <filename
++>$KDEHOME</filename
++> è solitamente <filename class="directory"
++>~/.kde</filename
++>.</para>
++</answer>
++</qandaentry>
++
++<qandaentry>
++<question
++><para
++>Dove posso trovare la lista delle modifiche tra le versioni di &kmail;?</para
+ ></question>
+ <answer>
+ <para
+@@ -343,11 +335,11 @@
+ >folders=/home/username/.mail</userinput
+ > alla sezione <quote
+ >[General]</quote
+->. Quindi sposta tutte le cartelle esistenti (compresi i file-indice nascosti) alla nuova posizione. La prossima volta che avvierai &kmail; userà <filename class="directory"
++>. Quindi sposta tutte le cartelle esistenti (compresi i file-indice nascosti) nella nuova posizione. La prossima volta che avvierai &kmail; userà <filename class="directory"
+ >/home/username/.mail</filename
+ > al posto di <filename class="directory"
+ >/home/username/Mail</filename
+->. Sappi che &kmail; perderà la configurazione dei filtri se cambi la posizione della cartella della posta senza spostare le cartelle esistenti.</para>
++>. Sappi che &kmail; perderà i filtri se cambi la posizione della cartella della posta ma non sposti le cartelle esistenti.</para>
+ </answer>
+ </qandaentry>
+ 
+@@ -397,9 +389,11 @@
+ ></question>
+ <answer
+ ><para
+->Probabilmente il campo <quote
++>Probabilmente l'header <quote
+ >Date:</quote
+-> dell'intestazione è malformato, e &kmail; non è in grado di interpretarlo. Questo non è un bug di &kmail;, ma del programma che ha inviato il messaggio.</para
++> di questi messaggi è malformato, magari manca l'informazione sul fuso orario. Per questo caso, abbiamo aggiunto un accorgimento in mimelib. Mimelib fa parte del pacchetto kdenetwork, e dovete assicurarvi di usare la mimelib di &kde; e non altre sul vostro sistema. Se questo non basta, allora il campo <quote
++>Data:</quote
++> è veramente rotto e &kmail; non può interpretarlo. Questo non è un bug di &kmail;, ma del programma che ha inviato la lettera.</para
+ ></answer>
+ </qandaentry>
+ 
+@@ -410,7 +404,7 @@
+ ></question>
+ <answer>
+ <para
+->Separare la firma dal corpo del messaggio con due trattini ed uno spazio è una consuetudine diffusa, che permette ai programmi di posta che riconoscono questa convenzione di eliminare la firma dalle risposte. Se la firma non ha già il separatore, &kmail; lo aggiungerà automaticamente.</para>
++>Separare la firma dal corpo del messaggio con due trattini ed uno spazio è uno standard comune. Se la firma non ha già il separatore, &kmail; lo aggiungerà automaticamente.</para>
+ </answer>
+ </qandaentry>
+ 
+@@ -421,12 +415,12 @@
+ ></question>
+ <answer
+ ><para
+->Questo capita se hai selezionato <guilabel
+->Mantieni i messaggi scaricati sul server</guilabel
+-> ed il server POP3 non supporta il comando UIDL. Non c'è attualmente un modo di aggirare il problema, tranne quello di deselezionare <guilabel
+->Mantieni i messaggi scaricati sul server</guilabel
+->. Una spiegazione più dettagliata si trova in <ulink url="http://lists.kde.org/?l=kmail&amp;m=99220697415300&amp;w=2"
+->questo messaggio della mailing list</ulink
++>Questo capita se hai deselezionato <guilabel
++>Cancella la posta dal server</guilabel
++> ed il server POP3 non supporta il comando UIDL. Non c'è attualmente un modo di aggirare il problema, tranne quello di selezionare <guilabel
++>Cancella la posta dal server</guilabel
++>. Una spiegazione più dettagliata si trova nella <ulink url="http://lists.kde.org/?l=kmail&amp;m=99220697415300&amp;w=2"
++>mailing list </ulink
+ >.</para
+ ></answer>
+ </qandaentry>
+@@ -440,13 +434,13 @@
+ <para
+ >Puoi trovare la lista dei bug segnalati alla pagina <ulink url="http://kmail..kde.org"
+ >Home di &kmail;</ulink
+->. Tieni presente che non tutti i bug segnalati sono validi; tutto sommato riteniamo che &kmail; sia attualmente un programma discretamente robusto.</para>
++>. Tieni presente che non tutti i bug segnalati sono validi; tutto sommato riteniamo che &kmail; sia attualmente un buon pezzo di software.</para>
+ <para
+ ><warning
+ ><para
+->In ogni caso, non dovresti usare &kmail; mentre un altro client di posta accede ai file in <filename class="directory"
++>Comunque, non dovresti usare &kmail; mentre un altro client di posta accede ai file in <filename class="directory"
+ >~/Mail</filename
+->. Facendolo, c'è il rischio di perdere alcuni o tutti i messaggi. È comunque una prassi consigliata fare copie di sicurezza dei messaggi regolarmente.</para
++>. Facendolo, rischi di perdere dei messaggi. Nota che è comunque saggio fare copie di sicurezza dei messaggi regolarmente.</para
+ ></warning
+ ></para>
+ </answer>
+@@ -455,19 +449,42 @@
+ <qandaentry>
+ <question
+ ><para
++>Le cartelle mbox continuano a crescere anche quando cancello i messaggi.</para
++></question>
++<answer
++><para
++>Per rimuovere effettivamente i messaggi dal disco, devi compattare le cartelle usando <menuchoice
++><guimenu
++>File</guimenu
++><guimenuitem
++>Compatta tutte le cartelle</guimenuitem
++></menuchoice
++> (Questo avviene anche ogni volta che esci da &kmail;, se non hai modificato le opzioni predefinite).</para>
++</answer>
++</qandaentry>
++
++<qandaentry>
++<question
++><para
+ >&kmail; non mostra i messaggi in <acronym
+ >HTML</acronym
+ > correttamente.</para
+ ></question>
+ <answer
+ ><para
+->I riferimenti a contenuti esterni, come le immagini, sono normalmente disabilitati, perché possono permettere di capire se e quando stai leggendo il messaggio. Il caricamento dei riferimenti esterni può essere attivato dalla scheda <guilabel
+->Sicurezza</guilabel
+-> della finestra di configurazione di &kmail;.I plugin del browser (come <trademark class="registered"
++>Per vedere i messaggi in formato <acronym
++>HTML</acronym
++> seleziona <menuchoice
++><guimenu
++>Cartella</guimenu
++><guimenuitem
++>Preferisci HTML al testo semplice</guimenuitem
++></menuchoice
++>. Per ragioni di sicurezza dovresti farlo solo per lettere sicure. Tieni presente che i plugin (come <trademark class="registered"
+ >Macromedia</trademark
+ > <application
+ >Flash</application
+->), &Java; e JavaScript non sono disponibili in &kmail; per motivi di sicurezza, e non c'è modo di attivarli.</para
++>), &Java; e JavaScript non saranno mostrati in &kmail; per motivi di sicurezza, e non c'è modo di attivarli.</para
+ ></answer>
+ </qandaentry>
+ 
+@@ -478,7 +495,7 @@
+ ></question>
+ <answer
+ ><para
+->Si può avere una sola istanza attiva di &kmail; per volta. Raccomandiamo inoltre di non andare avanti e indietro tra diverse versioni. Tornare indietro ad una vecchia versione può causare problemi, &eg; perché il file indice ha cambiato formato. L'aggiornamento non dovrebbe mai dare problemi.</para
++>Si può avere una sola istanza attiva di kde &kmail; per volta. Raccomandiamo inoltre di non andare avanti e indietro tra diverse versioni. Tornare indietro ad una vecchia versione può causare problemi, &eg; perché il file indice ha cambiato formato. L'aggiornamento non dovrebbe mai dare problemi.</para
+ ></answer>
+ </qandaentry>
+ 
+@@ -500,13 +517,13 @@
+ <qandaentry>
+ <question
+ ><para
+->&kmail; è andato in crash mentre stavo scrivendo una lettera. Posso recuperare il mio lavoro?</para
++>&kmail; è andato in crash mentre scrivevo una lettera. Posso recuperare il mio lavoro?</para
+ ></question>
+ <answer
+ ><para
+->&kmail; prova a salvare il messaggio in <filename
++>&kmail; prova a salvare la lettera in <filename
+ >~/dead.letter</filename
+-> in caso di crash. All'avvio successivo di &kmail; dovrebbe aprire automaticamente la finestra di composizione con il tup messaggio. Se non lo fa, prova ad aprire il file <filename
++> in caso di crash. La prossima volta che attivi &kmail; il compositore dovrebbe apparire aperto con la tua lettera. Se non lo fa, prova ad aprire il file <filename
+ >~/dead.letter</filename
+ > con un editor di testo. Se il file non esiste, &kmail; ha avuto un crash troppo grave per riuscire a salvare il file.</para
+ ></answer>
+@@ -519,11 +536,11 @@
+ ></question>
+ <answer
+ ><para
+->Associare una cartella ad una mailing-list non ha nessuna relazione con il filtraggio dei messaggi &mdash; devi aggiungere una regola di filtraggio a mano. Comunque, una volta associata la cartella con la mailing list, puoi usare <menuchoice
++>Associare una cartella ad una lista non attiva alcun filtro per la mailing list. Bisogna aggiungere il filtro a mano. Comunque, una volta associata la cartella con la mailing list, puoi usare <menuchoice
+ > <guimenu
+ >Messaggio</guimenu
+ ><guimenuitem
+->Rispondi alla Mailing-List...</guimenuitem
++>Rispondi alla lista...</guimenuitem
+ ></menuchoice
+ > o <menuchoice
+ ><guimenu
+@@ -540,11 +557,11 @@
+ <qandaentry>
+ <question
+ ><para
+->Il mio server SMTP richiede l'autenticazione. È possibile usarlo con &kmail;?</para
++>Il mio server SMTP richiede l'autenticazione. &kmail; la supporta?</para
+ ></question>
+ <answer
+ ><para
+->Due tecniche sono comunemente usate per l'autenticazione <acronym
++>Ci sono due tecniche comuni usate per l'autenticazione <acronym
+ >SMTP</acronym
+ >: <quote
+ >SMTP dopo POP3</quote
+@@ -552,17 +569,13 @@
+ >SMTP auth</quote
+ >. <quote
+ >SMTP auth</quote
+-> può essere impostata dalla scheda <guilabel
+->Generale</guilabel
+-> della finestra di configurazione del protocollo SMTP. Per usare <quote
++> può essere impostata dalla linguetta <guilabel
++>Security</guilabel
++> della finestra di dialogo di configurazione del protocollo SMTP. Per usare <quote
+ >SMTP dopo POP3</quote
+ > devi raggruppare la posta nella <guilabel
+ >posta in uscita</guilabel
+-> ed inviarla subito dopo aver ritirato nuova posta. Puoi fare in modo che &kmail; inoltri la posta in uscita automaticamente con l'opzione <guilabel
+->Spedisci i messaggi della cartella in uscita</guilabel
+-> della <link linkend="configure-network-sending"
+->pagina di configurazione della rete</link
+->. </para
++> ed inviarla subito dopo aver ritirato nuova posta. </para
+ ></answer>
+ </qandaentry>
+ 
+@@ -580,7 +593,7 @@
+ > e &kmail; insieme devi configurare &kmail; in modo da leggere la posta dai file spool dove <application
+ >procmail</application
+ > mette la posta. <emphasis
+->Non provare a configurare</emphasis
++>Non provare aconfigurare</emphasis
+ > <application
+ >procmail</application
+ > per inserire la posta in una cartella di &kmail;, questo non funziona.</para>
+@@ -590,7 +603,7 @@
+ >.procmail</filename
+ >, e cercherà di elencare tutti i file spool trovati, ed anche i file di lock alla voce <guilabel
+ >Lockfile di procmail</guilabel
+->. Procmail permette di specificare file di lock in tre modi diversi, quindi non si può stabilire una corrispondenza tra i file di spool ed i file di lock. Specificare il file di lock giusto per ogni file di spool, quindi, è completamente a tuo carico.</para>
++>. Procmail permette di specificare file di lock in tre modi diversi, quindi non si può stabilire una corrispondenza tra i file di spool ed i file di lock. È quindi completamente sotto la tua responsabilità specificare il file di lock giusto per ogni file di spool.</para>
+ </answer>
+ </qandaentry>
+ 
+@@ -798,8 +811,8 @@
+ >. Seleziona l'account dalla lista e premi il pulsante <guilabel
+ >Modifica...</guilabel
+ >. Questa finestra di dialogo contiene l'impostazione <guilabel
+->Mantieni sul server i messaggi scaricati</guilabel
+-> che deve essere selezionata.</para
++>Elimina il messaggio dal server dopo averlo scaricato</guilabel
++> che deve essere deselezionata.</para
+ ></answer>
+ </qandaentry>
+ 
+@@ -810,7 +823,7 @@
+ ></question>
+ <answer
+ ><para
+->Il testo di chiusura è anche chiamato firma (da non confondere con la firma crittografica). Seleziona <menuchoice
++>Si utilizza un file di firma. Seleziona <menuchoice
+ ><guimenu
+ >Impostazioni</guimenu
+ > <guimenuitem
+@@ -818,15 +831,9 @@
+ ></menuchoice
+ > Cerca nella pagina <guilabel
+ >Identità</guilabel
+-> la scheda <guilabel
++> la linguetta <guilabel
+ >Firma</guilabel
+-> ed inserisci la firma. Poi vai alla scheda <guilabel
+->Generale</guilabel
+-> della pagina <guilabel
+->Compositore</guilabel
+-> e marca la casella <guilabel
+->Aggiungi automaticamente la firma</guilabel
+->. <xref linkend="configure-composer-general-append-signature"/></para
++> ed inserisci la firma.</para
+ ></answer
+ > 
+ </qandaentry>
+@@ -840,12 +847,14 @@
+ 
+ <answer
+ ><para
+->Dovresti prima controllare se la distribuzione che usi può farlo per te. Probabilmente è già stato configurato durante l'installazione del sistema.</para>
++>Dovresti prima controllare se la vostra distribuzione &Linux;/BSD/quel-che-è può farlo per te. Probabilmente è già stato configurato durante l'installazione del sistema.</para>
+ 
+ <para
+->Se non è così, prova a leggere l'<ulink url="http://en.tldp.org/HOWTO/mini/Mail-Queue.html"
++>Se non è così, dai un'occhiata all' <ulink url="http://www.linuxdoc.org/HOWTO/mini/Mail-Queue.html"
+ >HOWTO sulla Mail Queue</ulink
+->.</para
++> o alla <ulink url="http://www.leg.uct.ac.za/Articles/sendmail_dialup.html"
++>pagina del gruppo di utenti UCT per la configurazione di sendmail con account dialup</ulink
++> (entrambi i collegamenti sono in inglese).</para
+ ></answer>
+ </qandaentry>
+ 
+@@ -872,4 +881,22 @@
+ 
+ </qandaset>
+ 
++<sect1 id="faq-authors">
++<title
++>Autori della sezione</title>
++
++<para
++>Questa sezione è stata scritta da Daniel Naber <email
++>daniel.naber@t-online.de</email
++> e David Rugge <email
++>davidrugge@mediaone.net</email
++>.</para>
++
++<para
++>Luciano Montanaro <email
++>mikelima@cirulla.net</email
++> (Traduzione del documento)</para
++> 
++
++</sect1>
+ </chapter>
