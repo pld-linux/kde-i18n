@@ -821,36 +821,11 @@ kde_htmldir="%{_htmldir}"; export kde_htmldir
 
 LDFLAGS="%{rpmldflags}"
 
-for plik in `find ./ -name \*.desktop` ; do
-	echo $plik
-	perl -pi -e "s/\[nb\]/\[no\]/g" $plik
-done
-
-# Not necessary for now
-# for plik in `find ./ -name highscore\*` ; do
-#	if [ -d $plik ]; then
-#	echo $plik
-#	perl -pi -e "s/nb/no/g" $plik
-#	fi
-# done
-
-for plik in `find ./nb -name Makefile.am` ; do
-	echo $plik
-	perl -pi -e "s/nb/no/g" $plik
-done
-
-for plik in `find ./nb -name configure.in.in` ; do
-	echo $plik
-	perl -pi -e "s/nb/no/g" $plik
-done
-
-perl -pi -e "s/nb/no/g" ./subdirs
-perl -pi -e "s/nb/no/g" ./teamnames
-mv -f nb no
 %{__make} -f admin/Makefile.common cvs
 
 %configure
-%{__make} RPM_OPT_FLAGS="%{rpmcflags}"
+%{__make} \
+	RPM_OPT_FLAGS="%{rpmcflags}"
 
 %install
 rm -rf $RPM_BUILD_ROOT
@@ -992,9 +967,9 @@ FindLang lt Lithuanian
 # FindLang mi Maori
 FindLang mk Macedonian
 FindLang mt Maltese
+FindLang nb Norwegian_Bokmaal
 FindLang nl Dutch
 FindLang nn Norwegian_Nynorsk
-FindLang no Norwegian_Bokmaal
 FindLang nso Northern_Sotho
 # FindLang oc Gascon_occitan
 FindLang pl Polish
