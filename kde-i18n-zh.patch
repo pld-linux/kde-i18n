@@ -1,0 +1,1424 @@
+diff -uNr kde-i18n-2.2.2.orig/af/messages/entry.desktop kde-i18n-2.2.2/af/messages/entry.desktop
+--- kde-i18n-2.2.2.orig/af/messages/entry.desktop	Tue Jun 18 00:32:32 2002
++++ kde-i18n-2.2.2/af/messages/entry.desktop	Tue Jun 18 00:52:03 2002
+@@ -30,4 +30,4 @@
+ Name[uk]=Південно-Африканська
+ Name[vi]=Tiếng Hà Lan-Nam Phi 
+ Name[xh]=isiBhulu
+-Name[zh_CN.GB2312]=南非荷兰语
++Name[zh_CN]=南非荷兰语
+diff -uNr kde-i18n-2.2.2.orig/az/messages/entry.desktop kde-i18n-2.2.2/az/messages/entry.desktop
+--- kde-i18n-2.2.2.orig/az/messages/entry.desktop	Tue Jun 18 00:32:32 2002
++++ kde-i18n-2.2.2/az/messages/entry.desktop	Tue Jun 18 01:17:47 2002
+@@ -36,5 +36,5 @@
+ Name[vi]=Agiecbaigiăng 
+ Name[wa]=Azeri
+ Name[xh]=isi-Azerbaijani
+-Name[zh_CN.GB2312]=阿塞拜疆语
++Name[zh_CN]=阿塞拜疆语
+ 
+diff -uNr kde-i18n-2.2.2.orig/bg/messages/entry.desktop kde-i18n-2.2.2/bg/messages/entry.desktop
+--- kde-i18n-2.2.2.orig/bg/messages/entry.desktop	Tue Jun 18 00:32:32 2002
++++ kde-i18n-2.2.2/bg/messages/entry.desktop	Tue Jun 18 00:48:31 2002
+@@ -47,4 +47,4 @@
+ Name[vi]=Tiếng  Bungari 
+ Name[wa]=Bulgåre
+ Name[xh]=isiBulgarian
+-Name[zh_CN.GB2312]=保加利亚语
++Name[zh_CN]=保加利亚语
+diff -uNr kde-i18n-2.2.2.orig/check_po_files kde-i18n-2.2.2/check_po_files
+--- kde-i18n-2.2.2.orig/check_po_files	Tue Jun 18 00:32:32 2002
++++ kde-i18n-2.2.2/check_po_files	Tue Jun 18 00:35:18 2002
+@@ -128,7 +128,7 @@
+  'tr' => 1,
+  'uk' => 3,
+  'vi' => 1,
+- 'zh_CN.GB2312' => 1,
++ 'zh_CN' => 1,
+ );
+ 
+ sub check_qt_args($$){
+diff -uNr kde-i18n-2.2.2.orig/cs/messages/entry.desktop kde-i18n-2.2.2/cs/messages/entry.desktop
+--- kde-i18n-2.2.2.orig/cs/messages/entry.desktop	Tue Jun 18 00:32:32 2002
++++ kde-i18n-2.2.2/cs/messages/entry.desktop	Tue Jun 18 00:45:54 2002
+@@ -47,4 +47,4 @@
+ Name[vi]=Tiếng Séc 
+ Name[wa]=Tcheke
+ Name[xh]=isiCzech
+-Name[zh_CN.GB2312]=捷克语
++Name[zh_CN]=捷克语
+diff -uNr kde-i18n-2.2.2.orig/da/messages/entry.desktop kde-i18n-2.2.2/da/messages/entry.desktop
+--- kde-i18n-2.2.2.orig/da/messages/entry.desktop	Tue Jun 18 00:32:32 2002
++++ kde-i18n-2.2.2/da/messages/entry.desktop	Tue Jun 18 00:48:24 2002
+@@ -48,4 +48,4 @@
+ Name[vi]=Tiếng Đan Mạch 
+ Name[wa]=Danwès
+ Name[xh]=isiDanish
+-Name[zh_CN.GB2312]=丹麦语
++Name[zh_CN]=丹麦语
+diff -uNr kde-i18n-2.2.2.orig/de/messages/entry.desktop kde-i18n-2.2.2/de/messages/entry.desktop
+--- kde-i18n-2.2.2.orig/de/messages/entry.desktop	Tue Jun 18 00:32:32 2002
++++ kde-i18n-2.2.2/de/messages/entry.desktop	Tue Jun 18 00:45:47 2002
+@@ -48,4 +48,4 @@
+ Name[vi]=Tiếng Đức 
+ Name[wa]=Almand
+ Name[xh]=isiJamani
+-Name[zh_CN.GB2312]=德语
++Name[zh_CN]=德语
+diff -uNr kde-i18n-2.2.2.orig/debian/rules kde-i18n-2.2.2/debian/rules
+--- kde-i18n-2.2.2.orig/debian/rules	Tue Nov  6 03:50:13 2001
++++ kde-i18n-2.2.2/debian/rules	Tue Jun 18 00:42:50 2002
+@@ -56,11 +56,11 @@
+ 	  pt_BR) \
+ 	    dh_movefiles -pkde-i18n-ptbr usr/share/locale/pt_BR usr/share/doc/kde-i18n/pt_BR usr/share/doc/kde/HTML/pt_BR ;\
+ 	  ;; \
+-	  zh_CN.GB2312) \
+-	    dh_movefiles -pkde-i18n-zhcngb2312 usr/share/locale/zh_CN.GB2312 usr/share/doc/kde-i18n/zh_CN.GB2312 usr/share/doc/kde/HTML/zh_CN.GB2312 ;\
++	  zh_CN) \
++	    dh_movefiles -pkde-i18n-zhcngb2312 usr/share/locale/zh_CN usr/share/doc/kde-i18n/zh_CN usr/share/doc/kde/HTML/zh_CN ;\
+ 	  ;; \
+-	  zh_TW.Big5) \
+-	    dh_movefiles -pkde-i18n-zhtwbig5 usr/share/locale/zh_TW.Big5 usr/share/doc/kde-i18n/zh_TW.Big5 usr/share/doc/kde/HTML/zh_TW.Big5 ;\
++	  zh_TW) \
++	    dh_movefiles -pkde-i18n-zhtw usr/share/locale/zh_TW usr/share/doc/kde-i18n/zh_TW usr/share/doc/kde/HTML/zh_TW ;\
+ 	 ;; \
+ 	 *) \
+ 	  dh_movefiles -pkde-i18n-$$i usr/share/apps/amor/tips-$$i usr/share/apps/ktuberling/sounds/$$i usr/share/locale/$$i usr/share/doc/kde-i18n/$$i usr/share/doc/kde/HTML/$$i ;\
+diff -uNr kde-i18n-2.2.2.orig/el/messages/entry.desktop kde-i18n-2.2.2/el/messages/entry.desktop
+--- kde-i18n-2.2.2.orig/el/messages/entry.desktop	Tue Jun 18 00:32:32 2002
++++ kde-i18n-2.2.2/el/messages/entry.desktop	Tue Jun 18 00:48:16 2002
+@@ -48,4 +48,4 @@
+ Name[vi]=Tiếng Hy Lạp 
+ Name[wa]=Grek
+ Name[xh]=isiGrike
+-Name[zh_CN.GB2312]=希腊语
++Name[zh_CN]=希腊语
+diff -uNr kde-i18n-2.2.2.orig/en_GB/messages/entry.desktop kde-i18n-2.2.2/en_GB/messages/entry.desktop
+--- kde-i18n-2.2.2.orig/en_GB/messages/entry.desktop	Tue Jun 18 00:32:32 2002
++++ kde-i18n-2.2.2/en_GB/messages/entry.desktop	Tue Jun 18 00:45:35 2002
+@@ -38,5 +38,5 @@
+ Name[vi]=Tiếng Anh (UK) 
+ Name[wa]=Inglès (GB)
+ Name[xh]=isiNgesi (UK)
+-Name[zh_CN.GB2312]=英语 - (UK)
++Name[zh_CN]=英语 - (UK)
+ 
+diff -uNr kde-i18n-2.2.2.orig/eo/messages/entry.desktop kde-i18n-2.2.2/eo/messages/entry.desktop
+--- kde-i18n-2.2.2.orig/eo/messages/entry.desktop	Tue Jun 18 00:32:32 2002
++++ kde-i18n-2.2.2/eo/messages/entry.desktop	Tue Jun 18 00:48:09 2002
+@@ -18,4 +18,4 @@
+ Name[uk]=Есперанто
+ Name[vi]=Tiếng Etpêrantô 
+ Name[xh]=isi-Esperanto
+-Name[zh_CN.GB2312]=世界语
++Name[zh_CN]=世界语
+diff -uNr kde-i18n-2.2.2.orig/es/messages/entry.desktop kde-i18n-2.2.2/es/messages/entry.desktop
+--- kde-i18n-2.2.2.orig/es/messages/entry.desktop	Tue Jun 18 00:32:32 2002
++++ kde-i18n-2.2.2/es/messages/entry.desktop	Tue Jun 18 00:45:25 2002
+@@ -48,4 +48,4 @@
+ Name[vi]=Tiếng Tây Ban Nha 
+ Name[wa]=Castiyan
+ Name[xh]=isiPanish
+-Name[zh_CN.GB2312]=西班牙语
++Name[zh_CN]=西班牙语
+diff -uNr kde-i18n-2.2.2.orig/et/messages/entry.desktop kde-i18n-2.2.2/et/messages/entry.desktop
+--- kde-i18n-2.2.2.orig/et/messages/entry.desktop	Tue Jun 18 00:32:32 2002
++++ kde-i18n-2.2.2/et/messages/entry.desktop	Tue Jun 18 00:48:02 2002
+@@ -47,4 +47,4 @@
+ Name[vi]=Tiếng Estonian 
+ Name[wa]=Estonyin
+ Name[xh]=isi-Estonian
+-Name[zh_CN.GB2312]=爱沙尼亚语
++Name[zh_CN]=爱沙尼亚语
+diff -uNr kde-i18n-2.2.2.orig/fi/messages/entry.desktop kde-i18n-2.2.2/fi/messages/entry.desktop
+--- kde-i18n-2.2.2.orig/fi/messages/entry.desktop	Tue Jun 18 00:32:32 2002
++++ kde-i18n-2.2.2/fi/messages/entry.desktop	Tue Jun 18 00:45:16 2002
+@@ -48,4 +48,4 @@
+ Name[vi]=Tiếng Phần Lan 
+ Name[wa]=Finwès
+ Name[xh]=isiFinnish
+-Name[zh_CN.GB2312]=芬兰语
++Name[zh_CN]=芬兰语
+diff -uNr kde-i18n-2.2.2.orig/fr/messages/entry.desktop kde-i18n-2.2.2/fr/messages/entry.desktop
+--- kde-i18n-2.2.2.orig/fr/messages/entry.desktop	Tue Jun 18 00:32:32 2002
++++ kde-i18n-2.2.2/fr/messages/entry.desktop	Tue Jun 18 00:47:53 2002
+@@ -46,4 +46,4 @@
+ Name[tr]=Fransızca
+ Name[uk]=Французька
+ Name[xh]=isiFrentshi
+-Name[zh_CN.GB2312]=法语
++Name[zh_CN]=法语
+diff -uNr kde-i18n-2.2.2.orig/he/messages/entry.desktop kde-i18n-2.2.2/he/messages/entry.desktop
+--- kde-i18n-2.2.2.orig/he/messages/entry.desktop	Tue Jun 18 00:32:32 2002
++++ kde-i18n-2.2.2/he/messages/entry.desktop	Tue Jun 18 00:45:09 2002
+@@ -47,4 +47,4 @@
+ Name[uk]=Іврит
+ Name[vi]=Tiếng Do Thái 
+ Name[xh]=isiHebhere
+-Name[zh_CN.GB2312]=希伯来语
++Name[zh_CN]=希伯来语
+diff -uNr kde-i18n-2.2.2.orig/highscore kde-i18n-2.2.2/highscore
+--- kde-i18n-2.2.2.orig/highscore	Tue Jun 18 00:32:32 2002
++++ kde-i18n-2.2.2/highscore	Tue Jun 18 00:35:26 2002
+@@ -3221,7 +3221,7 @@
+    kspread:  52 untranslated
+    kword:  1 untranslated
+    kdelibs:  2 untranslated
+-zh_CN.GB2312:
++zh_CN:
+    kcmlilo: 3 fuzzy 
+    kcmlinuz: 1 fuzzy 2 untranslated
+    kcron: 5 fuzzy 1 untranslated
+@@ -3356,7 +3356,7 @@
+    desktop: 34 fuzzy 18 untranslated
+    kdelibs: 15 fuzzy 3 untranslated
+    ppdtranslations:  1737 untranslated
+-zh_TW.Big5:
++zh_TW:
+    kcmlilo: 7 fuzzy 3 untranslated
+    kpackage: 37 fuzzy 23 untranslated
+    ksysv: 11 fuzzy 3 untranslated
+diff -uNr kde-i18n-2.2.2.orig/highscore.html kde-i18n-2.2.2/highscore.html
+--- kde-i18n-2.2.2.orig/highscore.html	Tue Jun 18 00:32:32 2002
++++ kde-i18n-2.2.2/highscore.html	Tue Jun 18 00:35:33 2002
+@@ -4172,7 +4172,7 @@
+ <table cellpadding=3 border=0><tr><th align="left" colspan="3"> Desktop and KDELibs</th></tr>
+ <tr><td>kdelibs</td><td></td><td>2 untranslated</td></tr>
+ </table>
+-<H2><A name="zh_CN.GB2312"></A>zh_CN.GB2312</H2>
++<H2><A name="zh_CN"></A>zh_CN</H2>
+ <table cellpadding=3 border=0><tr><th align="left" colspan="3"> kdeadmin</th></tr>
+ <tr><td>kcmlilo</td><td>3 fuzzy</td><td></td></tr>
+ <tr><td>kcmlinuz</td><td>1 fuzzy</td><td>2 untranslated</td></tr>
+@@ -4334,10 +4334,10 @@
+ <tr><td>desktop</td><td>34 fuzzy</td><td>18 untranslated</td></tr>
+ <tr><td>kdelibs</td><td>15 fuzzy</td><td>3 untranslated</td></tr>
+ </table>
+-<table cellpadding=3 border=0><tr><th align="left" colspan="3"> zh_CN.GB2312/messages/ppdtranslations.po</th></tr>
++<table cellpadding=3 border=0><tr><th align="left" colspan="3"> zh_CN/messages/ppdtranslations.po</th></tr>
+ <tr><td>ppdtranslations</td><td></td><td>1737 untranslated</td></tr>
+ </table>
+-<H2><A name="zh_TW.Big5"></A>zh_TW.Big5</H2>
++<H2><A name="zh_TW"></A>zh_TW</H2>
+ <table cellpadding=3 border=0><tr><th align="left" colspan="3"> kdeadmin</th></tr>
+ <tr><td>kcmlilo</td><td>7 fuzzy</td><td>3 untranslated</td></tr>
+ <tr><td>kpackage</td><td>37 fuzzy</td><td>23 untranslated</td></tr>
+diff -uNr kde-i18n-2.2.2.orig/hu/messages/entry.desktop kde-i18n-2.2.2/hu/messages/entry.desktop
+--- kde-i18n-2.2.2.orig/hu/messages/entry.desktop	Tue Jun 18 00:32:32 2002
++++ kde-i18n-2.2.2/hu/messages/entry.desktop	Tue Jun 18 00:47:41 2002
+@@ -48,4 +48,4 @@
+ Name[vi]=Tiếng Hung-ga-ri 
+ Name[wa]=Hongrwès
+ Name[xh]=isiHungarian
+-Name[zh_CN.GB2312]=匈牙利语
++Name[zh_CN]=匈牙利语
+diff -uNr kde-i18n-2.2.2.orig/is/messages/entry.desktop kde-i18n-2.2.2/is/messages/entry.desktop
+--- kde-i18n-2.2.2.orig/is/messages/entry.desktop	Tue Jun 18 00:32:32 2002
++++ kde-i18n-2.2.2/is/messages/entry.desktop	Tue Jun 18 00:50:13 2002
+@@ -47,4 +47,4 @@
+ Name[uk]=Ісландська
+ Name[vi]=Tiếng Ai-xơ-len
+ Name[xh]=isi-Icelandic
+-Name[zh_CN.GB2312]=冰岛语
++Name[zh_CN]=冰岛语
+diff -uNr kde-i18n-2.2.2.orig/it/messages/entry.desktop kde-i18n-2.2.2/it/messages/entry.desktop
+--- kde-i18n-2.2.2.orig/it/messages/entry.desktop	Tue Jun 18 00:32:32 2002
++++ kde-i18n-2.2.2/it/messages/entry.desktop	Tue Jun 18 00:47:34 2002
+@@ -46,4 +46,4 @@
+ Name[uk]=Італійська
+ Name[vi]=Tiếng ÁE
+ Name[xh]=isiTaliyane
+-Name[zh_CN.GB2312]=意大利语
++Name[zh_CN]=意大利语
+diff -uNr kde-i18n-2.2.2.orig/ja/messages/entry.desktop kde-i18n-2.2.2/ja/messages/entry.desktop
+--- kde-i18n-2.2.2.orig/ja/messages/entry.desktop	Tue Jun 18 00:32:32 2002
++++ kde-i18n-2.2.2/ja/messages/entry.desktop	Tue Jun 18 00:50:05 2002
+@@ -47,4 +47,4 @@
+ Name[uk]=Японська
+ Name[vi]=Tiếng Nhật 
+ Name[xh]=isiJaphani
+-Name[zh_CN.GB2312]=日语
++Name[zh_CN]=日语
+diff -uNr kde-i18n-2.2.2.orig/kde-i18n.spec.in kde-i18n-2.2.2/kde-i18n.spec.in
+--- kde-i18n-2.2.2.orig/kde-i18n.spec.in	Sun Dec 31 17:34:04 2000
++++ kde-i18n-2.2.2/kde-i18n.spec.in	Tue Jun 18 00:35:22 2002
+@@ -490,11 +490,11 @@
+ #%{prefix}/share/locale/wa/*
+ 
+ %files Simplified-Chinese
+-%{prefix}/share/locale/zh_CN.GB2312/*
+-%doc %{prefix}/share/doc/HTML/zh_CN.GB2312/*
++%{prefix}/share/locale/zh_CN/*
++%doc %{prefix}/share/doc/HTML/zh_CN/*
+ 
+ %files Traditional-Chinese
+-%{prefix}/share/locale/zh_TW.Big5/*
++%{prefix}/share/locale/zh_TW/*
+ 
+ %changelog
+ * Mon Jan  1 2001 Chih-Wei Huang <cwhuang@linux.org.tw>
+diff -uNr kde-i18n-2.2.2.orig/ko/messages/entry.desktop kde-i18n-2.2.2/ko/messages/entry.desktop
+--- kde-i18n-2.2.2.orig/ko/messages/entry.desktop	Tue Jun 18 00:32:32 2002
++++ kde-i18n-2.2.2/ko/messages/entry.desktop	Tue Jun 18 00:47:27 2002
+@@ -45,4 +45,4 @@
+ Name[uk]=Корейська
+ Name[vi]=Tiếng Hàn Quốc 
+ Name[xh]=isiKorea
+-Name[zh_CN.GB2312]=朝鲜语
++Name[zh_CN]=朝鲜语
+diff -uNr kde-i18n-2.2.2.orig/lt/messages/entry.desktop kde-i18n-2.2.2/lt/messages/entry.desktop
+--- kde-i18n-2.2.2.orig/lt/messages/entry.desktop	Tue Jun 18 00:32:32 2002
++++ kde-i18n-2.2.2/lt/messages/entry.desktop	Tue Jun 18 00:49:57 2002
+@@ -44,4 +44,4 @@
+ Name[uk]=Литовська
+ Name[vi]=Lithuanian(Kiểu bàn phím Lithuanian) 
+ Name[xh]=isiLithuanian
+-Name[zh_CN.GB2312]=立陶宛语
++Name[zh_CN]=立陶宛语
+diff -uNr kde-i18n-2.2.2.orig/lv/messages/entry.desktop kde-i18n-2.2.2/lv/messages/entry.desktop
+--- kde-i18n-2.2.2.orig/lv/messages/entry.desktop	Tue Jun 18 00:32:32 2002
++++ kde-i18n-2.2.2/lv/messages/entry.desktop	Tue Jun 18 00:47:20 2002
+@@ -37,4 +37,4 @@
+ Name[uk]=Латвійська
+ Name[vi]=Tiếng Latvia
+ Name[xh]=isiLatvian
+-Name[zh_CN.GB2312]=拉脱维亚
++Name[zh_CN]=拉脱维亚
+diff -uNr kde-i18n-2.2.2.orig/mt/messages/entry.desktop kde-i18n-2.2.2/mt/messages/entry.desktop
+--- kde-i18n-2.2.2.orig/mt/messages/entry.desktop	Tue Jun 18 00:32:32 2002
++++ kde-i18n-2.2.2/mt/messages/entry.desktop	Tue Jun 18 00:49:51 2002
+@@ -34,4 +34,4 @@
+ Name[uk]=Мальтійська
+ Name[vi]=Tiếng Mantơ 
+ Name[xh]=isiMaltese
+-Name[zh_CN.GB2312]=马耳他语
++Name[zh_CN]=马耳他语
+diff -uNr kde-i18n-2.2.2.orig/nl/messages/entry.desktop kde-i18n-2.2.2/nl/messages/entry.desktop
+--- kde-i18n-2.2.2.orig/nl/messages/entry.desktop	Tue Jun 18 00:32:32 2002
++++ kde-i18n-2.2.2/nl/messages/entry.desktop	Tue Jun 18 00:47:10 2002
+@@ -48,4 +48,4 @@
+ Name[vi]=Tiếng Hà Lan 
+ Name[wa]=Neyerlandès
+ Name[xh]=isiDatshi
+-Name[zh_CN.GB2312]=荷兰语
++Name[zh_CN]=荷兰语
+diff -uNr kde-i18n-2.2.2.orig/nn/messages/entry.desktop kde-i18n-2.2.2/nn/messages/entry.desktop
+--- kde-i18n-2.2.2.orig/nn/messages/entry.desktop	Tue Jun 18 00:32:32 2002
++++ kde-i18n-2.2.2/nn/messages/entry.desktop	Tue Jun 18 00:49:36 2002
+@@ -47,4 +47,4 @@
+ Name[vi]=Tiếng Na-uy (Nynorsk) 
+ Name[wa]=Norvedjyin (Nynorsk)
+ Name[xh]=isiNorwegian (Nynorsk)
+-Name[zh_CN.GB2312]=挪威语 (尼诺斯克语)
++Name[zh_CN]=挪威语 (尼诺斯克语)
+diff -uNr kde-i18n-2.2.2.orig/no/messages/entry.desktop kde-i18n-2.2.2/no/messages/entry.desktop
+--- kde-i18n-2.2.2.orig/no/messages/entry.desktop	Tue Jun 18 00:32:32 2002
++++ kde-i18n-2.2.2/no/messages/entry.desktop	Tue Jun 18 00:47:02 2002
+@@ -46,4 +46,4 @@
+ Name[vi]=Tiếng Na-uy (Bokmaal) 
+ Name[wa]=Norvedjyin (Bokmål)
+ Name[xh]=isiNorwegian (Bokmaal)
+-Name[zh_CN.GB2312]=挪威语 (博克马尔语)
++Name[zh_CN]=挪威语 (博克马尔语)
+diff -uNr kde-i18n-2.2.2.orig/pl/messages/entry.desktop kde-i18n-2.2.2/pl/messages/entry.desktop
+--- kde-i18n-2.2.2.orig/pl/messages/entry.desktop	Tue Jun 18 00:32:32 2002
++++ kde-i18n-2.2.2/pl/messages/entry.desktop	Tue Jun 18 00:49:30 2002
+@@ -47,4 +47,4 @@
+ Name[uk]=Польська
+ Name[vi]=Tiếng Ba Lan 
+ Name[xh]=isiPolish
+-Name[zh_CN.GB2312]=波兰语
++Name[zh_CN]=波兰语
+diff -uNr kde-i18n-2.2.2.orig/pt/messages/entry.desktop kde-i18n-2.2.2/pt/messages/entry.desktop
+--- kde-i18n-2.2.2.orig/pt/messages/entry.desktop	Tue Jun 18 00:32:32 2002
++++ kde-i18n-2.2.2/pt/messages/entry.desktop	Tue Jun 18 00:46:52 2002
+@@ -48,4 +48,4 @@
+ Name[vi]=Tiếng BềEĐào Nha 
+ Name[wa]=Pôrtuguès
+ Name[xh]=isiPhuthukesi
+-Name[zh_CN.GB2312]=葡萄牙语
++Name[zh_CN]=葡萄牙语
+diff -uNr kde-i18n-2.2.2.orig/pt_BR/messages/entry.desktop kde-i18n-2.2.2/pt_BR/messages/entry.desktop
+--- kde-i18n-2.2.2.orig/pt_BR/messages/entry.desktop	Tue Jun 18 00:32:32 2002
++++ kde-i18n-2.2.2/pt_BR/messages/entry.desktop	Tue Jun 18 00:49:22 2002
+@@ -48,4 +48,4 @@
+ Name[vi]=Tiếng BềEĐào Nha-Brazil 
+ Name[wa]=Pôrtuguès do Braezi
+ Name[xh]=isiPhuthukesi saseBrazil
+-Name[zh_CN.GB2312]=巴西葡萄牙语
++Name[zh_CN]=巴西葡萄牙语
+diff -uNr kde-i18n-2.2.2.orig/ro/messages/entry.desktop kde-i18n-2.2.2/ro/messages/entry.desktop
+--- kde-i18n-2.2.2.orig/ro/messages/entry.desktop	Tue Jun 18 00:32:32 2002
++++ kde-i18n-2.2.2/ro/messages/entry.desktop	Tue Jun 18 00:46:46 2002
+@@ -46,4 +46,4 @@
+ Name[uk]=Румунська
+ Name[vi]=Tiếng BềEĐào Nha 
+ Name[xh]=isiRoma
+-Name[zh_CN.GB2312]=罗马尼亚语
++Name[zh_CN]=罗马尼亚语
+diff -uNr kde-i18n-2.2.2.orig/ru/messages/entry.desktop kde-i18n-2.2.2/ru/messages/entry.desktop
+--- kde-i18n-2.2.2.orig/ru/messages/entry.desktop	Tue Jun 18 00:32:32 2002
++++ kde-i18n-2.2.2/ru/messages/entry.desktop	Tue Jun 18 00:49:16 2002
+@@ -48,4 +48,4 @@
+ Name[vi]=Tiếng Nga 
+ Name[wa]=Russe
+ Name[xh]=isiRashiya
+-Name[zh_CN.GB2312]=俄语
++Name[zh_CN]=俄语
+diff -uNr kde-i18n-2.2.2.orig/sk/messages/entry.desktop kde-i18n-2.2.2/sk/messages/entry.desktop
+--- kde-i18n-2.2.2.orig/sk/messages/entry.desktop	Tue Jun 18 00:32:32 2002
++++ kde-i18n-2.2.2/sk/messages/entry.desktop	Tue Jun 18 00:46:39 2002
+@@ -46,4 +46,4 @@
+ Name[uk]=Словацька
+ Name[vi]=Tiếng Slô-vác 
+ Name[xh]=isiSlovak
+-Name[zh_CN.GB2312]=斯洛伐克语
++Name[zh_CN]=斯洛伐克语
+diff -uNr kde-i18n-2.2.2.orig/sl/messages/entry.desktop kde-i18n-2.2.2/sl/messages/entry.desktop
+--- kde-i18n-2.2.2.orig/sl/messages/entry.desktop	Tue Jun 18 00:32:32 2002
++++ kde-i18n-2.2.2/sl/messages/entry.desktop	Tue Jun 18 00:49:07 2002
+@@ -44,4 +44,4 @@
+ Name[tr]=Slovence
+ Name[uk]=Словенська
+ Name[xh]=isiSlovenian
+-Name[zh_CN.GB2312]=斯洛文尼亚语
++Name[zh_CN]=斯洛文尼亚语
+diff -uNr kde-i18n-2.2.2.orig/sr/messages/entry.desktop kde-i18n-2.2.2/sr/messages/entry.desktop
+--- kde-i18n-2.2.2.orig/sr/messages/entry.desktop	Tue Jun 18 00:32:32 2002
++++ kde-i18n-2.2.2/sr/messages/entry.desktop	Tue Jun 18 00:46:32 2002
+@@ -46,4 +46,4 @@
+ Name[vi]=Tiếng Séc bi 
+ Name[wa]=Serbe
+ Name[xh]=isiSerbian
+-Name[zh_CN.GB2312]=塞族语
++Name[zh_CN]=塞族语
+diff -uNr kde-i18n-2.2.2.orig/subdirs kde-i18n-2.2.2/subdirs
+--- kde-i18n-2.2.2.orig/subdirs	Tue Jun 18 00:32:32 2002
++++ kde-i18n-2.2.2/subdirs	Tue Jun 18 00:35:30 2002
+@@ -37,5 +37,5 @@
+ tr
+ uk
+ xh
+-zh_TW.Big5
+-zh_CN.GB2312
++zh_TW
++zh_CN
+diff -uNr kde-i18n-2.2.2.orig/sv/messages/entry.desktop kde-i18n-2.2.2/sv/messages/entry.desktop
+--- kde-i18n-2.2.2.orig/sv/messages/entry.desktop	Tue Jun 18 00:32:32 2002
++++ kde-i18n-2.2.2/sv/messages/entry.desktop	Tue Jun 18 00:49:01 2002
+@@ -47,4 +47,4 @@
+ Name[uk]=Шведська
+ Name[vi]=Tiếng Thuỵ Điển 
+ Name[xh]=isiSwedish
+-Name[zh_CN.GB2312]=瑞典语
++Name[zh_CN]=瑞典语
+diff -uNr kde-i18n-2.2.2.orig/ta/messages/entry.desktop kde-i18n-2.2.2/ta/messages/entry.desktop
+--- kde-i18n-2.2.2.orig/ta/messages/entry.desktop	Tue Jun 18 00:32:32 2002
++++ kde-i18n-2.2.2/ta/messages/entry.desktop	Tue Jun 18 00:46:25 2002
+@@ -32,4 +32,4 @@
+ Name[uk]=Тамільська
+ Name[vi]=Tiếng Tamil 
+ Name[xh]=isiTamil
+-Name[zh_CN.GB2312]=泰米尔语
++Name[zh_CN]=泰米尔语
+diff -uNr kde-i18n-2.2.2.orig/th/messages/entry.desktop kde-i18n-2.2.2/th/messages/entry.desktop
+--- kde-i18n-2.2.2.orig/th/messages/entry.desktop	Tue Jun 18 00:32:32 2002
++++ kde-i18n-2.2.2/th/messages/entry.desktop	Tue Jun 18 00:48:53 2002
+@@ -35,4 +35,4 @@
+ Name[vi]=Tiếng Thái Lan 
+ Name[wa]=Tailandès
+ Name[xh]=isiThai
+-Name[zh_CN.GB2312]=泰语
++Name[zh_CN]=泰语
+diff -uNr kde-i18n-2.2.2.orig/tr/messages/entry.desktop kde-i18n-2.2.2/tr/messages/entry.desktop
+--- kde-i18n-2.2.2.orig/tr/messages/entry.desktop	Tue Jun 18 00:32:32 2002
++++ kde-i18n-2.2.2/tr/messages/entry.desktop	Tue Jun 18 00:46:15 2002
+@@ -47,4 +47,4 @@
+ Name[vi]=Tiếng ThềENhĩ Kì 
+ Name[wa]=Turk
+ Name[xh]=isiTurkish
+-Name[zh_CN.GB2312]=土耳其语
++Name[zh_CN]=土耳其语
+diff -uNr kde-i18n-2.2.2.orig/uk/messages/entry.desktop kde-i18n-2.2.2/uk/messages/entry.desktop
+--- kde-i18n-2.2.2.orig/uk/messages/entry.desktop	Tue Jun 18 00:32:32 2002
++++ kde-i18n-2.2.2/uk/messages/entry.desktop	Tue Jun 18 00:48:47 2002
+@@ -45,4 +45,4 @@
+ Name[uk]=Українська
+ Name[vi]=Tiếng Ukraina 
+ Name[xh]=isi-Ukranian
+-Name[zh_CN.GB2312]=乌克兰语
++Name[zh_CN]=乌克兰语
+diff -uNr kde-i18n-2.2.2.orig/zh_CN/Makefile.am kde-i18n-2.2.2/zh_CN/Makefile.am
+--- kde-i18n-2.2.2.orig/zh_CN/Makefile.am	Mon Nov 12 20:47:49 2001
++++ kde-i18n-2.2.2/zh_CN/Makefile.am	Tue Jun 18 00:39:27 2002
+@@ -3,7 +3,7 @@
+ AUTOMAKE_OPTIONS = foreign
+ EXTRA_DIST = configure.in.in
+ $(srcdir)/configure.in.in: $(srcdir)/../Makefile.am
+-	cd $(srcdir) && make -f ../Makefile.am langsubdir SUBDIRLANG=zh_CN.GB2312
++	cd $(srcdir) && make -f ../Makefile.am langsubdir SUBDIRLANG=zh_CN
+ $(srcdir)/configure.in: $(srcdir)/configure.in.in
+ 	cd $(srcdir) && make -f ../admin/Makefile.common configure.in
+ $(srcdir)/acinclude.m4: $(srcdir)/../acinclude.m4
+diff -uNr kde-i18n-2.2.2.orig/zh_CN/Makefile.in kde-i18n-2.2.2/zh_CN/Makefile.in
+--- kde-i18n-2.2.2.orig/zh_CN/Makefile.in	Mon Nov 12 20:47:57 2001
++++ kde-i18n-2.2.2/zh_CN/Makefile.in	Tue Jun 18 00:40:23 2002
+@@ -514,7 +514,7 @@
+ 	maintainer-clean-generic clean mostlyclean distclean maintainer-clean
+ 
+ $(srcdir)/configure.in.in: $(srcdir)/../Makefile.am
+-	cd $(srcdir) && make -f ../Makefile.am langsubdir SUBDIRLANG=zh_CN.GB2312
++	cd $(srcdir) && make -f ../Makefile.am langsubdir SUBDIRLANG=zh_CN
+ $(srcdir)/configure.in: $(srcdir)/configure.in.in
+ 	cd $(srcdir) && make -f ../admin/Makefile.common configure.in
+ $(srcdir)/acinclude.m4: $(srcdir)/../acinclude.m4
+diff -uNr kde-i18n-2.2.2.orig/zh_CN/configure kde-i18n-2.2.2/zh_CN/configure
+--- kde-i18n-2.2.2.orig/zh_CN/configure	Mon Nov 12 20:47:59 2001
++++ kde-i18n-2.2.2/zh_CN/configure	Tue Jun 18 00:38:10 2002
+@@ -1112,7 +1112,7 @@
+   SET_MAKE="MAKE=${MAKE-make}"
+ fi
+ 
+-PACKAGE=kde-i18n-zh_CN.GB2312
++PACKAGE=kde-i18n-zh_CN
+ 
+ VERSION=0.1
+ 
+diff -uNr kde-i18n-2.2.2.orig/zh_CN/configure.in kde-i18n-2.2.2/zh_CN/configure.in
+--- kde-i18n-2.2.2.orig/zh_CN/configure.in	Mon Nov 12 20:47:50 2001
++++ kde-i18n-2.2.2/zh_CN/configure.in	Tue Jun 18 00:40:14 2002
+@@ -1,6 +1,6 @@
+ AC_INIT(messages/kdelibs.po)
+ AC_CONFIG_AUX_DIR(../admin)
+-AM_INIT_AUTOMAKE(kde-i18n-zh_CN.GB2312, 0.1)
++AM_INIT_AUTOMAKE(kde-i18n-zh_CN, 0.1)
+ AM_CONFIG_HEADER(config.h)
+ AC_SUBST(AUTODIRS)
+ AM_KDE_WITH_NLS
+diff -uNr kde-i18n-2.2.2.orig/zh_CN/configure.in.in kde-i18n-2.2.2/zh_CN/configure.in.in
+--- kde-i18n-2.2.2.orig/zh_CN/configure.in.in	Mon Nov 12 20:47:49 2001
++++ kde-i18n-2.2.2/zh_CN/configure.in.in	Tue Jun 18 00:38:12 2002
+@@ -1,6 +1,6 @@
+ AC_INIT(messages/kdelibs.po)
+ AC_CONFIG_AUX_DIR(../admin)
+-AM_INIT_AUTOMAKE(kde-i18n-zh_CN.GB2312, 0.1)
++AM_INIT_AUTOMAKE(kde-i18n-zh_CN, 0.1)
+ AM_CONFIG_HEADER(config.h)
+ AC_SUBST(AUTODIRS)
+ AM_KDE_WITH_NLS
+diff -uNr kde-i18n-2.2.2.orig/zh_CN/docs/Makefile.am kde-i18n-2.2.2/zh_CN/docs/Makefile.am
+--- kde-i18n-2.2.2.orig/zh_CN/docs/Makefile.am	Mon May 14 13:50:06 2001
++++ kde-i18n-2.2.2/zh_CN/docs/Makefile.am	Tue Jun 18 00:57:26 2002
+@@ -1,4 +1,4 @@
+-KDE_LANG = zh_CN.GB2312
++KDE_LANG = zh_CN
+ SUBDIRS = $(AUTODIRS)
+ 
+ KDE_DOCS = AUTO
+diff -uNr kde-i18n-2.2.2.orig/zh_CN/docs/Makefile.in kde-i18n-2.2.2/zh_CN/docs/Makefile.in
+--- kde-i18n-2.2.2.orig/zh_CN/docs/Makefile.in	Mon Nov 12 20:47:57 2001
++++ kde-i18n-2.2.2/zh_CN/docs/Makefile.in	Tue Jun 18 00:55:45 2002
+@@ -212,7 +212,7 @@
+ x_includes = @x_includes@
+ x_libraries = @x_libraries@
+ 
+-KDE_LANG = zh_CN.GB2312
++KDE_LANG = zh_CN
+ #>- SUBDIRS = $(AUTODIRS)
+ #>+ 2
+ SUBDIRS =. common kdebase kdevelop
+diff -uNr kde-i18n-2.2.2.orig/zh_CN/docs/common/Makefile.am kde-i18n-2.2.2/zh_CN/docs/common/Makefile.am
+--- kde-i18n-2.2.2.orig/zh_CN/docs/common/Makefile.am	Mon May 14 13:50:06 2001
++++ kde-i18n-2.2.2/zh_CN/docs/common/Makefile.am	Tue Jun 18 00:59:57 2002
+@@ -1,4 +1,4 @@
+-KDE_LANG = zh_CN.GB2312
++KDE_LANG = zh_CN
+ SUBDIRS = $(AUTODIRS)
+ 
+ KDE_DOCS = AUTO
+diff -uNr kde-i18n-2.2.2.orig/zh_CN/docs/common/Makefile.in kde-i18n-2.2.2/zh_CN/docs/common/Makefile.in
+--- kde-i18n-2.2.2.orig/zh_CN/docs/common/Makefile.in	Tue Jun 18 00:32:31 2002
++++ kde-i18n-2.2.2/zh_CN/docs/common/Makefile.in	Tue Jun 18 01:03:10 2002
+@@ -212,7 +212,7 @@
+ x_includes = @x_includes@
+ x_libraries = @x_libraries@
+ 
+-KDE_LANG = zh_CN.GB2312
++KDE_LANG = zh_CN
+ #>- SUBDIRS = $(AUTODIRS)
+ #>+ 2
+ SUBDIRS =.
+diff -uNr kde-i18n-2.2.2.orig/zh_CN/docs/kdebase/Makefile.am kde-i18n-2.2.2/zh_CN/docs/kdebase/Makefile.am
+--- kde-i18n-2.2.2.orig/zh_CN/docs/kdebase/Makefile.am	Mon May 14 13:50:06 2001
++++ kde-i18n-2.2.2/zh_CN/docs/kdebase/Makefile.am	Tue Jun 18 00:59:52 2002
+@@ -1,4 +1,4 @@
+-KDE_LANG = zh_CN.GB2312
++KDE_LANG = zh_CN
+ SUBDIRS = $(AUTODIRS)
+ 
+ KDE_DOCS = AUTO
+diff -uNr kde-i18n-2.2.2.orig/zh_CN/docs/kdebase/Makefile.in kde-i18n-2.2.2/zh_CN/docs/kdebase/Makefile.in
+--- kde-i18n-2.2.2.orig/zh_CN/docs/kdebase/Makefile.in	Mon Nov 12 20:47:57 2001
++++ kde-i18n-2.2.2/zh_CN/docs/kdebase/Makefile.in	Tue Jun 18 01:03:06 2002
+@@ -212,7 +212,7 @@
+ x_includes = @x_includes@
+ x_libraries = @x_libraries@
+ 
+-KDE_LANG = zh_CN.GB2312
++KDE_LANG = zh_CN
+ #>- SUBDIRS = $(AUTODIRS)
+ #>+ 2
+ SUBDIRS =. kcontrol
+diff -uNr kde-i18n-2.2.2.orig/zh_CN/docs/kdebase/kcontrol/Makefile.am kde-i18n-2.2.2/zh_CN/docs/kdebase/kcontrol/Makefile.am
+--- kde-i18n-2.2.2.orig/zh_CN/docs/kdebase/kcontrol/Makefile.am	Mon May 14 13:50:07 2001
++++ kde-i18n-2.2.2/zh_CN/docs/kdebase/kcontrol/Makefile.am	Tue Jun 18 01:07:25 2002
+@@ -1,4 +1,4 @@
+-KDE_LANG = zh_CN.GB2312
++KDE_LANG = zh_CN
+ SUBDIRS = $(AUTODIRS)
+ 
+ KDE_DOCS = AUTO
+diff -uNr kde-i18n-2.2.2.orig/zh_CN/docs/kdebase/kcontrol/Makefile.in kde-i18n-2.2.2/zh_CN/docs/kdebase/kcontrol/Makefile.in
+--- kde-i18n-2.2.2.orig/zh_CN/docs/kdebase/kcontrol/Makefile.in	Mon Nov 12 20:47:57 2001
++++ kde-i18n-2.2.2/zh_CN/docs/kdebase/kcontrol/Makefile.in	Tue Jun 18 01:08:06 2002
+@@ -212,7 +212,7 @@
+ x_includes = @x_includes@
+ x_libraries = @x_libraries@
+ 
+-KDE_LANG = zh_CN.GB2312
++KDE_LANG = zh_CN
+ #>- SUBDIRS = $(AUTODIRS)
+ #>+ 2
+ SUBDIRS =.
+diff -uNr kde-i18n-2.2.2.orig/zh_CN/docs/kdevelop/Makefile.am kde-i18n-2.2.2/zh_CN/docs/kdevelop/Makefile.am
+--- kde-i18n-2.2.2.orig/zh_CN/docs/kdevelop/Makefile.am	Mon May 14 13:50:07 2001
++++ kde-i18n-2.2.2/zh_CN/docs/kdevelop/Makefile.am	Tue Jun 18 00:59:46 2002
+@@ -1,4 +1,4 @@
+-KDE_LANG = zh_CN.GB2312
++KDE_LANG = zh_CN
+ SUBDIRS = $(AUTODIRS)
+ 
+ KDE_DOCS = AUTO
+diff -uNr kde-i18n-2.2.2.orig/zh_CN/docs/kdevelop/Makefile.in kde-i18n-2.2.2/zh_CN/docs/kdevelop/Makefile.in
+--- kde-i18n-2.2.2.orig/zh_CN/docs/kdevelop/Makefile.in	Mon Nov 12 20:47:57 2001
++++ kde-i18n-2.2.2/zh_CN/docs/kdevelop/Makefile.in	Tue Jun 18 01:03:02 2002
+@@ -212,7 +212,7 @@
+ x_includes = @x_includes@
+ x_libraries = @x_libraries@
+ 
+-KDE_LANG = zh_CN.GB2312
++KDE_LANG = zh_CN
+ #>- SUBDIRS = $(AUTODIRS)
+ #>+ 2
+ SUBDIRS =. manual tutorial welcome
+diff -uNr kde-i18n-2.2.2.orig/zh_CN/docs/kdevelop/manual/Makefile.am kde-i18n-2.2.2/zh_CN/docs/kdevelop/manual/Makefile.am
+--- kde-i18n-2.2.2.orig/zh_CN/docs/kdevelop/manual/Makefile.am	Mon May 14 13:50:07 2001
++++ kde-i18n-2.2.2/zh_CN/docs/kdevelop/manual/Makefile.am	Tue Jun 18 01:07:20 2002
+@@ -1,4 +1,4 @@
+-KDE_LANG = zh_CN.GB2312
++KDE_LANG = zh_CN
+ SUBDIRS = $(AUTODIRS)
+ 
+ KDE_DOCS = AUTO
+diff -uNr kde-i18n-2.2.2.orig/zh_CN/docs/kdevelop/manual/Makefile.in kde-i18n-2.2.2/zh_CN/docs/kdevelop/manual/Makefile.in
+--- kde-i18n-2.2.2.orig/zh_CN/docs/kdevelop/manual/Makefile.in	Mon Nov 12 20:47:57 2001
++++ kde-i18n-2.2.2/zh_CN/docs/kdevelop/manual/Makefile.in	Tue Jun 18 01:07:55 2002
+@@ -212,7 +212,7 @@
+ x_includes = @x_includes@
+ x_libraries = @x_libraries@
+ 
+-KDE_LANG = zh_CN.GB2312
++KDE_LANG = zh_CN
+ #>- SUBDIRS = $(AUTODIRS)
+ #>+ 2
+ SUBDIRS =.
+diff -uNr kde-i18n-2.2.2.orig/zh_CN/docs/kdevelop/tutorial/Makefile.am kde-i18n-2.2.2/zh_CN/docs/kdevelop/tutorial/Makefile.am
+--- kde-i18n-2.2.2.orig/zh_CN/docs/kdevelop/tutorial/Makefile.am	Mon May 14 13:50:08 2001
++++ kde-i18n-2.2.2/zh_CN/docs/kdevelop/tutorial/Makefile.am	Tue Jun 18 01:07:14 2002
+@@ -1,4 +1,4 @@
+-KDE_LANG = zh_CN.GB2312
++KDE_LANG = zh_CN
+ SUBDIRS = $(AUTODIRS)
+ 
+ KDE_DOCS = AUTO
+diff -uNr kde-i18n-2.2.2.orig/zh_CN/docs/kdevelop/tutorial/Makefile.in kde-i18n-2.2.2/zh_CN/docs/kdevelop/tutorial/Makefile.in
+--- kde-i18n-2.2.2.orig/zh_CN/docs/kdevelop/tutorial/Makefile.in	Mon Nov 12 20:47:57 2001
++++ kde-i18n-2.2.2/zh_CN/docs/kdevelop/tutorial/Makefile.in	Tue Jun 18 01:07:50 2002
+@@ -212,7 +212,7 @@
+ x_includes = @x_includes@
+ x_libraries = @x_libraries@
+ 
+-KDE_LANG = zh_CN.GB2312
++KDE_LANG = zh_CN
+ #>- SUBDIRS = $(AUTODIRS)
+ #>+ 2
+ SUBDIRS =.
+diff -uNr kde-i18n-2.2.2.orig/zh_CN/docs/kdevelop/welcome/Makefile.am kde-i18n-2.2.2/zh_CN/docs/kdevelop/welcome/Makefile.am
+--- kde-i18n-2.2.2.orig/zh_CN/docs/kdevelop/welcome/Makefile.am	Mon May 14 13:50:08 2001
++++ kde-i18n-2.2.2/zh_CN/docs/kdevelop/welcome/Makefile.am	Tue Jun 18 01:07:07 2002
+@@ -1,4 +1,4 @@
+-KDE_LANG = zh_CN.GB2312
++KDE_LANG = zh_CN
+ SUBDIRS = $(AUTODIRS)
+ 
+ KDE_DOCS = AUTO
+diff -uNr kde-i18n-2.2.2.orig/zh_CN/docs/kdevelop/welcome/Makefile.in kde-i18n-2.2.2/zh_CN/docs/kdevelop/welcome/Makefile.in
+--- kde-i18n-2.2.2.orig/zh_CN/docs/kdevelop/welcome/Makefile.in	Mon Nov 12 20:47:57 2001
++++ kde-i18n-2.2.2/zh_CN/docs/kdevelop/welcome/Makefile.in	Tue Jun 18 01:07:44 2002
+@@ -212,7 +212,7 @@
+ x_includes = @x_includes@
+ x_libraries = @x_libraries@
+ 
+-KDE_LANG = zh_CN.GB2312
++KDE_LANG = zh_CN
+ #>- SUBDIRS = $(AUTODIRS)
+ #>+ 2
+ SUBDIRS =.
+diff -uNr kde-i18n-2.2.2.orig/zh_CN/messages/Makefile.am kde-i18n-2.2.2/zh_CN/messages/Makefile.am
+--- kde-i18n-2.2.2.orig/zh_CN/messages/Makefile.am	Mon May 14 13:50:08 2001
++++ kde-i18n-2.2.2/zh_CN/messages/Makefile.am	Tue Jun 18 00:56:58 2002
+@@ -1,4 +1,4 @@
+-KDE_LANG = zh_CN.GB2312
++KDE_LANG = zh_CN
+ SUBDIRS = $(AUTODIRS)
+ 
+ POFILES = AUTO
+diff -uNr kde-i18n-2.2.2.orig/zh_CN/messages/Makefile.in kde-i18n-2.2.2/zh_CN/messages/Makefile.in
+--- kde-i18n-2.2.2.orig/zh_CN/messages/Makefile.in	Mon Nov 12 20:47:57 2001
++++ kde-i18n-2.2.2/zh_CN/messages/Makefile.in	Tue Jun 18 00:55:24 2002
+@@ -212,7 +212,7 @@
+ x_includes = @x_includes@
+ x_libraries = @x_libraries@
+ 
+-KDE_LANG = zh_CN.GB2312
++KDE_LANG = zh_CN
+ #>- SUBDIRS = $(AUTODIRS)
+ #>+ 2
+ SUBDIRS =. kdeadmin kdebase kdegames kdegraphics kdemultimedia kdenetwork kdenonbeta kdepim kdesdk kdetoys kdeutils
+diff -uNr kde-i18n-2.2.2.orig/zh_CN/messages/entry.desktop kde-i18n-2.2.2/zh_CN/messages/entry.desktop
+--- kde-i18n-2.2.2.orig/zh_CN/messages/entry.desktop	Tue Jun 18 00:32:32 2002
++++ kde-i18n-2.2.2/zh_CN/messages/entry.desktop	Tue Jun 18 00:48:39 2002
+@@ -48,4 +48,4 @@
+ Name[vi]=Tiếng Trung Quốc giản thềE
+ Name[wa]=Chinwès simplifyî
+ Name[xh]=isiTshayina esilula
+-Name[zh_CN.GB2312]=简体中文
++Name[zh_CN]=简体中文
+diff -uNr kde-i18n-2.2.2.orig/zh_CN/messages/kdeadmin/Makefile.am kde-i18n-2.2.2/zh_CN/messages/kdeadmin/Makefile.am
+--- kde-i18n-2.2.2.orig/zh_CN/messages/kdeadmin/Makefile.am	Mon May 14 13:50:09 2001
++++ kde-i18n-2.2.2/zh_CN/messages/kdeadmin/Makefile.am	Tue Jun 18 00:59:38 2002
+@@ -1,4 +1,4 @@
+-KDE_LANG = zh_CN.GB2312
++KDE_LANG = zh_CN
+ SUBDIRS = $(AUTODIRS)
+ 
+ POFILES = AUTO
+diff -uNr kde-i18n-2.2.2.orig/zh_CN/messages/kdeadmin/Makefile.in kde-i18n-2.2.2/zh_CN/messages/kdeadmin/Makefile.in
+--- kde-i18n-2.2.2.orig/zh_CN/messages/kdeadmin/Makefile.in	Mon Nov 12 20:47:57 2001
++++ kde-i18n-2.2.2/zh_CN/messages/kdeadmin/Makefile.in	Tue Jun 18 01:02:56 2002
+@@ -212,7 +212,7 @@
+ x_includes = @x_includes@
+ x_libraries = @x_libraries@
+ 
+-KDE_LANG = zh_CN.GB2312
++KDE_LANG = zh_CN
+ #>- SUBDIRS = $(AUTODIRS)
+ #>+ 2
+ SUBDIRS =.
+diff -uNr kde-i18n-2.2.2.orig/zh_CN/messages/kdebase/Makefile.am kde-i18n-2.2.2/zh_CN/messages/kdebase/Makefile.am
+--- kde-i18n-2.2.2.orig/zh_CN/messages/kdebase/Makefile.am	Mon May 14 13:50:09 2001
++++ kde-i18n-2.2.2/zh_CN/messages/kdebase/Makefile.am	Tue Jun 18 00:59:32 2002
+@@ -1,4 +1,4 @@
+-KDE_LANG = zh_CN.GB2312
++KDE_LANG = zh_CN
+ SUBDIRS = $(AUTODIRS)
+ 
+ POFILES = AUTO
+diff -uNr kde-i18n-2.2.2.orig/zh_CN/messages/kdebase/Makefile.in kde-i18n-2.2.2/zh_CN/messages/kdebase/Makefile.in
+--- kde-i18n-2.2.2.orig/zh_CN/messages/kdebase/Makefile.in	Mon Nov 12 20:47:57 2001
++++ kde-i18n-2.2.2/zh_CN/messages/kdebase/Makefile.in	Tue Jun 18 01:02:48 2002
+@@ -212,7 +212,7 @@
+ x_includes = @x_includes@
+ x_libraries = @x_libraries@
+ 
+-KDE_LANG = zh_CN.GB2312
++KDE_LANG = zh_CN
+ #>- SUBDIRS = $(AUTODIRS)
+ #>+ 2
+ SUBDIRS =.
+diff -uNr kde-i18n-2.2.2.orig/zh_CN/messages/kdegames/Makefile.am kde-i18n-2.2.2/zh_CN/messages/kdegames/Makefile.am
+--- kde-i18n-2.2.2.orig/zh_CN/messages/kdegames/Makefile.am	Mon May 14 13:50:09 2001
++++ kde-i18n-2.2.2/zh_CN/messages/kdegames/Makefile.am	Tue Jun 18 00:59:22 2002
+@@ -1,4 +1,4 @@
+-KDE_LANG = zh_CN.GB2312
++KDE_LANG = zh_CN
+ SUBDIRS = $(AUTODIRS)
+ 
+ POFILES = AUTO
+diff -uNr kde-i18n-2.2.2.orig/zh_CN/messages/kdegames/Makefile.in kde-i18n-2.2.2/zh_CN/messages/kdegames/Makefile.in
+--- kde-i18n-2.2.2.orig/zh_CN/messages/kdegames/Makefile.in	Mon Nov 12 20:47:57 2001
++++ kde-i18n-2.2.2/zh_CN/messages/kdegames/Makefile.in	Tue Jun 18 01:02:44 2002
+@@ -212,7 +212,7 @@
+ x_includes = @x_includes@
+ x_libraries = @x_libraries@
+ 
+-KDE_LANG = zh_CN.GB2312
++KDE_LANG = zh_CN
+ #>- SUBDIRS = $(AUTODIRS)
+ #>+ 2
+ SUBDIRS =.
+diff -uNr kde-i18n-2.2.2.orig/zh_CN/messages/kdegraphics/Makefile.am kde-i18n-2.2.2/zh_CN/messages/kdegraphics/Makefile.am
+--- kde-i18n-2.2.2.orig/zh_CN/messages/kdegraphics/Makefile.am	Mon May 14 13:50:10 2001
++++ kde-i18n-2.2.2/zh_CN/messages/kdegraphics/Makefile.am	Tue Jun 18 01:05:31 2002
+@@ -1,4 +1,4 @@
+-KDE_LANG = zh_CN.GB2312
++KDE_LANG = zh_CN
+ SUBDIRS = $(AUTODIRS)
+ 
+ POFILES = AUTO
+diff -uNr kde-i18n-2.2.2.orig/zh_CN/messages/kdegraphics/Makefile.in kde-i18n-2.2.2/zh_CN/messages/kdegraphics/Makefile.in
+--- kde-i18n-2.2.2.orig/zh_CN/messages/kdegraphics/Makefile.in	Mon Nov 12 20:47:57 2001
++++ kde-i18n-2.2.2/zh_CN/messages/kdegraphics/Makefile.in	Tue Jun 18 01:02:41 2002
+@@ -212,7 +212,7 @@
+ x_includes = @x_includes@
+ x_libraries = @x_libraries@
+ 
+-KDE_LANG = zh_CN.GB2312
++KDE_LANG = zh_CN
+ #>- SUBDIRS = $(AUTODIRS)
+ #>+ 2
+ SUBDIRS =.
+diff -uNr kde-i18n-2.2.2.orig/zh_CN/messages/kdemultimedia/Makefile.am kde-i18n-2.2.2/zh_CN/messages/kdemultimedia/Makefile.am
+--- kde-i18n-2.2.2.orig/zh_CN/messages/kdemultimedia/Makefile.am	Mon May 14 13:50:10 2001
++++ kde-i18n-2.2.2/zh_CN/messages/kdemultimedia/Makefile.am	Tue Jun 18 01:05:24 2002
+@@ -1,4 +1,4 @@
+-KDE_LANG = zh_CN.GB2312
++KDE_LANG = zh_CN
+ SUBDIRS = $(AUTODIRS)
+ 
+ POFILES = AUTO
+diff -uNr kde-i18n-2.2.2.orig/zh_CN/messages/kdemultimedia/Makefile.in kde-i18n-2.2.2/zh_CN/messages/kdemultimedia/Makefile.in
+--- kde-i18n-2.2.2.orig/zh_CN/messages/kdemultimedia/Makefile.in	Mon Nov 12 20:47:57 2001
++++ kde-i18n-2.2.2/zh_CN/messages/kdemultimedia/Makefile.in	Tue Jun 18 01:02:37 2002
+@@ -212,7 +212,7 @@
+ x_includes = @x_includes@
+ x_libraries = @x_libraries@
+ 
+-KDE_LANG = zh_CN.GB2312
++KDE_LANG = zh_CN
+ #>- SUBDIRS = $(AUTODIRS)
+ #>+ 2
+ SUBDIRS =.
+diff -uNr kde-i18n-2.2.2.orig/zh_CN/messages/kdenetwork/Makefile.am kde-i18n-2.2.2/zh_CN/messages/kdenetwork/Makefile.am
+--- kde-i18n-2.2.2.orig/zh_CN/messages/kdenetwork/Makefile.am	Mon May 14 13:50:10 2001
++++ kde-i18n-2.2.2/zh_CN/messages/kdenetwork/Makefile.am	Tue Jun 18 01:05:20 2002
+@@ -1,4 +1,4 @@
+-KDE_LANG = zh_CN.GB2312
++KDE_LANG = zh_CN
+ SUBDIRS = $(AUTODIRS)
+ 
+ POFILES = AUTO
+diff -uNr kde-i18n-2.2.2.orig/zh_CN/messages/kdenetwork/Makefile.in kde-i18n-2.2.2/zh_CN/messages/kdenetwork/Makefile.in
+--- kde-i18n-2.2.2.orig/zh_CN/messages/kdenetwork/Makefile.in	Mon Nov 12 20:47:57 2001
++++ kde-i18n-2.2.2/zh_CN/messages/kdenetwork/Makefile.in	Tue Jun 18 01:02:33 2002
+@@ -212,7 +212,7 @@
+ x_includes = @x_includes@
+ x_libraries = @x_libraries@
+ 
+-KDE_LANG = zh_CN.GB2312
++KDE_LANG = zh_CN
+ #>- SUBDIRS = $(AUTODIRS)
+ #>+ 2
+ SUBDIRS =.
+diff -uNr kde-i18n-2.2.2.orig/zh_CN/messages/kdenonbeta/Makefile.am kde-i18n-2.2.2/zh_CN/messages/kdenonbeta/Makefile.am
+--- kde-i18n-2.2.2.orig/zh_CN/messages/kdenonbeta/Makefile.am	Tue Jun 26 19:57:37 2001
++++ kde-i18n-2.2.2/zh_CN/messages/kdenonbeta/Makefile.am	Tue Jun 18 01:05:15 2002
+@@ -1,4 +1,4 @@
+-KDE_LANG = zh_CN.GB2312
++KDE_LANG = zh_CN
+ SUBDIRS = $(AUTODIRS)
+ 
+ POFILES = AUTO
+diff -uNr kde-i18n-2.2.2.orig/zh_CN/messages/kdenonbeta/Makefile.in kde-i18n-2.2.2/zh_CN/messages/kdenonbeta/Makefile.in
+--- kde-i18n-2.2.2.orig/zh_CN/messages/kdenonbeta/Makefile.in	Mon Nov 12 20:47:57 2001
++++ kde-i18n-2.2.2/zh_CN/messages/kdenonbeta/Makefile.in	Tue Jun 18 01:02:29 2002
+@@ -212,7 +212,7 @@
+ x_includes = @x_includes@
+ x_libraries = @x_libraries@
+ 
+-KDE_LANG = zh_CN.GB2312
++KDE_LANG = zh_CN
+ #>- SUBDIRS = $(AUTODIRS)
+ #>+ 2
+ SUBDIRS =.
+diff -uNr kde-i18n-2.2.2.orig/zh_CN/messages/kdepim/Makefile.am kde-i18n-2.2.2/zh_CN/messages/kdepim/Makefile.am
+--- kde-i18n-2.2.2.orig/zh_CN/messages/kdepim/Makefile.am	Mon May 14 13:50:11 2001
++++ kde-i18n-2.2.2/zh_CN/messages/kdepim/Makefile.am	Tue Jun 18 01:05:11 2002
+@@ -1,4 +1,4 @@
+-KDE_LANG = zh_CN.GB2312
++KDE_LANG = zh_CN
+ SUBDIRS = $(AUTODIRS)
+ 
+ POFILES = AUTO
+diff -uNr kde-i18n-2.2.2.orig/zh_CN/messages/kdepim/Makefile.in kde-i18n-2.2.2/zh_CN/messages/kdepim/Makefile.in
+--- kde-i18n-2.2.2.orig/zh_CN/messages/kdepim/Makefile.in	Mon Nov 12 20:47:57 2001
++++ kde-i18n-2.2.2/zh_CN/messages/kdepim/Makefile.in	Tue Jun 18 01:02:24 2002
+@@ -212,7 +212,7 @@
+ x_includes = @x_includes@
+ x_libraries = @x_libraries@
+ 
+-KDE_LANG = zh_CN.GB2312
++KDE_LANG = zh_CN
+ #>- SUBDIRS = $(AUTODIRS)
+ #>+ 2
+ SUBDIRS =.
+diff -uNr kde-i18n-2.2.2.orig/zh_CN/messages/kdesdk/Makefile.am kde-i18n-2.2.2/zh_CN/messages/kdesdk/Makefile.am
+--- kde-i18n-2.2.2.orig/zh_CN/messages/kdesdk/Makefile.am	Mon May 14 13:50:12 2001
++++ kde-i18n-2.2.2/zh_CN/messages/kdesdk/Makefile.am	Tue Jun 18 01:05:05 2002
+@@ -1,4 +1,4 @@
+-KDE_LANG = zh_CN.GB2312
++KDE_LANG = zh_CN
+ SUBDIRS = $(AUTODIRS)
+ 
+ POFILES = AUTO
+diff -uNr kde-i18n-2.2.2.orig/zh_CN/messages/kdesdk/Makefile.in kde-i18n-2.2.2/zh_CN/messages/kdesdk/Makefile.in
+--- kde-i18n-2.2.2.orig/zh_CN/messages/kdesdk/Makefile.in	Mon Nov 12 20:47:57 2001
++++ kde-i18n-2.2.2/zh_CN/messages/kdesdk/Makefile.in	Tue Jun 18 01:02:20 2002
+@@ -212,7 +212,7 @@
+ x_includes = @x_includes@
+ x_libraries = @x_libraries@
+ 
+-KDE_LANG = zh_CN.GB2312
++KDE_LANG = zh_CN
+ #>- SUBDIRS = $(AUTODIRS)
+ #>+ 2
+ SUBDIRS =.
+diff -uNr kde-i18n-2.2.2.orig/zh_CN/messages/kdetoys/Makefile.am kde-i18n-2.2.2/zh_CN/messages/kdetoys/Makefile.am
+--- kde-i18n-2.2.2.orig/zh_CN/messages/kdetoys/Makefile.am	Mon May 14 13:50:12 2001
++++ kde-i18n-2.2.2/zh_CN/messages/kdetoys/Makefile.am	Tue Jun 18 01:05:01 2002
+@@ -1,4 +1,4 @@
+-KDE_LANG = zh_CN.GB2312
++KDE_LANG = zh_CN
+ SUBDIRS = $(AUTODIRS)
+ 
+ POFILES = AUTO
+diff -uNr kde-i18n-2.2.2.orig/zh_CN/messages/kdetoys/Makefile.in kde-i18n-2.2.2/zh_CN/messages/kdetoys/Makefile.in
+--- kde-i18n-2.2.2.orig/zh_CN/messages/kdetoys/Makefile.in	Mon Nov 12 20:47:57 2001
++++ kde-i18n-2.2.2/zh_CN/messages/kdetoys/Makefile.in	Tue Jun 18 01:02:16 2002
+@@ -212,7 +212,7 @@
+ x_includes = @x_includes@
+ x_libraries = @x_libraries@
+ 
+-KDE_LANG = zh_CN.GB2312
++KDE_LANG = zh_CN
+ #>- SUBDIRS = $(AUTODIRS)
+ #>+ 2
+ SUBDIRS =.
+diff -uNr kde-i18n-2.2.2.orig/zh_CN/messages/kdeutils/Makefile.am kde-i18n-2.2.2/zh_CN/messages/kdeutils/Makefile.am
+--- kde-i18n-2.2.2.orig/zh_CN/messages/kdeutils/Makefile.am	Mon May 14 13:50:12 2001
++++ kde-i18n-2.2.2/zh_CN/messages/kdeutils/Makefile.am	Tue Jun 18 01:04:57 2002
+@@ -1,4 +1,4 @@
+-KDE_LANG = zh_CN.GB2312
++KDE_LANG = zh_CN
+ SUBDIRS = $(AUTODIRS)
+ 
+ POFILES = AUTO
+diff -uNr kde-i18n-2.2.2.orig/zh_CN/messages/kdeutils/Makefile.in kde-i18n-2.2.2/zh_CN/messages/kdeutils/Makefile.in
+--- kde-i18n-2.2.2.orig/zh_CN/messages/kdeutils/Makefile.in	Mon Nov 12 20:47:57 2001
++++ kde-i18n-2.2.2/zh_CN/messages/kdeutils/Makefile.in	Tue Jun 18 01:02:11 2002
+@@ -212,7 +212,7 @@
+ x_includes = @x_includes@
+ x_libraries = @x_libraries@
+ 
+-KDE_LANG = zh_CN.GB2312
++KDE_LANG = zh_CN
+ #>- SUBDIRS = $(AUTODIRS)
+ #>+ 2
+ SUBDIRS =.
+diff -uNr kde-i18n-2.2.2.orig/zh_TW/Makefile.am kde-i18n-2.2.2/zh_TW/Makefile.am
+--- kde-i18n-2.2.2.orig/zh_TW/Makefile.am	Mon Nov 12 20:47:38 2001
++++ kde-i18n-2.2.2/zh_TW/Makefile.am	Tue Jun 18 00:40:05 2002
+@@ -3,7 +3,7 @@
+ AUTOMAKE_OPTIONS = foreign
+ EXTRA_DIST = configure.in.in
+ $(srcdir)/configure.in.in: $(srcdir)/../Makefile.am
+-	cd $(srcdir) && make -f ../Makefile.am langsubdir SUBDIRLANG=zh_TW.Big5
++	cd $(srcdir) && make -f ../Makefile.am langsubdir SUBDIRLANG=zh_TW
+ $(srcdir)/configure.in: $(srcdir)/configure.in.in
+ 	cd $(srcdir) && make -f ../admin/Makefile.common configure.in
+ $(srcdir)/acinclude.m4: $(srcdir)/../acinclude.m4
+diff -uNr kde-i18n-2.2.2.orig/zh_TW/Makefile.in kde-i18n-2.2.2/zh_TW/Makefile.in
+--- kde-i18n-2.2.2.orig/zh_TW/Makefile.in	Mon Nov 12 20:47:46 2001
++++ kde-i18n-2.2.2/zh_TW/Makefile.in	Tue Jun 18 00:37:47 2002
+@@ -514,7 +514,7 @@
+ 	maintainer-clean-generic clean mostlyclean distclean maintainer-clean
+ 
+ $(srcdir)/configure.in.in: $(srcdir)/../Makefile.am
+-	cd $(srcdir) && make -f ../Makefile.am langsubdir SUBDIRLANG=zh_TW.Big5
++	cd $(srcdir) && make -f ../Makefile.am langsubdir SUBDIRLANG=zh_TW
+ $(srcdir)/configure.in: $(srcdir)/configure.in.in
+ 	cd $(srcdir) && make -f ../admin/Makefile.common configure.in
+ $(srcdir)/acinclude.m4: $(srcdir)/../acinclude.m4
+diff -uNr kde-i18n-2.2.2.orig/zh_TW/configure kde-i18n-2.2.2/zh_TW/configure
+--- kde-i18n-2.2.2.orig/zh_TW/configure	Mon Nov 12 20:47:49 2001
++++ kde-i18n-2.2.2/zh_TW/configure	Tue Jun 18 00:39:53 2002
+@@ -1112,7 +1112,7 @@
+   SET_MAKE="MAKE=${MAKE-make}"
+ fi
+ 
+-PACKAGE=kde-i18n-zh_TW.Big5
++PACKAGE=kde-i18n-zh_TW
+ 
+ VERSION=0.1
+ 
+diff -uNr kde-i18n-2.2.2.orig/zh_TW/configure.in kde-i18n-2.2.2/zh_TW/configure.in
+--- kde-i18n-2.2.2.orig/zh_TW/configure.in	Mon Nov 12 20:47:39 2001
++++ kde-i18n-2.2.2/zh_TW/configure.in	Tue Jun 18 00:37:55 2002
+@@ -1,6 +1,6 @@
+ AC_INIT(messages/kdelibs.po)
+ AC_CONFIG_AUX_DIR(../admin)
+-AM_INIT_AUTOMAKE(kde-i18n-zh_TW.Big5, 0.1)
++AM_INIT_AUTOMAKE(kde-i18n-zh_TW, 0.1)
+ AM_CONFIG_HEADER(config.h)
+ AC_SUBST(AUTODIRS)
+ AM_KDE_WITH_NLS
+diff -uNr kde-i18n-2.2.2.orig/zh_TW/configure.in.in kde-i18n-2.2.2/zh_TW/configure.in.in
+--- kde-i18n-2.2.2.orig/zh_TW/configure.in.in	Mon Nov 12 20:47:38 2001
++++ kde-i18n-2.2.2/zh_TW/configure.in.in	Tue Jun 18 00:39:44 2002
+@@ -1,6 +1,6 @@
+ AC_INIT(messages/kdelibs.po)
+ AC_CONFIG_AUX_DIR(../admin)
+-AM_INIT_AUTOMAKE(kde-i18n-zh_TW.Big5, 0.1)
++AM_INIT_AUTOMAKE(kde-i18n-zh_TW, 0.1)
+ AM_CONFIG_HEADER(config.h)
+ AC_SUBST(AUTODIRS)
+ AM_KDE_WITH_NLS
+diff -uNr kde-i18n-2.2.2.orig/zh_TW/docs/Makefile.am kde-i18n-2.2.2/zh_TW/docs/Makefile.am
+--- kde-i18n-2.2.2.orig/zh_TW/docs/Makefile.am	Mon May 14 13:50:13 2001
++++ kde-i18n-2.2.2/zh_TW/docs/Makefile.am	Tue Jun 18 00:54:41 2002
+@@ -1,4 +1,4 @@
+-KDE_LANG = zh_TW.Big5
++KDE_LANG = zh_TW
+ SUBDIRS = $(AUTODIRS)
+ 
+ KDE_DOCS = AUTO
+diff -uNr kde-i18n-2.2.2.orig/zh_TW/docs/Makefile.in kde-i18n-2.2.2/zh_TW/docs/Makefile.in
+--- kde-i18n-2.2.2.orig/zh_TW/docs/Makefile.in	Mon Nov 12 20:47:46 2001
++++ kde-i18n-2.2.2/zh_TW/docs/Makefile.in	Tue Jun 18 00:56:23 2002
+@@ -212,7 +212,7 @@
+ x_includes = @x_includes@
+ x_libraries = @x_libraries@
+ 
+-KDE_LANG = zh_TW.Big5
++KDE_LANG = zh_TW
+ #>- SUBDIRS = $(AUTODIRS)
+ #>+ 2
+ SUBDIRS =. common kdebase
+diff -uNr kde-i18n-2.2.2.orig/zh_TW/docs/common/Makefile.am kde-i18n-2.2.2/zh_TW/docs/common/Makefile.am
+--- kde-i18n-2.2.2.orig/zh_TW/docs/common/Makefile.am	Mon May 14 13:50:14 2001
++++ kde-i18n-2.2.2/zh_TW/docs/common/Makefile.am	Tue Jun 18 01:04:47 2002
+@@ -1,4 +1,4 @@
+-KDE_LANG = zh_TW.Big5
++KDE_LANG = zh_TW
+ SUBDIRS = $(AUTODIRS)
+ 
+ KDE_DOCS = AUTO
+diff -uNr kde-i18n-2.2.2.orig/zh_TW/docs/common/Makefile.in kde-i18n-2.2.2/zh_TW/docs/common/Makefile.in
+--- kde-i18n-2.2.2.orig/zh_TW/docs/common/Makefile.in	Tue Jun 18 00:32:31 2002
++++ kde-i18n-2.2.2/zh_TW/docs/common/Makefile.in	Tue Jun 18 01:02:05 2002
+@@ -212,7 +212,7 @@
+ x_includes = @x_includes@
+ x_libraries = @x_libraries@
+ 
+-KDE_LANG = zh_TW.Big5
++KDE_LANG = zh_TW
+ #>- SUBDIRS = $(AUTODIRS)
+ #>+ 2
+ SUBDIRS =.
+diff -uNr kde-i18n-2.2.2.orig/zh_TW/docs/kdebase/Makefile.am kde-i18n-2.2.2/zh_TW/docs/kdebase/Makefile.am
+--- kde-i18n-2.2.2.orig/zh_TW/docs/kdebase/Makefile.am	Mon May 14 13:50:15 2001
++++ kde-i18n-2.2.2/zh_TW/docs/kdebase/Makefile.am	Tue Jun 18 01:04:42 2002
+@@ -1,4 +1,4 @@
+-KDE_LANG = zh_TW.Big5
++KDE_LANG = zh_TW
+ SUBDIRS = $(AUTODIRS)
+ 
+ KDE_DOCS = AUTO
+diff -uNr kde-i18n-2.2.2.orig/zh_TW/docs/kdebase/Makefile.in kde-i18n-2.2.2/zh_TW/docs/kdebase/Makefile.in
+--- kde-i18n-2.2.2.orig/zh_TW/docs/kdebase/Makefile.in	Mon Nov 12 20:47:46 2001
++++ kde-i18n-2.2.2/zh_TW/docs/kdebase/Makefile.in	Tue Jun 18 01:01:55 2002
+@@ -212,7 +212,7 @@
+ x_includes = @x_includes@
+ x_libraries = @x_libraries@
+ 
+-KDE_LANG = zh_TW.Big5
++KDE_LANG = zh_TW
+ #>- SUBDIRS = $(AUTODIRS)
+ #>+ 2
+ SUBDIRS =. khelpcenter
+diff -uNr kde-i18n-2.2.2.orig/zh_TW/docs/kdebase/khelpcenter/Makefile.am kde-i18n-2.2.2/zh_TW/docs/kdebase/khelpcenter/Makefile.am
+--- kde-i18n-2.2.2.orig/zh_TW/docs/kdebase/khelpcenter/Makefile.am	Mon May 14 13:50:15 2001
++++ kde-i18n-2.2.2/zh_TW/docs/kdebase/khelpcenter/Makefile.am	Tue Jun 18 01:07:02 2002
+@@ -1,4 +1,4 @@
+-KDE_LANG = zh_TW.Big5
++KDE_LANG = zh_TW
+ SUBDIRS = $(AUTODIRS)
+ 
+ KDE_DOCS = AUTO
+diff -uNr kde-i18n-2.2.2.orig/zh_TW/docs/kdebase/khelpcenter/Makefile.in kde-i18n-2.2.2/zh_TW/docs/kdebase/khelpcenter/Makefile.in
+--- kde-i18n-2.2.2.orig/zh_TW/docs/kdebase/khelpcenter/Makefile.in	Mon Nov 12 20:47:46 2001
++++ kde-i18n-2.2.2/zh_TW/docs/kdebase/khelpcenter/Makefile.in	Tue Jun 18 01:07:34 2002
+@@ -212,7 +212,7 @@
+ x_includes = @x_includes@
+ x_libraries = @x_libraries@
+ 
+-KDE_LANG = zh_TW.Big5
++KDE_LANG = zh_TW
+ #>- SUBDIRS = $(AUTODIRS)
+ #>+ 2
+ SUBDIRS =. faq quickstart userguide
+diff -uNr kde-i18n-2.2.2.orig/zh_TW/docs/kdebase/khelpcenter/faq/Makefile.am kde-i18n-2.2.2/zh_TW/docs/kdebase/khelpcenter/faq/Makefile.am
+--- kde-i18n-2.2.2.orig/zh_TW/docs/kdebase/khelpcenter/faq/Makefile.am	Tue Jun 18 01:12:55 2002
++++ kde-i18n-2.2.2/zh_TW/docs/kdebase/khelpcenter/faq/Makefile.am	Tue Jun 18 01:12:55 2002
+@@ -1,4 +1,4 @@
+-KDE_LANG = zh_TW.Big5
++KDE_LANG = zh_TW
+ SUBDIRS = $(AUTODIRS)
+ 
+ KDE_DOCS = khelpcenter/faq
+diff -uNr kde-i18n-2.2.2.orig/zh_TW/docs/kdebase/khelpcenter/faq/Makefile.in kde-i18n-2.2.2/zh_TW/docs/kdebase/khelpcenter/faq/Makefile.in
+--- kde-i18n-2.2.2.orig/zh_TW/docs/kdebase/khelpcenter/faq/Makefile.in	Tue Jun 18 01:13:12 2002
++++ kde-i18n-2.2.2/zh_TW/docs/kdebase/khelpcenter/faq/Makefile.in	Tue Jun 18 01:13:12 2002
+@@ -212,7 +212,7 @@
+ x_includes = @x_includes@
+ x_libraries = @x_libraries@
+ 
+-KDE_LANG = zh_TW.Big5
++KDE_LANG = zh_TW
+ #>- SUBDIRS = $(AUTODIRS)
+ #>+ 2
+ SUBDIRS =.
+diff -uNr kde-i18n-2.2.2.orig/zh_TW/docs/kdebase/khelpcenter/quickstart/Makefile.am kde-i18n-2.2.2/zh_TW/docs/kdebase/khelpcenter/quickstart/Makefile.am
+--- kde-i18n-2.2.2.orig/zh_TW/docs/kdebase/khelpcenter/quickstart/Makefile.am	Tue Jun 18 01:12:50 2002
++++ kde-i18n-2.2.2/zh_TW/docs/kdebase/khelpcenter/quickstart/Makefile.am	Tue Jun 18 01:12:50 2002
+@@ -1,4 +1,4 @@
+-KDE_LANG = zh_TW.Big5
++KDE_LANG = zh_TW
+ SUBDIRS = $(AUTODIRS)
+ 
+ KDE_DOCS = khelpcenter/quickstart
+diff -uNr kde-i18n-2.2.2.orig/zh_TW/docs/kdebase/khelpcenter/quickstart/Makefile.in kde-i18n-2.2.2/zh_TW/docs/kdebase/khelpcenter/quickstart/Makefile.in
+--- kde-i18n-2.2.2.orig/zh_TW/docs/kdebase/khelpcenter/quickstart/Makefile.in	Tue Jun 18 01:13:08 2002
++++ kde-i18n-2.2.2/zh_TW/docs/kdebase/khelpcenter/quickstart/Makefile.in	Tue Jun 18 01:13:08 2002
+@@ -212,7 +212,7 @@
+ x_includes = @x_includes@
+ x_libraries = @x_libraries@
+ 
+-KDE_LANG = zh_TW.Big5
++KDE_LANG = zh_TW
+ #>- SUBDIRS = $(AUTODIRS)
+ #>+ 2
+ SUBDIRS =.
+diff -uNr kde-i18n-2.2.2.orig/zh_TW/docs/kdebase/khelpcenter/userguide/Makefile.am kde-i18n-2.2.2/zh_TW/docs/kdebase/khelpcenter/userguide/Makefile.am
+--- kde-i18n-2.2.2.orig/zh_TW/docs/kdebase/khelpcenter/userguide/Makefile.am	Tue Jun 18 01:12:44 2002
++++ kde-i18n-2.2.2/zh_TW/docs/kdebase/khelpcenter/userguide/Makefile.am	Tue Jun 18 01:12:44 2002
+@@ -1,4 +1,4 @@
+-KDE_LANG = zh_TW.Big5
++KDE_LANG = zh_TW
+ SUBDIRS = $(AUTODIRS)
+ 
+ KDE_DOCS = khelpcenter/userguide
+diff -uNr kde-i18n-2.2.2.orig/zh_TW/docs/kdebase/khelpcenter/userguide/Makefile.in kde-i18n-2.2.2/zh_TW/docs/kdebase/khelpcenter/userguide/Makefile.in
+--- kde-i18n-2.2.2.orig/zh_TW/docs/kdebase/khelpcenter/userguide/Makefile.in	Tue Jun 18 01:13:04 2002
++++ kde-i18n-2.2.2/zh_TW/docs/kdebase/khelpcenter/userguide/Makefile.in	Tue Jun 18 01:13:04 2002
+@@ -212,7 +212,7 @@
+ x_includes = @x_includes@
+ x_libraries = @x_libraries@
+ 
+-KDE_LANG = zh_TW.Big5
++KDE_LANG = zh_TW
+ #>- SUBDIRS = $(AUTODIRS)
+ #>+ 2
+ SUBDIRS =.
+diff -uNr kde-i18n-2.2.2.orig/zh_TW/messages/Makefile.am kde-i18n-2.2.2/zh_TW/messages/Makefile.am
+--- kde-i18n-2.2.2.orig/zh_TW/messages/Makefile.am	Tue Nov  6 03:57:48 2001
++++ kde-i18n-2.2.2/zh_TW/messages/Makefile.am	Tue Jun 18 00:57:46 2002
+@@ -1,4 +1,4 @@
+-KDE_LANG = zh_TW.Big5
++KDE_LANG = zh_TW
+ SUBDIRS = $(AUTODIRS)
+ 
+ POFILES = AUTO
+diff -uNr kde-i18n-2.2.2.orig/zh_TW/messages/Makefile.in kde-i18n-2.2.2/zh_TW/messages/Makefile.in
+--- kde-i18n-2.2.2.orig/zh_TW/messages/Makefile.in	Mon Nov 12 20:47:46 2001
++++ kde-i18n-2.2.2/zh_TW/messages/Makefile.in	Tue Jun 18 00:56:06 2002
+@@ -212,7 +212,7 @@
+ x_includes = @x_includes@
+ x_libraries = @x_libraries@
+ 
+-KDE_LANG = zh_TW.Big5
++KDE_LANG = zh_TW
+ #>- SUBDIRS = $(AUTODIRS)
+ #>+ 2
+ SUBDIRS =. kdeadmin kdebase kdegames kdegraphics kdemultimedia kdenetwork kdepim kdesdk kdetoys kdeutils docs kdeaddons kdenonbeta
+diff -uNr kde-i18n-2.2.2.orig/zh_TW/messages/entry.desktop kde-i18n-2.2.2/zh_TW/messages/entry.desktop
+--- kde-i18n-2.2.2.orig/zh_TW/messages/entry.desktop	Tue Jun 18 00:32:32 2002
++++ kde-i18n-2.2.2/zh_TW/messages/entry.desktop	Tue Jun 18 00:46:00 2002
+@@ -48,4 +48,4 @@
+ Name[vi]=Tiếng Trung Quốc 
+ Name[wa]=Chinwès
+ Name[xh]=isiTshayina
+-Name[zh_CN.GB2312]=繁体中文
++Name[zh_CN]=繁体中文
+diff -uNr kde-i18n-2.2.2.orig/zh_TW/messages/kdeaddons/Makefile.am kde-i18n-2.2.2/zh_TW/messages/kdeaddons/Makefile.am
+--- kde-i18n-2.2.2.orig/zh_TW/messages/kdeaddons/Makefile.am	Tue Nov  6 03:57:48 2001
++++ kde-i18n-2.2.2/zh_TW/messages/kdeaddons/Makefile.am	Tue Jun 18 01:04:22 2002
+@@ -1,4 +1,4 @@
+-KDE_LANG = zh_TW.Big5
++KDE_LANG = zh_TW
+ SUBDIRS = $(AUTODIRS)
+ 
+ POFILES = AUTO
+diff -uNr kde-i18n-2.2.2.orig/zh_TW/messages/kdeaddons/Makefile.in kde-i18n-2.2.2/zh_TW/messages/kdeaddons/Makefile.in
+--- kde-i18n-2.2.2.orig/zh_TW/messages/kdeaddons/Makefile.in	Mon Nov 12 20:47:46 2001
++++ kde-i18n-2.2.2/zh_TW/messages/kdeaddons/Makefile.in	Tue Jun 18 01:01:36 2002
+@@ -212,7 +212,7 @@
+ x_includes = @x_includes@
+ x_libraries = @x_libraries@
+ 
+-KDE_LANG = zh_TW.Big5
++KDE_LANG = zh_TW
+ #>- SUBDIRS = $(AUTODIRS)
+ #>+ 2
+ SUBDIRS =.
+diff -uNr kde-i18n-2.2.2.orig/zh_TW/messages/kdeadmin/Makefile.am kde-i18n-2.2.2/zh_TW/messages/kdeadmin/Makefile.am
+--- kde-i18n-2.2.2.orig/zh_TW/messages/kdeadmin/Makefile.am	Tue Nov  6 03:57:49 2001
++++ kde-i18n-2.2.2/zh_TW/messages/kdeadmin/Makefile.am	Tue Jun 18 01:04:17 2002
+@@ -1,4 +1,4 @@
+-KDE_LANG = zh_TW.Big5
++KDE_LANG = zh_TW
+ SUBDIRS = $(AUTODIRS)
+ 
+ POFILES = AUTO
+diff -uNr kde-i18n-2.2.2.orig/zh_TW/messages/kdeadmin/Makefile.in kde-i18n-2.2.2/zh_TW/messages/kdeadmin/Makefile.in
+--- kde-i18n-2.2.2.orig/zh_TW/messages/kdeadmin/Makefile.in	Mon Nov 12 20:47:46 2001
++++ kde-i18n-2.2.2/zh_TW/messages/kdeadmin/Makefile.in	Tue Jun 18 01:01:30 2002
+@@ -212,7 +212,7 @@
+ x_includes = @x_includes@
+ x_libraries = @x_libraries@
+ 
+-KDE_LANG = zh_TW.Big5
++KDE_LANG = zh_TW
+ #>- SUBDIRS = $(AUTODIRS)
+ #>+ 2
+ SUBDIRS =.
+diff -uNr kde-i18n-2.2.2.orig/zh_TW/messages/kdebase/Makefile.am kde-i18n-2.2.2/zh_TW/messages/kdebase/Makefile.am
+--- kde-i18n-2.2.2.orig/zh_TW/messages/kdebase/Makefile.am	Tue Nov  6 03:57:49 2001
++++ kde-i18n-2.2.2/zh_TW/messages/kdebase/Makefile.am	Tue Jun 18 01:04:12 2002
+@@ -1,4 +1,4 @@
+-KDE_LANG = zh_TW.Big5
++KDE_LANG = zh_TW
+ SUBDIRS = $(AUTODIRS)
+ 
+ POFILES = AUTO
+diff -uNr kde-i18n-2.2.2.orig/zh_TW/messages/kdebase/Makefile.in kde-i18n-2.2.2/zh_TW/messages/kdebase/Makefile.in
+--- kde-i18n-2.2.2.orig/zh_TW/messages/kdebase/Makefile.in	Mon Nov 12 20:47:46 2001
++++ kde-i18n-2.2.2/zh_TW/messages/kdebase/Makefile.in	Tue Jun 18 01:01:22 2002
+@@ -212,7 +212,7 @@
+ x_includes = @x_includes@
+ x_libraries = @x_libraries@
+ 
+-KDE_LANG = zh_TW.Big5
++KDE_LANG = zh_TW
+ #>- SUBDIRS = $(AUTODIRS)
+ #>+ 2
+ SUBDIRS =.
+diff -uNr kde-i18n-2.2.2.orig/zh_TW/messages/kdegames/Makefile.am kde-i18n-2.2.2/zh_TW/messages/kdegames/Makefile.am
+--- kde-i18n-2.2.2.orig/zh_TW/messages/kdegames/Makefile.am	Tue Nov  6 03:57:49 2001
++++ kde-i18n-2.2.2/zh_TW/messages/kdegames/Makefile.am	Tue Jun 18 01:04:07 2002
+@@ -1,4 +1,4 @@
+-KDE_LANG = zh_TW.Big5
++KDE_LANG = zh_TW
+ SUBDIRS = $(AUTODIRS)
+ 
+ POFILES = AUTO
+diff -uNr kde-i18n-2.2.2.orig/zh_TW/messages/kdegames/Makefile.in kde-i18n-2.2.2/zh_TW/messages/kdegames/Makefile.in
+--- kde-i18n-2.2.2.orig/zh_TW/messages/kdegames/Makefile.in	Mon Nov 12 20:47:46 2001
++++ kde-i18n-2.2.2/zh_TW/messages/kdegames/Makefile.in	Tue Jun 18 01:01:04 2002
+@@ -212,7 +212,7 @@
+ x_includes = @x_includes@
+ x_libraries = @x_libraries@
+ 
+-KDE_LANG = zh_TW.Big5
++KDE_LANG = zh_TW
+ #>- SUBDIRS = $(AUTODIRS)
+ #>+ 2
+ SUBDIRS =.
+diff -uNr kde-i18n-2.2.2.orig/zh_TW/messages/kdegraphics/Makefile.am kde-i18n-2.2.2/zh_TW/messages/kdegraphics/Makefile.am
+--- kde-i18n-2.2.2.orig/zh_TW/messages/kdegraphics/Makefile.am	Tue Nov  6 03:57:49 2001
++++ kde-i18n-2.2.2/zh_TW/messages/kdegraphics/Makefile.am	Tue Jun 18 01:04:03 2002
+@@ -1,4 +1,4 @@
+-KDE_LANG = zh_TW.Big5
++KDE_LANG = zh_TW
+ SUBDIRS = $(AUTODIRS)
+ 
+ POFILES = AUTO
+diff -uNr kde-i18n-2.2.2.orig/zh_TW/messages/kdegraphics/Makefile.in kde-i18n-2.2.2/zh_TW/messages/kdegraphics/Makefile.in
+--- kde-i18n-2.2.2.orig/zh_TW/messages/kdegraphics/Makefile.in	Mon Nov 12 20:47:46 2001
++++ kde-i18n-2.2.2/zh_TW/messages/kdegraphics/Makefile.in	Tue Jun 18 01:00:55 2002
+@@ -212,7 +212,7 @@
+ x_includes = @x_includes@
+ x_libraries = @x_libraries@
+ 
+-KDE_LANG = zh_TW.Big5
++KDE_LANG = zh_TW
+ #>- SUBDIRS = $(AUTODIRS)
+ #>+ 2
+ SUBDIRS =.
+diff -uNr kde-i18n-2.2.2.orig/zh_TW/messages/kdemultimedia/Makefile.am kde-i18n-2.2.2/zh_TW/messages/kdemultimedia/Makefile.am
+--- kde-i18n-2.2.2.orig/zh_TW/messages/kdemultimedia/Makefile.am	Tue Nov  6 03:57:49 2001
++++ kde-i18n-2.2.2/zh_TW/messages/kdemultimedia/Makefile.am	Tue Jun 18 01:03:54 2002
+@@ -1,4 +1,4 @@
+-KDE_LANG = zh_TW.Big5
++KDE_LANG = zh_TW
+ SUBDIRS = $(AUTODIRS)
+ 
+ POFILES = AUTO
+diff -uNr kde-i18n-2.2.2.orig/zh_TW/messages/kdemultimedia/Makefile.in kde-i18n-2.2.2/zh_TW/messages/kdemultimedia/Makefile.in
+--- kde-i18n-2.2.2.orig/zh_TW/messages/kdemultimedia/Makefile.in	Mon Nov 12 20:47:46 2001
++++ kde-i18n-2.2.2/zh_TW/messages/kdemultimedia/Makefile.in	Tue Jun 18 01:00:47 2002
+@@ -212,7 +212,7 @@
+ x_includes = @x_includes@
+ x_libraries = @x_libraries@
+ 
+-KDE_LANG = zh_TW.Big5
++KDE_LANG = zh_TW
+ #>- SUBDIRS = $(AUTODIRS)
+ #>+ 2
+ SUBDIRS =.
+diff -uNr kde-i18n-2.2.2.orig/zh_TW/messages/kdenetwork/Makefile.am kde-i18n-2.2.2/zh_TW/messages/kdenetwork/Makefile.am
+--- kde-i18n-2.2.2.orig/zh_TW/messages/kdenetwork/Makefile.am	Tue Nov  6 03:57:50 2001
++++ kde-i18n-2.2.2/zh_TW/messages/kdenetwork/Makefile.am	Tue Jun 18 01:03:47 2002
+@@ -1,4 +1,4 @@
+-KDE_LANG = zh_TW.Big5
++KDE_LANG = zh_TW
+ SUBDIRS = $(AUTODIRS)
+ 
+ POFILES = AUTO
+diff -uNr kde-i18n-2.2.2.orig/zh_TW/messages/kdenetwork/Makefile.in kde-i18n-2.2.2/zh_TW/messages/kdenetwork/Makefile.in
+--- kde-i18n-2.2.2.orig/zh_TW/messages/kdenetwork/Makefile.in	Mon Nov 12 20:47:46 2001
++++ kde-i18n-2.2.2/zh_TW/messages/kdenetwork/Makefile.in	Tue Jun 18 01:00:41 2002
+@@ -212,7 +212,7 @@
+ x_includes = @x_includes@
+ x_libraries = @x_libraries@
+ 
+-KDE_LANG = zh_TW.Big5
++KDE_LANG = zh_TW
+ #>- SUBDIRS = $(AUTODIRS)
+ #>+ 2
+ SUBDIRS =.
+diff -uNr kde-i18n-2.2.2.orig/zh_TW/messages/kdenonbeta/Makefile.am kde-i18n-2.2.2/zh_TW/messages/kdenonbeta/Makefile.am
+--- kde-i18n-2.2.2.orig/zh_TW/messages/kdenonbeta/Makefile.am	Tue Nov  6 03:57:50 2001
++++ kde-i18n-2.2.2/zh_TW/messages/kdenonbeta/Makefile.am	Tue Jun 18 01:03:42 2002
+@@ -1,4 +1,4 @@
+-KDE_LANG = zh_TW.Big5
++KDE_LANG = zh_TW
+ SUBDIRS = $(AUTODIRS)
+ 
+ POFILES = AUTO
+diff -uNr kde-i18n-2.2.2.orig/zh_TW/messages/kdenonbeta/Makefile.in kde-i18n-2.2.2/zh_TW/messages/kdenonbeta/Makefile.in
+--- kde-i18n-2.2.2.orig/zh_TW/messages/kdenonbeta/Makefile.in	Mon Nov 12 20:47:46 2001
++++ kde-i18n-2.2.2/zh_TW/messages/kdenonbeta/Makefile.in	Tue Jun 18 01:00:33 2002
+@@ -212,7 +212,7 @@
+ x_includes = @x_includes@
+ x_libraries = @x_libraries@
+ 
+-KDE_LANG = zh_TW.Big5
++KDE_LANG = zh_TW
+ #>- SUBDIRS = $(AUTODIRS)
+ #>+ 2
+ SUBDIRS =.
+diff -uNr kde-i18n-2.2.2.orig/zh_TW/messages/kdepim/Makefile.am kde-i18n-2.2.2/zh_TW/messages/kdepim/Makefile.am
+--- kde-i18n-2.2.2.orig/zh_TW/messages/kdepim/Makefile.am	Tue Nov  6 03:57:50 2001
++++ kde-i18n-2.2.2/zh_TW/messages/kdepim/Makefile.am	Tue Jun 18 01:03:38 2002
+@@ -1,4 +1,4 @@
+-KDE_LANG = zh_TW.Big5
++KDE_LANG = zh_TW
+ SUBDIRS = $(AUTODIRS)
+ 
+ POFILES = AUTO
+diff -uNr kde-i18n-2.2.2.orig/zh_TW/messages/kdepim/Makefile.in kde-i18n-2.2.2/zh_TW/messages/kdepim/Makefile.in
+--- kde-i18n-2.2.2.orig/zh_TW/messages/kdepim/Makefile.in	Mon Nov 12 20:47:46 2001
++++ kde-i18n-2.2.2/zh_TW/messages/kdepim/Makefile.in	Tue Jun 18 01:00:24 2002
+@@ -212,7 +212,7 @@
+ x_includes = @x_includes@
+ x_libraries = @x_libraries@
+ 
+-KDE_LANG = zh_TW.Big5
++KDE_LANG = zh_TW
+ #>- SUBDIRS = $(AUTODIRS)
+ #>+ 2
+ SUBDIRS =.
+diff -uNr kde-i18n-2.2.2.orig/zh_TW/messages/kdesdk/Makefile.am kde-i18n-2.2.2/zh_TW/messages/kdesdk/Makefile.am
+--- kde-i18n-2.2.2.orig/zh_TW/messages/kdesdk/Makefile.am	Tue Nov  6 03:57:50 2001
++++ kde-i18n-2.2.2/zh_TW/messages/kdesdk/Makefile.am	Tue Jun 18 01:03:31 2002
+@@ -1,4 +1,4 @@
+-KDE_LANG = zh_TW.Big5
++KDE_LANG = zh_TW
+ SUBDIRS = $(AUTODIRS)
+ 
+ POFILES = AUTO
+diff -uNr kde-i18n-2.2.2.orig/zh_TW/messages/kdesdk/Makefile.in kde-i18n-2.2.2/zh_TW/messages/kdesdk/Makefile.in
+--- kde-i18n-2.2.2.orig/zh_TW/messages/kdesdk/Makefile.in	Mon Nov 12 20:47:46 2001
++++ kde-i18n-2.2.2/zh_TW/messages/kdesdk/Makefile.in	Tue Jun 18 01:00:18 2002
+@@ -212,7 +212,7 @@
+ x_includes = @x_includes@
+ x_libraries = @x_libraries@
+ 
+-KDE_LANG = zh_TW.Big5
++KDE_LANG = zh_TW
+ #>- SUBDIRS = $(AUTODIRS)
+ #>+ 2
+ SUBDIRS =.
+diff -uNr kde-i18n-2.2.2.orig/zh_TW/messages/kdetoys/Makefile.am kde-i18n-2.2.2/zh_TW/messages/kdetoys/Makefile.am
+--- kde-i18n-2.2.2.orig/zh_TW/messages/kdetoys/Makefile.am	Tue Nov  6 03:57:50 2001
++++ kde-i18n-2.2.2/zh_TW/messages/kdetoys/Makefile.am	Tue Jun 18 01:03:22 2002
+@@ -1,4 +1,4 @@
+-KDE_LANG = zh_TW.Big5
++KDE_LANG = zh_TW
+ SUBDIRS = $(AUTODIRS)
+ 
+ POFILES = AUTO
+diff -uNr kde-i18n-2.2.2.orig/zh_TW/messages/kdetoys/Makefile.in kde-i18n-2.2.2/zh_TW/messages/kdetoys/Makefile.in
+--- kde-i18n-2.2.2.orig/zh_TW/messages/kdetoys/Makefile.in	Mon Nov 12 20:47:47 2001
++++ kde-i18n-2.2.2/zh_TW/messages/kdetoys/Makefile.in	Tue Jun 18 01:00:11 2002
+@@ -212,7 +212,7 @@
+ x_includes = @x_includes@
+ x_libraries = @x_libraries@
+ 
+-KDE_LANG = zh_TW.Big5
++KDE_LANG = zh_TW
+ #>- SUBDIRS = $(AUTODIRS)
+ #>+ 2
+ SUBDIRS =.
+diff -uNr kde-i18n-2.2.2.orig/zh_TW/messages/kdeutils/Makefile.am kde-i18n-2.2.2/zh_TW/messages/kdeutils/Makefile.am
+--- kde-i18n-2.2.2.orig/zh_TW/messages/kdeutils/Makefile.am	Tue Nov  6 03:57:50 2001
++++ kde-i18n-2.2.2/zh_TW/messages/kdeutils/Makefile.am	Tue Jun 18 01:03:16 2002
+@@ -1,4 +1,4 @@
+-KDE_LANG = zh_TW.Big5
++KDE_LANG = zh_TW
+ SUBDIRS = $(AUTODIRS)
+ 
+ POFILES = AUTO
+diff -uNr kde-i18n-2.2.2.orig/zh_TW/messages/kdeutils/Makefile.in kde-i18n-2.2.2/zh_TW/messages/kdeutils/Makefile.in
+--- kde-i18n-2.2.2.orig/zh_TW/messages/kdeutils/Makefile.in	Mon Nov 12 20:47:47 2001
++++ kde-i18n-2.2.2/zh_TW/messages/kdeutils/Makefile.in	Tue Jun 18 01:00:05 2002
+@@ -212,7 +212,7 @@
+ x_includes = @x_includes@
+ x_libraries = @x_libraries@
+ 
+-KDE_LANG = zh_TW.Big5
++KDE_LANG = zh_TW
+ #>- SUBDIRS = $(AUTODIRS)
+ #>+ 2
+ SUBDIRS =.
