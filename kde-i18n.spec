@@ -2,7 +2,7 @@ Summary:	K Desktop Environment - international support
 Summary(pl):	KDE - wsparcie dla t³umaczeñ miêdzynarodowych
 Name:		kde-i18n
 Version:	2.2.2
-Release:	7
+Release:	8
 License:	GPL/LGPL
 Group:		X11/Applications
 Source0:	ftp://ftp.kde.org/pub/kde/stable/%{version}/src/%{name}-%{version}.tar.bz2
@@ -12,6 +12,7 @@ Patch0:		%{name}-ugly.patch
 Patch1:		%{name}-nodoc.patch
 Patch2:		%{name}-pl_lang_names.patch
 Patch3:		%{name}-nn.patch
+Patch4:		%{name}-zh.patch
 BuildRequires:	libxml2 >= 2.4.2
 # It creates symlinks to some not-translated files.
 BuildRequires:	kdelibs = %{version}
@@ -622,6 +623,9 @@ KDE - wsparcie dla jêzyka chiñskiego.
 %patch2 -p1
 mv -f no_NY nn
 %patch3 -p1
+mv -f zh_CN.GB2312 zh_CN
+mv -f zh_TW.Big5   zh_TW
+%patch4 -p1 
 
 %build
 %define         _sharedir       %{_datadir}
@@ -631,7 +635,7 @@ kde_htmldir="%{_htmldir}"; export kde_htmldir
 
 LDFLAGS="%{rpmldflags}"
 #$%{__make} -f Makefile.cvs
-cp -f %{SOURCE1} zh_CN.GB2312/messages
+cp -f %{SOURCE1} zh_CN/messages
 %configure2_13
 %{__make} RPM_OPT_FLAGS="%{rpmcflags}"
 
@@ -671,6 +675,9 @@ FindLang() {
 
 rm -rf $RPM_BUILD_ROOT
 %{__make} DESTDIR=$RPM_BUILD_ROOT install
+
+# These are included in ktouch
+rm -f {de,fr,no}/messages/kdenonbeta/ktouch.po
 
 FindLang af Affrikaans
 FindLang az Azerbaijani
@@ -723,8 +730,8 @@ FindLang tr Turkish
 FindLang uk Ukrainian
 FindLang xh Xhosa
 # FindLang wa Walloon
-FindLang zh_CN.GB2312 Simplified_Chinese
-FindLang zh_TW.Big5 Chinese
+FindLang zh_CN Simplified_Chinese
+FindLang zh_TW Chinese
 
 %clean
 rm -rf $RPM_BUILD_ROOT
