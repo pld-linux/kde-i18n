@@ -831,7 +831,7 @@ done
 #	sed -ie "s/nb/no/g" $plik
 #	fi
 # done
-		
+
 for plik in `find ./nb -name Makefile.am` ; do
 	echo $plik
 	sed -i -e "s/nb/no/g" $plik
@@ -1010,7 +1010,7 @@ FindLang ta Tamil
 FindLang th Thai
 FindLang tr Turkish
 FindLang uk Ukrainian
-FindLang ven Venda 
+FindLang ven Venda
 FindLang vi Vietnamese
 # FindLang wa Walloon
 FindLang xh Xhosa
