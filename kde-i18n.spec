@@ -21,6 +21,7 @@ Source1:	%{name}-splitmo
 Source2:	%{name}-splitdoc
 Source3:	%{name}-splitdoc-shared
 Patch0:		%{name}-nl.patch
+Patch1:		%{name}-fr.patch
 %if %{with alltogether}
 # NOTE: "Affrikaans", "Norwegian_Bookmal" and "Portugnese" are here
 # intentionally, to allow upgrade from packages with misspelled names
@@ -1212,6 +1213,7 @@ KDE - wsparcie dla jêzyka zuluskiego.
 %prep
 %setup -q
 %patch0 -p1
+%patch1 -p1
 
 %build
 kde_htmldir="%{_kdedocdir}"; export kde_htmldir
