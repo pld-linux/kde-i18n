@@ -1,0 +1,15 @@
+--- kde-i18n-3.2.1/pl/messages/kdepim/kmail.po.orig	2004-02-28 18:51:18.000000000 +0100
++++ kde-i18n-3.2.1/pl/messages/kdepim/kmail.po	2004-03-26 00:01:59.000000000 +0100
+@@ -1458,10 +1458,10 @@
+ "<h3>Polityka powiadamiania o losie wiadomości</h3> "
+ "<p>"
+ "Powiadamianie o losie wiadomości (Message Disposition Notification, MDN) to "
+-"generalizacja tak zwanego \"potwierdzenia odbioru\". Autor wiadomości "
++"generalizacja tak zwanego &quot;potwierdzenia odbioru&quot. Autor wiadomości "
+ "żąda od programu pocztowego odbiorcy powiadomienia, z którego autor może "
+ "dowiedzieć się, co stało się z jego wiadomością. Typowe losy "
+-"wiadomości to \"przeczytana\", \"usunięta\", \"przesłana\" (np. "
++"wiadomości to &quotprzeczytana&quot, &quotusunięta&quot, &quotprzesłana&quot (np. "
+ "przekazana dalej)</p> "
+ "<p>KMail oferuje następujące tryby obsługi MDN: "
+ "<ul>"
