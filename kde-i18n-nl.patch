@@ -29,3 +29,14 @@
  ></shortcut
  > <guimenu
  >Clock</guimenu
+--- kde-i18n-3.2.2/nl/docs/kdeedu/kmplot/using.docbook.org	2004-04-20 14:01:10.000000000 +0000
++++ kde-i18n-3.2.2/nl/docs/kdeedu/kmplot/using.docbook	2004-04-20 14:02:10.000000000 +0000
+@@ -78,7 +78,7 @@
+ >Bijvoorbeeld, stel dat u een cirkel wilt tekenen, die de parametrische vergelijkingen heeft x=sin(t), y=cos(t). In de functiesdialoog van &kmplot; doet u het volgende: <orderedlist>
+ <listitem
+ ><para
+->Voer de functie in voor de x-coördinaat, en druk dan op &Enter;: <screen
++>Voer de functie in voor de x-coördinaat, en druk dan op ;: <screen
+ ><userinput>
+ xcirkel=sin(t)
+ </userinput
