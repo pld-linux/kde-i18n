@@ -44,6 +44,7 @@ BuildRequires:	gettext-devel
 BuildRequires:	kdelibs = %{version}
 BuildRequires:	kdelibs-devel
 BuildRequires:	libxml2-progs >= 2.4.2
+BuildRequires:	perl
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
@@ -784,34 +785,27 @@ LDFLAGS="%{rpmldflags}"
 #	sed -ie "s/nb/no/g" $plik
 #	fi
 # done
-		
+perl -pi -e
+
+for plik in `find ./ -name \*.desktop` ; do
+        echo $plik
+         perl -pi -e "s/\[nb\]/\[no\]/g" $plik
+done
+
 for plik in `find ./nb -name Makefile.am` ; do
-	if [ -d $plik ]; then
-		echo $plik
-		sed -e "s/[nb]/[no]/g" > $plik.1
-		mv -f $plik.1 $plik
-	fi
+        echo $plik
+        perl -pi -e "s/nb/no/g" $plik
 done
 
 for plik in `find ./nb -name configure.in.in` ; do
-	if [ -d $plik ]; then
-		echo $plik
-		sed -e "s/[nb]/[no]/g" > $plik.1
-		mv -f $plik.1 $plik
-	fi
+        echo $plik
+        perl -pi -e "s/nb/no/g" $plik
 done
 
-for plik in `find ./ -name \*.desktop` ; do
-	if [ -d $plik ]; then
-		echo $plik
-		sed -e "s/[nb]/[no]/g" > $plik.1
-		mv -f $plik.1 $plik
-	fi
-done
-
-sed -ie "s/nb/no/g" ./subdirs
-sed -ie "s/nb/no/g" ./teamnames
+perl -pi -e  "s/nb/no/g" ./subdirs
+perl -pi -e  "s/nb/no/g" ./teamnames
 mv -f nb no
+
 %{__make} -f admin/Makefile.common cvs
 
 %configure
@@ -977,7 +971,7 @@ FindLang ta Tamil
 FindLang th Thai
 FindLang tr Turkish
 FindLang uk Ukrainian
-FindLang ven Venda 
+FindLang ven Venda
 FindLang vi Vietnamese
 # FindLang wa Walloon
 FindLang xh Xhosa
