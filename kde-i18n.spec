@@ -1,11 +1,11 @@
 #
 # Conditional build:
-%bcond_with alltogether		# build single package containing support
-				# for all languages
-%bcond_with tarball_creation	# create tarballs with resources for specific
-				# packages; don't create any RPMs
-%bcond_with kdelibs		# create single small package containing
-				# essential files only
+%bcond_with	alltogether		# build single package containing support
+					# for all languages
+%bcond_with	tarball_creation	# create tarballs with resources for specific
+					# packages; don't create any RPMs
+%bcond_with	kdelibs			# create single small package containing
+					# essential files only
 #
 Summary:	K Desktop Environment - international support
 Summary(pl):	KDE - wsparcie dla wielu jêzyków
@@ -20,8 +20,7 @@ Source0:	ftp://ftp.kde.org/pub/kde/stable/%{version}/src/%{name}-%{version}.tar.
 Source1:	%{name}-splitmo
 Source2:	%{name}-splitdoc
 Source3:	%{name}-splitdoc-shared
-Patch2:		%{name}-nl.patch
-Patch3:		%{name}-kmail.patch
+Patch0:		%{name}-nl.patch
 %if %{with alltogether}
 # NOTE: "Affrikaans", "Norwegian_Bookmal" and "Portugnese" are here
 # intentionally, to allow upgrade from packages with misspelled names
@@ -1212,8 +1211,7 @@ KDE - wsparcie dla jêzyka zuluskiego.
 
 %prep
 %setup -q
-%patch2 -p1
-#%patch3 -p1
+%patch0 -p1
 
 %build
 kde_htmldir="%{_kdedocdir}"; export kde_htmldir
