@@ -4,12 +4,17 @@
 #
 # --with	tarball_creation	Create tarballs with resources for
 #					specific packages
+#
+# --with	kdelibs_only		Create single small package containing
+#					essential files only
+
+
 
 Summary:	K Desktop Environment - International Support
 Summary(pl):	KDE - Wsparcie dla t³umaczeñ miêdzynarodowych
 Name:		kde-i18n
 Version:	3.0.1
-Release:	1.1
+Release:	1.2
 License:	GPL/LGPL
 Group:		X11/Applications
 Source0:	ftp://ftp.kde.org/pub/kde/stable/3.0/src/%{name}-%{version}.tar.bz2
@@ -22,20 +27,20 @@ Patch3:		%{name}-3.0.1-core.patch
 %if %{?_with_alltogether:1}%{!?_with_alltogether:0}
 Obsoletes:	kde-i18n-Affrikaans kde-i18n-Arabic kde-i18n-Azerbaijani
 Obsoletes:	kde-i18n-Bulgarian kde-i18n-Bosnian kde-i18n-Catalan
-Obsoletes:	kde-i18n-Czech kde-i18n-Danish kde-i18n-German kde-i18n-Greek 
-Obsoletes:	kde-i18n-English_UK kde-i18n-Esperanto kde-i18n-Spanish 
+Obsoletes:	kde-i18n-Czech kde-i18n-Danish kde-i18n-German kde-i18n-Greek
+Obsoletes:	kde-i18n-English_UK kde-i18n-Esperanto kde-i18n-Spanish
 Obsoletes:	kde-i18n-Estonian kde-i18n-Finnish kde-i18n-French
-Obsoletes:	kde-i18n-Hebrew kde-i18n-Croatian kde-i18n-Hungarian 
-Obsoletes:	kde-i18n-Indonesian kde-i18n-Icelandic kde-i18n-Italian 
-Obsoletes:	kde-i18n-Japanese kde-i18n-Korean kde-i18n-Lithuanian 
-Obsoletes:	kde-i18n-Latvian kde-i18n-Maltese kde-i18n-Dutch 
+Obsoletes:	kde-i18n-Hebrew kde-i18n-Croatian kde-i18n-Hungarian
+Obsoletes:	kde-i18n-Indonesian kde-i18n-Icelandic kde-i18n-Italian
+Obsoletes:	kde-i18n-Japanese kde-i18n-Korean kde-i18n-Lithuanian
+Obsoletes:	kde-i18n-Latvian kde-i18n-Maltese kde-i18n-Dutch
 Obsoletes:	kde-i18n-Norwegian kde-i18n-Norwegian_Bokmaal
-Obsoletes:	kde-i18n-Norwegian_Nynorsk kde-i18n-Polish kde-i18n-Portugnese 
-Obsoletes:	kde-i18n-Brazil_Portugnese kde-i18n-Romanian kde-i18n-Russian 
-Obsoletes:	kde-i18n-Slovak kde-i18n-Slovenian kde-i18n-Serbian 
-Obsoletes:	kde-i18n-Swedish kde-i18n-Tamil kde-i18n-Thai kde-i18n-Turkish 
-Obsoletes:	kde-i18n-Ukrainian kde-i18n-Venda kde-i18n-Vietnamese 
-Obsoletes:	kde-i18n-Xhosa kde-i18n-Simplified_Chinese kde-i18n-Chinese 
+Obsoletes:	kde-i18n-Norwegian_Nynorsk kde-i18n-Polish kde-i18n-Portugnese
+Obsoletes:	kde-i18n-Brazil_Portugnese kde-i18n-Romanian kde-i18n-Russian
+Obsoletes:	kde-i18n-Slovak kde-i18n-Slovenian kde-i18n-Serbian
+Obsoletes:	kde-i18n-Swedish kde-i18n-Tamil kde-i18n-Thai kde-i18n-Turkish
+Obsoletes:	kde-i18n-Ukrainian kde-i18n-Venda kde-i18n-Vietnamese
+Obsoletes:	kde-i18n-Xhosa kde-i18n-Simplified_Chinese kde-i18n-Chinese
 Obsoletes:	kde-i18n-Zulu
 %endif
 BuildRequires:	libxml2 >= 2.4.2
@@ -55,7 +60,39 @@ K Desktop Environment - International Support.
 %description -l pl
 KDE - Wsparcie dla t³umaczeñ miêdzynarodowych.
 
-%if %{?_with_alltogether:0}%{!?_with_alltogether:1}
+%if %{?_with_kdelibs_only:1}%{!?_with_kdelibs_only:0}
+%package kdelibs
+Summary:	K Desktop Environment - International Support
+Summary(pl):	KDE - Wsparcie dla t³umaczeñ miêdzynarodowych
+Group:		X11/Applications
+Conflicts:	kde-i18n-Affrikaans kde-i18n-Arabic kde-i18n-Azerbaijani
+Conflicts:	kde-i18n-Bulgarian kde-i18n-Bosnian kde-i18n-Catalan
+Conflicts:	kde-i18n-Czech kde-i18n-Danish kde-i18n-German kde-i18n-Greek
+Conflicts:	kde-i18n-English_UK kde-i18n-Esperanto kde-i18n-Spanish
+Conflicts:	kde-i18n-Estonian kde-i18n-Finnish kde-i18n-French
+Conflicts:	kde-i18n-Hebrew kde-i18n-Croatian kde-i18n-Hungarian
+Conflicts:	kde-i18n-Indonesian kde-i18n-Icelandic kde-i18n-Italian
+Conflicts:	kde-i18n-Japanese kde-i18n-Korean kde-i18n-Lithuanian
+Conflicts:	kde-i18n-Latvian kde-i18n-Maltese kde-i18n-Dutch
+Conflicts:	kde-i18n-Norwegian kde-i18n-Norwegian_Bokmaal
+Conflicts:	kde-i18n-Norwegian_Nynorsk kde-i18n-Polish kde-i18n-Portugnese
+Conflicts:	kde-i18n-Brazil_Portugnese kde-i18n-Romanian kde-i18n-Russian
+Conflicts:	kde-i18n-Slovak kde-i18n-Slovenian kde-i18n-Serbian
+Conflicts:	kde-i18n-Swedish kde-i18n-Tamil kde-i18n-Thai kde-i18n-Turkish
+Conflicts:	kde-i18n-Ukrainian kde-i18n-Venda kde-i18n-Vietnamese
+Conflicts:	kde-i18n-Xhosa kde-i18n-Simplified_Chinese kde-i18n-Chinese
+Conflicts:	kde-i18n-Zulu kde-i18n
+
+%description kdelibs
+K Desktop Environment - International Support. Package
+contains essential files only
+
+%description -l pl kdelibs
+KDE - Wsparcie dla t³umaczeñ miêdzynarodowych. Pakiet
+zawiera tylko pliki podstawowe.
+%endif
+
+%if %{?_with_alltogether:0}%{!?_with_alltogether:1} && %{?_with_kdelibs_only:0}%{!?_with_kdelibs_only:1}
 %package Affrikaans
 Summary:	K Desktop Environment - International Support
 Group:		X11/Applications
@@ -766,7 +803,7 @@ done
 grep -v '^#' < %{SOURCE1} | \
 while read package file ; do
 if [ "$package" != "" -a "$file" != "" ] ; then
-    if [ -d $RPM_BUILD_ROOT/tmp/$package ] ; then 
+    if [ -d $RPM_BUILD_ROOT/tmp/$package ] ; then
 	for f in $RPM_BUILD_ROOT%{_datadir}/locale/*/LC_MESSAGES/$file ; do
 	    DIR=`echo $f | sed -e s,%{_datadir}/locale/,/tmp/$package%{_datadir}/locale/, -e s,/$file'$',,`
 	    if [ ! -d $DIR ] ; then
@@ -781,7 +818,7 @@ done
 grep -v '^#' < %{SOURCE2} | \
 while read package directory ; do
 if [ "$package" != "" -a "$directory" != "" ] ; then
-    if [ -d $RPM_BUILD_ROOT/tmp/$package ] ; then 
+    if [ -d $RPM_BUILD_ROOT/tmp/$package ] ; then
 	for f in $RPM_BUILD_ROOT%{_htmldir}/*/$directory ; do
 	    DIR=`echo $f | sed -e s,%{_htmldir}/,/tmp/$package%{_htmldir}/, -e s,/$directory'$',,`
 	    if [ ! -d $DIR ] ; then
@@ -797,6 +834,13 @@ mv $RPM_BUILD_ROOT%{_datadir}/apps/ktuberling $RPM_BUILD_ROOT/tmp/kdegames%{_dat
 mv $RPM_BUILD_ROOT%{_datadir}/apps/amor $RPM_BUILD_ROOT/tmp/kdetoys%{_datadir}/apps
 
 %if %{?_with_tarball_creation:1}%{!?_tarball_creation:0}
+
+cd $RPM_BUILD_ROOT%{_datadir}/locale
+for l in * ; do
+	cp $l/[!L]* $RPM_BUILD_ROOT/tmp/kdebase%{_datadir}/locale/$l
+done
+cd -
+
 ISDIR="`pwd`"
 for i in $package_list ; do
 	( cd $RPM_BUILD_ROOT/tmp/$i ; tar cjf %{_sourcedir}/%{name}-$i-%{version}.tar.bz2 . )
@@ -871,7 +915,21 @@ cat [A-Z]*.lang >all.lang
 %clean
 rm -rf $RPM_BUILD_ROOT
 
-%if %{?_with_alltogether:0}%{!?_with_alltogether:1}
+%if %{?_with_kdelibs_only:1}%{!?_with_kdelibs_only:0}
+%files kdelibs
+%defattr(644,root,root,755)
+#%{_datadir}/locale/*/[!L]*
+%{_datadir}/locale/*/LC_MESSAGES/kdelibs.mo
+%{_datadir}/locale/*/LC_MESSAGES/katepart.mo
+#%{_datadir}/locale/*/LC_MESSAGES/cupsdconf.mo
+#%{_datadir}/locale/*/LC_MESSAGES/desktop.mo
+#%{_datadir}/locale/*/LC_MESSAGES/kmcop.mo
+#%{_datadir}/locale/*/LC_MESSAGES/knotify.mo
+#%{_datadir}/locale/*/LC_MESSAGES/libkscreensaver.mo
+#%{_datadir}/locale/*/LC_MESSAGES/ppdtranslations.mo
+%endif
+
+%if %{?_with_alltogether:0}%{!?_with_alltogether:1} && %{?_with_kdelibs_only:0}%{!?_with_kdelibs_only:1}
 %files -f Affrikaans.lang Affrikaans
 %files -f Arabic.lang Arabic
 %files -f Azerbaijani.lang Azerbaijani
