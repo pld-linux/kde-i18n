@@ -4,7 +4,8 @@
 #					support for all languages
 #
 # --with	tarball_creation	Create tarballs with resources for
-#					specific packages
+#					specific packages - does not build any
+#					rpm-packages
 #
 # --with	kdelibs			Create single small package containing
 #					essential files only
@@ -983,21 +984,21 @@ FindLang zh_TW Chinese
 FindLang zu Zulu
 %endif
 
-%if %{?_with_alltogether:1}%{!?_with_alltogether:0}
+%if %{!?_with_alltogether:1}0
 cat [A-Z]*.lang >all.lang
 %endif
 
 %clean
 rm -rf $RPM_BUILD_ROOT
 
-%if %{?_with_kdelibs:1}%{!?_with_kdelibs:0}
+%if %{?_with_kdelibs:%{!?_with_tarball_creation:0}1
 %files kdelibs
 %defattr(644,root,root,755)
 %{_datadir}/locale/*/LC_MESSAGES/kdelibs.mo
 %{_datadir}/locale/*/LC_MESSAGES/katepart.mo
 %endif
 
-%if %{?_with_alltogether:0}%{!?_with_alltogether:1}
+%if %{!?_with_alltogether:%{!?_with_tarball_creation:1}}0
 %files -f Affrikaans.lang Affrikaans
 %files -f Arabic.lang Arabic
 ##%files -f Azerbaijani.lang Azerbaijani
@@ -1063,6 +1064,6 @@ rm -rf $RPM_BUILD_ROOT
 %files -f Zulu.lang Zulu
 %endif
 
-%if %{?_with_alltogether:1}%{!?_with_alltogether:0}
+%if %{!?_with_alltogether:%{!?_with_tarball_creation:1}}1
 %files -f all.lang
 %endif
