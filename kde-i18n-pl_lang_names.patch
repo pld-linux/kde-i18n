@@ -1,102 +1,226 @@
-diff -ur kde-i18n-2.2.2.orig/af/messages/entry.desktop kde-i18n-2.2.2/af/messages/entry.desktop
---- kde-i18n-2.2.2.orig/af/messages/entry.desktop	Wed Sep  5 01:32:47 2001
-+++ kde-i18n-2.2.2/af/messages/entry.desktop	Sat May 18 00:44:47 2002
-@@ -17,6 +17,7 @@
+diff -ur kde-i18n-3.0.orig/af/messages/entry.desktop kde-i18n-3.0/af/messages/entry.desktop
+--- kde-i18n-3.0.orig/af/messages/entry.desktop	Tue Mar 19 17:31:14 2002
++++ kde-i18n-3.0/af/messages/entry.desktop	Wed May 22 22:14:41 2002
+@@ -19,6 +19,7 @@
  Name[mi]=Reo Äwherika Tatimana
  Name[mk]=Африкански
- Name[no]=Afrikansk
+ Name[nb]=Afrikansk
 +Name[pl]=afrykanerski
- Name[pt_BR]=Africâner
+ Name[pt_BR]=Africânes
+ Name[ro]=Africană
  Name[ru]=Африкаанс
- Name[sk]=Afrikánsky
-diff -ur kde-i18n-2.2.2.orig/az/messages/entry.desktop kde-i18n-2.2.2/az/messages/entry.desktop
---- kde-i18n-2.2.2.orig/az/messages/entry.desktop	Wed Sep  5 01:33:13 2001
-+++ kde-i18n-2.2.2/az/messages/entry.desktop	Sat May 18 00:41:56 2002
-@@ -21,7 +21,7 @@
+@@ -32,7 +33,6 @@
+ Name[uk]=Південноафриканська
+ Name[ven]=Tshivhuru
+ Name[xh]=IsiBhulu
+-Name[xx]=xx
+ Name[zh_CN]=南非荷兰语
+ Name[zh_TW]=南非荷蘭語
+ Name[zu]=Isibhunu
+diff -ur kde-i18n-3.0.orig/ar/messages/entry.desktop kde-i18n-3.0/ar/messages/entry.desktop
+--- kde-i18n-3.0.orig/ar/messages/entry.desktop	Tue Mar 19 17:31:20 2002
++++ kde-i18n-3.0/ar/messages/entry.desktop	Wed May 22 22:06:12 2002
+@@ -36,7 +36,7 @@
+ Name[nl]=Arabisch
+ Name[nn]=Arabisk
+ Name[oc]=Arab
+-Name[pl]=Arabski
++Name[pl]=arabski
+ Name[pt]=Arábico
+ Name[pt_BR]=Arábico
+ Name[ro]=Arabă
+@@ -52,7 +52,6 @@
+ Name[ven]=Tshiarabiki
+ Name[vi]=Arabic (A? Rập) 
+ Name[xh]=isi-Arabhu
+-Name[xx]=xx
+ Name[zh_CN]=阿拉伯语
+ Name[zh_TW]=阿拉伯語
+ Name[zu]=isi-Arabhu
+diff -ur kde-i18n-3.0.orig/az/messages/entry.desktop kde-i18n-3.0/az/messages/entry.desktop
+--- kde-i18n-3.0.orig/az/messages/entry.desktop	Tue Mar 19 17:31:14 2002
++++ kde-i18n-3.0/az/messages/entry.desktop	Wed May 22 22:14:13 2002
+@@ -26,7 +26,7 @@
+ Name[nb]=Aserbadjansk
  Name[nl]=Azerbeidjaans
- Name[no]=Aserbadjansk
- Name[no_NY]=Aserbajdsjansk
+ Name[nn]=Aserbajdsjansk
 -Name[pl]=Azerbejdżański
 +Name[pl]=azerski
- Name[pt_BR]=Azerbaijanês
  Name[pt]=Azerbaijanês
- Name[ru]=Азербайджанский
-diff -ur kde-i18n-2.2.2.orig/bg/messages/entry.desktop kde-i18n-2.2.2/bg/messages/entry.desktop
---- kde-i18n-2.2.2.orig/bg/messages/entry.desktop	Wed Sep  5 01:33:27 2001
-+++ kde-i18n-2.2.2/bg/messages/entry.desktop	Sat May 18 00:56:05 2002
-@@ -32,7 +32,7 @@
- Name[no]=Bulgarsk
- Name[no_NY]=Bulgarsk
+ Name[pt_BR]=Azerbaijão
+ Name[ro]=Azerbaijană
+@@ -43,7 +43,6 @@
+ Name[vi]=Agiecbaigiăng 
+ Name[wa]=Azeri
+ Name[xh]=isi-Azerbaijani
+-Name[xx]=xx
+ Name[zh_CN]=阿塞拜疆语
+ Name[zh_TW]=阿塞拜疆語
+ Name[zu]=Isi-Azerbaijani
+diff -ur kde-i18n-3.0.orig/bg/messages/entry.desktop kde-i18n-3.0/bg/messages/entry.desktop
+--- kde-i18n-3.0.orig/bg/messages/entry.desktop	Tue Mar 19 17:31:14 2002
++++ kde-i18n-3.0/bg/messages/entry.desktop	Wed May 22 22:06:04 2002
+@@ -36,7 +36,7 @@
+ Name[nl]=Bulgaars
+ Name[nn]=Bulgarsk
  Name[oc]=Bulgar
 -Name[pl]=Bułgarski
 +Name[pl]=bułgarski
- Name[pt_BR]=Búlgaro
  Name[pt]=Búlgaro
- Name[ru]=Болгарский
-diff -ur kde-i18n-2.2.2.orig/cs/messages/entry.desktop kde-i18n-2.2.2/cs/messages/entry.desktop
---- kde-i18n-2.2.2.orig/cs/messages/entry.desktop	Wed Sep  5 01:33:42 2001
-+++ kde-i18n-2.2.2/cs/messages/entry.desktop	Sat May 18 00:55:20 2002
-@@ -32,7 +32,7 @@
- Name[no]=Tjekkisk
- Name[no_NY]=Tsjekkisk
+ Name[pt_BR]=Búlgaro
+ Name[ro]=Bulgară
+@@ -53,7 +53,6 @@
+ Name[vi]=Tiếng  Bungari 
+ Name[wa]=Bulgåre
+ Name[xh]=isiBulgarian
+-Name[xx]=xx
+ Name[zh_CN]=保加利亚语
+ Name[zh_TW]=保加利亞語
+ Name[zu]=Isi-Buligariyana
+diff -ur kde-i18n-3.0.orig/bs/messages/entry.desktop kde-i18n-3.0/bs/messages/entry.desktop
+--- kde-i18n-3.0.orig/bs/messages/entry.desktop	Tue Mar 19 17:31:14 2002
++++ kde-i18n-3.0/bs/messages/entry.desktop	Wed May 22 22:13:59 2002
+@@ -28,7 +28,7 @@
+ Name[nb]=Bosninsk
+ Name[nl]=Bosnisch
+ Name[nn]=Bosnisk
+-Name[pl]=Bośniacki
++Name[pl]=bośniacki
+ Name[pt]=Bósnio
+ Name[pt_BR]=Bósnio
+ Name[ro]=Bosniacă
+@@ -44,7 +44,6 @@
+ Name[ven]=Mubosinia
+ Name[wa]=Bosnyin
+ Name[xh]=isiBosnian
+-Name[xx]=xx
+ Name[zh_CN]=波斯尼亚语
+ Name[zh_TW]=波斯尼亞語
+ Name[zu]=Isi-Bosniyani
+diff -ur kde-i18n-3.0.orig/ca/messages/entry.desktop kde-i18n-3.0/ca/messages/entry.desktop
+--- kde-i18n-3.0.orig/ca/messages/entry.desktop	Tue Mar 19 17:31:14 2002
++++ kde-i18n-3.0/ca/messages/entry.desktop	Wed May 22 22:05:54 2002
+@@ -34,7 +34,7 @@
+ Name[nb]=Katalan
+ Name[nl]=Catalaans
+ Name[nn]=Katalansk
+-Name[pl]=Kataloński
++Name[pl]=kataloński
+ Name[pt]=Catalão
+ Name[pt_BR]=Catalão
+ Name[ro]=Catalană
+@@ -50,7 +50,6 @@
+ Name[ven]=Khathalani
+ Name[vi]=Tiếng Catalăng 
+ Name[xh]=isiCatalan
+-Name[xx]=xx
+ Name[zh_CN]=加泰罗尼亚语
+ Name[zh_TW]=加泰羅尼亞語
+ Name[zu]=Isi-Khathalani
+diff -ur kde-i18n-3.0.orig/cs/messages/entry.desktop kde-i18n-3.0/cs/messages/entry.desktop
+--- kde-i18n-3.0.orig/cs/messages/entry.desktop	Tue Mar 19 17:31:15 2002
++++ kde-i18n-3.0/cs/messages/entry.desktop	Wed May 22 22:13:52 2002
+@@ -36,7 +36,7 @@
+ Name[nl]=Tsjechisch
+ Name[nn]=Tsjekkisk
  Name[oc]=Chec
 -Name[pl]=Czeski
 +Name[pl]=czeski
- Name[pt_BR]=Tcheco
  Name[pt]=Checo
- Name[ru]=Чешский
-diff -ur kde-i18n-2.2.2.orig/da/messages/entry.desktop kde-i18n-2.2.2/da/messages/entry.desktop
---- kde-i18n-2.2.2.orig/da/messages/entry.desktop	Wed Sep  5 01:34:22 2001
-+++ kde-i18n-2.2.2/da/messages/entry.desktop	Sat May 18 00:44:23 2002
-@@ -33,7 +33,7 @@
- Name[no]=Dansk
- Name[no_NY]=Dansk
+ Name[pt_BR]=Tcheco
+ Name[ro]=Cehă
+@@ -53,7 +53,6 @@
+ Name[vi]=Tiếng Séc 
+ Name[wa]=Tcheke
+ Name[xh]=isiCzech
+-Name[xx]=xx
+ Name[zh_CN]=捷克语
+ Name[zh_TW]=捷克語
+ Name[zu]=Isi Czechiya
+diff -ur kde-i18n-3.0.orig/da/messages/entry.desktop kde-i18n-3.0/da/messages/entry.desktop
+--- kde-i18n-3.0.orig/da/messages/entry.desktop	Tue Mar 19 17:31:15 2002
++++ kde-i18n-3.0/da/messages/entry.desktop	Wed May 22 22:05:46 2002
+@@ -37,7 +37,7 @@
+ Name[nl]=Deens
+ Name[nn]=Dansk
  Name[oc]=Danès
 -Name[pl]=Duński
 +Name[pl]=duński
- Name[pt_BR]=Dinamarquês
  Name[pt]=Dinamarquês
- Name[ru]=Датский
-diff -ur kde-i18n-2.2.2.orig/de/messages/entry.desktop kde-i18n-2.2.2/de/messages/entry.desktop
---- kde-i18n-2.2.2.orig/de/messages/entry.desktop	Wed Sep  5 01:34:46 2001
-+++ kde-i18n-2.2.2/de/messages/entry.desktop	Sat May 18 00:41:43 2002
-@@ -33,7 +33,7 @@
- Name[no]=Tysk
- Name[no_NY]=Tysk
+ Name[pt_BR]=Dinamarquês
+ Name[ro]=Daneză
+@@ -54,7 +54,6 @@
+ Name[vi]=Tiếng Đan Mạch 
+ Name[wa]=Danwès
+ Name[xh]=isiDanish
+-Name[xx]=xx
+ Name[zh_CN]=丹麦语
+ Name[zh_TW]=丹麥語
+ Name[zu]=Isi-Danishi
+diff -ur kde-i18n-3.0.orig/de/messages/entry.desktop kde-i18n-3.0/de/messages/entry.desktop
+--- kde-i18n-3.0.orig/de/messages/entry.desktop	Tue Mar 19 17:31:15 2002
++++ kde-i18n-3.0/de/messages/entry.desktop	Wed May 22 22:13:46 2002
+@@ -37,7 +37,7 @@
+ Name[nl]=Duits
+ Name[nn]=Tysk
  Name[oc]=Alemani
 -Name[pl]=Niemiecki
 +Name[pl]=niemiecki
- Name[pt_BR]=Alemão
  Name[pt]=Alemão
- Name[ru]=Немецкий
-diff -ur kde-i18n-2.2.2.orig/el/messages/entry.desktop kde-i18n-2.2.2/el/messages/entry.desktop
---- kde-i18n-2.2.2.orig/el/messages/entry.desktop	Wed Sep  5 01:35:33 2001
-+++ kde-i18n-2.2.2/el/messages/entry.desktop	Sat May 18 00:44:19 2002
-@@ -33,7 +33,7 @@
- Name[no]=Gresk
- Name[no_NY]=Gresk
+ Name[pt_BR]=Alemão
+ Name[ro]=Germană
+@@ -54,7 +54,6 @@
+ Name[vi]=Tiếng Đức 
+ Name[wa]=Almand
+ Name[xh]=isiJamani
+-Name[xx]=xx
+ Name[zh_CN]=德语
+ Name[zh_TW]=德語
+ Name[zu]=isi-Jalimani
+diff -ur kde-i18n-3.0.orig/el/messages/entry.desktop kde-i18n-3.0/el/messages/entry.desktop
+--- kde-i18n-3.0.orig/el/messages/entry.desktop	Tue Mar 19 17:31:15 2002
++++ kde-i18n-3.0/el/messages/entry.desktop	Wed May 22 22:05:32 2002
+@@ -37,7 +37,7 @@
+ Name[nl]=Grieks
+ Name[nn]=Gresk
  Name[oc]=Grec
 -Name[pl]=Grecki
 +Name[pl]=grecki
- Name[pt_BR]=Grego
  Name[pt]=Grego
- Name[ru]=Греческий
-diff -ur kde-i18n-2.2.2.orig/en_GB/messages/entry.desktop kde-i18n-2.2.2/en_GB/messages/entry.desktop
---- kde-i18n-2.2.2.orig/en_GB/messages/entry.desktop	Wed Sep  5 01:35:36 2001
-+++ kde-i18n-2.2.2/en_GB/messages/entry.desktop	Sat May 18 00:55:14 2002
-@@ -23,7 +23,7 @@
+ Name[pt_BR]=Grego
+ Name[ro]=Greacă
+@@ -54,7 +54,6 @@
+ Name[vi]=Tiếng Hy Lạp 
+ Name[wa]=Grek
+ Name[xh]=isiGrike
+-Name[xx]=xx
+ Name[zh_CN]=希腊语
+ Name[zh_TW]=希臘語
+ Name[zu]=isi-Grike
+diff -ur kde-i18n-3.0.orig/en_GB/messages/entry.desktop kde-i18n-3.0/en_GB/messages/entry.desktop
+--- kde-i18n-3.0.orig/en_GB/messages/entry.desktop	Tue Mar 19 17:31:15 2002
++++ kde-i18n-3.0/en_GB/messages/entry.desktop	Wed May 22 22:13:39 2002
+@@ -28,7 +28,7 @@
+ Name[nb]=Engelsk (UK)
  Name[nl]=Engels (UK)
- Name[no]=Engelsk (UK)
- Name[no_NY]=Engelsk (Storbritannia)
+ Name[nn]=Engelsk (Storbritannia)
 -Name[pl]=Angielski (Brytyjski)
 +Name[pl]=angielski (brytyjski)
- Name[pt_BR]=Inglês (Reino Unido)
  Name[pt]=Inglês (Reino Unido)
- Name[ru]=Английский - Великобритания
-diff -ur kde-i18n-2.2.2.orig/eo/messages/entry.desktop kde-i18n-2.2.2/eo/messages/entry.desktop
---- kde-i18n-2.2.2.orig/eo/messages/entry.desktop	Wed Sep  5 01:35:39 2001
-+++ kde-i18n-2.2.2/eo/messages/entry.desktop	Sat May 18 00:44:14 2002
-@@ -10,6 +10,7 @@
+ Name[pt_BR]=Inglês da Inglaterra
+ Name[ro]=Engleză (UK)
+@@ -45,7 +45,6 @@
+ Name[vi]=Tiếng Anh (UK) 
+ Name[wa]=Inglès (GB)
+ Name[xh]=isiNgesi (UK)
+-Name[xx]=xx
+ Name[zh_CN]=英语 (UK)
+ Name[zh_TW]=英語 - (UK)
+ Name[zu]=Isi-Ngisi (UK)
+diff -ur kde-i18n-3.0.orig/eo/messages/entry.desktop kde-i18n-3.0/eo/messages/entry.desktop
+--- kde-i18n-3.0.orig/eo/messages/entry.desktop	Tue Mar 19 17:31:15 2002
++++ kde-i18n-3.0/eo/messages/entry.desktop	Wed May 22 22:05:10 2002
+@@ -13,6 +13,7 @@
  Name[ko]=에스페란토
  Name[mk]=Есперанто
  Name[oc]=Esperantò
@@ -104,375 +228,906 @@ diff -ur kde-i18n-2.2.2.orig/eo/messages/entry.desktop kde-i18n-2.2.2/eo/message
  Name[ru]=Эсперанто
  Name[sl]=esperanto
  Name[ta]=±ÍÀÃ¡ý§¼¡
-diff -ur kde-i18n-2.2.2.orig/es/messages/entry.desktop kde-i18n-2.2.2/es/messages/entry.desktop
---- kde-i18n-2.2.2.orig/es/messages/entry.desktop	Wed Sep  5 01:35:55 2001
-+++ kde-i18n-2.2.2/es/messages/entry.desktop	Sat May 18 00:41:27 2002
-@@ -33,7 +33,7 @@
- Name[no]=Spansk
- Name[no_NY]=Spansk
+@@ -21,7 +22,6 @@
+ Name[ven]=Muesiperato
+ Name[vi]=Tiếng Etpêrantô 
+ Name[xh]=isi-Esperanto
+-Name[xx]=xx
+ Name[zh_CN]=世界语
+ Name[zh_TW]=世界語
+ Name[zu]=Isi-Esperanto
+diff -ur kde-i18n-3.0.orig/es/messages/entry.desktop kde-i18n-3.0/es/messages/entry.desktop
+--- kde-i18n-3.0.orig/es/messages/entry.desktop	Tue Mar 19 17:31:15 2002
++++ kde-i18n-3.0/es/messages/entry.desktop	Wed May 22 22:13:17 2002
+@@ -37,7 +37,7 @@
+ Name[nl]=Spaans
+ Name[nn]=Spansk
  Name[oc]=Espanhòl
 -Name[pl]=Hiszpański
 +Name[pl]=hiszpański
- Name[pt_BR]=Espanhol
  Name[pt]=Espanhol
- Name[ru]=Испанский
-diff -ur kde-i18n-2.2.2.orig/et/messages/entry.desktop kde-i18n-2.2.2/et/messages/entry.desktop
---- kde-i18n-2.2.2.orig/et/messages/entry.desktop	Wed Sep  5 01:36:30 2001
-+++ kde-i18n-2.2.2/et/messages/entry.desktop	Sat May 18 00:43:53 2002
-@@ -32,7 +32,7 @@
+ Name[pt_BR]=Espanhol
+ Name[ro]=Spaniolă
+@@ -54,7 +54,6 @@
+ Name[vi]=Tiếng Tây Ban Nha 
+ Name[wa]=Castiyan
+ Name[xh]=isiPanish
+-Name[xx]=xx
+ Name[zh_CN]=西班牙语
+ Name[zh_TW]=西班牙語
+ Name[zu]=Isi-Panishi
+diff -ur kde-i18n-3.0.orig/et/messages/entry.desktop kde-i18n-3.0/et/messages/entry.desktop
+--- kde-i18n-3.0.orig/et/messages/entry.desktop	Tue Mar 19 17:31:15 2002
++++ kde-i18n-3.0/et/messages/entry.desktop	Wed May 22 22:20:04 2002
+@@ -36,7 +36,7 @@
+ Name[nb]=Estonsk
  Name[nl]=Ests
- Name[no]=Estonsk
- Name[no_NY]=Estisk
+ Name[nn]=Estisk
 -Name[pl]=Estoński
 +Name[pl]=estoński
- Name[pt_BR]=Estoniano
  Name[pt]=Estónio
- Name[ru]=Эстонский
-diff -ur kde-i18n-2.2.2.orig/fi/messages/entry.desktop kde-i18n-2.2.2/fi/messages/entry.desktop
---- kde-i18n-2.2.2.orig/fi/messages/entry.desktop	Wed Sep  5 01:36:35 2001
-+++ kde-i18n-2.2.2/fi/messages/entry.desktop	Sat May 18 00:41:21 2002
-@@ -33,7 +33,7 @@
- Name[no]=Finsk
- Name[no_NY]=Finsk
+ Name[pt_BR]=Estoniano
+ Name[ro]=Estoniană
+@@ -53,7 +53,6 @@
+ Name[vi]=Tiếng Estonian 
+ Name[wa]=Estonyin
+ Name[xh]=isi-Estonian
+-Name[xx]=xx
+ Name[zh_CN]=爱沙尼亚语
+ Name[zh_TW]=愛沙尼亞語
+ Name[zu]=Isi-Estoniyani
+diff -ur kde-i18n-3.0.orig/fi/messages/entry.desktop kde-i18n-3.0/fi/messages/entry.desktop
+--- kde-i18n-3.0.orig/fi/messages/entry.desktop	Tue Mar 19 17:31:16 2002
++++ kde-i18n-3.0/fi/messages/entry.desktop	Wed May 22 22:13:11 2002
+@@ -37,7 +37,7 @@
+ Name[nl]=Fins
+ Name[nn]=Finsk
  Name[oc]=Finlandès
 -Name[pl]=Fiński
 +Name[pl]=fiński
- Name[pt_BR]=Finlandês
  Name[pt]=Finlandês
- Name[ru]=Финский
-diff -ur kde-i18n-2.2.2.orig/fr/messages/entry.desktop kde-i18n-2.2.2/fr/messages/entry.desktop
---- kde-i18n-2.2.2.orig/fr/messages/entry.desktop	Wed Sep  5 01:37:03 2001
-+++ kde-i18n-2.2.2/fr/messages/entry.desktop	Sat May 18 00:43:49 2002
-@@ -33,7 +33,7 @@
- Name[no]=Fransk
- Name[no_NY]=Fransk
+ Name[pt_BR]=Finlandês
+ Name[ro]=Finlandeză
+@@ -54,7 +54,6 @@
+ Name[vi]=Tiếng Phần Lan 
+ Name[wa]=Finwès
+ Name[xh]=isiFinnish
+-Name[xx]=xx
+ Name[zh_CN]=芬兰语
+ Name[zh_TW]=芬蘭語
+ Name[zu]=Isi-Finishi
+diff -ur kde-i18n-3.0.orig/fr/messages/entry.desktop kde-i18n-3.0/fr/messages/entry.desktop
+--- kde-i18n-3.0.orig/fr/messages/entry.desktop	Tue Mar 19 17:31:16 2002
++++ kde-i18n-3.0/fr/messages/entry.desktop	Wed May 22 22:19:58 2002
+@@ -36,7 +36,7 @@
+ Name[nl]=Frans
+ Name[nn]=Fransk
  Name[oc]=Franchimand
 -Name[pl]=Francuski
 +Name[pl]=francuski
- Name[pt_BR]=Francês
  Name[pt]=Francês
- Name[ru]=Французские
-diff -ur kde-i18n-2.2.2.orig/he/messages/entry.desktop kde-i18n-2.2.2/he/messages/entry.desktop
---- kde-i18n-2.2.2.orig/he/messages/entry.desktop	Wed Sep  5 01:37:23 2001
-+++ kde-i18n-2.2.2/he/messages/entry.desktop	Sat May 18 00:46:29 2002
-@@ -33,7 +33,7 @@
- Name[no]=Hebraisk
- Name[no_NY]=Hebraisk
+ Name[pt_BR]=Francês
+ Name[ro]=Franceză
+@@ -53,7 +53,6 @@
+ Name[vi]=Pháp
+ Name[wa]=Francès
+ Name[xh]=isiFrentshi
+-Name[xx]=xx
+ Name[zh_CN]=法语
+ Name[zh_TW]=法語
+ Name[zu]=Isi-Frentshi
+diff -ur kde-i18n-3.0.orig/he/messages/entry.desktop kde-i18n-3.0/he/messages/entry.desktop
+--- kde-i18n-3.0.orig/he/messages/entry.desktop	Tue Mar 19 17:31:16 2002
++++ kde-i18n-3.0/he/messages/entry.desktop	Wed May 22 22:13:04 2002
+@@ -37,7 +37,7 @@
+ Name[nl]=Hebreeuws
+ Name[nn]=Hebraisk
  Name[oc]=Hebreu
 -Name[pl]=Hebrajski
 +Name[pl]=hebrajski
- Name[pt_BR]=Hebreu
  Name[pt]=Hebreu
- Name[ru]=Иврит
-diff -ur kde-i18n-2.2.2.orig/hu/messages/entry.desktop kde-i18n-2.2.2/hu/messages/entry.desktop
---- kde-i18n-2.2.2.orig/hu/messages/entry.desktop	Wed Sep  5 01:37:55 2001
-+++ kde-i18n-2.2.2/hu/messages/entry.desktop	Sat May 18 00:43:46 2002
-@@ -33,7 +33,7 @@
- Name[no]=Ungarsk
- Name[no_NY]=Ungarsk
+ Name[pt_BR]=Hebreu
+ Name[ro]=Israeliană
+@@ -53,7 +53,6 @@
+ Name[ven]=Muhevheru
+ Name[vi]=Tiếng Do Thái 
+ Name[xh]=isiHebhere
+-Name[xx]=xx
+ Name[zh_CN]=希伯来语
+ Name[zh_TW]=希伯來語
+ Name[zu]=Isi-Hebheru
+diff -ur kde-i18n-3.0.orig/hr/messages/entry.desktop kde-i18n-3.0/hr/messages/entry.desktop
+--- kde-i18n-3.0.orig/hr/messages/entry.desktop	Tue Mar 19 17:31:17 2002
++++ kde-i18n-3.0/hr/messages/entry.desktop	Wed May 22 22:19:42 2002
+@@ -37,7 +37,7 @@
+ Name[nl]=Kroatisch
+ Name[nn]=Kroatisk
+ Name[oc]=Cròatian
+-Name[pl]=Chorwacki
++Name[pl]=chorwacki
+ Name[pt]=Croata
+ Name[pt_BR]=Croata
+ Name[ro]=Croată
+@@ -54,7 +54,6 @@
+ Name[vi]=Tiếng Crô-át 
+ Name[wa]=Crowåte
+ Name[xh]=isiCroatian
+-Name[xx]=xx
+ Name[zh_CN]=克罗地亚语
+ Name[zh_TW]=克羅地亞語
+ Name[zu]=Isi-Croshiyani
+diff -ur kde-i18n-3.0.orig/hu/messages/entry.desktop kde-i18n-3.0/hu/messages/entry.desktop
+--- kde-i18n-3.0.orig/hu/messages/entry.desktop	Tue Mar 19 17:31:17 2002
++++ kde-i18n-3.0/hu/messages/entry.desktop	Wed May 22 22:12:58 2002
+@@ -37,7 +37,7 @@
+ Name[nl]=Hongaars
+ Name[nn]=Ungarsk
  Name[oc]=Hongarian
 -Name[pl]=Węgierski
 +Name[pl]=węgierski
- Name[pt_BR]=Húngaro
  Name[pt]=Húngaro
- Name[ru]=Венгерский
-diff -ur kde-i18n-2.2.2.orig/is/messages/entry.desktop kde-i18n-2.2.2/is/messages/entry.desktop
---- kde-i18n-2.2.2.orig/is/messages/entry.desktop	Wed Sep  5 01:38:19 2001
-+++ kde-i18n-2.2.2/is/messages/entry.desktop	Sat May 18 00:46:25 2002
-@@ -33,7 +33,7 @@
- Name[no]=Islandsk
- Name[no_NY]=Islandsk
+ Name[pt_BR]=Húngaro
+ Name[ro]=Maghiară
+@@ -54,7 +54,6 @@
+ Name[vi]=Tiếng Hung-ga-ri 
+ Name[wa]=Hongrwès
+ Name[xh]=isiHungarian
+-Name[xx]=xx
+ Name[zh_CN]=匈牙利语
+ Name[zh_TW]=匈牙利語
+ Name[zu]=Isi-Hangariyani
+diff -ur kde-i18n-3.0.orig/id/messages/entry.desktop kde-i18n-3.0/id/messages/entry.desktop
+--- kde-i18n-3.0.orig/id/messages/entry.desktop	Tue Mar 19 17:31:18 2002
++++ kde-i18n-3.0/id/messages/entry.desktop	Wed May 22 22:17:58 2002
+@@ -25,6 +25,7 @@
+ Name[mt]=Indoneżjan
+ Name[nl]=Indonesisch
+ Name[nn]=Indonesisk
++Name[pl]=indonezyjski
+ Name[pt]=Indonésio
+ Name[pt_BR]=Indonésio
+ Name[ro]=Indoneziană
+@@ -39,7 +40,6 @@
+ Name[uk]=Індонезійська
+ Name[ven]=Muindoneshia
+ Name[xh]=isiIndonesian
+-Name[xx]=xx
+ Name[zh_CN]=印度尼西亚语
+ Name[zh_TW]=印尼語
+ Name[zu]=Indoneshiya
+diff -ur kde-i18n-3.0.orig/is/messages/entry.desktop kde-i18n-3.0/is/messages/entry.desktop
+--- kde-i18n-3.0.orig/is/messages/entry.desktop	Tue Mar 19 17:31:17 2002
++++ kde-i18n-3.0/is/messages/entry.desktop	Wed May 22 22:12:50 2002
+@@ -37,7 +37,7 @@
+ Name[nl]=IJslands
+ Name[nn]=Islandsk
  Name[oc]=Islandès
 -Name[pl]=Islandzki
 +Name[pl]=islandzki
- Name[pt_BR]=Islândico
  Name[pt]=Islandês
- Name[ru]=Исландский
-diff -ur kde-i18n-2.2.2.orig/it/messages/entry.desktop kde-i18n-2.2.2/it/messages/entry.desktop
---- kde-i18n-2.2.2.orig/it/messages/entry.desktop	Wed Sep  5 01:38:26 2001
-+++ kde-i18n-2.2.2/it/messages/entry.desktop	Sat May 18 00:43:40 2002
-@@ -32,7 +32,7 @@
+ Name[pt_BR]=Islândico
+ Name[ro]=Islandeză
+@@ -54,7 +54,6 @@
+ Name[vi]=Tiếng Ai-xơ-len
+ Name[wa]=Izlandès
+ Name[xh]=isi-Icelandic
+-Name[xx]=xx
+ Name[zh_CN]=冰岛语
+ Name[zh_TW]=冰島語
+ Name[zu]=isi-Icilendikhi
+diff -ur kde-i18n-3.0.orig/it/messages/entry.desktop kde-i18n-3.0/it/messages/entry.desktop
+--- kde-i18n-3.0.orig/it/messages/entry.desktop	Tue Mar 19 17:31:17 2002
++++ kde-i18n-3.0/it/messages/entry.desktop	Wed May 22 22:17:22 2002
+@@ -36,7 +36,7 @@
+ Name[nb]=Italiensk
  Name[nl]=Italiaans
- Name[no]=Italiensk
- Name[no_NY]=Italiensk
+ Name[nn]=Italiensk
 -Name[pl]=Włoski
 +Name[pl]=włoski
- Name[pt_BR]=Italiano
  Name[pt]=Italiano
- Name[ru]=Итальянский
-diff -ur kde-i18n-2.2.2.orig/ja/messages/entry.desktop kde-i18n-2.2.2/ja/messages/entry.desktop
---- kde-i18n-2.2.2.orig/ja/messages/entry.desktop	Wed Sep  5 01:38:48 2001
-+++ kde-i18n-2.2.2/ja/messages/entry.desktop	Sat May 18 00:46:22 2002
-@@ -33,7 +33,7 @@
- Name[no]=Japansk
- Name[no_NY]=Japansk
+ Name[pt_BR]=Italiano
+ Name[ro]=Italiană
+@@ -53,7 +53,6 @@
+ Name[vi]=Tiếng Italia 
+ Name[wa]=Itålyin
+ Name[xh]=isiTaliyane
+-Name[xx]=xx
+ Name[zh_CN]=意大利语
+ Name[zh_TW]=意大利語
+ Name[zu]=Isi-Taliyane
+diff -ur kde-i18n-3.0.orig/ja/messages/entry.desktop kde-i18n-3.0/ja/messages/entry.desktop
+--- kde-i18n-3.0.orig/ja/messages/entry.desktop	Tue Mar 19 17:31:17 2002
++++ kde-i18n-3.0/ja/messages/entry.desktop	Wed May 22 22:12:43 2002
+@@ -37,7 +37,7 @@
+ Name[nl]=Japans
+ Name[nn]=Japansk
  Name[oc]=Japònès
 -Name[pl]=Japoński
 +Name[pl]=japoński
- Name[pt_BR]=Japonês
  Name[pt]=Japonês
- Name[ru]=Японский
-diff -ur kde-i18n-2.2.2.orig/ko/messages/entry.desktop kde-i18n-2.2.2/ko/messages/entry.desktop
---- kde-i18n-2.2.2.orig/ko/messages/entry.desktop	Wed Sep  5 01:38:53 2001
-+++ kde-i18n-2.2.2/ko/messages/entry.desktop	Sat May 18 00:43:24 2002
-@@ -31,7 +31,7 @@
- Name[no]=Koreansk
- Name[no_NY]=Koreansk
+ Name[pt_BR]=Japonês
+ Name[ro]=Japoneză
+@@ -54,7 +54,6 @@
+ Name[vi]=Tiếng Nhật 
+ Name[wa]=Djaponès
+ Name[xh]=isiJaphani
+-Name[xx]=xx
+ Name[zh_CN]=日语
+ Name[zh_TW]=日語
+ Name[zu]=Isi-Jaliphani
+diff -ur kde-i18n-3.0.orig/ko/messages/entry.desktop kde-i18n-3.0/ko/messages/entry.desktop
+--- kde-i18n-3.0.orig/ko/messages/entry.desktop	Tue Mar 19 17:31:18 2002
++++ kde-i18n-3.0/ko/messages/entry.desktop	Wed May 22 22:17:12 2002
+@@ -35,7 +35,7 @@
+ Name[nl]=Koreaans
+ Name[nn]=Koreansk
  Name[oc]=Còrean
 -Name[pl]=Koreański
 +Name[pl]=koreański
- Name[pt_BR]=Coreano
  Name[pt]=Coreano
- Name[ru]=Корейский
-diff -ur kde-i18n-2.2.2.orig/lt/messages/entry.desktop kde-i18n-2.2.2/lt/messages/entry.desktop
---- kde-i18n-2.2.2.orig/lt/messages/entry.desktop	Wed Sep  5 01:39:30 2001
-+++ kde-i18n-2.2.2/lt/messages/entry.desktop	Sat May 18 00:46:18 2002
-@@ -31,7 +31,7 @@
- Name[no]=Lituaisk
- Name[no_NY]=Litauisk
+ Name[pt_BR]=Coreano
+ Name[ro]=Coreană
+@@ -52,7 +52,6 @@
+ Name[vi]=Tiếng Hàn Quốc 
+ Name[wa]=Coreyin
+ Name[xh]=isiKorea
+-Name[xx]=xx
+ Name[zh_CN]=朝鲜语
+ Name[zh_TW]=朝鮮語
+ Name[zu]=Isi-Koreyani
+diff -ur kde-i18n-3.0.orig/lt/messages/entry.desktop kde-i18n-3.0/lt/messages/entry.desktop
+--- kde-i18n-3.0.orig/lt/messages/entry.desktop	Tue Mar 19 17:31:18 2002
++++ kde-i18n-3.0/lt/messages/entry.desktop	Wed May 22 22:12:37 2002
+@@ -35,7 +35,7 @@
+ Name[nl]=Litouws
+ Name[nn]=Litauisk
  Name[oc]=Litua
 -Name[pl]=Litewski
 +Name[pl]=litewski
- Name[pt_BR]=Lituano
  Name[pt]=Lituano
- Name[ru]=Литовский
-diff -ur kde-i18n-2.2.2.orig/lv/messages/entry.desktop kde-i18n-2.2.2/lv/messages/entry.desktop
---- kde-i18n-2.2.2.orig/lv/messages/entry.desktop	Wed Sep  5 01:39:31 2001
-+++ kde-i18n-2.2.2/lv/messages/entry.desktop	Sat May 18 00:43:39 2002
-@@ -23,7 +23,7 @@
+ Name[pt_BR]=Lituano
+ Name[ro]=Lituaniană
+@@ -52,7 +52,6 @@
+ Name[vi]=Lithuanian 
+ Name[wa]=Lituanyin
+ Name[xh]=isiLithuania
+-Name[xx]=xx
+ Name[zh_CN]=立陶宛语
+ Name[zh_TW]=立陶宛語
+ Name[zu]=Isi-Lithuwaniya
+diff -ur kde-i18n-3.0.orig/lv/messages/entry.desktop kde-i18n-3.0/lv/messages/entry.desktop
+--- kde-i18n-3.0.orig/lv/messages/entry.desktop	Tue Mar 19 17:31:18 2002
++++ kde-i18n-3.0/lv/messages/entry.desktop	Wed May 22 22:17:29 2002
+@@ -28,7 +28,7 @@
+ Name[nb]=Latvisk
  Name[nl]=Lets
- Name[no]=Latvisk
- Name[no_NY]=Latvisk
+ Name[nn]=Latvisk
 -Name[pl]=Łotewski
 +Name[pl]=łotewski
- Name[pt_BR]=Letônio
  Name[pt]=Letónio
- Name[ru]=Латышский
-diff -ur kde-i18n-2.2.2.orig/mt/messages/entry.desktop kde-i18n-2.2.2/mt/messages/entry.desktop
---- kde-i18n-2.2.2.orig/mt/messages/entry.desktop	Wed Sep  5 01:39:41 2001
-+++ kde-i18n-2.2.2/mt/messages/entry.desktop	Sat May 18 00:46:15 2002
-@@ -21,7 +21,7 @@
+ Name[pt_BR]=Latvia
+ Name[ro]=Latviană
+@@ -45,7 +45,6 @@
+ Name[vi]=Tiếng Latvia
+ Name[wa]=Letonyin
+ Name[xh]=isiLatvian
+-Name[xx]=xx
+ Name[zh_CN]=拉脱维亚语
+ Name[zh_TW]=拉脫維亞
+ Name[zu]=Isi-Lavithiyani
+diff -ur kde-i18n-3.0.orig/mt/messages/entry.desktop kde-i18n-3.0/mt/messages/entry.desktop
+--- kde-i18n-3.0.orig/mt/messages/entry.desktop	Tue Mar 19 17:31:18 2002
++++ kde-i18n-3.0/mt/messages/entry.desktop	Wed May 22 22:12:29 2002
+@@ -27,7 +27,7 @@
+ Name[nb]=Maltisk
  Name[nl]=Maltees
- Name[no]=Maltisk
- Name[no_NY]=Maltesisk
+ Name[nn]=Maltesisk
 -Name[pl]=Maltański
 +Name[pl]=maltański
- Name[pt_BR]=Maltês
  Name[pt]=Maltês
- Name[ru]=Мальтийский
-diff -ur kde-i18n-2.2.2.orig/nl/messages/entry.desktop kde-i18n-2.2.2/nl/messages/entry.desktop
---- kde-i18n-2.2.2.orig/nl/messages/entry.desktop	Wed Sep  5 01:39:45 2001
-+++ kde-i18n-2.2.2/nl/messages/entry.desktop	Sat May 18 00:43:11 2002
-@@ -33,7 +33,7 @@
- Name[no]=Nederlandsk
- Name[no_NY]=Nederlandsk
- Name[oc]=Olandès
--Name[pl]=Holenderski
-+Name[pl]=holenderski
- Name[pt_BR]=Holandês
- Name[pt]=Holandês
- Name[ru]=Голландский
-diff -ur kde-i18n-2.2.2.orig/no/messages/entry.desktop kde-i18n-2.2.2/no/messages/entry.desktop
---- kde-i18n-2.2.2.orig/no/messages/entry.desktop	Wed Sep  5 01:39:51 2001
-+++ kde-i18n-2.2.2/no/messages/entry.desktop	Sat May 18 00:46:10 2002
-@@ -31,7 +31,7 @@
- Name[no]=Norsk (bokmål)
- Name[no_NY]=Norsk (bokmål)
+ Name[pt_BR]=Maltês
+ Name[ro]=Malteză
+@@ -44,7 +44,6 @@
+ Name[vi]=Tiếng Mantơ 
+ Name[wa]=Maltès
+ Name[xh]=isiMaltese
+-Name[xx]=xx
+ Name[zh_CN]=马耳他语
+ Name[zh_TW]=馬耳他語
+ Name[zu]=Isi-Malithalise
+diff -ur kde-i18n-3.0.orig/nb/messages/entry.desktop kde-i18n-3.0/nb/messages/entry.desktop
+--- kde-i18n-3.0.orig/nb/messages/entry.desktop	Tue Mar 19 17:31:17 2002
++++ kde-i18n-3.0/nb/messages/entry.desktop	Wed May 22 22:16:43 2002
+@@ -34,7 +34,7 @@
+ Name[nl]=Noors (Bokmaal)
+ Name[nn]=Norsk (bokmål)
  Name[oc]=Nòrvegian (Bokmaal)
 -Name[pl]=Norweski (Bokmaal)
 +Name[pl]=norweski (Bokmaal)
- Name[pt_BR]=Norueguês (Bokmaal)
  Name[pt]=Norueguês (Bokmaal)
- Name[ru]=Норвежский (литературный)
-diff -ur kde-i18n-2.2.2.orig/no_NY/messages/entry.desktop kde-i18n-2.2.2/no_NY/messages/entry.desktop
---- kde-i18n-2.2.2.orig/no_NY/messages/entry.desktop	Wed Sep  5 01:40:00 2001
-+++ kde-i18n-2.2.2/no_NY/messages/entry.desktop	Sat May 18 00:43:06 2002
-@@ -32,7 +32,7 @@
- Name[no]=Norsk (nynorsk)
- Name[no_NY]=Norsk (nynorsk)
+ Name[pt_BR]=Norueguês (Bokmaal)
+ Name[ro]=Norvegiană (Bokmaal)
+@@ -51,7 +51,6 @@
+ Name[vi]=Tiếng Na-uy (Bokmaal) 
+ Name[wa]=Norvedjyin (Bokmål)
+ Name[xh]=isiNorwegian (Bokmaal)
+-Name[xx]=xx
+ Name[zh_CN]=挪威语 (博克马尔语)
+ Name[zh_TW]=挪威語 (博克馬爾語)
+ Name[zu]=Isi-Nowejiyani (Bokmaal)
+diff -ur kde-i18n-3.0.orig/nl/messages/entry.desktop kde-i18n-3.0/nl/messages/entry.desktop
+--- kde-i18n-3.0.orig/nl/messages/entry.desktop	Tue Mar 19 17:31:18 2002
++++ kde-i18n-3.0/nl/messages/entry.desktop	Wed May 22 22:12:22 2002
+@@ -37,7 +37,7 @@
+ Name[nl]=Nederlands
+ Name[nn]=Nederlandsk
+ Name[oc]=Olandès
+-Name[pl]=Holenderski
++Name[pl]=holenderski
+ Name[pt]=Holandês
+ Name[pt_BR]=Holandês
+ Name[ro]=Olandeză
+@@ -54,7 +54,6 @@
+ Name[vi]=Tiếng Hà Lan 
+ Name[wa]=Neyerlandès
+ Name[xh]=isiDatshi
+-Name[xx]=xx
+ Name[zh_CN]=荷兰语
+ Name[zh_TW]=荷蘭語
+ Name[zu]=Isi-Danishi
+diff -ur kde-i18n-3.0.orig/nn/messages/entry.desktop kde-i18n-3.0/nn/messages/entry.desktop
+--- kde-i18n-3.0.orig/nn/messages/entry.desktop	Tue Mar 19 17:31:20 2002
++++ kde-i18n-3.0/nn/messages/entry.desktop	Wed May 22 22:16:36 2002
+@@ -35,7 +35,7 @@
+ Name[nl]=Noors (Nynorsk)
+ Name[nn]=Norsk (nynorsk)
  Name[oc]=Nòrvegian (Nynorsk)
 -Name[pl]=Norweski (Nynorsk)
 +Name[pl]=norweski (Nynorsk)
- Name[pt_BR]=Norueguês
  Name[pt]=Norueguês (Nynorsk)
- Name[ru]=Норвежский (нинорский)
-diff -ur kde-i18n-2.2.2.orig/pl/messages/entry.desktop kde-i18n-2.2.2/pl/messages/entry.desktop
---- kde-i18n-2.2.2.orig/pl/messages/entry.desktop	Wed Sep  5 01:40:32 2001
-+++ kde-i18n-2.2.2/pl/messages/entry.desktop	Sat May 18 00:46:04 2002
-@@ -33,7 +33,7 @@
- Name[no]=Polsk
- Name[no_NY]=Polsk
+ Name[pt_BR]=Norueguês
+ Name[ro]=Norvegiană (Nynorsk)
+@@ -52,7 +52,6 @@
+ Name[vi]=Tiếng Na-uy (Nynorsk) 
+ Name[wa]=Norvedjyin (Nynorsk)
+ Name[xh]=isiNorwegian (Nynorsk)
+-Name[xx]=xx
+ Name[zh_CN]=挪威语 (尼诺斯克语)
+ Name[zh_TW]=挪威語 (尼諾斯克語)
+ Name[zu]=Isi-Nowejiyani (Nynorsk)
+diff -ur kde-i18n-3.0.orig/pl/messages/desktop.po kde-i18n-3.0/pl/messages/desktop.po
+--- kde-i18n-3.0.orig/pl/messages/desktop.po	Thu Mar 21 17:03:21 2002
++++ kde-i18n-3.0/pl/messages/desktop.po	Thu May 23 00:23:41 2002
+@@ -12,36 +12,36 @@
+ 
+ #: kde-i18n/af/messages/entry.desktop:1
+ msgid "Name=Afrikaans"
+-msgstr "Name=Afrikaans"
++msgstr "Name=afrykanerski"
+ 
+ #: kde-i18n/ar/messages/entry.desktop:1
+ msgid "Name=Arabic"
+-msgstr "Name=Arabski"
++msgstr "Name=arabski"
+ 
+ #: kde-i18n/az/messages/entry.desktop:1
+ msgid "Name=Azerbaijani"
+-msgstr "Name=Azerbejdżański"
++msgstr "Name=azerski"
+ 
+ #: kde-i18n/be/messages/entry.desktop:1
+ #, fuzzy
+ msgid "Name=Belarusian"
+-msgstr "Name=Peru"
++msgstr "Name=białoruski"
+ 
+ #: kde-i18n/bg/messages/entry.desktop:1
+ msgid "Name=Bulgarian"
+-msgstr "Name=Bułgarski"
++msgstr "Name=bułgarski"
+ 
+ #: kde-i18n/br/messages/entry.desktop:1
+ msgid "Name=Breton"
+-msgstr "Name=Bretoński"
++msgstr "Name=bretoński"
+ 
+ #: kde-i18n/bs/messages/entry.desktop:1
+ msgid "Name=Bosnian"
+-msgstr "Name=Bośniacki"
++msgstr "Name=bośniacki"
+ 
+ #: kde-i18n/ca/messages/entry.desktop:1
+ msgid "Name=Catalan"
+-msgstr "Name=Kataloński"
++msgstr "Name=kataloński"
+ 
+ #: kde-i18n/cs/messages/entry.desktop:1
+ msgid "Name=Czech"
+@@ -171,7 +171,7 @@
+ 
+ #: kde-i18n/oc/messages/entry.desktop:1
+ msgid "Name=Occitan"
+-msgstr "Name=Okcytański"
++msgstr "Name=Prowansalski"
+ 
+ #: kde-i18n/pl/messages/entry.desktop:1
+ msgid "Name=Polish"
+diff -ur kde-i18n-3.0.orig/pl/messages/entry.desktop kde-i18n-3.0/pl/messages/entry.desktop
+--- kde-i18n-3.0.orig/pl/messages/entry.desktop	Tue Mar 19 17:31:19 2002
++++ kde-i18n-3.0/pl/messages/entry.desktop	Wed May 22 22:12:15 2002
+@@ -37,7 +37,7 @@
+ Name[nl]=Pools
+ Name[nn]=Polsk
  Name[oc]=Pòlònès
 -Name[pl]=Polski
 +Name[pl]=polski
- Name[pt_BR]=Polonês
  Name[pt]=Polaco
- Name[ru]=Польский
-diff -ur kde-i18n-2.2.2.orig/pt/messages/entry.desktop kde-i18n-2.2.2/pt/messages/entry.desktop
---- kde-i18n-2.2.2.orig/pt/messages/entry.desktop	Wed Sep  5 01:40:41 2001
-+++ kde-i18n-2.2.2/pt/messages/entry.desktop	Sat May 18 00:42:41 2002
-@@ -33,7 +33,7 @@
- Name[no]=Portugisisk
- Name[no_NY]=Portugisisk
+ Name[pt_BR]=Polonês
+ Name[ro]=Poloneză
+@@ -54,7 +54,6 @@
+ Name[vi]=Tiếng Ba Lan 
+ Name[wa]=Polonès
+ Name[xh]=isiPolish
+-Name[xx]=xx
+ Name[zh_CN]=波兰语
+ Name[zh_TW]=波蘭語
+ Name[zu]=Isi-Pholishi
+diff -ur kde-i18n-3.0.orig/pl/messages/kdelibs.po kde-i18n-3.0/pl/messages/kdelibs.po
+--- kde-i18n-3.0.orig/pl/messages/kdelibs.po	Thu Mar 21 13:59:54 2002
++++ kde-i18n-3.0/pl/messages/kdelibs.po	Wed May 22 22:28:07 2002
+@@ -10541,87 +10541,87 @@
+ 
+ #: kspell/ksconfig.cpp:231
+ msgid "English"
+-msgstr "Angielski"
++msgstr "angielski"
+ 
+ #: kspell/ksconfig.cpp:234
+ msgid "Spanish"
+-msgstr "Hiszpański"
++msgstr "hiszpański"
+ 
+ #: kspell/ksconfig.cpp:237
+ msgid "Danish"
+-msgstr "Duński"
++msgstr "duński"
+ 
+ #: kspell/ksconfig.cpp:240
+ msgid "German"
+-msgstr "Niemiecki"
++msgstr "niemiecki"
+ 
+ #: kspell/ksconfig.cpp:243
+ msgid "German (new orth.)"
+-msgstr "Niemiecki (z nową ortografią)"
++msgstr "niemiecki (z nową ortografią)"
+ 
+ #: kspell/ksconfig.cpp:246
+ msgid "Brazilian Portuguese"
+-msgstr "Brazylijski Portugalski"
++msgstr "portugalski (odmiana brazylijska)"
+ 
+ #: kspell/ksconfig.cpp:249
+ msgid "Portuguese"
+-msgstr "Portugalski"
++msgstr "portugalski"
+ 
+ #: kspell/ksconfig.cpp:252
+ msgid "Esperanto"
+-msgstr "Esperanto"
++msgstr "esperanto"
+ 
+ #: kspell/ksconfig.cpp:255
+ msgid "Norwegian"
+-msgstr "Norweski"
++msgstr "norweski"
+ 
+ #: kspell/ksconfig.cpp:258
+ msgid "Polish"
+-msgstr "Polski"
++msgstr "polski"
+ 
+ #: kspell/ksconfig.cpp:261
+ msgid "Russian"
+-msgstr "Rosyjski"
++msgstr "rosyjski"
+ 
+ #: kspell/ksconfig.cpp:264
+ msgid "Slovenian"
+-msgstr "Słoweński"
++msgstr "słoweński"
+ 
+ #: kspell/ksconfig.cpp:267
+ msgid "Slovak"
+-msgstr "Słowacki"
++msgstr "słowacki"
+ 
+ #: kspell/ksconfig.cpp:270
+ msgid "Czech"
+-msgstr "Czeski"
++msgstr "czeski"
+ 
+ #: kspell/ksconfig.cpp:273
+ msgid "Swedish"
+-msgstr "Szwedzki"
++msgstr "szwedzki"
+ 
+ #: kspell/ksconfig.cpp:276
+ msgid "Swiss German"
+-msgstr "Niemiecki ze Szwajcarii"
++msgstr "niemiecki ze Szwajcarii"
+ 
+ #: kspell/ksconfig.cpp:279
+ msgid "Ukrainian"
+-msgstr "Ukraiński"
++msgstr "ukraiński"
+ 
+ #: kspell/ksconfig.cpp:282
+ msgid "Lithuanian"
+-msgstr "Litewski"
++msgstr "litewski"
+ 
+ #: kspell/ksconfig.cpp:285
+ msgid "French"
+-msgstr "Francuski"
++msgstr "francuski"
+ 
+ #: kspell/ksconfig.cpp:288
+ msgid "Belarusian"
+-msgstr "Białoruski"
++msgstr "białoruski"
+ 
+ #: kspell/ksconfig.cpp:291
+ msgid "Hungarian"
+-msgstr "Węgierski"
++msgstr "węgierski"
+ 
+ #: kspell/ksconfig.cpp:295
+ msgid ""
+diff -ur kde-i18n-3.0.orig/pt/messages/entry.desktop kde-i18n-3.0/pt/messages/entry.desktop
+--- kde-i18n-3.0.orig/pt/messages/entry.desktop	Tue Mar 19 17:31:19 2002
++++ kde-i18n-3.0/pt/messages/entry.desktop	Wed May 22 22:16:22 2002
+@@ -37,7 +37,7 @@
+ Name[nl]=Portugees
+ Name[nn]=Portugisisk
  Name[oc]=Pòrtuguès
 -Name[pl]=Portugalski
 +Name[pl]=portugalski
- Name[pt_BR]=Português
  Name[pt]=Português
- Name[ru]=Португальский
-diff -ur kde-i18n-2.2.2.orig/pt_BR/messages/entry.desktop kde-i18n-2.2.2/pt_BR/messages/entry.desktop
---- kde-i18n-2.2.2.orig/pt_BR/messages/entry.desktop	Wed Sep  5 01:40:48 2001
-+++ kde-i18n-2.2.2/pt_BR/messages/entry.desktop	Sat May 18 00:46:00 2002
-@@ -33,7 +33,7 @@
- Name[no]=Brasiliansk portugisisk
- Name[no_NY]=Portugisisk (Brasil)
+ Name[pt_BR]=Português
+ Name[ro]=Portugheză
+@@ -54,7 +54,6 @@
+ Name[vi]=Tiếng BềEĐào Nha 
+ Name[wa]=Portuguès
+ Name[xh]=isiPhuthukesi
+-Name[xx]=xx
+ Name[zh_CN]=葡萄牙语
+ Name[zh_TW]=葡萄牙語
+ Name[zu]=Isi-Phuthukesi
+diff -ur kde-i18n-3.0.orig/pt_BR/messages/entry.desktop kde-i18n-3.0/pt_BR/messages/entry.desktop
+--- kde-i18n-3.0.orig/pt_BR/messages/entry.desktop	Tue Mar 19 17:31:19 2002
++++ kde-i18n-3.0/pt_BR/messages/entry.desktop	Wed May 22 22:12:06 2002
+@@ -37,7 +37,7 @@
+ Name[nl]=Braziliaans Portugees
+ Name[nn]=Portugisisk (Brasil)
  Name[oc]=Pòrtuguès deu Brasil
 -Name[pl]=Brazylijski portugalski
-+Name[pl]=portugalski (brazylijski)
- Name[pt_BR]=Português do Brasil
++Name[pl]=portugalski (odmiana brazylijska)
  Name[pt]=Português do Brasil
- Name[ru]=Бразильский португальский
-diff -ur kde-i18n-2.2.2.orig/ro/messages/entry.desktop kde-i18n-2.2.2/ro/messages/entry.desktop
---- kde-i18n-2.2.2.orig/ro/messages/entry.desktop	Wed Sep  5 01:41:01 2001
-+++ kde-i18n-2.2.2/ro/messages/entry.desktop	Sat May 18 00:42:37 2002
-@@ -32,7 +32,7 @@
+ Name[pt_BR]=Português do Brasil
+ Name[ro]=Portugheză braziliană
+@@ -54,7 +54,6 @@
+ Name[vi]=Tiếng Bồ Đào Nha-Brazil 
+ Name[wa]=Portuguès do Braezi
+ Name[xh]=isiPhuthukesi saseBrazil
+-Name[xx]=xx
+ Name[zh_CN]=巴西葡萄牙语
+ Name[zh_TW]=巴西葡萄牙語
+ Name[zu]=Isi-Phuthukesi saseBrazil
+diff -ur kde-i18n-3.0.orig/ro/messages/entry.desktop kde-i18n-3.0/ro/messages/entry.desktop
+--- kde-i18n-3.0.orig/ro/messages/entry.desktop	Tue Mar 19 17:31:19 2002
++++ kde-i18n-3.0/ro/messages/entry.desktop	Wed May 22 22:16:16 2002
+@@ -36,7 +36,7 @@
+ Name[nb]=Rumensk
  Name[nl]=Roemeens
- Name[no]=Rumensk
- Name[no_NY]=Rumensk
+ Name[nn]=Rumensk
 -Name[pl]=Rumuński
 +Name[pl]=rumuński
- Name[pt_BR]=Romeno
  Name[pt]=Romeno
- Name[ru]=Румынский
-diff -ur kde-i18n-2.2.2.orig/ru/messages/entry.desktop kde-i18n-2.2.2/ru/messages/entry.desktop
---- kde-i18n-2.2.2.orig/ru/messages/entry.desktop	Wed Sep  5 01:41:22 2001
-+++ kde-i18n-2.2.2/ru/messages/entry.desktop	Sat May 18 00:45:46 2002
-@@ -33,7 +33,7 @@
- Name[no]=Russisk
- Name[no_NY]=Russisk
+ Name[pt_BR]=Romeno
+ Name[ro]=Română
+@@ -52,7 +52,6 @@
+ Name[ven]=Muroma
+ Name[vi]=Tiếng BềEĐào Nha 
+ Name[xh]=isiRoma
+-Name[xx]=xx
+ Name[zh_CN]=罗马尼亚语
+ Name[zh_TW]=羅馬尼亞語
+ Name[zu]=Isi-Romayinani
+diff -ur kde-i18n-3.0.orig/ru/messages/entry.desktop kde-i18n-3.0/ru/messages/entry.desktop
+--- kde-i18n-3.0.orig/ru/messages/entry.desktop	Tue Mar 19 17:31:19 2002
++++ kde-i18n-3.0/ru/messages/entry.desktop	Wed May 22 22:11:27 2002
+@@ -37,7 +37,7 @@
+ Name[nl]=Russisch
+ Name[nn]=Russisk
  Name[oc]=Rus
 -Name[pl]=Rosyjski
 +Name[pl]=rosyjski
- Name[pt_BR]=Russo
  Name[pt]=Russo
- Name[ru]=Русский
-diff -ur kde-i18n-2.2.2.orig/sk/messages/entry.desktop kde-i18n-2.2.2/sk/messages/entry.desktop
---- kde-i18n-2.2.2.orig/sk/messages/entry.desktop	Wed Sep  5 01:41:42 2001
-+++ kde-i18n-2.2.2/sk/messages/entry.desktop	Sat May 18 00:55:36 2002
-@@ -32,7 +32,7 @@
- Name[no]=Slovakisk
- Name[no_NY]=Slovakisk
+ Name[pt_BR]=Russo
+ Name[ro]=Rusă
+@@ -54,7 +54,6 @@
+ Name[vi]=Tiếng Nga 
+ Name[wa]=Russe
+ Name[xh]=isiRashiya
+-Name[xx]=xx
+ Name[zh_CN]=俄语
+ Name[zh_TW]=俄語
+ Name[zu]=Isi-Rashiyani
+diff -ur kde-i18n-3.0.orig/sk/messages/entry.desktop kde-i18n-3.0/sk/messages/entry.desktop
+--- kde-i18n-3.0.orig/sk/messages/entry.desktop	Tue Mar 19 17:31:19 2002
++++ kde-i18n-3.0/sk/messages/entry.desktop	Wed May 22 22:16:09 2002
+@@ -36,7 +36,7 @@
+ Name[nl]=Slovaaks
+ Name[nn]=Slovakisk
  Name[oc]=Eslòvac
 -Name[pl]=Słowacki
 +Name[pl]=słowacki
- Name[pt_BR]=Eslovaco
  Name[pt]=Eslovaco
- Name[ru]=Словацкий
-diff -ur kde-i18n-2.2.2.orig/sl/messages/entry.desktop kde-i18n-2.2.2/sl/messages/entry.desktop
---- kde-i18n-2.2.2.orig/sl/messages/entry.desktop	Wed Sep  5 01:42:21 2001
-+++ kde-i18n-2.2.2/sl/messages/entry.desktop	Sat May 18 00:56:19 2002
-@@ -31,7 +31,7 @@
- Name[no]=Slovensk
- Name[no_NY]=Slovensk
+ Name[pt_BR]=Eslovaco
+ Name[ro]=Slovacă
+@@ -52,7 +52,6 @@
+ Name[ven]=Musilovaka
+ Name[vi]=Tiếng Slô-vác 
+ Name[xh]=isiSlovak
+-Name[xx]=xx
+ Name[zh_CN]=斯洛伐克语
+ Name[zh_TW]=斯洛伐克語
+ Name[zu]=Isi-Silovaki
+diff -ur kde-i18n-3.0.orig/sl/messages/entry.desktop kde-i18n-3.0/sl/messages/entry.desktop
+--- kde-i18n-3.0.orig/sl/messages/entry.desktop	Tue Mar 19 17:31:19 2002
++++ kde-i18n-3.0/sl/messages/entry.desktop	Wed May 22 22:11:18 2002
+@@ -35,7 +35,7 @@
+ Name[nl]=Sloveens
+ Name[nn]=Slovensk
  Name[oc]=Eslòvian
 -Name[pl]=Słoweński
 +Name[pl]=słoweński
- Name[pt_BR]=Esloveno
  Name[pt]=Esloveno
- Name[ru]=Словенский
-diff -ur kde-i18n-2.2.2.orig/sr/messages/entry.desktop kde-i18n-2.2.2/sr/messages/entry.desktop
---- kde-i18n-2.2.2.orig/sr/messages/entry.desktop	Wed Sep 19 21:56:09 2001
-+++ kde-i18n-2.2.2/sr/messages/entry.desktop	Sat May 18 00:42:26 2002
-@@ -31,7 +31,7 @@
+ Name[pt_BR]=Esloveno
+ Name[ro]=Slovenă
+@@ -51,7 +51,6 @@
+ Name[ven]=Musiloveniene
+ Name[wa]=Eslovenyin
+ Name[xh]=isiSlovenian
+-Name[xx]=xx
+ Name[zh_CN]=斯洛文尼亚语
+ Name[zh_TW]=斯洛文尼亞語
+ Name[zu]=Isi-Siloveniyani
+diff -ur kde-i18n-3.0.orig/sr/messages/entry.desktop kde-i18n-3.0/sr/messages/entry.desktop
+--- kde-i18n-3.0.orig/sr/messages/entry.desktop	Tue Mar 19 17:31:19 2002
++++ kde-i18n-3.0/sr/messages/entry.desktop	Wed May 22 22:15:57 2002
+@@ -35,7 +35,7 @@
+ Name[nb]=Serbisk
  Name[nl]=Servisch
- Name[no]=Serbisk
- Name[no_NY]=Serbisk
+ Name[nn]=Serbisk
 -Name[pl]=Serbski
 +Name[pl]=serbski
- Name[pt_BR]=Sérvio
  Name[pt]=Sérvio
- Name[ru]=Сербский
-diff -ur kde-i18n-2.2.2.orig/sv/messages/entry.desktop kde-i18n-2.2.2/sv/messages/entry.desktop
---- kde-i18n-2.2.2.orig/sv/messages/entry.desktop	Wed Sep  5 01:42:45 2001
-+++ kde-i18n-2.2.2/sv/messages/entry.desktop	Sat May 18 00:45:38 2002
-@@ -33,7 +33,7 @@
- Name[no]=Svensk
- Name[no_NY]=Svensk
+ Name[pt_BR]=Sérvio
+ Name[ro]=Sîrbă
+@@ -52,7 +52,6 @@
+ Name[vi]=Tiếng Séc bi 
+ Name[wa]=Serbe
+ Name[xh]=isiSerbian
+-Name[xx]=xx
+ Name[zh_CN]=塞族语
+ Name[zh_TW]=塞族語
+ Name[zu]=Isi-Sebhiyani
+diff -ur kde-i18n-3.0.orig/sv/messages/entry.desktop kde-i18n-3.0/sv/messages/entry.desktop
+--- kde-i18n-3.0.orig/sv/messages/entry.desktop	Tue Mar 19 17:31:19 2002
++++ kde-i18n-3.0/sv/messages/entry.desktop	Wed May 22 22:11:11 2002
+@@ -37,7 +37,7 @@
+ Name[nl]=Zweeds
+ Name[nn]=Svensk
  Name[oc]=Suedès
 -Name[pl]=Szwedzki
 +Name[pl]=szwedzki
- Name[pt_BR]=Sueco
  Name[pt]=Sueco
- Name[ru]=Шведский
-diff -ur kde-i18n-2.2.2.orig/ta/messages/entry.desktop kde-i18n-2.2.2/ta/messages/entry.desktop
---- kde-i18n-2.2.2.orig/ta/messages/entry.desktop	Wed Sep  5 01:43:40 2001
-+++ kde-i18n-2.2.2/ta/messages/entry.desktop	Sat May 18 00:42:22 2002
-@@ -22,7 +22,7 @@
+ Name[pt_BR]=Sueco
+ Name[ro]=Suedeză
+@@ -53,7 +53,6 @@
+ Name[ven]=Muswedishi
+ Name[vi]=Tiếng Thuỵ Điển 
+ Name[xh]=isiSwedish
+-Name[xx]=xx
+ Name[zh_CN]=瑞典语
+ Name[zh_TW]=瑞典語
+ Name[zu]=Isi-Swedishi
+diff -ur kde-i18n-3.0.orig/ta/messages/entry.desktop kde-i18n-3.0/ta/messages/entry.desktop
+--- kde-i18n-3.0.orig/ta/messages/entry.desktop	Tue Mar 19 17:31:20 2002
++++ kde-i18n-3.0/ta/messages/entry.desktop	Wed May 22 22:15:50 2002
+@@ -24,7 +24,7 @@
  Name[mk]=Тамилски
- Name[no]=Tamilsk
- Name[no_NY]=Tamilsk
+ Name[nb]=Tamilsk
+ Name[nn]=Tamilsk
 -Name[pl]=Tamiljski
 +Name[pl]=tamilski
+ Name[ro]=Tamilă
  Name[ru]=Тамильский
  Name[sk]=Tamilský
- Name[sl]=tamilsko
-diff -ur kde-i18n-2.2.2.orig/th/messages/entry.desktop kde-i18n-2.2.2/th/messages/entry.desktop
---- kde-i18n-2.2.2.orig/th/messages/entry.desktop	Wed Sep  5 01:43:47 2001
-+++ kde-i18n-2.2.2/th/messages/entry.desktop	Sat May 18 00:45:33 2002
-@@ -23,7 +23,7 @@
+@@ -36,7 +36,6 @@
+ Name[ven]=Muthamili
+ Name[vi]=Tiếng Tamil 
+ Name[xh]=isiTamil
+-Name[xx]=xx
+ Name[zh_CN]=泰米尔语
+ Name[zh_TW]=泰米爾語
+ Name[zu]=Isi-Thamili
+diff -ur kde-i18n-3.0.orig/th/messages/entry.desktop kde-i18n-3.0/th/messages/entry.desktop
+--- kde-i18n-3.0.orig/th/messages/entry.desktop	Tue Mar 19 17:31:20 2002
++++ kde-i18n-3.0/th/messages/entry.desktop	Wed May 22 22:20:51 2002
+@@ -26,7 +26,7 @@
  Name[nl]=Thais
- Name[no_NY]=Thailandsk
+ Name[nn]=Thailandsk
  Name[oc]=Tai
 -Name[pl]=Tajski
 +Name[pl]=tajski
+ Name[ro]=Tailandeză
  Name[ru]=Тайский
  Name[sk]=Thajský
- Name[sl]=tajsko
-diff -ur kde-i18n-2.2.2.orig/tr/messages/entry.desktop kde-i18n-2.2.2/tr/messages/entry.desktop
---- kde-i18n-2.2.2.orig/tr/messages/entry.desktop	Wed Sep  5 01:44:31 2001
-+++ kde-i18n-2.2.2/tr/messages/entry.desktop	Sat May 18 00:42:13 2002
-@@ -32,7 +32,7 @@
- Name[no]=Tyrkisk
- Name[no_NY]=Tyrkisk
+@@ -40,7 +40,6 @@
+ Name[vi]=Tiếng Thái Lan 
+ Name[wa]=Tailandès
+ Name[xh]=isiThai
+-Name[xx]=xx
+ Name[zh_CN]=泰语
+ Name[zh_TW]=泰語
+ Name[zu]=Isi-Thayi
+diff -ur kde-i18n-3.0.orig/tr/messages/entry.desktop kde-i18n-3.0/tr/messages/entry.desktop
+--- kde-i18n-3.0.orig/tr/messages/entry.desktop	Tue Mar 19 17:31:20 2002
++++ kde-i18n-3.0/tr/messages/entry.desktop	Wed May 22 22:15:37 2002
+@@ -36,7 +36,7 @@
+ Name[nl]=Turks
+ Name[nn]=Tyrkisk
  Name[oc]=Turc
 -Name[pl]=Turecki
 +Name[pl]=turecki
- Name[pt_BR]=Turco
  Name[pt]=Turco
- Name[ru]=Турецкий
-diff -ur kde-i18n-2.2.2.orig/uk/messages/entry.desktop kde-i18n-2.2.2/uk/messages/entry.desktop
---- kde-i18n-2.2.2.orig/uk/messages/entry.desktop	Wed Sep  5 01:44:32 2001
-+++ kde-i18n-2.2.2/uk/messages/entry.desktop	Sat May 18 00:45:30 2002
-@@ -31,7 +31,7 @@
- Name[no]=Ukrainsk
- Name[no_NY]=Ukrainsk
+ Name[pt_BR]=Turco
+ Name[ro]=Turcă
+@@ -53,7 +53,6 @@
+ Name[vi]=Tiếng ThềENhĩ Kì 
+ Name[wa]=Turk
+ Name[xh]=isiTurkish
+-Name[xx]=xx
+ Name[zh_CN]=土耳其语
+ Name[zh_TW]=土耳其語
+ Name[zu]=Isi-Thekishi
+diff -ur kde-i18n-3.0.orig/uk/messages/entry.desktop kde-i18n-3.0/uk/messages/entry.desktop
+--- kde-i18n-3.0.orig/uk/messages/entry.desktop	Tue Mar 19 17:31:20 2002
++++ kde-i18n-3.0/uk/messages/entry.desktop	Wed May 22 22:20:53 2002
+@@ -35,7 +35,7 @@
+ Name[nl]=Oekraïns
+ Name[nn]=Ukrainsk
  Name[oc]=Ucranian
 -Name[pl]=Ukraiński
 +Name[pl]=ukraiński
- Name[pt_BR]=Ucraniano
  Name[pt]=Ucraniano
- Name[ru]=Украинский
-diff -ur kde-i18n-2.2.2.orig/zh_CN.GB2312/messages/entry.desktop kde-i18n-2.2.2/zh_CN.GB2312/messages/entry.desktop
---- kde-i18n-2.2.2.orig/zh_CN.GB2312/messages/entry.desktop	Wed Sep  5 01:44:45 2001
-+++ kde-i18n-2.2.2/zh_CN.GB2312/messages/entry.desktop	Sat May 18 00:45:25 2002
-@@ -33,7 +33,7 @@
- Name[no]=Forenklet kinesisk
- Name[no_NY]=Forenkla kinesisk
+ Name[pt_BR]=Ucraniano
+ Name[ro]=Ucrainiană
+@@ -52,7 +52,6 @@
+ Name[vi]=Tiếng Ukraina 
+ Name[wa]=Ucrainyin
+ Name[xh]=isi-Ukranian
+-Name[xx]=xx
+ Name[zh_CN]=乌克兰语
+ Name[zh_TW]=烏克蘭語
+ Name[zu]=Isi-Ukraniyani
+diff -ur kde-i18n-3.0.orig/ven/messages/entry.desktop kde-i18n-3.0/ven/messages/entry.desktop
+--- kde-i18n-3.0.orig/ven/messages/entry.desktop	Tue Mar 19 17:31:21 2002
++++ kde-i18n-3.0/ven/messages/entry.desktop	Wed May 22 22:15:30 2002
+@@ -4,6 +4,7 @@
+ Name[he]=ונדה
+ Name[hu]=venda
+ Name[ja]=ヴェンダ語
++Name[pl]=venda
+ Name[ru]=Венда
+ Name[sl]=vendsko
+ Name[th]=เวนดา
+diff -ur kde-i18n-3.0.orig/vi/messages/entry.desktop kde-i18n-3.0/vi/messages/entry.desktop
+--- kde-i18n-3.0.orig/vi/messages/entry.desktop	Tue Mar 19 17:31:20 2002
++++ kde-i18n-3.0/vi/messages/entry.desktop	Wed May 22 22:10:50 2002
+@@ -28,6 +28,7 @@
+ Name[nb]=Vietnamesisk
+ Name[nl]=Vietnamees
+ Name[nn]=Vietnamesisk
++Name[pl]=wietnamski
+ Name[pt]=Vietnamita
+ Name[pt_BR]=Vietnamita
+ Name[ro]=Vietnameză
+@@ -44,7 +45,6 @@
+ Name[vi]=Tiếng Việt
+ Name[wa]=Vietnamyin
+ Name[xh]=isiVietnamese
+-Name[xx]=xx
+ Name[zh_CN]=越南语
+ Name[zh_TW]=越南語
+ Name[zu]=Isi-Vitheyinamise
+diff -ur kde-i18n-3.0.orig/xh/messages/entry.desktop kde-i18n-3.0/xh/messages/entry.desktop
+--- kde-i18n-3.0.orig/xh/messages/entry.desktop	Thu Mar 21 13:12:01 2002
++++ kde-i18n-3.0/xh/messages/entry.desktop	Wed May 22 22:15:09 2002
+@@ -7,13 +7,13 @@
+ Name[he]=קוזה
+ Name[hu]=xhosa
+ Name[ja]=コーサ語
++Name[pl]=xhosa
+ Name[sl]=kshosa
+ Name[ta]=§º¡º¡
+ Name[th]=โซซา
+ Name[ven]=Muxhoza
+ Name[vi]=Xhosa 
+ Name[xh]=isiXhosa
+-Name[xx]=xx
+ Name[zh_CN]=科萨语
+ Name[zh_TW]=荷撒語
+ Name[zu]=Isi-Xhosa
+diff -ur kde-i18n-3.0.orig/zh_CN/messages/entry.desktop kde-i18n-3.0/zh_CN/messages/entry.desktop
+--- kde-i18n-3.0.orig/zh_CN/messages/entry.desktop	Tue Mar 19 17:31:21 2002
++++ kde-i18n-3.0/zh_CN/messages/entry.desktop	Wed May 22 22:10:25 2002
+@@ -37,7 +37,7 @@
+ Name[nl]=Vereenvoudigd Chinees
+ Name[nn]=Forenkla kinesisk
  Name[oc]=Chinès simplificat
 -Name[pl]=Uproszczony chiński
 +Name[pl]=uproszczony chiński
- Name[pt_BR]=Chinês Simplificado
  Name[pt]=Chinês Simplificado
- Name[ru]=Упрощенный китайский
-diff -ur kde-i18n-2.2.2.orig/zh_TW.Big5/messages/entry.desktop kde-i18n-2.2.2/zh_TW.Big5/messages/entry.desktop
---- kde-i18n-2.2.2.orig/zh_TW.Big5/messages/entry.desktop	Wed Sep  5 01:44:48 2001
-+++ kde-i18n-2.2.2/zh_TW.Big5/messages/entry.desktop	Sat May 18 00:42:05 2002
-@@ -33,7 +33,7 @@
- Name[no]=Kinesisk
- Name[no_NY]=Kinesisk
+ Name[pt_BR]=Chinês Simplificado
+ Name[ro]=Chineză simplificată
+@@ -54,7 +54,6 @@
+ Name[vi]=Tiếng Trung Quốc giản thềE
+ Name[wa]=Chinwès simplifyî
+ Name[xh]=isiTshayina Esilula
+-Name[xx]=xx
+ Name[zh_CN]=简体中文
+ Name[zh_TW]=簡體中文
+ Name[zu]=Isi-Shayina Esilula
+diff -ur kde-i18n-3.0.orig/zh_TW/messages/entry.desktop kde-i18n-3.0/zh_TW/messages/entry.desktop
+--- kde-i18n-3.0.orig/zh_TW/messages/entry.desktop	Tue Mar 19 17:31:21 2002
++++ kde-i18n-3.0/zh_TW/messages/entry.desktop	Wed May 22 22:14:48 2002
+@@ -37,7 +37,7 @@
+ Name[nl]=Chinees
+ Name[nn]=Kinesisk
  Name[oc]=Chinès
 -Name[pl]=Chiński
 +Name[pl]=chiński
- Name[pt_BR]=Chinês
  Name[pt]=Chinês
- Name[ru]=Китайский
+ Name[pt_BR]=Chinês
+ Name[ro]=Chineză
+@@ -54,7 +54,6 @@
+ Name[vi]=Tiếng Trung Quốc 
+ Name[wa]=Chinwès
+ Name[xh]=isiTshayina
+-Name[xx]=xx
+ Name[zh_CN]=繁体中文
+ Name[zh_TW]=繁體中文
+ Name[zu]=Isi-Shayina
+diff -ur kde-i18n-3.0.orig/zu/messages/entry.desktop kde-i18n-3.0/zu/messages/entry.desktop
+--- kde-i18n-3.0.orig/zu/messages/entry.desktop	Tue Mar 19 17:31:21 2002
++++ kde-i18n-3.0/zu/messages/entry.desktop	Wed May 22 22:09:45 2002
+@@ -11,6 +11,7 @@
+ Name[is]=Zúlú
+ Name[ja]=ズールー語
+ Name[mt]=Żulu
++Name[pl]=zulu
+ Name[ru]=Зулусский
+ Name[sl]=zulu
+ Name[ta]=Ýæ
+@@ -18,7 +19,6 @@
+ Name[uk]=Зулу
+ Name[ven]=Muzulu
+ Name[xh]=isiZulu
+-Name[xx]=xx
+ Name[zh_CN]=祖鲁语
+ Name[zh_TW]=組魯語
+ Name[zu]=Isi-Zulu
