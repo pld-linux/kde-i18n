@@ -15,7 +15,7 @@ Release:	1
 License:	GPL/LGPL
 Group:		X11/Applications
 Source0:	ftp://ftp.kde.org/pub/kde/stable/%{version}/src/%{name}-%{version}.tar.bz2
-# Source0-md5:	48fecc178eb02dbf96c1009e2d9a3ae9
+# Source0-md5:	a08076a3526fee0ed5974fcf1e10a252
 Source1:	%{name}-splitmo
 Source2:	%{name}-splitdoc
 %if 0%{?_with_alltogether:1}
