@@ -2,11 +2,13 @@ Summary:	K Desktop Environment - International Support
 Summary(pl):	KDE - Wsparcie dla t³umaczeñ miêdzynarodowych
 Name:		kde-i18n
 Version:	3.0
-Release:	2
+Release:	3
 License:	GPL/LGPL
 Group:		X11/Applications
 Source0:	ftp://ftp.kde.org/pub/kde/stable/3.0/src/%{name}-%{version}.tar.bz2
 Patch0:		%{name}-nodoc.patch
+Patch1:		%{name}-pl_lang_names.patch
+Patch2:		%{name}-nb_to_no.patch
 BuildRequires:	libxml2 >= 2.4.2
 # It creates symlinks to some not-translated files.
 BuildRequires:	kdelibs = %{version}
@@ -420,14 +422,17 @@ K Desktop Environment - International Support.
 KDE - Wsparcie dla t³umaczeñ miêdzynarodowych.
 
 
-%package Norwegian_Bokmaal
+#%package Norwegian_Bokmaal
+%package Norwegian
 Summary:	K Desktop Environment - International Support
 Group:		X11/Applications
 
-%description Norwegian_Bokmaal
+#%description Norwegian_Bokmaal
+%description Norwegian
 K Desktop Environment - International Support.
 
-%description Norwegian_Bokmaal -l pl
+#%description Norwegian_Bokmaal -l pl
+%description Norwegian -l pl
 KDE - Wsparcie dla t³umaczeñ miêdzynarodowych.
 
 
@@ -674,7 +679,10 @@ KDE - Wsparcie dla t³umaczeñ miêdzynarodowych.
 
 %prep
 %setup -q
-%patch -p1
+%patch0 -p1
+%patch1 -p1
+rm -rf no; mv nb no
+%patch2 -p1
 
 %build
 %define         _sharedir       %{_datadir}
@@ -760,7 +768,7 @@ FindLang mt Maltese
 # FindLang nb Norwegian_Bokmaal
 FindLang nl Dutch
 FindLang nn Norwegian_Nynorsk
-FindLang no Norwegian_Bokmaal
+FindLang no Norwegian
 # FindLang oc Gascon_occitan
 FindLang pl Polish
 FindLang pt Portugnese
@@ -822,7 +830,7 @@ rm -rf $RPM_BUILD_ROOT
 # %files -f Maori.lang Maori
 # %files -f Macedonian.lang Macedonian
 %files -f Dutch.lang Dutch
-%files -f Norwegian_Bokmaal.lang Norwegian_Bokmaal
+%files -f Norwegian.lang Norwegian
 %files -f Norwegian_Nynorsk.lang Norwegian_Nynorsk
 # %files -f Gascon_occitan.lang Gascon_occitan
 %files -f Polish.lang Polish
