@@ -1,6 +1,7 @@
---- kde-i18n-2.2.2.orig/cs/docs/common/Makefile.in	Mon Nov 12 20:33:45 2001
-+++ kde-i18n-2.2.2/cs/docs/common/Makefile.in	Fri May 17 23:37:11 2002
-@@ -461,8 +461,12 @@
+diff -uNr kde-i18n-3.0.orig/cs/docs/common/Makefile.in kde-i18n-3.0/cs/docs/common/Makefile.in
+--- kde-i18n-3.0.orig/cs/docs/common/Makefile.in	Tue Mar 26 02:54:08 2002
++++ kde-i18n-3.0/cs/docs/common/Makefile.in	Wed May 22 01:56:20 2002
+@@ -509,8 +509,12 @@
  	  $(INSTALL_DATA) $(srcdir)/$$base $(DESTDIR)$(kde_htmldir)/$(KDE_LANG)/common/$$base ;\
  	done
  	@echo "merging common and language specific dir" ;\
@@ -15,9 +16,10 @@
  	cd $(DESTDIR)$(kde_htmldir)/$(KDE_LANG)/common ;\
  	if test -n "$$com_files"; then for p in $$com_files ; do \
  	  case " fdl-translated.html gpl-translated.html kde-localised.css lgpl-translated.html logotp3.png  " in \
---- kde-i18n-2.2.2.orig/da/docs/common/Makefile.in	Mon Nov 12 20:33:45 2001
-+++ kde-i18n-2.2.2/da/docs/common/Makefile.in	Fri May 17 23:37:11 2002
-@@ -461,8 +461,12 @@
+diff -uNr kde-i18n-3.0.orig/da/docs/common/Makefile.in kde-i18n-3.0/da/docs/common/Makefile.in
+--- kde-i18n-3.0.orig/da/docs/common/Makefile.in	Tue Mar 26 02:54:25 2002
++++ kde-i18n-3.0/da/docs/common/Makefile.in	Wed May 22 01:56:20 2002
+@@ -509,8 +509,12 @@
  	  $(INSTALL_DATA) $(srcdir)/$$base $(DESTDIR)$(kde_htmldir)/$(KDE_LANG)/common/$$base ;\
  	done
  	@echo "merging common and language specific dir" ;\
@@ -32,9 +34,10 @@
  	cd $(DESTDIR)$(kde_htmldir)/$(KDE_LANG)/common ;\
  	if test -n "$$com_files"; then for p in $$com_files ; do \
  	  case " fdl-translated.html gpl-translated.html kde-localised.css lgpl-translated.html logotp3.png  " in \
---- kde-i18n-2.2.2.orig/de/docs/common/Makefile.in	Mon Nov 12 20:33:45 2001
-+++ kde-i18n-2.2.2/de/docs/common/Makefile.in	Fri May 17 23:37:11 2002
-@@ -461,8 +461,12 @@
+diff -uNr kde-i18n-3.0.orig/de/docs/common/Makefile.in kde-i18n-3.0/de/docs/common/Makefile.in
+--- kde-i18n-3.0.orig/de/docs/common/Makefile.in	Tue Mar 26 02:54:52 2002
++++ kde-i18n-3.0/de/docs/common/Makefile.in	Wed May 22 01:56:20 2002
+@@ -509,8 +509,12 @@
  	  $(INSTALL_DATA) $(srcdir)/$$base $(DESTDIR)$(kde_htmldir)/$(KDE_LANG)/common/$$base ;\
  	done
  	@echo "merging common and language specific dir" ;\
@@ -49,9 +52,10 @@
  	cd $(DESTDIR)$(kde_htmldir)/$(KDE_LANG)/common ;\
  	if test -n "$$com_files"; then for p in $$com_files ; do \
  	  case " fdl-translated.html gpl-translated.html kde-localised.css lgpl-translated.html logotp3.png  " in \
---- kde-i18n-2.2.2.orig/es/docs/common/Makefile.in	Mon Nov 12 20:33:45 2001
-+++ kde-i18n-2.2.2/es/docs/common/Makefile.in	Fri May 17 23:37:11 2002
-@@ -461,8 +461,12 @@
+diff -uNr kde-i18n-3.0.orig/es/docs/common/Makefile.in kde-i18n-3.0/es/docs/common/Makefile.in
+--- kde-i18n-3.0.orig/es/docs/common/Makefile.in	Tue Mar 26 02:55:25 2002
++++ kde-i18n-3.0/es/docs/common/Makefile.in	Wed May 22 01:56:20 2002
+@@ -509,8 +509,12 @@
  	  $(INSTALL_DATA) $(srcdir)/$$base $(DESTDIR)$(kde_htmldir)/$(KDE_LANG)/common/$$base ;\
  	done
  	@echo "merging common and language specific dir" ;\
@@ -66,9 +70,10 @@
  	cd $(DESTDIR)$(kde_htmldir)/$(KDE_LANG)/common ;\
  	if test -n "$$com_files"; then for p in $$com_files ; do \
  	  case " fdl-translated.html gpl-translated.html kde-localised.css lgpl-translated.html logotp3.png  " in \
---- kde-i18n-2.2.2.orig/et/docs/common/Makefile.in	Mon Nov 12 20:33:45 2001
-+++ kde-i18n-2.2.2/et/docs/common/Makefile.in	Fri May 17 23:37:11 2002
-@@ -461,8 +461,12 @@
+diff -uNr kde-i18n-3.0.orig/et/docs/common/Makefile.in kde-i18n-3.0/et/docs/common/Makefile.in
+--- kde-i18n-3.0.orig/et/docs/common/Makefile.in	Tue Mar 26 02:55:32 2002
++++ kde-i18n-3.0/et/docs/common/Makefile.in	Wed May 22 01:56:20 2002
+@@ -509,8 +509,12 @@
  	  $(INSTALL_DATA) $(srcdir)/$$base $(DESTDIR)$(kde_htmldir)/$(KDE_LANG)/common/$$base ;\
  	done
  	@echo "merging common and language specific dir" ;\
@@ -83,9 +88,10 @@
  	cd $(DESTDIR)$(kde_htmldir)/$(KDE_LANG)/common ;\
  	if test -n "$$com_files"; then for p in $$com_files ; do \
  	  case " fdl-translated.html gpl-translated.html kde-localised.css lgpl-translated.html logotp3.png  " in \
---- kde-i18n-2.2.2.orig/fi/docs/common/Makefile.in	Mon Nov 12 20:33:45 2001
-+++ kde-i18n-2.2.2/fi/docs/common/Makefile.in	Fri May 17 23:37:11 2002
-@@ -461,8 +461,12 @@
+diff -uNr kde-i18n-3.0.orig/fi/docs/common/Makefile.in kde-i18n-3.0/fi/docs/common/Makefile.in
+--- kde-i18n-3.0.orig/fi/docs/common/Makefile.in	Tue Mar 26 02:55:36 2002
++++ kde-i18n-3.0/fi/docs/common/Makefile.in	Wed May 22 01:56:20 2002
+@@ -509,8 +509,12 @@
  	  $(INSTALL_DATA) $(srcdir)/$$base $(DESTDIR)$(kde_htmldir)/$(KDE_LANG)/common/$$base ;\
  	done
  	@echo "merging common and language specific dir" ;\
@@ -100,9 +106,10 @@
  	cd $(DESTDIR)$(kde_htmldir)/$(KDE_LANG)/common ;\
  	if test -n "$$com_files"; then for p in $$com_files ; do \
  	  case " fdl-translated.html gpl-translated.html kde-localised.css lgpl-translated.html logotp3.png  " in \
---- kde-i18n-2.2.2.orig/fr/docs/common/Makefile.in	Mon Nov 12 20:33:45 2001
-+++ kde-i18n-2.2.2/fr/docs/common/Makefile.in	Fri May 17 23:37:11 2002
-@@ -461,8 +461,12 @@
+diff -uNr kde-i18n-3.0.orig/fr/docs/common/Makefile.in kde-i18n-3.0/fr/docs/common/Makefile.in
+--- kde-i18n-3.0.orig/fr/docs/common/Makefile.in	Tue Mar 26 02:55:58 2002
++++ kde-i18n-3.0/fr/docs/common/Makefile.in	Wed May 22 01:56:20 2002
+@@ -509,8 +509,12 @@
  	  $(INSTALL_DATA) $(srcdir)/$$base $(DESTDIR)$(kde_htmldir)/$(KDE_LANG)/common/$$base ;\
  	done
  	@echo "merging common and language specific dir" ;\
@@ -117,9 +124,10 @@
  	cd $(DESTDIR)$(kde_htmldir)/$(KDE_LANG)/common ;\
  	if test -n "$$com_files"; then for p in $$com_files ; do \
  	  case " fdl-translated.html gpl-translated.html kde-localised.css lgpl-translated.html logotp3.png  " in \
---- kde-i18n-2.2.2.orig/he/docs/common/Makefile.in	Mon Nov 12 20:33:45 2001
-+++ kde-i18n-2.2.2/he/docs/common/Makefile.in	Fri May 17 23:37:11 2002
-@@ -461,8 +461,12 @@
+diff -uNr kde-i18n-3.0.orig/he/docs/common/Makefile.in kde-i18n-3.0/he/docs/common/Makefile.in
+--- kde-i18n-3.0.orig/he/docs/common/Makefile.in	Tue Mar 26 02:56:04 2002
++++ kde-i18n-3.0/he/docs/common/Makefile.in	Wed May 22 01:56:20 2002
+@@ -509,8 +509,12 @@
  	  $(INSTALL_DATA) $(srcdir)/$$base $(DESTDIR)$(kde_htmldir)/$(KDE_LANG)/common/$$base ;\
  	done
  	@echo "merging common and language specific dir" ;\
@@ -134,9 +142,28 @@
  	cd $(DESTDIR)$(kde_htmldir)/$(KDE_LANG)/common ;\
  	if test -n "$$com_files"; then for p in $$com_files ; do \
  	  case " fdl-translated.html gpl-translated.html kde-localised.css lgpl-translated.html logotp3.png  " in \
---- kde-i18n-2.2.2.orig/hu/docs/common/Makefile.in	Mon Nov 12 20:33:45 2001
-+++ kde-i18n-2.2.2/hu/docs/common/Makefile.in	Fri May 17 23:37:11 2002
-@@ -461,8 +461,12 @@
+diff -uNr kde-i18n-3.0.orig/hr/docs/common/Makefile.in kde-i18n-3.0/hr/docs/common/Makefile.in
+--- kde-i18n-3.0.orig/hr/docs/common/Makefile.in	Tue Mar 26 02:56:09 2002
++++ kde-i18n-3.0/hr/docs/common/Makefile.in	Wed May 22 02:03:56 2002
+@@ -509,8 +509,12 @@
+ 	  $(INSTALL_DATA) $(srcdir)/$$base $(DESTDIR)$(kde_htmldir)/$(KDE_LANG)/common/$$base ;\
+ 	done
+ 	@echo "merging common and language specific dir" ;\
+-	if test ! -e $(kde_htmldir)/en/common/kde-common.css; then echo 'no english docs found in $(kde_htmldir)/en/common/'; exit 1; fi 
+-	@com_files=`cd $(kde_htmldir)/en/common && echo *` ;\
++	if test ! -e $(kde_htmldir)/en/common/kde-common.css; then \
++	  echo 'no english docs found in $(kde_htmldir)/en/common/ - trying rpm base' ;\
++	  com_files=`rpm -ql kdelibs|grep $(kde_htmldir)/en/common/|sed s,$(kde_htmldir)/en/common/,,` ;\
++	else \
++	  com_files=`cd $(kde_htmldir)/en/common && echo *` ;\
++	fi; \
+ 	cd $(DESTDIR)$(kde_htmldir)/$(KDE_LANG)/common ;\
+ 	if test -n "$$com_files"; then for p in $$com_files ; do \
+ 	  case " gpl-translated.html  " in \
+diff -uNr kde-i18n-3.0.orig/hu/docs/common/Makefile.in kde-i18n-3.0/hu/docs/common/Makefile.in
+--- kde-i18n-3.0.orig/hu/docs/common/Makefile.in	Tue Mar 26 02:56:27 2002
++++ kde-i18n-3.0/hu/docs/common/Makefile.in	Wed May 22 01:56:20 2002
+@@ -509,8 +509,12 @@
  	  $(INSTALL_DATA) $(srcdir)/$$base $(DESTDIR)$(kde_htmldir)/$(KDE_LANG)/common/$$base ;\
  	done
  	@echo "merging common and language specific dir" ;\
@@ -151,9 +178,10 @@
  	cd $(DESTDIR)$(kde_htmldir)/$(KDE_LANG)/common ;\
  	if test -n "$$com_files"; then for p in $$com_files ; do \
  	  case " fdl-translated.html gpl-translated.html kde-localised.css lgpl-translated.html logotp3.png  " in \
---- kde-i18n-2.2.2.orig/it/docs/common/Makefile.in	Mon Nov 12 20:33:45 2001
-+++ kde-i18n-2.2.2/it/docs/common/Makefile.in	Fri May 17 23:37:11 2002
-@@ -461,8 +461,12 @@
+diff -uNr kde-i18n-3.0.orig/it/docs/common/Makefile.in kde-i18n-3.0/it/docs/common/Makefile.in
+--- kde-i18n-3.0.orig/it/docs/common/Makefile.in	Tue Mar 26 02:56:48 2002
++++ kde-i18n-3.0/it/docs/common/Makefile.in	Wed May 22 01:56:20 2002
+@@ -509,8 +509,12 @@
  	  $(INSTALL_DATA) $(srcdir)/$$base $(DESTDIR)$(kde_htmldir)/$(KDE_LANG)/common/$$base ;\
  	done
  	@echo "merging common and language specific dir" ;\
@@ -168,9 +196,10 @@
  	cd $(DESTDIR)$(kde_htmldir)/$(KDE_LANG)/common ;\
  	if test -n "$$com_files"; then for p in $$com_files ; do \
  	  case " fdl-translated.html gpl-translated.html kde-localised.css lgpl-translated.html logotp3.png  " in \
---- kde-i18n-2.2.2.orig/ja/docs/common/Makefile.in	Mon Nov 12 20:33:45 2001
-+++ kde-i18n-2.2.2/ja/docs/common/Makefile.in	Fri May 17 23:37:11 2002
-@@ -461,8 +461,12 @@
+diff -uNr kde-i18n-3.0.orig/ja/docs/common/Makefile.in kde-i18n-3.0/ja/docs/common/Makefile.in
+--- kde-i18n-3.0.orig/ja/docs/common/Makefile.in	Tue Mar 26 02:56:54 2002
++++ kde-i18n-3.0/ja/docs/common/Makefile.in	Wed May 22 01:56:20 2002
+@@ -509,8 +509,12 @@
  	  $(INSTALL_DATA) $(srcdir)/$$base $(DESTDIR)$(kde_htmldir)/$(KDE_LANG)/common/$$base ;\
  	done
  	@echo "merging common and language specific dir" ;\
@@ -185,9 +214,28 @@
  	cd $(DESTDIR)$(kde_htmldir)/$(KDE_LANG)/common ;\
  	if test -n "$$com_files"; then for p in $$com_files ; do \
  	  case " fdl-translated.html gpl-translated.html kde-localised.css lgpl-translated.html logotp3.png  " in \
---- kde-i18n-2.2.2.orig/ko/docs/common/Makefile.in	Mon Nov 12 20:33:45 2001
-+++ kde-i18n-2.2.2/ko/docs/common/Makefile.in	Fri May 17 23:37:11 2002
-@@ -461,8 +461,12 @@
+diff -uNr kde-i18n-3.0.orig/ko/docs/common/Makefile.in kde-i18n-3.0/ko/docs/common/Makefile.in
+--- kde-i18n-3.0.orig/ko/docs/common/Makefile.in	Tue Mar 26 02:56:58 2002
++++ kde-i18n-3.0/ko/docs/common/Makefile.in	Wed May 22 01:56:20 2002
+@@ -509,8 +509,12 @@
+ 	  $(INSTALL_DATA) $(srcdir)/$$base $(DESTDIR)$(kde_htmldir)/$(KDE_LANG)/common/$$base ;\
+ 	done
+ 	@echo "merging common and language specific dir" ;\
+-	if test ! -e $(kde_htmldir)/en/common/kde-common.css; then echo 'no english docs found in $(kde_htmldir)/en/common/'; exit 1; fi 
+-	@com_files=`cd $(kde_htmldir)/en/common && echo *` ;\
++	if test ! -e $(kde_htmldir)/en/common/kde-common.css; then \
++	  echo 'no english docs found in $(kde_htmldir)/en/common/ - trying rpm base' ;\
++	  com_files=`rpm -ql kdelibs|grep $(kde_htmldir)/en/common/|sed s,$(kde_htmldir)/en/common/,,` ;\
++	else \
++	  com_files=`cd $(kde_htmldir)/en/common && echo *` ;\
++	fi; \
+ 	cd $(DESTDIR)$(kde_htmldir)/$(KDE_LANG)/common ;\
+ 	if test -n "$$com_files"; then for p in $$com_files ; do \
+ 	  case " fdl-translated.html gpl-translated.html kde-localised.css logotp3.png  " in \
+diff -uNr kde-i18n-3.0.orig/nl/docs/common/Makefile.in kde-i18n-3.0/nl/docs/common/Makefile.in
+--- kde-i18n-3.0.orig/nl/docs/common/Makefile.in	Tue Mar 26 02:57:24 2002
++++ kde-i18n-3.0/nl/docs/common/Makefile.in	Wed May 22 01:56:56 2002
+@@ -509,8 +509,12 @@
  	  $(INSTALL_DATA) $(srcdir)/$$base $(DESTDIR)$(kde_htmldir)/$(KDE_LANG)/common/$$base ;\
  	done
  	@echo "merging common and language specific dir" ;\
@@ -202,9 +250,10 @@
  	cd $(DESTDIR)$(kde_htmldir)/$(KDE_LANG)/common ;\
  	if test -n "$$com_files"; then for p in $$com_files ; do \
  	  case " fdl-translated.html gpl-translated.html kde-localised.css lgpl-translated.html logotp3.png  " in \
---- kde-i18n-2.2.2.orig/lt/docs/common/Makefile.in	Mon Nov 12 20:33:45 2001
-+++ kde-i18n-2.2.2/lt/docs/common/Makefile.in	Fri May 17 23:37:11 2002
-@@ -461,8 +461,12 @@
+diff -uNr kde-i18n-3.0.orig/pt/docs/common/Makefile.in kde-i18n-3.0/pt/docs/common/Makefile.in
+--- kde-i18n-3.0.orig/pt/docs/common/Makefile.in	Tue Mar 26 02:57:43 2002
++++ kde-i18n-3.0/pt/docs/common/Makefile.in	Wed May 22 01:56:56 2002
+@@ -509,8 +509,12 @@
  	  $(INSTALL_DATA) $(srcdir)/$$base $(DESTDIR)$(kde_htmldir)/$(KDE_LANG)/common/$$base ;\
  	done
  	@echo "merging common and language specific dir" ;\
@@ -219,9 +268,10 @@
  	cd $(DESTDIR)$(kde_htmldir)/$(KDE_LANG)/common ;\
  	if test -n "$$com_files"; then for p in $$com_files ; do \
  	  case " fdl-translated.html gpl-translated.html kde-localised.css lgpl-translated.html logotp3.png  " in \
---- kde-i18n-2.2.2.orig/nl/docs/common/Makefile.in	Mon Nov 12 20:33:45 2001
-+++ kde-i18n-2.2.2/nl/docs/common/Makefile.in	Fri May 17 23:37:11 2002
-@@ -461,8 +461,12 @@
+diff -uNr kde-i18n-3.0.orig/ro/docs/common/Makefile.in kde-i18n-3.0/ro/docs/common/Makefile.in
+--- kde-i18n-3.0.orig/ro/docs/common/Makefile.in	Tue Mar 26 02:57:53 2002
++++ kde-i18n-3.0/ro/docs/common/Makefile.in	Wed May 22 01:56:56 2002
+@@ -509,8 +509,12 @@
  	  $(INSTALL_DATA) $(srcdir)/$$base $(DESTDIR)$(kde_htmldir)/$(KDE_LANG)/common/$$base ;\
  	done
  	@echo "merging common and language specific dir" ;\
@@ -236,9 +286,46 @@
  	cd $(DESTDIR)$(kde_htmldir)/$(KDE_LANG)/common ;\
  	if test -n "$$com_files"; then for p in $$com_files ; do \
  	  case " fdl-translated.html gpl-translated.html kde-localised.css lgpl-translated.html logotp3.png  " in \
---- kde-i18n-2.2.2.orig/pt/docs/common/Makefile.in	Mon Nov 12 20:33:45 2001
-+++ kde-i18n-2.2.2/pt/docs/common/Makefile.in	Fri May 17 23:37:11 2002
-@@ -461,8 +461,12 @@
+diff -uNr kde-i18n-3.0.orig/ru/docs/common/Makefile.in kde-i18n-3.0/ru/docs/common/Makefile.in
+--- kde-i18n-3.0.orig/ru/docs/common/Makefile.in	Tue Mar 26 02:58:03 2002
++++ kde-i18n-3.0/ru/docs/common/Makefile.in	Wed May 22 01:56:56 2002
+@@ -509,8 +509,12 @@
+ 	  $(INSTALL_DATA) $(srcdir)/$$base $(DESTDIR)$(kde_htmldir)/$(KDE_LANG)/common/$$base ;\
+ 	done
+ 	@echo "merging common and language specific dir" ;\
+-	if test ! -e $(kde_htmldir)/en/common/kde-common.css; then echo 'no english docs found in $(kde_htmldir)/en/common/'; exit 1; fi 
+-	@com_files=`cd $(kde_htmldir)/en/common && echo *` ;\
++	if test ! -e $(kde_htmldir)/en/common/kde-common.css; then \
++	  echo 'no english docs found in $(kde_htmldir)/en/common/ - trying rpm base' ;\
++	  com_files=`rpm -ql kdelibs|grep $(kde_htmldir)/en/common/|sed s,$(kde_htmldir)/en/common/,,` ;\
++	else \
++	  com_files=`cd $(kde_htmldir)/en/common && echo *` ;\
++	fi; \
+ 	cd $(DESTDIR)$(kde_htmldir)/$(KDE_LANG)/common ;\
+ 	if test -n "$$com_files"; then for p in $$com_files ; do \
+ 	  case " fdl-translated.html gpl-translated.html kde-localised.css logotp3.png  " in \
+diff -uNr kde-i18n-3.0.orig/sk/docs/common/Makefile.in kde-i18n-3.0/sk/docs/common/Makefile.in
+--- kde-i18n-3.0.orig/sk/docs/common/Makefile.in	Tue Mar 26 02:58:16 2002
++++ kde-i18n-3.0/sk/docs/common/Makefile.in	Wed May 22 01:56:56 2002
+@@ -509,8 +509,12 @@
+ 	  $(INSTALL_DATA) $(srcdir)/$$base $(DESTDIR)$(kde_htmldir)/$(KDE_LANG)/common/$$base ;\
+ 	done
+ 	@echo "merging common and language specific dir" ;\
+-	if test ! -e $(kde_htmldir)/en/common/kde-common.css; then echo 'no english docs found in $(kde_htmldir)/en/common/'; exit 1; fi 
+-	@com_files=`cd $(kde_htmldir)/en/common && echo *` ;\
++	if test ! -e $(kde_htmldir)/en/common/kde-common.css; then \
++	  echo 'no english docs found in $(kde_htmldir)/en/common/ - trying rpm base' ;\
++	  com_files=`rpm -ql kdelibs|grep $(kde_htmldir)/en/common/|sed s,$(kde_htmldir)/en/common/,,` ;\
++	else \
++	  com_files=`cd $(kde_htmldir)/en/common && echo *` ;\
++	fi; \
+ 	cd $(DESTDIR)$(kde_htmldir)/$(KDE_LANG)/common ;\
+ 	if test -n "$$com_files"; then for p in $$com_files ; do \
+ 	  case " gpl-translated.html  " in \
+diff -uNr kde-i18n-3.0.orig/sl/docs/common/Makefile.in kde-i18n-3.0/sl/docs/common/Makefile.in
+--- kde-i18n-3.0.orig/sl/docs/common/Makefile.in	Tue Mar 26 02:58:27 2002
++++ kde-i18n-3.0/sl/docs/common/Makefile.in	Wed May 22 01:56:56 2002
+@@ -509,8 +509,12 @@
  	  $(INSTALL_DATA) $(srcdir)/$$base $(DESTDIR)$(kde_htmldir)/$(KDE_LANG)/common/$$base ;\
  	done
  	@echo "merging common and language specific dir" ;\
@@ -253,9 +340,10 @@
  	cd $(DESTDIR)$(kde_htmldir)/$(KDE_LANG)/common ;\
  	if test -n "$$com_files"; then for p in $$com_files ; do \
  	  case " fdl-translated.html gpl-translated.html kde-localised.css lgpl-translated.html logotp3.png  " in \
---- kde-i18n-2.2.2.orig/ro/docs/common/Makefile.in	Mon Nov 12 20:33:45 2001
-+++ kde-i18n-2.2.2/ro/docs/common/Makefile.in	Fri May 17 23:37:11 2002
-@@ -461,8 +461,12 @@
+diff -uNr kde-i18n-3.0.orig/sr/docs/common/Makefile.in kde-i18n-3.0/sr/docs/common/Makefile.in
+--- kde-i18n-3.0.orig/sr/docs/common/Makefile.in	Tue Mar 26 02:58:32 2002
++++ kde-i18n-3.0/sr/docs/common/Makefile.in	Wed May 22 02:03:56 2002
+@@ -509,8 +509,12 @@
  	  $(INSTALL_DATA) $(srcdir)/$$base $(DESTDIR)$(kde_htmldir)/$(KDE_LANG)/common/$$base ;\
  	done
  	@echo "merging common and language specific dir" ;\
@@ -270,9 +358,10 @@
  	cd $(DESTDIR)$(kde_htmldir)/$(KDE_LANG)/common ;\
  	if test -n "$$com_files"; then for p in $$com_files ; do \
  	  case " fdl-translated.html gpl-translated.html kde-localised.css lgpl-translated.html logotp3.png  " in \
---- kde-i18n-2.2.2.orig/ru/docs/common/Makefile.in	Mon Nov 12 20:33:45 2001
-+++ kde-i18n-2.2.2/ru/docs/common/Makefile.in	Fri May 17 23:37:11 2002
-@@ -461,8 +461,12 @@
+diff -uNr kde-i18n-3.0.orig/sv/docs/common/Makefile.in kde-i18n-3.0/sv/docs/common/Makefile.in
+--- kde-i18n-3.0.orig/sv/docs/common/Makefile.in	Tue Mar 26 02:58:53 2002
++++ kde-i18n-3.0/sv/docs/common/Makefile.in	Wed May 22 01:56:56 2002
+@@ -509,8 +509,12 @@
  	  $(INSTALL_DATA) $(srcdir)/$$base $(DESTDIR)$(kde_htmldir)/$(KDE_LANG)/common/$$base ;\
  	done
  	@echo "merging common and language specific dir" ;\
@@ -287,9 +376,46 @@
  	cd $(DESTDIR)$(kde_htmldir)/$(KDE_LANG)/common ;\
  	if test -n "$$com_files"; then for p in $$com_files ; do \
  	  case " fdl-translated.html gpl-translated.html kde-localised.css lgpl-translated.html logotp3.png  " in \
---- kde-i18n-2.2.2.orig/sk/docs/common/Makefile.in	Mon Nov 12 20:33:45 2001
-+++ kde-i18n-2.2.2/sk/docs/common/Makefile.in	Fri May 17 23:37:11 2002
-@@ -461,8 +461,12 @@
+diff -uNr kde-i18n-3.0.orig/tr/docs/common/Makefile.in kde-i18n-3.0/tr/docs/common/Makefile.in
+--- kde-i18n-3.0.orig/tr/docs/common/Makefile.in	Tue Mar 26 02:59:08 2002
++++ kde-i18n-3.0/tr/docs/common/Makefile.in	Wed May 22 02:03:56 2002
+@@ -509,8 +509,12 @@
+ 	  $(INSTALL_DATA) $(srcdir)/$$base $(DESTDIR)$(kde_htmldir)/$(KDE_LANG)/common/$$base ;\
+ 	done
+ 	@echo "merging common and language specific dir" ;\
+-	if test ! -e $(kde_htmldir)/en/common/kde-common.css; then echo 'no english docs found in $(kde_htmldir)/en/common/'; exit 1; fi 
+-	@com_files=`cd $(kde_htmldir)/en/common && echo *` ;\
++	if test ! -e $(kde_htmldir)/en/common/kde-common.css; then \
++	  echo 'no english docs found in $(kde_htmldir)/en/common/ - trying rpm base' ;\
++	  com_files=`rpm -ql kdelibs|grep $(kde_htmldir)/en/common/|sed s,$(kde_htmldir)/en/common/,,` ;\
++	else \
++	  com_files=`cd $(kde_htmldir)/en/common && echo *` ;\
++	fi; \
+ 	cd $(DESTDIR)$(kde_htmldir)/$(KDE_LANG)/common ;\
+ 	if test -n "$$com_files"; then for p in $$com_files ; do \
+ 	  case " gpl-translated.html kde-localised.css  " in \
+diff -uNr kde-i18n-3.0.orig/uk/docs/common/Makefile.in kde-i18n-3.0/uk/docs/common/Makefile.in
+--- kde-i18n-3.0.orig/uk/docs/common/Makefile.in	Tue Mar 26 02:59:14 2002
++++ kde-i18n-3.0/uk/docs/common/Makefile.in	Wed May 22 01:56:56 2002
+@@ -509,8 +509,12 @@
+ 	  $(INSTALL_DATA) $(srcdir)/$$base $(DESTDIR)$(kde_htmldir)/$(KDE_LANG)/common/$$base ;\
+ 	done
+ 	@echo "merging common and language specific dir" ;\
+-	if test ! -e $(kde_htmldir)/en/common/kde-common.css; then echo 'no english docs found in $(kde_htmldir)/en/common/'; exit 1; fi 
+-	@com_files=`cd $(kde_htmldir)/en/common && echo *` ;\
++	if test ! -e $(kde_htmldir)/en/common/kde-common.css; then \
++	  echo 'no english docs found in $(kde_htmldir)/en/common/ - trying rpm base' ;\
++	  com_files=`rpm -ql kdelibs|grep $(kde_htmldir)/en/common/|sed s,$(kde_htmldir)/en/common/,,` ;\
++	else \
++	  com_files=`cd $(kde_htmldir)/en/common && echo *` ;\
++	fi; \
+ 	cd $(DESTDIR)$(kde_htmldir)/$(KDE_LANG)/common ;\
+ 	if test -n "$$com_files"; then for p in $$com_files ; do \
+ 	  case " kde-localised.css logotp3.png  " in \
+diff -uNr kde-i18n-3.0.orig/zh_CN/docs/common/Makefile.in kde-i18n-3.0/zh_CN/docs/common/Makefile.in
+--- kde-i18n-3.0.orig/zh_CN/docs/common/Makefile.in	Tue Mar 26 02:59:32 2002
++++ kde-i18n-3.0/zh_CN/docs/common/Makefile.in	Wed May 22 02:16:18 2002
+@@ -509,8 +509,12 @@
  	  $(INSTALL_DATA) $(srcdir)/$$base $(DESTDIR)$(kde_htmldir)/$(KDE_LANG)/common/$$base ;\
  	done
  	@echo "merging common and language specific dir" ;\
@@ -304,77 +430,10 @@
  	cd $(DESTDIR)$(kde_htmldir)/$(KDE_LANG)/common ;\
  	if test -n "$$com_files"; then for p in $$com_files ; do \
  	  case " fdl-translated.html gpl-translated.html kde-localised.css lgpl-translated.html logotp3.png  " in \
---- kde-i18n-2.2.2.orig/sl/docs/common/Makefile.in	Mon Nov 12 20:33:45 2001
-+++ kde-i18n-2.2.2/sl/docs/common/Makefile.in	Fri May 17 23:37:11 2002
-@@ -461,8 +461,12 @@
- 	  $(INSTALL_DATA) $(srcdir)/$$base $(DESTDIR)$(kde_htmldir)/$(KDE_LANG)/common/$$base ;\
- 	done
- 	@echo "merging common and language specific dir" ;\
--	if test ! -e $(kde_htmldir)/en/common/kde-common.css; then echo 'no english docs found in $(kde_htmldir)/en/common/'; exit 1; fi 
--	@com_files=`cd $(kde_htmldir)/en/common && echo *` ;\
-+	if test ! -e $(kde_htmldir)/en/common/kde-common.css; then \
-+	  echo 'no english docs found in $(kde_htmldir)/en/common/ - trying rpm base' ;\
-+	  com_files=`rpm -ql kdelibs|grep $(kde_htmldir)/en/common/|sed s,$(kde_htmldir)/en/common/,,` ;\
-+	else \
-+	  com_files=`cd $(kde_htmldir)/en/common && echo *` ;\
-+	fi; \
- 	cd $(DESTDIR)$(kde_htmldir)/$(KDE_LANG)/common ;\
- 	if test -n "$$com_files"; then for p in $$com_files ; do \
- 	  case " fdl-translated.html gpl-translated.html kde-localised.css lgpl-translated.html logotp3.png  " in \
---- kde-i18n-2.2.2.orig/sv/docs/common/Makefile.in	Mon Nov 12 20:33:45 2001
-+++ kde-i18n-2.2.2/sv/docs/common/Makefile.in	Fri May 17 23:37:11 2002
-@@ -461,8 +461,12 @@
- 	  $(INSTALL_DATA) $(srcdir)/$$base $(DESTDIR)$(kde_htmldir)/$(KDE_LANG)/common/$$base ;\
- 	done
- 	@echo "merging common and language specific dir" ;\
--	if test ! -e $(kde_htmldir)/en/common/kde-common.css; then echo 'no english docs found in $(kde_htmldir)/en/common/'; exit 1; fi 
--	@com_files=`cd $(kde_htmldir)/en/common && echo *` ;\
-+	if test ! -e $(kde_htmldir)/en/common/kde-common.css; then \
-+	  echo 'no english docs found in $(kde_htmldir)/en/common/ - trying rpm base' ;\
-+	  com_files=`rpm -ql kdelibs|grep $(kde_htmldir)/en/common/|sed s,$(kde_htmldir)/en/common/,,` ;\
-+	else \
-+	  com_files=`cd $(kde_htmldir)/en/common && echo *` ;\
-+	fi; \
- 	cd $(DESTDIR)$(kde_htmldir)/$(KDE_LANG)/common ;\
- 	if test -n "$$com_files"; then for p in $$com_files ; do \
- 	  case " fdl-translated.html gpl-translated.html kde-localised.css lgpl-translated.html logotp3.png  " in \
---- kde-i18n-2.2.2.orig/uk/docs/common/Makefile.in	Mon Nov 12 20:33:45 2001
-+++ kde-i18n-2.2.2/uk/docs/common/Makefile.in	Fri May 17 23:37:11 2002
-@@ -461,8 +461,12 @@
- 	  $(INSTALL_DATA) $(srcdir)/$$base $(DESTDIR)$(kde_htmldir)/$(KDE_LANG)/common/$$base ;\
- 	done
- 	@echo "merging common and language specific dir" ;\
--	if test ! -e $(kde_htmldir)/en/common/kde-common.css; then echo 'no english docs found in $(kde_htmldir)/en/common/'; exit 1; fi 
--	@com_files=`cd $(kde_htmldir)/en/common && echo *` ;\
-+	if test ! -e $(kde_htmldir)/en/common/kde-common.css; then \
-+	  echo 'no english docs found in $(kde_htmldir)/en/common/ - trying rpm base' ;\
-+	  com_files=`rpm -ql kdelibs|grep $(kde_htmldir)/en/common/|sed s,$(kde_htmldir)/en/common/,,` ;\
-+	else \
-+	  com_files=`cd $(kde_htmldir)/en/common && echo *` ;\
-+	fi; \
- 	cd $(DESTDIR)$(kde_htmldir)/$(KDE_LANG)/common ;\
- 	if test -n "$$com_files"; then for p in $$com_files ; do \
- 	  case " fdl-translated.html gpl-translated.html kde-localised.css lgpl-translated.html logotp3.png  " in \
---- kde-i18n-2.2.2.orig/zh_CN.GB2312/docs/common/Makefile.in	Mon Nov 12 20:33:45 2001
-+++ kde-i18n-2.2.2/zh_CN.GB2312/docs/common/Makefile.in	Fri May 17 23:37:11 2002
-@@ -461,8 +461,12 @@
- 	  $(INSTALL_DATA) $(srcdir)/$$base $(DESTDIR)$(kde_htmldir)/$(KDE_LANG)/common/$$base ;\
- 	done
- 	@echo "merging common and language specific dir" ;\
--	if test ! -e $(kde_htmldir)/en/common/kde-common.css; then echo 'no english docs found in $(kde_htmldir)/en/common/'; exit 1; fi 
--	@com_files=`cd $(kde_htmldir)/en/common && echo *` ;\
-+	if test ! -e $(kde_htmldir)/en/common/kde-common.css; then \
-+	  echo 'no english docs found in $(kde_htmldir)/en/common/ - trying rpm base' ;\
-+	  com_files=`rpm -ql kdelibs|grep $(kde_htmldir)/en/common/|sed s,$(kde_htmldir)/en/common/,,` ;\
-+	else \
-+	  com_files=`cd $(kde_htmldir)/en/common && echo *` ;\
-+	fi; \
- 	cd $(DESTDIR)$(kde_htmldir)/$(KDE_LANG)/common ;\
- 	if test -n "$$com_files"; then for p in $$com_files ; do \
- 	  case " fdl-translated.html gpl-translated.html kde-localised.css lgpl-translated.html logotp3.png  " in \
---- kde-i18n-2.2.2.orig/zh_TW.Big5/docs/common/Makefile.in	Mon Nov 12 20:33:45 2001
-+++ kde-i18n-2.2.2/zh_TW.Big5/docs/common/Makefile.in	Fri May 17 23:37:11 2002
-@@ -461,8 +461,12 @@
+diff -uNr kde-i18n-3.0.orig/zh_TW/docs/common/Makefile.in kde-i18n-3.0/zh_TW/docs/common/Makefile.in
+--- kde-i18n-3.0.orig/zh_TW/docs/common/Makefile.in	Tue Mar 26 02:59:37 2002
++++ kde-i18n-3.0/zh_TW/docs/common/Makefile.in	Wed May 22 02:16:28 2002
+@@ -509,8 +509,12 @@
  	  $(INSTALL_DATA) $(srcdir)/$$base $(DESTDIR)$(kde_htmldir)/$(KDE_LANG)/common/$$base ;\
  	done
  	@echo "merging common and language specific dir" ;\
