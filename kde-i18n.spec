@@ -1230,7 +1230,7 @@ kde_libs_htmldir="%{_kdedocdir}"; export kde_libs_htmldir
 LDFLAGS="%{rpmldflags}"
 #export UNSERMAKE=%{_datadir}/unsermake/unsermake
 
-%if %{nil}
+%if %{with alltogether}
 for i in `find ./ro/docs/ -name Makefile.am`;
 do
 	echo -e 'KDE_LANG = ro\nSUBDIRS = $(AUTODIRS)\nKDE_DOCS = AUTO' > $i
@@ -1299,15 +1299,25 @@ FindLang() {
 
 # share/apps/ktuberling/sounds/(%%lang)
     if [ -d "$RPM_BUILD_ROOT%{_datadir}/apps/ktuberling/sounds/$1" ]; then
-	echo "%lang($1) %{_datadir}/apps/ktuberling/sounds/$1" >> "$2.lang"
+        echo "%lang($1) %{_datadir}/apps/ktuberling/sounds/$1" >> "$2.lang"
     fi
+
+# share/apps/khangman/data/(%lang)
+    if [ -d "$RPM_BUILD_ROOT%{_datadir}/apps/khangman/data/$1" ]; then
+	echo "%lang($1) %{_datadir}/apps/khangman/data/$1" >> "$2.lang"
+    fi
+
+# share/apps/klettres/(%lang)
+    if [ -d "$RPM_BUILD_ROOT%{_datadir}/apps/klettres/$1" ]; then
+	echo "%lang($1) %{_datadir}/apps/klettres/$1" >> "$2.lang"
+    fi
+
 }
 
 %{__make} install \
 	DESTDIR=$RPM_BUILD_ROOT \
 	kde_htmldir="%{_kdedocdir}" \
 	kde_libs_htmldir="%{_kdedocdir}"
-
 
 ##FindLang af Afrikaans
 FindLang ar Arabic
@@ -1400,8 +1410,8 @@ rm -rf $RPM_BUILD_ROOT
 %files -f Arabic.lang Arabic
 %defattr(644,root,root,755)
 
-%files -f Azerbaijani.lang Azerbaijani
-%defattr(644,root,root,755)
+#%files -f Azerbaijani.lang Azerbaijani
+#%defattr(644,root,root,755)
 
 %files -f Bulgarian.lang Bulgarian
 %defattr(644,root,root,755)
@@ -1435,7 +1445,9 @@ rm -rf $RPM_BUILD_ROOT
 %files -f English_UK.lang English_UK
 %defattr(644,root,root,755)
 
-#%%files -f Esperanto.lang Esperanto
+%files -f Esperanto.lang Esperanto
+%defattr(644,root,root,755)
+
 %files -f Spanish.lang Spanish
 %defattr(644,root,root,755)
 
@@ -1455,8 +1467,8 @@ rm -rf $RPM_BUILD_ROOT
 %defattr(644,root,root,755)
 
 # %files -f Irish.lang Irish
-%files -f Galician.lang Galician
-%defattr(644,root,root,755)
+#%files -f Galician.lang Galician
+#%defattr(644,root,root,755)
 
 %files -f Hindi.lang Hindi
 %defattr(644,root,root,755)
@@ -1484,8 +1496,8 @@ rm -rf $RPM_BUILD_ROOT
 %defattr(644,root,root,755)
 
 ##%files -f Korean.lang Korean
-%files -f Lithuanian.lang Lithuanian
-%defattr(644,root,root,755)
+#%files -f Lithuanian.lang Lithuanian
+#%defattr(644,root,root,755)
 
 ##%files -f Latvian.lang Latvian
 #%%files -f Maltese.lang Maltese
@@ -1494,7 +1506,7 @@ rm -rf $RPM_BUILD_ROOT
 
 %files -f Mongolian.lang Mongolian
 %defattr(644,root,root,755)
-%{_datadir}/locale/mn/*.png
+#{_datadir}/locale/mn/*.png
 
 # %files -f Maori.lang Maori
 #%%files -f Macedonian.lang Macedonian
