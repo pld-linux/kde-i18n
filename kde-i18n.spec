@@ -775,7 +775,42 @@ KDE - wsparcie dla jêzyka zuluskiego.
 kde_htmldir="%{_htmldir}"; export kde_htmldir
 
 LDFLAGS="%{rpmldflags}"
-#$%{__make} -f Makefile.cvs
+
+for plik in `find ./ -name \*.desktop` ; do
+        if [ -d $plik ]; then
+	echo $plik
+	sed -e "s/[nb]/[no]/g" > $plik.1
+	mv -f $plik.1 $plik
+	fi 
+done
+
+# Not necessary for no
+# for plik in `find ./ -name highscore\*` ; do
+#        if [ -d $plik ]; then
+#	echo $plik
+#	sed -ie "s/nb/no/g" $plik
+#	fi
+# done
+		
+for plik in `find ./nb -name Makefile.am` ; do
+        if [ -d $plik ]; then
+	echo $plik
+	sed -ie "s/nb/no/g" $plik
+	fi
+done
+
+for plik in `find ./nb -name configure.in.in` ; do
+	if [ -d $plik ]; then
+	echo $plik
+	sed -ie "s/nb/no/g" $plik
+        fi
+done
+
+sed -ie "s/nb/no/g" ./subdirs
+sed -ie "s/nb/no/g" ./teamnames
+mv -f nb no
+%{__make} -f admin/Makefile.common cvs
+
 %configure
 %{__make} RPM_OPT_FLAGS="%{rpmcflags}"
 
@@ -921,7 +956,7 @@ FindLang lt Lithuanian
 FindLang mt Maltese
 FindLang nl Dutch
 FindLang nn Norwegian_Nynorsk
-FindLang nb Norwegian_Bookmal
+FindLang no Norwegian_Bookmal
 FindLang nso Northern_Sotho
 # FindLang oc Gascon_occitan
 FindLang pl Polish
