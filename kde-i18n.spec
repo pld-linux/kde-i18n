@@ -2,7 +2,7 @@ Summary:	K Desktop Environment - international support
 Summary(pl):	KDE - wsparcie dla t³umaczeñ miêdzynarodowych
 Name:		kde-i18n
 Version:	2.2.2
-Release:	9
+Release:	10
 License:	GPL/LGPL
 Group:		X11/Applications
 Source0:	ftp://ftp.kde.org/pub/kde/stable/%{version}/src/%{name}-%{version}.tar.bz2
@@ -429,27 +429,29 @@ K Desktop Environment - Polish language support.
 KDE - wsparcie dla jêzyka polskiego.
 
 
-%package Portugnese
-Summary:	K Desktop Environment - Portugnese language support
+%package Portuguese
+Summary:	K Desktop Environment - Portuguese language support
 Summary(pl):	KDE - wsparcie dla jêzyka portugalskiego
 Group:		X11/Applications
+Obsoletes:	%{name}-Portugnese
 
-%description Portugnese
-K Desktop Environment - Portugnese language support.
+%description Portuguese
+K Desktop Environment - Portuguese language support.
 
-%description Portugnese -l pl
+%description Portuguese -l pl
 KDE - wsparcie dla jêzyka portugalskiego.
 
 
-%package Brazil_Portugnese
-Summary:	K Desktop Environment - Portugnese (Brazil) language support
+%package Brazil_Portuguese
+Summary:	K Desktop Environment - Portuguese (Brazil) language support
 Summary(pl):	KDE - wsparcie dla jêzyka portugalskiego (odmiany brazylijskiej)
 Group:		X11/Applications
+Obsoletes:	%{name}-Brazil_Protugnese
 
-%description Brazil_Portugnese
-K Desktop Environment - Portugnese (Brazil) language support.
+%description Brazil_Portuguese
+K Desktop Environment - Portuguese (Brazil) language support.
 
-%description Brazil_Portugnese -l pl
+%description Brazil_Portuguese -l pl
 KDE - wsparcie dla jêzyka portugalskiego (odmiany brazylijskiej).
 
 
@@ -677,7 +679,7 @@ rm -rf $RPM_BUILD_ROOT
 %{__make} DESTDIR=$RPM_BUILD_ROOT install
 
 # These are included in ktouch
-rm -f $RPM_BUILD_ROOT%{_datadir}/locale/{de,fr,no}/LC_MESSAGES/ktouch.po
+rm -f $RPM_BUILD_ROOT%{_datadir}/locale/{de,fr,no}/LC_MESSAGES/ktouch.mo
 
 FindLang af Affrikaans
 FindLang az Azerbaijani
@@ -716,8 +718,8 @@ FindLang no Norwegian_Bokmaal
 FindLang nn Norwegian_Nynorsk
 # FindLang oc Gascon_occitan
 FindLang pl Polish
-FindLang pt Portugnese
-FindLang pt_BR Brazil_Portugnese
+FindLang pt Portuguese
+FindLang pt_BR Brazil_Portuguese
 FindLang ro Romanian
 FindLang ru Russian
 FindLang sk Slovak
@@ -773,8 +775,8 @@ rm -rf $RPM_BUILD_ROOT
 %files -f Norwegian_Nynorsk.lang Norwegian_Nynorsk
 # %files -f Gascon_occitan.lang Gascon_occitan
 %files -f Polish.lang Polish
-%files -f Portugnese.lang Portugnese
-%files -f Brazil_Portugnese.lang Brazil_Portugnese
+%files -f Portuguese.lang Portuguese
+%files -f Brazil_Portuguese.lang Brazil_Portuguese
 %files -f Romanian.lang Romanian
 %files -f Russian.lang Russian
 %files -f Slovak.lang Slovak
