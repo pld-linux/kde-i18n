@@ -12,7 +12,6 @@ Group:		X11/Applications
 Source0:	ftp://ftp.kde.org/pub/kde/stable/3.3/src/%{name}-%{version}.tar.bz2
 # Source0-md5:	f1927048807146969f6497b5d789fb5d
 #Source0:	http://ep09.pld-linux.org/~djurban/kde/%{name}-%{version}.tar.bz2
-Patch0:		%{name}-fixes.patch
 %if %{with alltogether}
 # NOTE: "Affrikaans", "Norwegian_Bookmal" and "Portugnese" are here
 # intentionally, to allow upgrade from packages with misspelled names
@@ -916,6 +915,18 @@ K Desktop Environment - Occitan (Gascon) language support.
 %description Gascon_occitan -l pl
 KDE - wsparcie dla jêzyka oksytañskiego (dialektu gaskoñskiego).
 
+%package Punjabi
+Summary:	K Desktop Environment - Punjabi language support
+Summary(pl):	KDE - wsparcie dla jêzyka punjabi
+Group:		X11/Applications
+Requires:	%{name}-base = %{version}-%{release}
+
+%description Punjabi
+K Desktop Environment - Punjabi language support.
+
+%description Punjabi -l pl
+KDE - wsparcie dla jêzyka punjabi.
+
 %package Polish
 Summary:	K Desktop Environment - Polish language support
 Summary(pl):	KDE - wsparcie dla jêzyka polskiego
@@ -1210,7 +1221,7 @@ KDE - wsparcie dla jêzyka zuluskiego.
 
 %prep
 %setup -q
-%patch0 -p1
+
 %build
 kde_htmldir="%{_kdedocdir}"; export kde_htmldir
 kde_libs_htmldir="%{_kdedocdir}"; export kde_libs_htmldir
@@ -1218,6 +1229,7 @@ kde_libs_htmldir="%{_kdedocdir}"; export kde_libs_htmldir
 LDFLAGS="%{rpmldflags}"
 #export UNSERMAKE=%{_datadir}/unsermake/unsermake
 
+%if %{nil}
 for i in `find ./ro/docs/ -name Makefile.am`;
 do
 	echo -e 'KDE_LANG = ro\nSUBDIRS = $(AUTODIRS)\nKDE_DOCS = AUTO' > $i
@@ -1248,6 +1260,7 @@ fi
 done
 
 fi
+%endif
 
 %{__make} -f admin/Makefile.common cvs
 
@@ -1297,7 +1310,7 @@ FindLang() {
 
 ##FindLang af Afrikaans
 FindLang ar Arabic
-FindLang az Azerbaijani
+#FindLang az Azerbaijani
 FindLang bg Bulgarian
 FindLang bn Bengali
 # FindLang br Breton
@@ -1310,7 +1323,7 @@ FindLang de German
 FindLang el Greek
 # FindLang en English
 FindLang en_GB English_UK
-##FindLang eo Esperanto
+FindLang eo Esperanto
 FindLang es Spanish
 FindLang et Estonian
 FindLang eu Basque
@@ -1318,7 +1331,7 @@ FindLang fa Farsi
 FindLang fi Finnish
 FindLang fr French
 # FindLang ga Irish
-FindLang gl Galician
+#FindLang gl Galician
 FindLang he Hebrew
 FindLang hi Hindi
 FindLang hr Croatian
@@ -1329,7 +1342,7 @@ FindLang is Icelandic
 FindLang it Italian
 FindLang ja Japanese
 ## FindLang ko Korean
-FindLang lt Lithuanian
+#FindLang lt Lithuanian
 ## FindLang lv Latvian
 # FindLang mi Maori
 ##FindLang mk Macedonian
@@ -1340,6 +1353,7 @@ FindLang nb Norwegian_Bokmaal
 FindLang nds Low_Saxon
 FindLang nl Dutch
 FindLang nn Norwegian_Nynorsk
+FindLang pa Punjabi
 #indLang nso Northern_Sotho
 # FindLang oc Gascon_occitan
 FindLang pl Polish
@@ -1497,6 +1511,11 @@ rm -rf $RPM_BUILD_ROOT
 
 #%%files -f Northern_Sotho.lang Northern_Sotho
 # %files -f Gascon_occitan.lang Gascon_occitan
+
+%files -f Punjabi.lang Punjabi
+%defattr(644,root,root,755)
+
+
 %files -f Polish.lang Polish
 %defattr(644,root,root,755)
 
