@@ -785,7 +785,6 @@ LDFLAGS="%{rpmldflags}"
 #	sed -ie "s/nb/no/g" $plik
 #	fi
 # done
-perl -pi -e
 
 for plik in `find ./ -name \*.desktop` ; do
         echo $plik
