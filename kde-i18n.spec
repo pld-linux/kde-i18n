@@ -917,7 +917,7 @@ cat tmp.allname.lang |grep zh_TW |sed 's/(zh)/(zh_TW)/' >> allname.lang
 cat tmp.allname.lang |grep -vE en_GB\|pt_BR\|zh_CN\|zh_TW >> allname.lang
 %endif
 
-%if %{?_with_tarball_creation:0}%{!?_with_tarball_creation:1}
+%if %{!?_with_tarball_creation:1}0
 FindLang af Affrikaans
 FindLang ar Arabic
 #FindLang az Azerbaijani
