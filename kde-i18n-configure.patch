@@ -15,3 +15,14 @@
  	echo "  AC_CONFIG_SUBDIRS($dir)" >> configure.in.new
  	echo "fi" >> configure.in.new
      fi
+--- kde-i18n.orig/admin/acinclude.m4.in~	2004-03-14 23:58:30.000000000 +0000
++++ kde-i18n/admin/acinclude.m4.in	2004-03-15 01:54:06.000000000 +0000
+@@ -4354,7 +4354,7 @@
+     install_it="no"
+   fi
+   AC_MSG_RESULT($install_it)
+-  vari=`echo $i | sed -e 's,[[-+.]],_,g'`
++  vari=`echo $i | sed -e 's,[[@-+.]],_,g'`
+   if test $install_it = "yes"; then
+     TOPSUBDIRS="$TOPSUBDIRS $i"
+     eval "$vari""_SUBDIR_included=yes"
