@@ -18,3 +18,14 @@
  
  <appendix id="installation">
  <title
+--- kde-i18n-3.2.2/nl/docs/kdepim/karm/index.docbook.org	2004-04-20 13:34:52.000000000 +0000
++++ kde-i18n-3.2.2/nl/docs/kdepim/karm/index.docbook	2004-04-20 13:35:15.000000000 +0000
+@@ -339,7 +339,7 @@
+ <menuchoice
+ ><shortcut
+ ><keycap
+->&Esc;</keycap
++></keycap
+ ></shortcut
+ > <guimenu
+ >Clock</guimenu
