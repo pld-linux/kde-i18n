@@ -2,19 +2,22 @@ Summary:	K Desktop Environment - International Support
 Summary(pl):	KDE - Wsparcie dla t³umaczeñ miêdzynarodowych
 Name:		kde-i18n
 Version:	2.2.2
-Release:	4
+Release:	5
 License:	GPL/LGPL
 Group:		X11/Applications
 Source0:	ftp://ftp.kde.org/pub/kde/stable/%{version}/src/%{name}-%{version}.tar.bz2
 # this is workaround - I don't know Chinese :)
 Source1:	ppdtranslations.gmo
 Patch0:		%{name}-ugly.patch
+Patch1:		%{name}-nodoc.patch
+Patch2:		%{name}-pl_lang_names.patch
 BuildRequires:	libxml2 >= 2.4.2
 # It creates symlinks to some not-translated files.
 BuildRequires:	kdelibs = %{version}
 BuildRequires:	kdelibs-devel
 BuildRequires:	libxml2-progs
 BuildRequires:	gettext-devel
+BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %define		_prefix		/usr/X11R6
@@ -399,6 +402,8 @@ K Desktop Environment - International Support.
 %prep
 %setup -q
 #%patch0 -p1
+%patch1 -p1
+%patch2 -p1
 
 %build
 %define         _sharedir       %{_datadir}
