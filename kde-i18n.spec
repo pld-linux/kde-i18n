@@ -307,7 +307,7 @@ Obsoletes:	kdesdk-kfilereplace-i18n
 Obsoletes:	kdesdk-kstartperf-i18n
 Obsoletes:	kdesdk-kuiviewer-i18n
 Obsoletes:	kdesdk-spy-i18n
-Obsoletes:      kdesdk-kspy-i18n
+Obsoletes:	kdesdk-kspy-i18n
 Obsoletes:	kdesdk-umbrello-i18n
 Obsoletes:	kdetoys-i18n
 Obsoletes:	kdetoys-amor-i18n
