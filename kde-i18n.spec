@@ -13,7 +13,7 @@ Summary:	K Desktop Environment - international support
 Summary(pl):	KDE - wsparcie dla wielu jêzyków
 Name:		kde-i18n
 Version:	3.1.1
-Release:	0.1
+Release:	1
 License:	GPL/LGPL
 Group:		X11/Applications
 Source0:	ftp://ftp.kde.org/pub/kde/stable/%{version}/src/%{name}-%{version}.tar.bz2
@@ -30,8 +30,8 @@ Obsoletes:	kde-i18n-Hungarian kde-i18n-Indonesian kde-i18n-Icelandic
 Obsoletes:	kde-i18n-Italian kde-i18n-Japanese kde-i18n-Korean
 Obsoletes:	kde-i18n-Lithuanian kde-i18n-Latvian kde-i18n-Maltese
 Obsoletes:	kde-i18n-Dutch kde-i18n-Norwegian kde-i18n-Norwegian_Bokmaal
-Obsoletes:	kde-i18n-Norwegian_Nynorsk kde-i18n-Polish kde-i18n-Portugnese
-Obsoletes:	kde-i18n-Portuguese kde-i18n-Brazil kde-i18n-Brazil_Portugnese
+Obsoletes:	kde-i18n-Norwegian_Nynorsk kde-i18n-Polish kde-i18n-Portuguese
+Obsoletes:	kde-i18n-Portuguese kde-i18n-Brazil kde-i18n-Brazil_Portuguese
 Obsoletes:	kde-i18n-Brazil_Portuguese kde-i18n-Romanian kde-i18n-Russian
 Obsoletes:	kde-i18n-Slovak kde-i18n-Slovenian kde-i18n-Serbian
 Obsoletes:	kde-i18n-Swedish kde-i18n-Tamil kde-i18n-Thai kde-i18n-Turkish
@@ -535,7 +535,7 @@ KDE - wsparcie dla jêzyka polskiego.
 Summary:	K Desktop Environment - Portuguese language support
 Summary(pl):	KDE - wsparcie dla jêzyka portugalskiego
 Group:		X11/Applications
-Obsoletes:	%{name}-Portugnese
+Obsoletes:	%{name}-Portuguese
 
 %description Portuguese
 K Desktop Environment - Portuguese language support.
