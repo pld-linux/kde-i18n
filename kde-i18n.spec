@@ -678,7 +678,7 @@ KDE - wsparcie dla jêzyka chorwackiego.
 
 %package Upper_Sorbian
 Summary:        K Desktop Environment - Upper Sorbian language support
-Summary(pl):    KDE - wsparcie dla jêzyka górno³u¿yckiego.
+Summary(pl):    KDE - wsparcie dla jêzyka górno³u¿yckiego
 Group:          X11/Applications
 Requires:       %{name}-base = %{version}-%{release}
 
