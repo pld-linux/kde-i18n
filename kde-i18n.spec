@@ -2,16 +2,18 @@ Summary:	K Desktop Environment - International Support
 Summary(pl):	KDE - Wsparcie dla t³umaczeñ miêdzynarodowych
 Name:		kde-i18n
 Version:	3.0
-Release:	1
+Release:	2
 License:	GPL/LGPL
 Group:		X11/Applications
 Source0:	ftp://ftp.kde.org/pub/kde/stable/3.0/src/%{name}-%{version}.tar.bz2
+Patch0:		%{name}-nodoc.patch
 BuildRequires:	libxml2 >= 2.4.2
 # It creates symlinks to some not-translated files.
 BuildRequires:	kdelibs = %{version}
 BuildRequires:	kdelibs-devel
 BuildRequires:	libxml2-progs
 BuildRequires:	gettext-devel
+BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %define		_prefix		/usr/X11R6
@@ -29,12 +31,31 @@ Group:		X11/Applications
 %description Affrikaans
 K Desktop Environment - International Support.
 
+%description Affrikaans -l pl
+KDE - Wsparcie dla t³umaczeñ miêdzynarodowych.
+
+
+%package Arabic
+Summary:	K Desktop Environment - International Support
+Group:		X11/Applications
+
+%description Arabic
+K Desktop Environment - International Support.
+
+%description Arabic -l pl
+KDE - Wsparcie dla t³umaczeñ miêdzynarodowych.
+
+
 %package Azerbaijani
 Summary:	K Desktop Environment - International Support
 Group:		X11/Applications
 
 %description Azerbaijani
 K Desktop Environment - International Support.
+
+%description Azerbaijani -l pl
+KDE - Wsparcie dla t³umaczeñ miêdzynarodowych.
+
 
 %package Bulgarian
 Summary:	K Desktop Environment - International Support
@@ -43,12 +64,31 @@ Group:		X11/Applications
 %description Bulgarian
 K Desktop Environment - International Support.
 
-%package Breton
+%description Bulgarian -l pl
+KDE - Wsparcie dla t³umaczeñ miêdzynarodowych.
+
+
+#%package Breton
+#Summary:	K Desktop Environment - International Support
+#Group:		X11/Applications
+#
+#%description Breton
+#K Desktop Environment - International Support.
+#
+#%description Breton -l pl
+#KDE - Wsparcie dla t³umaczeñ miêdzynarodowych.
+
+
+%package Bosnian
 Summary:	K Desktop Environment - International Support
 Group:		X11/Applications
 
-%description Breton
+%description Bosnian
 K Desktop Environment - International Support.
+
+%description Bosnian -l pl
+KDE - Wsparcie dla t³umaczeñ miêdzynarodowych.
+
 
 %package Catalan
 Summary:	K Desktop Environment - International Support
@@ -57,6 +97,10 @@ Group:		X11/Applications
 %description Catalan
 K Desktop Environment - International Support.
 
+%description Catalan -l pl
+KDE - Wsparcie dla t³umaczeñ miêdzynarodowych.
+
+
 %package Czech
 Summary:	K Desktop Environment - International Support
 Group:		X11/Applications
@@ -64,12 +108,20 @@ Group:		X11/Applications
 %description Czech
 K Desktop Environment - International Support.
 
-%package Cymraeg
-Summary:	K Desktop Environment - International Support
-Group:		X11/Applications
+%description Czech -l pl
+KDE - Wsparcie dla t³umaczeñ miêdzynarodowych.
 
-%description Cymraeg
-K Desktop Environment - International Support.
+
+#%package Cymraeg
+#Summary:	K Desktop Environment - International Support
+#Group:		X11/Applications
+#
+#%description Cymraeg
+#K Desktop Environment - International Support.
+#
+#%description Cymraeg -l pl
+#KDE - Wsparcie dla t³umaczeñ miêdzynarodowych.
+
 
 %package Danish
 Summary:	K Desktop Environment - International Support
@@ -78,12 +130,20 @@ Group:		X11/Applications
 %description Danish
 K Desktop Environment - International Support.
 
+%description Danish -l pl
+KDE - Wsparcie dla t³umaczeñ miêdzynarodowych.
+
+
 %package German
 Summary:	K Desktop Environment - International Support
 Group:		X11/Applications
 
 %description German
 K Desktop Environment - International Support.
+
+%description German -l pl
+KDE - Wsparcie dla t³umaczeñ miêdzynarodowych.
+
 
 %package Greek
 Summary:	K Desktop Environment - International Support
@@ -92,12 +152,20 @@ Group:		X11/Applications
 %description Greek
 K Desktop Environment - International Support.
 
-%package English
-Summary:	K Desktop Environment - International Support
-Group:		X11/Applications
+%description Greek -l pl
+KDE - Wsparcie dla t³umaczeñ miêdzynarodowych.
 
-%description English
-K Desktop Environment - International Support.
+
+#%package English
+#Summary:	K Desktop Environment - International Support
+#Group:		X11/Applications
+#
+#%description English
+#K Desktop Environment - International Support.
+#
+#%description English -l pl
+#KDE - Wsparcie dla t³umaczeñ miêdzynarodowych.
+
 
 %package English_UK
 Summary:	K Desktop Environment - International Support
@@ -106,12 +174,20 @@ Group:		X11/Applications
 %description English_UK
 K Desktop Environment - International Support.
 
+%description English_UK -l pl
+KDE - Wsparcie dla t³umaczeñ miêdzynarodowych.
+
+
 %package Esperanto
 Summary:	K Desktop Environment - International Support
 Group:		X11/Applications
 
 %description Esperanto
 K Desktop Environment - International Support.
+
+%description Esperanto -l pl
+KDE - Wsparcie dla t³umaczeñ miêdzynarodowych.
+
 
 %package Spanish
 Summary:	K Desktop Environment - International Support
@@ -120,6 +196,10 @@ Group:		X11/Applications
 %description Spanish
 K Desktop Environment - International Support.
 
+%description Spanish -l pl
+KDE - Wsparcie dla t³umaczeñ miêdzynarodowych.
+
+
 %package Estonian
 Summary:	K Desktop Environment - International Support
 Group:		X11/Applications
@@ -127,12 +207,20 @@ Group:		X11/Applications
 %description Estonian
 K Desktop Environment - International Support.
 
-%package Basque
-Summary:	K Desktop Environment - International Support
-Group:		X11/Applications
+%description Estonian -l pl
+KDE - Wsparcie dla t³umaczeñ miêdzynarodowych.
 
-%description Basque
-K Desktop Environment - International Support.
+
+#%package Basque
+#Summary:	K Desktop Environment - International Support
+#Group:		X11/Applications
+#
+#%description Basque
+#K Desktop Environment - International Support.
+#
+#%description Basque -l pl
+#KDE - Wsparcie dla t³umaczeñ miêdzynarodowych.
+
 
 %package Finnish
 Summary:	K Desktop Environment - International Support
@@ -141,6 +229,10 @@ Group:		X11/Applications
 %description Finnish
 K Desktop Environment - International Support.
 
+%description Finnish -l pl
+KDE - Wsparcie dla t³umaczeñ miêdzynarodowych.
+
+
 %package French
 Summary:	K Desktop Environment - International Support
 Group:		X11/Applications
@@ -148,19 +240,31 @@ Group:		X11/Applications
 %description French
 K Desktop Environment - International Support.
 
-%package Irish
-Summary:	K Desktop Environment - International Support
-Group:		X11/Applications
+%description French -l pl
+KDE - Wsparcie dla t³umaczeñ miêdzynarodowych.
 
-%description Irish
-K Desktop Environment - International Support.
 
-%package Galician
-Summary:	K Desktop Environment - International Support
-Group:		X11/Applications
+#%package Irish
+#Summary:	K Desktop Environment - International Support
+#Group:		X11/Applications
+#
+#%description Irish
+#K Desktop Environment - International Support.
+#
+#%description Irish -l pl
+#KDE - Wsparcie dla t³umaczeñ miêdzynarodowych.
 
-%description Galician
-K Desktop Environment - International Support.
+
+#%package Galician
+#Summary:	K Desktop Environment - International Support
+#Group:		X11/Applications
+#
+#%description Galician
+#K Desktop Environment - International Support.
+#
+#%description Galician -l pl
+#KDE - Wsparcie dla t³umaczeñ miêdzynarodowych.
+
 
 %package Hebrew
 Summary:	K Desktop Environment - International Support
@@ -169,12 +273,20 @@ Group:		X11/Applications
 %description Hebrew
 K Desktop Environment - International Support.
 
+%description Hebrew -l pl
+KDE - Wsparcie dla t³umaczeñ miêdzynarodowych.
+
+
 %package Croatian
 Summary:	K Desktop Environment - International Support
 Group:		X11/Applications
 
 %description Croatian
 K Desktop Environment - International Support.
+
+%description Croatian -l pl
+KDE - Wsparcie dla t³umaczeñ miêdzynarodowych.
+
 
 %package Hungarian
 Summary:	K Desktop Environment - International Support
@@ -183,12 +295,31 @@ Group:		X11/Applications
 %description Hungarian
 K Desktop Environment - International Support.
 
+%description Hungarian -l pl
+KDE - Wsparcie dla t³umaczeñ miêdzynarodowych.
+
+
+%package Indonesian
+Summary:	K Desktop Environment - International Support
+Group:		X11/Applications
+
+%description Indonesian
+K Desktop Environment - International Support.
+
+%description Indonesian -l pl
+KDE - Wsparcie dla t³umaczeñ miêdzynarodowych.
+
+
 %package Icelandic
 Summary:	K Desktop Environment - International Support
 Group:		X11/Applications
 
 %description Icelandic
 K Desktop Environment - International Support.
+
+%description Icelandic -l pl
+KDE - Wsparcie dla t³umaczeñ miêdzynarodowych.
+
 
 %package Italian
 Summary:	K Desktop Environment - International Support
@@ -197,12 +328,20 @@ Group:		X11/Applications
 %description Italian
 K Desktop Environment - International Support.
 
+%description Italian -l pl
+KDE - Wsparcie dla t³umaczeñ miêdzynarodowych.
+
+
 %package Japanese
 Summary:	K Desktop Environment - International Support
 Group:		X11/Applications
 
 %description Japanese
 K Desktop Environment - International Support.
+
+%description Japanese -l pl
+KDE - Wsparcie dla t³umaczeñ miêdzynarodowych.
+
 
 %package Korean
 Summary:	K Desktop Environment - International Support
@@ -211,12 +350,20 @@ Group:		X11/Applications
 %description Korean
 K Desktop Environment - International Support.
 
+%description Korean -l pl
+KDE - Wsparcie dla t³umaczeñ miêdzynarodowych.
+
+
 %package Lithuanian
 Summary:	K Desktop Environment - International Support
 Group:		X11/Applications
 
 %description Lithuanian
 K Desktop Environment - International Support.
+
+%description Lithuanian -l pl
+KDE - Wsparcie dla t³umaczeñ miêdzynarodowych.
+
 
 %package Latvian
 Summary:	K Desktop Environment - International Support
@@ -225,6 +372,32 @@ Group:		X11/Applications
 %description Latvian
 K Desktop Environment - International Support.
 
+%description Latvian -l pl
+KDE - Wsparcie dla t³umaczeñ miêdzynarodowych.
+
+
+#%package Maori
+#Summary:	K Desktop Environment - International Support
+#Group:		X11/Applications
+#
+#%description Maori
+#K Desktop Environment - International Support.
+#
+#%description Maori -l pl
+#KDE - Wsparcie dla t³umaczeñ miêdzynarodowych.
+
+
+#%package Macedonian
+#Summary:	K Desktop Environment - International Support
+#Group:		X11/Applications
+#
+#%description Macedonian
+#K Desktop Environment - International Support.
+#
+#%description Macedonian -l pl
+#KDE - Wsparcie dla t³umaczeñ miêdzynarodowych.
+
+
 %package Maltese
 Summary:	K Desktop Environment - International Support
 Group:		X11/Applications
@@ -232,19 +405,9 @@ Group:		X11/Applications
 %description Maltese
 K Desktop Environment - International Support.
 
-%package Maori
-Summary:	K Desktop Environment - International Support
-Group:		X11/Applications
+%description Maltese -l pl
+KDE - Wsparcie dla t³umaczeñ miêdzynarodowych.
 
-%description Maori
-K Desktop Environment - International Support.
-
-%package Macedonian
-Summary:	K Desktop Environment - International Support
-Group:		X11/Applications
-
-%description Macedonian
-K Desktop Environment - International Support.
 
 %package Dutch
 Summary:	K Desktop Environment - International Support
@@ -253,12 +416,20 @@ Group:		X11/Applications
 %description Dutch
 K Desktop Environment - International Support.
 
+%description Dutch -l pl
+KDE - Wsparcie dla t³umaczeñ miêdzynarodowych.
+
+
 %package Norwegian_Bokmaal
 Summary:	K Desktop Environment - International Support
 Group:		X11/Applications
 
 %description Norwegian_Bokmaal
 K Desktop Environment - International Support.
+
+%description Norwegian_Bokmaal -l pl
+KDE - Wsparcie dla t³umaczeñ miêdzynarodowych.
+
 
 %package Norwegian_Nynorsk
 Summary:	K Desktop Environment - International Support
@@ -267,12 +438,20 @@ Group:		X11/Applications
 %description Norwegian_Nynorsk
 K Desktop Environment - International Support.
 
-%package Gascon_occitan
-Summary:	K Desktop Environment - International Support
-Group:		X11/Applications
+%description Norwegian_Nynorsk -l pl
+KDE - Wsparcie dla t³umaczeñ miêdzynarodowych.
 
-%description Gascon_occitan
-K Desktop Environment - International Support.
+
+#%package Gascon_occitan
+#Summary:	K Desktop Environment - International Support
+#Group:		X11/Applications
+#
+#%description Gascon_occitan
+#K Desktop Environment - International Support.
+#
+#%description Gascon_occitan -l pl
+#KDE - Wsparcie dla t³umaczeñ miêdzynarodowych.
+
 
 %package Polish
 Summary:	K Desktop Environment - International Support
@@ -281,12 +460,20 @@ Group:		X11/Applications
 %description Polish
 K Desktop Environment - International Support.
 
+%description Polish -l pl
+KDE - Wsparcie dla t³umaczeñ miêdzynarodowych.
+
+
 %package Portugnese
 Summary:	K Desktop Environment - International Support
 Group:		X11/Applications
 
 %description Portugnese
 K Desktop Environment - International Support.
+
+%description Portugnese -l pl
+KDE - Wsparcie dla t³umaczeñ miêdzynarodowych.
+
 
 %package Brazil_Portugnese
 Summary:	K Desktop Environment - International Support
@@ -295,12 +482,20 @@ Group:		X11/Applications
 %description Brazil_Portugnese
 K Desktop Environment - International Support.
 
+%description Brazil_Portugnese -l pl
+KDE - Wsparcie dla t³umaczeñ miêdzynarodowych.
+
+
 %package Romanian
 Summary:	K Desktop Environment - International Support
 Group:		X11/Applications
 
 %description Romanian
 K Desktop Environment - International Support.
+
+%description Romanian -l pl
+KDE - Wsparcie dla t³umaczeñ miêdzynarodowych.
+
 
 %package Russian
 Summary:	K Desktop Environment - International Support
@@ -309,12 +504,20 @@ Group:		X11/Applications
 %description Russian
 K Desktop Environment - International Support.
 
+%description Russian -l pl
+KDE - Wsparcie dla t³umaczeñ miêdzynarodowych.
+
+
 %package Slovak
 Summary:	K Desktop Environment - International Support
 Group:		X11/Applications
 
 %description Slovak
 K Desktop Environment - International Support.
+
+%description Slovak -l pl
+KDE - Wsparcie dla t³umaczeñ miêdzynarodowych.
+
 
 %package Slovenian
 Summary:	K Desktop Environment - International Support
@@ -323,12 +526,20 @@ Group:		X11/Applications
 %description Slovenian
 K Desktop Environment - International Support.
 
+%description Slovenian -l pl
+KDE - Wsparcie dla t³umaczeñ miêdzynarodowych.
+
+
 %package Serbian
 Summary:	K Desktop Environment - International Support
 Group:		X11/Applications
 
 %description Serbian
 K Desktop Environment - International Support.
+
+%description Serbian -l pl
+KDE - Wsparcie dla t³umaczeñ miêdzynarodowych.
+
 
 %package Swedish
 Summary:	K Desktop Environment - International Support
@@ -337,12 +548,20 @@ Group:		X11/Applications
 %description Swedish
 K Desktop Environment - International Support.
 
+%description Swedish -l pl
+KDE - Wsparcie dla t³umaczeñ miêdzynarodowych.
+
+
 %package Tamil
 Summary:	K Desktop Environment - International Support
 Group:		X11/Applications
 
 %description Tamil
 K Desktop Environment - International Support.
+
+%description Tamil -l pl
+KDE - Wsparcie dla t³umaczeñ miêdzynarodowych.
+
 
 %package Thai
 Summary:	K Desktop Environment - International Support
@@ -351,12 +570,20 @@ Group:		X11/Applications
 %description Thai
 K Desktop Environment - International Support.
 
+%description Thai -l pl
+KDE - Wsparcie dla t³umaczeñ miêdzynarodowych.
+
+
 %package Turkish
 Summary:	K Desktop Environment - International Support
 Group:		X11/Applications
 
 %description Turkish
 K Desktop Environment - International Support.
+
+%description Turkish -l pl
+KDE - Wsparcie dla t³umaczeñ miêdzynarodowych.
+
 
 %package Ukrainian
 Summary:	K Desktop Environment - International Support
@@ -365,12 +592,42 @@ Group:		X11/Applications
 %description Ukrainian
 K Desktop Environment - International Support.
 
-%package Walloon
+%description Ukrainian -l pl
+KDE - Wsparcie dla t³umaczeñ miêdzynarodowych.
+
+
+%package Venda
 Summary:	K Desktop Environment - International Support
 Group:		X11/Applications
 
-%description Walloon
+%description Venda
 K Desktop Environment - International Support.
+
+%description Venda -l pl
+KDE - Wsparcie dla t³umaczeñ miêdzynarodowych.
+
+
+%package Vietnamese
+Summary:	K Desktop Environment - International Support
+Group:		X11/Applications
+
+%description Vietnamese
+K Desktop Environment - International Support.
+
+%description Vietnamese -l pl
+KDE - Wsparcie dla t³umaczeñ miêdzynarodowych.
+
+
+#%package Walloon
+#Summary:	K Desktop Environment - International Support
+#Group:		X11/Applications
+#
+#%description Walloon
+#K Desktop Environment - International Support.
+#
+#%description Walloon -l pl
+#KDE - Wsparcie dla t³umaczeñ miêdzynarodowych.
+
 
 %package Xhosa
 Summary:	K Desktop Environment - International Support
@@ -379,12 +636,20 @@ Group:		X11/Applications
 %description Xhosa
 K Desktop Environment - International Support.
 
+%description Xhosa -l pl
+KDE - Wsparcie dla t³umaczeñ miêdzynarodowych.
+
+
 %package Simplified_Chinese
 Summary:	K Desktop Environment - International Support
 Group:		X11/Applications
 
 %description Simplified_Chinese
 K Desktop Environment - International Support.
+
+%description Simplified_Chinese -l pl
+KDE - Wsparcie dla t³umaczeñ miêdzynarodowych.
+
 
 %package Chinese
 Summary:	K Desktop Environment - International Support
@@ -393,8 +658,23 @@ Group:		X11/Applications
 %description Chinese
 K Desktop Environment - International Support.
 
+%description Chinese -l pl
+KDE - Wsparcie dla t³umaczeñ miêdzynarodowych.
+
+
+%package Zulu
+Summary:	K Desktop Environment - International Support
+Group:		X11/Applications
+
+%description Zulu
+K Desktop Environment - International Support.
+
+%description Zulu -l pl
+KDE - Wsparcie dla t³umaczeñ miêdzynarodowych.
+
 %prep
 %setup -q
+%patch -p1
 
 %build
 %define         _sharedir       %{_datadir}
@@ -442,42 +722,46 @@ rm -rf $RPM_BUILD_ROOT
 %{__make} DESTDIR=$RPM_BUILD_ROOT install
 
 FindLang af Affrikaans
+FindLang ar Arabic
 FindLang az Azerbaijani
 FindLang bg Bulgarian
-FindLang br Breton
+# FindLang br Breton
+FindLang bs Bosnian
 FindLang ca Catalan
 FindLang cs Czech
-FindLang cy Cymraeg
+# FindLang cy Cymraeg
 FindLang da Danish
 FindLang de German
 FindLang el Greek
-FindLang en English
+# FindLang en English
 FindLang en_GB English_UK
 FindLang eo Esperanto
 FindLang es Spanish
 FindLang et Estonian
-FindLang eu Basque
+# FindLang eu Basque
 FindLang fi Finnish
 FindLang fr French
-FindLang ga Irish
-FindLang gl Galician
+# FindLang ga Irish
+# FindLang gl Galician
 FindLang he Hebrew
 FindLang hr Croatian
 FindLang hu Hungarian
+FindLang id Indonesian
 FindLang is Icelandic
 FindLang it Italian
 FindLang ja Japanese
 FindLang ko Korean
 FindLang lt Lithuanian
 FindLang lv Latvian
-FindLang mi Maori
-FindLang mk Macedonian
+# FindLang mi Maori
+# FindLang mk Macedonian
 FindLang mt Maltese
+# This is bogus
+# FindLang nb Norwegian_Bokmaal
 FindLang nl Dutch
+FindLang nn Norwegian_Nynorsk
 FindLang no Norwegian_Bokmaal
-# wrong: should be "nn" or "nn_NO" - not "no_NY"
-FindLang no_NY Norwegian_Nynorsk
-FindLang oc Gascon_occitan
+# FindLang oc Gascon_occitan
 FindLang pl Polish
 FindLang pt Portugnese
 FindLang pt_BR Brazil_Portugnese
@@ -491,37 +775,43 @@ FindLang ta Tamil
 FindLang th Thai
 FindLang tr Turkish
 FindLang uk Ukrainian
+FindLang ven Venda 
+FindLang vi Vietnamese
+# FindLang wa Walloon
 FindLang xh Xhosa
-FindLang wa Walloon
-FindLang zh_CN.GB2312 Simplified_Chinese
-FindLang zh_TW.Big5 Chinese
+FindLang zh_CN Simplified_Chinese
+FindLang zh_TW Chinese
+FindLang zu Zulu
 
 %clean
 rm -rf $RPM_BUILD_ROOT
 
 %files -f Affrikaans.lang Affrikaans
+%files -f Arabic.lang Arabic
 %files -f Azerbaijani.lang Azerbaijani
 %files -f Bulgarian.lang Bulgarian
-%files -f Breton.lang Breton
+# %files -f Breton.lang Breton
+%files -f Bosnian.lang Bosnian
 %files -f Catalan.lang Catalan
 %files -f Czech.lang Czech
-%files -f Cymraeg.lang Cymraeg
+# %files -f Cymraeg.lang Cymraeg
 %files -f Danish.lang Danish
 %files -f German.lang German
 %files -f Greek.lang Greek
-%files -f English.lang English
+# %files -f English.lang English
 %files -f English_UK.lang English_UK
 %files -f Esperanto.lang Esperanto
 %files -f Spanish.lang Spanish
 %files -f Estonian.lang Estonian
-%files -f Basque.lang Basque
+# %files -f Basque.lang Basque
 %files -f Finnish.lang Finnish
 %files -f French.lang French
-%files -f Irish.lang Irish
-%files -f Galician.lang Galician
+# %files -f Irish.lang Irish
+# %files -f Galician.lang Galician
 %files -f Hebrew.lang Hebrew
 %files -f Croatian.lang Croatian
 %files -f Hungarian.lang Hungarian
+%files -f Indonesian.lang Indonesian
 %files -f Icelandic.lang Icelandic
 %files -f Italian.lang Italian
 %files -f Japanese.lang Japanese
@@ -529,12 +819,12 @@ rm -rf $RPM_BUILD_ROOT
 %files -f Lithuanian.lang Lithuanian
 %files -f Latvian.lang Latvian
 %files -f Maltese.lang Maltese
-%files -f Maori.lang Maori
-%files -f Macedonian.lang Macedonian
+# %files -f Maori.lang Maori
+# %files -f Macedonian.lang Macedonian
 %files -f Dutch.lang Dutch
 %files -f Norwegian_Bokmaal.lang Norwegian_Bokmaal
 %files -f Norwegian_Nynorsk.lang Norwegian_Nynorsk
-%files -f Gascon_occitan.lang Gascon_occitan
+# %files -f Gascon_occitan.lang Gascon_occitan
 %files -f Polish.lang Polish
 %files -f Portugnese.lang Portugnese
 %files -f Brazil_Portugnese.lang Brazil_Portugnese
@@ -548,7 +838,10 @@ rm -rf $RPM_BUILD_ROOT
 %files -f Thai.lang Thai
 %files -f Turkish.lang Turkish
 %files -f Ukrainian.lang Ukrainian
-%files -f Walloon.lang Walloon
+%files -f Venda.lang Venda
+%files -f Vietnamese.lang Vietnamese
+# %files -f Walloon.lang Walloon
 %files -f Xhosa.lang Xhosa
 %files -f Simplified_Chinese.lang Simplified_Chinese
 %files -f Chinese.lang Chinese
+%files -f Zulu.lang Zulu
