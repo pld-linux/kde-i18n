@@ -676,8 +676,9 @@ FindLang() {
 rm -rf $RPM_BUILD_ROOT
 %{__make} DESTDIR=$RPM_BUILD_ROOT install
 
-# These are included in ktouch
+# These are included in ktouch and kbabel
 rm -f {de,fr,no}/messages/kdenonbeta/ktouch.po
+rm -f {da,de,es,hu,sk,sl}/messages/kdesdk/kbabel.po
 
 FindLang af Affrikaans
 FindLang az Azerbaijani
