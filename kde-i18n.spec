@@ -13,7 +13,7 @@ Summary:	K Desktop Environment - international support
 Summary(pl):	KDE - wsparcie dla wielu jêzyków
 Name:		kde-i18n
 Version:	3.1.1
-Release:	1
+Release:	2
 License:	GPL/LGPL
 Group:		X11/Applications
 Source0:	ftp://ftp.kde.org/pub/kde/stable/%{version}/src/%{name}-%{version}.tar.bz2
@@ -800,8 +800,8 @@ for plik in `find ./nb -name configure.in.in` ; do
 	sed -i -e "s/nb/no/g" $plik
 done
 
-sed -i e "s/nb/no/g" ./subdirs
-sed -i e "s/nb/no/g" ./teamnames
+sed -i -e "s/nb/no/g" ./subdirs
+sed -i -e "s/nb/no/g" ./teamnames
 mv -f nb no
 %{__make} -f admin/Makefile.common cvs
 
