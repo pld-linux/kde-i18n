@@ -765,7 +765,7 @@ done
 
 grep -v '^#' < %{SOURCE1} | \
 while read package file ; do
-if [ "$package" != "" -a "$directory" != "" ] ; then
+if [ "$package" != "" -a "$file" != "" ] ; then
     if [ -d $RPM_BUILD_ROOT/tmp/$package ] ; then 
 	for f in $RPM_BUILD_ROOT%{_datadir}/locale/*/LC_MESSAGES/$file ; do
 	    DIR=`echo $f | sed -e s,%{_datadir}/locale/,/tmp/$package%{_datadir}/locale/, -e s,/$file'$',,`
@@ -866,7 +866,7 @@ cat [A-Z]*.lang >all.lang
 %endif
 
 %clean
-#rm -rf $RPM_BUILD_ROOT
+rm -rf $RPM_BUILD_ROOT
 
 %if %{?_with_alltogether:0}%{!?_with_alltogether:1}
 %files -f Affrikaans.lang Affrikaans
