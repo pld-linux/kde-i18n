@@ -12,7 +12,7 @@ Summary:	K Desktop Environment - International Support
 Summary(pl):	KDE - Wsparcie dla t³umaczeñ miêdzynarodowych
 Name:		kde-i18n
 Version:	3.0.1
-Release:	1.2
+Release:	1.3
 License:	GPL/LGPL
 Group:		X11/Applications
 Source0:	ftp://ftp.kde.org/pub/kde/stable/3.0/src/%{name}-%{version}.tar.bz2
@@ -58,28 +58,12 @@ K Desktop Environment - International Support.
 %description -l pl
 KDE - Wsparcie dla t³umaczeñ miêdzynarodowych.
 
+
 %if %{?_with_kdelibs:1}%{!?_with_kdelibs:0}
 %package kdelibs
 Summary:	K Desktop Environment - International Support
 Summary(pl):	KDE - Wsparcie dla t³umaczeñ miêdzynarodowych
 Group:		X11/Applications
-Conflicts:	kde-i18n-Affrikaans kde-i18n-Arabic kde-i18n-Azerbaijani
-Conflicts:	kde-i18n-Bulgarian kde-i18n-Bosnian kde-i18n-Catalan
-Conflicts:	kde-i18n-Czech kde-i18n-Danish kde-i18n-German kde-i18n-Greek
-Conflicts:	kde-i18n-English_UK kde-i18n-Esperanto kde-i18n-Spanish
-Conflicts:	kde-i18n-Estonian kde-i18n-Finnish kde-i18n-French
-Conflicts:	kde-i18n-Hebrew kde-i18n-Croatian kde-i18n-Hungarian
-Conflicts:	kde-i18n-Indonesian kde-i18n-Icelandic kde-i18n-Italian
-Conflicts:	kde-i18n-Japanese kde-i18n-Korean kde-i18n-Lithuanian
-Conflicts:	kde-i18n-Latvian kde-i18n-Maltese kde-i18n-Dutch
-Conflicts:	kde-i18n-Norwegian kde-i18n-Norwegian_Bokmaal
-Conflicts:	kde-i18n-Norwegian_Nynorsk kde-i18n-Polish kde-i18n-Portugnese
-Conflicts:	kde-i18n-Brazil_Portugnese kde-i18n-Romanian kde-i18n-Russian
-Conflicts:	kde-i18n-Slovak kde-i18n-Slovenian kde-i18n-Serbian
-Conflicts:	kde-i18n-Swedish kde-i18n-Tamil kde-i18n-Thai kde-i18n-Turkish
-Conflicts:	kde-i18n-Ukrainian kde-i18n-Venda kde-i18n-Vietnamese
-Conflicts:	kde-i18n-Xhosa kde-i18n-Simplified_Chinese kde-i18n-Chinese
-Conflicts:	kde-i18n-Zulu kde-i18n
 
 %description kdelibs
 K Desktop Environment - International Support. Package
@@ -89,6 +73,7 @@ contains essential files only
 KDE - Wsparcie dla t³umaczeñ miêdzynarodowych. Pakiet
 zawiera tylko pliki podstawowe.
 %endif
+
 
 %if %{?_with_alltogether:0}%{!?_with_alltogether:1}
 %package Affrikaans
@@ -762,6 +747,15 @@ LDFLAGS="%{rpmldflags}"
 
 %install
 rm -rf $RPM_BUILD_ROOT
+
+%if %{?_with_kdelibs:1}%{!?_with_kdelibs:0}
+FindLang() {
+	echo "%defattr(644,root,root,755)" > "$2.lang"
+	cat allname.lang |grep -vE tmp\|kdelibs.mo\|katepart.mo |grep "%lang($1)" >> "$2.lang"
+}
+%endif
+
+%if %{?_with_kdelibs:0}%{!?_with_kdelibs:1}
 FindLang() {
 #    $1 - short language name
 #    $2 - long language name
@@ -790,6 +784,7 @@ FindLang() {
 	echo "%lang($1) %{_datadir}/apps/ktuberling/sounds/$1" >> "$2.lang"
     fi
 }
+%endif
 
 %{__make} DESTDIR=$RPM_BUILD_ROOT install
 
@@ -838,12 +833,20 @@ done
 cd -
 
 %if %{?_with_tarball_creation:1}%{!?_tarball_creation:0}
-
 ISDIR="`pwd`"
 for i in $package_list ; do
 	( cd $RPM_BUILD_ROOT/tmp/$i ; tar cjf %{_sourcedir}/%{name}-$i-%{version}.tar.bz2 . )
 done
 cd "$ISDIR"
+%endif
+
+%if %{?_with_kdelibs:1}%{!?_with_kdelibs:0}
+%find_lang tmp.allname --with-kde --all-name
+cat tmp.allname.lang |grep en_GB |sed 's/(en)/(en_GB)/' > allname.lang
+cat tmp.allname.lang |grep pt_BR |sed 's/(pt)/(pt_BR)/' >> allname.lang
+cat tmp.allname.lang |grep zh_CN |sed 's/(zh)/(zh_CN)/' >> allname.lang
+cat tmp.allname.lang |grep zh_TW |sed 's/(zh)/(zh_TW)/' >> allname.lang
+cat tmp.allname.lang |grep -vE en_GB\|pt_BR\|zh_CN\|zh_TW >> allname.lang
 %endif
 
 FindLang af Affrikaans
