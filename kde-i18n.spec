@@ -631,6 +631,18 @@ K Desktop Environment - French language support.
 %description French -l pl
 KDE - wsparcie dla jêzyka francuskiego.
 
+%package Frisian
+Summary:	K Desktop Environment - Frisian language support
+Summary(pl):	KDE - wsparcie dla jêzyka Frisian
+Group:		X11/Applications
+Requires:	%{name}-base = %{version}-%{release}
+
+%description Frisian
+K Desktop Environment - Frisian language support.
+
+%description Frisian -l pl
+KDE - wsparcie dla jêzyka Frisian.
+
 %package Irish
 Summary:	K Desktop Environment - Irish language support
 Summary(pl):	KDE - wsparcie dla jêzyka irlandzkiego
@@ -1294,9 +1306,19 @@ FindLang() {
 	echo "%lang($1) %{_datadir}/apps/amor/tips-$1" >> "$2.lang"
     fi
 
+# share/apps/katepart/syntax/logohighlightstyle.(%%lang).xml
+    if [ -f "$RPM_BUILD_ROOT%{_datadir}/apps/katepart/syntax/logohighlightstyle.$1.xml" ]; then
+        echo "%lang($1) %{_datadir}/apps/katepart/syntax/logohighlightstyle.$1.xml" >> "$2.lang"
+    fi
+
 # share/apps/ktuberling/sounds/(%%lang)
     if [ -d "$RPM_BUILD_ROOT%{_datadir}/apps/ktuberling/sounds/$1" ]; then
         echo "%lang($1) %{_datadir}/apps/ktuberling/sounds/$1" >> "$2.lang"
+    fi
+
+# share/apps/khangman/(%lang).txt
+    if [ -f "$RPM_BUILD_ROOT%{_datadir}/apps/khangman/$1.txt" ]; then
+        echo "%lang($1) %{_datadir}/apps/khangman/$1.txt" >> "$2.lang"
     fi
 
 # share/apps/khangman/data/(%lang)
@@ -1304,11 +1326,25 @@ FindLang() {
 	echo "%lang($1) %{_datadir}/apps/khangman/data/$1" >> "$2.lang"
     fi
 
+# share/apps/klatin/data/vocabs/(%lang)
+    if [ -d "$RPM_BUILD_ROOT%{_datadir}/apps/klatin/data/vocabs/$1" ]; then
+        echo "%lang($1) %{_datadir}/apps/klatin/data/vocabs/$1" >> "$2.lang"
+    fi
+
 # share/apps/klettres/(%lang)
     if [ -d "$RPM_BUILD_ROOT%{_datadir}/apps/klettres/$1" ]; then
 	echo "%lang($1) %{_datadir}/apps/klettres/$1" >> "$2.lang"
     fi
 
+# share/apps/kturtle/data/logokeywords.(%lang).xml
+    if [ -f "$RPM_BUILD_ROOT%{_datadir}/apps/kturtle/data/logokeywords.$1.xml" ]; then
+        echo "%lang($1) %{_datadir}/apps/kturtle/data/logokeywords.$1.xml" >> "$2.lang"
+    fi
+
+# share/apps/kturtle/examples/(%lang)
+    if [ -d "$RPM_BUILD_ROOT%{_datadir}/apps/kturtle/examples/$1" ]; then
+        echo "%lang($1) %{_datadir}/apps/kturtle/examples/$1" >> "$2.lang"
+    fi
 }
 
 %{__make} install \
@@ -1321,7 +1357,7 @@ FindLang ar Arabic
 #FindLang az Azerbaijani
 FindLang bg Bulgarian
 FindLang bn Bengali
-# FindLang br Breton
+FindLang br Breton
 FindLang bs Bosnian
 FindLang ca Catalan
 FindLang cs Czech
@@ -1338,7 +1374,8 @@ FindLang eu Basque
 FindLang fa Farsi
 FindLang fi Finnish
 FindLang fr French
-# FindLang ga Irish
+FindLang fy Frisian
+FindLang ga Irish
 #FindLang gl Galician
 FindLang he Hebrew
 FindLang hi Hindi
@@ -1350,10 +1387,10 @@ FindLang is Icelandic
 FindLang it Italian
 FindLang ja Japanese
 ## FindLang ko Korean
-#FindLang lt Lithuanian
+FindLang lt Lithuanian
 ## FindLang lv Latvian
 # FindLang mi Maori
-##FindLang mk Macedonian
+FindLang mk Macedonian
 FindLang mn Mongolian
 FindLang ms Malay
 ##FindLang mt Maltese
@@ -1370,7 +1407,7 @@ FindLang pt_BR Brazil_Portuguese
 FindLang ro Romanian
 FindLang ru Russian
 ##FindLang ss Swati
-##FindLang se Northern_Sami
+FindLang se Northern_Sami
 FindLang sk Slovak
 FindLang sl Slovenian
 FindLang sr Serbian
@@ -1416,7 +1453,9 @@ rm -rf $RPM_BUILD_ROOT
 %files -f Bengali.lang Bengali
 %defattr(644,root,root,755)
 
-# %files -f Breton.lang Breton
+%files -f Breton.lang Breton
+%defattr(644,root,root,755)
+
 %files -f Bosnian.lang Bosnian
 %defattr(644,root,root,755)
 
@@ -1463,7 +1502,12 @@ rm -rf $RPM_BUILD_ROOT
 %files -f French.lang French
 %defattr(644,root,root,755)
 
-# %files -f Irish.lang Irish
+%files -f Frisian.lang Frisian
+%defattr(644,root,root,755)
+
+%files -f Irish.lang Irish
+%defattr(644,root,root,755)
+
 #%files -f Galician.lang Galician
 #%defattr(644,root,root,755)
 
@@ -1493,8 +1537,8 @@ rm -rf $RPM_BUILD_ROOT
 %defattr(644,root,root,755)
 
 ##%files -f Korean.lang Korean
-#%files -f Lithuanian.lang Lithuanian
-#%defattr(644,root,root,755)
+%files -f Lithuanian.lang Lithuanian
+%defattr(644,root,root,755)
 
 ##%files -f Latvian.lang Latvian
 #%%files -f Maltese.lang Maltese
@@ -1506,7 +1550,9 @@ rm -rf $RPM_BUILD_ROOT
 #{_datadir}/locale/mn/*.png
 
 # %files -f Maori.lang Maori
-#%%files -f Macedonian.lang Macedonian
+%files -f Macedonian.lang Macedonian
+%defattr(644,root,root,755)
+
 %files -f Low_Saxon.lang Low_Saxon
 %defattr(644,root,root,755)
 
@@ -1542,8 +1588,8 @@ rm -rf $RPM_BUILD_ROOT
 %files -f Russian.lang Russian
 %defattr(644,root,root,755)
 
-#%%files -f Northern_Sami.lang Northern_Sami
-#%%defattr(644,root,root,755)
+%files -f Northern_Sami.lang Northern_Sami
+%defattr(644,root,root,755)
 
 #%%files -f Swati.lang Swati
 %files -f Slovak.lang Slovak
