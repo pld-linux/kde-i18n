@@ -909,7 +909,7 @@ done
 cd "$ISDIR"
 %endif
 
-%if %{?_with_kdelibs:1}%{!?_with_kdelibs:0}
+%if %{!?_with_tarball_creation:%{?_with_kdelibs:1}}0
 %find_lang tmp.allname --with-kde --all-name
 cat tmp.allname.lang |grep en_GB |sed 's/(en)/(en_GB)/' > allname.lang
 cat tmp.allname.lang |grep pt_BR |sed 's/(pt)/(pt_BR)/' >> allname.lang
