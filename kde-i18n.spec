@@ -812,6 +812,7 @@ KDE - wsparcie dla jêzyka zuluskiego.
 #%patch0 -p1
 
 %build
+%define		_prefix		/usr/X11R6
 %define         _sharedir       %{_datadir}
 %define         _htmldir        /usr/share/doc/kde/HTML
 
