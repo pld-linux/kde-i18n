@@ -20,8 +20,7 @@ Source0:	ftp://ftp.kde.org/pub/kde/stable/%{version}/src/%{name}-%{version}.tar.
 Source1:	%{name}-splitmo
 Source2:	%{name}-splitdoc
 Source3:	%{name}-splitdoc-shared
-Patch0:		%{name}-es.patch
-Patch1:		%{name}-pl.patch
+Patch0:		%{name}-pl.patch
 %if %{with alltogether}
 # NOTE: "Affrikaans", "Norwegian_Bookmal" and "Portugnese" are here
 # intentionally, to allow upgrade from packages with misspelled names
