@@ -2,7 +2,7 @@ Summary:	K Desktop Environment - International Support
 Summary(pl):	KDE - Wsparcie dla t³umaczeñ miêdzynarodowych
 Name:		kde-i18n
 Version:	2.2.2
-Release:	1
+Release:	2
 License:	GPL/LGPL
 Group:		X11/Applications
 Group(de):	X11/Applikationen
@@ -665,7 +665,7 @@ K Desktop Environment - International Support.
 
 %prep
 %setup -q
-%patch0 -p1
+#%patch0 -p1
 
 %build
 %define         _sharedir       %{_datadir}
