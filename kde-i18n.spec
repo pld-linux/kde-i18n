@@ -2,7 +2,7 @@ Summary:	K Desktop Environment - international support
 Summary(pl):	KDE - wsparcie dla t³umaczeñ miêdzynarodowych
 Name:		kde-i18n
 Version:	2.2.2
-Release:	8
+Release:	9
 License:	GPL/LGPL
 Group:		X11/Applications
 Source0:	ftp://ftp.kde.org/pub/kde/stable/%{version}/src/%{name}-%{version}.tar.bz2
@@ -676,9 +676,8 @@ FindLang() {
 rm -rf $RPM_BUILD_ROOT
 %{__make} DESTDIR=$RPM_BUILD_ROOT install
 
-# These are included in ktouch and kbabel
-rm -f {de,fr,no}/messages/kdenonbeta/ktouch.po
-rm -f {da,de,es,hu,sk,sl}/messages/kdesdk/kbabel.po
+# These are included in ktouch
+rm -f $RPM_BUILD_ROOT%{_datadir}/locale/{de,fr,no}/LC_MESSAGES/ktouch.po
 
 FindLang af Affrikaans
 FindLang az Azerbaijani
