@@ -9,7 +9,7 @@
  "żąda od programu pocztowego odbiorcy powiadomienia, z którego autor może "
  "dowiedzieć się, co stało się z jego wiadomością. Typowe losy "
 -"wiadomości to \"przeczytana\", \"usunięta\", \"przesłana\" (np. "
-+"wiadomości to &quot;przeczytana&quot;, &quot;usunięta&quot;, &quotprzesłana&quot; (np. "
++"wiadomości to &quot;przeczytana&quot;, &quot;usunięta&quot;, &quot;przesłana&quot; (np. "
  "przekazana dalej)</p> "
  "<p>KMail oferuje następujące tryby obsługi MDN: "
  "<ul>"
