@@ -16,8 +16,8 @@ Group(it):	X11/Applicazioni
 Group(ja):	X11/¥¢¥×¥ê¥±¡¼¥·¥ç¥ó
 Group(no):	X11/Applikasjoner
 Group(pl):	X11/Aplikacje
-Group(pt):	X11/Aplicações
 Group(pt_BR):	X11/Aplicações
+Group(pt):	X11/Aplicações
 Group(ru):	X11/ğÒÉÌÏÖÅÎÉÑ
 Group(sl):	X11/Programi
 Group(sv):	X11/Tillämpningar
@@ -56,8 +56,8 @@ Group(it):	X11/Applicazioni
 Group(ja):	X11/¥¢¥×¥ê¥±¡¼¥·¥ç¥ó
 Group(no):	X11/Applikasjoner
 Group(pl):	X11/Aplikacje
-Group(pt):	X11/Aplicações
 Group(pt_BR):	X11/Aplicações
+Group(pt):	X11/Aplicações
 Group(ru):	X11/ğÒÉÌÏÖÅÎÉÑ
 Group(sl):	X11/Programi
 Group(sv):	X11/Tillämpningar
@@ -80,8 +80,8 @@ Group(it):	X11/Applicazioni
 Group(ja):	X11/¥¢¥×¥ê¥±¡¼¥·¥ç¥ó
 Group(no):	X11/Applikasjoner
 Group(pl):	X11/Aplikacje
-Group(pt):	X11/Aplicações
 Group(pt_BR):	X11/Aplicações
+Group(pt):	X11/Aplicações
 Group(ru):	X11/ğÒÉÌÏÖÅÎÉÑ
 Group(sl):	X11/Programi
 Group(sv):	X11/Tillämpningar
@@ -104,8 +104,8 @@ Group(it):	X11/Applicazioni
 Group(ja):	X11/¥¢¥×¥ê¥±¡¼¥·¥ç¥ó
 Group(no):	X11/Applikasjoner
 Group(pl):	X11/Aplikacje
-Group(pt):	X11/Aplicações
 Group(pt_BR):	X11/Aplicações
+Group(pt):	X11/Aplicações
 Group(ru):	X11/ğÒÉÌÏÖÅÎÉÑ
 Group(sl):	X11/Programi
 Group(sv):	X11/Tillämpningar
@@ -128,8 +128,8 @@ Group(it):	X11/Applicazioni
 Group(ja):	X11/¥¢¥×¥ê¥±¡¼¥·¥ç¥ó
 Group(no):	X11/Applikasjoner
 Group(pl):	X11/Aplikacje
-Group(pt):	X11/Aplicações
 Group(pt_BR):	X11/Aplicações
+Group(pt):	X11/Aplicações
 Group(ru):	X11/ğÒÉÌÏÖÅÎÉÑ
 Group(sl):	X11/Programi
 Group(sv):	X11/Tillämpningar
@@ -152,8 +152,8 @@ Group(it):	X11/Applicazioni
 Group(ja):	X11/¥¢¥×¥ê¥±¡¼¥·¥ç¥ó
 Group(no):	X11/Applikasjoner
 Group(pl):	X11/Aplikacje
-Group(pt):	X11/Aplicações
 Group(pt_BR):	X11/Aplicações
+Group(pt):	X11/Aplicações
 Group(ru):	X11/ğÒÉÌÏÖÅÎÉÑ
 Group(sl):	X11/Programi
 Group(sv):	X11/Tillämpningar
@@ -176,8 +176,8 @@ Group(it):	X11/Applicazioni
 Group(ja):	X11/¥¢¥×¥ê¥±¡¼¥·¥ç¥ó
 Group(no):	X11/Applikasjoner
 Group(pl):	X11/Aplikacje
-Group(pt):	X11/Aplicações
 Group(pt_BR):	X11/Aplicações
+Group(pt):	X11/Aplicações
 Group(ru):	X11/ğÒÉÌÏÖÅÎÉÑ
 Group(sl):	X11/Programi
 Group(sv):	X11/Tillämpningar
@@ -200,8 +200,8 @@ Group(it):	X11/Applicazioni
 Group(ja):	X11/¥¢¥×¥ê¥±¡¼¥·¥ç¥ó
 Group(no):	X11/Applikasjoner
 Group(pl):	X11/Aplikacje
-Group(pt):	X11/Aplicações
 Group(pt_BR):	X11/Aplicações
+Group(pt):	X11/Aplicações
 Group(ru):	X11/ğÒÉÌÏÖÅÎÉÑ
 Group(sl):	X11/Programi
 Group(sv):	X11/Tillämpningar
@@ -224,8 +224,8 @@ Group(it):	X11/Applicazioni
 Group(ja):	X11/¥¢¥×¥ê¥±¡¼¥·¥ç¥ó
 Group(no):	X11/Applikasjoner
 Group(pl):	X11/Aplikacje
-Group(pt):	X11/Aplicações
 Group(pt_BR):	X11/Aplicações
+Group(pt):	X11/Aplicações
 Group(ru):	X11/ğÒÉÌÏÖÅÎÉÑ
 Group(sl):	X11/Programi
 Group(sv):	X11/Tillämpningar
@@ -248,8 +248,8 @@ Group(it):	X11/Applicazioni
 Group(ja):	X11/¥¢¥×¥ê¥±¡¼¥·¥ç¥ó
 Group(no):	X11/Applikasjoner
 Group(pl):	X11/Aplikacje
-Group(pt):	X11/Aplicações
 Group(pt_BR):	X11/Aplicações
+Group(pt):	X11/Aplicações
 Group(ru):	X11/ğÒÉÌÏÖÅÎÉÑ
 Group(sl):	X11/Programi
 Group(sv):	X11/Tillämpningar
@@ -272,8 +272,8 @@ Group(it):	X11/Applicazioni
 Group(ja):	X11/¥¢¥×¥ê¥±¡¼¥·¥ç¥ó
 Group(no):	X11/Applikasjoner
 Group(pl):	X11/Aplikacje
-Group(pt):	X11/Aplicações
 Group(pt_BR):	X11/Aplicações
+Group(pt):	X11/Aplicações
 Group(ru):	X11/ğÒÉÌÏÖÅÎÉÑ
 Group(sl):	X11/Programi
 Group(sv):	X11/Tillämpningar
@@ -296,8 +296,8 @@ Group(it):	X11/Applicazioni
 Group(ja):	X11/¥¢¥×¥ê¥±¡¼¥·¥ç¥ó
 Group(no):	X11/Applikasjoner
 Group(pl):	X11/Aplikacje
-Group(pt):	X11/Aplicações
 Group(pt_BR):	X11/Aplicações
+Group(pt):	X11/Aplicações
 Group(ru):	X11/ğÒÉÌÏÖÅÎÉÑ
 Group(sl):	X11/Programi
 Group(sv):	X11/Tillämpningar
@@ -320,8 +320,8 @@ Group(it):	X11/Applicazioni
 Group(ja):	X11/¥¢¥×¥ê¥±¡¼¥·¥ç¥ó
 Group(no):	X11/Applikasjoner
 Group(pl):	X11/Aplikacje
-Group(pt):	X11/Aplicações
 Group(pt_BR):	X11/Aplicações
+Group(pt):	X11/Aplicações
 Group(ru):	X11/ğÒÉÌÏÖÅÎÉÑ
 Group(sl):	X11/Programi
 Group(sv):	X11/Tillämpningar
@@ -344,8 +344,8 @@ Group(it):	X11/Applicazioni
 Group(ja):	X11/¥¢¥×¥ê¥±¡¼¥·¥ç¥ó
 Group(no):	X11/Applikasjoner
 Group(pl):	X11/Aplikacje
-Group(pt):	X11/Aplicações
 Group(pt_BR):	X11/Aplicações
+Group(pt):	X11/Aplicações
 Group(ru):	X11/ğÒÉÌÏÖÅÎÉÑ
 Group(sl):	X11/Programi
 Group(sv):	X11/Tillämpningar
@@ -368,8 +368,8 @@ Group(it):	X11/Applicazioni
 Group(ja):	X11/¥¢¥×¥ê¥±¡¼¥·¥ç¥ó
 Group(no):	X11/Applikasjoner
 Group(pl):	X11/Aplikacje
-Group(pt):	X11/Aplicações
 Group(pt_BR):	X11/Aplicações
+Group(pt):	X11/Aplicações
 Group(ru):	X11/ğÒÉÌÏÖÅÎÉÑ
 Group(sl):	X11/Programi
 Group(sv):	X11/Tillämpningar
@@ -392,8 +392,8 @@ Group(it):	X11/Applicazioni
 Group(ja):	X11/¥¢¥×¥ê¥±¡¼¥·¥ç¥ó
 Group(no):	X11/Applikasjoner
 Group(pl):	X11/Aplikacje
-Group(pt):	X11/Aplicações
 Group(pt_BR):	X11/Aplicações
+Group(pt):	X11/Aplicações
 Group(ru):	X11/ğÒÉÌÏÖÅÎÉÑ
 Group(sl):	X11/Programi
 Group(sv):	X11/Tillämpningar
@@ -416,8 +416,8 @@ Group(it):	X11/Applicazioni
 Group(ja):	X11/¥¢¥×¥ê¥±¡¼¥·¥ç¥ó
 Group(no):	X11/Applikasjoner
 Group(pl):	X11/Aplikacje
-Group(pt):	X11/Aplicações
 Group(pt_BR):	X11/Aplicações
+Group(pt):	X11/Aplicações
 Group(ru):	X11/ğÒÉÌÏÖÅÎÉÑ
 Group(sl):	X11/Programi
 Group(sv):	X11/Tillämpningar
@@ -440,8 +440,8 @@ Group(it):	X11/Applicazioni
 Group(ja):	X11/¥¢¥×¥ê¥±¡¼¥·¥ç¥ó
 Group(no):	X11/Applikasjoner
 Group(pl):	X11/Aplikacje
-Group(pt):	X11/Aplicações
 Group(pt_BR):	X11/Aplicações
+Group(pt):	X11/Aplicações
 Group(ru):	X11/ğÒÉÌÏÖÅÎÉÑ
 Group(sl):	X11/Programi
 Group(sv):	X11/Tillämpningar
@@ -464,8 +464,8 @@ Group(it):	X11/Applicazioni
 Group(ja):	X11/¥¢¥×¥ê¥±¡¼¥·¥ç¥ó
 Group(no):	X11/Applikasjoner
 Group(pl):	X11/Aplikacje
-Group(pt):	X11/Aplicações
 Group(pt_BR):	X11/Aplicações
+Group(pt):	X11/Aplicações
 Group(ru):	X11/ğÒÉÌÏÖÅÎÉÑ
 Group(sl):	X11/Programi
 Group(sv):	X11/Tillämpningar
@@ -488,8 +488,8 @@ Group(it):	X11/Applicazioni
 Group(ja):	X11/¥¢¥×¥ê¥±¡¼¥·¥ç¥ó
 Group(no):	X11/Applikasjoner
 Group(pl):	X11/Aplikacje
-Group(pt):	X11/Aplicações
 Group(pt_BR):	X11/Aplicações
+Group(pt):	X11/Aplicações
 Group(ru):	X11/ğÒÉÌÏÖÅÎÉÑ
 Group(sl):	X11/Programi
 Group(sv):	X11/Tillämpningar
@@ -512,8 +512,8 @@ Group(it):	X11/Applicazioni
 Group(ja):	X11/¥¢¥×¥ê¥±¡¼¥·¥ç¥ó
 Group(no):	X11/Applikasjoner
 Group(pl):	X11/Aplikacje
-Group(pt):	X11/Aplicações
 Group(pt_BR):	X11/Aplicações
+Group(pt):	X11/Aplicações
 Group(ru):	X11/ğÒÉÌÏÖÅÎÉÑ
 Group(sl):	X11/Programi
 Group(sv):	X11/Tillämpningar
@@ -536,8 +536,8 @@ Group(it):	X11/Applicazioni
 Group(ja):	X11/¥¢¥×¥ê¥±¡¼¥·¥ç¥ó
 Group(no):	X11/Applikasjoner
 Group(pl):	X11/Aplikacje
-Group(pt):	X11/Aplicações
 Group(pt_BR):	X11/Aplicações
+Group(pt):	X11/Aplicações
 Group(ru):	X11/ğÒÉÌÏÖÅÎÉÑ
 Group(sl):	X11/Programi
 Group(sv):	X11/Tillämpningar
@@ -560,8 +560,8 @@ Group(it):	X11/Applicazioni
 Group(ja):	X11/¥¢¥×¥ê¥±¡¼¥·¥ç¥ó
 Group(no):	X11/Applikasjoner
 Group(pl):	X11/Aplikacje
-Group(pt):	X11/Aplicações
 Group(pt_BR):	X11/Aplicações
+Group(pt):	X11/Aplicações
 Group(ru):	X11/ğÒÉÌÏÖÅÎÉÑ
 Group(sl):	X11/Programi
 Group(sv):	X11/Tillämpningar
@@ -584,8 +584,8 @@ Group(it):	X11/Applicazioni
 Group(ja):	X11/¥¢¥×¥ê¥±¡¼¥·¥ç¥ó
 Group(no):	X11/Applikasjoner
 Group(pl):	X11/Aplikacje
-Group(pt):	X11/Aplicações
 Group(pt_BR):	X11/Aplicações
+Group(pt):	X11/Aplicações
 Group(ru):	X11/ğÒÉÌÏÖÅÎÉÑ
 Group(sl):	X11/Programi
 Group(sv):	X11/Tillämpningar
@@ -608,8 +608,8 @@ Group(it):	X11/Applicazioni
 Group(ja):	X11/¥¢¥×¥ê¥±¡¼¥·¥ç¥ó
 Group(no):	X11/Applikasjoner
 Group(pl):	X11/Aplikacje
-Group(pt):	X11/Aplicações
 Group(pt_BR):	X11/Aplicações
+Group(pt):	X11/Aplicações
 Group(ru):	X11/ğÒÉÌÏÖÅÎÉÑ
 Group(sl):	X11/Programi
 Group(sv):	X11/Tillämpningar
@@ -632,8 +632,8 @@ Group(it):	X11/Applicazioni
 Group(ja):	X11/¥¢¥×¥ê¥±¡¼¥·¥ç¥ó
 Group(no):	X11/Applikasjoner
 Group(pl):	X11/Aplikacje
-Group(pt):	X11/Aplicações
 Group(pt_BR):	X11/Aplicações
+Group(pt):	X11/Aplicações
 Group(ru):	X11/ğÒÉÌÏÖÅÎÉÑ
 Group(sl):	X11/Programi
 Group(sv):	X11/Tillämpningar
@@ -656,8 +656,8 @@ Group(it):	X11/Applicazioni
 Group(ja):	X11/¥¢¥×¥ê¥±¡¼¥·¥ç¥ó
 Group(no):	X11/Applikasjoner
 Group(pl):	X11/Aplikacje
-Group(pt):	X11/Aplicações
 Group(pt_BR):	X11/Aplicações
+Group(pt):	X11/Aplicações
 Group(ru):	X11/ğÒÉÌÏÖÅÎÉÑ
 Group(sl):	X11/Programi
 Group(sv):	X11/Tillämpningar
@@ -680,8 +680,8 @@ Group(it):	X11/Applicazioni
 Group(ja):	X11/¥¢¥×¥ê¥±¡¼¥·¥ç¥ó
 Group(no):	X11/Applikasjoner
 Group(pl):	X11/Aplikacje
-Group(pt):	X11/Aplicações
 Group(pt_BR):	X11/Aplicações
+Group(pt):	X11/Aplicações
 Group(ru):	X11/ğÒÉÌÏÖÅÎÉÑ
 Group(sl):	X11/Programi
 Group(sv):	X11/Tillämpningar
@@ -704,8 +704,8 @@ Group(it):	X11/Applicazioni
 Group(ja):	X11/¥¢¥×¥ê¥±¡¼¥·¥ç¥ó
 Group(no):	X11/Applikasjoner
 Group(pl):	X11/Aplikacje
-Group(pt):	X11/Aplicações
 Group(pt_BR):	X11/Aplicações
+Group(pt):	X11/Aplicações
 Group(ru):	X11/ğÒÉÌÏÖÅÎÉÑ
 Group(sl):	X11/Programi
 Group(sv):	X11/Tillämpningar
@@ -728,8 +728,8 @@ Group(it):	X11/Applicazioni
 Group(ja):	X11/¥¢¥×¥ê¥±¡¼¥·¥ç¥ó
 Group(no):	X11/Applikasjoner
 Group(pl):	X11/Aplikacje
-Group(pt):	X11/Aplicações
 Group(pt_BR):	X11/Aplicações
+Group(pt):	X11/Aplicações
 Group(ru):	X11/ğÒÉÌÏÖÅÎÉÑ
 Group(sl):	X11/Programi
 Group(sv):	X11/Tillämpningar
@@ -752,8 +752,8 @@ Group(it):	X11/Applicazioni
 Group(ja):	X11/¥¢¥×¥ê¥±¡¼¥·¥ç¥ó
 Group(no):	X11/Applikasjoner
 Group(pl):	X11/Aplikacje
-Group(pt):	X11/Aplicações
 Group(pt_BR):	X11/Aplicações
+Group(pt):	X11/Aplicações
 Group(ru):	X11/ğÒÉÌÏÖÅÎÉÑ
 Group(sl):	X11/Programi
 Group(sv):	X11/Tillämpningar
@@ -776,8 +776,8 @@ Group(it):	X11/Applicazioni
 Group(ja):	X11/¥¢¥×¥ê¥±¡¼¥·¥ç¥ó
 Group(no):	X11/Applikasjoner
 Group(pl):	X11/Aplikacje
-Group(pt):	X11/Aplicações
 Group(pt_BR):	X11/Aplicações
+Group(pt):	X11/Aplicações
 Group(ru):	X11/ğÒÉÌÏÖÅÎÉÑ
 Group(sl):	X11/Programi
 Group(sv):	X11/Tillämpningar
@@ -800,8 +800,8 @@ Group(it):	X11/Applicazioni
 Group(ja):	X11/¥¢¥×¥ê¥±¡¼¥·¥ç¥ó
 Group(no):	X11/Applikasjoner
 Group(pl):	X11/Aplikacje
-Group(pt):	X11/Aplicações
 Group(pt_BR):	X11/Aplicações
+Group(pt):	X11/Aplicações
 Group(ru):	X11/ğÒÉÌÏÖÅÎÉÑ
 Group(sl):	X11/Programi
 Group(sv):	X11/Tillämpningar
@@ -824,8 +824,8 @@ Group(it):	X11/Applicazioni
 Group(ja):	X11/¥¢¥×¥ê¥±¡¼¥·¥ç¥ó
 Group(no):	X11/Applikasjoner
 Group(pl):	X11/Aplikacje
-Group(pt):	X11/Aplicações
 Group(pt_BR):	X11/Aplicações
+Group(pt):	X11/Aplicações
 Group(ru):	X11/ğÒÉÌÏÖÅÎÉÑ
 Group(sl):	X11/Programi
 Group(sv):	X11/Tillämpningar
@@ -848,8 +848,8 @@ Group(it):	X11/Applicazioni
 Group(ja):	X11/¥¢¥×¥ê¥±¡¼¥·¥ç¥ó
 Group(no):	X11/Applikasjoner
 Group(pl):	X11/Aplikacje
-Group(pt):	X11/Aplicações
 Group(pt_BR):	X11/Aplicações
+Group(pt):	X11/Aplicações
 Group(ru):	X11/ğÒÉÌÏÖÅÎÉÑ
 Group(sl):	X11/Programi
 Group(sv):	X11/Tillämpningar
@@ -872,8 +872,8 @@ Group(it):	X11/Applicazioni
 Group(ja):	X11/¥¢¥×¥ê¥±¡¼¥·¥ç¥ó
 Group(no):	X11/Applikasjoner
 Group(pl):	X11/Aplikacje
-Group(pt):	X11/Aplicações
 Group(pt_BR):	X11/Aplicações
+Group(pt):	X11/Aplicações
 Group(ru):	X11/ğÒÉÌÏÖÅÎÉÑ
 Group(sl):	X11/Programi
 Group(sv):	X11/Tillämpningar
@@ -896,8 +896,8 @@ Group(it):	X11/Applicazioni
 Group(ja):	X11/¥¢¥×¥ê¥±¡¼¥·¥ç¥ó
 Group(no):	X11/Applikasjoner
 Group(pl):	X11/Aplikacje
-Group(pt):	X11/Aplicações
 Group(pt_BR):	X11/Aplicações
+Group(pt):	X11/Aplicações
 Group(ru):	X11/ğÒÉÌÏÖÅÎÉÑ
 Group(sl):	X11/Programi
 Group(sv):	X11/Tillämpningar
@@ -920,8 +920,8 @@ Group(it):	X11/Applicazioni
 Group(ja):	X11/¥¢¥×¥ê¥±¡¼¥·¥ç¥ó
 Group(no):	X11/Applikasjoner
 Group(pl):	X11/Aplikacje
-Group(pt):	X11/Aplicações
 Group(pt_BR):	X11/Aplicações
+Group(pt):	X11/Aplicações
 Group(ru):	X11/ğÒÉÌÏÖÅÎÉÑ
 Group(sl):	X11/Programi
 Group(sv):	X11/Tillämpningar
@@ -944,8 +944,8 @@ Group(it):	X11/Applicazioni
 Group(ja):	X11/¥¢¥×¥ê¥±¡¼¥·¥ç¥ó
 Group(no):	X11/Applikasjoner
 Group(pl):	X11/Aplikacje
-Group(pt):	X11/Aplicações
 Group(pt_BR):	X11/Aplicações
+Group(pt):	X11/Aplicações
 Group(ru):	X11/ğÒÉÌÏÖÅÎÉÑ
 Group(sl):	X11/Programi
 Group(sv):	X11/Tillämpningar
@@ -968,8 +968,8 @@ Group(it):	X11/Applicazioni
 Group(ja):	X11/¥¢¥×¥ê¥±¡¼¥·¥ç¥ó
 Group(no):	X11/Applikasjoner
 Group(pl):	X11/Aplikacje
-Group(pt):	X11/Aplicações
 Group(pt_BR):	X11/Aplicações
+Group(pt):	X11/Aplicações
 Group(ru):	X11/ğÒÉÌÏÖÅÎÉÑ
 Group(sl):	X11/Programi
 Group(sv):	X11/Tillämpningar
@@ -992,8 +992,8 @@ Group(it):	X11/Applicazioni
 Group(ja):	X11/¥¢¥×¥ê¥±¡¼¥·¥ç¥ó
 Group(no):	X11/Applikasjoner
 Group(pl):	X11/Aplikacje
-Group(pt):	X11/Aplicações
 Group(pt_BR):	X11/Aplicações
+Group(pt):	X11/Aplicações
 Group(ru):	X11/ğÒÉÌÏÖÅÎÉÑ
 Group(sl):	X11/Programi
 Group(sv):	X11/Tillämpningar
@@ -1016,8 +1016,8 @@ Group(it):	X11/Applicazioni
 Group(ja):	X11/¥¢¥×¥ê¥±¡¼¥·¥ç¥ó
 Group(no):	X11/Applikasjoner
 Group(pl):	X11/Aplikacje
-Group(pt):	X11/Aplicações
 Group(pt_BR):	X11/Aplicações
+Group(pt):	X11/Aplicações
 Group(ru):	X11/ğÒÉÌÏÖÅÎÉÑ
 Group(sl):	X11/Programi
 Group(sv):	X11/Tillämpningar
@@ -1040,8 +1040,8 @@ Group(it):	X11/Applicazioni
 Group(ja):	X11/¥¢¥×¥ê¥±¡¼¥·¥ç¥ó
 Group(no):	X11/Applikasjoner
 Group(pl):	X11/Aplikacje
-Group(pt):	X11/Aplicações
 Group(pt_BR):	X11/Aplicações
+Group(pt):	X11/Aplicações
 Group(ru):	X11/ğÒÉÌÏÖÅÎÉÑ
 Group(sl):	X11/Programi
 Group(sv):	X11/Tillämpningar
@@ -1064,8 +1064,8 @@ Group(it):	X11/Applicazioni
 Group(ja):	X11/¥¢¥×¥ê¥±¡¼¥·¥ç¥ó
 Group(no):	X11/Applikasjoner
 Group(pl):	X11/Aplikacje
-Group(pt):	X11/Aplicações
 Group(pt_BR):	X11/Aplicações
+Group(pt):	X11/Aplicações
 Group(ru):	X11/ğÒÉÌÏÖÅÎÉÑ
 Group(sl):	X11/Programi
 Group(sv):	X11/Tillämpningar
@@ -1088,8 +1088,8 @@ Group(it):	X11/Applicazioni
 Group(ja):	X11/¥¢¥×¥ê¥±¡¼¥·¥ç¥ó
 Group(no):	X11/Applikasjoner
 Group(pl):	X11/Aplikacje
-Group(pt):	X11/Aplicações
 Group(pt_BR):	X11/Aplicações
+Group(pt):	X11/Aplicações
 Group(ru):	X11/ğÒÉÌÏÖÅÎÉÑ
 Group(sl):	X11/Programi
 Group(sv):	X11/Tillämpningar
@@ -1112,8 +1112,8 @@ Group(it):	X11/Applicazioni
 Group(ja):	X11/¥¢¥×¥ê¥±¡¼¥·¥ç¥ó
 Group(no):	X11/Applikasjoner
 Group(pl):	X11/Aplikacje
-Group(pt):	X11/Aplicações
 Group(pt_BR):	X11/Aplicações
+Group(pt):	X11/Aplicações
 Group(ru):	X11/ğÒÉÌÏÖÅÎÉÑ
 Group(sl):	X11/Programi
 Group(sv):	X11/Tillämpningar
@@ -1136,8 +1136,8 @@ Group(it):	X11/Applicazioni
 Group(ja):	X11/¥¢¥×¥ê¥±¡¼¥·¥ç¥ó
 Group(no):	X11/Applikasjoner
 Group(pl):	X11/Aplikacje
-Group(pt):	X11/Aplicações
 Group(pt_BR):	X11/Aplicações
+Group(pt):	X11/Aplicações
 Group(ru):	X11/ğÒÉÌÏÖÅÎÉÑ
 Group(sl):	X11/Programi
 Group(sv):	X11/Tillämpningar
@@ -1160,8 +1160,8 @@ Group(it):	X11/Applicazioni
 Group(ja):	X11/¥¢¥×¥ê¥±¡¼¥·¥ç¥ó
 Group(no):	X11/Applikasjoner
 Group(pl):	X11/Aplikacje
-Group(pt):	X11/Aplicações
 Group(pt_BR):	X11/Aplicações
+Group(pt):	X11/Aplicações
 Group(ru):	X11/ğÒÉÌÏÖÅÎÉÑ
 Group(sl):	X11/Programi
 Group(sv):	X11/Tillämpningar
@@ -1184,8 +1184,8 @@ Group(it):	X11/Applicazioni
 Group(ja):	X11/¥¢¥×¥ê¥±¡¼¥·¥ç¥ó
 Group(no):	X11/Applikasjoner
 Group(pl):	X11/Aplikacje
-Group(pt):	X11/Aplicações
 Group(pt_BR):	X11/Aplicações
+Group(pt):	X11/Aplicações
 Group(ru):	X11/ğÒÉÌÏÖÅÎÉÑ
 Group(sl):	X11/Programi
 Group(sv):	X11/Tillämpningar
@@ -1208,8 +1208,8 @@ Group(it):	X11/Applicazioni
 Group(ja):	X11/¥¢¥×¥ê¥±¡¼¥·¥ç¥ó
 Group(no):	X11/Applikasjoner
 Group(pl):	X11/Aplikacje
-Group(pt):	X11/Aplicações
 Group(pt_BR):	X11/Aplicações
+Group(pt):	X11/Aplicações
 Group(ru):	X11/ğÒÉÌÏÖÅÎÉÑ
 Group(sl):	X11/Programi
 Group(sv):	X11/Tillämpningar
@@ -1232,8 +1232,8 @@ Group(it):	X11/Applicazioni
 Group(ja):	X11/¥¢¥×¥ê¥±¡¼¥·¥ç¥ó
 Group(no):	X11/Applikasjoner
 Group(pl):	X11/Aplikacje
-Group(pt):	X11/Aplicações
 Group(pt_BR):	X11/Aplicações
+Group(pt):	X11/Aplicações
 Group(ru):	X11/ğÒÉÌÏÖÅÎÉÑ
 Group(sl):	X11/Programi
 Group(sv):	X11/Tillämpningar
@@ -1256,8 +1256,8 @@ Group(it):	X11/Applicazioni
 Group(ja):	X11/¥¢¥×¥ê¥±¡¼¥·¥ç¥ó
 Group(no):	X11/Applikasjoner
 Group(pl):	X11/Aplikacje
-Group(pt):	X11/Aplicações
 Group(pt_BR):	X11/Aplicações
+Group(pt):	X11/Aplicações
 Group(ru):	X11/ğÒÉÌÏÖÅÎÉÑ
 Group(sl):	X11/Programi
 Group(sv):	X11/Tillämpningar
@@ -1280,8 +1280,8 @@ Group(it):	X11/Applicazioni
 Group(ja):	X11/¥¢¥×¥ê¥±¡¼¥·¥ç¥ó
 Group(no):	X11/Applikasjoner
 Group(pl):	X11/Aplikacje
-Group(pt):	X11/Aplicações
 Group(pt_BR):	X11/Aplicações
+Group(pt):	X11/Aplicações
 Group(ru):	X11/ğÒÉÌÏÖÅÎÉÑ
 Group(sl):	X11/Programi
 Group(sv):	X11/Tillämpningar
@@ -1304,8 +1304,8 @@ Group(it):	X11/Applicazioni
 Group(ja):	X11/¥¢¥×¥ê¥±¡¼¥·¥ç¥ó
 Group(no):	X11/Applikasjoner
 Group(pl):	X11/Aplikacje
-Group(pt):	X11/Aplicações
 Group(pt_BR):	X11/Aplicações
+Group(pt):	X11/Aplicações
 Group(ru):	X11/ğÒÉÌÏÖÅÎÉÑ
 Group(sl):	X11/Programi
 Group(sv):	X11/Tillämpningar
@@ -1423,55 +1423,108 @@ FindLang zh_TW.Big5 Chinese
 rm -rf $RPM_BUILD_ROOT
 
 %files -f Affrikaans.lang Affrikaans
+%defattr(644,root,root,755)
 %files -f Azerbaijani.lang Azerbaijani
+%defattr(644,root,root,755)
 %files -f Bulgarian.lang Bulgarian
+%defattr(644,root,root,755)
 %files -f Breton.lang Breton
+%defattr(644,root,root,755)
 %files -f Catalan.lang Catalan
+%defattr(644,root,root,755)
 %files -f Czech.lang Czech
+%defattr(644,root,root,755)
 %files -f Cymraeg.lang Cymraeg
+%defattr(644,root,root,755)
 %files -f Danish.lang Danish
+%defattr(644,root,root,755)
 %files -f German.lang German
+%defattr(644,root,root,755)
 %files -f Greek.lang Greek
+%defattr(644,root,root,755)
 %files -f English.lang English
+%defattr(644,root,root,755)
 %files -f English_UK.lang English_UK
+%defattr(644,root,root,755)
 %files -f Esperanto.lang Esperanto
+%defattr(644,root,root,755)
 %files -f Spanish.lang Spanish
+%defattr(644,root,root,755)
 %files -f Estonian.lang Estonian
+%defattr(644,root,root,755)
 %files -f Basque.lang Basque
+%defattr(644,root,root,755)
 %files -f Finnish.lang Finnish
+%defattr(644,root,root,755)
 %files -f French.lang French
+%defattr(644,root,root,755)
 %files -f Irish.lang Irish
+%defattr(644,root,root,755)
 %files -f Galician.lang Galician
+%defattr(644,root,root,755)
 %files -f Hebrew.lang Hebrew
+%defattr(644,root,root,755)
 %files -f Croatian.lang Croatian
+%defattr(644,root,root,755)
 %files -f Hungarian.lang Hungarian
+%defattr(644,root,root,755)
 %files -f Icelandic.lang Icelandic
+%defattr(644,root,root,755)
 %files -f Italian.lang Italian
+%defattr(644,root,root,755)
 %files -f Japanese.lang Japanese
+%defattr(644,root,root,755)
 %files -f Korean.lang Korean
+%defattr(644,root,root,755)
 %files -f Lithuanian.lang Lithuanian
+%defattr(644,root,root,755)
 %files -f Latvian.lang Latvian
+%defattr(644,root,root,755)
 %files -f Maltese.lang Maltese
+%defattr(644,root,root,755)
 %files -f Maori.lang Maori
+%defattr(644,root,root,755)
 %files -f Macedonian.lang Macedonian
+%defattr(644,root,root,755)
 %files -f Dutch.lang Dutch
+%defattr(644,root,root,755)
 %files -f Norwegian_Bokmaal.lang Norwegian_Bokmaal
+%defattr(644,root,root,755)
 %files -f Norwegian_Nynorsk.lang Norwegian_Nynorsk
+%defattr(644,root,root,755)
 %files -f Gascon_occitan.lang Gascon_occitan
+%defattr(644,root,root,755)
 %files -f Polish.lang Polish
+%defattr(644,root,root,755)
 %files -f Portugnese.lang Portugnese
+%defattr(644,root,root,755)
 %files -f Brazil_Portugnese.lang Brazil_Portugnese
+%defattr(644,root,root,755)
 %files -f Romanian.lang Romanian
+%defattr(644,root,root,755)
 %files -f Russian.lang Russian
+%defattr(644,root,root,755)
 %files -f Slovak.lang Slovak
+%defattr(644,root,root,755)
 %files -f Slovenian.lang Slovenian
+%defattr(644,root,root,755)
 %files -f Serbian.lang Serbian
+%defattr(644,root,root,755)
 %files -f Swedish.lang Swedish
+%defattr(644,root,root,755)
 %files -f Tamil.lang Tamil
+%defattr(644,root,root,755)
 %files -f Thai.lang Thai
+%defattr(644,root,root,755)
 %files -f Turkish.lang Turkish
+%defattr(644,root,root,755)
 %files -f Ukrainian.lang Ukrainian
+%defattr(644,root,root,755)
 %files -f Walloon.lang Walloon
+%defattr(644,root,root,755)
 %files -f Xhosa.lang Xhosa
+%defattr(644,root,root,755)
 %files -f Simplified_Chinese.lang Simplified_Chinese
+%defattr(644,root,root,755)
 %files -f Chinese.lang Chinese
+%defattr(644,root,root,755)
