@@ -307,9 +307,9 @@ K Desktop Environment - Basque language support.
 KDE - wsparcie dla jêzyka baskijskiego.
 
 %package Farsi
-Summary:        K Desktop Environment - Farsi language support
-Summary(pl):    KDE - wsparcie dla jêzyka perskiego (farsi)
-Group:          X11/Applications
+Summary:	K Desktop Environment - Farsi language support
+Summary(pl):	KDE - wsparcie dla jêzyka perskiego (farsi)
+Group:		X11/Applications
 
 %description Farsi
 K Desktop Environment - Farsi language support.
@@ -541,9 +541,9 @@ K Desktop Environment - Norwegian (Nynorsk) language support.
 KDE - wsparcie dla jêzyka norweskiego (odmiany nynorsk).
 
 %package Northern_Sotho
-Summary:        K Desktop Environment - Northern Sotho language support
-Summary(pl):    KDE - wsparcie dla pó³nocnej odmiany jêzyka ludu Soto
-Group:          X11/Applications
+Summary:	K Desktop Environment - Northern Sotho language support
+Summary(pl):	KDE - wsparcie dla pó³nocnej odmiany jêzyka ludu Soto
+Group:		X11/Applications
 
 %description Northern_Sotho
 K Desktop Environment - Northern Sotho language support.
@@ -621,9 +621,9 @@ K Desktop Environment - Russian language support.
 KDE - wsparcie dla jêzyka rosyjskiego.
 
 %package Swati
-Summary:        K Desktop Environment - Swati language support
-Summary(pl):    KDE - wsparcie dla jêzyka swati
-Group:          X11/Applications
+Summary:	K Desktop Environment - Swati language support
+Summary(pl):	KDE - wsparcie dla jêzyka swati
+Group:		X11/Applications
 
 %description Swati
 K Desktop Environment - Swati language support.
@@ -632,9 +632,9 @@ K Desktop Environment - Swati language support.
 KDE - wsparcie dla jêzyka swati.
 
 %package Northern_Sami
-Summary:        K Desktop Environment - Northern Sami language support
-Summary(pl):    KDE - wsparcie dla pó³nocnego jêzyka saami (lapoñskiego)
-Group:          X11/Applications
+Summary:	K Desktop Environment - Northern Sami language support
+Summary(pl):	KDE - wsparcie dla pó³nocnego jêzyka saami (lapoñskiego)
+Group:		X11/Applications
 
 %description Northern_Sami
 K Desktop Environment - Northern Sami language support.
