@@ -11,11 +11,13 @@
 Summary:	K Desktop Environment - international support
 Summary(pl):	KDE - wsparcie dla wielu jêzyków
 Name:		kde-i18n
-Version:	3.0.3
-Release:	1
+%define		_version	3.0.5
+Version:	%{_version}a
+Release:	0.1
 License:	GPL/LGPL
 Group:		X11/Applications
-Source0:	ftp://ftp.kde.org/pub/kde/stable/%{version}/src/%{name}-%{version}.tar.bz2
+# Only this version is avaible:
+Source0:	ftp://ftp.kde.org/pub/kde/stable/%{version}/src/%{name}-%{_version}.tar.bz2
 Source1:	%{name}-splitmo
 Source2:	%{name}-splitdoc
 Patch0:		%{name}-nodoc.patch
@@ -728,7 +730,7 @@ K Desktop Environment - Zulu language support.
 KDE - wsparcie dla jêzyka zuluskiego.
 
 %prep
-%setup -q
+%setup -q -n %{name}-%{_version}
 %patch0 -p1
 
 %build
