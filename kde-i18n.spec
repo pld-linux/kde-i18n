@@ -12,7 +12,7 @@ Summary:	K Desktop Environment - international support
 Summary(pl):	KDE - Wsparcie dla t³umaczeñ miêdzynarodowych
 Name:		kde-i18n
 Version:	3.0.2
-Release:	0.9
+Release:	1
 License:	GPL/LGPL
 Group:		X11/Applications
 Source0:	ftp://ftp.kde.org/pub/kde/stable/%{version}/src/kde-i18n/%{name}-%{version}.tar.bz2
@@ -879,7 +879,7 @@ FindLang lv Latvian
 FindLang mt Maltese
 FindLang nl Dutch
 FindLang nn Norwegian_Nynorsk
-FindLang no Norwegian
+#FindLang no Norwegian
 # FindLang oc Gascon_occitan
 FindLang pl Polish
 FindLang pt Portugnese
