@@ -41,7 +41,7 @@ Obsoletes:	kde-i18n-Chinese-Big5 kde-i18n-Zulu
 %endif
 BuildRequires:	gettext-devel
 # It creates symlinks to some not-translated files.
-BuildRequires:	kdelibs = %{version}
+BuildRequires:	kdelibs >= %{version}
 BuildRequires:	kdelibs-devel
 BuildRequires:	libxml2-progs >= 2.4.2
 BuildRequires:	perl
