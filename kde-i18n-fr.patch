@@ -96,3 +96,92 @@
 --->
 \ No newline at end of file
 +-->
+--- kde-i18n-3.2.2/fr/docs/kdesdk/kbabel/catman.docbook.org	2004-04-20 22:57:10.000000000 +0000
++++ kde-i18n-3.2.2/fr/docs/kdesdk/kbabel/catman.docbook	2004-04-20 22:57:28.000000000 +0000
+@@ -20,7 +20,6 @@
+ </author>
+ </authorgroup>
+ 
+-&traducteurYvesDessertine; &traducteurPatrickMichelon; 
+ </chapterinfo>
+ 
+ <title
+--- kde-i18n-3.2.2/fr/docs/kdesdk/kbabel/faq.docbook.org	2004-04-20 22:58:18.000000000 +0000
++++ kde-i18n-3.2.2/fr/docs/kdesdk/kbabel/faq.docbook	2004-04-20 22:58:24.000000000 +0000
+@@ -19,7 +19,6 @@
+ </author>
+ </authorgroup>
+ 
+-&traducteurPatrickMichelon; 
+ </chapterinfo>
+ 
+ <title
+@@ -89,4 +88,4 @@
+ End:
+ 
+ vim:tabstop=2:shiftwidth=2:expandtab 
+--->
+\ No newline at end of file
++-->
+--- kde-i18n-3.2.2/fr/docs/kdesdk/kbabel/glossary.docbook.org	2004-04-20 22:58:31.000000000 +0000
++++ kde-i18n-3.2.2/fr/docs/kdesdk/kbabel/glossary.docbook	2004-04-20 22:58:37.000000000 +0000
+@@ -19,7 +19,6 @@
+ </author>
+ </authorgroup>
+ 
+-&traducteurPatrickMichelon; 
+ </glossaryinfo>
+ 
+ <title
+@@ -253,4 +252,4 @@
+ End:
+ 
+ vim:tabstop=2:shiftwidth=2:expandtab 
+--->
+\ No newline at end of file
++-->
+--- kde-i18n-3.2.2/fr/docs/kdesdk/kbabel/index.docbook.org	2004-04-20 22:56:30.000000000 +0000
++++ kde-i18n-3.2.2/fr/docs/kdesdk/kbabel/index.docbook	2004-04-20 22:56:54.000000000 +0000
+@@ -26,7 +26,6 @@
+ >&Stanislav.Visnovsky; &Stanislav.Visnovsky.mail; </author>
+ <author
+ >&Matthias.Kiefer; </author>
+-&traducteurPatrickMichelon; 
+ </authorgroup>
+ 
+ 
+@@ -83,7 +82,6 @@
+ 
+ </chapter>
+ 
+-&using;
+ &catman;
+ &kbabeldictchapter;
+ &dictionaries;
+--- kde-i18n-3.2.2/fr/docs/kdesdk/kbabel/kbabeldict.docbook.org	2004-04-20 22:57:39.000000000 +0000
++++ kde-i18n-3.2.2/fr/docs/kdesdk/kbabel/kbabeldict.docbook	2004-04-20 22:57:53.000000000 +0000
+@@ -19,7 +19,6 @@
+ </author>
+ </authorgroup>
+ 
+-&traducteurPatrickMichelon; 
+ </chapterinfo>
+ 
+ <title
+@@ -84,4 +83,4 @@
+ End:
+ 
+ vim:tabstop=2:shiftwidth=2:expandtab 
+--->
+\ No newline at end of file
++-->
+--- kde-i18n-3.2.2/fr/docs/kdesdk/kbabel/menu.docbook.org	2004-04-20 22:58:01.000000000 +0000
++++ kde-i18n-3.2.2/fr/docs/kdesdk/kbabel/menu.docbook	2004-04-20 22:58:09.000000000 +0000
+@@ -20,7 +20,6 @@
+ </author>
+ </authorgroup>
+ 
+-&traducteurPatrickMichelon; 
+ </chapterinfo>
+ 
+ <title
