@@ -343,7 +343,7 @@ Obsoletes:	quanta-i18n
 %description base
 Empty metapackage to handle obsoletes.
 
-%description Afrikaans -l pl
+%description base -l pl
 Pusty metapakiet z obsoletes.
 
 %package Afrikaans
