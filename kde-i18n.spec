@@ -49,19 +49,19 @@ Group:		X11/Applications
 %description Bulgarian
 K Desktop Environment - International Support.
 
-%package Breton
-Summary:	K Desktop Environment - International Support
-Group:		X11/Applications
-
-%description Breton
-K Desktop Environment - International Support.
-
-%package Catalan
-Summary:	K Desktop Environment - International Support
-Group:		X11/Applications
-
-%description Catalan
-K Desktop Environment - International Support.
+#%package Breton
+#Summary:	K Desktop Environment - International Support
+#Group:		X11/Applications
+#
+#%description Breton
+#K Desktop Environment - International Support.
+#
+#%package Catalan
+#Summary:	K Desktop Environment - International Support
+#Group:		X11/Applications
+#
+#%description Catalan
+#K Desktop Environment - International Support.
 
 %package Czech
 Summary:	K Desktop Environment - International Support
@@ -70,12 +70,12 @@ Group:		X11/Applications
 %description Czech
 K Desktop Environment - International Support.
 
-%package Cymraeg
-Summary:	K Desktop Environment - International Support
-Group:		X11/Applications
-
-%description Cymraeg
-K Desktop Environment - International Support.
+#%package Cymraeg
+#Summary:	K Desktop Environment - International Support
+#Group:		X11/Applications
+#
+#%description Cymraeg
+#K Desktop Environment - International Support.
 
 %package Danish
 Summary:	K Desktop Environment - International Support
@@ -98,12 +98,12 @@ Group:		X11/Applications
 %description Greek
 K Desktop Environment - International Support.
 
-%package English
-Summary:	K Desktop Environment - International Support
-Group:		X11/Applications
-
-%description English
-K Desktop Environment - International Support.
+#%package English
+#Summary:	K Desktop Environment - International Support
+#Group:		X11/Applications
+#
+#%description English
+#K Desktop Environment - International Support.
 
 %package English_UK
 Summary:	K Desktop Environment - International Support
@@ -133,12 +133,12 @@ Group:		X11/Applications
 %description Estonian
 K Desktop Environment - International Support.
 
-%package Basque
-Summary:	K Desktop Environment - International Support
-Group:		X11/Applications
-
-%description Basque
-K Desktop Environment - International Support.
+#%package Basque
+#Summary:	K Desktop Environment - International Support
+#Group:		X11/Applications
+#
+#%description Basque
+#K Desktop Environment - International Support.
 
 %package Finnish
 Summary:	K Desktop Environment - International Support
@@ -154,19 +154,19 @@ Group:		X11/Applications
 %description French
 K Desktop Environment - International Support.
 
-%package Irish
-Summary:	K Desktop Environment - International Support
-Group:		X11/Applications
-
-%description Irish
-K Desktop Environment - International Support.
-
-%package Galician
-Summary:	K Desktop Environment - International Support
-Group:		X11/Applications
-
-%description Galician
-K Desktop Environment - International Support.
+#%package Irish
+#Summary:	K Desktop Environment - International Support
+#Group:		X11/Applications
+#
+#%description Irish
+#K Desktop Environment - International Support.
+#
+#%package Galician
+#Summary:	K Desktop Environment - International Support
+#Group:		X11/Applications
+#
+#%description Galician
+#K Desktop Environment - International Support.
 
 %package Hebrew
 Summary:	K Desktop Environment - International Support
@@ -175,12 +175,12 @@ Group:		X11/Applications
 %description Hebrew
 K Desktop Environment - International Support.
 
-%package Croatian
-Summary:	K Desktop Environment - International Support
-Group:		X11/Applications
-
-%description Croatian
-K Desktop Environment - International Support.
+#%package Croatian
+#Summary:	K Desktop Environment - International Support
+#Group:		X11/Applications
+#
+#%description Croatian
+#K Desktop Environment - International Support.
 
 %package Hungarian
 Summary:	K Desktop Environment - International Support
@@ -238,19 +238,19 @@ Group:		X11/Applications
 %description Maltese
 K Desktop Environment - International Support.
 
-%package Maori
-Summary:	K Desktop Environment - International Support
-Group:		X11/Applications
-
-%description Maori
-K Desktop Environment - International Support.
-
-%package Macedonian
-Summary:	K Desktop Environment - International Support
-Group:		X11/Applications
-
-%description Macedonian
-K Desktop Environment - International Support.
+#%package Maori
+#Summary:	K Desktop Environment - International Support
+#Group:		X11/Applications
+#
+#%description Maori
+#K Desktop Environment - International Support.
+#
+#%package Macedonian
+#Summary:	K Desktop Environment - International Support
+#Group:		X11/Applications
+#
+#%description Macedonian
+#K Desktop Environment - International Support.
 
 %package Dutch
 Summary:	K Desktop Environment - International Support
@@ -273,12 +273,12 @@ Group:		X11/Applications
 %description Norwegian_Nynorsk
 K Desktop Environment - International Support.
 
-%package Gascon_occitan
-Summary:	K Desktop Environment - International Support
-Group:		X11/Applications
-
-%description Gascon_occitan
-K Desktop Environment - International Support.
+#%package Gascon_occitan
+#Summary:	K Desktop Environment - International Support
+#Group:		X11/Applications
+#
+#%description Gascon_occitan
+#K Desktop Environment - International Support.
 
 %package Polish
 Summary:	K Desktop Environment - International Support
@@ -371,12 +371,12 @@ Group:		X11/Applications
 %description Ukrainian
 K Desktop Environment - International Support.
 
-%package Walloon
-Summary:	K Desktop Environment - International Support
-Group:		X11/Applications
-
-%description Walloon
-K Desktop Environment - International Support.
+#%package Walloon
+#Summary:	K Desktop Environment - International Support
+#Group:		X11/Applications
+#
+#%description Walloon
+#K Desktop Environment - International Support.
 
 %package Xhosa
 Summary:	K Desktop Environment - International Support
@@ -454,25 +454,25 @@ rm -rf $RPM_BUILD_ROOT
 FindLang af Affrikaans
 FindLang az Azerbaijani
 FindLang bg Bulgarian
-FindLang br Breton
-FindLang ca Catalan
+# FindLang br Breton
+# FindLang ca Catalan
 FindLang cs Czech
-FindLang cy Cymraeg
+# FindLang cy Cymraeg
 FindLang da Danish
 FindLang de German
 FindLang el Greek
-FindLang en English
+# FindLang en English
 FindLang en_GB English_UK
 FindLang eo Esperanto
 FindLang es Spanish
 FindLang et Estonian
-FindLang eu Basque
+# FindLang eu Basque
 FindLang fi Finnish
 FindLang fr French
-FindLang ga Irish
-FindLang gl Galician
+# FindLang ga Irish
+# FindLang gl Galician
 FindLang he Hebrew
-FindLang hr Croatian
+# FindLang hr Croatian
 FindLang hu Hungarian
 FindLang is Icelandic
 FindLang it Italian
@@ -480,14 +480,14 @@ FindLang ja Japanese
 FindLang ko Korean
 FindLang lt Lithuanian
 FindLang lv Latvian
-FindLang mi Maori
-FindLang mk Macedonian
+# FindLang mi Maori
+# FindLang mk Macedonian
 FindLang mt Maltese
 FindLang nl Dutch
 FindLang no Norwegian_Bokmaal
 # wrong: should be "nn" or "nn_NO" - not "no_NY"
 FindLang no_NY Norwegian_Nynorsk
-FindLang oc Gascon_occitan
+# FindLang oc Gascon_occitan
 FindLang pl Polish
 FindLang pt Portugnese
 FindLang pt_BR Brazil_Portugnese
@@ -502,7 +502,7 @@ FindLang th Thai
 FindLang tr Turkish
 FindLang uk Ukrainian
 FindLang xh Xhosa
-FindLang wa Walloon
+# FindLang wa Walloon
 FindLang zh_CN.GB2312 Simplified_Chinese
 FindLang zh_TW.Big5 Chinese
 
@@ -512,25 +512,25 @@ rm -rf $RPM_BUILD_ROOT
 %files -f Affrikaans.lang Affrikaans
 %files -f Azerbaijani.lang Azerbaijani
 %files -f Bulgarian.lang Bulgarian
-%files -f Breton.lang Breton
-%files -f Catalan.lang Catalan
+# %files -f Breton.lang Breton
+# %files -f Catalan.lang Catalan
 %files -f Czech.lang Czech
-%files -f Cymraeg.lang Cymraeg
+# %files -f Cymraeg.lang Cymraeg
 %files -f Danish.lang Danish
 %files -f German.lang German
 %files -f Greek.lang Greek
-%files -f English.lang English
+# %files -f English.lang English
 %files -f English_UK.lang English_UK
 %files -f Esperanto.lang Esperanto
 %files -f Spanish.lang Spanish
 %files -f Estonian.lang Estonian
-%files -f Basque.lang Basque
+# %files -f Basque.lang Basque
 %files -f Finnish.lang Finnish
 %files -f French.lang French
-%files -f Irish.lang Irish
-%files -f Galician.lang Galician
+# %files -f Irish.lang Irish
+# %files -f Galician.lang Galician
 %files -f Hebrew.lang Hebrew
-%files -f Croatian.lang Croatian
+# %files -f Croatian.lang Croatian
 %files -f Hungarian.lang Hungarian
 %files -f Icelandic.lang Icelandic
 %files -f Italian.lang Italian
@@ -539,12 +539,12 @@ rm -rf $RPM_BUILD_ROOT
 %files -f Lithuanian.lang Lithuanian
 %files -f Latvian.lang Latvian
 %files -f Maltese.lang Maltese
-%files -f Maori.lang Maori
-%files -f Macedonian.lang Macedonian
+# %files -f Maori.lang Maori
+# %files -f Macedonian.lang Macedonian
 %files -f Dutch.lang Dutch
 %files -f Norwegian_Bokmaal.lang Norwegian_Bokmaal
 %files -f Norwegian_Nynorsk.lang Norwegian_Nynorsk
-%files -f Gascon_occitan.lang Gascon_occitan
+# %files -f Gascon_occitan.lang Gascon_occitan
 %files -f Polish.lang Polish
 %files -f Portugnese.lang Portugnese
 %files -f Brazil_Portugnese.lang Brazil_Portugnese
@@ -558,7 +558,7 @@ rm -rf $RPM_BUILD_ROOT
 %files -f Thai.lang Thai
 %files -f Turkish.lang Turkish
 %files -f Ukrainian.lang Ukrainian
-%files -f Walloon.lang Walloon
+# %files -f Walloon.lang Walloon
 %files -f Xhosa.lang Xhosa
 %files -f Simplified_Chinese.lang Simplified_Chinese
 %files -f Chinese.lang Chinese
