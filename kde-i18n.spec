@@ -765,7 +765,7 @@ done
 
 grep -v '^#' < %{SOURCE1} | \
 while read package file ; do
-if [ "$package" != "" -a "$directory"!= "" ] ; then
+if [ "$package" != "" -a "$directory" != "" ] ; then
     if [ -d $RPM_BUILD_ROOT/tmp/$package ] ; then 
 	for f in $RPM_BUILD_ROOT%{_datadir}/locale/*/LC_MESSAGES/$file ; do
 	    DIR=`echo $f | sed -e s,%{_datadir}/locale/,/tmp/$package%{_datadir}/locale/, -e s,/$file'$',,`
@@ -780,7 +780,7 @@ done
 
 grep -v '^#' < %{SOURCE2} | \
 while read package directory ; do
-if [ "$package" != "" -a "$directory"!= "" ] ; then
+if [ "$package" != "" -a "$directory" != "" ] ; then
     if [ -d $RPM_BUILD_ROOT/tmp/$package ] ; then 
 	for f in $RPM_BUILD_ROOT%{_htmldir}/*/$directory ; do
 	    DIR=`echo $f | sed -e s,%{_htmldir}/,/tmp/$package%{_htmldir}/, -e s,/$directory'$',,`
