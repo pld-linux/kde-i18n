@@ -11,14 +11,13 @@ Source0:	ftp://ftp.kde.org/pub/kde/snapshots/current/%{name}-%{REV}.tar.bz2
 #Patch0:		
 #BuildRequires:	
 #Requires:	
-Buildroot:	/tmp/%{name}-%{version}-root-%(id -u -n)
+BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %define	_prefix	/usr/X11R6
 
 %description
 
 %description -l pl
-
 
 %prep
 %setup -q -n %{name}
