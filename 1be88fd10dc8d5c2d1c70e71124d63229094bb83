@@ -1,0 +1,3 @@
+- rename Norwegian_Bokmaal locale (unsupported by glibc) to generic Norwegian
+- fix pl language names
+- release 3
