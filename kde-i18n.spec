@@ -5,7 +5,7 @@
 # --with	tarball_creation	Create tarballs with resources for
 #					specific packages
 #
-# --with	kdelibs_only		Create single small package containing
+# --with	kdelibs			Create single small package containing
 #					essential files only
 
 Summary:	K Desktop Environment - International Support
@@ -58,7 +58,7 @@ K Desktop Environment - International Support.
 %description -l pl
 KDE - Wsparcie dla t³umaczeñ miêdzynarodowych.
 
-%if %{?_with_kdelibs_only:1}%{!?_with_kdelibs_only:0}
+%if %{?_with_kdelibs:1}%{!?_with_kdelibs:0}
 %package kdelibs
 Summary:	K Desktop Environment - International Support
 Summary(pl):	KDE - Wsparcie dla t³umaczeñ miêdzynarodowych
@@ -90,7 +90,7 @@ KDE - Wsparcie dla t³umaczeñ miêdzynarodowych. Pakiet
 zawiera tylko pliki podstawowe.
 %endif
 
-%if %{?_with_alltogether:0}%{!?_with_alltogether:1} && %{?_with_kdelibs_only:0}%{!?_with_kdelibs_only:1}
+%if %{?_with_alltogether:0}%{!?_with_alltogether:1}
 %package Affrikaans
 Summary:	K Desktop Environment - International Support
 Group:		X11/Applications
@@ -831,13 +831,13 @@ done
 mv $RPM_BUILD_ROOT%{_datadir}/apps/ktuberling $RPM_BUILD_ROOT/tmp/kdegames%{_datadir}/apps
 mv $RPM_BUILD_ROOT%{_datadir}/apps/amor $RPM_BUILD_ROOT/tmp/kdetoys%{_datadir}/apps
 
-%if %{?_with_tarball_creation:1}%{!?_tarball_creation:0}
-
 cd $RPM_BUILD_ROOT%{_datadir}/locale
 for l in * ; do
-	cp $l/[!L]* $RPM_BUILD_ROOT/tmp/kdebase%{_datadir}/locale/$l
+	mv $l/[!L]* $RPM_BUILD_ROOT/tmp/kdebase%{_datadir}/locale/$l
 done
 cd -
+
+%if %{?_with_tarball_creation:1}%{!?_tarball_creation:0}
 
 ISDIR="`pwd`"
 for i in $package_list ; do
@@ -913,14 +913,14 @@ cat [A-Z]*.lang >all.lang
 %clean
 rm -rf $RPM_BUILD_ROOT
 
-%if %{?_with_kdelibs_only:1}%{!?_with_kdelibs_only:0}
+%if %{?_with_kdelibs:1}%{!?_with_kdelibs:0}
 %files kdelibs
 %defattr(644,root,root,755)
 %{_datadir}/locale/*/LC_MESSAGES/kdelibs.mo
 %{_datadir}/locale/*/LC_MESSAGES/katepart.mo
 %endif
 
-%if %{?_with_alltogether:0}%{!?_with_alltogether:1} && %{?_with_kdelibs_only:0}%{!?_with_kdelibs_only:1}
+%if %{?_with_alltogether:0}%{!?_with_alltogether:1}
 %files -f Affrikaans.lang Affrikaans
 %files -f Arabic.lang Arabic
 %files -f Azerbaijani.lang Azerbaijani
