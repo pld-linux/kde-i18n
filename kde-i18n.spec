@@ -1,16 +1,15 @@
-%define		_prefix		/usr/X11R6
-%define		REV		20001203
-
 Summary:	K Desktop Environment - International Support
 Summary(pl):	KDE - Wsparcie dla t³umaczeñ miêdzynarodowych.
 Name:		kde-i18n
-Version:	2.0.1pre_%{REV}
+Version:	2.1
 Release:	1
 Copyright:	GPL/LGPL
 Group:		X11/KDE
 Group(pl):	X11/KDE
-Source0:	ftp://ftp.kde.org/pub/kde/snapshots/current/%{name}-%{REV}.tar.bz2
+Source0:	ftp://ftp.kde.org/pub/kde/stable/%{version}/distribution/tar/generic/src/%{name}-%{version}.tar.bz2
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
+
+%define		_prefix		/usr/X11R6
 
 %description
 K Desktop Environment - International Support
@@ -411,7 +410,7 @@ Group(pl):	X11/KDE
 K Desktop Environment - International Support
 
 %prep
-%setup -q -n %{name}
+%setup -q
 
 %build
 %define         _sharedir       %{_prefix}/share
