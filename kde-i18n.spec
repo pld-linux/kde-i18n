@@ -176,14 +176,14 @@ KDE - wsparcie dla jêzyka bretoñskiego.
 
 %package Bosnian
 Summary:	K Desktop Environment - Bosnian language support
-Summary(pl):	KDE - wsparcie dla jêzyka bo¶niañskiego
+Summary(pl):	KDE - wsparcie dla jêzyka bo¶niackiego
 Group:		X11/Applications
 
 %description Bosnian
 K Desktop Environment - Bosnian language support.
 
 %description Bosnian -l pl
-KDE - wsparcie dla jêzyka bo¶niañskiego.
+KDE - wsparcie dla jêzyka bo¶niackiego.
 
 %package Catalan
 Summary:	K Desktop Environment - Catalan language support
@@ -371,7 +371,7 @@ Group:		X11/Applications
 K Desktop Environment - Galician language support.
 
 %description Galician -l pl
-KDE - wsparcie dla jêzyka galijskiego.
+KDE - wsparcie dla jêzyka galicyjskiego.
 
 %package Hindi
 Summary:	K Desktop Environment - Hindi language support
