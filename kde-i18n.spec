@@ -855,7 +855,7 @@ FindLang() {
 
 %{__make} DESTDIR=$RPM_BUILD_ROOT install
 
-%if %{?_with_tarball_creation:1}%{!?_tarball_creation:0}
+%if %{?_with_tarball_creation:1}%{!?_with_tarball_creation:0}
 package_list=`awk '!/^#/ { print $1 } ' %{SOURCE1} %{SOURCE2} | sort | uniq`
 for i in $package_list ; do
 	install -d $RPM_BUILD_ROOT/tmp/$i
@@ -917,6 +917,7 @@ cat tmp.allname.lang |grep zh_TW |sed 's/(zh)/(zh_TW)/' >> allname.lang
 cat tmp.allname.lang |grep -vE en_GB\|pt_BR\|zh_CN\|zh_TW >> allname.lang
 %endif
 
+%if %{?_with_tarball_creation:0}%{!?_with_tarball_creation:1}
 FindLang af Affrikaans
 FindLang ar Arabic
 #FindLang az Azerbaijani
@@ -980,6 +981,7 @@ FindLang xh Xhosa
 FindLang zh_CN Simplified_Chinese
 FindLang zh_TW Chinese
 FindLang zu Zulu
+%endif
 
 %if %{?_with_alltogether:1}%{!?_with_alltogether:0}
 cat [A-Z]*.lang >all.lang
