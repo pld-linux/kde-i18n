@@ -11,6 +11,7 @@ Source0:	ftp://ftp.kde.org/pub/kde/stable/%{version}/src/%{name}-%{version}.tar.
 # this is workaround - I don't know Chinese :)
 Source1:	ppdtranslations.gmo
 Patch0:		kde-i18n-pl.patch
+Patch1:		kde-i18n-ugly.patch
 BuildRequires:	libxml2 >= 2.4.2
 BuildRequires:	kdelibs-devel
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
@@ -467,6 +468,7 @@ K Desktop Environment - International Support
 %prep
 %setup -q
 %patch0 -p1
+%patch1 -p1
 
 %build
 %define         _sharedir       %{_prefix}/share
