@@ -1,24 +1,24 @@
 #
 # Conditional build:
-# _with_alltogether		- build single package containing support
-#				  for all languages
-# _with_tarball_creation	- create tarballs with resources for specific
-#				  packages; don't create any RPMs
-# _with_kdelibs			- create single small package containing
-#				  essential files only
+%bcond_with	alltogether	 - build single package containing support
+#				   for all languages
+%bcond_with	tarball_creation - create tarballs with resources for specific
+#				   packages; don't create any RPMs
+%bcond_with	kdelibs		 - create single small package containing
+#				   essential files only
 #
 Summary:	K Desktop Environment - international support
 Summary(pl):	KDE - wsparcie dla wielu jêzyków
 Name:		kde-i18n
-Version:	3.1.4
+Version:	3.1.5
 Release:	1
 License:	GPL/LGPL
 Group:		X11/Applications
 Source0:	ftp://ftp.kde.org/pub/kde/stable/%{version}/src/%{name}-%{version}.tar.bz2
-# Source0-md5:	fe6fe3d722a12760522b688b749beca6
+# Source0-md5:	cca8b1090a8c0e30dcf18d752bae8482
 Source1:	%{name}-splitmo
 Source2:	%{name}-splitdoc
-%if 0%{?_with_alltogether:1}
+%if %{with alltogether}
 # NOTE: "Affrikaans", "Norwegian_Bookmal" and "Portugnese" are here
 # intentionally, to allow upgrade from packages with misspelled names
 Obsoletes:	kde-i18n-Affrikaans
@@ -79,6 +79,7 @@ Obsoletes:	kde-i18n-Chinese
 Obsoletes:	kde-i18n-Chinese-Big5
 Obsoletes:	kde-i18n-Zulu
 %endif
+BuildRequires:	ed
 BuildRequires:	gettext-devel
 # It creates symlinks to some not-translated files.
 BuildRequires:	kdelibs >= %{version}
@@ -812,6 +813,8 @@ KDE - wsparcie dla jêzyka zuluskiego.
 %prep
 %setup -q
 #%patch0 -p1
+mv se/messages/kdebase/k{fm,io}exec.po
+echo -e ',s/kfmexec/kioexec/\n,w' | ed se/messages/kdebase/Makefile.in ||:
 
 %build
 %define         _sharedir       %{_datadir}
@@ -855,7 +858,7 @@ mv -f nb no
 %install
 rm -rf $RPM_BUILD_ROOT
 
-%if 0%{?_with_kdelibs:1}
+%if %{with kdelibs}
 FindLang() {
 	echo "%defattr(644,root,root,755)" > "$2.lang"
 	cat allname.lang |grep -vE 'tmp\|kdelibs\.mo\|katepart\.mo' |grep "%lang($1)" >> "$2.lang"
@@ -891,7 +894,7 @@ FindLang() {
 %endif
 
 %{__make} DESTDIR=$RPM_BUILD_ROOT install
-%if 0%{?_with_tarball_creation:1}
+%if %{with tarball_creation}
 package_list=`awk '!/^#/ { print $1 } ' %{SOURCE1} %{SOURCE2} | sort | uniq`
 for i in $package_list ; do
 	install -d $RPM_BUILD_ROOT/tmp/$i
@@ -944,7 +947,7 @@ done
 cd "$ISDIR"
 %endif
 
-%if 0%{?_with_kdelibs:1}
+%if %{with kdelibs}
 %find_lang tmp.allname --with-kde --all-name
 cat tmp.allname.lang |grep en_GB |sed 's/(en)/(en_GB)/' > allname.lang
 cat tmp.allname.lang |grep pt_BR |sed 's/(pt)/(pt_BR)/' >> allname.lang
@@ -1020,18 +1023,18 @@ FindLang zh_CN Simplified_Chinese
 FindLang zh_TW Chinese
 FindLang zu Zulu
 
-%if 0%{?_with_alltogether:1}
+%if %{with alltogether}
 cat [A-Z]*.lang >all.lang
 %endif
 
 %clean
 rm -rf $RPM_BUILD_ROOT
 
-%if 0%{?_with_kdelibs:%{!?_with_tarball_creation:1}}
+%if %{with kdelibs} && ! %{with tarball_creation}
 %files kdelibs -f kdelibs.lang
 %endif
 
-%if 0%{!?_with_alltogether:%{!?_with_tarball_creation:1}}
+%if %{with alltogether} && ! %{with tarball_creation}
 %files -f Afrikaans.lang Afrikaans
 %files -f Arabic.lang Arabic
 ##%files -f Azerbaijani.lang Azerbaijani
@@ -1100,6 +1103,6 @@ rm -rf $RPM_BUILD_ROOT
 %files -f Zulu.lang Zulu
 %endif
 
-%if 0%{?_with_alltogether:%{!?_with_tarball_creation:1}}
+%if %{with alltogether} && ! %{with tarball_creation}
 %files -f all.lang
 %endif
