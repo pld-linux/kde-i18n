@@ -514,14 +514,14 @@ KDE - wsparcie dla jêzyka serbskiego.
 
 %package Swedish
 Summary:	K Desktop Environment - Swedish language support
-Summary(pl):	KDE - wsparcie dla jêzyka szweckiego
+Summary(pl):	KDE - wsparcie dla jêzyka szwedzkiego
 Group:		X11/Applications
 
 %description Swedish
 K Desktop Environment - Swedish language support.
 
 %description Swedish -l pl
-KDE - wsparcie dla jêzyka szweckiego.
+KDE - wsparcie dla jêzyka szwedzkiego.
 
 
 %package Tamil
@@ -652,7 +652,10 @@ FindLang() {
 
 # share/locale/(%%lang)
     if [ -d "$RPM_BUILD_ROOT/%{_datadir}/locale/$1" ]; then
-	echo "%lang($1) %{_datadir}/locale/$1" >> "$2.lang"
+	echo "%lang($1) %{_datadir}/locale/$1/[^L]*" >> "$2.lang"
+    fi
+    if [ -d "$RPM_BUILD_ROOT/%{_datadir}/locale/$1/LC_MESSAGES" ]; then
+	echo "%lang($1) %{_datadir}/locale/$1/LC_MESSAGES/*" >> "$2.lang"
     fi
 
 # share/apps/amor/tips-(%%lang)
