@@ -858,7 +858,7 @@ rm -rf $RPM_BUILD_ROOT
 %if 0%{?_with_kdelibs:1}
 FindLang() {
 	echo "%defattr(644,root,root,755)" > "$2.lang"
-	cat allname.lang |grep -vE 'tmp|kdelibs\.mo|katepart\.mo' |grep "%lang($1)" >> "$2.lang"
+	cat allname.lang |grep -vE 'tmp\|kdelibs\.mo\|katepart\.mo' |grep "%lang($1)" >> "$2.lang"
 }
 %else
 FindLang() {
