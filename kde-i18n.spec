@@ -12,14 +12,13 @@
 Summary:	K Desktop Environment - international support
 Summary(pl):	KDE - wsparcie dla wielu jêzyków
 Name:		kde-i18n
-Version:	3.1
+Version:	3.1.1
 Release:	0.1
 License:	GPL/LGPL
 Group:		X11/Applications
 Source0:	ftp://ftp.kde.org/pub/kde/stable/%{version}/src/%{name}-%{version}.tar.bz2
 Source1:	%{name}-splitmo
 Source2:	%{name}-splitdoc
-#Patch0:		%{name}-nodoc.patch
 %if %{?_with_alltogether:1}%{!?_with_alltogether:0}
 Obsoletes:	kde-i18n-Affrikaans kde-i18n-Arabic kde-i18n-Azerbaijani
 Obsoletes:	kde-i18n-Bulgarian kde-i18n-Bosnian kde-i18n-Catalan
@@ -48,7 +47,6 @@ BuildRequires:	libxml2-progs >= 2.4.2
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
-%define		_prefix		/usr/X11R6
 
 %description
 K Desktop Environment - international support.
@@ -91,16 +89,16 @@ K Desktop Environment - Arabic language support.
 %description Arabic -l pl
 KDE - wsparcie dla jêzyka arabskiego.
 
-%package Azerbaijani
-Summary:	K Desktop Environment - Azerbaijani language support
-Summary(pl):	KDE - wsparcie dla jêzyka azerskiego
-Group:		X11/Applications
+##%package Azerbaijani
+#Summary:	K Desktop Environment - Azerbaijani language support
+#Summary(pl):	KDE - wsparcie dla jêzyka azerskiego
+#Group:		X11/Applications
 
-%description Azerbaijani
-K Desktop Environment - Azerbaijani language support.
+##%description Azerbaijani
+#K Desktop Environment - Azerbaijani language support.
 
-%description Azerbaijani -l pl
-KDE - wsparcie dla jêzyka azerskiego.
+##%description Azerbaijani -l pl
+#KDE - wsparcie dla jêzyka azerskiego.
 
 %package Bulgarian
 Summary:	K Desktop Environment - Bulgarian language support
@@ -256,16 +254,16 @@ K Desktop Environment - Estonian language support.
 %description Estonian -l pl
 KDE - wsparcie dla jêzyka estoñskiego.
 
-#%package Basque
-#Summary:	K Desktop Environment - Basque language support
-#Summary(pl):	KDE - wsparcie dla jêzyka baskijskiego
-#Group:		X11/Applications
-#
-#%description Basque
-#K Desktop Environment - Basque language support.
-#
-#%description Basque -l pl
-#KDE - wsparcie dla jêzyka baskijskiego.
+%package Basque
+Summary:	K Desktop Environment - Basque language support
+Summary(pl):	KDE - wsparcie dla jêzyka baskijskiego
+Group:		X11/Applications
+
+%description Basque
+K Desktop Environment - Basque language support.
+
+%description Basque -l pl
+KDE - wsparcie dla jêzyka baskijskiego.
 
 %package Finnish
 Summary:	K Desktop Environment - Finnish language support
@@ -388,16 +386,16 @@ K Desktop Environment - Japanese language support.
 %description Japanese -l pl
 KDE - wsparcie dla jêzyka japoñskiego.
 
-%package Korean
-Summary:	K Desktop Environment - Korean language support
-Summary(pl):	KDE - wsparcie dla jêzyka koreañskiego
-Group:		X11/Applications
+##%package Korean
+#Summary:	K Desktop Environment - Korean language support
+#Summary(pl):	KDE - wsparcie dla jêzyka koreañskiego
+#Group:		X11/Applications
 
-%description Korean
-K Desktop Environment - Korean language support.
+##%description Korean
+#K Desktop Environment - Korean language support.
 
-%description Korean -l pl
-KDE - wsparcie dla jêzyka koreañskiego.
+##%description Korean -l pl
+#KDE - wsparcie dla jêzyka koreañskiego.
 
 %package Lithuanian
 Summary:	K Desktop Environment - Lithuanian language support
@@ -410,16 +408,16 @@ K Desktop Environment - Lithuanian language support.
 %description Lithuanian -l pl
 KDE - Wsparcie dla jêzyka litewskiego.
 
-%package Latvian
-Summary:	K Desktop Environment - Latvian language support
-Summary(pl):	KDE - wsparcie dla jêzyka ³otewskiego
-Group:		X11/Applications
+##%package Latvian
+#Summary:	K Desktop Environment - Latvian language support
+#Summary(pl):	KDE - wsparcie dla jêzyka ³otewskiego
+#Group:		X11/Applications
 
-%description Latvian
-K Desktop Environment - Latvian language support.
+##%description Latvian
+#K Desktop Environment - Latvian language support.
 
-%description Latvian -l pl
-KDE - wsparcie dla jêzyka ³otewskiego.
+##%description Latvian -l pl
+#KDE - wsparcie dla jêzyka ³otewskiego.
 
 #%package Maori
 #Summary:	K Desktop Environment - Maori language support
@@ -465,17 +463,17 @@ K Desktop Environment - Dutch language support.
 %description Dutch -l pl
 KDE - wsparcie dla jêzyka holenderskiego.
 
-%package Norwegian
-Summary:	K Desktop Environment - Norwegian language support
-Summary(pl):	KDE - wsparcie dla jêzyka norweskiego
+%package Norwegian_Bookmal
+Summary:	K Desktop Environment - Norwegian (Bookmal) language support
+Summary(pl):	KDE - wsparcie dla jêzyka norweskiego (odmiany bookmal)
 Group:		X11/Applications
 Obsoletes:	kde-i18n-Norwegian_Bokmaal
 
-%description Norwegian
-K Desktop Environment - Norwegian language support.
+%description Norwegian_Bookmal
+K Desktop Environment - Norwegian (Bookmal) language support.
 
-%description Norwegian -l pl
-KDE - wsparcie dla jêzyka norweskiego.
+%description Norwegian_Bookmal -l pl
+KDE - wsparcie dla jêzyka norweskiego (odmiany bookmal).
 
 %package Norwegian_Nynorsk
 Summary:	K Desktop Environment - Norwegian (Nynorsk) language support
@@ -487,6 +485,17 @@ K Desktop Environment - Norwegian (Nynorsk) language support.
 
 %description Norwegian_Nynorsk -l pl
 KDE - wsparcie dla jêzyka norweskiego (odmiany nynorsk).
+
+%package Northern_Sotho
+Summary:        K Desktop Environment - Northern Sotho language support
+Summary(pl):    KDE - wsparcie dla jêzyka pólnocnego Sotho
+Group:          X11/Applications
+
+%description Northern_Sotho
+K Desktop Environment - Northern Sotho language support.
+
+%description Northern_Sotho -l pl
+KDE - wsparcie dla jêzyka pólnocnego Sotho.
 
 #%package Gascon_occitan
 #Summary:	K Desktop Environment - Occitan (Gascon) language support
@@ -555,6 +564,28 @@ K Desktop Environment - Russian language support.
 
 %description Russian -l pl
 KDE - wsparcie dla jêzyka rosyjskiego.
+
+%package Swati
+Summary:        K Desktop Environment - Swati language support
+Summary(pl):    KDE - wsparcie dla jêzyka swati
+Group:          X11/Applications
+
+%description Swati
+K Desktop Environment - Swati language support.
+
+%description Swati -l pl
+KDE - wsparcie dla jêzyka swati.
+
+%package Northern_Sami
+Summary:        K Desktop Environment - Northern Sami language support
+Summary(pl):    KDE - wsparcie dla jêzyka pó³nocnego Sami
+Group:          X11/Applications
+
+%description Northern_Sami
+K Desktop Environment - Northern Sami language support.
+
+%description Northern_Sami -l pl
+KDE - wsparcie dla jêzyka pó³nocnego Sami.
 
 %package Slovak
 Summary:	K Desktop Environment - Slovak language support
@@ -843,7 +874,7 @@ cat tmp.allname.lang |grep -vE en_GB\|pt_BR\|zh_CN\|zh_TW >> allname.lang
 
 FindLang af Affrikaans
 FindLang ar Arabic
-FindLang az Azerbaijani
+#FindLang az Azerbaijani
 FindLang bg Bulgarian
 # FindLang br Breton
 FindLang bs Bosnian
@@ -858,7 +889,7 @@ FindLang en_GB English_UK
 FindLang eo Esperanto
 FindLang es Spanish
 FindLang et Estonian
-# FindLang eu Basque
+FindLang eu Basque
 FindLang fi Finnish
 FindLang fr French
 # FindLang ga Irish
@@ -870,21 +901,24 @@ FindLang id Indonesian
 FindLang is Icelandic
 FindLang it Italian
 FindLang ja Japanese
-FindLang ko Korean
+#FindLang ko Korean
 FindLang lt Lithuanian
-FindLang lv Latvian
+#FindLang lv Latvian
 # FindLang mi Maori
 # FindLang mk Macedonian
 FindLang mt Maltese
 FindLang nl Dutch
 FindLang nn Norwegian_Nynorsk
-#FindLang no Norwegian
+FindLang nb Norwegian_Bookmal
+FindLang nso Northern_Sotho
 # FindLang oc Gascon_occitan
 FindLang pl Polish
 FindLang pt Portuguese
 FindLang pt_BR Brazil_Portuguese
 FindLang ro Romanian
 FindLang ru Russian
+FindLang ss Swati
+FindLang se Northern_Sami
 FindLang sk Slovak
 FindLang sl Slovenian
 FindLang sr Serbian
@@ -918,7 +952,7 @@ rm -rf $RPM_BUILD_ROOT
 %if %{?_with_alltogether:0}%{!?_with_alltogether:1}
 %files -f Affrikaans.lang Affrikaans
 %files -f Arabic.lang Arabic
-%files -f Azerbaijani.lang Azerbaijani
+##%files -f Azerbaijani.lang Azerbaijani
 %files -f Bulgarian.lang Bulgarian
 # %files -f Breton.lang Breton
 %files -f Bosnian.lang Bosnian
@@ -933,7 +967,7 @@ rm -rf $RPM_BUILD_ROOT
 %files -f Esperanto.lang Esperanto
 %files -f Spanish.lang Spanish
 %files -f Estonian.lang Estonian
-# %files -f Basque.lang Basque
+%files -f Basque.lang Basque
 %files -f Finnish.lang Finnish
 %files -f French.lang French
 # %files -f Irish.lang Irish
@@ -945,21 +979,24 @@ rm -rf $RPM_BUILD_ROOT
 %files -f Icelandic.lang Icelandic
 %files -f Italian.lang Italian
 %files -f Japanese.lang Japanese
-%files -f Korean.lang Korean
+##%files -f Korean.lang Korean
 %files -f Lithuanian.lang Lithuanian
-%files -f Latvian.lang Latvian
+##%files -f Latvian.lang Latvian
 %files -f Maltese.lang Maltese
 # %files -f Maori.lang Maori
 # %files -f Macedonian.lang Macedonian
 %files -f Dutch.lang Dutch
-#%files -f Norwegian.lang Norwegian
-#%files -f Norwegian_Nynorsk.lang Norwegian_Nynorsk
+%files -f Norwegian_Bookmal.lang Norwegian_Bookmal
+%files -f Norwegian_Nynorsk.lang Norwegian_Nynorsk
+%files -f Northern_Sotho.lang Northern_Sotho
 # %files -f Gascon_occitan.lang Gascon_occitan
 %files -f Polish.lang Polish
 %files -f Portuguese.lang Portuguese
 %files -f Brazil_Portuguese.lang Brazil_Portuguese
 %files -f Romanian.lang Romanian
 %files -f Russian.lang Russian
+%files -f Northern_Sami.lang Northern_Sami
+%files -f Swati.lang Swati
 %files -f Slovak.lang Slovak
 %files -f Slovenian.lang Slovenian
 %files -f Serbian.lang Serbian
