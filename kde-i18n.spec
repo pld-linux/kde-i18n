@@ -6,13 +6,13 @@ Summary:	K Desktop Environment - international support
 Summary(pl):	KDE - wsparcie dla wielu jêzyków
 Name:		kde-i18n
 Version:	3.4.0
-Release:	1
+Release:	1.1
 License:	GPL
 Group:		X11/Applications
 Source0:	ftp://ftp.kde.org/pub/kde/stable/3.4/src/%{name}-%{version}.tar.bz2
 # Source0-md5:	14359b7a14d507b3f9e8302b46031aa2
 #Source0:	http://ep09.pld-linux.org/~djurban/kde/%{name}-%{version}.tar.bz2
-#Patch0:		%{name}-fixes.patch
+Patch0:		%{name}-fixes.patch
 %if %{with alltogether}
 # NOTE: "Affrikaans", "Norwegian_Bookmal" and "Portugnese" are here
 # intentionally, to allow upgrade from packages with misspelled names
@@ -1263,7 +1263,7 @@ KDE - wsparcie dla jêzyka zuluskiego.
 
 %prep
 %setup -q
-#%patch -p1 -R
+%patch0 -p1
 
 %build
 kde_htmldir="%{_kdedocdir}"; export kde_htmldir
