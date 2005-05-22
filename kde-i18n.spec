@@ -6,7 +6,7 @@ Summary:	K Desktop Environment - international support
 Summary(pl):	KDE - wsparcie dla wielu jêzyków
 Name:		kde-i18n
 Version:	3.4.0
-Release:	2
+Release:	3
 License:	GPL
 Group:		X11/Applications
 Source0:	ftp://ftp.kde.org/pub/kde/stable/3.4/src/%{name}-%{version}.tar.bz2
@@ -102,6 +102,7 @@ KDE - wsparcie dla wielu jêzyków.
 Summary:	Empty metapackage to handle obsoletes
 Summary(pl):	Pusty metapakiet z obsoletes
 Group:		X11/Applications
+Conflicts:	kdebase-core-i18n
 Obsoletes:	kdeaccessibility-i18n
 Obsoletes:	kdeaccessibility-kmag-i18n
 Obsoletes:	kdeaccessibility-kmousetool-i18n
@@ -132,7 +133,6 @@ Obsoletes:	kde-decoration-glow-i18n
 Obsoletes:	kde-decoration-plastik-i18n
 Obsoletes:	kde-style-plastik-i18n
 Obsoletes:	kdeartwork-screensavers-i18n
-Obsoletes:	kdebase-core-i18n
 Obsoletes:	kdebase-desktop-i18n
 Obsoletes:	kdebase-infocenter-i18n
 Obsoletes:	kdebase-kate-i18n
