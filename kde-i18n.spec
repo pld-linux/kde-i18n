@@ -102,7 +102,6 @@ KDE - wsparcie dla wielu jêzyków.
 Summary:	Empty metapackage to handle obsoletes
 Summary(pl):	Pusty metapakiet z obsoletes
 Group:		X11/Applications
-Conflicts:	kdebase-core-i18n
 Obsoletes:	kdeaccessibility-i18n
 Obsoletes:	kdeaccessibility-kmag-i18n
 Obsoletes:	kdeaccessibility-kmousetool-i18n
@@ -148,6 +147,7 @@ Obsoletes:	kdebase-kwrite-i18n
 Obsoletes:	kdebase-screensavers-i18n
 Obsoletes:	kdm-i18n
 Obsoletes:	konqueror-i18n
+Obsoletes:	kdebase-core-i18n
 Obsoletes:	kdebase-i18n
 Obsoletes:	kde-decoration-b2-i18n
 Obsoletes:	kde-decoration-modernsys-i18n
