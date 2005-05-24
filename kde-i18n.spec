@@ -328,6 +328,7 @@ Obsoletes:	quanta-i18n
 Obsoletes:	kdepim-kmail-libs-i18n
 Obsoletes:	kdeutils-kmilo-i18n
 Obsoletes:	kde-i18n-kdelibs
+Obsoletes:	kdelibs-i18n
 Obsoletes:	kde-kgreet-classic-i18n
 Obsoletes:	kde-kio-smtp-i18n
 Obsoletes:	kde-kio-nntp-i18n
