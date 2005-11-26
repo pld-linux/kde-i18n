@@ -901,6 +901,18 @@ K Desktop Environment - Japanese language support.
 %description Japanese -l pl
 KDE - wsparcie dla jêzyka japoñskiego.
 
+%package Khmer
+Summary:	K Desktop Environment - Khmer language support
+Summary(pl):	KDE - wsparcie dla jêzyka khmerskiego
+Group:		X11/Applications
+Requires:	%{name}-base = %{version}-%{release}
+
+%description Khmer
+K Desktop Environment - Khmer language support.
+
+%description Khmer -l pl
+KDE - wsparcie dla jêzyka khmerskiego.
+
 %package Kinyarwanda
 Summary:	K Desktop Environment - Kinyarwanda language support
 Summary(pl):	KDE - wsparcie dla jêzyka kinya-ruanda
@@ -1529,6 +1541,7 @@ FindLang hu Hungarian
 FindLang is Icelandic
 FindLang it Italian
 FindLang ja Japanese
+FindLang km Khmer
 FindLang ko Korean
 FindLang lt Lithuanian
 FindLang lv Latvian
