@@ -901,6 +901,14 @@ K Desktop Environment - Japanese language support.
 %description Japanese -l pl
 KDE - wsparcie dla jêzyka japoñskiego.
 
+%package Kinyarwanda
+Summary:	K Desktop Environment - Kinyarwanda anguage support
+Group:		X11/Applications
+Requires:	%{name}-base = %{version}-%{release}
+
+%description Kinyarwanda
+K Desktop Environment - Kinyarwanda anguage support.
+
 %package Korean
 Summary:	K Desktop Environment - Korean language support
 Summary(pl):	KDE - wsparcie dla jêzyka koreañskiego
@@ -1483,9 +1491,9 @@ for dir in kde-i18n-*-%{version}; do
 		kde_libs_htmldir="%{_kdedocdir}"
 done
 
-##FindLang af Afrikaans
+FindLang af Afrikaans
 FindLang ar Arabic
-#FindLang az Azerbaijani
+FindLang az Azerbaijani
 FindLang bg Bulgarian
 FindLang bn Bengali
 FindLang br Breton
@@ -1505,9 +1513,8 @@ FindLang eu Basque
 FindLang fa Farsi
 FindLang fi Finnish
 FindLang fr French
-FindLang fy Frisian
-FindLang ga Irish
-#FindLang gl Galician
+# FindLang ga Irish
+FindLang gl Galician
 FindLang he Hebrew
 FindLang hi Hindi
 FindLang hr Croatian
@@ -1517,9 +1524,9 @@ FindLang hu Hungarian
 FindLang is Icelandic
 FindLang it Italian
 FindLang ja Japanese
-## FindLang ko Korean
-FindLang lt Lithuanian
-## FindLang lv Latvian
+FindLang ko Korean
+#FindLang lt Lithuanian
+FindLang lv Latvian
 # FindLang mi Maori
 FindLang mk Macedonian
 FindLang mn Mongolian
@@ -1536,6 +1543,7 @@ FindLang pl Polish
 FindLang pt Portuguese
 FindLang pt_BR Brazil_Portuguese
 FindLang ro Romanian
+FindLang rw Kinyarwanda
 FindLang ru Russian
 ##FindLang ss Swati
 FindLang se Northern_Sami
@@ -1571,12 +1579,14 @@ rm -rf $RPM_BUILD_ROOT
 %defattr(644,root,root,755)
 
 %if %{without alltogether}
-#%%files -f Afrikaans.lang Afrikaans
+%files -f Afrikaans.lang Afrikaans
+%defattr(644,root,root,755)
+
 %files -f Arabic.lang Arabic
 %defattr(644,root,root,755)
 
-#%files -f Azerbaijani.lang Azerbaijani
-#%defattr(644,root,root,755)
+%files -f Azerbaijani.lang Azerbaijani
+%defattr(644,root,root,755)
 
 %files -f Bulgarian.lang Bulgarian
 %defattr(644,root,root,755)
@@ -1633,14 +1643,9 @@ rm -rf $RPM_BUILD_ROOT
 %files -f French.lang French
 %defattr(644,root,root,755)
 
-%files -f Frisian.lang Frisian
+# %files -f Irish.lang Irish
+%files -f Galician.lang Galician
 %defattr(644,root,root,755)
-
-%files -f Irish.lang Irish
-%defattr(644,root,root,755)
-
-#%files -f Galician.lang Galician
-#%defattr(644,root,root,755)
 
 %files -f Hindi.lang Hindi
 %defattr(644,root,root,755)
@@ -1667,11 +1672,18 @@ rm -rf $RPM_BUILD_ROOT
 %files -f Japanese.lang Japanese
 %defattr(644,root,root,755)
 
-##%files -f Korean.lang Korean
-%files -f Lithuanian.lang Lithuanian
+%files -f Korean.lang Korean
 %defattr(644,root,root,755)
 
-##%files -f Latvian.lang Latvian
+#%files -f Lithuanian.lang Lithuanian
+#%defattr(644,root,root,755)
+
+%files -f Kinyarwanda.lang Kinyarwanda
+%defattr(644,root,root,755)
+
+%files -f Latvian.lang Latvian
+%defattr(644,root,root,755)
+
 #%%files -f Maltese.lang Maltese
 %files -f Malay.lang Malay
 %defattr(644,root,root,755)
