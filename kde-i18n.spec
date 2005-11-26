@@ -1517,7 +1517,8 @@ FindLang eu Basque
 FindLang fa Farsi
 FindLang fi Finnish
 FindLang fr French
-# FindLang ga Irish
+FindLang fy Frisian
+FindLang ga Irish
 FindLang gl Galician
 FindLang he Hebrew
 FindLang hi Hindi
@@ -1529,7 +1530,7 @@ FindLang is Icelandic
 FindLang it Italian
 FindLang ja Japanese
 FindLang ko Korean
-#FindLang lt Lithuanian
+FindLang lt Lithuanian
 FindLang lv Latvian
 # FindLang mi Maori
 FindLang mk Macedonian
@@ -1647,7 +1648,12 @@ rm -rf $RPM_BUILD_ROOT
 %files -f French.lang French
 %defattr(644,root,root,755)
 
-# %files -f Irish.lang Irish
+%files -f Frisian.lang Frisian
+%defattr(644,root,root,755)
+
+%files -f Irish.lang Irish
+%defattr(644,root,root,755)
+
 %files -f Galician.lang Galician
 %defattr(644,root,root,755)
 
@@ -1679,8 +1685,8 @@ rm -rf $RPM_BUILD_ROOT
 %files -f Korean.lang Korean
 %defattr(644,root,root,755)
 
-#%files -f Lithuanian.lang Lithuanian
-#%defattr(644,root,root,755)
+%files -f Lithuanian.lang Lithuanian
+%defattr(644,root,root,755)
 
 %files -f Kinyarwanda.lang Kinyarwanda
 %defattr(644,root,root,755)
