@@ -146,9 +146,10 @@ Obsoletes:	kde-i18n-Afrikaans
 Obsoletes:	kde-i18n-Arabic
 Obsoletes:	kde-i18n-Azerbaijani
 Obsoletes:	kde-i18n-Bengali
-Obsoletes:	kde-i18n-Bulgarian
 Obsoletes:	kde-i18n-Bosnian
+Obsoletes:	kde-i18n-Bulgarian
 Obsoletes:	kde-i18n-Catalan
+Obsoletes:	kde-i18n-Cymraeg
 Obsoletes:	kde-i18n-Czech
 Obsoletes:	kde-i18n-Danish
 Obsoletes:	kde-i18n-German
@@ -158,11 +159,17 @@ Obsoletes:	kde-i18n-British
 Obsoletes:	kde-i18n-Esperanto
 Obsoletes:	kde-i18n-Spanish
 Obsoletes:	kde-i18n-Estonian
+Obsoletes:	kde-i18n-Basque
+Obsoletes:	kde-i18n-Farsi
 Obsoletes:	kde-i18n-Finnish
 Obsoletes:	kde-i18n-French
+Obsoletes:	kde-i18n-Frisian
+Obsoletes:	kde-i18n-Irish
+Obsoletes:	kde-i18n-Galician
 Obsoletes:	kde-i18n-Hebrew
 Obsoletes:	kde-i18n-Hindi
 Obsoletes:	kde-i18n-Croatian
+Obsoletes:	kde-i18n-Upper_Sorbian
 Obsoletes:	kde-i18n-Hungarian
 Obsoletes:	kde-i18n-Indonesian
 Obsoletes:	kde-i18n-Icelandic
@@ -170,7 +177,10 @@ Obsoletes:	kde-i18n-Italian
 Obsoletes:	kde-i18n-Japanese
 Obsoletes:	kde-i18n-Korean
 Obsoletes:	kde-i18n-Lithuanian
+Obsoletes:	kde-i18n-Lao
 Obsoletes:	kde-i18n-Latvian
+Obsoletes:	kde-i18n-Maori
+Obsoletes:	kde-i18n-Macedonian
 Obsoletes:	kde-i18n-Maltese
 Obsoletes:	kde-i18n-Malay
 Obsoletes:	kde-i18n-Mongolian
@@ -180,6 +190,9 @@ Obsoletes:	kde-i18n-Norwegian
 Obsoletes:	kde-i18n-Norwegian_Bokmaal
 Obsoletes:	kde-i18n-Norwegian_Bookmal
 Obsoletes:	kde-i18n-Norwegian_Nynorsk
+Obsoletes:	kde-i18n-Northern_Sotho
+Obsoletes:	kde-i18n-Gascon_occitan
+Obsoletes:	kde-i18n-Gascon_Occitan
 Obsoletes:	kde-i18n-Punjabi
 Obsoletes:	kde-i18n-Polish
 Obsoletes:	kde-i18n-Portugnese
@@ -189,6 +202,8 @@ Obsoletes:	kde-i18n-Brazil_Portugnese
 Obsoletes:	kde-i18n-Brazil_Portuguese
 Obsoletes:	kde-i18n-Romanian
 Obsoletes:	kde-i18n-Russian
+Obsoletes:	kde-i18n-Swati
+Obsoletes:	kde-i18n-Northern_Sami
 Obsoletes:	kde-i18n-Slovak
 Obsoletes:	kde-i18n-Slovenian
 Obsoletes:	kde-i18n-Serbian
@@ -201,6 +216,7 @@ Obsoletes:	kde-i18n-Ukrainian
 Obsoletes:	kde-i18n-Uzbek
 Obsoletes:	kde-i18n-Venda
 Obsoletes:	kde-i18n-Vietnamese
+Obsoletes:	kde-i18n-Walloon
 Obsoletes:	kde-i18n-Xhosa
 Obsoletes:	kde-i18n-Simplified_Chinese
 Obsoletes:	kde-i18n-Chinese
@@ -215,7 +231,6 @@ BuildRequires:	kdelibs-devel >= 9:%{version}
 BuildRequires:	libxml2-progs >= 2.4.2
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
-
 
 %description
 K Desktop Environment - international support.
@@ -1095,16 +1110,17 @@ K Desktop Environment - Northern Sotho language support.
 %description Northern_Sotho -l pl
 KDE - wsparcie dla pó³nocnej odmiany jêzyka ludu Soto.
 
-%package Gascon_occitan
+%package Gascon_Occitan
 Summary:	K Desktop Environment - Occitan (Gascon) language support
 Summary(pl):	KDE - wsparcie dla jêzyka oksytañskiego (dialektu gaskoñskiego)
 Group:		X11/Applications
 Requires:	%{name}-base = %{version}-%{release}
+Obsoletes:	kde-i18n-Gascon_occitan
 
-%description Gascon_occitan
+%description Gascon_Occitan
 K Desktop Environment - Occitan (Gascon) language support.
 
-%description Gascon_occitan -l pl
+%description Gascon_Occitan -l pl
 KDE - wsparcie dla jêzyka oksytañskiego (dialektu gaskoñskiego).
 
 %package Punjabi
@@ -1326,7 +1342,6 @@ K Desktop Environment - Uzbek language support.
 %description Uzbek -l pl
 KDE - wsparcie dla jêzyka uzbeckiego.
 
-
 %package Venda
 Summary:	K Desktop Environment - Venda language support
 Summary(pl):	KDE - wsparcie dla jêzyka venda
@@ -1435,7 +1450,6 @@ done
 
 %install
 rm -rf $RPM_BUILD_ROOT
-
 
 FindLang() {
 #    $1 - short language name
@@ -1556,7 +1570,7 @@ FindLang nl Dutch
 FindLang nn Norwegian_Nynorsk
 FindLang pa Punjabi
 #indLang nso Northern_Sotho
-# FindLang oc Gascon_occitan
+# FindLang oc Gascon_Occitan
 FindLang pl Polish
 FindLang pt Portuguese
 FindLang pt_BR Brazil_Portuguese
@@ -1591,7 +1605,6 @@ cat [A-Z]*.lang >all.lang
 
 %clean
 rm -rf $RPM_BUILD_ROOT
-
 
 %files base
 %defattr(644,root,root,755)
@@ -1732,11 +1745,10 @@ rm -rf $RPM_BUILD_ROOT
 %defattr(644,root,root,755)
 
 #%%files -f Northern_Sotho.lang Northern_Sotho
-# %files -f Gascon_occitan.lang Gascon_occitan
+# %files -f Gascon_Occitan.lang Gascon_Occitan
 
 %files -f Punjabi.lang Punjabi
 %defattr(644,root,root,755)
-
 
 %files -f Polish.lang Polish
 %defattr(644,root,root,755)
