@@ -903,11 +903,15 @@ KDE - wsparcie dla jêzyka japoñskiego.
 
 %package Kinyarwanda
 Summary:	K Desktop Environment - Kinyarwanda anguage support
+Summary(pl):	KDE - wsparcie dla jêzyka kinya-ruanda
 Group:		X11/Applications
 Requires:	%{name}-base = %{version}-%{release}
 
 %description Kinyarwanda
 K Desktop Environment - Kinyarwanda anguage support.
+
+%description Kinyarwanda -l pl
+KDE - wsparcie dla jêzyka kinya-ruanda.
 
 %package Korean
 Summary:	K Desktop Environment - Korean language support
