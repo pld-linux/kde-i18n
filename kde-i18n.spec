@@ -122,7 +122,7 @@ Source53:	ftp://ftp.kde.org/pub/kde/stable/%{_kdever}/src/kde-i18n/%{name}-sr@La
 Source54:        ftp://ftp.kde.org/pub/kde/stable/%{_kdever}/src/kde-i18n/%{name}-ss-%{version}.tar.bz2
 # Source54-md5:	5a787015dfd4ac97defae1e05358e4ec
 Source55:	ftp://ftp.kde.org/pub/kde/stable/%{_kdever}/src/kde-i18n/%{name}-sv-%{version}.tar.bz2
-# Source55-md5:	1eb351f2332fa6c51fecba7eecb1ca61
+# Source55-md5:	34837afb8eb7c808ffeecdb7dff66a98
 Source56:	ftp://ftp.kde.org/pub/kde/stable/%{_kdever}/src/kde-i18n/%{name}-ta-%{version}.tar.bz2
 # Source56-md5:	4776430c0e6d5aa4455ebc8406e8a373
 Source57:	ftp://ftp.kde.org/pub/kde/stable/%{_kdever}/src/kde-i18n/%{name}-tg-%{version}.tar.bz2
