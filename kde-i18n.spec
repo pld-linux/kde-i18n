@@ -774,7 +774,7 @@ KDE - wsparcie dla jêzyka francuskiego.
 
 %package Frisian
 Summary:	K Desktop Environment - Frisian language support
-Summary(pl):	KDE - wsparcie dla jêzyka Frisian
+Summary(pl):	KDE - wsparcie dla jêzyka fryzyjskiego
 Group:		X11/Applications
 Requires:	%{name}-base = %{version}-%{release}
 
@@ -782,7 +782,7 @@ Requires:	%{name}-base = %{version}-%{release}
 K Desktop Environment - Frisian language support.
 
 %description Frisian -l pl
-KDE - wsparcie dla jêzyka Frisian.
+KDE - wsparcie dla jêzyka fryzyjskiego.
 
 %package Irish
 Summary:	K Desktop Environment - Irish language support
