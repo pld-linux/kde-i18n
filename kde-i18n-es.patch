@@ -1,21 +1,11 @@
-diff -ur kde-i18n-3.2.0/es/docs/quanta/quanta.orig/debugging-quanta.docbook kde-i18n-3.2.0/es/docs/quanta/quanta/debugging-quanta.docbook
---- kde-i18n-3.2.0/es/docs/quanta/quanta.orig/debugging-quanta.docbook	2004-01-28 12:19:05.290733952 +0100
-+++ kde-i18n-3.2.0/es/docs/quanta/quanta/debugging-quanta.docbook	2004-01-28 12:26:32.605731736 +0100
-@@ -1,4 +1,4 @@
--<?xml version="1.0" ?>
-+<?xml version="1.0" encoding="UTF-8" ?>
- 
- <sect1 id="debugging">
- <title
-Tylko w kde-i18n-3.2.0/es/docs/quanta/quanta: debugging-quanta.docbook~
-Tylko w kde-i18n-3.2.0/es/docs/quanta/quanta: index.cache.bz2
-diff -ur kde-i18n-3.2.0/es/docs/quanta/quanta.orig/index.docbook kde-i18n-3.2.0/es/docs/quanta/quanta/index.docbook
---- kde-i18n-3.2.0/es/docs/quanta/quanta.orig/index.docbook	2004-01-28 12:19:05.291733800 +0100
-+++ kde-i18n-3.2.0/es/docs/quanta/quanta/index.docbook	2004-01-28 12:25:54.661500136 +0100
-@@ -1,4 +1,4 @@
--<?xml version="1.0" ?>
-+<?xml version="1.0" encoding="UTF-8" ?>
- <!DOCTYPE book PUBLIC "-//KDE//DTD DocBook XML V4.1.2-Based Variant V1.1//EN"
- "dtd/kdex.dtd" [
-   <!ENTITY kappname "&quanta;">
-Tylko w kde-i18n-3.2.0/es/docs/quanta/quanta: index.docbook~
+diff -ur kde-i18n-es-3.5.1.org/docs/common/Makefile.in kde-i18n-es-3.5.1/docs/common/Makefile.in
+--- kde-i18n-es-3.5.1.org/docs/common/Makefile.in	2006-01-21 19:03:57.000000000 +0000
++++ kde-i18n-es-3.5.1/docs/common/Makefile.in	2006-01-23 07:38:34.391130937 +0000
+@@ -512,6 +512,7 @@
+ install-nls:
+ 	$(mkinstalldirs) $(DESTDIR)$(kde_htmldir)/$(KDE_LANG)/common
+ 	@for base in lgpl-translated.html gpl-translated.html fdl-translated.html kde-localised.css logotp3.png ; do \
++	  rm -f $(DESTDIR)$(kde_htmldir)/$(KDE_LANG)/common/$$base ;\
+ 	  echo $(INSTALL_DATA) $$base $(DESTDIR)$(kde_htmldir)/$(KDE_LANG)/common/$$base ;\
+ 	  $(INSTALL_DATA) $(srcdir)/$$base $(DESTDIR)$(kde_htmldir)/$(KDE_LANG)/common/$$base ;\
+ 	done
