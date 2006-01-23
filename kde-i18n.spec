@@ -1,234 +1,237 @@
+# TODO:
+# - add files to some ko locale
 #
 # Conditional build:
 %bcond_with	alltogether		# build single package containing support
 					# for all languages
-%define	_kdever	3.5
+%define	_kdever	3.5.1
 
 Summary:	K Desktop Environment - international support
 Summary(pl):	KDE - wsparcie dla wielu jêzyków
 Name:		kde-i18n
-Version:	3.5.0
+Version:	3.5.1
 Release:	1
 License:	GPL
 Group:		X11/Applications
-Source0:        ftp://ftp.kde.org/pub/kde/stable/%{_kdever}/src/kde-i18n/%{name}-af-%{version}.tar.bz2
-# Source0-md5:	147f1e8d2fbc34044803a001d7bcdfa5
+Source0:	ftp://ftp.kde.org/pub/kde/stable/%{_kdever}/src/kde-i18n/%{name}-af-%{version}.tar.bz2
+# Source0-md5:	3e08b84cafea0738a792f9c83ef01cf0
 Source1:	ftp://ftp.kde.org/pub/kde/stable/%{_kdever}/src/kde-i18n/%{name}-ar-%{version}.tar.bz2
-# Source1-md5:	ddae126b0e6f157c7ab216886da9a9cc
-Source2:        ftp://ftp.kde.org/pub/kde/stable/%{_kdever}/src/kde-i18n/%{name}-az-%{version}.tar.bz2
-# Source2-md5:	9ca3b621dbe45ffcaec01050e7cd723c
+# Source1-md5:	7914d80d0ab41709b61674a679a591aa
+Source2:	ftp://ftp.kde.org/pub/kde/stable/%{_kdever}/src/kde-i18n/%{name}-az-%{version}.tar.bz2
+# Source2-md5:	eac30d4589d5d3dcff4d19365966f2f5
 Source3:	ftp://ftp.kde.org/pub/kde/stable/%{_kdever}/src/kde-i18n/%{name}-bg-%{version}.tar.bz2
-# Source3-md5:	14a1c0ffca9b70befd62aac08a76ce26
+# Source3-md5:	ef385a222ae6ed99f2715add155ffd14
 Source4:	ftp://ftp.kde.org/pub/kde/stable/%{_kdever}/src/kde-i18n/%{name}-bn-%{version}.tar.bz2
-# Source4-md5:	76eb28c1ace6f2279657d8574f9f0814
+# Source4-md5:	c260d39e9c81045979614ab1efa71647
 Source5:	ftp://ftp.kde.org/pub/kde/stable/%{_kdever}/src/kde-i18n/%{name}-br-%{version}.tar.bz2
-# Source5-md5:	88ada204a76c69b594d704fdefc102eb
+# Source5-md5:	a30da1b103b09d4b9a50b0bc74d4cccd
 Source6:	ftp://ftp.kde.org/pub/kde/stable/%{_kdever}/src/kde-i18n/%{name}-bs-%{version}.tar.bz2
-# Source6-md5:	f7c7e067fc001592eda493be30d84f8d
+# Source6-md5:	ae0e49486c6a2cdf00f0a46457582aba
 Source7:	ftp://ftp.kde.org/pub/kde/stable/%{_kdever}/src/kde-i18n/%{name}-ca-%{version}.tar.bz2
-# Source7-md5:	1757ccb438e4cc2edb9c5af7c0ffc736
+# Source7-md5:	dac29cc60e4d39faec8f232097c7c3f6
 Source8:	ftp://ftp.kde.org/pub/kde/stable/%{_kdever}/src/kde-i18n/%{name}-cs-%{version}.tar.bz2
-# Source8-md5:	d7ccfd209c90ddb92e60476481bd20e3
+# Source8-md5:	1bd6e2b120b674e492d60990223b084f
 Source9:	ftp://ftp.kde.org/pub/kde/stable/%{_kdever}/src/kde-i18n/%{name}-cy-%{version}.tar.bz2
-# Source9-md5:	77be5513037a06d51e287d262a50afbe
+# Source9-md5:	af9b0cc9cb7b563e27029892d1645d95
 Source10:	ftp://ftp.kde.org/pub/kde/stable/%{_kdever}/src/kde-i18n/%{name}-da-%{version}.tar.bz2
-# Source10-md5:	2fabb8a20a0c197b4749b93359d25fc1
+# Source10-md5:	424fb6ac034a1df1298689033093b3f2
 Source11:	ftp://ftp.kde.org/pub/kde/stable/%{_kdever}/src/kde-i18n/%{name}-de-%{version}.tar.bz2
-# Source11-md5:	71e66fbc6d497808364ff2ae02e2f9a3
+# Source11-md5:	32a095984a17bcfa6ede3dd2c7013863
 Source12:	ftp://ftp.kde.org/pub/kde/stable/%{_kdever}/src/kde-i18n/%{name}-el-%{version}.tar.bz2
-# Source12-md5:	bd70e25fc9ad9ac7c09584bab498cf4c
+# Source12-md5:	684fa286f3541eab5b55ee141180e2af
 Source13:	ftp://ftp.kde.org/pub/kde/stable/%{_kdever}/src/kde-i18n/%{name}-en_GB-%{version}.tar.bz2
-# Source13-md5:	bb505653bdd061665b48dd1438a7373d
+# Source13-md5:	0f4f0bf3a7d0501bd7211687e11fdcaa
 Source14:	ftp://ftp.kde.org/pub/kde/stable/%{_kdever}/src/kde-i18n/%{name}-eo-%{version}.tar.bz2
-# Source14-md5:	0028cfb93075bba73d902d68d56ab529
+# Source14-md5:	56aa8b57be70ade555fc5ce5aaa187b4
 Source15:	ftp://ftp.kde.org/pub/kde/stable/%{_kdever}/src/kde-i18n/%{name}-es-%{version}.tar.bz2
-# Source15-md5:	8bf984ce3aaaa7d58156458d4eafd5bd
+# Source15-md5:	8a4c7ccf28b6b11ebcbd7502c6505245
 Source16:	ftp://ftp.kde.org/pub/kde/stable/%{_kdever}/src/kde-i18n/%{name}-et-%{version}.tar.bz2
-# Source16-md5:	4c6be2284f34897fffa4cdce85f51fb4
+# Source16-md5:	8b23d4585f1621dd8184709bc2f3d2ab
 Source17:	ftp://ftp.kde.org/pub/kde/stable/%{_kdever}/src/kde-i18n/%{name}-eu-%{version}.tar.bz2
-# Source17-md5:	ef6917edb2c87f2386feb7c1b2d175c7
-Source18:        ftp://ftp.kde.org/pub/kde/stable/%{_kdever}/src/kde-i18n/%{name}-fa-%{version}.tar.bz2
-# Source18-md5:	e4e976adb8eb5150ff35436f38f4e218
+# Source17-md5:	bfbc72fd194f37276d7ff9cc0eaf7458
+Source18:	ftp://ftp.kde.org/pub/kde/stable/%{_kdever}/src/kde-i18n/%{name}-fa-%{version}.tar.bz2
+# Source18-md5:	c6f39016be6ec0fa53c032645d9d7228
 Source19:	ftp://ftp.kde.org/pub/kde/stable/%{_kdever}/src/kde-i18n/%{name}-fi-%{version}.tar.bz2
-# Source19-md5:	f4b68d979d9181561e04e0ec3cb6c5f2
+# Source19-md5:	a94da3fb9427b410cd6a61731317d458
 Source20:	ftp://ftp.kde.org/pub/kde/stable/%{_kdever}/src/kde-i18n/%{name}-fr-%{version}.tar.bz2
-# Source20-md5:	aec9d5ab04f9dc5a3cc4a8093bd9f7d4
+# Source20-md5:	8ce740f45eebca8f87bdd6faf2d61d44
 Source21:	ftp://ftp.kde.org/pub/kde/stable/%{_kdever}/src/kde-i18n/%{name}-fy-%{version}.tar.bz2
-# Source21-md5:	643d1f5d1ff3a21e2b16a8bcdd4b477d
+# Source21-md5:	786f0ef32f710b94a2965e6b197cbb6a
 Source22:	ftp://ftp.kde.org/pub/kde/stable/%{_kdever}/src/kde-i18n/%{name}-ga-%{version}.tar.bz2
-# Source22-md5:	b98c98d80e2a5f8e4d1935df49ad92f0
-Source23:        ftp://ftp.kde.org/pub/kde/stable/%{_kdever}/src/kde-i18n/%{name}-gl-%{version}.tar.bz2
-# Source23-md5:	a9b224d7a4cc7011401e7b8b305667f5
+# Source22-md5:	83addfc5f91ce2028eccae8886669819
+Source23:	ftp://ftp.kde.org/pub/kde/stable/%{_kdever}/src/kde-i18n/%{name}-gl-%{version}.tar.bz2
+# Source23-md5:	dc53c6fa22e505dfdfe723af467d4ed0
 Source24:	ftp://ftp.kde.org/pub/kde/stable/%{_kdever}/src/kde-i18n/%{name}-he-%{version}.tar.bz2
-# Source24-md5:	3a5c77420709d437521c2a9b7d4183a5
+# Source24-md5:	8578ada5131d1a4da7f714a52c6972c0
 Source25:	ftp://ftp.kde.org/pub/kde/stable/%{_kdever}/src/kde-i18n/%{name}-hi-%{version}.tar.bz2
-# Source25-md5:	afdc78d57f13e7999178d5784222e0be
+# Source25-md5:	2e7f52f02ea4a97986e0a78e26b7eafc
 Source26:	ftp://ftp.kde.org/pub/kde/stable/%{_kdever}/src/kde-i18n/%{name}-hr-%{version}.tar.bz2
-# Source26-md5:	04fcf08871542ff837a56c33b1544f5e
+# Source26-md5:	bbcc75cc0e16f964321df9cfa5b2aa78
 Source27:	ftp://ftp.kde.org/pub/kde/stable/%{_kdever}/src/kde-i18n/%{name}-hu-%{version}.tar.bz2
-# Source27-md5:	9e4108754b8b9d84157f8a139749f96e
+# Source27-md5:	3911e1c525b6411c30b3848ec6d95503
 Source28:	ftp://ftp.kde.org/pub/kde/stable/%{_kdever}/src/kde-i18n/%{name}-is-%{version}.tar.bz2
-# Source28-md5:	9ecfc0c82796bca3f7cbb621b2535b51
+# Source28-md5:	381d659a746dd70eea9ea23c5fb80464
 Source29:	ftp://ftp.kde.org/pub/kde/stable/%{_kdever}/src/kde-i18n/%{name}-it-%{version}.tar.bz2
-# Source29-md5:	1d2c594bf5c6f853822ae869ae101373
+# Source29-md5:	1c637c5cebac6d61c13be2c56215e321
 Source30:	ftp://ftp.kde.org/pub/kde/stable/%{_kdever}/src/kde-i18n/%{name}-ja-%{version}.tar.bz2
-# Source30-md5:	404c4ad98acc237eb4ea36b1b637f708
-Source31:        ftp://ftp.kde.org/pub/kde/stable/%{_kdever}/src/kde-i18n/%{name}-km-%{version}.tar.bz2
-# Source31-md5:	b3aebc0c475b6a297d15bef69d630483
-Source32:        ftp://ftp.kde.org/pub/kde/stable/%{_kdever}/src/kde-i18n/%{name}-ko-%{version}.tar.bz2
-# Source32-md5:	6e04c93815138fb78b182e82335a2b74
+# Source30-md5:	30e060d0bd29cfae1d9cd85d4ea91d7f
+Source31:	ftp://ftp.kde.org/pub/kde/stable/%{_kdever}/src/kde-i18n/%{name}-km-%{version}.tar.bz2
+# Source31-md5:	67de1f4b039a6f508d366a51798236e6
+Source32:	ftp://ftp.kde.org/pub/kde/stable/%{_kdever}/src/kde-i18n/%{name}-ko-%{version}.tar.bz2
+# Source32-md5:	ef3c8adc2ab7ffc01b55b21b4207ae85
 Source33:	ftp://ftp.kde.org/pub/kde/stable/%{_kdever}/src/kde-i18n/%{name}-lt-%{version}.tar.bz2
-# Source33-md5:	f03e5c7dac20f93f215c01e4f76de2bc
-Source34:        ftp://ftp.kde.org/pub/kde/stable/%{_kdever}/src/kde-i18n/%{name}-lv-%{version}.tar.bz2
-# Source34-md5:	4c3f19b6208784da447535d39cbe617b
+# Source33-md5:	d0de424f8ec7656306c96efc0450500e
+Source34:	ftp://ftp.kde.org/pub/kde/stable/%{_kdever}/src/kde-i18n/%{name}-lv-%{version}.tar.bz2
+# Source34-md5:	edc292438b85eed25df2e3c1c2e34c96
 Source35:	ftp://ftp.kde.org/pub/kde/stable/%{_kdever}/src/kde-i18n/%{name}-mk-%{version}.tar.bz2
-# Source35-md5:	e047bf6f6eb21af2530781aabe871c55
-Source36:        ftp://ftp.kde.org/pub/kde/stable/%{_kdever}/src/kde-i18n/%{name}-mn-%{version}.tar.bz2
-# Source36-md5:	8dde14be38b61dd41e6a7ed456203370
-Source37:        ftp://ftp.kde.org/pub/kde/stable/%{_kdever}/src/kde-i18n/%{name}-ms-%{version}.tar.bz2
-# Source37-md5:	ea00b5ade265ab07513ba3c61443daaf
+# Source35-md5:	c67ba6451e9a78edb674f9ce8bbd1a76
+Source36:	ftp://ftp.kde.org/pub/kde/stable/%{_kdever}/src/kde-i18n/%{name}-mn-%{version}.tar.bz2
+# Source36-md5:	f613fa9ee20aaca9f5907ef57fea84a5
+Source37:	ftp://ftp.kde.org/pub/kde/stable/%{_kdever}/src/kde-i18n/%{name}-ms-%{version}.tar.bz2
+# Source37-md5:	cbd880bef879a2cb3fc493d203193f3f
 Source38:	ftp://ftp.kde.org/pub/kde/stable/%{_kdever}/src/kde-i18n/%{name}-nb-%{version}.tar.bz2
-# Source38-md5:	a9d408cb53d33d9ad2a27b7e75878ff2
+# Source38-md5:	8fef7b3f29ba8eb68ebd23f228af26ce
 Source39:	ftp://ftp.kde.org/pub/kde/stable/%{_kdever}/src/kde-i18n/%{name}-nds-%{version}.tar.bz2
-# Source39-md5:	11c2c720ca547e95ae0e3ff620525219
+# Source39-md5:	00be9bd313232969258e49fe42bedf7d
 Source40:	ftp://ftp.kde.org/pub/kde/stable/%{_kdever}/src/kde-i18n/%{name}-nl-%{version}.tar.bz2
-# Source40-md5:	5253d78852e4692abbfaf422eb13612f
+# Source40-md5:	2cc0069ac1c8b5fde1dbc87df90329a7
 Source41:	ftp://ftp.kde.org/pub/kde/stable/%{_kdever}/src/kde-i18n/%{name}-nn-%{version}.tar.bz2
-# Source41-md5:	e8f4d8fc6600f34667c2426908e9e87c
+# Source41-md5:	303be4ff9cfb38617e4d30534c3b570b
 Source42:	ftp://ftp.kde.org/pub/kde/stable/%{_kdever}/src/kde-i18n/%{name}-pa-%{version}.tar.bz2
-# Source42-md5:	c62a690a4e8e2f20da3e69ad9459168b
+# Source42-md5:	ec6c5fd0ef940497993b5b6913445412
 Source43:	ftp://ftp.kde.org/pub/kde/stable/%{_kdever}/src/kde-i18n/%{name}-pl-%{version}.tar.bz2
-# Source43-md5:	dd1a8db5e7ac7fb7fbf88fc89c6248d6
+# Source43-md5:	e058a3964abce47d8cd98c8edb49d6f2
 Source44:	ftp://ftp.kde.org/pub/kde/stable/%{_kdever}/src/kde-i18n/%{name}-pt-%{version}.tar.bz2
-# Source44-md5:	14e6a97e5f03902449ef7f79a8c6ca3f
+# Source44-md5:	e12cbd70fd6f95309f03ace2a7d3eb41
 Source45:	ftp://ftp.kde.org/pub/kde/stable/%{_kdever}/src/kde-i18n/%{name}-pt_BR-%{version}.tar.bz2
-# Source45-md5:	94bf46c3b6b3f2f3d315c17b7b0df496
+# Source45-md5:	24fa0b4c146fce9cc7a0046865a9fd94
 Source46:	ftp://ftp.kde.org/pub/kde/stable/%{_kdever}/src/kde-i18n/%{name}-ro-%{version}.tar.bz2
-# Source46-md5:	5dcaf0e47bc367bbc8a93b8325e95007
+# Source46-md5:	b903996011ae71248f14ed20c55dce80
 Source47:	ftp://ftp.kde.org/pub/kde/stable/%{_kdever}/src/kde-i18n/%{name}-ru-%{version}.tar.bz2
-# Source47-md5:	8f6c9961e3df806d1bb2ecab073436fe
-Source48:        ftp://ftp.kde.org/pub/kde/stable/%{_kdever}/src/kde-i18n/%{name}-rw-%{version}.tar.bz2
-# Source48-md5:	69c161066d1f8f51b9442728b8d1939a
+# Source47-md5:	a134f766c77f2bbe72761c8d06aa19f1
+Source48:	ftp://ftp.kde.org/pub/kde/stable/%{_kdever}/src/kde-i18n/%{name}-rw-%{version}.tar.bz2
+# Source48-md5:	d911f3ddd2af7808c26590aac381d142
 Source49:	ftp://ftp.kde.org/pub/kde/stable/%{_kdever}/src/kde-i18n/%{name}-se-%{version}.tar.bz2
-# Source49-md5:	12eda3a6000f45624dba73a43e0151db
+# Source49-md5:	0f39581e40e405012ab83a58fd77bfd8
 Source50:	ftp://ftp.kde.org/pub/kde/stable/%{_kdever}/src/kde-i18n/%{name}-sk-%{version}.tar.bz2
-# Source50-md5:	64289a8a8d2ffd4de136faca3b901453
+# Source50-md5:	567a3062c6b7b7cf69fac54a8c255c91
 Source51:	ftp://ftp.kde.org/pub/kde/stable/%{_kdever}/src/kde-i18n/%{name}-sl-%{version}.tar.bz2
-# Source51-md5:	29618443a77a8b657f6003ce28db8471
+# Source51-md5:	4df423236ce7410bc9108d9208beafaa
 Source52:	ftp://ftp.kde.org/pub/kde/stable/%{_kdever}/src/kde-i18n/%{name}-sr-%{version}.tar.bz2
-# Source52-md5:	305e7594a705c1ffaf566f0adb543dc8
+# Source52-md5:	8ef952cac32b9b1f97575e3ace02bfc0
 Source53:	ftp://ftp.kde.org/pub/kde/stable/%{_kdever}/src/kde-i18n/%{name}-sr@Latn-%{version}.tar.bz2
-# Source53-md5:	f3a2dfb04cfa1d41ec55d2e5112654a7
-Source54:        ftp://ftp.kde.org/pub/kde/stable/%{_kdever}/src/kde-i18n/%{name}-ss-%{version}.tar.bz2
-# Source54-md5:	5a787015dfd4ac97defae1e05358e4ec
+# Source53-md5:	c37bba103c7956c6d2a518f86d23e2e8
+Source54:	ftp://ftp.kde.org/pub/kde/stable/%{_kdever}/src/kde-i18n/%{name}-ss-%{version}.tar.bz2
+# Source54-md5:	eb557bf9d64df175265f8588063343bb
 Source55:	ftp://ftp.kde.org/pub/kde/stable/%{_kdever}/src/kde-i18n/%{name}-sv-%{version}.tar.bz2
-# Source55-md5:	34837afb8eb7c808ffeecdb7dff66a98
+# Source55-md5:	d3d71739a1ffcdaa20a35371cbac48ee
 Source56:	ftp://ftp.kde.org/pub/kde/stable/%{_kdever}/src/kde-i18n/%{name}-ta-%{version}.tar.bz2
-# Source56-md5:	4776430c0e6d5aa4455ebc8406e8a373
+# Source56-md5:	05d4060272ef4768292cc556505296cf
 Source57:	ftp://ftp.kde.org/pub/kde/stable/%{_kdever}/src/kde-i18n/%{name}-tg-%{version}.tar.bz2
-# Source57-md5:	33331fd43fa6f7026ca40dd95184dfa2
+# Source57-md5:	d194d2dec68878c8014a21bc73b88a5b
 Source58:	ftp://ftp.kde.org/pub/kde/stable/%{_kdever}/src/kde-i18n/%{name}-tr-%{version}.tar.bz2
-# Source58-md5:	0fd7a1e932ec5bf1bfe494ee00b3cd09
+# Source58-md5:	d60ba5802f565cd7568bd4359fe01f06
 Source59:	ftp://ftp.kde.org/pub/kde/stable/%{_kdever}/src/kde-i18n/%{name}-uk-%{version}.tar.bz2
-# Source59-md5:	039bf39e0b7df0906358667f2bbefe46
-Source60:        ftp://ftp.kde.org/pub/kde/stable/%{_kdever}/src/kde-i18n/%{name}-uz-%{version}.tar.bz2
-# Source60-md5:	2b443fcb4e226bb8ce18829e734e6ad7
+# Source59-md5:	8c4a0a6a1779f09d84b6ddfe55df7ba9
+Source60:	ftp://ftp.kde.org/pub/kde/stable/%{_kdever}/src/kde-i18n/%{name}-uz-%{version}.tar.bz2
+# Source60-md5:	4c35aa1f484734ee17594142d1e0e7fe
 Source61:	ftp://ftp.kde.org/pub/kde/stable/%{_kdever}/src/kde-i18n/%{name}-zh_CN-%{version}.tar.bz2
-# Source61-md5:	aba75e252510e999a17650994934065c
-Source62:        ftp://ftp.kde.org/pub/kde/stable/%{_kdever}/src/kde-i18n/%{name}-zh_TW-%{version}.tar.bz2
-# Source62-md5:	833f3c6c4ae5ea433509ff48de88019a
+# Source61-md5:	809fc565769b2dffed4098d4a3230296
+Source62:	ftp://ftp.kde.org/pub/kde/stable/%{_kdever}/src/kde-i18n/%{name}-zh_TW-%{version}.tar.bz2
+# Source62-md5:	9bf0f18a06e4a915a6868a4eba15d0f2
+Patch0:		%{name}-es.patch
 
 %if %{with alltogether}
-# NOTE: "Affrikaans", "Norwegian_Bookmal" and "Portugnese" are here
+# NOTE:		"Affrikaans", "Norwegian_Bookmal" and "Portugnese" are here
 # intentionally, to allow upgrade from packages with misspelled names
+Requires:	kde-i18n-base
 Obsoletes:	kde-i18n-Affrikaans
 Obsoletes:	kde-i18n-Afrikaans
 Obsoletes:	kde-i18n-Arabic
 Obsoletes:	kde-i18n-Azerbaijani
+Obsoletes:	kde-i18n-Basque
 Obsoletes:	kde-i18n-Bengali
 Obsoletes:	kde-i18n-Bosnian
+Obsoletes:	kde-i18n-Brazil
+Obsoletes:	kde-i18n-Brazil_Portugnese
+Obsoletes:	kde-i18n-Brazil_Portuguese
+Obsoletes:	kde-i18n-British
 Obsoletes:	kde-i18n-Bulgarian
 Obsoletes:	kde-i18n-Catalan
+Obsoletes:	kde-i18n-Chinese
+Obsoletes:	kde-i18n-Chinese-Big5
+Obsoletes:	kde-i18n-Croatian
 Obsoletes:	kde-i18n-Cymraeg
 Obsoletes:	kde-i18n-Czech
 Obsoletes:	kde-i18n-Danish
-Obsoletes:	kde-i18n-German
-Obsoletes:	kde-i18n-Greek
+Obsoletes:	kde-i18n-Dutch
 Obsoletes:	kde-i18n-English_UK
-Obsoletes:	kde-i18n-British
 Obsoletes:	kde-i18n-Esperanto
-Obsoletes:	kde-i18n-Spanish
 Obsoletes:	kde-i18n-Estonian
-Obsoletes:	kde-i18n-Basque
 Obsoletes:	kde-i18n-Farsi
 Obsoletes:	kde-i18n-Finnish
 Obsoletes:	kde-i18n-French
 Obsoletes:	kde-i18n-Frisian
-Obsoletes:	kde-i18n-Irish
 Obsoletes:	kde-i18n-Galician
+Obsoletes:	kde-i18n-Gascon_Occitan
+Obsoletes:	kde-i18n-Gascon_occitan
+Obsoletes:	kde-i18n-German
+Obsoletes:	kde-i18n-Greek
 Obsoletes:	kde-i18n-Hebrew
 Obsoletes:	kde-i18n-Hindi
-Obsoletes:	kde-i18n-Croatian
-Obsoletes:	kde-i18n-Upper_Sorbian
 Obsoletes:	kde-i18n-Hungarian
-Obsoletes:	kde-i18n-Indonesian
 Obsoletes:	kde-i18n-Icelandic
+Obsoletes:	kde-i18n-Indonesian
+Obsoletes:	kde-i18n-Irish
 Obsoletes:	kde-i18n-Italian
 Obsoletes:	kde-i18n-Japanese
 Obsoletes:	kde-i18n-Korean
-Obsoletes:	kde-i18n-Lithuanian
 Obsoletes:	kde-i18n-Lao
 Obsoletes:	kde-i18n-Latvian
-Obsoletes:	kde-i18n-Maori
-Obsoletes:	kde-i18n-Macedonian
-Obsoletes:	kde-i18n-Maltese
-Obsoletes:	kde-i18n-Malay
-Obsoletes:	kde-i18n-Mongolian
+Obsoletes:	kde-i18n-Lithuanian
 Obsoletes:	kde-i18n-Low_Saxon
-Obsoletes:	kde-i18n-Dutch
+Obsoletes:	kde-i18n-Macedonian
+Obsoletes:	kde-i18n-Malay
+Obsoletes:	kde-i18n-Maltese
+Obsoletes:	kde-i18n-Maori
+Obsoletes:	kde-i18n-Mongolian
+Obsoletes:	kde-i18n-Northern_Sami
+Obsoletes:	kde-i18n-Northern_Sotho
 Obsoletes:	kde-i18n-Norwegian
 Obsoletes:	kde-i18n-Norwegian_Bokmaal
 Obsoletes:	kde-i18n-Norwegian_Bookmal
 Obsoletes:	kde-i18n-Norwegian_Nynorsk
-Obsoletes:	kde-i18n-Northern_Sotho
-Obsoletes:	kde-i18n-Gascon_occitan
-Obsoletes:	kde-i18n-Gascon_Occitan
-Obsoletes:	kde-i18n-Punjabi
 Obsoletes:	kde-i18n-Polish
 Obsoletes:	kde-i18n-Portugnese
 Obsoletes:	kde-i18n-Portuguese
-Obsoletes:	kde-i18n-Brazil
-Obsoletes:	kde-i18n-Brazil_Portugnese
-Obsoletes:	kde-i18n-Brazil_Portuguese
+Obsoletes:	kde-i18n-Punjabi
 Obsoletes:	kde-i18n-Romanian
 Obsoletes:	kde-i18n-Russian
-Obsoletes:	kde-i18n-Swati
-Obsoletes:	kde-i18n-Northern_Sami
+Obsoletes:	kde-i18n-Serbian
+Obsoletes:	kde-i18n-Simplified_Chinese
 Obsoletes:	kde-i18n-Slovak
 Obsoletes:	kde-i18n-Slovenian
-Obsoletes:	kde-i18n-Serbian
+Obsoletes:	kde-i18n-Spanish
+Obsoletes:	kde-i18n-Swati
 Obsoletes:	kde-i18n-Swedish
 Obsoletes:	kde-i18n-Tajik
 Obsoletes:	kde-i18n-Tamil
 Obsoletes:	kde-i18n-Thai
 Obsoletes:	kde-i18n-Turkish
 Obsoletes:	kde-i18n-Ukrainian
+Obsoletes:	kde-i18n-Upper_Sorbian
 Obsoletes:	kde-i18n-Uzbek
 Obsoletes:	kde-i18n-Venda
 Obsoletes:	kde-i18n-Vietnamese
 Obsoletes:	kde-i18n-Walloon
 Obsoletes:	kde-i18n-Xhosa
-Obsoletes:	kde-i18n-Simplified_Chinese
-Obsoletes:	kde-i18n-Chinese
-Obsoletes:	kde-i18n-Chinese-Big5
 Obsoletes:	kde-i18n-Zulu
-Requires:	kde-i18n-base
 %endif
 BuildRequires:	gettext-devel
 # It creates symlinks to some not-translated files.
-###BuildRequires:	unsermake >= 040511
 BuildRequires:	kdelibs-devel >= 9:%{version}
 BuildRequires:	libxml2-progs >= 2.4.2
+###BuildRequires:	unsermake >= 040511
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
@@ -242,90 +245,105 @@ KDE - wsparcie dla wielu jêzyków.
 Summary:	Empty metapackage to handle obsoletes
 Summary(pl):	Pusty metapakiet z obsoletes
 Group:		X11/Applications
+Obsoletes:	common-filemanagement-i18n
+Obsoletes:	kde-decoration-b2-i18n
+Obsoletes:	kde-decoration-cde-i18n
+Obsoletes:	kde-decoration-common-i18n
+Obsoletes:	kde-decoration-glow-i18n
+Obsoletes:	kde-decoration-icewm-i18n
+Obsoletes:	kde-decoration-kde1-i18n
+Obsoletes:	kde-decoration-kstep-i18n
+Obsoletes:	kde-decoration-modernsys-i18n
+Obsoletes:	kde-decoration-openlook-i18n
+Obsoletes:	kde-decoration-plastik-i18n
+Obsoletes:	kde-decoration-quartz-i18n
+Obsoletes:	kde-decoration-riscos-i18n
+Obsoletes:	kde-decoration-system-i18n
+Obsoletes:	kde-i18n-kdelibs
+Obsoletes:	kde-kgreet-classic-i18n
+Obsoletes:	kde-kio-imap4-i18n
+Obsoletes:	kde-kio-ldap-i18n
+Obsoletes:	kde-kio-newimap4-i18n
+Obsoletes:	kde-kio-nntp-i18n
+Obsoletes:	kde-kio-pop3-i18n
+Obsoletes:	kde-kio-smtp-i18n
+Obsoletes:	kde-style-plastik-i18n
 Obsoletes:	kdeaccessibility-i18n
 Obsoletes:	kdeaccessibility-kmag-i18n
 Obsoletes:	kdeaccessibility-kmousetool-i18n
 Obsoletes:	kdeaccessibility-kmouth-i18n
+Obsoletes:	kdeaddons-ark-i18n
+Obsoletes:	kdeaddons-atlantikdesigner-i18n
+Obsoletes:	kdeaddons-fsview-i18n
 Obsoletes:	kdeaddons-i18n
+Obsoletes:	kdeaddons-kaddressbook-i18n
 Obsoletes:	kdeaddons-kate-i18n
 Obsoletes:	kdeaddons-kicker-i18n
 Obsoletes:	kdeaddons-konqueror-i18n
-Obsoletes:	kdeaddons-atlantikdesigner-i18n
 Obsoletes:	kdeaddons-kontact-i18n
 Obsoletes:	kdeaddons-ksig-i18n
-Obsoletes:	kdeaddons-kaddressbook-i18n
-Obsoletes:	kdeaddons-fsview-i18n
-Obsoletes:	kdeaddons-noatun-i18n
 Obsoletes:	kdeaddons-kvim-i18n
+Obsoletes:	kdeaddons-lnkforward-i18n
+Obsoletes:	kdeaddons-noatun-i18n
 Obsoletes:	kdeadmin-i18n
+Obsoletes:	kdeadmin-kcmlilo-i18n
+Obsoletes:	kdeadmin-kcmlinuz-i18n
 Obsoletes:	kdeadmin-kcron-i18n
 Obsoletes:	kdeadmin-kdat-i18n
 Obsoletes:	kdeadmin-kpackage-i18n
 Obsoletes:	kdeadmin-ksysv-i18n
 Obsoletes:	kdeadmin-kuser-i18n
-Obsoletes:	kdeadmin-kcmlinuz-i18n
-Obsoletes:	kdeadmin-kcmlilo-i18n
 Obsoletes:	kdeartwork-i18n
-Obsoletes:	kde-decoration-cde-i18n
-Obsoletes:	kde-decoration-icewm-i18n
-Obsoletes:	kde-decoration-glow-i18n
-Obsoletes:	kde-decoration-plastik-i18n
-Obsoletes:	kde-style-plastik-i18n
 Obsoletes:	kdeartwork-screensavers-i18n
+Obsoletes:	kdebase-common-filemanagement-i18n
+Obsoletes:	kdebase-core-i18n
 Obsoletes:	kdebase-desktop-i18n
+Obsoletes:	kdebase-desktop-libs-i18n
+Obsoletes:	kdebase-i18n
 Obsoletes:	kdebase-infocenter-i18n
+Obsoletes:	kdebase-kappfinder-i18n
 Obsoletes:	kdebase-kate-i18n
+Obsoletes:	kdebase-kdcop-i18n
+Obsoletes:	kdebase-kdeprintfax-i18n
+Obsoletes:	kdebase-kdialog-i18n
 Obsoletes:	kdebase-kfind-i18n
 Obsoletes:	kdebase-kfontinst-i18n
 Obsoletes:	kdebase-kicker-i18n
+Obsoletes:	kdebase-kicker-libs-i18n
+Obsoletes:	kdebase-kjobviewer-i18n
 Obsoletes:	kdebase-klipper-i18n
 Obsoletes:	kdebase-kmenuedit-i18n
 Obsoletes:	kdebase-konsole-i18n
 Obsoletes:	kdebase-kpager-i18n
-Obsoletes:	kdebase-ksysguard-i18n
-Obsoletes:	kdebase-kwrite-i18n
-Obsoletes:	kdebase-screensavers-i18n
-Obsoletes:	kdm-i18n
-Obsoletes:	konqueror-i18n
-Obsoletes:	kdebase-core-i18n
-Obsoletes:	kdebase-i18n
-Obsoletes:	kde-decoration-b2-i18n
-Obsoletes:	kde-decoration-modernsys-i18n
-Obsoletes:	kde-decoration-quartz-i18n
-Obsoletes:	common-filemanagement-i18n
-Obsoletes:	kdebase-common-filemanagement-i18n
-Obsoletes:	kdebase-desktop-libs-i18n
-Obsoletes:	kdebase-kappfinder-i18n
-Obsoletes:	kdebase-kdcop-i18n
-Obsoletes:	kdebase-kdeprintfax-i18n
-Obsoletes:	kdebase-kdialog-i18n
-Obsoletes:	kdebase-kicker-libs-i18n
-Obsoletes:	kdebase-kjobviewer-i18n
 Obsoletes:	kdebase-kpersonalizer-i18n
+Obsoletes:	kdebase-ksysguard-i18n
 Obsoletes:	kdebase-ksystraycmd-i18n
+Obsoletes:	kdebase-kwrite-i18n
 Obsoletes:	kdebase-libkonq-i18n
-Obsoletes:	konqueror-libs-i18n
 Obsoletes:	kdebase-mailnews-i18n
-Obsoletes:	kdeedu-i18n
+Obsoletes:	kdebase-screensavers-i18n
+Obsoletes:	kdebase-useraccount-i18n
 Obsoletes:	kdeedu-flashkard-i18n
+Obsoletes:	kdeedu-i18n
 Obsoletes:	kdeedu-kalzium-i18n
 Obsoletes:	kdeedu-kbruch-i18n
 Obsoletes:	kdeedu-keduca-i18n
 Obsoletes:	kdeedu-khangman-i18n
 Obsoletes:	kdeedu-kig-i18n
 Obsoletes:	kdeedu-kiten-i18n
+Obsoletes:	kdeedu-klatin-i18n
 Obsoletes:	kdeedu-klettres-i18n
 Obsoletes:	kdeedu-kmessedwords-i18n
 Obsoletes:	kdeedu-kmplot-i18n
 Obsoletes:	kdeedu-kpercentage-i18n
 Obsoletes:	kdeedu-kstars-i18n
 Obsoletes:	kdeedu-ktouch-i18n
+Obsoletes:	kdeedu-kturtle-i18n
 Obsoletes:	kdeedu-kverbos-i18n
 Obsoletes:	kdeedu-kvoctrain-i18n
-Obsoletes:	kdegames-ksmiletris-i18n
-Obsoletes:	kdegames-kmahjongg-i18n
-Obsoletes:	kdegames-i18n
+Obsoletes:	kdeedu-kwordquiz-i18n
 Obsoletes:	kdegames-atlantik-i18n
+Obsoletes:	kdegames-i18n
 Obsoletes:	kdegames-kasteroids-i18n
 Obsoletes:	kdegames-katomic-i18n
 Obsoletes:	kdegames-kbackgammon-i18n
@@ -338,6 +356,7 @@ Obsoletes:	kdegames-kgoldrunner-i18n
 Obsoletes:	kdegames-kjumpingcube-i18n
 Obsoletes:	kdegames-klickety-i18n
 Obsoletes:	kdegames-klines-i18n
+Obsoletes:	kdegames-kmahjongg-i18n
 Obsoletes:	kdegames-kmines-i18n
 Obsoletes:	kdegames-kolf-i18n
 Obsoletes:	kdegames-konquest-i18n
@@ -347,6 +366,7 @@ Obsoletes:	kdegames-kreversi-i18n
 Obsoletes:	kdegames-ksame-i18n
 Obsoletes:	kdegames-kshisen-i18n
 Obsoletes:	kdegames-ksirtet-i18n
+Obsoletes:	kdegames-ksmiletris-i18n
 Obsoletes:	kdegames-ksnake-i18n
 Obsoletes:	kdegames-ksokoban-i18n
 Obsoletes:	kdegames-kspaceduel-i18n
@@ -359,39 +379,43 @@ Obsoletes:	kdegraphics-i18n
 Obsoletes:	kdegraphics-kamera-i18n
 Obsoletes:	kdegraphics-kcoloredit-i18n
 Obsoletes:	kdegraphics-kdvi-i18n
+Obsoletes:	kdegraphics-kfax-i18n
+Obsoletes:	kdegraphics-kfile-i18n
 Obsoletes:	kdegraphics-kgamma-i18n
 Obsoletes:	kdegraphics-kghostview-i18n
 Obsoletes:	kdegraphics-kiconedit-i18n
+Obsoletes:	kdegraphics-kmrml-i18n
+Obsoletes:	kdegraphics-kolourpaint-i18n
 Obsoletes:	kdegraphics-kooka-i18n
 Obsoletes:	kdegraphics-kpaint-i18n
 Obsoletes:	kdegraphics-kpdf-i18n
 Obsoletes:	kdegraphics-kpovmodeler-i18n
 Obsoletes:	kdegraphics-kruler-i18n
 Obsoletes:	kdegraphics-ksnapshot-i18n
+Obsoletes:	kdegraphics-ksvg-i18n
 Obsoletes:	kdegraphics-kuickshow-i18n
 Obsoletes:	kdegraphics-kview-i18n
-Obsoletes:	kdegraphics-kfile-i18n
-Obsoletes:	kdegraphics-kmrml-i18n
-Obsoletes:	kdegraphics-ksvg-i18n
-Obsoletes:	kdegraphics-kfax-i18n
-Obsoletes:	kdemultimedia-i18n
+Obsoletes:	kdelibs-i18n
+Obsoletes:	kdemultimedia-arts-i18n
 Obsoletes:	kdemultimedia-artsbuilder-i18n
 Obsoletes:	kdemultimedia-artscontrol-i18n
-Obsoletes:	kdemultimedia-arts-i18n
+Obsoletes:	kdemultimedia-audiocd-i18n
+Obsoletes:	kdemultimedia-i18n
 Obsoletes:	kdemultimedia-juk-i18n
 Obsoletes:	kdemultimedia-kaboodle-i18n
+Obsoletes:	kdemultimedia-kaudiocreator-i18n
+Obsoletes:	kdemultimedia-kfile-i18n
 Obsoletes:	kdemultimedia-kmid-i18n
 Obsoletes:	kdemultimedia-kmix-i18n
-Obsoletes:	kdemultimedia-kscd-i18n
 Obsoletes:	kdemultimedia-krec-i18n
-Obsoletes:	kdemultimedia-noatun-i18n
-Obsoletes:	kdemultimedia-kfile-i18n
-Obsoletes:	kdemultimedia-audiocd-i18n
-Obsoletes:	kdemultimedia-kaudiocreator-i18n
+Obsoletes:	kdemultimedia-kscd-i18n
 Obsoletes:	kdemultimedia-libkcddb-i18n
+Obsoletes:	kdemultimedia-noatun-i18n
+Obsoletes:	kdenetwork-filesharing-i18n
 Obsoletes:	kdenetwork-i18n
 Obsoletes:	kdenetwork-kdict-i18n
 Obsoletes:	kdenetwork-kget-i18n
+Obsoletes:	kdenetwork-kinetd-i18n
 Obsoletes:	kdenetwork-knewsticker-i18n
 Obsoletes:	kdenetwork-kopete-i18n
 Obsoletes:	kdenetwork-kpf-i18n
@@ -401,53 +425,59 @@ Obsoletes:	kdenetwork-ksirc-i18n
 Obsoletes:	kdenetwork-ktalkd-i18n
 Obsoletes:	kdenetwork-kwifimanager-i18n
 Obsoletes:	kdenetwork-lanbrowser-i18n
-Obsoletes:	kdenetwork-kinetd-i18n
 Obsoletes:	kdenetwork-rss-i18n
+Obsoletes:	kdepim-i18n
 Obsoletes:	kdepim-i18n
 Obsoletes:	kdepim-kaddressbook-i18n
 Obsoletes:	kdepim-kandy-i18n
 Obsoletes:	kdepim-karm-i18n
+Obsoletes:	kdepim-kgantt-i18n
 Obsoletes:	kdepim-kmail-i18n
+Obsoletes:	kdepim-kmail-libs-i18n
 Obsoletes:	kdepim-knode-i18n
 Obsoletes:	kdepim-knotes-i18n
 Obsoletes:	kdepim-konsolekalendar-i18n
 Obsoletes:	kdepim-kontact-i18n
 Obsoletes:	kdepim-korganizer-i18n
+Obsoletes:	kdepim-korganizer-libs-i18n
 Obsoletes:	kdepim-korn-i18n
 Obsoletes:	kdepim-kpilot-i18n
-Obsoletes:	kdepim-libkdepim-i18n
-Obsoletes:	kdepim-libkdenetwork-i18n
-Obsoletes:	kdepim-libksieve-i18n
-Obsoletes:	kdepim-korganizer-libs-i18n
-Obsoletes:	kdepim-libkcal-i18n
 Obsoletes:	kdepim-ktnef-i18n
-Obsoletes:	kdepim-kgantt-i18n
-Obsoletes:	kdesdk-i18n
-Obsoletes:	kdesdk-kfile-i18n
+Obsoletes:	kdepim-libkcal-i18n
+Obsoletes:	kdepim-libkdenetwork-i18n
+Obsoletes:	kdepim-libkdepim-i18n
+Obsoletes:	kdepim-libksieve-i18n
+Obsoletes:	kdepim-libs-i18n
 Obsoletes:	kdesdk-cervisia-i18n
+Obsoletes:	kdesdk-i18n
 Obsoletes:	kdesdk-kbabel-i18n
 Obsoletes:	kdesdk-kbugbuster-i18n
 Obsoletes:	kdesdk-kcachegrind-i18n
-Obsoletes:	kdesdk-kompare-i18n
+Obsoletes:	kdesdk-kfile-i18n
 Obsoletes:	kdesdk-kfilereplace-i18n
+Obsoletes:	kdesdk-kompare-i18n
+Obsoletes:	kdesdk-kspy-i18n
 Obsoletes:	kdesdk-kstartperf-i18n
 Obsoletes:	kdesdk-kuiviewer-i18n
+Obsoletes:	kdesdk-libcvsservice-i18n
 Obsoletes:	kdesdk-spy-i18n
-Obsoletes:	kdesdk-kspy-i18n
 Obsoletes:	kdesdk-umbrello-i18n
-Obsoletes:	kdetoys-i18n
 Obsoletes:	kdetoys-amor-i18n
+Obsoletes:	kdetoys-fifteen-i18n
+Obsoletes:	kdetoys-i18n
 Obsoletes:	kdetoys-kmoon-i18n
 Obsoletes:	kdetoys-kodo-i18n
 Obsoletes:	kdetoys-kteatime-i18n
+Obsoletes:	kdetoys-ktux-i18n
 Obsoletes:	kdetoys-kweather-i18n
 Obsoletes:	kdetoys-kworldclock-i18n
-Obsoletes:	kdetoys-fifteen-i18n
-Obsoletes:	kdetoys-ktux-i18n
-Obsoletes:	kdeutils-i18n
 Obsoletes:	kdeutils-ark-i18n
+Obsoletes:	kdeutils-i18n
 Obsoletes:	kdeutils-kcalc-i18n
 Obsoletes:	kdeutils-kcharselect-i18n
+Obsoletes:	kdeutils-kdelirc-i18n
+Obsoletes:	kdeutils-kdepasswd-i18n
+Obsoletes:	kdeutils-kdessh-i18n
 Obsoletes:	kdeutils-kdf-i18n
 Obsoletes:	kdeutils-kedit-i18n
 Obsoletes:	kdeutils-kfloppy-i18n
@@ -455,50 +485,23 @@ Obsoletes:	kdeutils-kgpg-i18n
 Obsoletes:	kdeutils-khexedit-i18n
 Obsoletes:	kdeutils-kjots-i18n
 Obsoletes:	kdeutils-klaptopdaemon-i18n
+Obsoletes:	kdeutils-kmilo-i18n
 Obsoletes:	kdeutils-kregexpeditor-i18n
 Obsoletes:	kdeutils-ksim-i18n
 Obsoletes:	kdeutils-ktimer-i18n
 Obsoletes:	kdeutils-kwalletmanager-i18n
-Obsoletes:	kdeutils-kdelirc-i18n
 Obsoletes:	kdeutils-userinfo-i18n
-Obsoletes:	kdeutils-kdessh-i18n
-Obsoletes:	kdeutils-kdepasswd-i18n
 Obsoletes:	kdevelop-i18n
-Obsoletes:	quanta-i18n
-Obsoletes:	kdepim-kmail-libs-i18n
-Obsoletes:	kdeutils-kmilo-i18n
-Obsoletes:	kde-i18n-kdelibs
-Obsoletes:	kdelibs-i18n
-Obsoletes:	kde-kgreet-classic-i18n
-Obsoletes:	kde-kio-smtp-i18n
-Obsoletes:	kde-kio-nntp-i18n
-Obsoletes:	kde-kio-imap4-i18n
-Obsoletes:	kde-kio-pop3-i18n
-Obsoletes:	kdeaddons-ark-i18n
-Obsoletes:	kdeaddons-lnkforward-i18n
-Obsoletes:	kdebase-useraccount-i18n
-Obsoletes:	kde-decoration-kde1-i18n
-Obsoletes:	kde-decoration-kstep-i18n
-Obsoletes:	kde-decoration-openlook-i18n
-Obsoletes:	kde-decoration-riscos-i18n
-Obsoletes:	kde-decoration-system-i18n
-Obsoletes:	kde-decoration-common-i18n
-Obsoletes:	kdeedu-klatin-i18n
-Obsoletes:	kdeedu-kturtle-i18n
-Obsoletes:	kdeedu-kwordquiz-i18n
-Obsoletes:	kdegraphics-kolourpaint-i18n
-Obsoletes:	kde-kio-ldap-i18n
-Obsoletes:	kde-kio-newimap4-i18n
-Obsoletes:	kdenetwork-filesharing-i18n
-Obsoletes:	kdepim-i18n
-Obsoletes:	kdepim-libs-i18n
-Obsoletes:	kdesdk-libcvsservice-i18n
 Obsoletes:	kdewebdev-kfilereplace-i18n
 Obsoletes:	kdewebdev-kimagemapeditor-i18n
 Obsoletes:	kdewebdev-klinkstatus-i18n
 Obsoletes:	kdewebdev-kommander-i18n
 Obsoletes:	kdewebdev-kxsldbg-i18n
 Obsoletes:	kdewebdev-quanta-i18n
+Obsoletes:	kdm-i18n
+Obsoletes:	konqueror-i18n
+Obsoletes:	konqueror-libs-i18n
+Obsoletes:	quanta-i18n
 
 %description base
 Empty metapackage to handle obsoletes for individual i18n subpackages.
@@ -1153,7 +1156,7 @@ Summary(pl):	KDE - wsparcie dla jêzyka portugalskiego
 Group:		X11/Applications
 Requires:	%{name}-base = %{version}-%{release}
 # "Portugnese" is here intentionally, to allow upgrade from misspelled packages
-Obsoletes:	%{name}-Portugnese
+Obsoletes:	kde-i18n-Portugnese
 
 %description Portuguese
 K Desktop Environment - Portuguese language support.
@@ -1166,7 +1169,7 @@ Summary:	K Desktop Environment - Portuguese (Brazil) language support
 Summary(pl):	KDE - wsparcie dla jêzyka portugalskiego (odmiany brazylijskiej)
 Group:		X11/Applications
 Requires:	%{name}-base = %{version}-%{release}
-Obsoletes:	%{name}-Brazil_Protugnese
+Obsoletes:	kde-i18n-Brazil_Protugnese
 
 %description Brazil_Portuguese
 K Desktop Environment - Portuguese (Brazil) language support.
@@ -1428,6 +1431,9 @@ KDE - wsparcie dla jêzyka zuluskiego.
 
 %prep
 %setup -q -c -T -a0 -a1 -a2 -a3 -a4 -a5 -a6 -a7 -a8 -a9 -a10 -a11 -a12 -a13 -a14 -a15 -a16 -a17 -a18 -a19 -a20 -a21 -a22 -a23 -a24 -a25 -a26 -a27 -a28 -a29 -a30 -a31 -a32 -a33 -a34 -a35 -a36 -a37 -a38 -a39 -a40 -a41 -a42 -a43 -a44 -a45 -a45 -a47 -a48 -a49
+cd kde-i18n-es-*
+%patch0 -p1
+cd ..
 
 %build
 kde_htmldir="%{_kdedocdir}"; export kde_htmldir
