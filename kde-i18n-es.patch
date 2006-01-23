@@ -9,3 +9,13 @@ diff -ur kde-i18n-es-3.5.1.org/docs/common/Makefile.in kde-i18n-es-3.5.1/docs/co
  	  echo $(INSTALL_DATA) $$base $(DESTDIR)$(kde_htmldir)/$(KDE_LANG)/common/$$base ;\
  	  $(INSTALL_DATA) $(srcdir)/$$base $(DESTDIR)$(kde_htmldir)/$(KDE_LANG)/common/$$base ;\
  	done
+--- kde-i18n-es-3.5.1.org/docs/kdelibs/common/Makefile.in.org	2006-01-23 09:53:53.976455708 +0000
++++ kde-i18n-es-3.5.1/docs/kdelibs/common/Makefile.in	2006-01-23 09:54:11.649929825 +0000
+@@ -512,6 +512,7 @@
+ install-nls:
+ 	$(mkinstalldirs) $(DESTDIR)$(kde_htmldir)/$(KDE_LANG)/common
+ 	@for base in top-right-konqueror.png doctop2-online.png top-middle.png bottom-middle.png docheadergears.png web-doctop.png doctop1.png doctop2.png favicon.ico grad.png kde_logo.png shadow.png top-left.png doctop1a-online.png bottom-left.png 1.png kde_gear_64.png headerbg.png 2.png 3.png 4.png 5.png 6.png 7.png 8.png web-docbottom.png 9.png bottom-right.png doctop1a.png doctop1b.png kmenu.png bottom1.png 10.png kde_logo_bg.png bottom2.png ; do \
++	  rm -f $(DESTDIR)$(kde_htmldir)/$(KDE_LANG)/common/$$base ;\
+ 	  echo $(INSTALL_DATA) $$base $(DESTDIR)$(kde_htmldir)/$(KDE_LANG)/common/$$base ;\
+ 	  $(INSTALL_DATA) $(srcdir)/$$base $(DESTDIR)$(kde_htmldir)/$(KDE_LANG)/common/$$base ;\
+ 	done
