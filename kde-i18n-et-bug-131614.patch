@@ -1,0 +1,1286 @@
+--- kde-i18n-et-3.5.4/docs/kdeedu/kvoctrain/index.docbook~	2006-07-23 17:53:27.000000000 +0300
++++ kde-i18n-et-3.5.4/docs/kdeedu/kvoctrain/index.docbook	2006-08-03 13:32:21.622100415 +0300
+@@ -96,11 +96,11 @@
+ <date
+ >2005-06-06</date>
+ <releaseinfo
+->0.8.3</releaseinfo>
++>0.8.2</releaseinfo>
+ 
+ <abstract
+ ><para
+->&kvoctrain; on &kde; sõnavararakendus, mis aitab harjutada näiteks võõrkeele õppimisel tarvis minevat sõnavara.</para
++>Käesolev käsiraamat kirjeldab &kvoctrain;i versiooni 0.8.2. &kvoctrain; on väike rakendus, mis aitab harjutada võõrkeele õppimisel tarvis minevat sõnavara.</para
+ ></abstract>
+ 
+ <keywordset>
+@@ -148,15 +148,7 @@
+ >&kvoctrain;i kiirtutvustus</title>
+ 
+ <para
+->Selline näeb välja &kvoctrain; esmakäivitusel. Rakenduse saab käivitada kas K <menuchoice
+-><guimenu
+->&kmenu;</guimenu
+->st (<guisubmenu
+->Õppeprogrammid</guisubmenu
+-> <guimenuitem
+->Keeled</guimenuitem
+-></menuchoice
+->) või kiirklahviga <keycombo action="simul"
++>Selline näeb välja &kvoctrain; esmakäivitusel. Rakenduse saab käivitada kas K menüüst (Mäng ja kool -> Keeled) või kiirklahviga <keycombo action="simul"
+ >&Alt;<keycap
+ >F2</keycap
+ ></keycombo
+@@ -177,12 +169,10 @@
+ </screenshot>
+ 
+ <para
+->Rakendusega tutvumist võib alustada näidisfailidest, mille saab avada menüükäsuga <menuchoice
+-><guimenu
++>Rakendusega tutvumist võib alustada näidisfailidest, mille saab avada menüükäsuga <guimenu
+ >Fail</guimenu
+ > <guimenuitem
+ >Ava näidis...</guimenuitem
+-></menuchoice
+ > Praegu on kaks faili, mis võimaldavad &kvoctrain;iga tutvuda. Fail <filename
+ >sample-en.kvtml</filename
+ > näitab sõnavara inglise, saksa ja prantsuse keeles. </para>
+@@ -192,9 +182,7 @@
+ >Fail</guimenu
+ > <guimenuitem
+ >Hangi uut sõnavara...</guimenuitem
+-> See avab <guilabel
+->uue kraami hankimise</guilabel
+-> dialoogi, kus on näha saadaolevad dokumendid. </para>
++> See avab KDE uue kraami hankimise dialoogi, kus on näha saadaolevad dokumendid. </para>
+ 
+ <screenshot>
+ <screeninfo
+@@ -232,10 +220,8 @@
+ >Fail koosneb 26 õppetunnist ning peaks õpetama kirjutama katakanas põhilisi tähti ja silpe. Alustame aga esimese õppetunniga. Vali menüüst <guimenu
+ >Seadistused</guimenu
+ > kirje <guimenuitem
+->&kvoctrain;i seadistamine... </guimenuitem
+-> ning ilmuvas dialoogis kaart <guilabel
+->Piirangud</guilabel
+->. Seal saab määrata, millist õppetundi soovid omandama asuda. Tõsta esile õppetund 1 ning klõpsa seadistuste salvestamiseks nupule <guibutton
++>&kvoctrain;i seadisamine... </guimenuitem
++> ning ilmuvas dialoogis kaart Piirangud. Seal saab määrata, millist õppetundi soovid omandama asuda. Tõsta esile õppetund 1 ning klõpsa seadistuste salvestamiseks nupule <guibutton
+ >Rakenda</guibutton
+ > ja seejärel <guibutton
+ >OK</guibutton
+@@ -260,7 +246,7 @@
+ >, kuidas soovid teadmisi omandama asuda. Mina näiteks valisin <guimenuitem
+ >ri</guimenuitem
+ >, sest tahan õppida romajiga seotud katakana märke. Seejärel valisin alammenüüst <guimenuitem
+->From jp</guimenuitem
++>from jp</guimenuitem
+ > käsu <guimenuitem
+ >Loo mitmevalikuline päring</guimenuitem
+ >, mis avas järgmise dialoogi: </para>
+@@ -555,16 +541,12 @@
+ 
+ <varlistentry id="key-enter">
+ <term
+-><keycombo action="simul"
+->&Ctrl;<keycap
+->Return</keycap
+-></keycombo
++><keycap
++>Enter</keycap
+ ></term>
+ <listitem
+ ><para
+->Avab antud kirje redigeerimise dialoogi <guilabel
+->Omaduste redigeerimine</guilabel
+->.</para
++>Avab antud kirje redigeerimise dialoogi.</para
+ ></listitem>
+ </varlistentry>
+ 
+@@ -575,11 +557,7 @@
+ ></term>
+ <listitem
+ ><para
+->Lisab sõnavara lõppu uue rea. Kursor viiakse kirjele reas <guilabel
+->Originaal</guilabel
+->. Elemente võib redigeerida sealsamas või avada dialoogi <guilabel
+->Omaduste redigeerimine</guilabel
+->. </para>
++>Avab uue originaalkirje dialoogi ning lisab sõnavaranimekirja selle tarbeks uue rea. Kursor liigub samuti sõnavaranimekirja lõppu.</para>
+ <para
+ >Kui oled valinud nutika lisamise, palutakse sisestada algkeele sõna ja tõlked ning lõpetada sisestamine vajutusega klahvile ESC.</para
+ ></listitem>
+@@ -598,14 +576,10 @@
+ 
+ <varlistentry>
+ <term
+-><keycombo action="simul"
+->&Ctrl;<keycap
+->+</keycap
+-></keycombo
+-> või <keycombo action="simul"
+->&Ctrl;<keycap
++><keycap
++>+ </keycap
++> või <keycap
+ >-</keycap
+-></keycombo
+ ></term>
+ <listitem
+ ><para
+@@ -644,8 +618,10 @@
+ >Hiire kasutamine</title>
+ 
+ <para
+->Topeltklõps mõnel väljendil tabelis võimaldab seda sealsamas redigeerida.</para>
+-
++>Topeltklõps mõnel väljendil tabelis avad <link linkend="entry-dlg"
++>dialoogi</link
++>, kus seda saab redigeerida.</para>
++    
+ <para
+ >Klõps hiire <mousebutton
+ >vasaku</mousebutton
+@@ -663,24 +639,19 @@
+ <sect1 id="selections">
+ <title
+ >Valikud</title>
+-<!-- FIXME this seems to be outdates lueck 01.07.2006-->
+-<para
+->Ära võib märkida ka mitu väljendit ning seejärel muuta nende omadusi või salvestada nad uue failina.</para>
+ 
+ <para
+->Kirjel klõpsates märgitakse ära kogu rida.</para>
++>Ära võib märkida ka mitu väljendit ning seejärel muuta nende omadusi või salvestada nad uue failina.</para>
+ 
+ <para
+->Kui kirjel klõpsates hoida all klahvi &Ctrl;, lisatakse kogu rida valikusse. </para>
++>Kui kirjel klõpsates hoida all klahvi &Ctrl;, märgitakse ära kogu rida. Klõps märgitud kirjel tühistab valiku.</para>
+ 
+ <para
+ >Kui kirjel klõpsates hoida all ka klahvi &Shift;, laieneb valik selle kohani, kus kursor eelnevalt asus.</para>
+ 
+ <para
+->Valiku redigeerimisdialoogi avab kiirklahv <keycombo action="simul"
+->&Ctrl;<keycap
+->Return</keycap
+-></keycombo
++>Valiku redigeerimisdialoogi avab vajutus klahvile <keycap
++>Enter</keycap
+ >. Kuid ilmuv dialoog erineb veidi tavalisest: mõnda omadust ei saa kasutada, sest ei ole ju mõtet laiema valiku puhul redigeerida väljendit kui sellist või konkreetse kirjega seotud märkust.</para>
+ 
+ <para
+@@ -718,9 +689,7 @@
+ 
+ <para
+ >Internetis on hulganisti sõnaraamatuid, mis kasutavad erinevate keelte eraldamiseks tabeldusmärki või üht või kaht koolonit. Sellise eraldaja valimiseks kasuta <link linkend="options4-dlg"
+-><guilabel
+->kopeerimise ja asetamise</guilabel
+-> seadistuste</link
++>kopeerimise ja asetamise seadistuste</link
+ > dialoogi (selle avab menüükäsk <guimenu
+ >Seadistused</guimenu
+ > <guimenuitem
+@@ -797,7 +766,7 @@
+ ></entry>
+ <entry
+ ><para
+-><!-- empty description --></para
++></para
+ ></entry>
+ <entry
+ ><para>
+@@ -1197,38 +1166,24 @@
+ 
+ <sect1 id="docprop-dlg">
+ <title
+-><guilabel
+->Dokumendi omaduste</guilabel
+-> dialoog</title>
++>Dokumendi omaduste dialoog</title>
+ 
+ <para
+->Dialoogi saab avada menüükäsuga <menuchoice
+-><guimenu
+->Sõnavara</guimenu
+-> <guimenuitem
+->Dokumendi omadused</guimenuitem
+-></menuchoice
+->. Dialoog koosneb mitmest kaardist, mis määravad ainult parajasti avatud dokumendi mitmesuguseid omadusi. Siinsed seadistused salvestatakse sõnavarafailis.</para>
++>See dialoog koosneb mitmest kaardist, mis määravad ainult parajasti avatud dokumendi mitmesuguseid omadusi. Siinsed seadistused salvestatakse sõnavarafailis.</para>
+ 
+ <sect2 id="docprop1-dlg">
+ <title
+-><guilabel
+->Üldised</guilabel
+-> omadused</title>
++>Üldised omadused</title>
+ 
+ <screenshot>
+ <screeninfo
+-><guilabel
+->Dokumendi üldised omadused</guilabel
+-></screeninfo>
++>Dokumendi üldised omadused</screeninfo>
+ <mediaobject>
+ <imageobject>
+ <imagedata fileref="docprop1-dlg.png" format="PNG"/></imageobject>
+ <textobject
+ ><phrase
+-><guilabel
+->Dokumendi üldised omadused</guilabel
+-></phrase
++>Dokumendi üldised omadused</phrase
+ ></textobject>
+ </mediaobject>
+ </screenshot>
+@@ -1287,23 +1242,17 @@
+ 
+ <sect2 id="docprop2-dlg">
+ <title
+-><guilabel
+->Õppetundide</guilabel
+-> kirjeldused</title>
++>Õppetundide kirjeldused</title>
+ 
+ <screenshot>
+ <screeninfo
+-><guilabel
+->Õppetundide</guilabel
+-> kirjelduste dialoog</screeninfo>
++>Õppetundide kirjelduste dialoog</screeninfo>
+ <mediaobject>
+ <imageobject
+ ><imagedata fileref="docprop2-dlg.png" format="PNG"/></imageobject>
+ <textobject
+ ><phrase
+-><guilabel
+->Õppetundide</guilabel
+-> kirjeldused</phrase
++>Õppetundide kirjeldused</phrase
+ ></textobject>
+ </mediaobject>
+ </screenshot>
+@@ -1320,9 +1269,7 @@
+ 
+ <sect2 id="docprop3-dlg">
+ <title
+-><guilabel
+->Tüüpide</guilabel
+-> kirjeldused</title>
++>Tüüpide kirjeldused</title>
+ 
+ <para
+ >Sarnaselt eelmisele, õppetundide kaardile, saab siin redigeerida oma väljendite tüüpe.</para>
+@@ -1334,9 +1281,7 @@
+ 
+ <sect2 id="docprop4-dlg">
+ <title
+-><guilabel
+->Ajavormid</guilabel
+-></title>
++>Ajavormid</title>
+ 
+ <para
+ >Järgmisel kaardil võib lisada vajalikke ajavorme.</para>
+@@ -1345,9 +1290,7 @@
+ 
+ <sect2 id="docprop5-dlg">
+ <title
+-><guilabel
+->Kasutusala</guilabel
+-> sildid</title>
++>Kasutusala sildid</title>
+ 
+ <para
+ >Sellel kaardil saab lisada omaloodud kasutusala silte.</para>
+@@ -1363,23 +1306,17 @@
+ 
+ <sect2 id="docprop6-dlg">
+ <title
+-><guilabel
+->Dokumendi valikud</guilabel
+-></title>
++>Dokumendi valikud</title>
+ 
+ <screenshot>
+ <screeninfo
+-><guilabel
+->Dokumendi valikute</guilabel
+-> dialoog</screeninfo>
++>Dokumendi valikute dialoog</screeninfo>
+ <mediaobject>
+ <imageobject
+ ><imagedata fileref="docprop6-dlg.png" format="PNG"/></imageobject>
+ <textobject
+ ><phrase
+-><guilabel
+->Dokumendi valikud</guilabel
+-></phrase
++>Dokumendi valikud</phrase
+ ></textobject>
+ </mediaobject>
+ </screenshot>
+@@ -1412,30 +1349,17 @@
+ 
+ <sect1 id="langprop-dlg">
+ <title
+-><guilabel
+->Keele omaduste</guilabel
+-> dialoog</title>
+-
+-<para
+->Selle dialoogi saab avada menüükäsuga <guimenu
+->Sõnavara</guimenu
+-> <guimenuitem
+->Keele omadused</guimenuitem
+->.</para>
++>Keele omaduste dialoog</title>
+ 
+ <screenshot>
+ <screeninfo
+-><guilabel
+->Keele omaduste</guilabel
+-> dialoog</screeninfo>
++>Keele omaduste dialoog</screeninfo>
+ <mediaobject>
+ <imageobject
+ ><imagedata fileref="lang1-dlg.png" format="PNG"/></imageobject>
+ <textobject
+ ><phrase
+-><guilabel
+->Keele omadused</guilabel
+-></phrase
++>Keele omadused</phrase
+ ></textobject>
+ </mediaobject>
+ </screenshot>
+@@ -1447,7 +1371,7 @@
+ <varlistentry>
+ <term
+ ><guilabel
+->Artiklid</guilabel
++>Artikkel</guilabel
+ ></term>
+ <listitem
+ ><para
+@@ -1488,19 +1412,11 @@
+ >Seadistustedialoog</title>
+ 
+ <para
+->Selle dialoogi saab avada menüükäsuga <menuchoice
+-><guimenu
+->Seadistused</guimenu
+-> <guimenuitem
+->&kvoctrain;i seadistamine...</guimenuitem
+-></menuchoice
+-> Dialoogi seadistused on globaalsed ja mõjutavad kõiki sõnavarafaile.</para>
++>Selle dialoogi seadistused on üldised ja puudutavad iga sõnavarafaili.</para>
+ 
+ <sect2 id="settings1-dlg">
+ <title
+-><guilabel
+->Üldine</guilabel
+-></title>
++>Üldine</title>
+ 
+ <screenshot>
+ <screeninfo
+@@ -1532,7 +1448,7 @@
+ <varlistentry>
+ <term
+ ><guilabel
+->Varukoopia loomise intervall: 15 min</guilabel
++>Automaatse varukoopia tegemise intervall</guilabel
+ ></term>
+ <listitem
+ ><para
+@@ -1551,7 +1467,9 @@
+ ></term>
+ <listitem
+ ><para
+->Kui see on sisse lülitatud, pakutakse sulle pidevalt kirjedialoogi. Pärast esimese algkeele väljendi sisestamist tuleb lisada vastavad tõlked. Seejärel saad sisestada järgmise algkeele väljendi ja selle tõlked ning nii edasi, kuni vajutad klahvi &Esc;.</para>
++>Kui see on sisse lülitatud, pakutakse sulle pidevalt kirjedialoogi. Pärast esimese algkeele väljendi sisestamist tuleb lisada vastavad tõlked. Seejärel saad sisestada järgmise algkeele väljendi ja selle tõlked ning nii edasi, kuni vajutad klahvi <keycap
++>ESC</keycap
++>.</para>
+ <para
+ >Selle režiimi korral tähendab õppetunni redigeerimine dialoogis sama, mis õppetunni valimine tööriistaribal. Nii on see juba ette ära valitud, kui ilmub järgmine kirjedialoog.</para>
+ <para
+@@ -1617,23 +1535,17 @@
+ 
+ <sect2 id="settings2-dlg">
+ <title
+-><guilabel
+->Keeled</guilabel
+-></title>
++>Keeled</title>
+ 
+ <screenshot>
+ <screeninfo
+-><guilabel
+->Keeleseadistuste</guilabel
+-> dialoog</screeninfo>
++>Keeleseadistuste dialoog</screeninfo>
+ <mediaobject>
+ <imageobject
+ ><imagedata fileref="options2-dlg.png" format="PNG"/></imageobject>
+ <textobject
+ ><phrase
+-><guilabel
+->Keeleseadistuste</guilabel
+-> dialoog</phrase
++>Keeleseadistuste dialoog</phrase
+ ></textobject>
+ </mediaobject>
+ </screenshot>
+@@ -1712,29 +1624,18 @@
+ <varlistentry>
+ <term
+ ><guilabel
+->Klaviatuuripaigutus</guilabel
+-></term>
+-<listitem
+-><para
+->Veel kirjutamata</para>
+-</listitem>
+-</varlistentry>
+-
+-<varlistentry>
+-<term
+-><guibutton
+->Kustuta</guibutton
++>Kustuta</guilabel
+ ></term>
+ <listitem
+ ><para
+->Klõps sellele nupule kustutab parajasti valitud keelekoodi nimekirjast.</para
++>Kustutab parajasti valitud keelekoodi nimekirjast.</para
+ ></listitem>
+ </varlistentry>
+ 
+ <varlistentry>
+ <term
+-><guibutton
+->Lisa</guibutton
++><guilabel
++>Lisa</guilabel
+ ></term>
+ <listitem
+ ><para
+@@ -1759,12 +1660,12 @@
+ <varlistentry>
+ <term
+ ><guilabel
+->Lisa keele andmed ISO639-1 andmebaasist</guilabel
++>Lisa keele andmed ISO-639-1 andmebaasist</guilabel
+ ></term>
+ <listitem
+ ><para
+ >Sellele nupule klõpsates avaneb menüü, mis sisaldab kõiki keelekoode, mida tunnustab <quote
+->ISO639-1</quote
++>ISO-639-1</quote
+ >.</para>
+ 
+ </listitem>
+@@ -1776,30 +1677,24 @@
+ >Põhimõtteliselt pakuvad mõlemad nupud ühesuguseid andmeid: esimeses on &kde;le tuntud keelekoodid, mis on sorteeritud riikide järgi, teises <emphasis
+ >kõik</emphasis
+ > <quote
+->ISO639-1</quote
++>ISO-639-1</quote
+ > koodid, mis on sorteeritud tähestiku järgi.</para>
+ 
+ </sect2>
+ 
+ <sect2 id="settings3-dlg">
+ <title
+-><guilabel
+->Vaade</guilabel
+-></title>
++>Vaade</title>
+ 
+ <screenshot>
+ <screeninfo
+-><guilabel
+->Vaateseadistuste</guilabel
+-> dialoog</screeninfo>
++>Vaateseadistuste dialoog</screeninfo>
+ <mediaobject>
+ <imageobject
+ ><imagedata fileref="options3-dlg.png" format="PNG"/></imageobject>
+ <textobject
+ ><phrase
+-><guilabel
+->Vaateseadistuste</guilabel
+-> dialoog</phrase
++>Vaateseadistuste dialoog</phrase
+ ></textobject>
+ </mediaobject>
+ </screenshot>
+@@ -1861,9 +1756,7 @@
+ ><para
+ >Igale tasemele saab omistada omaette värvi. Minule meeldib näiteks tähistada kõige parem tase rohelise ja kõige kehvem punasega.</para>
+ <para
+->Kui sa soovid värvide asemel näha kõike ainult mustvalgena, siis eemalda linnuke märkekastist <guilabel
+->Värvide kasutamine</guilabel
+->.</para
++>Kui sa soovid värvide asemel näha kõike ainult mustvalgena, siis eemalda linnuke vastavast märkekastist.</para
+ ></listitem>
+ </varlistentry>
+ </variablelist>
+@@ -1872,23 +1765,17 @@
+ 
+ <sect2 id="options4-dlg">
+ <title
+-><guilabel
+->Kopeerimine ja asetamine</guilabel
+-></title>
++>Kopeerimine ja asetamine</title>
+ 
+ <screenshot>
+ <screeninfo
+-><guilabel
+->Kopeerimise ja asetamise seadistuste</guilabel
+-> dialoog</screeninfo>
++>Kopeerimise ja asetamise seadistuste dialoog</screeninfo>
+ <mediaobject>
+ <imageobject
+ ><imagedata fileref="options4-dlg.png" format="PNG"/></imageobject>
+ <textobject
+ ><phrase
+-><guilabel
+->Kopeerimise ja asetamise seadistuste</guilabel
+-> dialoog </phrase
++>Kopeerimise ja asetamise seadistuste dialoog </phrase
+ ></textobject>
+ </mediaobject>
+ </screenshot>
+@@ -1945,23 +1832,17 @@
+ </sect2>
+ <sect2 id="options5-dlg">
+ <title
+-><guilabel
+->Päring</guilabel
+-></title>
++>Päring</title>
+ 
+ <screenshot>
+ <screeninfo
+-><guilabel
+->Päringuseadistuste</guilabel
+-> dialoog</screeninfo>
++>Päringuseadistuste dialoog</screeninfo>
+ <mediaobject>
+ <imageobject
+ ><imagedata fileref="options5-dlg.png" format="PNG"/></imageobject>
+ <textobject
+ ><phrase
+-><guilabel
+->Päringuseadistuste</guilabel
+-> dialoog </phrase
++>Päringuseadistuste dialoog </phrase
+ ></textobject>
+ </mediaobject>
+ </screenshot>
+@@ -2038,7 +1919,7 @@
+ 
+ <para
+ >Alumises reas on veel küsimata või siis varem valesti vastatud küsimused. Kui küsimusele vastatakse õigesti, eemaldatakse see reast ja asetatakse selle kohal paikneva rea lõppu. Väära vastuse korral liigutatakse kaart alumise rea lõppu. Kui reas, kuhu kaart asetatakse, on juba antud rea jaoks maksimaalne arv kaarte, võetakse järgmiseks küsimuseks selle rea esimene kaart, vastasel juhul võetakse küsimuseks alumise rea esimene kaart. Kaart eemaldatakse mängust, kui see tuleks muidu liigutada viiendasse ritta, see tähendab, et sellele on vastatud õigesti, kui see asus ülemises reas.</para>
+-<!-- FIXME Random Query Options missing lueck 01.07.2006-->
++
+ </listitem>
+ </varlistentry>
+ </variablelist>
+@@ -2047,23 +1928,17 @@
+ 
+ <sect2 id="options6-dlg">
+ <title
+-><guilabel
+->Piirangud</guilabel
+-></title>
++>Piirangud</title>
+ 
+ <screenshot>
+ <screeninfo
+-><guilabel
+->Piiranguseadistuste</guilabel
+-> dialoog</screeninfo>
++>Piiranguseadistuste dialoog</screeninfo>
+ <mediaobject>
+ <imageobject
+ ><imagedata fileref="options6-dlg.png" format="PNG"/></imageobject>
+ <textobject
+ ><phrase
+-><guilabel
+->Piiranguseadistuste</guilabel
+-> dialoog </phrase
++>Piiranguseadistuste dialoog </phrase
+ ></textobject>
+ </mediaobject>
+ </screenshot>
+@@ -2169,23 +2044,17 @@
+ 
+ <sect2 id="options7-dlg">
+ <title
+-><guilabel
+->Blokeering</guilabel
+-></title>
++>Blokeering</title>
+ 
+ <screenshot>
+ <screeninfo
+-><guilabel
+->Blokeeringuseadistuste</guilabel
+-> dialoog</screeninfo>
++>Blokeeringuseadistuste dialoog</screeninfo>
+ <mediaobject>
+ <imageobject
+ ><imagedata fileref="options7-dlg.png" format="PNG"/></imageobject>
+ <textobject
+ ><phrase
+-><guilabel
+->Blokeeringuseadistuste</guilabel
+-> dialoog </phrase
++>Blokeeringuseadistuste dialoog </phrase
+ ></textobject>
+ </mediaobject>
+ </screenshot>
+@@ -2223,28 +2092,22 @@
+ 
+ <sect2 id="profiles">
+ <title
+-><guilabel
+->Profiilid</guilabel
+-></title>
++>Profiilid</title>
+ <para
+ >Profiil kujutab endast teatud (päringuga seotud) seadistustekogumit, mida võib salvestada, et seda hiljem uuesti kasutada. Profiilinupp &kvoctrain;i seadistustedialoogi allosas võimaldab näha olemasolevaid profiile, laadida uue profiili ja salvestada kehtivad seadistused uue profiilina. </para>
+ <para
+ >Klõpsuga nupule <guibutton
+->Profiilid...</guibutton
++>Profiilid</guibutton
+ > avaneb järgmine dialoog.</para>
+ <screenshot>
+ <screeninfo
+-><guilabel
+->Profiilidialoog</guilabel
+-></screeninfo>
++>Profiilidialoog</screeninfo>
+ <mediaobject>
+ <imageobject
+ ><imagedata fileref="profiles.png" format="PNG"/></imageobject>
+ <textobject
+ ><phrase
+-><guilabel
+->Profiilidialoog</guilabel
+-></phrase
++>Profiilidialoog</phrase
+ ></textobject>
+ </mediaobject>
+ </screenshot>
+@@ -2301,9 +2164,7 @@
+ ></term>
+ <listitem
+ ><para
+->Sulgeb <guilabel
+->profiilidialoogi</guilabel
+->.</para
++>Sulgeb profiilidialoogi.</para
+ ></listitem>
+ </varlistentry>
+ 
+@@ -2320,20 +2181,14 @@
+ 
+ <sect2 id="entry1-dlg">
+ <title
+-><guilabel
+->Üldised omadused</guilabel
+-></title>
++>Üldised omadused</title>
+ 
+ <para
+->Siin saab sisestada tabeli lahtrisse uue kirje või muuta olemasolevat. Dialoogi avamiseks vali lahter ja seejärel menüükäsk <menuchoice
+-><guimenu
++>Siin saab sisestada tabeli lahtrisse uue kirje või muuta olemasolevat. Dialoogi avamiseks vali lahter ja seejärel menüükäsk <guimenu
+ >Redigeerimine</guimenu
+->  <guimenuitem
++> -&gt; <guimenuitem
+ >Redigeeri valikut...</guimenuitem
+-></menuchoice
+-> või <guilabel
+->juhusliku päringu</guilabel
+-> dialoogis nupp <guibutton
++> või juhusliku päringu dialoogis nupp <guibutton
+ >Muuda väljendit...</guibutton
+ ></para>
+ 
+@@ -2371,9 +2226,9 @@
+ ><para
+ >Valib soovitud õppetunni.</para>
+ <para
+->Paremal asuv nupp avab <guilabel
+->õppetundide nimede muutmise</guilabel
+-> dialoogi, kus saab lisada uue õppetunni.</para
++>Paremal asuv nupp avab <link linkend="docprop2-dlg"
++>dokumendi omaduste dialoogi</link
++>, kus saab lisada uue õppetunni.</para
+ ></listitem>
+ </varlistentry>
+ 
+@@ -2419,24 +2274,24 @@
+ <para
+ >Rea igal kirjel võib olla erinev alamtüüp, sest näiteks nimisõnade sugu võib erinevates keeltes erinev olla.</para>
+ <para
+->Paremal asuv nupp avab <guilabel
+->kasutaja loodud tüüpide muutmise</guilabel
+-> dialoogi, kus on võimalik uus tüüp kohe sisestada.</para
++>Paremal asuv nupp avab vastava kaardi <link linkend="docprop3-dlg"
++>dokumendi omaduste dialoogis</link
++>, kus on võimalik uus tüüp kohe sisestada.</para
+ ></listitem>
+ </varlistentry>
+     
+ <varlistentry>
+ <term
+ ><guilabel
+->Kasutusala sildid</guilabel
++>Kasutusala silt</guilabel
+ ></term>
+ <listitem
+ ><para
+ >Väljendi tavalise kasutusala kirjeldamiseks võib valida ühe või ka mitu silti, &eg; meditsiin või keemia.</para>
+ <para
+->Paremal asuv nupp avab <guilabel
+->kasutaja loodud kasutusala siltide muutmise</guilabel
+-> dialoogi, kus saab kohe sisestada uue kasutusala sildi.</para
++>Paremal asuv nupp avab vastava kaardi <link linkend="docprop3-dlg"
++>dokumendi omaduste dialoogis</link
++>, kus saab kohe sisestada uue kasutusala sildi.</para
+ ></listitem>
+ </varlistentry>
+ </variablelist>
+@@ -2467,13 +2322,11 @@
+ >.</para>
+ </sect3>
+ 
+-<!-- FIXME Active option missing lueck 01.07.2006-->
++
+ </sect2>
+ <sect2 id="entry2-dlg">
+ <title
+-><guilabel
+->Lisaomadused</guilabel
+-></title>
++>Lisaomadused</title>
+ 
+ <para
+ >Enamik väljadest on lisaks seotud spetsiaalsete päringutega.</para>
+@@ -2495,7 +2348,7 @@
+ <varlistentry>
+ <term
+ ><guilabel
+->Sünonüümid</guilabel
++>Sünonüüm</guilabel
+ ></term>
+ <listitem
+ ><para
+@@ -2506,7 +2359,7 @@
+ <varlistentry>
+ <term
+ ><guilabel
+->Antonüümid</guilabel
++>Antonüüm</guilabel
+ ></term>
+ <listitem
+ ><para
+@@ -2552,9 +2405,7 @@
+ 
+ <sect2 id="entry3-dlg">
+ <title
+-><guilabel
+->Mitmevalikulise päringu soovitused</guilabel
+-></title>
++>Mitme valikuga päringu soovitused</title>
+ 
+ <screenshot>
+ <screeninfo
+@@ -2579,9 +2430,7 @@
+ >Tegusõnade lisaomadused</title>
+ 
+ <para
+->Lehekülge <guilabel
+->Pööramine</guilabel
+-> saab kasutada ainult siis, kui sõnatüübiks on valitud <guilabel
++>Seda lehekülge saab kasutada ainult siis, kui sõnatüübiks on valitud <guilabel
+ >tegusõna</guilabel
+ >.</para>
+ 
+@@ -2616,9 +2465,7 @@
+ >Omadussõnade lisaomadused</title>
+ 
+ <para
+->Lehekülge <guilabel
+->Võrdlusastmed</guilabel
+-> saab kasutada ainult siis, kui sõnatüübiks on valitud <guilabel
++>Seda lehekülge saab kasutada ainult siis, kui sõnatüübiks on valitud <guilabel
+ >omadussõna</guilabel
+ >.</para>
+ 
+@@ -2765,9 +2612,7 @@
+ 
+ <sect2 id="norm-query-dlg">
+ <title
+->Tavaline <guilabel
+->juhuslik päring</guilabel
+-></title>
++>Tavaline juhuslik päring</title>
+ 
+ <para
+ >Kui valid käsu <guimenuitem
+@@ -2781,17 +2626,13 @@
+ 
+ <screenshot>
+ <screeninfo
+-><guilabel
+->Juhusliku päringu</guilabel
+-> dialoog</screeninfo>
++>Juhusliku päringu dialoog</screeninfo>
+ <mediaobject>
+ <imageobject
+ ><imagedata fileref="query-dlg.png" format="PNG"/></imageobject>
+ <textobject
+ ><phrase
+-><guilabel
+->Juhusliku päringu</guilabel
+-> dialoog</phrase
++>Juhusliku päringu dialoog</phrase
+ ></textobject>
+ </mediaobject>
+ </screenshot>
+@@ -2807,14 +2648,16 @@
+ ></term>
+ <listitem
+ ><para
+->Näitab täielikku lahendust tõlkeväljal.</para
++>Näitab täielikku lahendust väljal <guilabel
++>Tõlge</guilabel
++>.</para
+ ></listitem>
+ </varlistentry>
+ 
+ <varlistentry>
+ <term
+-><guibutton
+->Näita rohkem</guibutton
++><guilabel
++>Näita rohkem</guilabel
+ ></term>
+ <listitem
+ ><para
+@@ -2824,8 +2667,8 @@
+ 
+ <varlistentry>
+ <term
+-><guibutton
+->Kontrolli õigsust</guibutton
++><guilabel
++>Kontrolli õigsust</guilabel
+ ></term>
+ <listitem
+ ><para
+@@ -2835,8 +2678,8 @@
+    
+ <varlistentry>
+ <term
+-><guibutton
+->Ei tea</guibutton
++><guilabel
++>Ei tea</guilabel
+ ></term>
+ <listitem
+ ><para
+@@ -2846,8 +2689,8 @@
+ 
+ <varlistentry>
+ <term
+-><guibutton
+->Ma tean seda</guibutton
++><guilabel
++>Ma tean seda</guilabel
+ ></term>
+ <listitem
+ ><para
+@@ -2859,8 +2702,8 @@
+ 
+ <varlistentry>
+ <term
+-><guibutton
+->Muuda väljendit...</guibutton
++><guilabel
++>Muuda väljendit</guilabel
+ ></term>
+ <listitem
+ ><para
+@@ -2870,8 +2713,8 @@
+ 
+ <varlistentry>
+ <term
+-><guibutton
+->Peata päring</guibutton
++><guilabel
++>Peata päring</guilabel
+ ></term>
+ <listitem
+ ><para
+@@ -2896,7 +2739,7 @@
+ <listitem
+ ><para
+ >Esimene vajutus klahvile <keycap
+->Return</keycap
++>Enter</keycap
+ > näitab täielikku lahendust (algul on vaikenupp <guibutton
+ >Näita rohkem</guibutton
+ >) ja muudab vaikenupuks <guibutton
+@@ -2923,23 +2766,17 @@
+ 
+ <sect2 id="mu-query-dlg">
+ <title
+->Juhuslik päring <guilabel
+->mitme valikuga</guilabel
+-></title>
++>Juhuslik päring mitme valikuga</title>
+ 
+ <screenshot>
+ <screeninfo
+-><guilabel
+->Mitme valikuga</guilabel
+-> päringu dialoog</screeninfo>
++>Mitme valikuga päringu dialoog</screeninfo>
+ <mediaobject>
+ <imageobject
+ ><imagedata fileref="mu-query-dlg.png" format="PNG"/></imageobject>
+ <textobject
+ ><phrase
+-><guilabel
+->Mitme valikuga</guilabel
+-> päringu dialoog</phrase
++>Mitme valikuga päringu dialoog</phrase
+ ></textobject>
+ </mediaobject>
+ </screenshot>
+@@ -2962,33 +2799,19 @@
+ 
+ <screenshot>
+ <screeninfo
+-><guilabel
+->Tegusõna harjutamise</guilabel
+-> dialoog</screeninfo>
++>Tegusõnade pööramise dialoog</screeninfo>
+ <mediaobject>
+ <imageobject
+ ><imagedata fileref="verb-query-dlg.png" format="PNG"/></imageobject>
+ <textobject
+ ><phrase
+-><guilabel
+->Tegusõna harjutamise</guilabel
+-> dialoog</phrase
++>Tegusõnade pööramise dialoog</phrase
+ ></textobject>
+ </mediaobject>
+ </screenshot>
+ 
+ <para
+->See dialoog ilmub pärast tegusõnade päringu käivitamist menüükäsuga <menuchoice
+-><guimenu
+->Õppimine</guimenu
+-> <guisubmenu
+-><replaceable
+->keele_nimi</replaceable
+-></guisubmenu
+-> <guimenuitem
+->Tegusõnad</guimenuitem
+-></menuchoice
+->.</para>
++>See dialoog ilmub pärast tegusõnade päringu käivitamist.</para>
+ 
+ <para
+ >Päring esitatakse kõigi ajavormide kohta, millele on määratud pöördevormid. Mõistagi pead eduka lahenduse jaoks neid kõiki teadma.</para>
+@@ -3013,18 +2836,6 @@
+ </screenshot>
+ 
+ <para
+->See dialoog ilmub pärast artiklite päringu käivitamist menüükäsuga <menuchoice
+-><guimenu
+->Õppimine</guimenu
+-> <guisubmenu
+-><replaceable
+->keele_nimi</replaceable
+-></guisubmenu
+-> <guimenuitem
+->Artiklid</guimenuitem
+-></menuchoice
+->.</para>
+-<para
+ >Selles dialoogis päritakse nimisõna artiklit.</para>
+ 
+ <para
+@@ -3088,15 +2899,11 @@
+ 
+ <sect1 id="stat-dlg">
+ <title
+-><guilabel
+->Dokumendi statistika</guilabel
+-> dialoog</title>
++>Dokumendi statistika dialoog</title>
+ 
+ <sect2 id="stat1-dlg">
+ <title
+-><guilabel
+->Üldine</guilabel
+-></title>
++>Üldine</title>
+ 
+ <screenshot>
+ <screeninfo
+@@ -3117,29 +2924,19 @@
+ <itemizedlist>
+ <listitem
+ ><para
+-><guilabel
+->Failinimi</guilabel
+-></para
++>Failinimi</para
+ ></listitem>
+ <listitem
+ ><para
+-><guilabel
+->Tiitel</guilabel
+-></para
++>Tiitel</para
+ ></listitem>
+ <listitem
+ ><para
+-><guilabel
+->Autori</guilabel
+-> nimi</para
++>Autori nimi</para
+ ></listitem>
+ <listitem
+ ><para
+-> ning <guilabel
+->kirjete</guilabel
+-> ja <guilabel
+->õppetundide</guilabel
+-> arv.</para
++>Kirjete ja õppetundide arv</para
+ ></listitem>
+ </itemizedlist>
+ 
+@@ -3166,7 +2963,9 @@
+ >Sõltuvalt sellest, mitme keele tõlkeid dokument sisaldab, võib statistikadialoogis olla üks või enam kaart lisaks üldise info kaardile, aga viimane võib ka ainus olla. Igal kaardil on iga õppetunni kohta kaks pilti, mis näitavad kirjete arvu taseme kohta igas õppetunnis.</para>
+ 
+ <para
+->Klõps &HPNga; ühel piltidest avab hüpikmenüü, kus on kirjas täpsed numbrid.</para>
++>Klõps hiire <mousebutton
++>parema</mousebutton
++> nupuga ühel piltidest avab hüpikmenüü, kus on kirjas täpsed numbrid.</para>
+ 
+ </sect2>
+ </sect1>
+@@ -3199,12 +2998,10 @@
+ >Olemasolevate failide allalaadimine ja paigaldamine</title>
+ 
+ <para
+->&kvoctrain; pakub vaikimisi välja ainult kaks näidisfaili. Kuid sul on võimalik väga lihtsalt uusi faile hankida ja paigaldada menüükäsuga <menuchoice
+-><guimenu
++>&kvoctrain; pakub vaikimisi välja ainult kaks näidisfaili. Kuid sul on võimalik väga lihtsalt uusi faile hankida ja paigaldada menüükäsuga <guimenu
+ >Fail</guimenu
+-> <guimenuitem
++> -&gt; <guimenuitem
+ >Hangi uut sõnavara...</guimenuitem
+-></menuchoice
+ > (muidugi peab sul selleks olema internetiühendus). Ilmub selline dialoog:</para>
+ 
+ <screenshot>
+@@ -3485,13 +3282,7 @@
+ <varlistentry>
+ <term>
+ <menuchoice
+-><shortcut
+-><keycombo action="simul"
+->&Ctrl;<keycap
+->N</keycap
+-></keycombo
+-></shortcut
+-> <guimenu
++><guimenu
+ >Fail</guimenu
+ > <guimenuitem
+ >Uus</guimenuitem
+@@ -3534,7 +3325,7 @@
+ ><guimenu
+ >Fail</guimenu
+ > <guimenuitem
+->Ava viimati kasutatud...</guimenuitem
++>Ava hiljutine...</guimenuitem
+ ></menuchoice
+ ></term>
+ <listitem
+@@ -3581,9 +3372,7 @@
+ ><para
+ ><action
+ >Avab</action
+-> <guilabel
+->uue kuuma kraami hankimise</guilabel
+-> dialoogi ja võimaldab internetist alla tõmmata ning paigaldada KDE-Edu sõnavarafaile.</para>
++> uue kuuma kraami hankimise dialoogi ja võimaldab internetist alla tõmmata ning paigaldada KDE-Edu sõnavarafaile.</para>
+ </listitem>
+ </varlistentry>
+ 
+@@ -3641,7 +3430,7 @@
+ ><guimenu
+ >Fail</guimenu
+ > <guimenuitem
+->Salvesta kui</guimenuitem
++>Salvesta kui...</guimenuitem
+ ></menuchoice
+ ></term>
+ <listitem
+@@ -3672,29 +3461,6 @@
+ <varlistentry>
+ <term>
+ <menuchoice
+-><shortcut
+-> <keycombo action="simul"
+->&Ctrl;<keycap
+->P</keycap
+-></keycombo
+-></shortcut
+-> <guimenu
+->Fail</guimenu
+-> <guimenuitem
+->Trüki...</guimenuitem
+-></menuchoice
+-></term>
+-<listitem
+-><para
+-><action
+->Avab</action
+-> &kde; standardse trükkimisdialoogi.</para
+-></listitem>
+-</varlistentry>
+-
+-<varlistentry>
+-<term>
+-<menuchoice
+ ><guimenu
+ >Fail</guimenu
+ > <guimenuitem
+@@ -3805,7 +3571,9 @@
+ <menuchoice
+ ><shortcut
+ ><keycombo action="simul"
+->&Ctrl; &Shift;<keycap
++>&Ctrl; <keycap
++>&Shift;</keycap
++><keycap
+ >A</keycap
+ ></keycombo
+ ></shortcut
+@@ -3836,7 +3604,7 @@
+ > <guimenu
+ >Redigeerimine</guimenu
+ > <guimenuitem
+->Otsi...</guimenuitem
++>Otsi</guimenuitem
+ ></menuchoice
+ ></term>
+ <listitem
+@@ -3871,18 +3639,16 @@
+ </varlistentry>
+ 
+ <varlistentry>
+-<term
+-><menuchoice
++<term>
++<menuchoice
+ ><shortcut
+-><keycombo action="simul"
+-> &Ctrl;<keycap
+->Return</keycap
+-></keycombo
++><keycap
++>Enter</keycap
+ ></shortcut
+ > <guimenu
+ >Redigeerimine</guimenu
+ > <guimenuitem
+->Redigeeri valikut...</guimenuitem
++>Redigeeri valikut</guimenuitem
+ ></menuchoice
+ ></term>
+ <listitem
+@@ -3954,7 +3720,7 @@
+ ><guimenu
+ >Sõnavara</guimenu
+ > <guimenuitem
+->Lisa õppetundidele...</guimenuitem
++>Lisa õppetundidele</guimenuitem
+ ></menuchoice
+ ></term>
+ <listitem
+@@ -4277,7 +4043,7 @@
+ <varlistentry>
+ <term
+ ><guimenuitem
+->Tegusõnad</guimenuitem
++>Tegusõnade harjutamine</guimenuitem
+ ></term>
+ <listitem
+ ><para
+@@ -4288,7 +4054,7 @@
+ <varlistentry>
+ <term
+ ><guimenuitem
+->Artklid</guimenuitem
++>Artiklite harjutamine</guimenuitem
+ ></term>
+ <listitem
+ ><para
+@@ -4299,7 +4065,7 @@
+ <varlistentry>
+ <term
+ ><guimenuitem
+->Võrdlusastmed</guimenuitem
++>Võrdlusastmete harjutamine</guimenuitem
+ ></term>
+ <listitem
+ ><para
+@@ -4354,7 +4120,7 @@
+ <varlistentry>
+ <term
+ ><guimenuitem
+->Sorteeri tähestikuliselt</guimenuitem
++>Sorteeri</guimenuitem
+ ></term>
+ <listitem
+ ><para
+@@ -4383,7 +4149,7 @@
+ <varlistentry>
+ <term
+ ><guimenuitem
+->Tasemete lähtestamine</guimenuitem
++>Omaduste lähtestamine</guimenuitem
+ ></term>
+ <listitem
+ ><para
+@@ -4396,7 +4162,7 @@
+ <varlistentry>
+ <term
+ ><guimenuitem
+->Veeru eemaldamine</guimenuitem
++>Eemalda keel</guimenuitem
+ ></term>
+ <listitem
+ ><para
