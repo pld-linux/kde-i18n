@@ -12,7 +12,7 @@ Summary:	K Desktop Environment - international support
 Summary(pl):	KDE - wsparcie dla wielu jêzyków
 Name:		kde-i18n
 Version:	3.5.4
-Release:	0.1
+Release:	0.2
 License:	GPL
 Group:		X11/Applications
 Source0:	ftp://ftp.kde.org/pub/kde/%{_state}/%{version}/src/kde-i18n/%{name}-af-%{version}.tar.bz2
@@ -141,7 +141,7 @@ Source61:	ftp://ftp.kde.org/pub/kde/%{_state}/%{version}/src/kde-i18n/%{name}-zh
 # Source61-md5:	c1f8e26b1129513ef83357c65ab2db94
 Source62:	ftp://ftp.kde.org/pub/kde/%{_state}/%{version}/src/kde-i18n/%{name}-zh_TW-%{version}.tar.bz2
 # Source62-md5:	8893190922de3905ebd909ad58e45dc9
-#Patch0:		%{name}-es.patch
+Patch0:		%{name}-et-bug-131614.patch
 
 %if %{with alltogether}
 # NOTE:		"Affrikaans", "Norwegian_Bookmal" and "Portugnese" are here
@@ -1433,12 +1433,9 @@ KDE - wsparcie dla jêzyka zuluskiego.
 
 %prep
 %setup -q -c -T -a0 -a1 -a2 -a3 -a4 -a5 -a6 -a7 -a8 -a9 -a10 -a11 -a12 -a13 -a14 -a15 -a16 -a17 -a18 -a19 -a20 -a21 -a22 -a23 -a24 -a25 -a26 -a27 -a28 -a29 -a30 -a31 -a32 -a33 -a34 -a35 -a36 -a37 -a38 -a39 -a40 -a41 -a42 -a43 -a44 -a45 -a45 -a47 -a48 -a49
-cd kde-i18n-es-*
-#%patch0 -p1
+cd kde-i18n-et-*
+%patch0 -p1
 cd ..
-
-# broken, see #131614
-#rm -rf kde-i18n-et-*/docs/kdeedu/kvoctrain/index.docbook
 
 %build
 kde_htmldir="%{_kdedocdir}"; export kde_htmldir
