@@ -1,6 +1,6 @@
 # TODO:
 # - add files to some ko locale
-# - huge unpackaged list: http://glen.alkohol.ee/pld/kde-i18n.txt
+# - huge unpackaged list: http://glen.alkohol.ee/pld/kde-i18n-3.5.5.txt
 #
 # Conditional build:
 %bcond_with	alltogether		# build single package containing support for all languages
@@ -11,137 +11,136 @@
 Summary:	K Desktop Environment - international support
 Summary(pl):	KDE - wsparcie dla wielu jêzyków
 Name:		kde-i18n
-Version:	3.5.4
-Release:	1
+Version:	3.5.5
+Release:	0.1
 License:	GPL
 Group:		X11/Applications
 Source0:	ftp://ftp.kde.org/pub/kde/%{_state}/%{version}/src/kde-i18n/%{name}-af-%{version}.tar.bz2
-# Source0-md5:	d2b2555c5ede01470c18684660e4940b
+# Source0-md5:	3de24c2c32aba906b9e2cea304b151be
 Source1:	ftp://ftp.kde.org/pub/kde/%{_state}/%{version}/src/kde-i18n/%{name}-ar-%{version}.tar.bz2
-# Source1-md5:	d537027991c11417e4d3ede0ced3c142
+# Source1-md5:	237879698e967ba9384b6800f8517ce2
 Source2:	ftp://ftp.kde.org/pub/kde/%{_state}/%{version}/src/kde-i18n/%{name}-az-%{version}.tar.bz2
-# Source2-md5:	f68abcc30e9ce048e530d065654ee177
+# Source2-md5:	c63e0b5e0682571498b168e6f6707caf
 Source3:	ftp://ftp.kde.org/pub/kde/%{_state}/%{version}/src/kde-i18n/%{name}-bg-%{version}.tar.bz2
-# Source3-md5:	2340d20511d54856883c53536138da41
+# Source3-md5:	28871147d247f33072a278f0d16a96be
 Source4:	ftp://ftp.kde.org/pub/kde/%{_state}/%{version}/src/kde-i18n/%{name}-bn-%{version}.tar.bz2
-# Source4-md5:	a68c7180e9229db5c308892d89a626d5
+# Source4-md5:	bfd5159743442c47a02ee5af4bd17c68
 Source5:	ftp://ftp.kde.org/pub/kde/%{_state}/%{version}/src/kde-i18n/%{name}-br-%{version}.tar.bz2
-# Source5-md5:	bd5448ae157a7d7eb064c59181737037
+# Source5-md5:	f96e07c3b9f4905dc3f37eb829feba89
 Source6:	ftp://ftp.kde.org/pub/kde/%{_state}/%{version}/src/kde-i18n/%{name}-bs-%{version}.tar.bz2
-# Source6-md5:	e0f67121889538864146693390b334f6
+# Source6-md5:	8441891d28b9785504ab1151a603d8f4
 Source7:	ftp://ftp.kde.org/pub/kde/%{_state}/%{version}/src/kde-i18n/%{name}-ca-%{version}.tar.bz2
-# Source7-md5:	3666508969cbe2ce8a52f0a6f67bf3f4
+# Source7-md5:	fec16708dc8c3e9a864d5ad9e45f06b8
 Source8:	ftp://ftp.kde.org/pub/kde/%{_state}/%{version}/src/kde-i18n/%{name}-cs-%{version}.tar.bz2
-# Source8-md5:	639887411d07ea92f0c733e66eb01b47
+# Source8-md5:	aaace6da2097b2f98f163a5da7667752
 Source9:	ftp://ftp.kde.org/pub/kde/%{_state}/%{version}/src/kde-i18n/%{name}-cy-%{version}.tar.bz2
-# Source9-md5:	971b97e8c99df7abccbc7c4e603c324e
+# Source9-md5:	fae86d2ffa550c4d831eeb9a5a3ecdb2
 Source10:	ftp://ftp.kde.org/pub/kde/%{_state}/%{version}/src/kde-i18n/%{name}-da-%{version}.tar.bz2
-# Source10-md5:	ef845c89fac91948ea9784593cd1b3fb
+# Source10-md5:	70c041ca96330834c6f988255d7bd6ae
 Source11:	ftp://ftp.kde.org/pub/kde/%{_state}/%{version}/src/kde-i18n/%{name}-de-%{version}.tar.bz2
-# Source11-md5:	45b90d7e08391836108ca3db19c0febf
+# Source11-md5:	a99bf0e5d298fce191ad2c938af3afdb
 Source12:	ftp://ftp.kde.org/pub/kde/%{_state}/%{version}/src/kde-i18n/%{name}-el-%{version}.tar.bz2
-# Source12-md5:	00d834a86e31d9d03a583c6c40565094
+# Source12-md5:	a2cb7afd4c5883bc2eb5d9c8a96d04c0
 Source13:	ftp://ftp.kde.org/pub/kde/%{_state}/%{version}/src/kde-i18n/%{name}-en_GB-%{version}.tar.bz2
-# Source13-md5:	244175fa2be8023a4a6246c795972b5e
+# Source13-md5:	50af460c4b69e5cd91b820ed656f99bd
 Source14:	ftp://ftp.kde.org/pub/kde/%{_state}/%{version}/src/kde-i18n/%{name}-eo-%{version}.tar.bz2
-# Source14-md5:	bd30d69bfbe6af8fc4a0840a9e8462e3
+# Source14-md5:	c55c9ae0c001e5214f1ad97f4b6d02a1
 Source15:	ftp://ftp.kde.org/pub/kde/%{_state}/%{version}/src/kde-i18n/%{name}-es-%{version}.tar.bz2
-# Source15-md5:	2c4e049753425d9405e86fed98f3c958
+# Source15-md5:	d8dc649138fe136c57a808eac1fdd719
 Source16:	ftp://ftp.kde.org/pub/kde/%{_state}/%{version}/src/kde-i18n/%{name}-et-%{version}.tar.bz2
-# Source16-md5:	7209f997e7c418d2884bc278ff6d642c
+# Source16-md5:	d3065d66591fa0ea4e304e9bcbb6dc10
 Source17:	ftp://ftp.kde.org/pub/kde/%{_state}/%{version}/src/kde-i18n/%{name}-eu-%{version}.tar.bz2
-# Source17-md5:	69d50a4a7a89572d3d66782381fc6811
+# Source17-md5:	45a4361f11c14b8cbc0a5bb29ab18edb
 Source18:	ftp://ftp.kde.org/pub/kde/%{_state}/%{version}/src/kde-i18n/%{name}-fa-%{version}.tar.bz2
-# Source18-md5:	36afb560dc781b2009b12479e9758755
+# Source18-md5:	e55d8c8d06097b3daaa71eb499114e3d
 Source19:	ftp://ftp.kde.org/pub/kde/%{_state}/%{version}/src/kde-i18n/%{name}-fi-%{version}.tar.bz2
-# Source19-md5:	c2ef5fad94bcb04ee7e1a363593ff685
+# Source19-md5:	5693b184f6d3e2d79c78248a9506ba11
 Source20:	ftp://ftp.kde.org/pub/kde/%{_state}/%{version}/src/kde-i18n/%{name}-fr-%{version}.tar.bz2
-# Source20-md5:	1fdeb2af12a6096258d08ff339000e8c
+# Source20-md5:	0a0e9ba98b33e81a092110563def9ca4
 Source21:	ftp://ftp.kde.org/pub/kde/%{_state}/%{version}/src/kde-i18n/%{name}-fy-%{version}.tar.bz2
-# Source21-md5:	345532f5d35b333ff3fd1782f550a40d
+# Source21-md5:	98a3bbe04e82b89c8ab2a821741ffc34
 Source22:	ftp://ftp.kde.org/pub/kde/%{_state}/%{version}/src/kde-i18n/%{name}-ga-%{version}.tar.bz2
-# Source22-md5:	cf7f957445f540058ab4bca4b6701559
+# Source22-md5:	e82a3ff13cb0f8d73578f1a3770a119c
 Source23:	ftp://ftp.kde.org/pub/kde/%{_state}/%{version}/src/kde-i18n/%{name}-gl-%{version}.tar.bz2
-# Source23-md5:	17cdcec622097a328b583755861b30e3
+# Source23-md5:	bf3ad88fea56ded7fd451cc83826e4c5
 Source24:	ftp://ftp.kde.org/pub/kde/%{_state}/%{version}/src/kde-i18n/%{name}-he-%{version}.tar.bz2
-# Source24-md5:	b861796702141e198873614b1428cc3a
+# Source24-md5:	2099f23192fe79f1e94c0da2184871c0
 Source25:	ftp://ftp.kde.org/pub/kde/%{_state}/%{version}/src/kde-i18n/%{name}-hi-%{version}.tar.bz2
-# Source25-md5:	9b07d10f948803f6fca49666934517c3
+# Source25-md5:	a046a16fd6575ee67a9086702414bac1
 Source26:	ftp://ftp.kde.org/pub/kde/%{_state}/%{version}/src/kde-i18n/%{name}-hr-%{version}.tar.bz2
-# Source26-md5:	954e690a2d7fba5e21056655c77d3b9e
+# Source26-md5:	486262b00bab42965aa0d25c86d65f84
 Source27:	ftp://ftp.kde.org/pub/kde/%{_state}/%{version}/src/kde-i18n/%{name}-hu-%{version}.tar.bz2
-# Source27-md5:	cc25aebee25f07bfe6510cdcf39e743d
+# Source27-md5:	9638821a380cf7a8697b03dca2f3513d
 Source28:	ftp://ftp.kde.org/pub/kde/%{_state}/%{version}/src/kde-i18n/%{name}-is-%{version}.tar.bz2
-# Source28-md5:	ff1e7b4b500a2032530c101a1473895a
+# Source28-md5:	4bdd95af464b36e7d52b4848291c9717
 Source29:	ftp://ftp.kde.org/pub/kde/%{_state}/%{version}/src/kde-i18n/%{name}-it-%{version}.tar.bz2
-# Source29-md5:	b050d738e3e7386134e4a657a38b5c24
+# Source29-md5:	a69220e5a700a277238924a3675d9dbd
 Source30:	ftp://ftp.kde.org/pub/kde/%{_state}/%{version}/src/kde-i18n/%{name}-ja-%{version}.tar.bz2
-# Source30-md5:	48f1c83d7a1b08429ec4ac003a85293f
+# Source30-md5:	3b89aa140388f7b0e3beb80ef2b8b247
 Source31:	ftp://ftp.kde.org/pub/kde/%{_state}/%{version}/src/kde-i18n/%{name}-km-%{version}.tar.bz2
-# Source31-md5:	36cc11549a23ecc2967222ea76826cbf
+# Source31-md5:	c11c4653c9e211deb4c16bf346bd03ad
 Source32:	ftp://ftp.kde.org/pub/kde/%{_state}/%{version}/src/kde-i18n/%{name}-ko-%{version}.tar.bz2
-# Source32-md5:	af106fb9c73f61b08eb5441b0c15871f
+# Source32-md5:	7a364e95e894e9c58d56054edab21142
 Source33:	ftp://ftp.kde.org/pub/kde/%{_state}/%{version}/src/kde-i18n/%{name}-lt-%{version}.tar.bz2
-# Source33-md5:	5c8bf80d151685785cf16d0d60912441
+# Source33-md5:	aa799b8fac440c0b70188e0f9df16350
 Source34:	ftp://ftp.kde.org/pub/kde/%{_state}/%{version}/src/kde-i18n/%{name}-lv-%{version}.tar.bz2
-# Source34-md5:	0f0f1fd8542552fb25a6cd4dbc99aece
+# Source34-md5:	f541bb2957e1f0469d76711cc86ba851
 Source35:	ftp://ftp.kde.org/pub/kde/%{_state}/%{version}/src/kde-i18n/%{name}-mk-%{version}.tar.bz2
-# Source35-md5:	e5eb21657932cd4997af337bd41c336c
+# Source35-md5:	014b290f599e808ff3b885c50d150fe5
 Source36:	ftp://ftp.kde.org/pub/kde/%{_state}/%{version}/src/kde-i18n/%{name}-mn-%{version}.tar.bz2
-# Source36-md5:	80741b12a56109903917dfeb746a7213
+# Source36-md5:	67fb64745786c2ef908b192432e51040
 Source37:	ftp://ftp.kde.org/pub/kde/%{_state}/%{version}/src/kde-i18n/%{name}-ms-%{version}.tar.bz2
-# Source37-md5:	4eeb384dafc9166abdf68243446f6ba5
+# Source37-md5:	2757eb622ace8a2f231dda1bd5cd454d
 Source38:	ftp://ftp.kde.org/pub/kde/%{_state}/%{version}/src/kde-i18n/%{name}-nb-%{version}.tar.bz2
-# Source38-md5:	c322d1d4a04e327a76effd78d36b407d
+# Source38-md5:	1b3edcfa11bb648e98bab07f93e898a9
 Source39:	ftp://ftp.kde.org/pub/kde/%{_state}/%{version}/src/kde-i18n/%{name}-nds-%{version}.tar.bz2
-# Source39-md5:	e47b93f27bda95970a0de286f13f999f
+# Source39-md5:	f159dd39c2385403a0f95c0b102ef67b
 Source40:	ftp://ftp.kde.org/pub/kde/%{_state}/%{version}/src/kde-i18n/%{name}-nl-%{version}.tar.bz2
-# Source40-md5:	c97771e5c1398182a99d50926fa58eb3
+# Source40-md5:	44b404fc4d0b9d12714fdf2357fa3f56
 Source41:	ftp://ftp.kde.org/pub/kde/%{_state}/%{version}/src/kde-i18n/%{name}-nn-%{version}.tar.bz2
-# Source41-md5:	97b12a156442c4da083423789f8d1506
+# Source41-md5:	964c91710f2b28cdde7b8cdfef961791
 Source42:	ftp://ftp.kde.org/pub/kde/%{_state}/%{version}/src/kde-i18n/%{name}-pa-%{version}.tar.bz2
-# Source42-md5:	c513951282dc7918acde5e29220f7103
+# Source42-md5:	1881a7e5b1fc6b75ca74dc4c504ad16d
 Source43:	ftp://ftp.kde.org/pub/kde/%{_state}/%{version}/src/kde-i18n/%{name}-pl-%{version}.tar.bz2
-# Source43-md5:	47787ef2ad8516f4e0ca21b5daec64cc
+# Source43-md5:	7444560d7d6cb3221e8f0907218157de
 Source44:	ftp://ftp.kde.org/pub/kde/%{_state}/%{version}/src/kde-i18n/%{name}-pt-%{version}.tar.bz2
-# Source44-md5:	7ccc83aacaaa1609a66378661ee0b10b
+# Source44-md5:	af8b477236f98e0fa7fcae21db3df5cc
 Source45:	ftp://ftp.kde.org/pub/kde/%{_state}/%{version}/src/kde-i18n/%{name}-pt_BR-%{version}.tar.bz2
-# Source45-md5:	42e5ed51573df1415f245d201a13095d
+# Source45-md5:	d9359ccc0040a5c6ac88d5cad12d4fcf
 Source46:	ftp://ftp.kde.org/pub/kde/%{_state}/%{version}/src/kde-i18n/%{name}-ro-%{version}.tar.bz2
-# Source46-md5:	40f3c27e4aa33d80fe4d7d97ae761d74
+# Source46-md5:	b31d031cbf2deae408c94a665677dfd2
 Source47:	ftp://ftp.kde.org/pub/kde/%{_state}/%{version}/src/kde-i18n/%{name}-ru-%{version}.tar.bz2
-# Source47-md5:	b916c3eb4af74da0a620fa006defcd8a
+# Source47-md5:	4bfa140a22122446fd8ab356d32fee40
 Source48:	ftp://ftp.kde.org/pub/kde/%{_state}/%{version}/src/kde-i18n/%{name}-rw-%{version}.tar.bz2
-# Source48-md5:	4dba338790dfa9f77ffcc36ed4cd3134
+# Source48-md5:	b94681f15ccb61cd9760e2e7830e7592
 Source49:	ftp://ftp.kde.org/pub/kde/%{_state}/%{version}/src/kde-i18n/%{name}-se-%{version}.tar.bz2
-# Source49-md5:	607bf14fd29c1840abe28b8c22ce51bd
+# Source49-md5:	4492ee7304d4539b3dfd4d1349c6a838
 Source50:	ftp://ftp.kde.org/pub/kde/%{_state}/%{version}/src/kde-i18n/%{name}-sk-%{version}.tar.bz2
-# Source50-md5:	2c4d939f395894b14c976235b81ae81e
+# Source50-md5:	0a1bccde30cf25cf37974362585b118a
 Source51:	ftp://ftp.kde.org/pub/kde/%{_state}/%{version}/src/kde-i18n/%{name}-sl-%{version}.tar.bz2
-# Source51-md5:	7f253c3e29e1fed72014b2101a9c2ce9
+# Source51-md5:	3574861dc47aa09ada8cc6c7bca2307e
 Source52:	ftp://ftp.kde.org/pub/kde/%{_state}/%{version}/src/kde-i18n/%{name}-sr-%{version}.tar.bz2
-# Source52-md5:	6736f6480dcdffab6bd25883495fb661
+# Source52-md5:	e308f4f37c5509bd5583f7fcd90bcb32
 Source53:	ftp://ftp.kde.org/pub/kde/%{_state}/%{version}/src/kde-i18n/%{name}-sr@Latn-%{version}.tar.bz2
-# Source53-md5:	24f25a0f5b418d3cac42d62a0bc14c2a
+# Source53-md5:	0e3d6ba65882faadc89791c3691b19b6
 Source54:	ftp://ftp.kde.org/pub/kde/%{_state}/%{version}/src/kde-i18n/%{name}-ss-%{version}.tar.bz2
-# Source54-md5:	871f2bc475991fbce4789430617d0a21
+# Source54-md5:	8a08733c9cd4d367a42f0c0a69accc8a
 Source55:	ftp://ftp.kde.org/pub/kde/%{_state}/%{version}/src/kde-i18n/%{name}-sv-%{version}.tar.bz2
-# Source55-md5:	5097306cb3d02d45366471cfa4dbe7b2
+# Source55-md5:	0a614fc596f082a1a11d7ee91b1bae2a
 Source56:	ftp://ftp.kde.org/pub/kde/%{_state}/%{version}/src/kde-i18n/%{name}-ta-%{version}.tar.bz2
-# Source56-md5:	e5e11f4e3b1b3e4a40079ad963efbfe3
+# Source56-md5:	4ab3c05628fc635609218d17cce6d138
 Source57:	ftp://ftp.kde.org/pub/kde/%{_state}/%{version}/src/kde-i18n/%{name}-tg-%{version}.tar.bz2
-# Source57-md5:	108c07984f635cbee648df86d620afdb
+# Source57-md5:	135a419bb0d3429dde4bc698d095bf86
 Source58:	ftp://ftp.kde.org/pub/kde/%{_state}/%{version}/src/kde-i18n/%{name}-tr-%{version}.tar.bz2
-# Source58-md5:	01453f054f5595660c8bc0aa5d589520
+# Source58-md5:	001d5909b3fd8121b1f4f7970d88215b
 Source59:	ftp://ftp.kde.org/pub/kde/%{_state}/%{version}/src/kde-i18n/%{name}-uk-%{version}.tar.bz2
-# Source59-md5:	5ee00967f1e91474f1aa462e1bf0fac3
+# Source59-md5:	fc18b699825837e49e3062e5acc0a3f5
 Source60:	ftp://ftp.kde.org/pub/kde/%{_state}/%{version}/src/kde-i18n/%{name}-uz-%{version}.tar.bz2
-# Source60-md5:	fd0d89c8f74c84933c3c05d978ed7f67
+# Source60-md5:	b66b574eff1fd2349a9a767098e5430e
 Source61:	ftp://ftp.kde.org/pub/kde/%{_state}/%{version}/src/kde-i18n/%{name}-zh_CN-%{version}.tar.bz2
-# Source61-md5:	c1f8e26b1129513ef83357c65ab2db94
+# Source61-md5:	c0df78b39982a1ba117539e86c0dabb8
 Source62:	ftp://ftp.kde.org/pub/kde/%{_state}/%{version}/src/kde-i18n/%{name}-zh_TW-%{version}.tar.bz2
-# Source62-md5:	8893190922de3905ebd909ad58e45dc9
-Patch0:		%{name}-et-bug-131614.patch
+# Source62-md5:	6c1051a985f68563380844dec9080248
 
 %if %{with alltogether}
 # NOTE:		"Affrikaans", "Norwegian_Bookmal" and "Portugnese" are here
@@ -1433,22 +1432,16 @@ KDE - wsparcie dla jêzyka zuluskiego.
 
 %prep
 %setup -q -c -T -a0 -a1 -a2 -a3 -a4 -a5 -a6 -a7 -a8 -a9 -a10 -a11 -a12 -a13 -a14 -a15 -a16 -a17 -a18 -a19 -a20 -a21 -a22 -a23 -a24 -a25 -a26 -a27 -a28 -a29 -a30 -a31 -a32 -a33 -a34 -a35 -a36 -a37 -a38 -a39 -a40 -a41 -a42 -a43 -a44 -a45 -a45 -a47 -a48 -a49
-cd kde-i18n-et-*
-%patch0 -p1
-cd ..
 
 %build
-kde_htmldir="%{_kdedocdir}"; export kde_htmldir
-kde_libs_htmldir="%{_kdedocdir}"; export kde_libs_htmldir
+export kde_htmldir="%{_kdedocdir}"
+export kde_libs_htmldir="%{_kdedocdir}"
 
 LDFLAGS="%{rpmldflags}"
-#export UNSERMAKE=%{_datadir}/unsermake/unsermake
 
 for dir in kde-i18n-*-%{version}; do
 	cd "$dir"
-
 	%configure
-
 	%{__make} \
 		RPM_OPT_FLAGS="%{rpmcflags}" \
 		kde_htmldir="%{_kdedocdir}" \
@@ -1463,63 +1456,63 @@ FindLang() {
 #    $1 - short language name
 #    $2 - long language name
 
-    echo "%defattr(644,root,root,755)" > "$2.lang"
+	echo "%defattr(644,root,root,755)" > "$2.lang"
 
 # share/doc/kde/HTML/(%%lang)
-    if [ -d "$RPM_BUILD_ROOT%{_kdedocdir}/$1" ]; then
-	echo "%lang($1) %{_kdedocdir}/$1" >> "$2.lang"
-    fi
+	if [ -d "$RPM_BUILD_ROOT%{_kdedocdir}/$1" ]; then
+		echo "%lang($1) %{_kdedocdir}/$1" >> "$2.lang"
+	fi
 
 # share/locale/(%%lang)
-    if [ -d "$RPM_BUILD_ROOT%{_datadir}/locale/$1" ]; then
-	echo "%lang($1) %{_datadir}/locale/$1/[cef]*" >> "$2.lang"
-	echo "%lang($1) %{_datadir}/locale/$1/LC_MESSAGES/*.mo" >> "$2.lang"
-    fi
+	if [ -d "$RPM_BUILD_ROOT%{_datadir}/locale/$1" ]; then
+		echo "%lang($1) %{_datadir}/locale/$1/[cef]*" >> "$2.lang"
+		echo "%lang($1) %{_datadir}/locale/$1/LC_MESSAGES/*.mo" >> "$2.lang"
+	fi
 
 # share/apps/amor/tips-(%%lang)
-    if [ -f "$RPM_BUILD_ROOT%{_datadir}/apps/amor/tips-$1" ]; then
-	echo "%lang($1) %{_datadir}/apps/amor/tips-$1" >> "$2.lang"
-    fi
+	if [ -f "$RPM_BUILD_ROOT%{_datadir}/apps/amor/tips-$1" ]; then
+		echo "%lang($1) %{_datadir}/apps/amor/tips-$1" >> "$2.lang"
+	fi
 
 # share/apps/katepart/syntax/logohighlightstyle.(%%lang).xml
-    if [ -f "$RPM_BUILD_ROOT%{_datadir}/apps/katepart/syntax/logohighlightstyle.$1.xml" ]; then
-        echo "%lang($1) %{_datadir}/apps/katepart/syntax/logohighlightstyle.$1.xml" >> "$2.lang"
-    fi
+	if [ -f "$RPM_BUILD_ROOT%{_datadir}/apps/katepart/syntax/logohighlightstyle.$1.xml" ]; then
+		echo "%lang($1) %{_datadir}/apps/katepart/syntax/logohighlightstyle.$1.xml" >> "$2.lang"
+	fi
 
 # share/apps/ktuberling/sounds/(%%lang)
-    if [ -d "$RPM_BUILD_ROOT%{_datadir}/apps/ktuberling/sounds/$1" ]; then
-        echo "%lang($1) %{_datadir}/apps/ktuberling/sounds/$1" >> "$2.lang"
-    fi
+	if [ -d "$RPM_BUILD_ROOT%{_datadir}/apps/ktuberling/sounds/$1" ]; then
+		echo "%lang($1) %{_datadir}/apps/ktuberling/sounds/$1" >> "$2.lang"
+	fi
 
 # share/apps/khangman/(%lang).txt
-    if [ -f "$RPM_BUILD_ROOT%{_datadir}/apps/khangman/$1.txt" ]; then
-        echo "%lang($1) %{_datadir}/apps/khangman/$1.txt" >> "$2.lang"
-    fi
+	if [ -f "$RPM_BUILD_ROOT%{_datadir}/apps/khangman/$1.txt" ]; then
+		echo "%lang($1) %{_datadir}/apps/khangman/$1.txt" >> "$2.lang"
+	fi
 
 # share/apps/khangman/data/(%lang)
-    if [ -d "$RPM_BUILD_ROOT%{_datadir}/apps/khangman/data/$1" ]; then
-	echo "%lang($1) %{_datadir}/apps/khangman/data/$1" >> "$2.lang"
-    fi
+	if [ -d "$RPM_BUILD_ROOT%{_datadir}/apps/khangman/data/$1" ]; then
+		echo "%lang($1) %{_datadir}/apps/khangman/data/$1" >> "$2.lang"
+	fi
 
 # share/apps/klatin/data/vocabs/(%lang)
-    if [ -d "$RPM_BUILD_ROOT%{_datadir}/apps/klatin/data/vocabs/$1" ]; then
-        echo "%lang($1) %{_datadir}/apps/klatin/data/vocabs/$1" >> "$2.lang"
-    fi
+	if [ -d "$RPM_BUILD_ROOT%{_datadir}/apps/klatin/data/vocabs/$1" ]; then
+		echo "%lang($1) %{_datadir}/apps/klatin/data/vocabs/$1" >> "$2.lang"
+	fi
 
 # share/apps/klettres/(%lang)
-    if [ -d "$RPM_BUILD_ROOT%{_datadir}/apps/klettres/$1" ]; then
-	echo "%lang($1) %{_datadir}/apps/klettres/$1" >> "$2.lang"
-    fi
+	if [ -d "$RPM_BUILD_ROOT%{_datadir}/apps/klettres/$1" ]; then
+		echo "%lang($1) %{_datadir}/apps/klettres/$1" >> "$2.lang"
+	fi
 
 # share/apps/kturtle/data/logokeywords.(%lang).xml
-    if [ -f "$RPM_BUILD_ROOT%{_datadir}/apps/kturtle/data/logokeywords.$1.xml" ]; then
-        echo "%lang($1) %{_datadir}/apps/kturtle/data/logokeywords.$1.xml" >> "$2.lang"
-    fi
+	if [ -f "$RPM_BUILD_ROOT%{_datadir}/apps/kturtle/data/logokeywords.$1.xml" ]; then
+		echo "%lang($1) %{_datadir}/apps/kturtle/data/logokeywords.$1.xml" >> "$2.lang"
+	fi
 
 # share/apps/kturtle/examples/(%lang)
-    if [ -d "$RPM_BUILD_ROOT%{_datadir}/apps/kturtle/examples/$1" ]; then
-        echo "%lang($1) %{_datadir}/apps/kturtle/examples/$1" >> "$2.lang"
-    fi
+	if [ -d "$RPM_BUILD_ROOT%{_datadir}/apps/kturtle/examples/$1" ]; then
+		echo "%lang($1) %{_datadir}/apps/kturtle/examples/$1" >> "$2.lang"
+	fi
 }
 
 for dir in kde-i18n-*-%{version}; do
@@ -1591,7 +1584,7 @@ FindLang sk Slovak
 FindLang sl Slovenian
 FindLang sr Serbian
 FindLang sr@Latn Serbian_Latin
-cat Serbian_Latin.lang >>Serbian.lang
+cat Serbian_Latin.lang >> Serbian.lang
 FindLang sv Swedish
 FindLang ta Tamil
 FindLang tg Tajik
@@ -1608,7 +1601,7 @@ FindLang zh_TW Chinese
 ##FindLang zu Zulu
 
 %if %{with alltogether}
-cat [A-Z]*.lang >all.lang
+cat [A-Z]*.lang > all.lang
 %endif
 
 %clean
