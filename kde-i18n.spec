@@ -12,7 +12,7 @@ Summary:	K Desktop Environment - international support
 Summary(pl):	KDE - wsparcie dla wielu jêzyków
 Name:		kde-i18n
 Version:	3.5.5
-Release:	0.1
+Release:	0.3
 License:	GPL
 Group:		X11/Applications
 Source0:	ftp://ftp.kde.org/pub/kde/%{_state}/%{version}/src/kde-i18n/%{name}-af-%{version}.tar.bz2
@@ -1450,77 +1450,129 @@ for dir in kde-i18n-*-%{version}; do
 done
 
 %install
-rm -rf $RPM_BUILD_ROOT
+if [ ! -f installed.stamp -o ! -d $RPM_BUILD_ROOT ]; then
+	rm -rf $RPM_BUILD_ROOT
+
+	for dir in kde-i18n-*-%{version}; do
+		%{__make} -C "$dir" install \
+			DESTDIR=$RPM_BUILD_ROOT \
+			kde_htmldir="%{_kdedocdir}" \
+			kde_libs_htmldir="%{_kdedocdir}"
+	done
+
+	# TODO: verify is this renaming ok
+	mv $RPM_BUILD_ROOT%{_datadir}/apps/kturtle/examples/de{_DE,}
+	mv $RPM_BUILD_ROOT%{_datadir}/apps/kturtle/examples/fr{_FR,}
+
+	# remove empty language catalogs (= 1 message only)
+	find $RPM_BUILD_ROOT%{_datadir}/locale -type f -name '*.mo' | xargs file | egrep ', 1 messages$' | cut -d: -f1 | xargs rm -vf
+
+	touch installed.stamp
+fi
 
 FindLang() {
 #    $1 - short language name
 #    $2 - long language name
+	local lang="$1"
+	local language="$2"
 
-	echo "%defattr(644,root,root,755)" > "$2.lang"
+	echo "%defattr(644,root,root,755)" > "$language.lang"
 
 # share/doc/kde/HTML/(%%lang)
-	if [ -d "$RPM_BUILD_ROOT%{_kdedocdir}/$1" ]; then
-		echo "%lang($1) %{_kdedocdir}/$1" >> "$2.lang"
+	if [ -d "$RPM_BUILD_ROOT%{_kdedocdir}/$lang" ]; then
+		echo "%lang($lang) %{_kdedocdir}/$lang" >> "$language.lang"
 	fi
 
 # share/locale/(%%lang)
-	if [ -d "$RPM_BUILD_ROOT%{_datadir}/locale/$1" ]; then
-		echo "%lang($1) %{_datadir}/locale/$1/[cef]*" >> "$2.lang"
-		echo "%lang($1) %{_datadir}/locale/$1/LC_MESSAGES/*.mo" >> "$2.lang"
+	if [ -d "$RPM_BUILD_ROOT%{_datadir}/locale/$lang" ]; then
+		echo "%lang($lang) %{_datadir}/locale/$lang/[cef]*" >> "$language.lang"
+		echo "%lang($lang) %{_datadir}/locale/$lang/LC_MESSAGES/*.mo" >> "$language.lang"
 	fi
 
 # share/apps/amor/tips-(%%lang)
-	if [ -f "$RPM_BUILD_ROOT%{_datadir}/apps/amor/tips-$1" ]; then
-		echo "%lang($1) %{_datadir}/apps/amor/tips-$1" >> "$2.lang"
+	if [ -f "$RPM_BUILD_ROOT%{_datadir}/apps/amor/tips-$lang" ]; then
+		echo "%lang($lang) %{_datadir}/apps/amor/tips-$lang" >> "$language.lang"
 	fi
 
 # share/apps/katepart/syntax/logohighlightstyle.(%%lang).xml
-	if [ -f "$RPM_BUILD_ROOT%{_datadir}/apps/katepart/syntax/logohighlightstyle.$1.xml" ]; then
-		echo "%lang($1) %{_datadir}/apps/katepart/syntax/logohighlightstyle.$1.xml" >> "$2.lang"
+	if [ -f "$RPM_BUILD_ROOT%{_datadir}/apps/katepart/syntax/logohighlightstyle.$lang.xml" ]; then
+		echo "%lang($lang) %{_datadir}/apps/katepart/syntax/logohighlightstyle.$lang.xml" >> "$language.lang"
 	fi
 
 # share/apps/ktuberling/sounds/(%%lang)
-	if [ -d "$RPM_BUILD_ROOT%{_datadir}/apps/ktuberling/sounds/$1" ]; then
-		echo "%lang($1) %{_datadir}/apps/ktuberling/sounds/$1" >> "$2.lang"
+	if [ -d "$RPM_BUILD_ROOT%{_datadir}/apps/ktuberling/sounds/$lang" ]; then
+		echo "%lang($lang) %{_datadir}/apps/ktuberling/sounds/$lang" >> "$language.lang"
 	fi
 
 # share/apps/khangman/(%lang).txt
-	if [ -f "$RPM_BUILD_ROOT%{_datadir}/apps/khangman/$1.txt" ]; then
-		echo "%lang($1) %{_datadir}/apps/khangman/$1.txt" >> "$2.lang"
+	if [ -f "$RPM_BUILD_ROOT%{_datadir}/apps/khangman/$lang.txt" ]; then
+		echo "%lang($lang) %{_datadir}/apps/khangman/$lang.txt" >> "$language.lang"
 	fi
 
 # share/apps/khangman/data/(%lang)
-	if [ -d "$RPM_BUILD_ROOT%{_datadir}/apps/khangman/data/$1" ]; then
-		echo "%lang($1) %{_datadir}/apps/khangman/data/$1" >> "$2.lang"
+	if [ -d "$RPM_BUILD_ROOT%{_datadir}/apps/khangman/data/$lang" ]; then
+		echo "%lang($lang) %{_datadir}/apps/khangman/data/$lang" >> "$language.lang"
 	fi
 
 # share/apps/klatin/data/vocabs/(%lang)
-	if [ -d "$RPM_BUILD_ROOT%{_datadir}/apps/klatin/data/vocabs/$1" ]; then
-		echo "%lang($1) %{_datadir}/apps/klatin/data/vocabs/$1" >> "$2.lang"
+	if [ -d "$RPM_BUILD_ROOT%{_datadir}/apps/klatin/data/vocabs/$lang" ]; then
+		echo "%lang($lang) %{_datadir}/apps/klatin/data/vocabs/$lang" >> "$language.lang"
 	fi
 
 # share/apps/klettres/(%lang)
-	if [ -d "$RPM_BUILD_ROOT%{_datadir}/apps/klettres/$1" ]; then
-		echo "%lang($1) %{_datadir}/apps/klettres/$1" >> "$2.lang"
+	if [ -d "$RPM_BUILD_ROOT%{_datadir}/apps/klettres/$lang" ]; then
+		echo "%lang($lang) %{_datadir}/apps/klettres/$lang" >> "$language.lang"
 	fi
 
 # share/apps/kturtle/data/logokeywords.(%lang).xml
-	if [ -f "$RPM_BUILD_ROOT%{_datadir}/apps/kturtle/data/logokeywords.$1.xml" ]; then
-		echo "%lang($1) %{_datadir}/apps/kturtle/data/logokeywords.$1.xml" >> "$2.lang"
+	if [ -f "$RPM_BUILD_ROOT%{_datadir}/apps/kturtle/data/logokeywords.$lang.xml" ]; then
+		echo "%lang($lang) %{_datadir}/apps/kturtle/data/logokeywords.$lang.xml" >> "$language.lang"
 	fi
 
 # share/apps/kturtle/examples/(%lang)
-	if [ -d "$RPM_BUILD_ROOT%{_datadir}/apps/kturtle/examples/$1" ]; then
-		echo "%lang($1) %{_datadir}/apps/kturtle/examples/$1" >> "$2.lang"
+	if [ -d "$RPM_BUILD_ROOT%{_datadir}/apps/kturtle/examples/$lang" ]; then
+		echo "%lang($lang) %{_datadir}/apps/kturtle/examples/$lang" >> "$language.lang"
+	fi
+
+# share/apps/kanagram/data/et/elukutsed.kvtml
+	if [ -d "$RPM_BUILD_ROOT%{_datadir}/apps/kanagram/data/$lang" ]; then
+		echo "%lang($lang) %{_datadir}/apps/kanagram/data/$lang" >> "$language.lang"
 	fi
 }
 
-for dir in kde-i18n-*-%{version}; do
-	%{__make} -C "$dir" install \
-		DESTDIR=$RPM_BUILD_ROOT \
-		kde_htmldir="%{_kdedocdir}" \
-		kde_libs_htmldir="%{_kdedocdir}"
+%if 0
+# make symlinks relative
+for lang in $RPM_BUILD_ROOT%{_kdedocdir}/*; do
+	[ -d $lang ] || continue
+
+	if [ ! -d $lang/common ]; then
+		ln -s ../en/common $lang/common
+	fi
+
+	for i in $lang/*/*/*; do
+		if [ -d $i -a -L $i/common ]; then
+			rm -f $i/common
+			ln -sf ../../../common $i
+		fi
+	done
+
+	for i in $lang/*/*; do
+		if [ -d $i -a -L $i/common ]; then
+			rm -f $i/common
+			ln -sf ../../common $i
+		fi
+	done
+
+	for i in $lang/*; do
+		if [ -d $i -a -L $i/common ]; then
+			rm -f $i/common
+			ln -sf ../common $i
+		fi
+	done
 done
+%endif
+
+rm -f *.lang *.cache __find.*
 
 FindLang af Afrikaans
 FindLang ar Arabic
