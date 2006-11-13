@@ -1662,7 +1662,7 @@ rm -rf $RPM_BUILD_ROOT
 %files base
 %defattr(644,root,root,755)
 
-%if %{without alltogether}
+%if !%{with alltogether}
 %files -f Afrikaans.lang Afrikaans
 %defattr(644,root,root,755)
 
