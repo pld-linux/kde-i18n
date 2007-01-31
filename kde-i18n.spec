@@ -77,6 +77,8 @@ Source29:	ftp://ftp.kde.org/pub/kde/%{_state}/%{version}/src/kde-i18n/%{name}-it
 # Source29-md5:	3a9bea48fb5ac7d3703abfdaa8a50c3c
 Source30:	ftp://ftp.kde.org/pub/kde/%{_state}/%{version}/src/kde-i18n/%{name}-ja-%{version}.tar.bz2
 # Source30-md5:	79b62e00ae4bbcc0d874588ccba177be
+Source63:	ftp://ftp.kde.org/pub/kde/%{_state}/%{version}/src/kde-i18n/%{name}-kk-%{version}.tar.bz2
+# Source63-md5:	f878ce771f32ea800c285e5a813b17e7
 Source31:	ftp://ftp.kde.org/pub/kde/%{_state}/%{version}/src/kde-i18n/%{name}-km-%{version}.tar.bz2
 # Source31-md5:	2f83f915e5ee4932ce8c7f26abb8b542
 Source32:	ftp://ftp.kde.org/pub/kde/%{_state}/%{version}/src/kde-i18n/%{name}-ko-%{version}.tar.bz2
@@ -137,6 +139,8 @@ Source59:	ftp://ftp.kde.org/pub/kde/%{_state}/%{version}/src/kde-i18n/%{name}-uk
 # Source59-md5:	82f0f3f3567d551307c03ebad12f3a1c
 Source60:	ftp://ftp.kde.org/pub/kde/%{_state}/%{version}/src/kde-i18n/%{name}-uz-%{version}.tar.bz2
 # Source60-md5:	2208bb14ae419e20f2179d586ba49ff5
+Source64:	ftp://ftp.kde.org/pub/kde/%{_state}/%{version}/src/kde-i18n/%{name}-vi-%{version}.tar.bz2
+# Source64-md5:	58602a074a5868b3c1ae299080289d9a
 Source61:	ftp://ftp.kde.org/pub/kde/%{_state}/%{version}/src/kde-i18n/%{name}-zh_CN-%{version}.tar.bz2
 # Source61-md5:	a74fb6fee6d36a8bd975bb7b1b97fb4c
 Source62:	ftp://ftp.kde.org/pub/kde/%{_state}/%{version}/src/kde-i18n/%{name}-zh_TW-%{version}.tar.bz2
@@ -232,7 +236,6 @@ BuildRequires:	gettext-devel
 # It creates symlinks to some not-translated files.
 BuildRequires:	kdelibs-devel >= %{_minlibsevr}
 BuildRequires:	libxml2-progs >= 2.4.2
-###BuildRequires:	unsermake >= 040511
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
@@ -1431,14 +1434,9 @@ K Desktop Environment - Zulu language support.
 KDE - wsparcie dla jêzyka zuluskiego.
 
 %prep
-%setup -q -c -T -a0 -a1 -a2 -a3 -a4 -a5 -a6 -a7 -a8 -a9 -a10 -a11 -a12 -a13 -a14 -a15 -a16 -a17 -a18 -a19 -a20 -a21 -a22 -a23 -a24 -a25 -a26 -a27 -a28 -a29 -a30 -a31 -a32 -a33 -a34 -a35 -a36 -a37 -a38 -a39 -a40 -a41 -a42 -a43 -a44 -a45 -a45 -a47 -a48 -a49
+%setup -qcT %(seq -f '-a %g' 0 64 | xargs)
 
 %build
-export kde_htmldir="%{_kdedocdir}"
-export kde_libs_htmldir="%{_kdedocdir}"
-
-LDFLAGS="%{rpmldflags}"
-
 for dir in kde-i18n-*-%{version}; do
 	cd "$dir"
 	%configure
@@ -1662,7 +1660,7 @@ rm -rf $RPM_BUILD_ROOT
 %files base
 %defattr(644,root,root,755)
 
-%if !%{with alltogether}
+%if %{without alltogether}
 %files -f Afrikaans.lang Afrikaans
 %defattr(644,root,root,755)
 
@@ -1862,6 +1860,7 @@ rm -rf $RPM_BUILD_ROOT
 %defattr(644,root,root,755)
 
 #%%files -f Zulu.lang Zulu
+
 %endif
 
 %if %{with alltogether}
