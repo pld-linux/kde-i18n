@@ -1,0 +1,4 @@
+- rel 0.2 removed kdelibs and tarball_creation bconds (for readability)
+  kdelibs-i18n is now generated like other per subpackage i18n packages in
+  kdemodule-i18n, therefore no need to have it here
+- added more obsoletes
