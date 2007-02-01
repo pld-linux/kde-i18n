@@ -1,0 +1,5 @@
+- simplified+fixed bconds, fixed build _with_tarball_creation
+- fixed typos in names: s/Affrikaans/Afrikaans/;s/Bookmal/Bokmaal/
+- use %lang() for *.mo when building _with_kdelibs
+- removed dirs belonging to glibc (%{_datadir}/locale/*{,/LC_MESSAGES})
+- merged split{mo,doc} update (for 3.1.1) from RA-branch
