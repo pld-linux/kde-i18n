@@ -1,6 +1,5 @@
 # TODO:
-# - add files to some ko locale
-# - huge unpackaged list: http://glen.alkohol.ee/pld/kde-i18n-3.5.5.txt
+# - huge unpackaged list: http://glen.alkohol.ee/pld/kde-i18n-3.5.6.txt
 #
 # Conditional build:
 %bcond_with	alltogether		# build single package containing support for all languages
@@ -147,29 +146,36 @@ Source62:	ftp://ftp.kde.org/pub/kde/%{_state}/%{version}/src/kde-i18n/%{name}-zh
 # Source62-md5:	f6211661d09cf7dcc381147d084537a7
 
 %if %{with alltogether}
-# NOTE:		"Affrikaans", "Norwegian_Bookmal" and "Portugnese" are here
-# intentionally, to allow upgrade from packages with misspelled names
 Requires:	kde-i18n-base
+# NOTE:	"Affrikaans", "Norwegian_Bookmal", "Brazil_Portugnese" and "Portugnese" are here
+# intentionally, to allow upgrade from packages with misspelled names
 Obsoletes:	kde-i18n-Affrikaans
+Obsoletes:	kde-i18n-Brazil
+Obsoletes:	kde-i18n-Brazil_Portugnese
+Obsoletes:	kde-i18n-British
+Obsoletes:	kde-i18n-Chinese-Big5
+Obsoletes:	kde-i18n-Gascon_occitan
+Obsoletes:	kde-i18n-Norwegian
+Obsoletes:	kde-i18n-Norwegian_Bookmal
+Obsoletes:	kde-i18n-Portugnese
+# currently existing packages, you may script to update these
 Obsoletes:	kde-i18n-Afrikaans
 Obsoletes:	kde-i18n-Arabic
 Obsoletes:	kde-i18n-Azerbaijani
 Obsoletes:	kde-i18n-Basque
 Obsoletes:	kde-i18n-Bengali
 Obsoletes:	kde-i18n-Bosnian
-Obsoletes:	kde-i18n-Brazil
-Obsoletes:	kde-i18n-Brazil_Portugnese
 Obsoletes:	kde-i18n-Brazil_Portuguese
-Obsoletes:	kde-i18n-British
+Obsoletes:	kde-i18n-Breton
 Obsoletes:	kde-i18n-Bulgarian
 Obsoletes:	kde-i18n-Catalan
 Obsoletes:	kde-i18n-Chinese
-Obsoletes:	kde-i18n-Chinese-Big5
 Obsoletes:	kde-i18n-Croatian
 Obsoletes:	kde-i18n-Cymraeg
 Obsoletes:	kde-i18n-Czech
 Obsoletes:	kde-i18n-Danish
 Obsoletes:	kde-i18n-Dutch
+Obsoletes:	kde-i18n-English
 Obsoletes:	kde-i18n-English_UK
 Obsoletes:	kde-i18n-Esperanto
 Obsoletes:	kde-i18n-Estonian
@@ -179,7 +185,6 @@ Obsoletes:	kde-i18n-French
 Obsoletes:	kde-i18n-Frisian
 Obsoletes:	kde-i18n-Galician
 Obsoletes:	kde-i18n-Gascon_Occitan
-Obsoletes:	kde-i18n-Gascon_occitan
 Obsoletes:	kde-i18n-German
 Obsoletes:	kde-i18n-Greek
 Obsoletes:	kde-i18n-Hebrew
@@ -190,6 +195,9 @@ Obsoletes:	kde-i18n-Indonesian
 Obsoletes:	kde-i18n-Irish
 Obsoletes:	kde-i18n-Italian
 Obsoletes:	kde-i18n-Japanese
+Obsoletes:	kde-i18n-Kazakh
+Obsoletes:	kde-i18n-Khmer
+Obsoletes:	kde-i18n-Kinyarwanda
 Obsoletes:	kde-i18n-Korean
 Obsoletes:	kde-i18n-Lao
 Obsoletes:	kde-i18n-Latvian
@@ -202,12 +210,9 @@ Obsoletes:	kde-i18n-Maori
 Obsoletes:	kde-i18n-Mongolian
 Obsoletes:	kde-i18n-Northern_Sami
 Obsoletes:	kde-i18n-Northern_Sotho
-Obsoletes:	kde-i18n-Norwegian
 Obsoletes:	kde-i18n-Norwegian_Bokmaal
-Obsoletes:	kde-i18n-Norwegian_Bookmal
 Obsoletes:	kde-i18n-Norwegian_Nynorsk
 Obsoletes:	kde-i18n-Polish
-Obsoletes:	kde-i18n-Portugnese
 Obsoletes:	kde-i18n-Portuguese
 Obsoletes:	kde-i18n-Punjabi
 Obsoletes:	kde-i18n-Romanian
@@ -923,6 +928,14 @@ K Desktop Environment - Japanese language support.
 %description Japanese -l pl
 KDE - wsparcie dla jêzyka japoñskiego.
 
+%package Kazakh
+Summary:	K Desktop Environment - Kazakh language support
+Group:		X11/Applications
+Requires:	%{name}-base = %{version}-%{release}
+
+%description Kazakh
+K Desktop Environment - Kazakh language support.
+
 %package Khmer
 Summary:	K Desktop Environment - Khmer language support
 Summary(pl):	KDE - wsparcie dla jêzyka khmerskiego
@@ -1173,6 +1186,7 @@ Summary:	K Desktop Environment - Portuguese (Brazil) language support
 Summary(pl):	KDE - wsparcie dla jêzyka portugalskiego (odmiany brazylijskiej)
 Group:		X11/Applications
 Requires:	%{name}-base = %{version}-%{release}
+# "Brazil_Protugnese" is here intentionally, to allow upgrade from misspelled packages
 Obsoletes:	kde-i18n-Brazil_Protugnese
 
 %description Brazil_Portuguese
@@ -1606,6 +1620,7 @@ FindLang hu > Hungarian.lang
 FindLang is > Icelandic.lang
 FindLang it > Italian.lang
 FindLang ja > Japanese.lang
+FindLang kk > Kazakh.lang
 FindLang km > Khmer.lang
 FindLang ko > Korean.lang
 FindLang lt > Lithuanian.lang
@@ -1628,7 +1643,7 @@ FindLang pt_BR > Brazil_Portuguese.lang
 FindLang ro > Romanian.lang
 FindLang rw > Kinyarwanda.lang
 FindLang ru > Russian.lang
-##FindLang ss > Swati.lang
+FindLang ss > Swati.lang
 FindLang se > Northern_Sami.lang
 FindLang sk > Slovak.lang
 FindLang sl > Slovenian.lang
@@ -1642,7 +1657,7 @@ FindLang tr > Turkish.lang
 FindLang uk > Ukrainian.lang
 FindLang uz > Uzbek.lang
 ##FindLang ven > Venda.lang
-##FindLang vi > Vietnamese.lang
+FindLang vi > Vietnamese.lang
 # FindLang wa > Walloon.lang
 ##FindLang xh > Xhosa.lang
 FindLang zh_CN > Simplified_Chinese.lang
@@ -1787,6 +1802,9 @@ check_installed_files
 %defattr(644,root,root,755)
 
 %files -f Japanese.lang Japanese
+%defattr(644,root,root,755)
+
+%files -f Kazakh.lang Kazakh
 %defattr(644,root,root,755)
 
 %files -f Korean.lang Korean
