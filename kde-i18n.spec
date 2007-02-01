@@ -1481,20 +1481,20 @@ if [ ! -f installed.stamp -o ! -d $RPM_BUILD_ROOT ]; then
 	mv $RPM_BUILD_ROOT%{_datadir}/apps/katepart/syntax/logohighlightstyle.de{_DE,}.xml
 	mv $RPM_BUILD_ROOT%{_datadir}/apps/katepart/syntax/logohighlightstyle.fr{_FR,}.xml
 
-	rm $RPM_BUILD_ROOT/usr/share/locale/fa/COPYING
-	rm $RPM_BUILD_ROOT/usr/share/locale/nb/README
-	rm $RPM_BUILD_ROOT/usr/share/locale/se/ChangeLog
-	rm $RPM_BUILD_ROOT/usr/share/locale/fr/nbsp_gui_fr.txt
-	rm $RPM_BUILD_ROOT/usr/share/locale/fr/relecture_docs
-	rm $RPM_BUILD_ROOT/usr/share/locale/fr/relecture_gui
+	# useless for the user
+	rm $RPM_BUILD_ROOT%{_datadir}/locale/fa/COPYING
+	rm $RPM_BUILD_ROOT%{_datadir}/locale/nb/README
+	rm $RPM_BUILD_ROOT%{_datadir}/locale/se/ChangeLog
+	rm $RPM_BUILD_ROOT%{_datadir}/locale/fr/nbsp_gui_fr.txt
+	rm $RPM_BUILD_ROOT%{_datadir}/locale/fr/relecture_docs
+	rm $RPM_BUILD_ROOT%{_datadir}/locale/fr/relecture_gui
+	rm $RPM_BUILD_ROOT%{_datadir}/locale/da/da.compendium
 
 	# remove empty language catalogs (= 1 message only)
 	find $RPM_BUILD_ROOT%{_datadir}/locale -type f -name '*.mo' | xargs file | egrep ', 1 messages$' | cut -d: -f1 | xargs rm -vf
 
 	touch installed.stamp
 fi
-
-rm $RPM_BUILD_ROOT/usr/share/locale/da/da.compendium
 
 FindLang() {
 	# $1 - short language name
