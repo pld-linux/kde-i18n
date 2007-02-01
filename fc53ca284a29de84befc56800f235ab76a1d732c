@@ -1,0 +1,10 @@
+- Updated to 2.2.2.
+- Release 1.
+- Removed "pl" patch.
+- BuildRequires: libxml2-devel.
+- Added new languages: Azerbaijani, Latvian, Maltese and Xhosa (???).
+- Redefined _htmldir to match rest of kde*.
+- Corrected FindLang() so it uses %{_htmldir}.
+  NOTE: this package is not intended to be placed on FTP, but it is usable
+  for individuals who need localized KDE (and have 0.6GB to build
+  it).
