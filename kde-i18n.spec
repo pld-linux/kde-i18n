@@ -1,5 +1,17 @@
 # TODO:
-# - huge unpackaged list: http://glen.alkohol.ee/pld/kde-i18n-3.5.6.txt
+#   /usr/share/apps/katepart/syntax/logohighlightstyle.de_DE.xml
+#   /usr/share/apps/katepart/syntax/logohighlightstyle.fr_FR.xml
+#   /usr/share/apps/kturtle/data/logokeywords.de_DE.xml
+#   /usr/share/apps/kturtle/data/logokeywords.fr_FR.xml
+#   /usr/share/locale/da/da.compendium
+#   /usr/share/locale/fa/COPYING
+#   /usr/share/locale/fr/nbsp_gui_fr.txt
+#   /usr/share/locale/fr/relecture_docs
+#   /usr/share/locale/fr/relecture_gui
+#   /usr/share/locale/mn/30x16.png
+#   /usr/share/locale/mn/60x40.png
+#   /usr/share/locale/nb/README
+#   /usr/share/locale/se/ChangeLog
 #
 # Conditional build:
 %bcond_with	alltogether		# build single package containing support for all languages
@@ -1667,7 +1679,6 @@ FindLang zh_TW > Chinese.lang
 check_installed_languages() {
 	err=0
 	# we ignore dialects (currently sr@Latn is the only case)
-	dirs=
 	for a in $(ls -1d %{name}-*-%{version} | %{__sed} '/@/d'); do
 		l=${a#%{name}-}
 		l=${l%%-%{version}}
@@ -1687,20 +1698,23 @@ cat [A-Z]*.lang > all.lang
 %endif
 
 %clean
-rm -rf $RPM_BUILD_ROOT
 check_installed_files() {
-set -x
+	err=0
 	for a in *.lang; do
 		lang=${a%%.lang}
 
 		rpmfile=%{_rpmdir}/%{name}-$lang-%{version}-%{release}.%{_target_cpu}.rpm
 		if [ ! -f $rpmfile ]; then
 			echo >&2 "Missing %%files section for $lang"
-			exit 1
+			err=1
 		fi
 	done
+	if [ "$err" = 1 ]; then
+		exit 1
+	fi
 }
 check_installed_files
+rm -rf $RPM_BUILD_ROOT
 
 %files base
 %defattr(644,root,root,755)
@@ -1807,6 +1821,9 @@ check_installed_files
 %files -f Kazakh.lang Kazakh
 %defattr(644,root,root,755)
 
+%files -f Khmer.lang Khmer
+%defattr(644,root,root,755)
+
 %files -f Korean.lang Korean
 %defattr(644,root,root,755)
 
@@ -1825,9 +1842,8 @@ check_installed_files
 
 %files -f Mongolian.lang Mongolian
 %defattr(644,root,root,755)
-#{_datadir}/locale/mn/*.png
 
-# %files -f Maori.lang Maori
+#%files -f Maori.lang Maori
 %files -f Macedonian.lang Macedonian
 %defattr(644,root,root,755)
 
@@ -1844,7 +1860,7 @@ check_installed_files
 %defattr(644,root,root,755)
 
 #%%files -f Northern_Sotho.lang Northern_Sotho
-# %files -f Gascon_Occitan.lang Gascon_Occitan
+#%%files -f Gascon_Occitan.lang Gascon_Occitan
 
 %files -f Punjabi.lang Punjabi
 %defattr(644,root,root,755)
@@ -1852,7 +1868,6 @@ check_installed_files
 %files -f Polish.lang Polish
 %defattr(644,root,root,755)
 
-#%%{_datadir}/services/searchproviders/*.desktop
 %files -f Portuguese.lang Portuguese
 %defattr(644,root,root,755)
 
@@ -1868,7 +1883,9 @@ check_installed_files
 %files -f Northern_Sami.lang Northern_Sami
 %defattr(644,root,root,755)
 
-#%%files -f Swati.lang Swati
+%files -f Swati.lang Swati
+%defattr(644,root,root,755)
+
 %files -f Slovak.lang Slovak
 %defattr(644,root,root,755)
 
@@ -1898,7 +1915,10 @@ check_installed_files
 %defattr(644,root,root,755)
 
 #%%files -f Venda.lang Venda
-#%%files -f Vietnamese.lang Vietnamese
+
+%files -f Vietnamese.lang Vietnamese
+%defattr(644,root,root,755)
+
 # %files -f Walloon.lang Walloon
 #%%files -f Xhosa.lang Xhosa
 %files -f Simplified_Chinese.lang Simplified_Chinese
