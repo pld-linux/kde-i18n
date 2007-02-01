@@ -1,17 +1,6 @@
 # TODO:
-#   /usr/share/apps/katepart/syntax/logohighlightstyle.de_DE.xml
-#   /usr/share/apps/katepart/syntax/logohighlightstyle.fr_FR.xml
-#   /usr/share/apps/kturtle/data/logokeywords.de_DE.xml
-#   /usr/share/apps/kturtle/data/logokeywords.fr_FR.xml
-#   /usr/share/locale/da/da.compendium
-#   /usr/share/locale/fa/COPYING
-#   /usr/share/locale/fr/nbsp_gui_fr.txt
-#   /usr/share/locale/fr/relecture_docs
-#   /usr/share/locale/fr/relecture_gui
 #   /usr/share/locale/mn/30x16.png
 #   /usr/share/locale/mn/60x40.png
-#   /usr/share/locale/nb/README
-#   /usr/share/locale/se/ChangeLog
 #
 # Conditional build:
 %bcond_with	alltogether		# build single package containing support for all languages
@@ -23,7 +12,7 @@ Summary:	K Desktop Environment - international support
 Summary(pl):	KDE - wsparcie dla wielu jêzyków
 Name:		kde-i18n
 Version:	3.5.6
-Release:	1
+Release:	2
 License:	GPL
 Group:		X11/Applications
 Source0:	ftp://ftp.kde.org/pub/kde/%{_state}/%{version}/src/kde-i18n/%{name}-af-%{version}.tar.bz2
@@ -1487,12 +1476,25 @@ if [ ! -f installed.stamp -o ! -d $RPM_BUILD_ROOT ]; then
 	# TODO: verify is this renaming ok
 	mv $RPM_BUILD_ROOT%{_datadir}/apps/kturtle/examples/de{_DE,}
 	mv $RPM_BUILD_ROOT%{_datadir}/apps/kturtle/examples/fr{_FR,}
+	mv $RPM_BUILD_ROOT%{_datadir}/apps/kturtle/data/logokeywords.de{_DE,}.xml
+	mv $RPM_BUILD_ROOT%{_datadir}/apps/kturtle/data/logokeywords.fr{_FR,}.xml
+	mv $RPM_BUILD_ROOT%{_datadir}/apps/katepart/syntax/logohighlightstyle.de{_DE,}.xml
+	mv $RPM_BUILD_ROOT%{_datadir}/apps/katepart/syntax/logohighlightstyle.fr{_FR,}.xml
+
+	rm $RPM_BUILD_ROOT/usr/share/locale/fa/COPYING
+	rm $RPM_BUILD_ROOT/usr/share/locale/nb/README
+	rm $RPM_BUILD_ROOT/usr/share/locale/se/ChangeLog
+	rm $RPM_BUILD_ROOT/usr/share/locale/fr/nbsp_gui_fr.txt
+	rm $RPM_BUILD_ROOT/usr/share/locale/fr/relecture_docs
+	rm $RPM_BUILD_ROOT/usr/share/locale/fr/relecture_gui
 
 	# remove empty language catalogs (= 1 message only)
 	find $RPM_BUILD_ROOT%{_datadir}/locale -type f -name '*.mo' | xargs file | egrep ', 1 messages$' | cut -d: -f1 | xargs rm -vf
 
 	touch installed.stamp
 fi
+
+rm $RPM_BUILD_ROOT/usr/share/locale/da/da.compendium
 
 FindLang() {
 	# $1 - short language name
@@ -1714,7 +1716,7 @@ check_installed_files() {
 	fi
 }
 check_installed_files
-rm -rf $RPM_BUILD_ROOT
+%{!?debug:rm -rf $RPM_BUILD_ROOT}
 
 %files base
 %defattr(644,root,root,755)
