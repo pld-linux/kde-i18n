@@ -1469,73 +1469,73 @@ if [ ! -f installed.stamp -o ! -d $RPM_BUILD_ROOT ]; then
 fi
 
 FindLang() {
-#    $1 - short language name
-#    $2 - long language name
+	# $1 - short language name
 	local lang="$1"
-	local language="$2"
 
-	echo "%defattr(644,root,root,755)" > "$language.lang"
+	echo "%defattr(644,root,root,755)"
 
-# share/doc/kde/HTML/(%%lang)
+	# share/doc/kde/HTML/(%%lang)
 	if [ -d "$RPM_BUILD_ROOT%{_kdedocdir}/$lang" ]; then
-		echo "%lang($lang) %{_kdedocdir}/$lang" >> "$language.lang"
+		echo "%lang($lang) %{_kdedocdir}/$lang"
 	fi
 
-# share/locale/(%%lang)
+	# share/locale/(%%lang)
 	if [ -d "$RPM_BUILD_ROOT%{_datadir}/locale/$lang" ]; then
-		echo "%lang($lang) %{_datadir}/locale/$lang/[cef]*" >> "$language.lang"
-		echo "%lang($lang) %{_datadir}/locale/$lang/LC_MESSAGES/*.mo" >> "$language.lang"
+		echo "%lang($lang) %{_datadir}/locale/$lang/[cef]*"
+		echo "%lang($lang) %{_datadir}/locale/$lang/LC_MESSAGES/*.mo"
 	fi
 
-# share/apps/amor/tips-(%%lang)
+	# share/apps/amor/tips-(%%lang)
 	if [ -f "$RPM_BUILD_ROOT%{_datadir}/apps/amor/tips-$lang" ]; then
-		echo "%lang($lang) %{_datadir}/apps/amor/tips-$lang" >> "$language.lang"
+		echo "%lang($lang) %{_datadir}/apps/amor/tips-$lang"
 	fi
 
-# share/apps/katepart/syntax/logohighlightstyle.(%%lang).xml
+	# share/apps/katepart/syntax/logohighlightstyle.(%%lang).xml
 	if [ -f "$RPM_BUILD_ROOT%{_datadir}/apps/katepart/syntax/logohighlightstyle.$lang.xml" ]; then
-		echo "%lang($lang) %{_datadir}/apps/katepart/syntax/logohighlightstyle.$lang.xml" >> "$language.lang"
+		echo "%lang($lang) %{_datadir}/apps/katepart/syntax/logohighlightstyle.$lang.xml"
 	fi
 
-# share/apps/ktuberling/sounds/(%%lang)
+	# share/apps/ktuberling/sounds/(%%lang)
 	if [ -d "$RPM_BUILD_ROOT%{_datadir}/apps/ktuberling/sounds/$lang" ]; then
-		echo "%lang($lang) %{_datadir}/apps/ktuberling/sounds/$lang" >> "$language.lang"
+		echo "%lang($lang) %{_datadir}/apps/ktuberling/sounds/$lang"
 	fi
 
-# share/apps/khangman/(%lang).txt
+	# share/apps/khangman/(%lang).txt
 	if [ -f "$RPM_BUILD_ROOT%{_datadir}/apps/khangman/$lang.txt" ]; then
-		echo "%lang($lang) %{_datadir}/apps/khangman/$lang.txt" >> "$language.lang"
+		echo "%lang($lang) %{_datadir}/apps/khangman/$lang.txt"
 	fi
 
-# share/apps/khangman/data/(%lang)
+	# share/apps/khangman/data/(%lang)
 	if [ -d "$RPM_BUILD_ROOT%{_datadir}/apps/khangman/data/$lang" ]; then
-		echo "%lang($lang) %{_datadir}/apps/khangman/data/$lang" >> "$language.lang"
+		echo "%lang($lang) %{_datadir}/apps/khangman/data/$lang"
 	fi
 
-# share/apps/klatin/data/vocabs/(%lang)
+	# share/apps/klatin/data/vocabs/(%lang)
 	if [ -d "$RPM_BUILD_ROOT%{_datadir}/apps/klatin/data/vocabs/$lang" ]; then
-		echo "%lang($lang) %{_datadir}/apps/klatin/data/vocabs/$lang" >> "$language.lang"
+		echo "%lang($lang) %{_datadir}/apps/klatin/data/vocabs/$lang"
 	fi
 
-# share/apps/klettres/(%lang)
+	# share/apps/klettres/(%lang)
 	if [ -d "$RPM_BUILD_ROOT%{_datadir}/apps/klettres/$lang" ]; then
-		echo "%lang($lang) %{_datadir}/apps/klettres/$lang" >> "$language.lang"
+		echo "%lang($lang) %{_datadir}/apps/klettres/$lang"
 	fi
 
-# share/apps/kturtle/data/logokeywords.(%lang).xml
+	# share/apps/kturtle/data/logokeywords.(%lang).xml
 	if [ -f "$RPM_BUILD_ROOT%{_datadir}/apps/kturtle/data/logokeywords.$lang.xml" ]; then
-		echo "%lang($lang) %{_datadir}/apps/kturtle/data/logokeywords.$lang.xml" >> "$language.lang"
+		echo "%lang($lang) %{_datadir}/apps/kturtle/data/logokeywords.$lang.xml"
 	fi
 
-# share/apps/kturtle/examples/(%lang)
+	# share/apps/kturtle/examples/(%lang)
 	if [ -d "$RPM_BUILD_ROOT%{_datadir}/apps/kturtle/examples/$lang" ]; then
-		echo "%lang($lang) %{_datadir}/apps/kturtle/examples/$lang" >> "$language.lang"
+		echo "%lang($lang) %{_datadir}/apps/kturtle/examples/$lang"
 	fi
 
-# share/apps/kanagram/data/et/elukutsed.kvtml
+	# share/apps/kanagram/data/et/elukutsed.kvtml
 	if [ -d "$RPM_BUILD_ROOT%{_datadir}/apps/kanagram/data/$lang" ]; then
-		echo "%lang($lang) %{_datadir}/apps/kanagram/data/$lang" >> "$language.lang"
+		echo "%lang($lang) %{_datadir}/apps/kanagram/data/$lang"
 	fi
+
+	touch $lang.ok
 }
 
 %if 0
@@ -1570,85 +1570,102 @@ for lang in $RPM_BUILD_ROOT%{_kdedocdir}/*; do
 done
 %endif
 
-rm -f *.lang *.cache __find.*
+rm -f *.lang *.cache __find.* *.ok
 
-FindLang af Afrikaans
-FindLang ar Arabic
-FindLang az Azerbaijani
-FindLang bg Bulgarian
-FindLang bn Bengali
-FindLang br Breton
-FindLang bs Bosnian
-FindLang ca Catalan
-FindLang cs Czech
-FindLang cy Cymraeg
-FindLang da Danish
-FindLang de German
-FindLang el Greek
-# FindLang en English
-FindLang en_GB English_UK
-FindLang eo Esperanto
-FindLang es Spanish
-FindLang et Estonian
-FindLang eu Basque
-FindLang fa Farsi
-FindLang fi Finnish
-FindLang fr French
-FindLang fy Frisian
-FindLang ga Irish
-FindLang gl Galician
-FindLang he Hebrew
-FindLang hi Hindi
-FindLang hr Croatian
-#FindLang hsb Upper_Sorbian
-FindLang hu Hungarian
-# FindLang id Indonesian
-FindLang is Icelandic
-FindLang it Italian
-FindLang ja Japanese
-FindLang km Khmer
-FindLang ko Korean
-FindLang lt Lithuanian
-FindLang lv Latvian
-# FindLang mi Maori
-FindLang mk Macedonian
-FindLang mn Mongolian
-FindLang ms Malay
-##FindLang mt Maltese
-FindLang nb Norwegian_Bokmaal
-FindLang nds Low_Saxon
-FindLang nl Dutch
-FindLang nn Norwegian_Nynorsk
-FindLang pa Punjabi
-#indLang nso Northern_Sotho
-# FindLang oc Gascon_Occitan
-FindLang pl Polish
-FindLang pt Portuguese
-FindLang pt_BR Brazil_Portuguese
-FindLang ro Romanian
-FindLang rw Kinyarwanda
-FindLang ru Russian
-##FindLang ss Swati
-FindLang se Northern_Sami
-FindLang sk Slovak
-FindLang sl Slovenian
-FindLang sr Serbian
-FindLang sr@Latn Serbian_Latin
-cat Serbian_Latin.lang >> Serbian.lang
-FindLang sv Swedish
-FindLang ta Tamil
-FindLang tg Tajik
-##FindLang th Thai
-FindLang tr Turkish
-FindLang uk Ukrainian
-FindLang uz Uzbek
-##FindLang ven Venda
-##FindLang vi Vietnamese
-# FindLang wa Walloon
-##FindLang xh Xhosa
-FindLang zh_CN Simplified_Chinese
-FindLang zh_TW Chinese
-##FindLang zu Zulu
+FindLang af > Afrikaans.lang
+FindLang ar > Arabic.lang
+FindLang az > Azerbaijani.lang
+FindLang bg > Bulgarian.lang
+FindLang bn > Bengali.lang
+FindLang br > Breton.lang
+FindLang bs > Bosnian.lang
+FindLang ca > Catalan.lang
+FindLang cs > Czech.lang
+FindLang cy > Cymraeg.lang
+FindLang da > Danish.lang
+FindLang de > German.lang
+FindLang el > Greek.lang
+# FindLang en > English.lang
+FindLang en_GB > English_UK.lang
+FindLang eo > Esperanto.lang
+FindLang es > Spanish.lang
+FindLang et > Estonian.lang
+FindLang eu > Basque.lang
+FindLang fa > Farsi.lang
+FindLang fi > Finnish.lang
+FindLang fr > French.lang
+FindLang fy > Frisian.lang
+FindLang ga > Irish.lang
+FindLang gl > Galician.lang
+FindLang he > Hebrew.lang
+FindLang hi > Hindi.lang
+FindLang hr > Croatian.lang
+#FindLang hsb > Upper_Sorbian.lang
+FindLang hu > Hungarian.lang
+# FindLang id > Indonesian.lang
+FindLang is > Icelandic.lang
+FindLang it > Italian.lang
+FindLang ja > Japanese.lang
+FindLang km > Khmer.lang
+FindLang ko > Korean.lang
+FindLang lt > Lithuanian.lang
+FindLang lv > Latvian.lang
+# FindLang mi > Maori.lang
+FindLang mk > Macedonian.lang
+FindLang mn > Mongolian.lang
+FindLang ms > Malay.lang
+##FindLang mt > Maltese.lang
+FindLang nb > Norwegian_Bokmaal.lang
+FindLang nds > Low_Saxon.lang
+FindLang nl > Dutch.lang
+FindLang nn > Norwegian_Nynorsk.lang
+FindLang pa > Punjabi.lang
+#indLang nso > Northern_Sotho.lang
+# FindLang oc > Gascon_Occitan.lang
+FindLang pl > Polish.lang
+FindLang pt > Portuguese.lang
+FindLang pt_BR > Brazil_Portuguese.lang
+FindLang ro > Romanian.lang
+FindLang rw > Kinyarwanda.lang
+FindLang ru > Russian.lang
+##FindLang ss > Swati.lang
+FindLang se > Northern_Sami.lang
+FindLang sk > Slovak.lang
+FindLang sl > Slovenian.lang
+FindLang sr > Serbian.lang
+FindLang sr@Latn >> Serbian.lang
+FindLang sv > Swedish.lang
+FindLang ta > Tamil.lang
+FindLang tg > Tajik.lang
+##FindLang th > Thai.lang
+FindLang tr > Turkish.lang
+FindLang uk > Ukrainian.lang
+FindLang uz > Uzbek.lang
+##FindLang ven > Venda.lang
+##FindLang vi > Vietnamese.lang
+# FindLang wa > Walloon.lang
+##FindLang xh > Xhosa.lang
+FindLang zh_CN > Simplified_Chinese.lang
+FindLang zh_TW > Chinese.lang
+##FindLang zu > Zulu.lang
+
+check_installed_languages() {
+	err=0
+	# we ignore dialects (currently sr@Latn is the only case)
+	dirs=
+	for a in $(ls -1d %{name}-*-%{version} | %{__sed} '/@/d'); do
+		l=${a#%{name}-}
+		l=${l%%-%{version}}
+		if [ ! -f $l.ok ]; then
+			echo >&2 "language $l not processed"
+			err=1
+		fi
+	done
+	if [ "$err" = 1 ]; then
+		exit 1
+	fi
+}
+check_installed_languages
 
 %if %{with alltogether}
 cat [A-Z]*.lang > all.lang
@@ -1656,6 +1673,19 @@ cat [A-Z]*.lang > all.lang
 
 %clean
 rm -rf $RPM_BUILD_ROOT
+check_installed_files() {
+set -x
+	for a in *.lang; do
+		lang=${a%%.lang}
+
+		rpmfile=%{_rpmdir}/%{name}-$lang-%{version}-%{release}.%{_target_cpu}.rpm
+		if [ ! -f $rpmfile ]; then
+			echo >&2 "Missing %%files section for $lang"
+			exit 1
+		fi
+	done
+}
+check_installed_files
 
 %files base
 %defattr(644,root,root,755)
