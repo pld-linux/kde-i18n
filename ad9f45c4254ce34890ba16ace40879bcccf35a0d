@@ -1,0 +1,5 @@
+- fixed build without docs installed (nodoc.patch)
+- made noarch
+- fixed language list
+- added pl %descriptions
+- release 2
