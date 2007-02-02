@@ -931,11 +931,15 @@ KDE - wsparcie dla jêzyka japoñskiego.
 
 %package Kazakh
 Summary:	K Desktop Environment - Kazakh language support
+Summary(pl):	KDE - wsparcie dla jêzyka kazaskiego
 Group:		X11/Applications
 Requires:	%{name}-base = %{version}-%{release}
 
 %description Kazakh
 K Desktop Environment - Kazakh language support.
+
+%description Kazakh -l pl
+KDE - wsparcie dla jêzyka kazaskiego.
 
 %package Khmer
 Summary:	K Desktop Environment - Khmer language support
