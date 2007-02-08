@@ -1,7 +1,3 @@
-# TODO:
-#   /usr/share/locale/mn/30x16.png
-#   /usr/share/locale/mn/60x40.png
-#
 # Conditional build:
 %bcond_with	alltogether		# build single package containing support for all languages
 
@@ -1493,6 +1489,10 @@ if [ ! -f installed.stamp -o ! -d $RPM_BUILD_ROOT ]; then
 	rm $RPM_BUILD_ROOT%{_datadir}/locale/fr/relecture_docs
 	rm $RPM_BUILD_ROOT%{_datadir}/locale/fr/relecture_gui
 	rm $RPM_BUILD_ROOT%{_datadir}/locale/da/da.compendium
+
+	# junk
+	rm $RPM_BUILD_ROOT%{_datadir}/locale/mn/30x16.png
+	rm $RPM_BUILD_ROOT%{_datadir}/locale/mn/60x40.png
 
 	# remove empty language catalogs (= 1 message only)
 	find $RPM_BUILD_ROOT%{_datadir}/locale -type f -name '*.mo' | xargs file | egrep ', 1 messages$' | cut -d: -f1 | xargs rm -vf
