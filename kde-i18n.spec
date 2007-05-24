@@ -637,11 +637,15 @@ KDE - wsparcie dla języka czeskiego.
 
 %package Kashubian
 Summary:	K Desktop Environment - Kashubian language support
+Summary(pl.UTF-8):	KDE - wsparcie dla języka kaszubskiego
 Group:		X11/Applications
 Requires:	%{name}-base = %{version}-%{release}
 
 %description Kashubian
 K Desktop Environment - Kashubian language support.
+
+%description Kashubian -l pl.UTF-u
+KDE - wsparcie dla języka kaszubskiego.
 
 %package Cymraeg
 Summary:	K Desktop Environment - Cymraeg language support
