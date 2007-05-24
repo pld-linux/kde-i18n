@@ -232,7 +232,6 @@ Obsoletes:	kde-i18n-Swati
 Obsoletes:	kde-i18n-Swedish
 Obsoletes:	kde-i18n-Tajik
 Obsoletes:	kde-i18n-Tamil
-Obsoletes:	kde-i18n-Thai
 Obsoletes:	kde-i18n-Turkish
 Obsoletes:	kde-i18n-Ukrainian
 Obsoletes:	kde-i18n-Upper_Sorbian
@@ -249,6 +248,8 @@ BuildRequires:	kdelibs-devel >= %{_minlibsevr}
 BuildRequires:	libxml2-progs >= 2.4.2
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
+
+%define		no_install_post_py_hardlink	1
 
 %description
 K Desktop Environment - international support.
@@ -633,6 +634,14 @@ K Desktop Environment - Czech language support.
 
 %description Czech -l pl.UTF-8
 KDE - wsparcie dla języka czeskiego.
+
+%package Kashubian
+Summary:	K Desktop Environment - Kashubian language support
+Group:		X11/Applications
+Requires:	%{name}-base = %{version}-%{release}
+
+%description Kashubian
+K Desktop Environment - Kashubian language support.
 
 %package Cymraeg
 Summary:	K Desktop Environment - Cymraeg language support
@@ -1483,12 +1492,15 @@ if [ ! -f installed.stamp -o ! -d $RPM_BUILD_ROOT ]; then
 	done
 
 	# TODO: verify is this renaming ok
-	mv $RPM_BUILD_ROOT%{_datadir}/apps/kturtle/examples/de{_DE,}
-	mv $RPM_BUILD_ROOT%{_datadir}/apps/kturtle/examples/fr{_FR,}
-	mv $RPM_BUILD_ROOT%{_datadir}/apps/kturtle/data/logokeywords.de{_DE,}.xml
-	mv $RPM_BUILD_ROOT%{_datadir}/apps/kturtle/data/logokeywords.fr{_FR,}.xml
 	mv $RPM_BUILD_ROOT%{_datadir}/apps/katepart/syntax/logohighlightstyle.de{_DE,}.xml
 	mv $RPM_BUILD_ROOT%{_datadir}/apps/katepart/syntax/logohighlightstyle.fr{_FR,}.xml
+	mv $RPM_BUILD_ROOT%{_datadir}/apps/katepart/syntax/logohighlightstyle.mk{_MK,}.xml
+	mv $RPM_BUILD_ROOT%{_datadir}/apps/kturtle/data/logokeywords.de{_DE,}.xml
+	mv $RPM_BUILD_ROOT%{_datadir}/apps/kturtle/data/logokeywords.fr{_FR,}.xml
+	mv $RPM_BUILD_ROOT%{_datadir}/apps/kturtle/data/logokeywords.mk{_MK,}.xml
+	mv $RPM_BUILD_ROOT%{_datadir}/apps/kturtle/examples/de{_DE,}
+	mv $RPM_BUILD_ROOT%{_datadir}/apps/kturtle/examples/fr{_FR,}
+	mv $RPM_BUILD_ROOT%{_datadir}/apps/kturtle/examples/mk{_MK,}
 
 	# useless for the user
 	rm $RPM_BUILD_ROOT%{_datadir}/locale/fa/COPYING
@@ -1622,6 +1634,7 @@ FindLang br > Breton.lang
 FindLang bs > Bosnian.lang
 FindLang ca > Catalan.lang
 FindLang cs > Czech.lang
+FindLang csb > Kashubian.lang
 FindLang cy > Cymraeg.lang
 FindLang da > Danish.lang
 FindLang de > German.lang
@@ -1679,7 +1692,7 @@ FindLang sr@Latn >> Serbian.lang
 FindLang sv > Swedish.lang
 FindLang ta > Tamil.lang
 FindLang tg > Tajik.lang
-##FindLang th > Thai.lang
+FindLang th > Thai.lang
 FindLang tr > Turkish.lang
 FindLang uk > Ukrainian.lang
 FindLang uz > Uzbek.lang
@@ -1842,6 +1855,9 @@ check_installed_files
 %files -f Korean.lang Korean
 %defattr(644,root,root,755)
 
+%files -f Kashubian.lang Kashubian
+%defattr(644,root,root,755)
+
 %files -f Lithuanian.lang Lithuanian
 %defattr(644,root,root,755)
 
@@ -1916,7 +1932,9 @@ check_installed_files
 %files -f Tamil.lang Tamil
 %defattr(644,root,root,755)
 
-#%%files -f Thai.lang Thai
+%files -f Thai.lang Thai
+%defattr(644,root,root,755)
+
 %files -f Turkish.lang Turkish
 %defattr(644,root,root,755)
 
