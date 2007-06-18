@@ -1092,13 +1092,13 @@ K Desktop Environment - Mongolian language support.
 KDE - wsparcie dla języka mongolskiego.
 
 %package Low_Saxon
-Summary:	K Desktop Environment - Low_Saxon language support
+Summary:	K Desktop Environment - Low Saxon language support
 Summary(pl.UTF-8):	KDE - wsparcie dla języka dolnosaksońskiego
 Group:		X11/Applications
 Requires:	%{name}-base = %{version}-%{release}
 
 %description Low_Saxon
-K Desktop Environment - Low_Saxon language support.
+K Desktop Environment - Low Saxon language support.
 
 %description Low_Saxon -l pl.UTF-8
 KDE - wsparcie dla języka dolnosaksońskiego.
