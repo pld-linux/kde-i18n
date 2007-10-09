@@ -236,6 +236,7 @@ Obsoletes:	kde-i18n-Swati
 Obsoletes:	kde-i18n-Swedish
 Obsoletes:	kde-i18n-Tajik
 Obsoletes:	kde-i18n-Tamil
+Obsoletes:	kde-i18n-Telugu
 Obsoletes:	kde-i18n-Turkish
 Obsoletes:	kde-i18n-Ukrainian
 Obsoletes:	kde-i18n-Upper_Sorbian
@@ -1342,6 +1343,14 @@ K Desktop Environment - Tamil language support.
 %description Tamil -l pl.UTF-8
 KDE - wsparcie dla języka tamilskiego.
 
+%package Telugu
+Summary:	K Desktop Environment - Telugu language support
+Group:		X11/Applications
+Requires:	%{name}-base = %{version}-%{release}
+
+%description Telugu
+K Desktop Environment - Telugu language support.
+
 %package Thai
 Summary:	K Desktop Environment - Thai language support
 Summary(pl.UTF-8):	KDE - wsparcie dla języka tajlandzkiego
@@ -1699,6 +1708,7 @@ FindLang sr > Serbian.lang
 FindLang sr@Latn >> Serbian.lang
 FindLang sv > Swedish.lang
 FindLang ta > Tamil.lang
+FindLang te > Telugu.lang
 FindLang tg > Tajik.lang
 FindLang th > Thai.lang
 FindLang tr > Turkish.lang
@@ -1706,7 +1716,7 @@ FindLang uk > Ukrainian.lang
 FindLang uz > Uzbek.lang
 ##FindLang ven > Venda.lang
 FindLang vi > Vietnamese.lang
-# FindLang wa > Walloon.lang
+ FindLang wa > Walloon.lang
 ##FindLang xh > Xhosa.lang
 FindLang zh_CN > Simplified_Chinese.lang
 FindLang zh_TW > Chinese.lang
@@ -1940,6 +1950,9 @@ check_installed_files
 %files -f Tamil.lang Tamil
 %defattr(644,root,root,755)
 
+%files -f Telugu.lang Telugu
+%defattr(644,root,root,755)
+
 %files -f Thai.lang Thai
 %defattr(644,root,root,755)
 
@@ -1960,7 +1973,9 @@ check_installed_files
 %files -f Vietnamese.lang Vietnamese
 %defattr(644,root,root,755)
 
-# %files -f Walloon.lang Walloon
+%files -f Walloon.lang Walloon
+%defattr(644,root,root,755)
+
 #%%files -f Xhosa.lang Xhosa
 %files -f Simplified_Chinese.lang Simplified_Chinese
 %defattr(644,root,root,755)
