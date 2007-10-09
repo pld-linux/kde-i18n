@@ -249,7 +249,8 @@ Obsoletes:	kde-i18n-Zulu
 %endif
 BuildRequires:	gettext-devel
 # It creates symlinks to some not-translated files.
-BuildRequires:	kdelibs-devel >= %{_minlibsevr}
+#BuildRequires:	kdelibs-devel >= %{_minlibsevr}
+BuildRequires:	kdelibs-devel
 BuildRequires:	libxml2-progs >= 2.4.2
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
@@ -1485,6 +1486,7 @@ KDE - wsparcie dla języka zuluskiego.
 
 %prep
 %setup -qcT %(seq -f '-a %g' 0 68 | xargs)
+rm -rf kde-i18n-fa-3.5.8 # broken
 
 %build
 for dir in kde-i18n-*-%{version}; do
@@ -1498,8 +1500,8 @@ for dir in kde-i18n-*-%{version}; do
 done
 
 %install
-if [ ! -f installed.stamp -o ! -d $RPM_BUILD_ROOT ]; then
-	rm -rf $RPM_BUILD_ROOT
+if [ ! -f makeinstall.stamp -o ! -d $RPM_BUILD_ROOT ]; then
+	rm -rf makeinstall.stamp installed.stamp $RPM_BUILD_ROOT
 
 	for dir in kde-i18n-*-%{version}; do
 		%{__make} -C "$dir" install \
@@ -1507,20 +1509,19 @@ if [ ! -f installed.stamp -o ! -d $RPM_BUILD_ROOT ]; then
 			kde_htmldir="%{_kdedocdir}" \
 			kde_libs_htmldir="%{_kdedocdir}"
 	done
+	touch makeinstall.stamp
+fi
 
+if [ ! -f installed.stamp ]; then
 	# TODO: verify is this renaming ok
 	mv $RPM_BUILD_ROOT%{_datadir}/apps/katepart/syntax/logohighlightstyle.de{_DE,}.xml
 	mv $RPM_BUILD_ROOT%{_datadir}/apps/katepart/syntax/logohighlightstyle.fr{_FR,}.xml
-	mv $RPM_BUILD_ROOT%{_datadir}/apps/katepart/syntax/logohighlightstyle.mk{_MK,}.xml
 	mv $RPM_BUILD_ROOT%{_datadir}/apps/kturtle/data/logokeywords.de{_DE,}.xml
 	mv $RPM_BUILD_ROOT%{_datadir}/apps/kturtle/data/logokeywords.fr{_FR,}.xml
-	mv $RPM_BUILD_ROOT%{_datadir}/apps/kturtle/data/logokeywords.mk{_MK,}.xml
 	mv $RPM_BUILD_ROOT%{_datadir}/apps/kturtle/examples/de{_DE,}
 	mv $RPM_BUILD_ROOT%{_datadir}/apps/kturtle/examples/fr{_FR,}
-	mv $RPM_BUILD_ROOT%{_datadir}/apps/kturtle/examples/mk{_MK,}
 
 	# useless for the user
-	rm $RPM_BUILD_ROOT%{_datadir}/locale/fa/COPYING
 	rm $RPM_BUILD_ROOT%{_datadir}/locale/nb/README
 	rm $RPM_BUILD_ROOT%{_datadir}/locale/se/ChangeLog
 	rm $RPM_BUILD_ROOT%{_datadir}/locale/fr/nbsp_gui_fr.txt
