@@ -1,6 +1,6 @@
 # NOTE
 # - easy way to update all sources with new/old locales:
-#   lynx -dump ftp://ftp.kde.org/pub/kde/stable/3.5.7/src/kde-i18n | awk '/.tar.bz2$/{printf("Source%d: %s\n", i++, $2)}' | tee out
+#   lynx -dump ftp://ftp.kde.org/pub/kde/stable/3.5.8/src/kde-i18n | awk '/.tar.bz2$/{printf("Source%d: %s\n", i++, $2)}' | tee out
 #   and then :r out in vim and ./builder -a5 the spec
 
 # Conditional build:
@@ -134,22 +134,26 @@ Source57:	ftp://ftp.kde.org/pub/kde/%{_state}/%{version}/src/kde-i18n/%{name}-sv
 # Source57-md5:	8b7fe01c959630fca516151b5635b525
 Source58:	ftp://ftp.kde.org/pub/kde/%{_state}/%{version}/src/kde-i18n/%{name}-ta-%{version}.tar.bz2
 # Source58-md5:	59e6f48dc6ce52ad6792579dd97a468b
-Source59:	ftp://ftp.kde.org/pub/kde/%{_state}/%{version}/src/kde-i18n/%{name}-tg-%{version}.tar.bz2
-# Source59-md5:	3a5286aabef22fbab5e3ec94c388bc8e
-Source60:	ftp://ftp.kde.org/pub/kde/%{_state}/%{version}/src/kde-i18n/%{name}-th-%{version}.tar.bz2
-# Source60-md5:	2a9f8edd352f958803b085899f26b30a
-Source61:	ftp://ftp.kde.org/pub/kde/%{_state}/%{version}/src/kde-i18n/%{name}-tr-%{version}.tar.bz2
-# Source61-md5:	317e4f9dd07e907f88f2c0331692a7c7
-Source62:	ftp://ftp.kde.org/pub/kde/%{_state}/%{version}/src/kde-i18n/%{name}-uk-%{version}.tar.bz2
-# Source62-md5:	2187a208bfdff609078e3afeaf8e02f3
-Source63:	ftp://ftp.kde.org/pub/kde/%{_state}/%{version}/src/kde-i18n/%{name}-uz-%{version}.tar.bz2
-# Source63-md5:	c36c41e57e7677705732e43d69d51b63
-Source64:	ftp://ftp.kde.org/pub/kde/%{_state}/%{version}/src/kde-i18n/%{name}-vi-%{version}.tar.bz2
-# Source64-md5:	5e025aa483bfd52d05ad9b28028c3515
-Source65:	ftp://ftp.kde.org/pub/kde/%{_state}/%{version}/src/kde-i18n/%{name}-zh_CN-%{version}.tar.bz2
-# Source65-md5:	29e2e6756afa3a6ad1b9014c91137b18
-Source66:	ftp://ftp.kde.org/pub/kde/%{_state}/%{version}/src/kde-i18n/%{name}-zh_TW-%{version}.tar.bz2
-# Source66-md5:	7defcfa0506759695f92e2835b06abeb
+Source59:	ftp://ftp.kde.org/pub/kde/%{_state}/%{version}/src/kde-i18n/%{name}-te-%{version}.tar.bz2
+# Source59-md5:	99623b9d093f65c63c74a6e433eef14c
+Source60:	ftp://ftp.kde.org/pub/kde/%{_state}/%{version}/src/kde-i18n/%{name}-tg-%{version}.tar.bz2
+# Source60-md5:	3a5286aabef22fbab5e3ec94c388bc8e
+Source61:	ftp://ftp.kde.org/pub/kde/%{_state}/%{version}/src/kde-i18n/%{name}-th-%{version}.tar.bz2
+# Source61-md5:	2a9f8edd352f958803b085899f26b30a
+Source62:	ftp://ftp.kde.org/pub/kde/%{_state}/%{version}/src/kde-i18n/%{name}-tr-%{version}.tar.bz2
+# Source62-md5:	317e4f9dd07e907f88f2c0331692a7c7
+Source63:	ftp://ftp.kde.org/pub/kde/%{_state}/%{version}/src/kde-i18n/%{name}-uk-%{version}.tar.bz2
+# Source63-md5:	2187a208bfdff609078e3afeaf8e02f3
+Source64:	ftp://ftp.kde.org/pub/kde/%{_state}/%{version}/src/kde-i18n/%{name}-uz-%{version}.tar.bz2
+# Source64-md5:	c36c41e57e7677705732e43d69d51b63
+Source65:	ftp://ftp.kde.org/pub/kde/%{_state}/%{version}/src/kde-i18n/%{name}-vi-%{version}.tar.bz2
+# Source65-md5:	5e025aa483bfd52d05ad9b28028c3515
+Source66:	ftp://ftp.kde.org/pub/kde/%{_state}/%{version}/src/kde-i18n/%{name}-wa-%{version}.tar.bz2
+# Source66-md5:	80ab89389e45431fedf5b57630a91108
+Source67:	ftp://ftp.kde.org/pub/kde/%{_state}/%{version}/src/kde-i18n/%{name}-zh_CN-%{version}.tar.bz2
+# Source67-md5:	29e2e6756afa3a6ad1b9014c91137b18
+Source68:	ftp://ftp.kde.org/pub/kde/%{_state}/%{version}/src/kde-i18n/%{name}-zh_TW-%{version}.tar.bz2
+# Source68-md5:	7defcfa0506759695f92e2835b06abeb
 
 %if %{with alltogether}
 Requires:	kde-i18n-base
@@ -1471,7 +1475,7 @@ K Desktop Environment - Zulu language support.
 KDE - wsparcie dla języka zuluskiego.
 
 %prep
-%setup -qcT %(seq -f '-a %g' 0 66 | xargs)
+%setup -qcT %(seq -f '-a %g' 0 68 | xargs)
 
 %build
 for dir in kde-i18n-*-%{version}; do
