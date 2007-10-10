@@ -13,7 +13,7 @@ Summary:	K Desktop Environment - international support
 Summary(pl.UTF-8):	KDE - wsparcie dla wielu języków
 Name:		kde-i18n
 Version:	3.5.8
-Release:	0.1
+Release:	1
 License:	GPL
 Group:		X11/Applications
 Source0:	ftp://ftp.kde.org/pub/kde/%{_state}/%{version}/src/kde-i18n/%{name}-af-%{version}.tar.bz2
@@ -154,6 +154,7 @@ Source67:	ftp://ftp.kde.org/pub/kde/%{_state}/%{version}/src/kde-i18n/%{name}-zh
 # Source67-md5:	29e2e6756afa3a6ad1b9014c91137b18
 Source68:	ftp://ftp.kde.org/pub/kde/%{_state}/%{version}/src/kde-i18n/%{name}-zh_TW-%{version}.tar.bz2
 # Source68-md5:	7defcfa0506759695f92e2835b06abeb
+Patch0:		%{name}-fa.patch
 
 %if %{with alltogether}
 Requires:	kde-i18n-base
@@ -248,8 +249,6 @@ Obsoletes:	kde-i18n-Xhosa
 Obsoletes:	kde-i18n-Zulu
 %endif
 BuildRequires:	gettext-devel
-# It creates symlinks to some not-translated files.
-#BuildRequires:	kdelibs-devel >= %{_minlibsevr}
 BuildRequires:	kdelibs-devel
 BuildRequires:	libxml2-progs >= 2.4.2
 BuildArch:	noarch
@@ -1486,7 +1485,7 @@ KDE - wsparcie dla języka zuluskiego.
 
 %prep
 %setup -qcT %(seq -f '-a %g' 0 68 | xargs)
-rm -rf kde-i18n-fa-3.5.8 # broken
+%patch0 -p1
 
 %build
 for dir in kde-i18n-*-%{version}; do
@@ -1513,6 +1512,9 @@ if [ ! -f makeinstall.stamp -o ! -d $RPM_BUILD_ROOT ]; then
 fi
 
 if [ ! -f installed.stamp ]; then
+	# remove empty language catalogs (= 1 message only)
+	find $RPM_BUILD_ROOT%{_datadir}/locale -type f -name '*.mo' | xargs file | egrep ', 1 messages$' | cut -d: -f1 | xargs rm -vf
+
 	# TODO: verify is this renaming ok
 	mv $RPM_BUILD_ROOT%{_datadir}/apps/katepart/syntax/logohighlightstyle.de{_DE,}.xml
 	mv $RPM_BUILD_ROOT%{_datadir}/apps/katepart/syntax/logohighlightstyle.fr{_FR,}.xml
@@ -1532,9 +1534,7 @@ if [ ! -f installed.stamp ]; then
 	# junk
 	rm $RPM_BUILD_ROOT%{_datadir}/locale/mn/30x16.png
 	rm $RPM_BUILD_ROOT%{_datadir}/locale/mn/60x40.png
-
-	# remove empty language catalogs (= 1 message only)
-	find $RPM_BUILD_ROOT%{_datadir}/locale -type f -name '*.mo' | xargs file | egrep ', 1 messages$' | cut -d: -f1 | xargs rm -vf
+	rm $RPM_BUILD_ROOT%{_datadir}/locale/fa/COPYING
 
 	touch installed.stamp
 fi
