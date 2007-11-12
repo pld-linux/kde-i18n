@@ -13,7 +13,7 @@ Summary:	K Desktop Environment - international support
 Summary(pl.UTF-8):	KDE - wsparcie dla wielu języków
 Name:		kde-i18n
 Version:	3.5.8
-Release:	1
+Release:	2
 License:	GPL
 Group:		X11/Applications
 Source0:	ftp://ftp.kde.org/pub/kde/%{_state}/%{version}/src/kde-i18n/%{name}-af-%{version}.tar.bz2
@@ -155,7 +155,7 @@ Source67:	ftp://ftp.kde.org/pub/kde/%{_state}/%{version}/src/kde-i18n/%{name}-zh
 Source68:	ftp://ftp.kde.org/pub/kde/%{_state}/%{version}/src/kde-i18n/%{name}-zh_TW-%{version}.tar.bz2
 # Source68-md5:	7defcfa0506759695f92e2835b06abeb
 Patch0:		%{name}-fa.patch
-
+Patch1:		%{name}-locale-names.patch
 %if %{with alltogether}
 Requires:	kde-i18n-base
 # NOTE:	"Affrikaans", "Norwegian_Bookmal", "Brazil_Portugnese" and "Portugnese" are here
@@ -523,6 +523,8 @@ Obsoletes:	kdm-i18n
 Obsoletes:	konqueror-i18n
 Obsoletes:	konqueror-libs-i18n
 Obsoletes:	quanta-i18n
+# sr@Latn vs. sr@latin
+Conflicts:	glibc-misc < 6:2.7
 
 %description base
 Empty metapackage to handle obsoletes for individual i18n subpackages.
@@ -1486,6 +1488,7 @@ KDE - wsparcie dla języka zuluskiego.
 %prep
 %setup -qcT %(seq -f '-a %g' 0 68 | xargs)
 %patch0 -p1
+%patch1 -p1
 
 %build
 for dir in kde-i18n-*-%{version}; do
@@ -1706,7 +1709,7 @@ FindLang se > Northern_Sami.lang
 FindLang sk > Slovak.lang
 FindLang sl > Slovenian.lang
 FindLang sr > Serbian.lang
-FindLang sr@Latn >> Serbian.lang
+FindLang sr@latin >> Serbian.lang
 FindLang sv > Swedish.lang
 FindLang ta > Tamil.lang
 FindLang te > Telugu.lang
@@ -1725,7 +1728,7 @@ FindLang zh_TW > Chinese.lang
 
 check_installed_languages() {
 	err=0
-	# we ignore dialects (currently sr@Latn is the only case)
+	# we ignore dialects (currently sr@latin is the only case)
 	for a in $(ls -1d %{name}-*-%{version} | %{__sed} '/@/d'); do
 		l=${a#%{name}-}
 		l=${l%%-%{version}}
