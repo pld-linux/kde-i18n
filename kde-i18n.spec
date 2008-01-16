@@ -1347,11 +1347,15 @@ KDE - wsparcie dla języka tamilskiego.
 
 %package Telugu
 Summary:	K Desktop Environment - Telugu language support
+Summary(pl.UTF-8):	KDE - wsparcie dla języka telugu
 Group:		X11/Applications
 Requires:	%{name}-base = %{version}-%{release}
 
 %description Telugu
 K Desktop Environment - Telugu language support.
+
+%description Telugu -l pl.UTF-8
+KDE - wsparcie dla języka telugu.
 
 %package Thai
 Summary:	K Desktop Environment - Thai language support
@@ -1660,7 +1664,7 @@ FindLang cy > Cymraeg.lang
 FindLang da > Danish.lang
 FindLang de > German.lang
 FindLang el > Greek.lang
-# FindLang en > English.lang
+#FindLang en > English.lang
 FindLang en_GB > English_UK.lang
 FindLang eo > Esperanto.lang
 FindLang es > Spanish.lang
@@ -1677,7 +1681,7 @@ FindLang hi > Hindi.lang
 FindLang hr > Croatian.lang
 #FindLang hsb > Upper_Sorbian.lang
 FindLang hu > Hungarian.lang
-# FindLang id > Indonesian.lang
+#FindLang id > Indonesian.lang
 FindLang is > Icelandic.lang
 FindLang it > Italian.lang
 FindLang ja > Japanese.lang
@@ -1686,18 +1690,18 @@ FindLang km > Khmer.lang
 FindLang ko > Korean.lang
 FindLang lt > Lithuanian.lang
 FindLang lv > Latvian.lang
-# FindLang mi > Maori.lang
+#FindLang mi > Maori.lang
 FindLang mk > Macedonian.lang
 FindLang mn > Mongolian.lang
 FindLang ms > Malay.lang
-##FindLang mt > Maltese.lang
+#FindLang mt > Maltese.lang
 FindLang nb > Norwegian_Bokmaal.lang
 FindLang nds > Low_Saxon.lang
 FindLang nl > Dutch.lang
 FindLang nn > Norwegian_Nynorsk.lang
 FindLang pa > Punjabi.lang
-#indLang nso > Northern_Sotho.lang
-# FindLang oc > Gascon_Occitan.lang
+#FindLang nso > Northern_Sotho.lang
+#FindLang oc > Gascon_Occitan.lang
 FindLang pl > Polish.lang
 FindLang pt > Portuguese.lang
 FindLang pt_BR > Brazil_Portuguese.lang
@@ -1718,13 +1722,13 @@ FindLang th > Thai.lang
 FindLang tr > Turkish.lang
 FindLang uk > Ukrainian.lang
 FindLang uz > Uzbek.lang
-##FindLang ven > Venda.lang
+#FindLang ven > Venda.lang
 FindLang vi > Vietnamese.lang
- FindLang wa > Walloon.lang
-##FindLang xh > Xhosa.lang
+FindLang wa > Walloon.lang
+#FindLang xh > Xhosa.lang
 FindLang zh_CN > Simplified_Chinese.lang
 FindLang zh_TW > Chinese.lang
-##FindLang zu > Zulu.lang
+#FindLang zu > Zulu.lang
 
 check_installed_languages() {
 	err=0
@@ -1810,6 +1814,7 @@ check_installed_files
 %defattr(644,root,root,755)
 
 # %files -f English.lang English
+
 %files -f English_UK.lang English_UK
 %defattr(644,root,root,755)
 
@@ -1858,7 +1863,8 @@ check_installed_files
 %files -f Hungarian.lang Hungarian
 %defattr(644,root,root,755)
 
-##%files -f Indonesian.lang Indonesian
+#%files -f Indonesian.lang Indonesian
+
 %files -f Icelandic.lang Icelandic
 %defattr(644,root,root,755)
 
@@ -1889,7 +1895,8 @@ check_installed_files
 %files -f Latvian.lang Latvian
 %defattr(644,root,root,755)
 
-#%%files -f Maltese.lang Maltese
+#%files -f Maltese.lang Maltese
+
 %files -f Malay.lang Malay
 %defattr(644,root,root,755)
 
@@ -1897,6 +1904,7 @@ check_installed_files
 %defattr(644,root,root,755)
 
 #%files -f Maori.lang Maori
+
 %files -f Macedonian.lang Macedonian
 %defattr(644,root,root,755)
 
@@ -1912,8 +1920,9 @@ check_installed_files
 %files -f Norwegian_Nynorsk.lang Norwegian_Nynorsk
 %defattr(644,root,root,755)
 
-#%%files -f Northern_Sotho.lang Northern_Sotho
-#%%files -f Gascon_Occitan.lang Gascon_Occitan
+#%files -f Northern_Sotho.lang Northern_Sotho
+
+#%files -f Gascon_Occitan.lang Gascon_Occitan
 
 %files -f Punjabi.lang Punjabi
 %defattr(644,root,root,755)
@@ -1972,7 +1981,7 @@ check_installed_files
 %files -f Uzbek.lang Uzbek
 %defattr(644,root,root,755)
 
-#%%files -f Venda.lang Venda
+#%files -f Venda.lang Venda
 
 %files -f Vietnamese.lang Vietnamese
 %defattr(644,root,root,755)
@@ -1980,14 +1989,15 @@ check_installed_files
 %files -f Walloon.lang Walloon
 %defattr(644,root,root,755)
 
-#%%files -f Xhosa.lang Xhosa
+#%files -f Xhosa.lang Xhosa
+
 %files -f Simplified_Chinese.lang Simplified_Chinese
 %defattr(644,root,root,755)
 
 %files -f Chinese.lang Chinese
 %defattr(644,root,root,755)
 
-#%%files -f Zulu.lang Zulu
+#%files -f Zulu.lang Zulu
 
 %endif
 
