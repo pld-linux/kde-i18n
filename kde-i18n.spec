@@ -1,5 +1,3 @@
-# TODO
-# - new locale: be
 # NOTE
 # - easy way to update all sources with new/old locales:
 #   lynx -dump ftp://ftp.kde.org/pub/kde/stable/3.5.9/src/kde-i18n | awk '/3.5.9.tar.bz2$/{printf("Source%d: %s\n", i++, $2)}' | tee out
@@ -573,6 +571,14 @@ K Desktop Environment - Azerbaijani language support.
 
 %description Azerbaijani -l pl.UTF-8
 KDE - wsparcie dla języka azerskiego.
+
+%package Belarusian
+Summary:	K Desktop Environment - Belarusian language support
+Group:		X11/Applications
+Requires:	%{name}-base = %{version}-%{release}
+
+%description Belarusian
+K Desktop Environment - Belarusian language support.
 
 %package Bulgarian
 Summary:	K Desktop Environment - Bulgarian language support
@@ -1494,7 +1500,7 @@ K Desktop Environment - Zulu language support.
 KDE - wsparcie dla języka zuluskiego.
 
 %prep
-%setup -qcT %(seq -f '-a %g' 0 68 | xargs)
+%setup -qcT %(seq -f '-a %g' 0 69 | xargs)
 %patch0 -p1
 %patch1 -p1
 
@@ -1657,6 +1663,7 @@ rm -f *.lang *.cache __find.* *.ok
 FindLang af > Afrikaans.lang
 FindLang ar > Arabic.lang
 FindLang az > Azerbaijani.lang
+FindLang be > Belarusian.lang
 FindLang bg > Bulgarian.lang
 FindLang bn > Bengali.lang
 FindLang br > Breton.lang
@@ -1785,6 +1792,9 @@ check_installed_files
 %defattr(644,root,root,755)
 
 %files -f Azerbaijani.lang Azerbaijani
+%defattr(644,root,root,755)
+
+%files -f Belarusian.lang Belarusian
 %defattr(644,root,root,755)
 
 %files -f Bulgarian.lang Bulgarian
