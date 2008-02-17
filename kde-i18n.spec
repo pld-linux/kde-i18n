@@ -156,8 +156,8 @@ Source68:	ftp://ftp.kde.org/pub/kde/%{_state}/%{version}/src/kde-i18n/%{name}-zh
 # Source68-md5:	232a615fc0dedb13615d4d89dcd6d416
 Source69:	ftp://ftp.kde.org/pub/kde/%{_state}/%{version}/src/kde-i18n/%{name}-zh_TW-%{version}.tar.bz2
 # Source69-md5:	4e247ee8af22a2a08edb67d083425b90
-Patch0:		%{name}-fa.patch
-Patch1:		%{name}-locale-names.patch
+Patch0:		%{name}-locale-names.patch
+Patch1:		%{name}-et-bug-157938.patch
 %if %{with alltogether}
 Requires:	kde-i18n-base
 # NOTE:	"Affrikaans", "Norwegian_Bookmal", "Brazil_Portugnese" and "Portugnese" are here
@@ -1501,15 +1501,24 @@ KDE - wsparcie dla języka zuluskiego.
 
 %prep
 %setup -qcT %(seq -f '-a %g' 0 69 | xargs)
-%patch0 -p1
+cd %{name}-sr@Latn-%{version}
+%patch0 -p2
+cd -
+cd %{name}-et-%{version}
 %patch1 -p1
+cd -
+
+# http://bugs.kde.org/show_bug.cgi?id=157967
+mv kde-i18n-ru-%{version}{,-broken}
 
 %build
+
 for dir in kde-i18n-*-%{version}; do
 	cd "$dir"
-	%configure
+	if [ ! -f Makefile ]; then
+		%configure
+	fi
 	%{__make} \
-		RPM_OPT_FLAGS="%{rpmcflags}" \
 		kde_htmldir="%{_kdedocdir}" \
 		kde_libs_htmldir="%{_kdedocdir}"
 	cd ..
@@ -1520,7 +1529,7 @@ if [ ! -f makeinstall.stamp -o ! -d $RPM_BUILD_ROOT ]; then
 	rm -rf makeinstall.stamp installed.stamp $RPM_BUILD_ROOT
 
 	for dir in kde-i18n-*-%{version}; do
-		%{__make} -C "$dir" install \
+		%{__make} -C $dir install \
 			DESTDIR=$RPM_BUILD_ROOT \
 			kde_htmldir="%{_kdedocdir}" \
 			kde_libs_htmldir="%{_kdedocdir}"
