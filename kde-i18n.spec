@@ -13,7 +13,7 @@ Summary:	K Desktop Environment - international support
 Summary(pl.UTF-8):	KDE - wsparcie dla wielu języków
 Name:		kde-i18n
 Version:	3.5.9
-Release:	2
+Release:	3
 License:	GPL
 Group:		X11/Applications
 Source0:	ftp://ftp.kde.org/pub/kde/%{_state}/%{version}/src/kde-i18n/%{name}-af-%{version}.tar.bz2
@@ -1517,8 +1517,8 @@ mv -f configure{,.dist}
 cd ..
 
 %build
-for dir in kde-i18n-ru-%{version}; do
-	cd "$dir"
+for dir in kde-i18n-*-%{version}; do
+	cd $dir
 	if [ ! -f configure ]; then
 		%{__make} -f admin/Makefile.common cvs
 	fi
