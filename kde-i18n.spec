@@ -13,7 +13,7 @@ Summary:	K Desktop Environment - international support
 Summary(pl.UTF-8):	KDE - wsparcie dla wielu języków
 Name:		kde-i18n
 Version:	3.5.9
-Release:	0.1
+Release:	2
 License:	GPL
 Group:		X11/Applications
 Source0:	ftp://ftp.kde.org/pub/kde/%{_state}/%{version}/src/kde-i18n/%{name}-af-%{version}.tar.bz2
@@ -156,6 +156,8 @@ Source68:	ftp://ftp.kde.org/pub/kde/%{_state}/%{version}/src/kde-i18n/%{name}-zh
 # Source68-md5:	232a615fc0dedb13615d4d89dcd6d416
 Source69:	ftp://ftp.kde.org/pub/kde/%{_state}/%{version}/src/kde-i18n/%{name}-zh_TW-%{version}.tar.bz2
 # Source69-md5:	4e247ee8af22a2a08edb67d083425b90
+Source70:	kde-admin.tar.bz2
+# Source70-md5:	d98cf83cbea953f42d5b3087d1f47c71
 Patch0:		%{name}-locale-names.patch
 Patch1:		%{name}-et-bug-157938.patch
 %if %{with alltogether}
@@ -1501,20 +1503,25 @@ KDE - wsparcie dla języka zuluskiego.
 
 %prep
 %setup -qcT %(seq -f '-a %g' 0 69 | xargs)
-cd %{name}-sr@Latn-%{version}
+cd kde-i18n-sr@Latn-%{version}
 %patch0 -p2
 cd -
-cd %{name}-et-%{version}
+cd kde-18n-et-%{version}
 %patch1 -p1
 cd -
 
 # http://bugs.kde.org/show_bug.cgi?id=157967
-mv kde-i18n-ru-%{version}{,-broken}
+cd kde-i18n-ru-%{version}
+%{__tar} xjf %{SOURCE70}
+mv -f configure{,.dist}
+cd ..
 
 %build
-
-for dir in kde-i18n-*-%{version}; do
+for dir in kde-i18n-ru-%{version}; do
 	cd "$dir"
+	if [ ! -f configure ]; then
+		%{__make} -f admin/Makefile.common cvs
+	fi
 	if [ ! -f Makefile ]; then
 		%configure
 	fi
