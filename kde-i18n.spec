@@ -576,11 +576,15 @@ KDE - wsparcie dla języka azerskiego.
 
 %package Belarusian
 Summary:	K Desktop Environment - Belarusian language support
+Summary(pl.UTF-8):	KDE - wsparcie dla języka białoruskiego
 Group:		X11/Applications
 Requires:	%{name}-base = %{version}-%{release}
 
 %description Belarusian
 K Desktop Environment - Belarusian language support.
+
+%description Belarusian -l pl.UTF-8
+KDE - wsparcie dla języka białoruskiego.
 
 %package Bulgarian
 Summary:	K Desktop Environment - Bulgarian language support
