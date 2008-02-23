@@ -1573,6 +1573,29 @@ if [ ! -f installed.stamp ]; then
 	rm $RPM_BUILD_ROOT%{_datadir}/locale/mn/60x40.png
 	rm $RPM_BUILD_ROOT%{_datadir}/locale/fa/COPYING
 
+	# make symlinks relative
+	for lang in $RPM_BUILD_ROOT%{_kdedocdir}/*; do
+		[ -d $lang/common ] || continue
+
+		for i in $lang/*/*/*; do
+			if [ -d $i -a -L $i/common ]; then
+				ln -snfv ../../../common $i
+			fi
+		done
+
+		for i in $lang/*/*; do
+			if [ -d $i -a -L $i/common ]; then
+				ln -snfv ../../common $i
+			fi
+		done
+
+		for i in $lang/*; do
+			if [ -d $i -a -L $i/common ]; then
+				ln -snfv ../common $i
+			fi
+		done
+	done
+
 	touch installed.stamp
 fi
 
@@ -1645,38 +1668,6 @@ FindLang() {
 
 	touch $lang.ok
 }
-
-%if 0
-# make symlinks relative
-for lang in $RPM_BUILD_ROOT%{_kdedocdir}/*; do
-	[ -d $lang ] || continue
-
-	if [ ! -d $lang/common ]; then
-		ln -s ../en/common $lang/common
-	fi
-
-	for i in $lang/*/*/*; do
-		if [ -d $i -a -L $i/common ]; then
-			rm -f $i/common
-			ln -sf ../../../common $i
-		fi
-	done
-
-	for i in $lang/*/*; do
-		if [ -d $i -a -L $i/common ]; then
-			rm -f $i/common
-			ln -sf ../../common $i
-		fi
-	done
-
-	for i in $lang/*; do
-		if [ -d $i -a -L $i/common ]; then
-			rm -f $i/common
-			ln -sf ../common $i
-		fi
-	done
-done
-%endif
 
 rm -f *.lang *.cache __find.* *.ok
 
