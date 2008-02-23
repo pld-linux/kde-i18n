@@ -1608,6 +1608,9 @@ FindLang() {
 	# share/doc/kde/HTML/(%%lang)
 	if [ -d "$RPM_BUILD_ROOT%{_kdedocdir}/$lang" ]; then
 		echo "%lang($lang) %{_kdedocdir}/$lang"
+		# in kdelibs
+		echo "%exclude %dir %{_kdedocdir}/$lang"
+		echo "%exclude %dir %{_kdedocdir}/$lang/common"
 	fi
 
 	# share/locale/(%%lang)
