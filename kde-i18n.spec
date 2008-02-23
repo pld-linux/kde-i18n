@@ -1612,7 +1612,9 @@ FindLang() {
 
 	# share/locale/(%%lang)
 	if [ -d "$RPM_BUILD_ROOT%{_datadir}/locale/$lang" ]; then
-		echo "%lang($lang) %{_datadir}/locale/$lang/[cef]*"
+		echo "%lang($lang) %{_datadir}/locale/$lang/charset"
+		echo "%lang($lang) %{_datadir}/locale/$lang/entry.desktop"
+		echo "%lang($lang) %{_datadir}/locale/$lang/flag.png"
 		echo "%lang($lang) %{_datadir}/locale/$lang/LC_MESSAGES/*.mo"
 	fi
 
