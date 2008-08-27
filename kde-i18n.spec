@@ -1742,7 +1742,7 @@ FindLang th > Thai.lang
 FindLang tr > Turkish.lang
 FindLang uk > Ukrainian.lang
 FindLang uz > Uzbek.lang
-FindLang uz@cyrillic > Uzbek.lang
+FindLang uz@cyrillic >> Uzbek.lang
 #FindLang ven > Venda.lang
 FindLang vi > Vietnamese.lang
 FindLang wa > Walloon.lang
