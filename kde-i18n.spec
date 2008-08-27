@@ -158,6 +158,7 @@ Source69:	ftp://ftp.kde.org/pub/kde/%{_state}/%{version}/src/kde-i18n/%{name}-zh
 # Source69-md5:	c9b7fc28f62fc43f57c0d75535860be6
 Source70:	kde-admin.tar.bz2
 # Source70-md5:	d98cf83cbea953f42d5b3087d1f47c71
+Patch0:		%{name}-locale-names.patch
 %if %{with alltogether}
 Requires:	kde-i18n-base
 # NOTE:	"Affrikaans", "Norwegian_Bookmal", "Brazil_Portugnese" and "Portugnese" are here
@@ -1506,6 +1507,13 @@ KDE - wsparcie dla języka zuluskiego.
 %prep
 %setup -qcT %(seq -f '-a %g' 0 69 | xargs)
 
+cd kde-i18n-sr@Latn-%{version}
+%patch0 -p2
+mv data/kdeedu/khangman/sr@{Latn,latin}.txt
+mv data/kdeedu/kturtle/logohighlightstyle.sr@{Latn,latin}.xml
+mv data/kdeedu/kturtle/logokeywords.sr@{Latn,latin}.xml
+cd ..
+
 # http://bugs.kde.org/show_bug.cgi?id=157967
 cd kde-i18n-ru-%{version}
 %{__tar} xjf %{SOURCE70}
@@ -1733,7 +1741,7 @@ FindLang se > Northern_Sami.lang
 FindLang sk > Slovak.lang
 FindLang sl > Slovenian.lang
 FindLang sr > Serbian.lang
-FindLang sr@Latn >> Serbian.lang
+FindLang sr@latin >> Serbian.lang
 FindLang sv > Swedish.lang
 FindLang ta > Tamil.lang
 FindLang te > Telugu.lang
