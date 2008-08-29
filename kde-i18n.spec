@@ -1,6 +1,6 @@
 # NOTE
 # - easy way to update all sources with new/old locales:
-#   lynx -dump ftp://ftp.kde.org/pub/kde/stable/3.5.9/src/kde-i18n | awk '/3.5.9.tar.bz2$/{printf("Source%d: %s\n", i++, $2)}' | tee out
+#   lynx -dump ftp://ftp.kde.org/pub/kde/stable/3.5.10/src/kde-i18n | awk '/3.5.10.tar.bz2$/{printf("Source%d: %s\n", i++, $2)}' | tee out
 #   and then :r out in vim and ./builder -a5 the spec
 
 # Conditional build:
@@ -13,7 +13,7 @@ Summary:	K Desktop Environment - international support
 Summary(pl.UTF-8):	KDE - wsparcie dla wielu języków
 Name:		kde-i18n
 Version:	3.5.10
-Release:	1
+Release:	2
 License:	GPL
 Group:		I18n
 Source0:	ftp://ftp.kde.org/pub/kde/%{_state}/%{version}/src/kde-i18n/%{name}-af-%{version}.tar.bz2
@@ -148,17 +148,18 @@ Source64:	ftp://ftp.kde.org/pub/kde/%{_state}/%{version}/src/kde-i18n/%{name}-uk
 # Source64-md5:	c4bb322541cbba9dad22da3c588ba639
 Source65:	ftp://ftp.kde.org/pub/kde/%{_state}/%{version}/src/kde-i18n/%{name}-uz-%{version}.tar.bz2
 # Source65-md5:	9c4aca3db425032d85016aa23e9a3b92
-Source66:	ftp://ftp.kde.org/pub/kde/%{_state}/%{version}/src/kde-i18n/%{name}-vi-%{version}.tar.bz2
-# Source66-md5:	78c9313e33f5122cdd576d70be360c3c
-Source67:	ftp://ftp.kde.org/pub/kde/%{_state}/%{version}/src/kde-i18n/%{name}-wa-%{version}.tar.bz2
-# Source67-md5:	b7bc216e665e1612e47874aea6628af3
-Source68:	ftp://ftp.kde.org/pub/kde/%{_state}/%{version}/src/kde-i18n/%{name}-zh_CN-%{version}.tar.bz2
-# Source68-md5:	65ac47c0c1d2424158e416dfa878cc26
-Source69:	ftp://ftp.kde.org/pub/kde/%{_state}/%{version}/src/kde-i18n/%{name}-zh_TW-%{version}.tar.bz2
-# Source69-md5:	c9b7fc28f62fc43f57c0d75535860be6
-Source70:	kde-admin.tar.bz2
-# Source70-md5:	d98cf83cbea953f42d5b3087d1f47c71
-Patch0:		%{name}-locale-names.patch
+Source66:	ftp://ftp.kde.org/pub/kde/%{_state}/%{version}/src/kde-i18n/%{name}-uz@cyrillic-%{version}.tar.bz2
+# Source66-md5:	32ef78a2a6a17742a150dedba636b0e8
+Source67:	ftp://ftp.kde.org/pub/kde/%{_state}/%{version}/src/kde-i18n/%{name}-vi-%{version}.tar.bz2
+# Source67-md5:	78c9313e33f5122cdd576d70be360c3c
+Source68:	ftp://ftp.kde.org/pub/kde/%{_state}/%{version}/src/kde-i18n/%{name}-wa-%{version}.tar.bz2
+# Source68-md5:	b7bc216e665e1612e47874aea6628af3
+Source69:	ftp://ftp.kde.org/pub/kde/%{_state}/%{version}/src/kde-i18n/%{name}-zh_CN-%{version}.tar.bz2
+# Source69-md5:	65ac47c0c1d2424158e416dfa878cc26
+Source70:	ftp://ftp.kde.org/pub/kde/%{_state}/%{version}/src/kde-i18n/%{name}-zh_TW-%{version}.tar.bz2
+# Source70-md5:	c9b7fc28f62fc43f57c0d75535860be6
+Source71:	kde-admin.tar.bz2
+# Source71-md5:	d98cf83cbea953f42d5b3087d1f47c71
 %if %{with alltogether}
 Requires:	kde-i18n-base
 # NOTE:	"Affrikaans", "Norwegian_Bookmal", "Brazil_Portugnese" and "Portugnese" are here
@@ -1505,7 +1506,7 @@ K Desktop Environment - Zulu language support.
 KDE - wsparcie dla języka zuluskiego.
 
 %prep
-%setup -qcT %(seq -f '-a %g' 0 69 | xargs)
+%setup -qcT %(seq -f '-a %g' 0 70 | xargs)
 
 cd kde-i18n-sr@Latn-%{version}
 %patch0 -p2
@@ -1516,7 +1517,7 @@ cd ..
 
 # http://bugs.kde.org/show_bug.cgi?id=157967
 cd kde-i18n-ru-%{version}
-%{__tar} xjf %{SOURCE70}
+%{__tar} xjf %{SOURCE71}
 mv -f configure{,.dist}
 cd ..
 
@@ -1750,6 +1751,7 @@ FindLang th > Thai.lang
 FindLang tr > Turkish.lang
 FindLang uk > Ukrainian.lang
 FindLang uz > Uzbek.lang
+FindLang uz@cyrillic >> Uzbek.lang
 #FindLang ven > Venda.lang
 FindLang vi > Vietnamese.lang
 FindLang wa > Walloon.lang
