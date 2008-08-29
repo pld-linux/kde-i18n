@@ -159,6 +159,7 @@ Source69:	ftp://ftp.kde.org/pub/kde/%{_state}/%{version}/src/kde-i18n/%{name}-zh
 Source70:	ftp://ftp.kde.org/pub/kde/%{_state}/%{version}/src/kde-i18n/%{name}-zh_TW-%{version}.tar.bz2
 # Source70-md5:	c9b7fc28f62fc43f57c0d75535860be6
 Source71:	kde-admin.tar.bz2
+Patch0:		%{name}-locale-names.patch
 # Source71-md5:	d98cf83cbea953f42d5b3087d1f47c71
 %if %{with alltogether}
 Requires:	kde-i18n-base
