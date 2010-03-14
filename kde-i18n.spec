@@ -1536,6 +1536,7 @@ for dir in kde-i18n-*-%{version}; do
 		kde_libs_htmldir="%{_kdedocdir}"
 	cd ..
 done
+rm -f makeinstall.stamp
 
 %install
 if [ ! -f makeinstall.stamp -o ! -d $RPM_BUILD_ROOT ]; then
