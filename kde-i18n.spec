@@ -253,7 +253,7 @@ Obsoletes:	kde-i18n-Walloon
 Obsoletes:	kde-i18n-Xhosa
 Obsoletes:	kde-i18n-Zulu
 %endif
-BuildRequires:	gettext-devel
+BuildRequires:	gettext-tools
 BuildRequires:	kdelibs-devel
 BuildRequires:	libxml2-progs >= 2.4.2
 BuildArch:	noarch
