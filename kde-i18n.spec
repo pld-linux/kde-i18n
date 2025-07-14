@@ -1510,7 +1510,7 @@ KDE - wsparcie dla języka zuluskiego.
 %setup -qcT %(seq -f '-a %g' 0 70 | xargs)
 
 cd kde-i18n-sr@Latn-%{version}
-%patch0 -p2
+%patch -P0 -p2
 mv data/kdeedu/khangman/sr@{Latn,latin}.txt
 mv data/kdeedu/kturtle/logohighlightstyle.sr@{Latn,latin}.xml
 mv data/kdeedu/kturtle/logokeywords.sr@{Latn,latin}.xml
